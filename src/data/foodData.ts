@@ -49,7 +49,7 @@ export const foodCategories: FoodCategory[] = [
     name: "Pekara",
     foods: [
       "Burek sa mesom", "Burek sa sirom", "Burek sa spinatom", "Gibanica", "Kifla", 
-      "Hleb", "Pogačice", "Krafne", "Kroasan", "Pita sa jabukom", "Banica", 
+      "Hleb", "Pogačice", "Krofne", "Kroasan", "Pita sa jabukom", "Banica", 
       "Palačinke", "Štrudla", "Pecivo sa makom", "Pecivo sa orasima", "Somun", 
       "Lepinja", "Proja", "Kačamak", "Uštipci"
     ]
@@ -68,40 +68,40 @@ export const foodCategories: FoodCategory[] = [
     id: "bowl",
     name: "Činija",
     foods: [
-      "Buddha Bowl", "Quinoa Bowl", "Rice Bowl", "Poke Bowl", "Smoothie Bowl", 
-      "Grain Bowl", "Protein Bowl", "Veggie Bowl", "Mexican Bowl", "Mediterranean Bowl", 
-      "Thai Bowl", "Korean Bowl", "Breakfast Bowl", "Salad Bowl", "Noodle Bowl", 
-      "Curry Bowl", "Burrito Bowl", "Acai Bowl", "Power Bowl", "Zen Bowl"
+      "Buddha Činija", "Kinoa Činija", "Pirinač Činija", "Poke Činija", "Smuti Činija", 
+      "Žitarica Činija", "Protein Činija", "Veggie Činija", "Meksička Činija", "Mediteranska Činija", 
+      "Tajlandska Činija", "Koreanska Činija", "Doručak Činija", "Salata Činija", "Nudle Činija", 
+      "Kari Činija", "Burito Činija", "Asai Činija", "Energetska Činija", "Zen Činija"
     ]
   },
   {
     id: "breakfast",
     name: "Doručak",
     foods: [
-      "Jaja na oko", "Kajgana", "Omlet", "French Toast", "Granola", "Müsli", 
+      "Jaja na oko", "Kajgana", "Omlet", "Francuski Tost", "Granola", "Müsli", 
       "Jogurt sa voćem", "Ovsene pahuljice", "Tost sa avokado", "Smuthi", 
-      "Palačinke", "Vafli", "Croissant", "Bagel", "Slanina i jaja", "Hash Browns", 
-      "Muffins", "Scones", "Chia Pudding", "Protein Bowl"
+      "Palačinke", "Vafli", "Kroasan", "Bagel", "Slanina i jaja", "Prženi Krompir", 
+      "Mafini", "Skons", "Chia Pudding", "Protein Bowl"
     ]
   },
   {
     id: "brunch",
     name: "Brunch",
     foods: [
-      "Eggs Benedict", "Avocado Toast", "Shakshuka", "Pancakes", "French Toast", 
-      "Granola Bowl", "Smoked Salmon Bagel", "Breakfast Burrito", "Quiche", "Frittata", 
-      "Chia Pudding", "Acai Bowl", "Breakfast Sandwich", "Hash Browns", "Waffles", 
-      "Croque Monsieur", "Breakfast Pizza", "Overnight Oats", "Smoothie Bowl", "Huevos Rancheros"
+      "Jaja Benedikt", "Avokado Tost", "Šakšuka", "Američke Palačinke", "Francuski Tost", 
+      "Granola Činija", "Dimljeni Losos Bagel", "Doručak Burito", "Kiš", "Fritata", 
+      "Chia Puding", "Asai Činija", "Doručak Sendvič", "Prženi Krompir", "Vafli", 
+      "Krok Mesjø", "Doručak Pica", "Ovsene Pahuljice Preko Noći", "Smuti Činija", "Huevos Rančeros"
     ]
   },
   {
     id: "burger",
     name: "Burger",
     foods: [
-      "Classic Burger", "Cheeseburger", "Bacon Burger", "Veggie Burger", "Chicken Burger", 
-      "Fish Burger", "Double Burger", "BBQ Burger", "Mushroom Swiss Burger", "Turkey Burger", 
-      "Black Bean Burger", "Lamb Burger", "Salmon Burger", "Portobello Burger", "Pulled Pork Burger", 
-      "Breakfast Burger", "Spicy Burger", "Blue Cheese Burger", "Avocado Burger", "Quinoa Burger"
+      "Klasični Burger", "Burger sa Sirom", "Burger sa Slaninom", "Vegetarijanski Burger", "Pileći Burger", 
+      "Burger sa Ribom", "Dupli Burger", "BBQ Burger", "Burger sa Pečurkama i Švajcarskim Sirom", "Burger sa Ćuretinom", 
+      "Burger sa Crnim Pasuljem", "Burger sa Jagnjećinom", "Burger sa Lososom", "Portobello Burger", "Pulled Pork Burger", 
+      "Doručak Burger", "Ljuti Burger", "Burger sa Plavim Sirom", "Avokado Burger", "Kinoa Burger"
     ]
   },
   {
@@ -141,30 +141,30 @@ export const foodCategories: FoodCategory[] = [
     id: "dessert",
     name: "Dezert",
     foods: [
-      "Tiramisu", "Cheesecake", "Chocolate Cake", "Ice Cream", "Crème Brûlée", 
-      "Panna Cotta", "Apple Pie", "Brownies", "Cookies", "Macarons", 
-      "Gelato", "Sorbet", "Pavlova", "Trifle", "Mousse", "Flan", 
-      "Baklava", "Cannoli", "Profiteroles", "Éclair"
+      "Tiramisu", "Čizkejk", "Čokoladna Torta", "Sladoled", "Krem Brile", 
+      "Pana Kota", "Pita sa Jabukama", "Brauni", "Kolačići", "Makaroni", 
+      "Dželato", "Sorbet", "Pavlova", "Trifle", "Mus", "Flan", 
+      "Baklava", "Kanoli", "Profiterole", "Ekler"
     ]
   },
   {
     id: "european",
     name: "Evropska",
     foods: [
-      "Schnitzel", "Pasta Carbonara", "Paella", "Ratatouille", "Fish and Chips", 
-      "Shepherd's Pie", "Goulash", "Pierogi", "Sauerkraut", "Bratwurst", 
-      "Coq au Vin", "Bouillabaisse", "Wiener Schnitzel", "Fondue", "Risotto", 
-      "Osso Buco", "Cassoulet", "Beef Bourguignon", "Bangers and Mash", "Haggis"
+      "Šnicla", "Pasta Karbonara", "Paela", "Ratatuj", "Riba sa Pomfritom", 
+      "Ovčarska Pita", "Gulaš", "Pierogi", "Kiseli Kupus", "Bratvurst", 
+      "Koq au Vin", "Buljabes", "Bečka Šnicla", "Fondi", "Rizoto", 
+      "Oso Buko", "Kasule", "Goveđe Burginjion", "Kobasice sa Pireom", "Hagis"
     ]
   },
   {
     id: "fish",
     name: "Riba",
     foods: [
-      "Grilled Salmon", "Fish and Chips", "Tuna Steak", "Cod Fillet", "Sea Bass", 
-      "Mackerel", "Sardines", "Trout", "Halibut", "Swordfish", 
-      "Fish Tacos", "Fish Curry", "Baked Fish", "Fish Soup", "Smoked Salmon", 
-      "Fish Cakes", "Ceviche", "Sashimi", "Fish Stew", "Grilled Tuna"
+      "Grilovani Losos", "Riba sa Pomfritom", "Tuna Stejk", "File Bakalara", "Lubin", 
+      "Skuša", "Sardine", "Pastrmka", "Halibut", "Mačevalna Riba", 
+      "Ribni Takos", "Ribni Kari", "Pečena Riba", "Riblja Supa", "Dimljeni Losos", 
+      "Riblje Pogačice", "Sevičé", "Sašimi", "Riblji Gulaš", "Grilovana Tuna"
     ]
   },
   {
@@ -181,39 +181,39 @@ export const foodCategories: FoodCategory[] = [
     id: "gluten-free",
     name: "Bez glutena",
     foods: [
-      "Quinoa Salad", "Rice Bowl", "Grilled Chicken", "Baked Salmon", "Vegetable Stir Fry", 
-      "Corn Tortillas", "Rice Noodles", "Potato Dishes", "Greek Salad", "Fruit Salad", 
-      "Smoothie Bowl", "Roasted Vegetables", "Meat and Vegetables", "Fish Dishes", "Eggs", 
-      "Yogurt Parfait", "Nut Butter", "Gluten-Free Bread", "Rice Crackers", "Cheese and Fruit"
+      "Kinoa Salata", "Pirinač Činija", "Grilovana Piletina", "Pečeni Losos", "Povrće na Tiganju", 
+      "Kukuruzne Tortilje", "Pirinčane Nudle", "Jela od Krompira", "Grčka Salata", "Voćna Salata", 
+      "Smuti Činija", "Pečeno Povrće", "Meso i Povrće", "Riblja Jela", "Jaja", 
+      "Jogurt Parfe", "Puter od Orašastog Voća", "Hleb bez Glutena", "Pirinčani Krekeri", "Sir i Voće"
     ]
   },
   {
     id: "greek",
     name: "Grčka",
     foods: [
-      "Moussaka", "Souvlaki", "Greek Salad", "Tzatziki", "Dolmades", "Spanakopita", 
-      "Gyros", "Feta Cheese", "Olives", "Baklava", "Greek Lemon Soup", "Pastitsio", 
-      "Kleftiko", "Fasolada", "Gemista", "Keftedes", "Tarama", "Ouzo", "Greek Yogurt", "Loukoumades"
+      "Musaka", "Suvlaki", "Grčka Salata", "Caciki", "Dolmades", "Španakopita", 
+      "Điros", "Feta Sir", "Masline", "Baklava", "Grčka Limunova Supa", "Pasticio", 
+      "Kleftiko", "Fasolada", "Gemista", "Keftedes", "Tarama", "Uzo", "Grčki Jogurt", "Lukumades"
     ]
   },
   {
     id: "halal",
     name: "Halal",
     foods: [
-      "Halal Chicken", "Halal Beef", "Halal Lamb", "Halal Goat", "Chicken Biryani", 
-      "Lamb Curry", "Halal Burger", "Chicken Shawarma", "Beef Kebab", "Halal Pizza", 
-      "Chicken Tikka", "Lamb Chops", "Halal Sausages", "Beef Stir Fry", "Chicken Soup", 
-      "Halal Meatballs", "Lamb Stew", "Chicken Wings", "Beef Tacos", "Halal Sandwiches"
+      "Halal Piletina", "Halal Govedina", "Halal Jagnjetina", "Halal Koze", "Pileći Birijani", 
+      "Kari od Jagnjetine", "Halal Burger", "Pileća Šavarma", "Goveđi Kebab", "Halal Pica", 
+      "Pileća Tikka", "Kotleti od Jagnjetine", "Halal Kobasice", "Govedina na Tiganju", "Pileća Supa", 
+      "Halal Ćufte", "Gulaš od Jagnjetine", "Pileća Krilca", "Goveđi Takos", "Halal Sendviči"
     ]
   },
   {
     id: "healthy",
     name: "Zdrava hrana",
     foods: [
-      "Quinoa Bowl", "Kale Salad", "Acai Bowl", "Chia Pudding", "Green Smoothie", 
-      "Avocado Toast", "Grilled Vegetables", "Salmon Fillet", "Sweet Potato", "Brown Rice", 
-      "Lentil Soup", "Greek Yogurt", "Nuts and Seeds", "Fresh Fruit", "Vegetable Juice", 
-      "Protein Smoothie", "Buddha Bowl", "Steamed Broccoli", "Quinoa Salad", "Tofu Stir Fry"
+      "Kinoa Činija", "Kej Salata", "Asai Činija", "Chia Puding", "Zeleni Smuti", 
+      "Avokado Tost", "Grilovano Povrće", "Losos File", "Slatki Krompir", "Braon Pirinač", 
+      "Sočivo Supa", "Grčki Jogurt", "Orasi i Semenke", "Sveže Voće", "Povrćni Sok", 
+      "Protein Smuti", "Buddha Činija", "Kuvani Brokoli", "Kinoa Salata", "Tofu na Tiganju"
     ]
   },
   {
@@ -229,29 +229,29 @@ export const foodCategories: FoodCategory[] = [
     id: "ice-cream",
     name: "Sladoled",
     foods: [
-      "Vanilla Ice Cream", "Chocolate Ice Cream", "Strawberry Ice Cream", "Mint Chocolate Chip", 
-      "Cookies and Cream", "Rocky Road", "Neapolitan", "Pistachio", "Rum Raisin", "Coffee Ice Cream", 
-      "Caramel Ice Cream", "Banana Split", "Sundae", "Milkshake", "Ice Cream Sandwich", 
-      "Gelato", "Sorbet", "Frozen Yogurt", "Ice Cream Cake", "Affogato"
+      "Vanila Sladoled", "Čokolada Sladoled", "Jagoda Sladoled", "Nana Čokolada Čips", 
+      "Kolačići i Krem", "Rokovi Put", "Neapolitanski", "Pistaći", "Rum Grožđice", "Kafa Sladoled", 
+      "Karamel Sladoled", "Banana Split", "Sunde", "Milkšejk", "Sladoled Sendvič", 
+      "Đelato", "Sorbet", "Zamrznuti Jogurt", "Sladoled Torta", "Afogato"
     ]
   },
   {
     id: "indian",
     name: "Indijska",
     foods: [
-      "Butter Chicken", "Chicken Tikka Masala", "Biryani", "Naan", "Samosa", 
-      "Dal", "Tandoori Chicken", "Rogan Josh", "Palak Paneer", "Aloo Gobi", 
-      "Chapati", "Basmati Rice", "Mango Lassi", "Gulab Jamun", "Raita", 
-      "Vindaloo", "Korma", "Masala Chai", "Pakora", "Dosa"
+      "Pileća u Butteru", "Pileća Tikka Masala", "Birijani", "Nan", "Samosa", 
+      "Dal", "Tanduri Piletina", "Rogan Džoš", "Palak Panir", "Alu Gobi", 
+      "Čapati", "Basmati Pirinač", "Mango Lasi", "Gulab Džamun", "Raita", 
+      "Vindaloo", "Korma", "Masala Čaj", "Pakora", "Dosa"
     ]
   },
   {
     id: "international",
     name: "Internacionalno",
     foods: [
-      "Sushi", "Tacos", "Pizza", "Pasta", "Burger", "Pad Thai", "Ramen", 
-      "Paella", "Couscous", "Falafel", "Hummus", "Pho", "Kimchi", "Dim Sum", 
-      "Pierogi", "Goulash", "Schnitzel", "Fish and Chips", "Croissant", "Baklava"
+      "Suši", "Takos", "Pica", "Pasta", "Burger", "Pad Taj", "Ramen", 
+      "Paela", "Kuskus", "Falafel", "Humus", "Fo", "Kimči", "Dim Sam", 
+      "Pierogi", "Gulaš", "Šnicla", "Riba sa Pomfritom", "Kroasan", "Baklava"
     ]
   },
   {
@@ -286,20 +286,20 @@ export const foodCategories: FoodCategory[] = [
     id: "lunch",
     name: "Lunch",
     foods: [
-      "Club Sandwich", "Caesar Salad", "Soup and Sandwich", "Grilled Chicken", "Pasta Salad", 
-      "Wrap", "Quiche", "Stir Fry", "Rice Bowl", "Grain Bowl", 
-      "Panini", "Burrito", "Poke Bowl", "Buddha Bowl", "Salad Bowl", 
-      "Soup", "Flatbread", "Risotto", "Curry", "Noodle Soup"
+      "Klub Sendvič", "Cezar Salata", "Supa i Sendvič", "Grilovana Piletina", "Pasta Salata", 
+      "Vrap", "Kiš", "Povrće na Tiganju", "Pirinač Činija", "Žitarica Činija", 
+      "Panini", "Burito", "Poke Činija", "Buddha Činija", "Salata Činija", 
+      "Supa", "Ravni Hleb", "Rizoto", "Kari", "Nudle Supa"
     ]
   },
   {
     id: "mediterranean",
     name: "Mediteranska",
     foods: [
-      "Greek Salad", "Hummus", "Tabbouleh", "Grilled Fish", "Olive Oil", 
-      "Feta Cheese", "Olives", "Pita Bread", "Tzatziki", "Dolmades", 
-      "Ratatouille", "Paella", "Gazpacho", "Bruschetta", "Caprese", 
-      "Moussaka", "Souvlaki", "Pasta Puttanesca", "Seafood Risotto", "Baklava"
+      "Grčka Salata", "Humus", "Tabuleh", "Grilovana Riba", "Maslinovo Ulje", 
+      "Feta Sir", "Masline", "Pita Hleb", "Caciki", "Dolmades", 
+      "Ratatuj", "Paela", "Gaspačo", "Brusketa", "Kaprese", 
+      "Musaka", "Suvlaki", "Pasta Putaneska", "Morski Plodovi Rizoto", "Baklava"
     ]
   },
   {
@@ -355,10 +355,10 @@ export const foodCategories: FoodCategory[] = [
     id: "salad",
     name: "Salata",
     foods: [
-      "Caesar Salad", "Greek Salad", "Caprese Salad", "Waldorf Salad", "Cobb Salad", 
-      "Nicoise Salad", "Tabbouleh", "Fattoush", "Quinoa Salad", "Kale Salad", 
-      "Spinach Salad", "Arugula Salad", "Potato Salad", "Coleslaw", "Fruit Salad", 
-      "Pasta Salad", "Chicken Salad", "Tuna Salad", "Garden Salad", "Chef's Salad"
+      "Cezar Salata", "Grčka Salata", "Kaprese Salata", "Valdorf Salata", "Kob Salata", 
+      "Nisoaz Salata", "Tabuleh", "Fatuš", "Kinoa Salata", "Kej Salata", 
+      "Spanać Salata", "Rukola Salata", "Krompir Salata", "Kupus Salata", "Voćna Salata", 
+      "Pasta Salata", "Pileća Salata", "Tuna Salata", "Bašta Salata", "Kuvarska Salata"
     ]
   },
   {
@@ -384,10 +384,10 @@ export const foodCategories: FoodCategory[] = [
     id: "soup",
     name: "Supa",
     foods: [
-      "Chicken Soup", "Tomato Soup", "Vegetable Soup", "Mushroom Soup", "Onion Soup", 
-      "Minestrone", "Lentil Soup", "Split Pea Soup", "Clam Chowder", "Gazpacho", 
-      "Borscht", "Miso Soup", "Pho", "Ramen", "Hot and Sour Soup", 
-      "Cream of Broccoli", "Beef Stew", "Fish Soup", "Corn Chowder", "Potato Soup"
+      "Pileća Supa", "Paradajz Supa", "Povrće Supa", "Pečurka Supa", "Luk Supa", 
+      "Minestrone", "Sočivo Supa", "Grašak Supa", "Školjka Čorba", "Gaspačo", 
+      "Borš", "Miso Supa", "Fo", "Ramen", "Ljuta i Kisela Supa", 
+      "Krem od Brokolija", "Goveđi Gulaš", "Riblja Supa", "Kukuruz Čorba", "Krompir Supa"
     ]
   },
   {
@@ -441,30 +441,30 @@ export const foodCategories: FoodCategory[] = [
     id: "vegan",
     name: "Vegan",
     foods: [
-      "Quinoa Bowl", "Tofu Stir Fry", "Veggie Burger", "Lentil Curry", "Chickpea Salad", 
-      "Vegan Pizza", "Smoothie Bowl", "Chia Pudding", "Avocado Toast", "Buddha Bowl", 
-      "Vegan Pasta", "Veggie Wrap", "Plant-Based Protein", "Coconut Curry", "Vegan Sushi", 
-      "Raw Salad", "Fruit Bowl", "Vegetable Soup", "Vegan Dessert", "Plant Milk"
+      "Kinoa Činija", "Tofu na Tiganju", "Vegetarijanski Burger", "Sočivo Kari", "Leblebije Salata", 
+      "Veganska Pica", "Smuti Činija", "Chia Puding", "Avokado Tost", "Buddha Činija", 
+      "Veganska Pasta", "Povrće Vrap", "Biljni Protein", "Kokos Kari", "Veganski Suši", 
+      "Sirova Salata", "Voćna Činija", "Povrće Supa", "Veganski Dezert", "Biljno Mleko"
     ]
   },
   {
     id: "vegetarian",
     name: "Vegeterijanska hrana",
     foods: [
-      "Vegetable Curry", "Caprese Salad", "Mushroom Risotto", "Veggie Burger", "Falafel", 
-      "Greek Salad", "Margherita Pizza", "Pasta Primavera", "Stuffed Peppers", "Ratatouille", 
-      "Vegetable Stir Fry", "Quinoa Salad", "Cheese Omelette", "Veggie Wrap", "Hummus", 
-      "Spinach Lasagna", "Vegetable Soup", "Eggplant Parmesan", "Veggie Tacos", "Buddha Bowl"
+      "Povrće Kari", "Kaprese Salata", "Pečurka Rizoto", "Vegetarijanski Burger", "Falafel", 
+      "Grčka Salata", "Margherita Pica", "Pasta Primavera", "Punjene Paprike", "Ratatuj", 
+      "Povrće na Tiganju", "Kinoa Salata", "Omlet sa Sirom", "Povrće Vrap", "Humus", 
+      "Spanać Lazanja", "Povrće Supa", "Plavi Patlidžan Parmezan", "Povrće Takos", "Buddha Činija"
     ]
   },
   {
     id: "waffles",
     name: "Vafli",
     foods: [
-      "Belgian Waffles", "American Waffles", "Chicken and Waffles", "Strawberry Waffles", "Chocolate Waffles", 
-      "Blueberry Waffles", "Banana Waffles", "Pecan Waffles", "Cinnamon Waffles", "Protein Waffles", 
-      "Gluten-Free Waffles", "Vegan Waffles", "Ice Cream Waffles", "Savory Waffles", "Mini Waffles", 
-      "Waffle Sundae", "Maple Syrup Waffles", "Butter Waffles", "Cream Waffles", "Fruit Waffles"
+      "Belgijski Vafli", "Američki Vafli", "Piletina i Vafli", "Jagoda Vafli", "Čokolada Vafli", 
+      "Borovnica Vafli", "Banana Vafli", "Pekan Vafli", "Cimet Vafli", "Protein Vafli", 
+      "Vafli bez Glutena", "Veganski Vafli", "Sladoled Vafli", "Slani Vafli", "Mini Vafli", 
+      "Vafl Sunde", "Javorov Sirup Vafli", "Puter Vafli", "Krem Vafli", "Voćni Vafli"
     ]
   },
   {
