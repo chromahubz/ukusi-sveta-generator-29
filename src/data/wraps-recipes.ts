@@ -17,7 +17,7 @@ export interface Recipe {
 
 export const wrapsRecipes: Recipe[] = [
   {
-    name: "Chicken Caesar Wrap",
+    name: "Pileći Cezar wrap",
     description: "Brzi i ukusni wrap punjen piletinom, hrskavom zelenom salatom i kremastim Cezar prelivom. Savršen za ručak ili večeru.",
     prepTime: "15 minuta",
     cookTime: "15 minuta",
@@ -58,7 +58,7 @@ export const wrapsRecipes: Recipe[] = [
     }
   },
   {
-    name: "Turkey Wrap",
+    name: "Ćureći wrap",
     description: "Brz i jednostavan obrok, savršen za ručak ili užinu.",
     prepTime: "5 minuta",
     cookTime: "0 minuta",
@@ -94,7 +94,7 @@ export const wrapsRecipes: Recipe[] = [
     }
   },
   {
-    name: "Veggie Wrap",
+    name: "Vegetarijanski wrap",
     description: "Lagani i ukusni wrap pun svežeg povrća, idealan za brzi ručak ili večeru.",
     prepTime: "15 minuta",
     cookTime: "5 minuta",
@@ -136,7 +136,7 @@ export const wrapsRecipes: Recipe[] = [
     }
   },
   {
-    name: "Buffalo Chicken Wrap",
+    name: "Buffalo pileći wrap",
     description: "Brz i ukusan wrap pun ukusa piletine sa ljutim buffalo sosom, idealan za ručak ili večeru.",
     prepTime: "10 minuta",
     cookTime: "15 minuta",
@@ -177,7 +177,7 @@ export const wrapsRecipes: Recipe[] = [
     }
   },
   {
-    name: "Club Wrap",
+    name: "Club wrap",
     description: "Brz i ukusan wrap inspirisan klasičnim club sendvičem. Odličan za ručak, večeru ili užinu.",
     prepTime: "10 minuta",
     cookTime: "5 minuta",
@@ -216,7 +216,7 @@ export const wrapsRecipes: Recipe[] = [
     }
   },
   {
-    name: "Tuna Wrap",
+    name: "Tunji wrap",
     description: "Brz i jednostavan obrok, idealan za poneti ili kao lagani ručak.",
     prepTime: "5 minuta",
     cookTime: "0 minuta",
@@ -256,7 +256,7 @@ export const wrapsRecipes: Recipe[] = [
     }
   },
   {
-    name: "Ham and Cheese Wrap",
+    name: "Wrap sa šunkom i sirom",
     description: "Brzi i jednostavan obrok ili užina, idealna za poneti.",
     prepTime: "5 minuta",
     cookTime: "2 minuta (opciono)",
@@ -292,7 +292,7 @@ export const wrapsRecipes: Recipe[] = [
     }
   },
   {
-    name: "Falafel Wrap",
+    name: "Falafel wrap",
     description: "Sočan i ukusan falafel umotan u toplu tortilju sa svežim povrćem i prelivom po izboru.",
     prepTime: "20 minuta",
     cookTime: "15 minuta",
@@ -346,7 +346,7 @@ export const wrapsRecipes: Recipe[] = [
     }
   },
   {
-    name: "Greek Wrap",
+    name: "Grčki wrap",
     description: "Brz i ukusan obrok inspirisan grčkim ukusima, idealan za ručak ili večeru.",
     prepTime: "15 minuta",
     cookTime: "10 minuta",
@@ -386,7 +386,7 @@ export const wrapsRecipes: Recipe[] = [
     }
   },
   {
-    name: "Mexican Wrap",
+    name: "Meksički wrap",
     description: "Brz i ukusan obrok idealan za ručak ili večeru.",
     prepTime: "15 minuta",
     cookTime: "10 minuta",
@@ -429,7 +429,7 @@ export const wrapsRecipes: Recipe[] = [
     }
   },
   {
-    name: "Asian Wrap",
+    name: "Azijski wrap",
     description: "Brzi i ukusni obrok inspirisan azijskom kuhinjom, savršen za ručak ili večeru.",
     prepTime: "15 minuta",
     cookTime: "10 minuta",
@@ -471,7 +471,7 @@ export const wrapsRecipes: Recipe[] = [
     }
   },
   {
-    name: "Breakfast Wrap",
+    name: "Doručak wrap",
     description: "Ukusna i brza opcija za doručak, idealna za poneti.",
     prepTime: "5 minuta",
     cookTime: "10 minuta",
@@ -514,7 +514,7 @@ export const wrapsRecipes: Recipe[] = [
     }
   },
   {
-    name: "Protein Wrap",
+    name: "Proteinski wrap",
     description: "Brz i jednostavan obrok bogat proteinima, idealan za poneti ili kao lagani ručak.",
     prepTime: "5 minuta",
     cookTime: "0 minuta",
@@ -552,7 +552,7 @@ export const wrapsRecipes: Recipe[] = [
     }
   },
   {
-    name: "Salmon Wrap",
+    name: "Losos wrap",
     description: "Ovaj jednostavan i ukusan wrap je savršen za brzi ručak ili večeru. Sadrži losos, sveže povrće i kremasti sos, sve umotano u tortilju.",
     prepTime: "10 minuta",
     cookTime: "5 minuta",
@@ -589,7 +589,7 @@ export const wrapsRecipes: Recipe[] = [
     }
   },
   {
-    name: "Steak Wrap",
+    name: "Biftek wrap",
     description: "Hrskavi wrap pun sočnog bifteka, svežeg povrća i pikantnog sosa. Savršeno za brzi ručak ili večeru.",
     prepTime: "15 minuta",
     cookTime: "10 minuta",
@@ -629,7 +629,7 @@ export const wrapsRecipes: Recipe[] = [
     }
   },
   {
-    name: "Hummus Wrap",
+    name: "Humus wrap",
     description: "Brz i jednostavan obrok, idealan za ručak ili užinu. Ukusan, zdrav i lako se prilagođava različitim ukusima.",
     prepTime: "5 minuta",
     cookTime: "0 minuta",
@@ -666,7 +666,7 @@ export const wrapsRecipes: Recipe[] = [
     }
   },
   {
-    name: "Avocado Wrap",
+    name: "Avokado wrap",
     description: "Brz i ukusan obrok, idealan za poneti.",
     prepTime: "5 minuta",
     cookTime: "0 minuta",
@@ -705,7 +705,7 @@ export const wrapsRecipes: Recipe[] = [
     }
   },
   {
-    name: "Spinach Wrap",
+    name: "Spanać wrap",
     description: "Brz i jednostavan obrok ili užina punjena svežim spanaćem i povrćem. Idealno za poneti.",
     prepTime: "10 minuta",
     cookTime: "0 minuta",
@@ -744,7 +744,7 @@ export const wrapsRecipes: Recipe[] = [
     }
   },
   {
-    name: "Chicken Salad Wrap",
+    name: "Wrap sa pilećom salatom",
     description: "Osvežavajuća i ukusna salata od piletine u tortilji, savršena za brz ručak ili laganu večeru.",
     prepTime: "15 minuta",
     cookTime: "15-20 minuta (za piletinu)",
@@ -788,7 +788,7 @@ export const wrapsRecipes: Recipe[] = [
     }
   },
   {
-    name: "BLT Wrap",
+    name: "BLT wrap",
     description: "Osvežavajući i brz obrok, savršen za poneti ili lagani ručak.",
     prepTime: "10 minuta",
     cookTime: "5 minuta",

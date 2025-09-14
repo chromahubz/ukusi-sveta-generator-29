@@ -1,6 +1,6 @@
 export const wingsRecipes = {
   "Buffalo Wings": {
-    name: "Buffalo Wings",
+    name: "Buffalo krilca",
     ingredients: [
       "1 kg pilećih krilaca",
       "1/2 šolje ljutog sosa (Frank's RedHot ili slično)",
@@ -32,7 +32,7 @@ export const wingsRecipes = {
   },
 
   "BBQ Wings": {
-    name: "BBQ Wings",
+    name: "BBQ krilca",
     ingredients: [
       "1 kg pilećih krilaca",
       "1 kašika maslinovog ulja",
@@ -67,7 +67,7 @@ export const wingsRecipes = {
   },
 
   "Honey Garlic Wings": {
-    name: "Honey Garlic Wings",
+    name: "Krilca sa medom i belim lukom",
     ingredients: [
       "1.5 kg pilećih krilaca",
       "2 kašike maslinovog ulja",
@@ -106,7 +106,7 @@ export const wingsRecipes = {
   },
 
   "Spicy Wings": {
-    name: "Spicy Wings",
+    name: "Ljuta krilca",
     ingredients: [
       "1 kg pilećih krilaca",
       "2 kašike maslinovog ulja",
@@ -146,7 +146,7 @@ export const wingsRecipes = {
   },
 
   "Lemon Pepper Wings": {
-    name: "Lemon Pepper Wings",
+    name: "Krilca sa limunom i biberom",
     ingredients: [
       "1.5 kg pilećih krilaca",
       "2 kašike maslinovog ulja",
@@ -180,7 +180,7 @@ export const wingsRecipes = {
   },
 
   "Teriyaki Wings": {
-    name: "Teriyaki Wings",
+    name: "Teriyaki krilca",
     ingredients: [
       "1.5 kg pilećih krilaca",
       "1/2 šolje soja sosa",
@@ -223,7 +223,7 @@ export const wingsRecipes = {
   },
 
   "Hot Wings": {
-    name: "Hot Wings",
+    name: "Vrela krilca",
     ingredients: [
       "1 kg pilećih krilaca",
       "1 kašičica soli",
@@ -259,7 +259,7 @@ export const wingsRecipes = {
   },
 
   "Mild Wings": {
-    name: "Mild Wings",
+    name: "Blaga krilca",
     ingredients: [
       "1 kg pilećih krilaca",
       "2 kašike maslinovog ulja",
@@ -296,7 +296,7 @@ export const wingsRecipes = {
   },
 
   "Sweet and Sour Wings": {
-    name: "Sweet and Sour Wings",
+    name: "Slatko-kisela krilca",
     ingredients: [
       "1 kg pilećih krilaca",
       "2 kašike soja sosa",
@@ -334,7 +334,7 @@ export const wingsRecipes = {
   },
 
   "Cajun Wings": {
-    name: "Cajun Wings",
+    name: "Cajun krilca",
     ingredients: [
       "1.5 kg pilećih krilaca",
       "2 kašike maslinovog ulja",
@@ -366,7 +366,7 @@ export const wingsRecipes = {
   },
 
   "Korean Wings": {
-    name: "Korean Wings",
+    name: "Korejska krilca",
     ingredients: [
       "1.5 kg pilećih krilaca",
       "1 kašika soli",

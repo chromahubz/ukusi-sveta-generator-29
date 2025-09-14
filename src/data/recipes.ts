@@ -100,7 +100,7 @@ export const recipes: Record<string, Recipe> = {
 
   // American
   "Mac and Cheese": {
-    name: "Mac and Cheese",
+    name: "Makaroni sa sirom",
     ingredients: ["450g makarona", "6 kašika putera", "6 kašika brašna", "3 šolje mleka", "1/2 kašičice soli", "1/4 kašičice bibera", "1/4 kašičice mlevene slačice", "450g narendanog čedar sira"],
     instructions: ["Zagrejte rernu na 175°C", "Skuvajte makarone prema uputstvu", "Otopite puter u šerpi", "Dodajte brašno i mešajte dok se ne formira pasta", "Postepeno dodajte mleko, neprestano mešajući", "Kuvajte dok se sos ne zgusne", "Dodajte začine i sir", "Pomešajte sa makaronama", "Sipajte u posudu za pečenje", "Pecite 20 minuta"],
     prepTime: "10 min",
@@ -108,7 +108,7 @@ export const recipes: Record<string, Recipe> = {
     servings: 5
   },
   "BBQ Ribs": {
-    name: "BBQ Ribs",
+    name: "BBQ rebra",
     ingredients: ["2 kg svinjskih rebara", "2 kašike maslinovog ulja", "2 kašike slatke aleve paprike", "1 kašika belog luka u prahu", "1 kašika luka u prahu", "1 kašika dimljene paprike", "1 kašika braon šećera", "1 kašičica soli", "1/2 kašičice crnog bibera", "500 ml BBQ sosa", "100 ml jabukovog sirćeta"],
     instructions: ["Uklonite opnu sa rebara", "Pomešajte sve začine", "Premažite rebra uljem i začinima", "Pripremite roštilj na 120-135°C", "Pecite rebra 2-3 sata", "Poslednjih 30 minuta premažite BBQ sosom", "Ostavite da odstoje 10 minuta", "Isecite i poslužite"],
     prepTime: "20 min",
@@ -220,7 +220,7 @@ export const recipes: Record<string, Recipe> = {
   },
 
   "Chicken Tikka": {
-    name: "Chicken Tikka",
+    name: "Pileći Tikka",
     ingredients: [
       "500g pilećeg filea, isečenog na kockice veličine zalogaja",
       "170g običnog jogurta",
@@ -253,7 +253,7 @@ export const recipes: Record<string, Recipe> = {
   },
 
   "Buffalo Wings Premium": {
-    name: "Buffalo Wings",
+    name: "Buffalo krilca",
     ingredients: [
       "1.5 kg pilećih krilca",
       "1 kašika soli",
@@ -285,7 +285,7 @@ export const recipes: Record<string, Recipe> = {
   },
 
   "Chicken Teriyaki": {
-    name: "Chicken Teriyaki",
+    name: "Pileći Teriyaki",
     ingredients: [
       "600g pilećeg filea, isečenog na kockice",
       "2 kašike ulja (suncokretovo ili biljno)",
@@ -318,7 +318,7 @@ export const recipes: Record<string, Recipe> = {
   },
 
   "Chicken Alfredo": {
-    name: "Chicken Alfredo",
+    name: "Pileći Alfredo",
     ingredients: [
       "400g pilecih grudi, isecenih na kockice",
       "400g fettuccine ili drugih testenina po zelji",
@@ -349,7 +349,7 @@ export const recipes: Record<string, Recipe> = {
   },
 
   "Kung Pao Chicken Premium": {
-    name: "Kung Pao Chicken",
+    name: "Kung Pao piletina",
     ingredients: [
       "500g pilećeg filea, isečenog na kockice",
       "2 kašike soja sosa",
@@ -382,7 +382,7 @@ export const recipes: Record<string, Recipe> = {
   },
 
   "Fried Chicken Premium": {
-    name: "Fried Chicken",
+    name: "Pržena piletina",
     ingredients: [
       "1.5 kg pilećeg mesa (bataci, karabataci, krilca, pileća prsa isečena na komade)",
       "2 šolje brašna",
