@@ -71,7 +71,7 @@ export const greekRecipes = {
   },
 
   "Greek Salad": {
-    name: "Greek Salad",
+    name: "Grčka salata",
     ingredients: [
       "1 krastavac, srednje veličine",
       "2 paradajza, srednje veličine",
@@ -230,7 +230,7 @@ export const greekRecipes = {
   },
 
   "Feta Cheese": {
-    name: "Feta Cheese",
+    name: "Feta sir",
     ingredients: [
       "2 litra punomasnog mleka (nepasterizovano je najbolje)",
       "1/4 kašičice mezofilne kulture (starter kulture za sir)",
@@ -260,7 +260,7 @@ export const greekRecipes = {
   },
 
   "Olives": {
-    name: "Olives",
+    name: "Masline",
     ingredients: [
       "500g maslina (zelene, crne ili mix)",
       "1/4 šolje ekstra devičanskog maslinovog ulja",
@@ -321,7 +321,7 @@ export const greekRecipes = {
   },
 
   "Greek Lemon Soup": {
-    name: "Greek Lemon Soup",
+    name: "Grčka limun supa",
     ingredients: [
       "1 kašika maslinovog ulja",
       "1 srednji crni luk, sitno iseckan",

@@ -1,6 +1,6 @@
 export const halalRecipes = {
   "Halal Chicken": {
-    name: "Halal Chicken",
+    name: "Halal piletina",
     ingredients: [
       "4 komada pilećeg mesa (batak, karabatak, pileće grudi)",
       "2 kašike maslinovog ulja",
@@ -32,7 +32,7 @@ export const halalRecipes = {
   },
 
   "Halal Beef": {
-    name: "Halal Beef",
+    name: "Halal govedina",
     ingredients: [
       "500g halal goveđeg mesa (isečenog na kockice)",
       "2 kašike biljnog ulja",
@@ -65,7 +65,7 @@ export const halalRecipes = {
   },
 
   "Halal Lamb": {
-    name: "Halal Lamb",
+    name: "Halal jagnjetina",
     ingredients: [
       "1.5 kg jagnjeća plećka ili but, halal",
       "2 kašike maslinovog ulja",
@@ -101,7 +101,7 @@ export const halalRecipes = {
   },
 
   "Halal Goat": {
-    name: "Halal Goat",
+    name: "Halal jarić",
     ingredients: [
       "1.5 kg kozjeg mesa (sečenog na komade veličine zalogaja)",
       "2 velika luka (iseckana)",
@@ -137,7 +137,7 @@ export const halalRecipes = {
   },
 
   "Chicken Biryani": {
-    name: "Chicken Biryani",
+    name: "Pileći biryani",
     ingredients: [
       "1 kg piletine, isečene na komade",
       "500 g basmati pirinča",
@@ -176,7 +176,7 @@ export const halalRecipes = {
   },
 
   "Lamb Curry": {
-    name: "Lamb Curry",
+    name: "Jagnjeći kari",
     ingredients: [
       "1.5 kg jagnjetine, isečene na kockice veličine zalogaja",
       "2 velike glavice crnog luka, sitno iseckane",
@@ -212,7 +212,7 @@ export const halalRecipes = {
   },
 
   "Halal Burger": {
-    name: "Halal Burger",
+    name: "Halal burger",
     ingredients: [
       "800g mlevenog junećeg mesa (halal)",
       "1 kašičica mlevene paprike",
@@ -244,7 +244,7 @@ export const halalRecipes = {
   },
 
   "Chicken Shawarma": {
-    name: "Chicken Shawarma",
+    name: "Pileća šavarma",
     ingredients: [
       "600g pilećeg filea, tanko isečenog",
       "1/4 šolje maslinovog ulja",
@@ -279,7 +279,7 @@ export const halalRecipes = {
   },
 
   "Beef Kebab": {
-    name: "Beef Kebab",
+    name: "Goveđi kebab",
     ingredients: [
       "500g mlevene govedine",
       "1 manji crni luk, sitno iseckan",
@@ -310,7 +310,7 @@ export const halalRecipes = {
   },
 
   "Halal Pizza": {
-    name: "Halal Pizza",
+    name: "Halal pizza",
     ingredients: [
       "500g brašna (tip 00 ili namenski za pizzu)",
       "7g suvog kvasca",
@@ -348,7 +348,7 @@ export const halalRecipes = {
   },
 
   "Chicken Tikka": {
-    name: "Chicken Tikka",
+    name: "Pileći tikka",
     ingredients: [
       "500g pilećih grudi, isečenih na kockice od 2-3 cm",
       "1 šolja gustog jogurta (grčki jogurt)",
@@ -379,7 +379,7 @@ export const halalRecipes = {
   },
 
   "Lamb Chops": {
-    name: "Lamb Chops",
+    name: "Jagnjeći kotleti",
     ingredients: [
       "4 jagnjeća kotleta",
       "2 kašike maslinovog ulja",
@@ -401,7 +401,7 @@ export const halalRecipes = {
   },
 
   "Halal Sausages": {
-    name: "Halal Sausages",
+    name: "Halal kobasice",
     ingredients: [
       "1 kg halal juneće mleveno meso",
       "250 g halal jagnjeće mleveno meso (opciono)",
@@ -431,7 +431,7 @@ export const halalRecipes = {
   },
 
   "Beef Stir Fry": {
-    name: "Beef Stir Fry",
+    name: "Pržena govedina",
     ingredients: [
       "500g goveđeg filea, isečenog na tanke trake",
       "2 kašike soja sosa",
@@ -465,7 +465,7 @@ export const halalRecipes = {
   },
 
   "Chicken Soup": {
-    name: "Chicken Soup",
+    name: "Pileća supa",
     ingredients: [
       "1 celo pile (oko 1.5 kg)",
       "2 litra vode",
@@ -496,7 +496,7 @@ export const halalRecipes = {
   },
 
   "Halal Meatballs": {
-    name: "Halal Meatballs",
+    name: "Halal ćufte",
     ingredients: [
       "500g mlevenog halal mesa (junetina ili jagnjetina)",
       "1 srednja glavica luka, sitno iseckana",
@@ -524,7 +524,7 @@ export const halalRecipes = {
   },
 
   "Lamb Stew": {
-    name: "Lamb Stew",
+    name: "Jagnjeći gulaš",
     ingredients: [
       "1 kg jagnjetine, isečene na kocke od 2.5 cm",
       "2 kašike maslinovog ulja",
@@ -565,7 +565,7 @@ export const halalRecipes = {
   },
 
   "Chicken Wings": {
-    name: "Chicken Wings",
+    name: "Pileća krilca",
     ingredients: [
       "1 kg pilećih krilaca",
       "2 kašike maslinovog ulja",
@@ -592,7 +592,7 @@ export const halalRecipes = {
   },
 
   "Beef Tacos": {
-    name: "Beef Tacos",
+    name: "Goveđi takos",
     ingredients: [
       "500g mlevene junetine",
       "1 kašika maslinovog ulja",
@@ -623,7 +623,7 @@ export const halalRecipes = {
   },
 
   "Halal Sandwiches": {
-    name: "Halal Sandwiches",
+    name: "Halal sendviči",
     ingredients: [
       "8 kriške halal hleba",
       "200g halal narezane ćuretine ili piletine",

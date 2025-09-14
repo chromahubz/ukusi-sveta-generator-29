@@ -1,7 +1,7 @@
 export const glutenFreeRecipes = {
   // Gluten-free
   "Quinoa Salad": {
-    name: "Quinoa Salad",
+    name: "Kinoa salata",
     ingredients: [
       "1 šolja kinoe",
       "2 šolje vode ili supe od povrća",
@@ -30,7 +30,7 @@ export const glutenFreeRecipes = {
     servings: 4
   },
   "Rice Bowl": {
-    name: "Rice Bowl",
+    name: "Činija sa pirinčem",
     ingredients: [
       "1 šolja pirinča dugog zrna",
       "2 šolje vode",
@@ -61,7 +61,7 @@ export const glutenFreeRecipes = {
     servings: 2
   },
   "Grilled Chicken GF": {
-    name: "Grilled Chicken",
+    name: "Grilovana piletina",
     ingredients: [
       "4 komada pilećeg filea (oko 150g svaki)",
       "2 kašike maslinovog ulja",
@@ -84,7 +84,7 @@ export const glutenFreeRecipes = {
     servings: 4
   },
   "Baked Salmon GF": {
-    name: "Baked Salmon",
+    name: "Pečeni losos",
     ingredients: [
       "4 fileta lososa (oko 150g svaki)",
       "2 kašike maslinovog ulja",
@@ -110,7 +110,7 @@ export const glutenFreeRecipes = {
     servings: 4
   },
   "Vegetable Stir Fry GF": {
-    name: "Vegetable Stir Fry",
+    name: "Pohovano povrće",
     ingredients: [
       "1 kašika susamovog ulja",
       "1 mali crveni luk, iseckan",
@@ -142,7 +142,7 @@ export const glutenFreeRecipes = {
     servings: 2
   },
   "Corn Tortillas GF": {
-    name: "Corn Tortillas",
+    name: "Kukuruzne tortilje",
     ingredients: [
       "2 šolje (250g) masa harina (kukuruzno brašno za tortilje)",
       "1 1/2 šolje (360ml) topla voda",
@@ -167,7 +167,7 @@ export const glutenFreeRecipes = {
     servings: 12
   },
   "Rice Noodles GF": {
-    name: "Rice Noodles",
+    name: "Pirinčani rezanci",
     ingredients: [
       "200g suvih pirinčanih rezanaca",
       "2 kašike soja sosa",
@@ -193,7 +193,7 @@ export const glutenFreeRecipes = {
     servings: 2
   },
   "Potato Dishes GF": {
-    name: "Potato Dishes",
+    name: "Jela od krompira",
     ingredients: [
       "1 kg krompira",
       "2 kašike maslinovog ulja",
@@ -218,7 +218,7 @@ export const glutenFreeRecipes = {
     servings: 4
   },
   "Greek Salad GF": {
-    name: "Greek Salad",
+    name: "Grčka salata",
     ingredients: [
       "1 krastavac, srednje veličine",
       "2 paradajza, srednje veličine",
@@ -248,7 +248,7 @@ export const glutenFreeRecipes = {
     servings: 4
   },
   "Fruit Salad GF": {
-    name: "Fruit Salad",
+    name: "Voćna salata",
     ingredients: [
       "1 šolja jagoda, iseckanih",
       "1 šolja borovnica",
@@ -274,7 +274,7 @@ export const glutenFreeRecipes = {
     servings: 6
   },
   "Smoothie Bowl GF": {
-    name: "Smoothie Bowl",
+    name: "Smuti činija",
     ingredients: [
       "1 smrznuta banana",
       "1/2 šolje smrznutih bobica (jagode, borovnice, maline)",
@@ -296,7 +296,7 @@ export const glutenFreeRecipes = {
     servings: 1
   },
   "Roasted Vegetables GF": {
-    name: "Roasted Vegetables",
+    name: "Pečeno povrće",
     ingredients: [
       "1 crvena paprika, isečena na komade",
       "1 žuta paprika, isečena na komade",
@@ -325,7 +325,7 @@ export const glutenFreeRecipes = {
     servings: 4
   },
   "Meat and Vegetables GF": {
-    name: "Meat and Vegetables",
+    name: "Meso i povrće",
     ingredients: [
       "500g junećeg mesa (isečenog na kockice)",
       "2 kašike maslinovog ulja",
@@ -360,7 +360,7 @@ export const glutenFreeRecipes = {
     servings: 4
   },
   "Fish Dishes GF": {
-    name: "Fish Dishes",
+    name: "Riblja jela",
     ingredients: [
       "2 fileta bele ribe (npr. oslić, bakalar), oko 150g svaki",
       "1 limun",
@@ -390,7 +390,7 @@ export const glutenFreeRecipes = {
     servings: 2
   },
   "Eggs GF": {
-    name: "Eggs",
+    name: "Jaja",
     ingredients: [
       "Jaja (koliko želite)",
       "Voda",
@@ -412,7 +412,7 @@ export const glutenFreeRecipes = {
     servings: 1
   },
   "Yogurt Parfait GF": {
-    name: "Yogurt Parfait",
+    name: "Jogurt parfait",
     ingredients: [
       "150g grčkog jogurta",
       "50g granole",
@@ -432,7 +432,7 @@ export const glutenFreeRecipes = {
     servings: 1
   },
   "Nut Butter GF": {
-    name: "Nut Butter",
+    name: "Orašasti puter",
     ingredients: [
       "2 šolje sirovih orašastih plodova (badem, kikiriki, lešnik, orah, indijski orah, ili mešavina)",
       "1-2 kašike neutralnog ulja (opciono)",
@@ -455,7 +455,7 @@ export const glutenFreeRecipes = {
     servings: 16
   },
   "Gluten-Free Bread": {
-    name: "Gluten-Free Bread",
+    name: "Hleb bez glutena",
     ingredients: [
       "300g mešavine brašna bez glutena (univerzalna mešavina)",
       "1 kašičica soli",
@@ -485,7 +485,7 @@ export const glutenFreeRecipes = {
     servings: 10
   },
   "Rice Crackers GF": {
-    name: "Rice Crackers",
+    name: "Pirinčani krekeri",
     ingredients: [
       "1 šolja (200g) kuvane riže (najbolje kratkog zrna)",
       "1/4 šolje (30g) pirinčanog brašna",
@@ -512,7 +512,7 @@ export const glutenFreeRecipes = {
     servings: 24
   },
   "Cheese and Fruit GF": {
-    name: "Cheese and Fruit",
+    name: "Sir i voće",
     ingredients: [
       "200g mekanog sira (npr. brie ili camembert)",
       "100g tvrdog sira (npr. cheddar ili gauda)",

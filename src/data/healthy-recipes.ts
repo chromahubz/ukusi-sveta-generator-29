@@ -2,7 +2,7 @@ import { Recipe } from './recipes';
 
 export const healthyRecipes: Record<string, Recipe> = {
   "Quinoa Bowl": {
-    name: "Quinoa Bowl",
+    name: "Kinoa činija",
     ingredients: [
       "1 šolja quinoa",
       "2 šolje vode ili bujona",
@@ -36,7 +36,7 @@ export const healthyRecipes: Record<string, Recipe> = {
   },
 
   "Kale Salad": {
-    name: "Kale Salad",
+    name: "Kelj salata",
     ingredients: [
       "1 glavica kelja (oko 250g), uklonjene stabljike i tanko iseckan",
       "1/2 šolje iseckanih oraha ili badema",
@@ -63,7 +63,7 @@ export const healthyRecipes: Record<string, Recipe> = {
   },
 
   "Acai Bowl": {
-    name: "Acai Bowl",
+    name: "Acai činija",
     ingredients: [
       "100g zamrznutog acai pirea (nesladjenog)",
       "1/2 smrznute banane",
@@ -90,7 +90,7 @@ export const healthyRecipes: Record<string, Recipe> = {
   },
 
   "Chia Pudding": {
-    name: "Chia Pudding",
+    name: "Chia puding",
     ingredients: [
       "3 supene kašike chia semenki",
       "1 šolja mleka (kravljeg, bademovog, kokosovog ili drugog)",
@@ -113,7 +113,7 @@ export const healthyRecipes: Record<string, Recipe> = {
   },
 
   "Green Smoothie": {
-    name: "Green Smoothie",
+    name: "Zeleni smuti",
     ingredients: [
       "1 šolja spanaća, opranog",
       "1/2 zelene jabuke, isečene na komade",
@@ -134,7 +134,7 @@ export const healthyRecipes: Record<string, Recipe> = {
   },
 
     "Avocado Toast": {
-    name: "Avocado Toast",
+    name: "Avokado tost",
     ingredients: [
       "1 kriška hleba (po izboru)",
       "1/2 avokada",
@@ -161,7 +161,7 @@ export const healthyRecipes: Record<string, Recipe> = {
     servings: 1
   },
   "Grilled Vegetables": {
-    name: "Grilled Vegetables",
+    name: "Grilovano povrće",
     ingredients: [
       "1 srednji patlidžan, isečen na kriške debljine 1 cm",
       "1 crvena paprika, očišćena od semenki i isečena na četvrtine",
@@ -187,7 +187,7 @@ export const healthyRecipes: Record<string, Recipe> = {
     servings: 4
   },
   "Salmon Fillet": {
-    name: "Salmon Fillet",
+    name: "Lososi file",
     ingredients: [
       "2 komada fileta lososa (oko 150g svaki)",
       "2 kašike maslinovog ulja",
@@ -211,7 +211,7 @@ export const healthyRecipes: Record<string, Recipe> = {
     servings: 2
   },
   "Sweet Potato": {
-    name: "Sweet Potato",
+    name: "Slatki krompir",
     ingredients: [
       "2 velika slatka krompira (oko 700g)",
       "2 kašike maslinovog ulja",
@@ -233,7 +233,7 @@ export const healthyRecipes: Record<string, Recipe> = {
     servings: 4
   },
   "Brown Rice": {
-    name: "Brown Rice",
+    name: "Braon pirinač",
     ingredients: [
       "1 šolja integralnog pirinča",
       "2 šolje vode ili bujona",
@@ -254,7 +254,7 @@ export const healthyRecipes: Record<string, Recipe> = {
     servings: 4
   },
   "Lentil Soup": {
-    name: "Lentil Soup",
+    name: "Supa od leće",
     ingredients: [
       "2 kašike maslinovog ulja",
       "1 veliki luk, iseckan",
@@ -287,7 +287,7 @@ export const healthyRecipes: Record<string, Recipe> = {
     servings: 6
   },
   "Greek Yogurt": {
-    name: "Greek Yogurt",
+    name: "Grčki jogurt",
     ingredients: [
       "4 šolje punomasnog mleka",
       "2 kašike običnog jogurta (sa živim kulturama)"
@@ -311,7 +311,7 @@ export const healthyRecipes: Record<string, Recipe> = {
     servings: 4
   },
   "Nuts and Seeds": {
-    name: "Nuts and Seeds",
+    name: "Orašasti plodovi i semenke",
     ingredients: [
       "1 šolja sirovih badema",
       "1 šolja sirovih oraha",
@@ -337,7 +337,7 @@ export const healthyRecipes: Record<string, Recipe> = {
     servings: 4
   },
   "Fresh Fruit": {
-    name: "Fresh Fruit",
+    name: "Sveže voće",
     ingredients: [
       "1 šolja jagoda, iseckanih",
       "1 šolja borovnica",
@@ -363,7 +363,7 @@ export const healthyRecipes: Record<string, Recipe> = {
     servings: 4
   },
   "Vegetable Juice": {
-    name: "Vegetable Juice",
+    name: "Sok od povrća",
     ingredients: [
       "2 šargarepe, srednje veličine",
       "1 krastavac, srednje veličine",
@@ -388,7 +388,7 @@ export const healthyRecipes: Record<string, Recipe> = {
     servings: 2
   },
     "Protein Smoothie": {
-    name: "Protein Smoothie",
+    name: "Proteinski smuti",
     ingredients: [
       "1 banana",
       "1 merica proteinskog praha (oko 30g)",
@@ -410,7 +410,7 @@ export const healthyRecipes: Record<string, Recipe> = {
     servings: 1
   },
   "Buddha Bowl": {
-    name: "Buddha Bowl",
+    name: "Buddha činija",
     ingredients: [
       "1/2 šolje kinoe",
       "1 šolja vode",
@@ -438,7 +438,7 @@ export const healthyRecipes: Record<string, Recipe> = {
     servings: 1
   },
   "Steamed Broccoli": {
-    name: "Steamed Broccoli",
+    name: "Kuvani brokoli na pari",
     ingredients: [
       "1 glavica brokolija (oko 500g), isečena na cvetiće",
       "1/2 šolje vode",
@@ -460,7 +460,7 @@ export const healthyRecipes: Record<string, Recipe> = {
     servings: 4
   },
   "Quinoa Salad": {
-    name: "Quinoa Salad",
+    name: "Kinoa salata",
     ingredients: [
       "1 šolja kinoe",
       "2 šolje vode ili supe od povrća",
@@ -489,7 +489,7 @@ export const healthyRecipes: Record<string, Recipe> = {
     servings: 4
   },
   "Tofu Stir Fry": {
-    name: "Tofu Stir Fry",
+    name: "Prženi tofu",
     ingredients: [
       "250g čvrstog tofua, isceđenog i isečenog na kockice",
       "1 kašika kukuruznog skroba",

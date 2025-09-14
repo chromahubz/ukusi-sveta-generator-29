@@ -2,7 +2,7 @@ import { Recipe } from './recipes';
 
 export const italianRecipes: Record<string, Recipe> = {
   "Pizza Margherita": {
-    name: "Pizza Margherita",
+    name: "Pizza Margarita",
     description: "Klasična i jednostavna pizza sa paradajz sosom, mocarelom i bosiljkom.",
     ingredients: [
       "Testo za pizzu:",
@@ -43,7 +43,7 @@ export const italianRecipes: Record<string, Recipe> = {
   },
 
   "Spaghetti Carbonara": {
-    name: "Spaghetti Carbonara",
+    name: "Špagete karbonara",
     description: "Klasično italijansko jelo od testenine, jaja, slanine (guanciale ili pancete), parmezana i bibera. Brzo, jednostavno i ukusno.",
     ingredients: [
       "350g špageta",
@@ -69,7 +69,7 @@ export const italianRecipes: Record<string, Recipe> = {
   },
 
   "Lasagna": {
-    name: "Lasagna",
+    name: "Lazanje",
     description: "Klasično italijansko jelo od slojeva testenine, sosa od mesa, bešamela i sira.",
     ingredients: [
       "1 kašika maslinovog ulja",
@@ -110,7 +110,7 @@ export const italianRecipes: Record<string, Recipe> = {
   },
 
   "Risotto": {
-    name: "Risotto",
+    name: "Ržoto",
     description: "Kremasto i ukusno jelo od pirinča, savršeno kao glavno jelo ili prilog.",
     ingredients: [
       "1 kašika maslinovog ulja",
@@ -136,7 +136,7 @@ export const italianRecipes: Record<string, Recipe> = {
   },
 
   "Osso Buco": {
-    name: "Osso Buco",
+    name: "Oso buko",
     description: "Tradicionalno italijansko jelo od telećih kolenica, sporo kuvano u vinu i povrću.",
     ingredients: [
       "4 teleće kolenice (oko 3-4 cm debljine)",
@@ -264,7 +264,7 @@ export const italianRecipes: Record<string, Recipe> = {
   },
 
   "Bruschetta": {
-    name: "Bruschetta",
+    name: "Brusketa",
     description: "Hrskavi komadi hleba premazani belim lukom, preliveni svežim paradajzom, bosiljkom i maslinovim uljem. Savršeno predjelo ili lagani obrok.",
     ingredients: [
       "1 baget, isečen na kriške debljine 1.5cm",
@@ -291,7 +291,7 @@ export const italianRecipes: Record<string, Recipe> = {
   },
 
   "Antipasto": {
-    name: "Antipasto",
+    name: "Antipasti",
     description: "Brzi i jednostavan italijanski predjelo savršeno za druženje. Raznovrsna kombinacija ukusa i tekstura.",
     ingredients: [
       "100g suhomesnatog proizvoda (pršuta, salami, kulen)",
@@ -322,7 +322,7 @@ export const italianRecipes: Record<string, Recipe> = {
   },
 
   "Gnocchi": {
-    name: "Gnocchi",
+    name: "Njoki",
     description: "Krompir testo oblikovano u male knedle, obično servirane sa sosom.",
     ingredients: [
       "1 kg krompira (najbolje brašnasti)",
@@ -353,7 +353,7 @@ export const italianRecipes: Record<string, Recipe> = {
   },
 
   "Prosciutto": {
-    name: "Prosciutto",
+    name: "Prošuta",
     description: "Suhomesnati proizvod od svinjskog buta, sušen na vazduhu.",
     ingredients: [
       "1 svinjski but (oko 6-8 kg), sa kožom i kostima",
@@ -379,7 +379,7 @@ export const italianRecipes: Record<string, Recipe> = {
   },
 
   "Mozzarella": {
-    name: "Mozzarella",
+    name: "Mocarela",
     description: "Sveža, domaća mocarela je delikates koji možete lako napraviti kod kuće. Ovaj recept daje kremastu i ukusnu mocarelu.",
     ingredients: [
       "4 litre punomasnog mleka (nepasterizovanog, ako je moguće)",
@@ -410,7 +410,7 @@ export const italianRecipes: Record<string, Recipe> = {
   },
 
   "Parmigiana": {
-    name: "Parmigiana",
+    name: "Parmidžana",
     description: "Klasično italijansko jelo od patlidžana, paradajza i parmezana.",
     ingredients: [
       "2 velika patlidžana",
@@ -442,7 +442,7 @@ export const italianRecipes: Record<string, Recipe> = {
   },
 
   "Cannoli": {
-    name: "Cannoli",
+    name: "Kanoli",
     description: "Hrskavi, slatki cilindri punjeni bogatim, kremastim filom od rikote. Klasična italijanska poslastica!",
     ingredients: [
       "Za testo:",
@@ -487,7 +487,7 @@ export const italianRecipes: Record<string, Recipe> = {
   },
 
   "Focaccia": {
-    name: "Focaccia",
+    name: "Fokača",
     description: "Fokača je italijanski hleb, sličan pici, idealan kao prilog ili osnova za sendviče.",
     ingredients: [
       "500g brašna (tip 00 ili jače brašno)",
@@ -586,7 +586,7 @@ export const italianRecipes: Record<string, Recipe> = {
   },
 
   "Caprese Salad": {
-    name: "Caprese Salad",
+    name: "Kaprese salata",
     description: "Osvežavajuća i jednostavna salata idealna kao predjelo ili lagani obrok.",
     ingredients: [
       "400g zrelih paradajza",
@@ -612,7 +612,7 @@ export const italianRecipes: Record<string, Recipe> = {
   },
 
   "Espresso": {
-    name: "Espresso",
+    name: "Espreso",
     description: "Kratak, koncentrisani napitak od kafe, napravljen propuštanjem vruće vode pod visokim pritiskom kroz fino mlevenu kafu.",
     ingredients: [
       "7-9 grama fino mlevene kafe za espresso",
