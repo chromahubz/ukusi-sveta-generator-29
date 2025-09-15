@@ -20,10 +20,10 @@ export const foodCategories: FoodCategory[] = [
     id: "american",
     name: "Američka kuhinja",
     foods: [
-      "Mac and Cheese", "BBQ Ribs", "Fried Chicken", "Meatloaf", "Cheeseburger", 
-      "Hot Dogs", "Buffalo Wings", "Apple Pie", "Clam Chowder", "Philly Cheesesteak", 
-      "Jambalaya", "Gumbo", "Cornbread", "Coleslaw", "Pulled Pork", "Biscuits and Gravy", 
-      "Chicken and Waffles", "Key Lime Pie", "Pancakes", "Mashed Potatoes"
+      "Makaroni sa sirom", "BBQ rebra", "Pržena piletina", "Ševap od mesa", "Čizburger",
+      "Hot Dogs", "Buffalo Wings", "Pita sa jabukama", "Školjke čorba", "Philly Cheesesteak",
+      "Jambalaya", "Gumbo", "Kukuruzni hleb", "Salata od kupusa", "Čupana svinjetina", "Keks sa sosom",
+      "Piletina i vafli", "Pita od lajma", "Palačinke", "Pire krompir"
     ]
   },
   {
@@ -39,9 +39,9 @@ export const foodCategories: FoodCategory[] = [
     id: "asian",
     name: "Azijska",
     foods: [
-      "Pad Thai", "Sushi", "Ramen", "Dim Sum", "Bibimbap", "Tom Yum", "Pho", 
-      "Dumplings", "Laksa", "Satay", "Miso Soup", "Tempura", "Yakitori", "Bulgogi", 
-      "Kimchi", "Fried Rice", "Spring Rolls", "Bao Buns", "Chow Mein", "Teriyaki"
+      "Pad taj", "Suši", "Ramen", "Dim sam", "Bibimbap", "Tom jam", "Fo",
+      "Knedle", "Laksa", "Satej", "Miso supa", "Tempura", "Jakitori", "Bulgogi",
+      "Kimči", "Prženi pirinač", "Prolećni rolovi", "Bao zemičke", "Chow Mein", "Terijaki"
     ]
   },
   {
@@ -78,10 +78,10 @@ export const foodCategories: FoodCategory[] = [
     id: "breakfast",
     name: "Doručak",
     foods: [
-      "Jaja na oko", "Kajgana", "Omlet", "Francuski Tost", "Granola", "Müsli", 
-      "Jogurt sa voćem", "Ovsene pahuljice", "Tost sa avokado", "Smuthi", 
-      "Palačinke", "Vafli", "Kroasan", "Bagel", "Slanina i jaja", "Prženi Krompir", 
-      "Mafini", "Skons", "Chia Pudding", "Protein Bowl"
+      "Jaja na oko", "Kajgana", "Omlet", "Francuski tost", "Granola", "Mjusli",
+      "Jogurt sa voćem", "Ovsene pahuljice", "Tost sa avokado", "Smuti",
+      "Palačinke", "Vafli", "Kroasan", "Begl", "Slanina i jaja", "Prženi krompir",
+      "Mafini", "Skons", "Chia puding", "Protein činija"
     ]
   },
   {
@@ -108,20 +108,20 @@ export const foodCategories: FoodCategory[] = [
     id: "chicken",
     name: "Piletina",
     foods: [
-      "Pileći file", "Pileće batake", "Pileće krile", "Pileći šnicl", "Chicken Tikka", 
-      "Buffalo Wings", "Chicken Teriyaki", "Chicken Alfredo", "Kung Pao Chicken", 
-      "Chicken Parmesan", "Chicken Fajitas", "Fried Chicken", "Grilled Chicken", 
-      "Chicken Curry", "Chicken Marsala", "Chicken Kiev", "Chicken Cordon Bleu", 
-      "BBQ Chicken", "Chicken Salad", "Chicken Soup"
+      "Pileći file", "Pileće batake", "Pileće krile", "Pileći šnicl", "Pileća tikka",
+      "Bafalo krilca", "Pileća terijaki", "Pileća alfredo", "Kung pao piletina",
+      "Pileći parmezan", "Pileće fahite", "Pržena piletina", "Grilovana piletina",
+      "Pileći kari", "Pileća marsala", "Pileća kijev", "Pileći kordon ble",
+      "BBQ piletina", "Pileća salata", "Pileća supa"
     ]
   },
   {
     id: "chinese",
     name: "Kineska",
     foods: [
-      "Sweet and Sour Pork", "Kung Pao Chicken", "Beef and Broccoli", "Chow Mein", 
-      "Fried Rice", "Spring Rolls", "Dumplings", "Hot Pot", "Peking Duck", 
-      "Mapo Tofu", "Dan Dan Noodles", "Wontons", "Char Siu", "General Tso's Chicken", 
+      "Slatko-kisela svinjetina", "Kung pao piletina", "Govedina sa brokolijem", "Chow Mein",
+      "Prženi pirinač", "Prolećni rolovi", "Dumplings", "Vrući lonac", "Peking Duck",
+      "Mapo Tofu", "Dan Dan Noodles", "Wontons", "Char Siu", "General Cao piletina",
       "Ma La Tang", "Xiaolongbao", "Congee", "Century Egg", "Tea Eggs", "Bubble Tea"
     ]
   },
@@ -277,9 +277,9 @@ export const foodCategories: FoodCategory[] = [
     id: "korean",
     name: "Koreanska",
     foods: [
-      "Kimchi", "Bulgogi", "Bibimbap", "Korean BBQ", "Japchae", "Tteokbokki", 
-      "Kimchi Jjigae", "Galbi", "Samgyeopsal", "Banchan", "Korean Fried Chicken", 
-      "Hotteok", "Naengmyeon", "Sundae", "Pajeon", "Gimbap", "Mandu", "Bossam", "Jajangmyeon", "Korean Corn Dogs"
+      "Kimči", "Bulgogi", "Bibimbap", "Koreanski roštilj", "Japče", "Teokboki",
+      "Kimči đige", "Galbi", "Samgjeopsal", "Banšan", "Koreanska pržena piletina",
+      "Hotek", "Nengmjeon", "Sunde", "Pađeon", "Gimbap", "Mandu", "Bosam", "Džađangmjeon", "Koreanski kukuruzni hotdog"
     ]
   },
   {
@@ -316,10 +316,10 @@ export const foodCategories: FoodCategory[] = [
     id: "noodles",
     name: "Nudle",
     foods: [
-      "Ramen", "Pad Thai", "Pho", "Lo Mein", "Chow Mein", "Udon", 
-      "Soba", "Rice Noodles", "Egg Noodles", "Instant Noodles", 
-      "Dan Dan Noodles", "Laksa", "Beef Noodle Soup", "Chicken Noodle Soup", "Spicy Noodles", 
-      "Cold Noodles", "Stir Fried Noodles", "Noodle Salad", "Curry Noodles", "Sesame Noodles"
+      "Ramen", "Pad Thai", "Pho", "Lo Mein", "Chow Mein", "Udon",
+      "Soba", "Pirinčane nudle", "Nudle od jaja", "Instant nudle",
+      "Dan Dan Noodles", "Laksa", "Goveđa supa sa nudlama", "Pileća supa sa nudlama", "Ljute nudle",
+      "Hladne nudle", "Nudle na tiganju", "Salata sa nudlama", "Nudle sa karijem", "Nudle sa sezamom"
     ]
   },
   {
@@ -336,19 +336,19 @@ export const foodCategories: FoodCategory[] = [
     id: "pizza",
     name: "Pica",
     foods: [
-      "Margherita", "Pepperoni", "Hawaiian", "Quattro Stagioni", "Prosciutto", 
-      "Funghi", "Capricciosa", "Diavola", "Veggie Pizza", "Meat Lovers", 
-      "BBQ Chicken", "White Pizza", "Buffalo Chicken", "Supreme", "Mediterranean", 
-      "Sicilian", "Chicago Deep Dish", "Neapolitan", "Calzone", "Stromboli"
+      "Margherita", "Pepperoni", "Hawaiian", "Quattro Stagioni", "Prosciutto",
+      "Funghi", "Capricciosa", "Diavola", "Povrćna pica", "Pica za ljubitelje mesa",
+      "BBQ pileća pica", "Bela pica", "Buffalo pileća pica", "Suverena pica", "Mediteranska pica",
+      "Sicilian", "Čikago duboka pica", "Napolitanska pica", "Calzone", "Stromboli"
     ]
   },
   {
     id: "russian",
     name: "Ruska",
     foods: [
-      "Borscht", "Beef Stroganoff", "Pierogi", "Blini", "Caviar", "Vodka", 
-      "Russian Salad", "Goulash", "Syrniki", "Kasha", "Shchi", "Solyanka", 
-      "Kotlety", "Pelmeni", "Varenya", "Kvass", "Smetana", "Tvorog", "Buckwheat", "Russian Tea"
+      "Borscht", "Goveđi stroganof", "Pierogi", "Blini", "Caviar", "Vodka",
+      "Ruska salata", "Goulash", "Syrniki", "Kasha", "Shchi", "Solyanka",
+      "Kotlety", "Pelmeni", "Varenya", "Kvass", "Smetana", "Tvorog", "Heljda", "Ruski čaj"
     ]
   },
   {
@@ -365,10 +365,10 @@ export const foodCategories: FoodCategory[] = [
     id: "sandwich",
     name: "Sendvič",
     foods: [
-      "Club Sandwich", "BLT", "Grilled Cheese", "Panini", "Reuben", 
-      "Philly Cheesesteak", "Cuban Sandwich", "Monte Cristo", "Po' Boy", "Meatball Sub", 
-      "Turkey Sandwich", "Ham and Cheese", "Tuna Salad Sandwich", "Egg Salad Sandwich", "Chicken Salad Sandwich", 
-      "Italian Sub", "French Dip", "Banh Mi", "Gyro", "Falafel Wrap"
+      "Club Sandwich", "BLT", "Grilovani sir sendvič", "Panini", "Reuben",
+      "Philly Cheesesteak", "Cuban Sandwich", "Monte Cristo", "Po' Boy", "Meatball Sub",
+      "Ćurka sendvič", "Šunka i sir sendvič", "Tuna salata sendvič", "Jaja salata sendvič", "Pileća salata sendvič",
+      "Italijanski sendvič", "Francuski umak sendvič", "Banh Mi", "Gyro", "Falafel Wrap"
     ]
   },
   {
@@ -394,47 +394,47 @@ export const foodCategories: FoodCategory[] = [
     id: "steak",
     name: "Stejk",
     foods: [
-      "Ribeye Steak", "Filet Mignon", "New York Strip", "T-Bone Steak", "Porterhouse", 
-      "Sirloin Steak", "Flank Steak", "Skirt Steak", "Hanger Steak", "Flat Iron Steak", 
-      "Prime Rib", "Tomahawk Steak", "Denver Steak", "Tri-Tip", "Round Steak", 
-      "Chuck Steak", "Blade Steak", "Top Round", "Bottom Round", "Eye of Round"
+      "Ribaj stejk", "File minjon", "Njujork strip", "T-bone stejk", "Porterhaus",
+      "Sirlojn stejk", "Flank stejk", "Skrt stejk", "Henger stejk", "Flat ajron stejk",
+      "Prajm rib", "Tomahok stejk", "Denver stejk", "Tri-tip", "Round stejk",
+      "Čak stejk", "Blejd stejk", "Top round", "Bottom round", "Aj of round"
     ]
   },
   {
     id: "street-food",
     name: "Street Food",
     foods: [
-      "Tacos", "Hot Dogs", "Falafel", "Gyros", "Banh Mi", "Corn Dogs", 
-      "Fish and Chips", "Empanadas", "Arepas", "Churros", "Pretzel", "Kebab", 
-      "Samosa", "Spring Rolls", "Dumplings", "Bao Buns", "Takoyaki", "Elote", "Satay", "Crepes"
+      "Takos", "Hot dogovi", "Falafel", "Điros", "Ban mi", "Kukuruzni hotdog",
+      "Riba sa pomfritom", "Empanada", "Arepa", "Čuros", "Perec", "Kebab",
+      "Samosa", "Prolećni rolovi", "Knedle", "Bao zemičke", "Takojaki", "Elote", "Satej", "Krep"
     ]
   },
   {
     id: "sushi",
     name: "Suši",
     foods: [
-      "California Roll", "Salmon Roll", "Tuna Roll", "Spicy Tuna Roll", "Rainbow Roll", 
-      "Dragon Roll", "Philadelphia Roll", "Eel Roll", "Tempura Roll", "Salmon Sashimi", 
-      "Tuna Sashimi", "Chirashi Bowl", "Hand Rolls", "Inside Out Rolls", "Sushi Boat"
+      "Kalifornijski rol", "Losos rol", "Tuna rol", "Ljuti tuna rol", "Duga rol",
+      "Zmaj rol", "Filadelfija rol", "Jegulja rol", "Tempura rol", "Losos sašimi",
+      "Tuna sašimi", "Čiraši činija", "Ručni rolovi", "Naopako rolovi", "Suši čamac"
     ]
   },
   {
     id: "thai",
     name: "Tajlandska",
     foods: [
-      "Pad Thai", "Tom Yum", "Green Curry", "Red Curry", "Massaman Curry", 
-      "Som Tam", "Pad See Ew", "Larb", "Thai Basil Chicken", "Mango Sticky Rice", 
-      "Tom Kha Gai", "Pad Krapow", "Thai Fried Rice", "Satay", "Spring Rolls", 
-      "Papaya Salad", "Coconut Soup", "Thai Tea", "Pad Woon Sen", "Thai Beef Salad"
+      "Pad taj", "Tom jam", "Zeleni kari", "Crveni kari", "Masaman kari",
+      "Som tam", "Pad si ju", "Larb", "Tajlandska piletina sa bosiljkom", "Mango lepljivi pirinač",
+      "Tom ka gaj", "Pad krajav", "Tajlandski prženi pirinač", "Satej", "Prolećni rolovi",
+      "Papaja salata", "Kokos supa", "Tajlandski čaj", "Pad vun sen", "Tajlandska salata od govedine"
     ]
   },
   {
     id: "turkish",
     name: "Turska",
     foods: [
-      "Kebab", "Doner", "Baklava", "Turkish Delight", "Dolma", "Lahmacun", 
-      "Pide", "Meze", "Turkish Coffee", "Börek", "Köfte", "Iskender", 
-      "Simit", "Ayran", "Raki", "Turkish Breakfast", "Menemen", "Cacik", "Patlican Salata", "Kunefe"
+      "Kebab", "Dener", "Baklava", "Tursko uživanje", "Dolma", "Lahmadžun",
+      "Pide", "Meze", "Turska kafa", "Berek", "Kefte", "Iskender",
+      "Simit", "Ajran", "Raki", "Turski doručak", "Menemen", "Džadžik", "Patlidžan salata", "Kunefe"
     ]
   },
   {
@@ -471,20 +471,20 @@ export const foodCategories: FoodCategory[] = [
     id: "wings",
     name: "Krilca",
     foods: [
-      "Buffalo Wings", "BBQ Wings", "Honey Garlic Wings", "Spicy Wings", "Lemon Pepper Wings", 
-      "Teriyaki Wings", "Hot Wings", "Mild Wings", "Sweet and Sour Wings", "Cajun Wings", 
-      "Korean Wings", "Jerk Wings", "Parmesan Wings", "Ranch Wings", "Smoky Wings", 
-      "Grilled Wings", "Baked Wings", "Fried Wings", "Boneless Wings", "Wing Combo"
+      "Bafalo krilca", "BBQ krilca", "Krilca med beli luk", "Ljuta krilca", "Krilca sa limunom i biberom",
+      "Terijaki krilca", "Ljuta krilca", "Blaga krilca", "Slatko-kisela krilca", "Kajun krilca",
+      "Koreanska krilca", "Džerk krilca", "Parmezan krilca", "Ranč krilca", "Dimna krilca",
+      "Grilovana krilca", "Pečena krilca", "Pržena krilca", "Krilca bez kostiju", "Kombinacija krilaca"
     ]
   },
   {
     id: "wraps",
     name: "Vrapovi",
     foods: [
-      "Chicken Caesar Wrap", "Turkey Wrap", "Veggie Wrap", "Buffalo Chicken Wrap", "Club Wrap", 
-      "Tuna Wrap", "Ham and Cheese Wrap", "Falafel Wrap", "Greek Wrap", "Mexican Wrap", 
-      "Asian Wrap", "Breakfast Wrap", "Protein Wrap", "Salmon Wrap", "Steak Wrap", 
-      "Hummus Wrap", "Avocado Wrap", "Spinach Wrap", "Chicken Salad Wrap", "BLT Wrap"
+      "Pileći cezar vrap", "Ćurka vrap", "Povrćni vrap", "Bafalo pileći vrap", "Klub vrap",
+      "Tuna vrap", "Šunka i sir vrap", "Falafel Wrap", "Grčki vrap", "Meksički vrap",
+      "Azijski vrap", "Doručak vrap", "Protein vrap", "Losos vrap", "Stejk vrap",
+      "Humus vrap", "Avokado vrap", "Spanać vrap", "Pileća salata vrap", "BLT vrap"
     ]
   }
 ];

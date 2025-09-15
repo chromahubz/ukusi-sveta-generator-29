@@ -1197,29 +1197,322 @@ export const recipes: Record<string, Recipe> = {
     servings: 1
   },
   "Hash Browns": {
-    name: "Hash Browns",
+    name: "Hrskavi krompir",
+    description: "Američki doručak od rendanog krompira, zlatno prženog do hrskavosti.",
     ingredients: [
-      "4 velika krompira (oko 700g), oljuštena",
-      "2 kašike biljnog ulja",
-      "1/2 srednje glavice crnog luka, sitno iseckanog (opciono)",
-      "So po ukusu",
-      "Biber po ukusu"
+      "4 velika krompira",
+      "1 kašičica soli",
+      "1/2 kašičice crnog bibera",
+      "3 kašike ulja ili masla",
+      "1 kašičica crvene paprike (opciono)"
     ],
     instructions: [
-      "Krompir izrendajte na krupno rende.",
-      "Izrendani krompir stavite u čistu krpu ili gazu i iscedite višak tečnosti. Ovo je ključno za hrskavost.",
-      "U velikom tiganju zagrejte ulje na srednjoj vatri.",
-      "Dodajte seckani luk (ako koristite) i pržite dok ne postane staklast, oko 3-4 minuta.",
-      "Dodajte isceđeni krompir u tiganj. Ravnomerno ga rasporedite.",
-      "Začinite solju i biberom.",
-      "Pecite oko 10 minuta sa jedne strane, dok ne postane zlatno braon i hrskavo.",
-      "Pažljivo okrenite hash browns i pecite još 5-10 minuta sa druge strane, dok ne postane zlatno braon i hrskavo.",
-      "Izvadite hash browns iz tiganja i stavite ih na papirni ubrus da se ocede od viška ulja.",
-      "Poslužite odmah."
+      "Operite i ogulite krompire.",
+      "Rendajte krompire na krupnoj rendici.",
+      "Stavite rendani krompir u čistu krpu i iscedite što više tečnosti.",
+      "Pomešajte krompir sa solju, biberom i paprikom.",
+      "Zagrejte ulje u velikoj tavi na srednjoj vatri.",
+      "Dodajte smesu krompira u tiganj i ravnomerno ga rasprostrite.",
+      "Pržite 4-5 minuta dok se dno ne pozlati.",
+      "Okrenite pažljivo i pržite još 3-4 minuta.",
+      "Poslužite vruće kao prilog uz jaja ili slaninu."
     ],
-    prepTime: "10 minuta",
-    cookTime: "20 minuta",
-    servings: 4
+    prepTime: "15 minuta",
+    cookTime: "10 minuta",
+    servings: 4,
+    notes: ["Dobro iscedite krompir za najhrskaviji rezultat", "Možete dodati sitno seckan luk za dodatni ukus"],
+    nutrition: { calories: "150 po porciji", protein: "3g", carbs: "22g", fat: "6g" }
+  },
+  "Gulaš": {
+    name: "Gulaš",
+    description: "Tradicionalni mađarski čorba sa govedinom i paprikom, bogata i začinjena.",
+    ingredients: [
+      "1kg govedine (ramena ili vrata)",
+      "3 velika luka",
+      "3 kašike slatke paprike",
+      "2 kašike ljute paprike",
+      "2 paradajza",
+      "3 čena belog luka",
+      "2 kašike ulja",
+      "1 kašičica kima",
+      "2 lovorova lista",
+      "So i biber po ukusu",
+      "1 litar topla voda ili bujon"
+    ],
+    instructions: [
+      "Isecite meso na kockice veličine 3-4cm.",
+      "Sitno isecite luk i propržite ga na ulju dok ne postane staklast.",
+      "Dodajte meso i pržite dok se ne porumeni sa svih strana.",
+      "Sklonite tiganj sa vatre i dodajte papriku, brzo promešajte.",
+      "Vratite na vatru, dodajte paradajz, beli luk, kim i lovor.",
+      "Zaliti toplom vodom, posoliti i pobiberiti.",
+      "Kuvajte pokriveno na slaboj vatri 1.5-2 sata, povremeno mešajući.",
+      "Ako je potrebno, dodajte još vode tokom kuvanja.",
+      "Servirajte toplo sa hlebom ili knedlama."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "2 sata",
+    servings: 6,
+    notes: ["Važno je skloniti tiganj sa vatre pre dodavanja paprike", "Gulaš je još ukusniji sutradan"],
+    nutrition: { calories: "380 po porciji", protein: "32g", carbs: "8g", fat: "24g" }
+  },
+  "Currywurst": {
+    name: "Kari kobasica",
+    description: "Popularna nemačka brza hrana - pržena kobasica sa kari sosom.",
+    ingredients: [
+      "4 nemačke kobasice (bratwurst)",
+      "2 kašike kečapa",
+      "1 kašika kari praha",
+      "1 kašičica crvene paprike",
+      "1 kašičica šećera",
+      "1/2 kašičice worcestershire sosa",
+      "2 kašike ulja",
+      "So i biber po ukusu"
+    ],
+    instructions: [
+      "Zagrejte ulje u tiganju na srednjoj vatri.",
+      "Dodajte kobasice i pržite ih 8-10 minuta, povremeno okrećući.",
+      "U manjoj posudi pomešajte kečap, kari prah, papriku, šećer i worcestershire sos.",
+      "Kada su kobasice gotove, izvadite ih i ostavite da se ohlade 2 minuta.",
+      "Isecite kobasice na kolutove debljine 1cm.",
+      "Vratite kobasice u tiganj na 1 minut da se zagreju.",
+      "Prelijte kari sosom i promešajte.",
+      "Servirajte toplo sa hlebom ili pomfritom."
+    ],
+    prepTime: "5 minuta",
+    cookTime: "12 minuta",
+    servings: 2,
+    notes: ["Tradicionalno se servira sa pomfritom", "Možete koristiti bilo koju vrstu kobasice"],
+    nutrition: { calories: "520 po porciji", protein: "22g", carbs: "12g", fat: "42g" }
+  },
+  "Schnitzel": {
+    name: "Šnicla",
+    description: "Klasična austrijska šnicla od telećeg mesa u hrskavoj pohovci.",
+    ingredients: [
+      "4 tanke šnicle od telećeg mesa",
+      "100g brašna",
+      "2 jaja",
+      "150g prezli",
+      "So i biber po ukusu",
+      "200ml ulja za prženje",
+      "2 limuna za servianje"
+    ],
+    instructions: [
+      "Istucajte šnicle čekićem za meso da budu tanke i nežne.",
+      "Posolite i pobiberite meso sa obe strane.",
+      "Pripremite tri plitka tanjira: brašno, umućena jaja, prezle.",
+      "Uvaljajte svaku šniclu prvo u brašno, zatim u jaje, pa u prezle.",
+      "Zagrejte ulje u velikoj tavi na srednjoj vatri.",
+      "Pržite šnicle 2-3 minuta sa svake strane do zlatne boje.",
+      "Stavite na papir da se ocedi ulje.",
+      "Servirajte odmah sa limunom i salatom."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "8 minuta",
+    servings: 4,
+    notes: ["Važno je da ulje bude dovoljno vruće", "Ne pritiskajte šnicle tokom prženja"],
+    nutrition: { calories: "420 po porciji", protein: "35g", carbs: "20g", fat: "22g" }
+  },
+  "Sauerbraten": {
+    name: "Kiselo pečenje",
+    description: "Tradicionalno nemačko pečenje marinirano u kiselom siru nekoliko dana.",
+    ingredients: [
+      "1.5kg govedine za pečenje",
+      "500ml crvenog vina",
+      "250ml sirćeta",
+      "2 luka",
+      "2 šargarepe",
+      "2 stabla celera",
+      "6 zrna bora",
+      "4 lovorova lista",
+      "2 kašike masla",
+      "2 kašike brašna",
+      "100g lebkuchen keksa (ili medenjaka)"
+    ],
+    instructions: [
+      "Pomešajte vino, sirće, pola luka, šargarepu, celer, zrna bora i lovor za marinadu.",
+      "Stavite meso u marinadu i ostavite u frižideru 3-4 dana, povremeno okrećući.",
+      "Izvadite meso iz marinade i osušite. Zadržite marinadu.",
+      "Zagrejte maslo u velikoj šerpi i porumenite meso sa svih strana.",
+      "Dodajte ostatak luka i pržite 5 minuta.",
+      "Procijedite marinadu i dodajte u šerpu.",
+      "Pokrijte i kuvajte na slaboj vatri 2.5-3 sata.",
+      "Izvadite meso i zagrejte sos.",
+      "Dodajte izmrvljene kekse za gustinu.",
+      "Secite meso na deblje kriške i servirajte sa sosom."
+    ],
+    prepTime: "30 minuta + 3-4 dana mariniranje",
+    cookTime: "3 sata",
+    servings: 6,
+    notes: ["Mariniranje je ključno za ukus", "Servirajte sa kneđlama ili krompirom"],
+    nutrition: { calories: "450 po porciji", protein: "38g", carbs: "15g", fat: "26g" }
+  },
+  "Strudel sa jabukama": {
+    name: "Štrudla sa jabukama",
+    description: "Tradicionalni austrijski kolač sa tankim testom i jabukama sa cimetom.",
+    ingredients: [
+      "300g brašna",
+      "1 jaje",
+      "2 kašike ulja",
+      "150ml mlake vode",
+      "1 kašičica soli",
+      "6 jabuka",
+      "80g šećera",
+      "2 kašičice cimeta",
+      "50g mrvica hleba",
+      "50g rastopljenog masla",
+      "50g badema (opciono)"
+    ],
+    instructions: [
+      "Zamesite testo od brašna, jajeta, ulja, vode i soli do glatke konzistencije.",
+      "Ostavite testo da odmara 30 minuta pokriveno.",
+      "Ogulite jabuke i isecite ih na tanke kriške.",
+      "Pomešajte jabuke sa šećerom i cimetom.",
+      "Razvucite testo na pobrašnjenoj krpi što tanje možete.",
+      "Premažite testo rastopljenim masloм.",
+      "Pospite mrvice hleba po jednoj polovini testa.",
+      "Dodajte jabuke preko mrvica.",
+      "Pomoću krpe, pažljivo uvijte štrudlu.",
+      "Premestite na pleh i pecite na 180°C 40-45 minuta."
+    ],
+    prepTime: "45 minuta + 30 min odmor",
+    cookTime: "45 minuta",
+    servings: 8,
+    notes: ["Testo treba da bude providno tanko", "Servirajte toplo sa šlagom"],
+    nutrition: { calories: "280 po porciji", protein: "5g", carbs: "48g", fat: "8g" }
+  },
+  "Moussaka": {
+    name: "Muzaka",
+    description: "Tradicionalno grčko jelo sa patlidžanom, mesom i bešamel sosom.",
+    ingredients: [
+      "3 velika patlidžana",
+      "500g mlevenog jagnjetine ili govedine",
+      "2 luka, sitno seckana",
+      "3 čena belog luka",
+      "400g konzerve paradajza",
+      "2 kašike maslinovog ulja",
+      "1 kašičica cimeta",
+      "50g masla",
+      "50g brašna",
+      "500ml mleka",
+      "100g parmezana",
+      "2 jaja",
+      "So, biber, origano"
+    ],
+    instructions: [
+      "Isecite patlidžane na kolutove i posolite ih. Ostavite 30 minuta da ispuste gorčinu.",
+      "Isperite patlidžane i osušite. Pecite ih u rerni na 200°C 20 minuta.",
+      "Za sos: propržite luk i beli luk, dodajte meso i pržite do rumene boje.",
+      "Dodajte paradajz, cimet, origano, so i biber. Kuvajte 20 minuta.",
+      "Za bešamel: otopite maslo, dodajte brašno i mešajte 2 minuta.",
+      "Postepeno dodajte mleko, mešajući da se ne zakuvaju grudvice.",
+      "Sklonite sa vatre, dodajte parmezan i umućena jaja.",
+      "U tepsiju složite slojeve: patlidžan, meso, patlidžan, bešamel.",
+      "Pecite na 180°C 45 minuta do zlatne kore."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "1 sat 15 minuta",
+    servings: 8,
+    notes: ["Ostavite da se ohladi 10 minuta pre seckanja", "Možete pripremiti dan ranije"],
+    nutrition: { calories: "420 po porciji", protein: "28g", carbs: "18g", fat: "26g" }
+  },
+  "Dolmades": {
+    name: "Dolmadesi",
+    description: "Grčke sarme od vinove loze punjena rižom i začinima.",
+    ingredients: [
+      "40 listova vinove loze (svežih ili u salamuri)",
+      "200g kratkonog pirinca",
+      "1 veliki luk, sitno seckan",
+      "50ml maslinovog ulja",
+      "2 kašike bora",
+      "2 kašike uvela grožđa",
+      "1 kašika koper",
+      "1 kašika peršuna",
+      "Sok od 2 limuna",
+      "So i biber po ukusu",
+      "500ml biljnog bujona"
+    ],
+    instructions: [
+      "Ako koristite sveži list vinove loze, prokuvajte ih u slanoj vodi 3 minuta.",
+      "Za punjenje: propržite luk na ulju, dodajte pirinac i pržite 3 minuta.",
+      "Dodajte borove orašiće, grožđe, dil, peršun, so i biber.",
+      "Dodajte 250ml bujona i kuvajte 10 minuta dok pirinac ne bude polukuvan.",
+      "Ohladite smesu. Dodajte pola soka od limuna.",
+      "Stavite kašiku punjenja u centar lista i uvijte čvrsto.",
+      "Složite dolmadese u šerpu, zaliti ostatkom bujona i limuna.",
+      "Kuvajte pokriveno na slaboj vatri 40-45 minuta.",
+      "Servirajte toplo ili hladno sa jogurtom."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "1 sat",
+    servings: 6,
+    notes: ["Ne uvijajte presno jer će se pirinac proširiti", "Ukusnije su sutradan"],
+    nutrition: { calories: "180 po porciji", protein: "4g", carbs: "32g", fat: "5g" }
+  },
+  "Souvlaki": {
+    name: "Suvlaki",
+    description: "Grčki ražnjići sa mariniranim mesom, tradicionalno serviran sa pitom.",
+    ingredients: [
+      "800g svinjskog vrata ili piletine",
+      "4 kašike maslinovog ulja",
+      "Sok od 2 limuna",
+      "3 čena belog luka",
+      "2 kašike origana",
+      "So i biber po ukusu",
+      "4 pita hleba",
+      "1 krastavac",
+      "2 paradajza",
+      "1 crveni luk",
+      "Tzatziki sos"
+    ],
+    instructions: [
+      "Isecite meso na kockice veličine 3cm.",
+      "Pomešajte ulje, limun, beli luk, origano, so i biber za marinadu.",
+      "Marinirajte meso najmanje 2 sata ili preko noći.",
+      "Nanižite meso na drvene ražnjiće.",
+      "Grilujte na visokoj temperaturi 8-10 minuta, okeću﻿ći povremeno.",
+      "Zagrejte pita hleb na grilu ili u tiganju.",
+      "Isecite povrće na sitno.",
+      "Uklonite meso sa ražnjića i stavite u pita hleb.",
+      "Dodajte povrće i tzatziki sos po ukusu."
+    ],
+    prepTime: "20 minuta + 2 sata mariniranje",
+    cookTime: "10 minuta",
+    servings: 4,
+    notes: ["Potopite drvene ražnjiće u vodu pre korišćenja", "Možete koristiti bilo koje meso"],
+    nutrition: { calories: "450 po porciji", protein: "38g", carbs: "25g", fat: "22g" }
+  },
+  "Spanakopita": {
+    name: "Spanakopita",
+    description: "Grčka pita sa spanaćem i feta sirom u hrskavom filo testu.",
+    ingredients: [
+      "500g svežeg spanaća",
+      "300g feta sira",
+      "1 pakovanje filo testa",
+      "1 veliki luk",
+      "3 jaja",
+      "100ml maslinovog ulja",
+      "1 kašika kopra",
+      "1/2 kašičice muškatnog orašćića",
+      "So i biber po ukusu"
+    ],
+    instructions: [
+      "Operite i isecite spanaћ na krupno.",
+      "Propržite sitno seckan luk na 2 kašike ulja.",
+      "Dodajte spanaća i kuvajte dok se ne uvene, oko 5 minuta.",
+      "Ohladite smesu i dodajte izmrvljenu feta, jaja, dil i začine.",
+      "Premažite tepsiju uljem.",
+      "Stavite pola filo kora u tepsiju, mažući svaku uljem.",
+      "Rasporedite punjenje preko kora.",
+      "Pokrijte ostatkom filo kora, mažući svaku uljem.",
+      "Zabodnite viljuškom da napravite rupe.",
+      "Pecite na 180°C 40-45 minuta do zlatne boje."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "45 minuta",
+    servings: 8,
+    notes: ["Držite filo testo pokriveno vlažnom krpom", "Isecite pre pečenja za lakše serviranje"],
+    nutrition: { calories: "320 po porciji", protein: "14g", carbs: "22g", fat: "20g" }
   },
   "Muffins": {
     name: "Muffins",
@@ -1243,35 +1536,286 @@ export const recipes: Record<string, Recipe> = {
       "Izvadite iz rerne i ostavite da se ohlade u kalupu nekoliko minuta pre nego što ih izvadite i potpuno ohladite na rešetki."
     ],
     prepTime: "15 minuta",
-    cookTime: "20-25 minuta",
-    servings: 12
+    cookTime: "20 minuta",
+    servings: 12,
+    notes: ["Ne mešajte testo previše da ne budu tvrdi", "Možete dodati čokoladu umesto borovnica"],
+    nutrition: { calories: "180 po kom", protein: "4g", carbs: "28g", fat: "6g" }
   },
-  "Scones": {
-    name: "Scones",
+  "Falafel": {
+    name: "Falafel",
+    description: "Bliskoistočni krožići od nohuta, duboko prženi i začinjeni.",
+    ingredients: [
+      "400g sušenog nohuta (natopati preko noći)",
+      "1 veliki luk",
+      "4 čena belog luka",
+      "1/2 šolje peršuna",
+      "1/4 šolje koriyandera",
+      "2 kašike tahina",
+      "1 kašičica kima",
+      "1 kašičica koriyandera (semena)",
+      "1/2 kašičice kajuće paprike",
+      "So i biber po ukusu",
+      "Ulje za duboko prženje"
+    ],
+    instructions: [
+      "Natopajte nohut u vodi preko noći. Ocijedite i isperite.",
+      "U multipraktiku usitni nohut, luk, beli luk, peršun i korijander.",
+      "Dodajte tahini, kim, korijander, papriku i začine.",
+      "Blendajte dok ne dobijete grubu smesu (ne meljte do fine paste).",
+      "Ostavite smesu da odmara 30 minuta u frižideru.",
+      "Oblikujte kuglice ili posebnim kalupom napravite falafel loptice.",
+      "Zagrejte ulje na 170°C.",
+      "Pržite falafel loptice 3-4 minuta do zlatne boje.",
+      "Servirajte u pita hlebu sa tahini sosom i salatom."
+    ],
+    prepTime: "20 minuta + natopavanje preko noći",
+    cookTime: "15 minuta",
+    servings: 6,
+    notes: ["Ne meljite nohut presitno", "Možete peći umesto pržiti na 200°C 25 minuta"],
+    nutrition: { calories: "220 po porciji", protein: "9g", carbs: "28g", fat: "8g" }
+  },
+  "Hummus": {
+    name: "Humus",
+    description: "Kremasti bliskoistočni namaz od nohuta sa tahini sosom.",
+    ingredients: [
+      "400g kuvanog nohuta (ili 1 konzerva)",
+      "3 kašike tahina",
+      "2 čena belog luka",
+      "Sok od 1 limuna",
+      "1/2 kašičice kima",
+      "3-4 kašike hladne vode",
+      "So po ukusu",
+      "Maslinovo ulje za posipanje",
+      "Crvena paprika za ukras"
+    ],
+    instructions: [
+      "Ocijedite nohut i sačuvajte tečnost.",
+      "U multipraktiku stavite tahini i beli luk, blendajte 30 sekundi.",
+      "Dodajte limunov sok, kim i so, blendajte još 30 sekundi.",
+      "Dodajte polovinu nohuta i blendajte dok ne bude glatko.",
+      "Dodajte ostatak nohuta i blendajte, dodajući vodu po potrebi.",
+      "Probajte i podesite začine po ukusu.",
+      "Prebacite u posudu i napravite udubljenje u sredini.",
+      "Prelijte maslinovim uljem i pospite paprikom.",
+      "Servirajte sa pita hlebom ili povrćem."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "0 minuta",
+    servings: 6,
+    notes: ["Možete dodati rožmarin za dodatni ukus", "Drži se 5 dana u frižideru"],
+    nutrition: { calories: "160 po porciji", protein: "7g", carbs: "18g", fat: "7g" }
+  },
+  "Tabbouleh": {
+    name: "Tabule",
+    description: "Refrešantna bliskoistočna salata sa bulguru, peršunom i paradajzom.",
+    ingredients: [
+      "1/2 šolje sitnog bulgura",
+      "2 šolje sitno seckanog peršuna",
+      "1/4 šolje sitno seckanog koriyandera",
+      "4 srednja paradajza, usitnjenog",
+      "4 mladna luka, sitno",
+      "1/4 šolje limunovog soka",
+      "1/4 šolje maslinovog ulja",
+      "So i biber po ukusu"
+    ],
+    instructions: [
+      "Natopajte bulgur u toploj vodi 30 minuta dok se ne omekša.",
+      "Ocijedite bulgur kroz sitno sito i iscedite višak vode.",
+      "U velikoj posudi pomešajte peršun, korijander, paradajz i mladi luk.",
+      "Dodajte oscijedeni bulgur.",
+      "U manjoj posudi pomešajte limunov sok, maslinovo ulje, so i biber.",
+      "Prelijte salatu prelivom i dobro promešajte.",
+      "Ostavite u frižideru najmanje 1 sat pre serviranja.",
+      "Servirajte hladno sa listovima salate."
+    ],
+    prepTime: "20 minuta + 30 minuta natopanje",
+    cookTime: "0 minuta",
+    servings: 6,
+    notes: ["Važno je da peršun bude svež i sitno seckan", "Najbolji je dan posle pripreme"],
+    nutrition: { calories: "120 po porciji", protein: "3g", carbs: "15g", fat: "6g" }
+  },
+  "Shawarma": {
+    name: "Šavarma",
+    description: "Bliskoistočno marinirano meso sa začinima, tradicionalno na ražnju.",
+    ingredients: [
+      "1kg piletine (batak i krak) ili jagnjetina",
+      "4 kašike maslinovog ulja",
+      "2 kašičice kima",
+      "2 kašičice koriyandera",
+      "1 kašičica cimeta",
+      "1 kašičica kardamoma",
+      "1/2 kašičice kurkume",
+      "4 čena belog luka",
+      "Sok od 2 limuna",
+      "So i biber po ukusu",
+      "Pita hleb za serviranje"
+    ],
+    instructions: [
+      "Isecite meso na srednje komade.",
+      "Pomešajte sve začine sa uljem, belim lukom i limunom.",
+      "Marinirajte meso najmanje 2 sata ili preko noći.",
+      "Zagrejte rernu na 220°C.",
+      "Rasporedite meso na pleh i pecite 25-30 minuta.",
+      "Okrenite meso jednom tokom pečenja.",
+      "Ostavite da se odmori 5 minuta, zatim isecite na trake.",
+      "Zagrejte pita hleb i napunite mesom.",
+      "Dodajte pomidor, krastavac i tahini sos."
+    ],
+    prepTime: "20 minuta + 2 sata mariniranje",
+    cookTime: "30 minuta",
+    servings: 6,
+    notes: ["Možete grilirati umesto peći", "Tradicionalno se servira sa tahini sosom"],
+    nutrition: { calories: "420 po porciji", protein: "35g", carbs: "18g", fat: "24g" }
+  },
+  "Skonsovi": {
+    name: "Skonsovi",
+    description: "Britanski tradicionalni kolačići, savršeni uz čaj sa džemom i pavlakom.",
     ingredients: [
       "225g brašna (plus dodatno za posipanje)",
       "1 kašičica praška za pecivo",
       "1/2 kašičice soli",
-      "50g hladnog putera, isečenog na kockice",
+      "50g hladnog masla, isečenog na kockice",
       "120ml mleka",
       "1 kašika šećera (opciono)",
-      "Malo mleka ili razmućenog jajeta za premazivanje"
+      "Malo mleka za premazivanje"
     ],
     instructions: [
-      "Zagrejte rernu na 220°C (200°C sa ventilatorom). Obložite pleh papirom za pečenje.",
-      "U velikoj posudi pomešajte brašno, prašak za pecivo, so i šećer (ako koristite).",
-      "Dodajte hladan puter i utrljajte ga prstima u brašno dok ne dobijete smesu koja podseća na prezle.",
-      "Postepeno dodajte mleko, mešajući dok se testo ne sjedini. Nemojte premesiti.",
-      "Na blago pobrašnjenoj površini, razvaljajte testo na debljinu oko 2-3 cm.",
-      "Koristite okrugli kalup za kekse ili nož da isečete scones.",
-      "Poređajte scones na pripremljeni pleh.",
-      "Premažite vrhove scones sa malo mleka ili razmućenog jajeta.",
-      "Pecite u zagrejanoj rerni 15-20 minuta, ili dok ne postanu zlatno smeđi.",
-      "Ostavite da se malo prohlade pre serviranja."
+      "Zagrejte rernu na 220°C. Obložite pleh papirom za pečenje.",
+      "U velikoj posudi pomešajte brašno, prašak za pecivo, so i šećer.",
+      "Dodajte hladno maslo i utrljajte prstima dok ne dobijete mrvice.",
+      "Postepeno dodajte mleko, mešajući dok se testo ne sjedini.",
+      "Na pobrašnjenoj površini, razvaljajte testo debljine 2-3cm.",
+      "Koristite okrugli kalup da isečete skonsove.",
+      "Poređajte ih na pleh i premažite vrhove mlekom.",
+      "Pecite 15-20 minuta do zlatne boje.",
+      "Servirajte tople sa džemom i pavlakom."
     ],
     prepTime: "15 minuta",
-    cookTime: "15-20 minuta",
-    servings: 8
+    cookTime: "18 minuta",
+    servings: 8,
+    notes: ["Ne mešajte testo previše", "Najbolji su sveži i topli"],
+    nutrition: { calories: "180 po kom", protein: "4g", carbs: "28g", fat: "6g" }
+  },
+  "Chia puding": {
+    name: "Chia puding",
+    description: "Zdrav i hranjiv puding od chia semena, bogat omega-3 masnim kiselinama.",
+    ingredients: [
+      "3 kašike chia semena",
+      "250ml mleka (biljnog ili kravljeg)",
+      "1 kašika meda ili javorovog sirupa",
+      "1/2 kašičice ekstrakta vanile",
+      "Sveže voće za ukras",
+      "Orašasti plodovi",
+      "Kokosove pahuljice"
+    ],
+    instructions: [
+      "U posudi pomešajte chia semena, mleko, med i vanilu.",
+      "Dobro promešajte da se sve sjedini.",
+      "Ostavite 5 minuta, zatim ponovo promešajte da razbijete grudvice.",
+      "Pokrijte i stavite u frižider najmanje 2 sata ili preko noći.",
+      "Pre serviranja promešajte i dodajte mleka ako je potrebno.",
+      "Prebacite u činije za serviranje.",
+      "Ukrašavajte svežim voćem, orašastim plodovima i kokosom.",
+      "Servirajte hladno."
+    ],
+    prepTime: "5 minuta + 2 sata hlađenje",
+    cookTime: "0 minuta",
+    servings: 2,
+    notes: ["Možete pripremiti unapred", "Dodajte voće neposredno pre serviranja"],
+    nutrition: { calories: "180 po porciji", protein: "6g", carbs: "15g", fat: "10g" }
+  },
+  "Protein činija": {
+    name: "Protein činija",
+    description: "Hranjiva i uravnotežena činija puna proteina, zdravih ugljenih hidrata i povrća.",
+    ingredients: [
+      "150g piletine, lososa ili tofu",
+      "1/2 šolje kine",
+      "1/2 avokada",
+      "1/2 šolje brokola ili spanata",
+      "1/4 šolje pomožura cherry",
+      "2 kašike humusa",
+      "1 kašika orasa ili badema",
+      "1 kašika maslinovog ulja",
+      "Limunov sok, so, biber"
+    ],
+    instructions: [
+      "Skuvajte kinu po uputstvu na pakovanju.",
+      "Napravite protein na želj - piletinu požarite, losos pečite, tofu propržite.",
+      "Blansiranje brokol ili operite spanat.",
+      "Prepolovite cherry paradajz, isecite avokado na kriške.",
+      "U činiju stavite kinu kao osnovu.",
+      "Rasporedite protein, povrće i avokado po sekcijama.",
+      "Dodajte humus u centar.",
+      "Pospite orašastim plodovima.",
+      "Prelijte maslinovim uljem i limunovim sokom."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "20 minuta",
+    servings: 1,
+    notes: ["Možete menjati povrće po sezoni", "Dodajte feta sir za dodatni protein"],
+    nutrition: { calories: "520 po porciji", protein: "35g", carbs: "45g", fat: "22g" }
+  },
+  "Acai bowl": {
+    name: "Acai činija",
+    description: "Egzotična i zdrava činija od acai boba, puna antioksidanasa i vitamina.",
+    ingredients: [
+      "1 pakovanje zamrznutog acai pure",
+      "1/2 banane",
+      "1/4 šolje borovnica",
+      "2-3 kašike mleka ili soka",
+      "Za ukras: banana, jagode, kivi",
+      "Granola",
+      "Coconut flakes",
+      "Chia semena",
+      "Med po ukusu"
+    ],
+    instructions: [
+      "Ostavite acai pure da se malo otopi, oko 10 minuta.",
+      "U blender stavite acai, polovinu banane, borovnice i mleko.",
+      "Blendajte dok ne dobijete gustu, glat u sme u (kao gust mlekešejk).",
+      "Prebacite sme u u duboku činiju.",
+      "Isecite preostalo voće na tanke kriške.",
+      "Uredite voće u redove preko acai baze.",
+      "Pospite granolom, kokosovim pahuljicama i chia semenima.",
+      "Požarite med preko vrha.",
+      "Servirajte odmah dok je hladno."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "0 minuta",
+    servings: 1,
+    notes: ["Acai možete naći u zdravoj hrani ili online", "Ne dodajte previše tečnosti da ostane gusto"],
+    nutrition: { calories: "320 po porciji", protein: "8g", carbs: "48g", fat: "12g" }
+  },
+  "Green smoothie": {
+    name: "Zeleni smuti",
+    description: "Osvježavači i hranjiv smuti pun vitamina i minerala iz zelenog listo orato povrća.",
+    ingredients: [
+      "2 šolje mladnog spata",
+      "1 banana",
+      "1/2 avokada",
+      "1 zelena jabuka",
+      "250ml kokosove vode",
+      "1 kašika chia semena",
+      "1 kašičica đumbira",
+      "Sok od 1/2 limuna",
+      "Led po potrebi"
+    ],
+    instructions: [
+      "Operite spanat i stavite u blender.",
+      "Ogulite i isecite bananu na komade.",
+      "Isecite avokado na pola i izvadite košticu.",
+      "Ogulite jabuku i isecite na komade.",
+      "Stavite sve voće u blender sa spanatom.",
+      "Dodajte kokosovu vodu, chia semena, đumbir i limunov sok.",
+      "Blendajte 60-90 sekundi dok ne bude potpuno glatko.",
+      "Probajte i dodesite ukus po potrebi.",
+      "Dodajte led ako želite hladniji smuti."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "0 minuta",
+    servings: 2,
+    notes: ["Možete dodati protein prah", "Zasladtć ite datulama ili medom po želji"],
+    nutrition: { calories: "180 po porciji", protein: "4g", carbs: "28g", fat: "8g" }
   },
   "Chia Pudding": {
     name: "Chia Pudding",
@@ -1295,36 +1839,202 @@ export const recipes: Record<string, Recipe> = {
     cookTime: "2 sata (za hlađenje)",
     servings: 1
   },
-  "Protein Bowl": {
-    name: "Protein Bowl",
+  "Overnight oats": {
+    name: "Noćni ovas",
+    description: "Praktičan i zdrav doručak pripremljen uveče, spreman ujutru.",
     ingredients: [
-      "1 šolja kuvane kinoe",
-      "1/2 šolje crnog pasulja, oceđenog i ispranog",
-      "1/2 avokada, iseckanog",
-      "2 jaja",
-      "1/4 šolje salsa sosa",
-      "1 kašika seckanog korijandera",
-      "So i biber po ukusu",
-      "1 kašika maslinovog ulja"
+      "1/2 šolje ovsenih pahuljica",
+      "1/2 šolje mleka (biljnog ili kravljeg)",
+      "1 kašika chia semena",
+      "1 kašika meda ili javorovog sirupa",
+      "1/2 kašičice ekstrakta vanile",
+      "1/2 banane, isekkane",
+      "2 kašike orašastih plodova",
+      "Sveže voće za ukras"
     ],
     instructions: [
-      "U malom tiganju, zagrejte maslinovo ulje na srednjoj temperaturi.",
-      "Umutite jaja u činiji sa soli i biberom.",
-      "Sipajte jaja u zagrejan tiganj i ispržite ih kao kajganu ili omlet, po želji.",
-      "U činiju stavite kuvanu kinou.",
-      "Dodajte crni pasulj i avokado preko kinoe.",
-      "Stavite pripremljena jaja preko pasulja i avokada.",
-      "Prelijte salsa sosom i pospite seckanim korijanderom.",
-      "Začinite sa još soli i bibera po ukusu.",
-      "Poslužite odmah."
+      "U tegli ili činiji pomešajte ovsene pahuljice, mleko i chia semena.",
+      "Dodajte med, vanilu i dobro promešajte.",
+      "Dodajte iseckanu bananu i orašaste plodove.",
+      "Pokrijte i stavite u frižider preko noći (najmanje 4 sata).",
+      "Ujutru promešajte i dodajte mleka ako je potrebno.",
+      "Ukrasite svežim voćem po želji.",
+      "Jedite hladno direktno iz tegle ili prebacite u činiju."
     ],
-    prepTime: "10 minuta",
+    prepTime: "5 minuta + preko noći",
+    cookTime: "0 minuta",
+    servings: 1,
+    notes: ["Možete pripremiti više tegla unapred", "Drži se 3 dana u frižideru"],
+    nutrition: { calories: "280 po porciji", protein: "8g", carbs: "42g", fat: "9g" }
+  },
+  "Energy balls": {
+    name: "Energetske kuglice",
+    description: "Zdrave kuglice pune energije, idealne za užinu između obroka.",
+    ingredients: [
+      "1 šolja datleva (bez koštica)",
+      "1/2 šolje ovsenih pahuljica",
+      "1/4 šolje kikirikija",
+      "2 kašike kakao praha",
+      "2 kašike chia semena",
+      "1 kašika kokosovog ulja",
+      "1 kašičica ekstrakta vanile",
+      "Kokosove pahuljice za uvaljavanje"
+    ],
+    instructions: [
+      "Natopajte datlje u toploj vodi 10 minuta da omekšaju.",
+      "Ocijedite datlje i stavite ih u multipraktik.",
+      "Dodajte ovsene pahuljice, kikiriki, kakao i chia semena.",
+      "Blendajte dok ne dobijete pastaznu smesu.",
+      "Dodajte kokosovo ulje i vanilu, blendajte još malo.",
+      "Mokrim rukama oblikujte kuglice veličine oraha.",
+      "Uvaljajte ih u kokosove pahuljice.",
+      "Stavite u frižider na 30 minuta da se učvrste.",
+      "Čuvajte u frižideru do nedelju dana."
+    ],
+    prepTime: "20 minuta + 30 min hlađenje",
+    cookTime: "0 minuta",
+    servings: 12,
+    notes: ["Možete dodati protein prah", "Zamenite kikiriki drugim orašastim plodovima"],
+    nutrition: { calories: "120 po kom", protein: "3g", carbs: "18g", fat: "5g" }
+  },
+  "Quinoa salad": {
+    name: "Kina salata",
+    description: "Hranjiva i osvežavajuća salata sa kinom, idealana za letne dane.",
+    ingredients: [
+      "1 šolja kine",
+      "2 šolje vode ili bujona",
+      "1 krastavac, iseckan na kockice",
+      "2 paradajza, iseckana",
+      "1/2 crvenog luka, sitno",
+      "1/4 šolje peršuna, seckanog",
+      "1/4 šolje koriyandera",
+      "1/4 šolje maslinovog ulja",
+      "Sok od 2 limuna",
+      "So i biber po ukusu"
+    ],
+    instructions: [
+      "Isperite kinu pod hladnom vodom dok voda ne postane bistra.",
+      "U šerpi prokuvajte vodu ili bujon.",
+      "Dodajte kinu, pokrijte i kuvajte na slaboj vatri 15 minuta.",
+      "Sklonite sa vatre i ostavite pokriveno 5 minuta.",
+      "Rastreskte kinu viljuškom i ostavite da se ohladi.",
+      "Dodajte krastavac, paradajz, luk, peršun i korijander.",
+      "U manjoj posudi pomešajte maslinovo ulje, limunov sok, so i biber.",
+      "Prelijte salatu prelivom i dobro promešajte.",
+      "Ostavite u frižideru najmanje 1 sat pre serviranja."
+    ],
+    prepTime: "15 minuta",
     cookTime: "15 minuta",
-    servings: 1
+    servings: 4,
+    notes: ["Može da stoji do 3 dana u frižideru", "Dodajte feta sir za dodatni ukus"],
+    nutrition: { calories: "220 po porciji", protein: "6g", carbs: "32g", fat: "8g" }
+  },
+  "Buddha bowl": {
+    name: "Buda činija",
+    description: "Uravnotežena činija puna boja, ukusa i hranljivih materija.",
+    ingredients: [
+      "1/2 šolje kineoe ili braon pirinča",
+      "100g tofua ili tempea",
+      "1/2 slatkog krompira",
+      "1 šolja brokola",
+      "1/2 avokada",
+      "1/4 šolje crvenog kupusa",
+      "2 kašike humusa",
+      "1 kašika tahina",
+      "Sok od 1/2 limuna",
+      "Susam za posipanje"
+    ],
+    instructions: [
+      "Skuvajte kinu ili pirinac po uputstvu.",
+      "Iseckajte slatki krompir na kockice i pecite na 200°C 25 minuta.",
+      "Blansirjte brokoli u slanoj vodi 3-4 minuta.",
+      "Propržite tofu ili tempe do zlatne boje.",
+      "Sitno iseckajte crveni kupus.",
+      "Iseckajte avokado na kriške.",
+      "U činiju stavite kinu kao osnovu.",
+      "Rasporedite sve sastojke u sekcije oko činije.",
+      "Dodajte humus u centar.",
+      "Pomešajte tahini sa limunovim sokom za preliv.",
+      "Prelijte činiju prelivom i pospite susamom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "30 minuta",
+    servings: 2,
+    notes: ["Možete menjati sastojke po sezoni", "Dodajte fermentisano povrće za probiotike"],
+    nutrition: { calories: "420 po porciji", protein: "18g", carbs: "55g", fat: "16g" }
+  },
+  "Poke bowl": {
+    name: "Poke činija",
+    description: "Havajska specializajta sa svežom ribom, pirinčem i povrćem.",
+    ingredients: [
+      "200g svežeg tunsa ili lososa (sushi kvaliteta)",
+      "1 šolja kuvanog sushi pirinča",
+      "1/2 avokada",
+      "1/4 šolje edamame",
+      "1/4 šolje krastavca",
+      "2 kašike soja sosa",
+      "1 kašika sezamir ulja",
+      "1 kašičica meda",
+      "1 kašičica wasabija",
+      "Nori alge, susam"
+    ],
+    instructions: [
+      "Iseckajte ribu na kockice veličine 2cm.",
+      "U činiji pomešajte soja sos, sezam ulje, med i wasabi.",
+      "Marinirajte ribu u sosu 15 minuta.",
+      "Prokuvajte edamame 3 minuta i ohladite.",
+      "Iseckajte krastavac na tanke kolutove.",
+      "Iseckajte avokado na kriške.",
+      "U činiju stavite topli pirinac kao osnovu.",
+      "Rasporedite mariniranu ribu preko pirinča.",
+      "Dodajte avokado, edamame i krastavac.",
+      "Iseckajte nori alge i pospite preko.",
+      "Dodajte susam i servirajte odmah."
+    ],
+    prepTime: "20 minuta + 15 min mariniranje",
+    cookTime: "15 minuta",
+    servings: 2,
+    notes: ["Koristite samo svežu ribu sushi kvaliteta", "Jedite odmah po pripremi"],
+    nutrition: { calories: "380 po porciji", protein: "28g", carbs: "35g", fat: "14g" }
+  },
+  "Korean bibimbap": {
+    name: "Korejski bibimbap",
+    description: "Tradiciajonalne korejsko jelo sa pirinčem, povrćem i mesom u činiji.",
+    ingredients: [
+      "2 šolje kuvanog pirinča",
+      "200g tanko isećene govedine",
+      "2 šolje spanaća",
+      "1 šolja klica soje",
+      "1 šargarepa, iseckana na štapiće",
+      "4 shiitake pečurke",
+      "2 jaja",
+      "3 kašike soja sosa",
+      "2 kašike sezam ulja",
+      "1 kašika gochujang paste",
+      "Beli susam"
+    ],
+    instructions: [
+      "Marinirajte meso u soja sosu i sezam ulju 30 minuta.",
+      "Blansirjte spanać u slanoj vodi 2 minuta, iscedite.",
+      "Blansirjte klice soje 1 minut.",
+      "Propržite šargarepu i pečurke posebno.",
+      "Propržite marinirano meso do gotovosti.",
+      "Ispržite jaja na oko.",
+      "U činije stavite topli pirinac.",
+      "Rasporedite sve sastojke u sekcije oko pirinča.",
+      "Stavite prženo jaje na vrh.",
+      "Pomešajte gochujang sa malo vode za sos.",
+      "Servirajte sa sosom i susamom."
+    ],
+    prepTime: "30 minuta + 30 min mariniranje",
+    cookTime: "20 minuta",
+    servings: 2,
+    notes: ["Promešajte sve pre jedenja", "Možete koristiti bilo koje povrće"],
+    nutrition: { calories: "520 po porciji", protein: "32g", carbs: "58g", fat: "18g" }
   },
 
   // BBQ/Roštilj
-  "Ćevapi": {
+  "Cevapi": {
     name: "Ćevapi",
     ingredients: [
       "500g mlevene junetine",
@@ -1458,9 +2168,162 @@ export const recipes: Record<string, Recipe> = {
       "Pecite ražnjiće oko 15-20 minuta, okrećući ih često, dok meso ne bude pečeno i lepo porumeni. Pazite da se ne prepeku.",
       "Poslužite toplo sa prilozima po želji (pomfrit, salata, ajvar)."
     ],
-    prepTime: "30 minuta (+ najmanje 2 sata mariniranja)",
-    cookTime: "15-20 minuta",
-    servings: 6
+    prepTime: "30 minuta + 2 sata mariniranje",
+    cookTime: "18 minuta",
+    servings: 6,
+    description: "Marinirana mesna kockica nanižana na ražnjiće i pečena na roštilju.",
+    notes: ["Mariniranje preko noći daje najbolji ukus", "Možete dodati povrće po želji"],
+    nutrition: { calories: "420 po porciji", protein: "35g", carbs: "5g", fat: "28g" }
+  },
+  "Pasulj prebranac": {
+    name: "Pasulj prebranac",
+    description: "Tradicionalno srpsko jelo sa pasuljom, slaninom i povrćem, pečeno u rerni.",
+    ingredients: [
+      "500g velikog belog pasulja",
+      "200g dimljene slanine, iseckane",
+      "2 velike glavice luka",
+      "3 šargarepe",
+      "2 stabla celera",
+      "4 čena belog luka",
+      "2 lovorova lista",
+      "1 kašičica slatke paprike",
+      "1 kašika paradajza koncentrata",
+      "So i biber po ukusu",
+      "Peršun za ukras"
+    ],
+    instructions: [
+      "Natopite pasulj u hladnoj vodi preko noći.",
+      "Ocijedite pasulj i prokuvajte ga u slanoj vodi 45 minuta.",
+      "Sitno isecite luk, šargarepu i celer.",
+      "Propržite slaninu u tavi dok ne postane hrskava.",
+      "Dodajte luk i pržite dok ne postane staklast.",
+      "Dodajte šargarepu, celer i beli luk, pržite 5 minuta.",
+      "Dodajte papriku i paradajz koncentrat.",
+      "Pomešajte kuvani pasulj sa povrćem.",
+      "Prebacite sve u vatrostalnu tepsiju.",
+      "Dodajte lovorove listove, so i biber.",
+      "Pecite na 180°C 1 sat, povremeno mešajući.",
+      "Servirajte toplo posuto peršunom."
+    ],
+    prepTime: "20 minuta + natopavanje preko noći",
+    cookTime: "1 sat 45 minuta",
+    servings: 6,
+    notes: ["Natopavanje pasulja je važno za lakše kuvanje", "Možete dodati kobasice"],
+    nutrition: { calories: "380 po porciji", protein: "18g", carbs: "45g", fat: "14g" }
+  },
+  "Ajvar": {
+    name: "Ajvar",
+    description: "Tradicionalni balkanski namaz od pečenih paprika, nezaobilazan na srpskim trpezama.",
+    ingredients: [
+      "3kg crvenih paprika",
+      "500g patlidžana",
+      "1 glavica belog luka",
+      "200ml maslinovog ulja",
+      "2 kašike sircećeta",
+      "1 kašičica šećera",
+      "So po ukusu",
+      "Biber po ukusu"
+    ],
+    instructions: [
+      "Pečite paprike i patlidžane na otvorenoj vatri ili u rerni.",
+      "Stavite ih u vreću da se 'znoje' 30 minuta.",
+      "Ogulite kožu sa paprika i patlidžana.",
+      "Uklonite semenke iz paprika.",
+      "Userite povrće kroz meso mašinu ili secite sitno.",
+      "U velikoj šerpi zagrejte deo ulja.",
+      "Dodajte usitnjeno povrće i sitno seckan beli luk.",
+      "Kuvajte na slaboj vatri 2-3 sata, povremeno mešajući.",
+      "Dodajte sirće, šećer, so i biber.",
+      "Kuvajte dok ajvar ne postane gust.",
+      "Vruć sipajte u sterilizovane tegle."
+    ],
+    prepTime: "1 sat",
+    cookTime: "3 sata",
+    servings: 20,
+    notes: ["Pečenje na otvorenoj vatri daje najbolji ukus", "Može da se čuva mesecima"],
+    nutrition: { calories: "45 po kašici", protein: "1g", carbs: "4g", fat: "3g" }
+  },
+  "Urnebes": {
+    name: "Urnebes",
+    description: "Pikantni sir posut crvenom paprikom sa ljutim ukusom iz Niša.",
+    ingredients: [
+      "500g belog sira (cottage cheese)",
+      "200g feta sira",
+      "3-4 ljute paprike",
+      "3 čena belog luka",
+      "2 kašike slatke paprike",
+      "1 kašičica ljute paprike",
+      "3 kašike jogurta",
+      "So po ukusu"
+    ],
+    instructions: [
+      "Izmrvite feta sir viljuškom.",
+      "Pomešajte beli sir sa izmrvljenom feta.",
+      "Sitno isecite ljute paprike i beli luk.",
+      "Dodajte paprike i beli luk u smesu sira.",
+      "Dodajte slatku i ljutu papriku.",
+      "Dodajte jogurt i dobro promešajte.",
+      "Posolite po ukusu.",
+      "Ostavite u frižideru najmanje 1 sat da se ukusi sjedine.",
+      "Servirajte kao namaz za hleb ili prilog uz meso."
+    ],
+    prepTime: "15 minuta + 1 sat hlađenje",
+    cookTime: "0 minuta",
+    servings: 8,
+    notes: ["Ljutinu možete podesite po ukusu", "Drži se u frižideru do 5 dana"],
+    nutrition: { calories: "120 po porciji", protein: "8g", carbs: "4g", fat: "8g" }
+  },
+  "Kajmak": {
+    name: "Kajmak",
+    description: "Tradicionalni mlečni proizvod, delikates srpske kuhinje koji se pravi od pavlake.",
+    ingredients: [
+      "1 litar sveže kravljee pavlake (35% masnoće)",
+      "1 kašičica soli"
+    ],
+    instructions: [
+      "U široku tavu sipajte pavlaku.",
+      "Zagrejte na najslabiju vatru, nemojte da zakuva.",
+      "Držite na vatri 1-2 sata dok se ne formira čkor na površini.",
+      "Pažljivo sklonite čkor kašikom i stavite ga u posudu.",
+      "Posolite blago.",
+      "Prekrite površinu pergament papirom.",
+      "Ostavite na hladnom 2-3 dana da se kajmak sazre.",
+      "Možete koristiti sve da se sazri ili prodati .",
+      "Servirajte sa hlebom ili kao prilog uz meso."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "2 sata + 2-3 dana sazrevanje",
+    servings: 10,
+    notes: ["Važno je koristiti svežu pavlaku", "Ne dozvoliti da pavlaka zakuva"],
+    nutrition: { calories: "150 po kašici", protein: "2g", carbs: "1g", fat: "16g" }
+  },
+  "Kompot od šljiva": {
+    name: "Kompot od šljiva",
+    description: "Tradicionalni srpski napitak od svežih šljiva, osvežava juć i zdrav.",
+    ingredients: [
+      "1kg svežih šljiva",
+      "150g šećera",
+      "2 litera vode",
+      "Sok od 1 limuna",
+      "1 štapić cimeta",
+      "3 klinovića"
+    ],
+    instructions: [
+      "Operite šljive i uklonite koštice.",
+      "U velikoj šerpi prokuvajte vodu sa šećerom.",
+      "Dodajte cimet i klinoviće.",
+      "Dodajte šljive u kipudu vodu.",
+      "Kuvajte na slaboj vatri 15-20 minuta.",
+      "Dodajte limunov sok.",
+      "Kuvajte još 5 minuta.",
+      "Sklonite sa vatre i ostavite da se ohladi.",
+      "Servirajte hladno."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "25 minuta",
+    servings: 6,
+    notes: ["Možete koristiti i sušene šljive", "Sladite po ukusu"],
+    nutrition: { calories: "80 po šolji", protein: "1g", carbs: "20g", fat: "0g" }
   },
   "Karađorđeva šnicla": {
     name: "Karađorđeva šnicla",
@@ -1492,30 +2355,318 @@ export const recipes: Record<string, Recipe> = {
   },
   "Dimljena rebra": {
     name: "Dimljena rebra",
+    description: "Savršeno začinjena i dimljena svinjska rebra, mežbu juća na usta.",
     ingredients: [
-      "1.5 - 2 kg svinjskih rebara (baby back ili spare ribs)",
+      "1.5kg svinjskih rebara",
       "2 kašike mlevene paprike",
       "1 kašika belog luka u prahu",
       "1 kašika crnog luka u prahu",
       "1 kašika braon šećera",
       "1 kašičica mlevenog bibera",
       "1 kašičica soli",
-      "1/2 kašičice kajenske paprike (opciono)",
-      "2 šolje tečnosti za dimljenje (jabukovača, sok od jabuke, pivo, voda)",
-      "Omiljeni BBQ sos (opciono)"
+      "1/2 kašičice kajenske paprike",
+      "2 šolje tečnosti za dimljenje",
+      "BBQ sos po želji"
     ],
     instructions: [
-      "Priprema rebara: Uklonite tanku membranu sa unutrašnje strane rebara. Osušite rebra papirnim ubrusima.",
-      "Priprema začina: U maloj posudi pomešajte mlevenu papriku, beli luk u prahu, crni luk u prahu, braon šećer, biber, so i kajensku papriku (ako koristite).",
-      "Začinjavanje rebara: Ravnomerno nanesite smesu začina na obe strane rebara, utrljavajući začine u meso.",
-      "Pušač: Zagrejte pušač na 110-120°C. Stavite rebra u pušač i kuvajte 4-6 sati, prskajući ih tečnošću za dimljenje svakih sat vremena kako biste ih održavali vlažnim.",
-      "Rerna: Zagrejte rernu na 150°C. Stavite rebra na rešetku iznad pleha (sa tečnošću za dimljenje na dnu pleha). Pokrijte rebra folijom i pecite 3-4 sata. Skinite foliju i pecite još 1-2 sata.",
-      "Glaziranje (opciono): Poslednjih 30 minuta kuvanja, namažite rebra omiljenim BBQ sosom.",
-      "Odmor: Izvadite rebra iz pušača/rerne i ostavite ih da odmore 10-15 minuta pre sečenja i serviranja."
+      "Uklonite membranu sa unutrašnje strane rebara.",
+      "Pomešajte sve začine u maloj posudi.",
+      "Ravnomerno utrlj ajte začine u rebra sa obe strane.",
+      "Ako imate pušač: dimite na 110-120°C 4-6 sati.",
+      "Ako nemate pušač: pecite u rerni na 150°C 3-4 sata pokriveno.",
+      "Prskajte tečnošću za dimljenje svakih sat vremena.",
+      "Poslednjih 30 minuta namažite BBQ sosom.",
+      "Ostavite da odmore 15 minuta pre serviranja."
     ],
     prepTime: "30 minuta",
-    cookTime: "4-6 sati (zavisno od metode)",
-    servings: 6
+    cookTime: "4-5 sati",
+    servings: 6,
+    notes: ["Možete koristiti i tav u za dimljenje", "Rebra su gotova kad se meso odvaja od kosti"],
+    nutrition: { calories: "580 po porciji", protein: "45g", carbs: "8g", fat: "40g" }
+  },
+  "Leskovacka kavurma": {
+    name: "Leskovacka kavurma",
+    description: "Tradicionalno leskovacko jelo od źreenog mesa na rern i.",
+    ingredients: [
+      "1kg svinjskog mesa (pleka ili vrat)",
+      "2 veliki luka",
+      "4 čena belog luka",
+      "3 kašike ulja ili masti",
+      "2 kašike slatke paprike",
+      "1 kašičica ljute paprike",
+      "So i biber po ukusu",
+      "1 kašika para ja koncentra ta",
+      "200ml tople vode",
+      "Peršun za ukras"
+    ],
+    instructions: [
+      "Isecite meso na srenja kom ade.",
+      "Sitno iseck te luk i beli luk.",
+      "U velikoj tavi zagrejte ulje i propržite meso na krupnom komadima.",
+      "Kada se meso porumeni, dodajte luk.",
+      "Pržite dok luk ne post ne staklast.",
+      "Dodajte beli luk, papriku i para jaz konc trat.",
+      "Prelijte toplom vodom, posolite i pobiberite.",
+      "Kuvajte pokriveno na slaboj vatri 45 minuta.",
+      "Povremeno mešajte i dodajte vodu ako je potrebno.",
+      "Servirajte toplo posuto peršunom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "1 sat",
+    servings: 6,
+    notes: ["Tradicionalno se pravi u zemljanoj posudi", "Možete dodati malo vina"],
+    nutrition: { calories: "450 po porciji", protein: "38g", carbs: "8g", fat: "28g" }
+  },
+  "Popara": {
+    name: "Popara",
+    description: "Jednostavno domaće jelo od starog hleba, mleka i kpreja.",
+    ingredients: [
+      "4-5 kriška starog hleba",
+      "500ml mleka",
+      "100g kajmaka ili masla",
+      "2 kašike šećera",
+      "1 kašičica soli",
+      "1 jaje (opciono)"
+    ],
+    instructions: [
+      "Iseckajte hleb na manje komade.",
+      "U šerpi zagrejte mleko sa solj u i šećerom.",
+      "Kada mleko zakuva, dodajte komade hleba.",
+      "Kuvajte na slaboj vatri 5-10 minuta mešajući.",
+      "Dodajte kajmak ili maslo.",
+      "Ako želite, umutite jaje u činiju i do dajte u toplu poparu.",
+      "Mešajte da se jaje ne zakuva.",
+      "Servirajte toplo."
+    ],
+    prepTime: "5 minuta",
+    cookTime: "10 minuta",
+    servings: 2,
+    notes: ["Savršeno za korišćenje starog hleba", "Možete dodati med umesto šećera"],
+    nutrition: { calories: "320 po porciji", protein: "12g", carbs: "35g", fat: "14g" }
+  },
+  "Proja": {
+    name: "Proja",
+    description: "Tradicionalni kukurzni hleb iz Vojvodine, jednostavan i ukusan.",
+    ingredients: [
+      "2 šolje kukruznog brašna",
+      "1 šolja belog brašna",
+      "1 kašičica praška za pecivo",
+      "1 kašičica soli",
+      "2 jaja",
+      "300ml mlačanog mleka",
+      "100ml ulja",
+      "200g sira (opciono)"
+    ],
+    instructions: [
+      "Zagrejte rernu na 200°C.",
+      "U velikoj posudi pomešajte kukruzno brašno, belo brašno, prašak za pecivo i so.",
+      "U drugoj posudi umutite jaja sa mlekom i uljem.",
+      "Dodajte mokre sastojke u suve i dobro promešajte.",
+      "Ako koristite sir, dodajte ga sada.",
+      "Sipajte testo u na uljenu tepsiju.",
+      "Pecite 25-30 minuta do zlatne boje.",
+      "Proverite čačkalicom - treba da izadje čista.",
+      "Ohladite malo pre seckanja."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "30 minuta",
+    servings: 8,
+    notes: ["Tradicionalno se peče u zemljanoj posudi", "Ukusan uz mlaiic i sir"],
+    nutrition: { calories: "280 po kom", protein: "8g", carbs: "38g", fat: "10g" }
+  },
+  "Krofne": {
+    name: "Krofne",
+    description: "Omiljeno srpsko slatkeiš - pufaste krofne pune džema ili šlaga.",
+    ingredients: [
+      "500g brašna",
+      "250ml mleka",
+      "70g šećera",
+      "50g masla",
+      "1 jaje + 1 žumance",
+      "7g suvog kvasca",
+      "1 kašičica soli",
+      "Džem ili šlag za punjenje",
+      "Ulje za prženje",
+      "Prah šećer za posipanje"
+    ],
+    instructions: [
+      "Zagrejte mleko do mlake temperature.",
+      "Rastvorite kvasac u mleko sa kašikom šećera.",
+      "U velikoj posudi pomešajte brašno, ostatak šećera i so.",
+      "Dodajte kvasac, jaje, žumance i otopljeno maslo.",
+      "Zamesite glatko testo i ostavite da se diže 1 sat.",
+      "Razvaljajte testo i isecite krofne.",
+      "Ostavite ih da se dizu još 30 minuta.",
+      "Pržite u ulju na 170°C do zlatne boje.",
+      "Napunite ih džemom ili šlag om.",
+      "Pospite prah šećerom."
+    ],
+    prepTime: "30 minuta + 1.5 sat dizanje",
+    cookTime: "20 minuta",
+    servings: 12,
+    notes: ["Ulje treba da bude prave temperature", "Možete ih puniti nakon prženja"],
+    nutrition: { calories: "250 po kom", protein: "5g", carbs: "35g", fat: "10g" }
+  },
+  "Tufahije": {
+    name: "Tufahije",
+    description: "Tradicionalni balkanski kolač od jabuka punjenih orašima i medom.",
+    ingredients: [
+      "6 velikih jabuka",
+      "150g oraha",
+      "100g šećera",
+      "1 kašičica cimeta",
+      "300g šećera za sirup",
+      "500ml vode",
+      "Sok od 1 limuna",
+      "Šlag za serviranje"
+    ],
+    instructions: [
+      "Ogulite jabuke i uklonite srce pažljivo.",
+      "Istucajte orake i pomešajte sa šećerom i cimetom.",
+      "Napunite jabuke orahovom smesom.",
+      "U šerpi prokuvajte vodu sa šećerom za sirup.",
+      "Dodajte limunov sok.",
+      "Stavite jabuke u sirup i kuvajte 20-25 minuta.",
+      "Pažljivo okrećite jabuke da se ravnomerno kuvaju.",
+      "Ohladite u sirupu.",
+      "Servirajte hladno sa šlagom."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "25 minuta",
+    servings: 6,
+    notes: ["Birite čvrste jabuke koje neće se raspadati", "Mogu da stoje u frižideru nekoliko dana"],
+    nutrition: { calories: "280 po kom", protein: "4g", carbs: "58g", fat: "6g" }
+  },
+  "Thai curry": {
+    name: "Tajski kari",
+    description: "Aromatičan i začinjen tajski kari sa kokosovim mlekom i povrćem.",
+    ingredients: [
+      "400ml kokosovog mleka",
+      "2 kašike crvene kari paste",
+      "300g piletine, iseckane na kockice",
+      "1 crvena paprika",
+      "1 patližan, isecan na kockice",
+      "100g bambusovih mladica",
+      "2 kašike fish sosa",
+      "1 kašika braon šećera",
+      "2 kaffir lime lista",
+      "Svež bosiljak",
+      "Jasmin pirinac za serviranje"
+    ],
+    instructions: [
+      "U velikoj tavi zagrejte deo kokosovog mleka.",
+      "Dodajte kari pastu i pržite 2 minuta.",
+      "Dodajte piletinu i pržite dok se ne porumeni.",
+      "Dodajte ostatak kokosovog mleka.",
+      "Dodajte papriku, patližan i bambusove mladice.",
+      "Kuvajte 10-15 minuta dok povrće ne omekša.",
+      "Dodajte fish sos, šećer i lime listove.",
+      "Kuvajte još 5 minuta.",
+      "Uklonite lime listove i dodajte bosiljak.",
+      "Servirajte sa jasmin pirinom."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "25 minuta",
+    servings: 4,
+    notes: ["Možete koristiti bilo koje povrće", "Podesite ljutinu prema ukusu"],
+    nutrition: { calories: "380 po porciji", protein: "28g", carbs: "18g", fat: "22g" }
+  },
+  "Pad Thai": {
+    name: "Pad Taj",
+    description: "Klasično tajsko jelo sa nudlama, garnelama ili piletinom.",
+    ingredients: [
+      "200g rice nudli",
+      "200g garnela ili piletine",
+      "2 jaja",
+      "100g klica soje",
+      "3 mladna luka",
+      "2 kašike tamarind paste",
+      "2 kašike fish sosa",
+      "2 kašike braon šećera",
+      "3 kašike ulja",
+      "Kikiriki, drobljeni",
+      "Limun za serviranje",
+      "Crvena paprika za ukras"
+    ],
+    instructions: [
+      "Natopite rice nudle u toploj vodi dok ne omekšaju.",
+      "U velikoj tavi ili woku zagrejte ulje.",
+      "Dodajte garnele ili piletinu i pržite 3-4 minuta.",
+      "Gurnite meso na jednu stranu i umutite jaja.",
+      "Dodajte nudle i sos (tamarind, fish sos, šećer).",
+      "Mešajte brzo da se sve promeša.",
+      "Dodajte klice soje i mladi luk.",
+      "Pržite još 2-3 minuta.",
+      "Servirajte sa kirikirijem, limun na i crvenom paprikom."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "10 minuta",
+    servings: 2,
+    notes: ["Važno je da vatra bude jaka", "Nudle ne smeju biti prekuvane"],
+    nutrition: { calories: "420 po porciji", protein: "25g", carbs: "48g", fat: "14g" }
+  },
+  "Tom Yum": {
+    name: "Tom Jam",
+    description: "Pikantna tajska čorba sa garnelama, pečurkama i aromatičnim začinima.",
+    ingredients: [
+      "500ml biljnog bujona",
+      "200g garnela",
+      "100g shiitake pečurki",
+      "2 stabla lemongrass-a",
+      "3 kaffir lime lista",
+      "3 bird's eye čili papričice",
+      "3 kašike lime soka",
+      "2 kašike fish sosa",
+      "1 kašika tom yum paste",
+      "Cherry paradajz",
+      "Korjinder za ukras"
+    ],
+    instructions: [
+      "U šerpi zagrejte bujon.",
+      "Dodajte lemongrass, lime listove i čili.",
+      "Kuvajte 5 minuta da se oslobode aromati.",
+      "Dodajte tom yum pastu.",
+      "Dodajte garnele i pečurke.",
+      "Kuvajte 3-4 minuta dok garnele ne postanu roze.",
+      "Dodajte cherry paradajz.",
+      "Začinite sa lime sokom i fish sosom.",
+      "Ukrašavajte korijaderom.",
+      "Servirajte vruće."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "15 minuta",
+    servings: 2,
+    notes: ["Podesite ljutinu po ukusu", "Možete dodati kokosovo mleko za blaužu verziju"],
+    nutrition: { calories: "180 po porciji", protein: "20g", carbs: "8g", fat: "6g" }
+  },
+  "Mango sticky rice": {
+    name: "Mango lepljivi pirinac",
+    description: "Popularan tajski desert sa slatkim lepljivim pirinom i svežim mangom.",
+    ingredients: [
+      "1 šolja glutinous rice (lepljivi pirinac)",
+      "400ml kokosovog mleka",
+      "80g šećera",
+      "1/2 kašičice soli",
+      "2 zrela manga",
+      "2 kašike corn starch-a",
+      "Susam za ukras"
+    ],
+    instructions: [
+      "Natopite lepljivi pirinac u vodi preko noći.",
+      "Kuvajte pirinac na pari 25-30 minuta.",
+      "U šerpi zagrejte 300ml kokosovog mleka sa šećerom i polju soli.",
+      "Kada se šećer rastopi, dodajte kuvani pirinac.",
+      "Mešajte dok pirinac ne upije mleko.",
+      "Za sos: zagrejte ostatak mleka sa corn starch-om.",
+      "Ogulite manga i isecite ih na kriške.",
+      "Servirajte pirinac sa mangom.",
+      "Prelijte sosom i pospite susamom."
+    ],
+    prepTime: "20 minuta + preko noći natopanje",
+    cookTime: "35 minuta",
+    servings: 4,
+    notes: ["Važno je koristiti lepljivi pirinac", "Mango treba da bude zreo ali čvrst"],
+    nutrition: { calories: "320 po porciji", protein: "4g", carbs: "58g", fat: "8g" }
   },
   "Roštilj meso": {
     name: "Roštilj meso",
@@ -1739,8 +2890,173 @@ export const recipes: Record<string, Recipe> = {
       "Služite toplo sa prilogom po želji (pomfrit, ajvar, luk)."
     ],
     prepTime: "30 minuta",
-    cookTime: "20-25 minuta",
-    servings: 4
+    cookTime: "22 minuta",
+    servings: 4,
+    description: "Mešoviti ražnjići sa različitim vrstama mesa i povrća.",
+    notes: ["Marinirajte meso duže za bolji ukus", "Pazite da ne prepecete meso"],
+    nutrition: { calories: "480 po porciji", protein: "42g", carbs: "6g", fat: "32g" }
+  },
+  "Chicken wings": {
+    name: "Pileća krila",
+    description: "Sočna i ukusna pileća krila, savršena za roštilj ili pečenje.",
+    ingredients: [
+      "1kg pilećih krila",
+      "3 kašike soja sosa",
+      "2 kašike meda",
+      "2 kašike sircećeta",
+      "3 čena belog luka",
+      "1 kašika đumbira u prahu",
+      "1 kašičica ljute paprike",
+      "So i biber po ukusu",
+      "2 kašike ulja"
+    ],
+    instructions: [
+      "Operite i osušite pileća krila.",
+      "Sitno usitni beli luk.",
+      "U posudi pomešajte soja sos, med, sirće, beli luk, đumbir i papriku.",
+      "Dodajte krila u marinadu i ostavite najmanje 1 sat.",
+      "Zagrejte rernu na 200°C.",
+      "Poredajte krila na pleh obložen papirom.",
+      "Pecite 25-30 minuta, okrećući jednom.",
+      "Povisiteeperaturu na 220°C poslednjih 5 minuta.",
+      "Servirajte toplo sa salatom."
+    ],
+    prepTime: "15 minuta + 1 sat mariniranje",
+    cookTime: "30 minuta",
+    servings: 4,
+    notes: ["Krila možete grilirati umesto peći", "Dodajte više ljute paprike za ljući ukus"],
+    nutrition: { calories: "380 po porciji", protein: "32g", carbs: "8g", fat: "24g" }
+  },
+  "Fish and chips": {
+    name: "Riba sa pomfritom",
+    description: "Klasično britansko jelo - pržena riba u testu sa hrskavim pomfritom.",
+    ingredients: [
+      "600g bele ribe (bakalar ili brancin)",
+      "4 velika krompira",
+      "150g brašna",
+      "200ml hladnog piva",
+      "1 kašičica praška za pecivo",
+      "1 kašičica soli",
+      "Ulje za duboko prženje",
+      "Limun za serviranje",
+      "Mushy peas (opciono)"
+    ],
+    instructions: [
+      "Ogulite krompire i isecite ih na deblje štapiće.",
+      "Natopite ih u hladnu vodu 30 minuta.",
+      "Za testo: pomešajte brašno, so i prašak za pecivo.",
+      "Dodajte hladno pivo i mešajte do glatke konzistencije.",
+      "Zagrejte ulje na 160°C.",
+      "Pržite pomfrit 5 minuta, izvadite i ocedite.",
+      "Povisiteeperaturu ulja na 180°C.",
+      "Umočite ribu u testo i pržite 4-5 minuta.",
+      "Pržite pomfrit ponovo 2-3 minuta.",
+      "Servirajte sa limunom i mushy peas."
+    ],
+    prepTime: "20 minuta + 30 min natopanje",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: ["Hladno pivo čini testo hrskavijim", "Ne pretovarite ulje tokom prženja"],
+    nutrition: { calories: "620 po porciji", protein: "38g", carbs: "52g", fat: "28g" }
+  },
+  "Bangers and mash": {
+    name: "Kobasice sa pure om",
+    description: "Tradicionalno britansko jelo sa kobasicama i krompir pure om.",
+    ingredients: [
+      "6 britanskih kobasica",
+      "1kg krompira",
+      "100ml mleka",
+      "50g masla",
+      "2 luka",
+      "2 kašike brašna",
+      "500ml govedeg bujona",
+      "1 kašika Worcestershire sosa",
+      "So i biber po ukusu"
+    ],
+    instructions: [
+      "Prokuvajte kobasice u vodi 10 minuta.",
+      "Ogulite i iskuvajte krompire u slanoj vodi.",
+      "Iscedite krompire i napravite pure sa mlekom i maslom.",
+      "Sitno isecite luk i propržite ga.",
+      "Dodajte brašno i pržite 1 minut.",
+      "Postepeno dodajte bujon mešajući.",
+      "Dodajte Worcestershire sos i kuvajte 5 minuta.",
+      "Pržite kobasice na tiganju do rumene boje.",
+      "Servirajte kobasice sa purreom i sosom."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "30 minuta",
+    servings: 3,
+    notes: ["Kobasicc možete peći umesto kuvanja", "Pure treba da bude kremast"],
+    nutrition: { calories: "680 po porciji", protein: "28g", carbs: "45g", fat: "42g" }
+  },
+  "Shepherd's pie": {
+    name: "Čobanska pita",
+    description: "Klasična britanska zapekanka sa mlevenim mesom i krompir pure om.",
+    ingredients: [
+      "500g mlevene jagnjetine ili govedine",
+      "1kg krompira",
+      "1 luk",
+      "2 šargarepe",
+      "100g graška",
+      "2 kašike paradajz koncentrata",
+      "500ml govedeg bujona",
+      "100ml mleka",
+      "50g masla",
+      "1 kašika Worcestershire sosa",
+      "Timijan, so, biber"
+    ],
+    instructions: [
+      "Ogulite krompire i kuvajte ih u slanoj vodi.",
+      "Napravite pure sa mlekom i maslom.",
+      "Sitno isecite luk i šargarepu.",
+      "Propržite luk dok ne postane staklast.",
+      "Dodajte mleveno meso i pržite do rumene boje.",
+      "Dodajte šargarepu i grašak.",
+      "Dodajte paradajz koncentrat, bujon i Worcestershire.",
+      "Kuvajte 15 minuta da se zgusne.",
+      "Prebacite smesu u vatrostalnu tepsiju.",
+      "Pokrijte krompir pure om i pecite na 200°C 25 minuta."
+    ],
+    prepTime: "25 minuta",
+    cookTime: "45 minuta",
+    servings: 6,
+    notes: ["Tradicionalno se pravi sa jagnjetinom", "Pure ne sme biti previše tečan"],
+    nutrition: { calories: "420 po porciji", protein: "26g", carbs: "35g", fat: "18g" }
+  },
+  "Beef stew": {
+    name: "Goveđi paprikaš",
+    description: "Bogat i ukusan paprikaš od govedine, savršen za hladne dane.",
+    ingredients: [
+      "1kg govedine za paprikaš",
+      "3 luka",
+      "3 šargarepe",
+      "3 krompira",
+      "2 kašike slatke paprike",
+      "2 kašike paradajz koncentrata",
+      "1 litar goveđeg bujona",
+      "2 lovorova lista",
+      "Timijan, so, biber",
+      "3 kašike ulja"
+    ],
+    instructions: [
+      "Isecite meso na krupne kockice.",
+      "U velikoj šerpi zagrejte ulje i porumenite meso.",
+      "Dodajte sitno isecan luk.",
+      "Pržite dok luk ne postane staklast.",
+      "Dodajte papriku i paradajz koncentrat.",
+      "Zaliti bujonom i dodajte lovor.",
+      "Kuvajte pokriveno 1.5 sat.",
+      "Dodajte iseckanu šargarepu i krompir.",
+      "Kuvajte još 30 minuta.",
+      "Začinite solju, biberom i timijanom.",
+      "Servirajte toplo sa hlebom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "2 sata",
+    servings: 6,
+    notes: ["Dugo kuvanje čini meso meźjim", "Možete dodati i druge povrce"],
+    nutrition: { calories: "380 po porciji", protein: "32g", carbs: "22g", fat: "18g" }
   },
   "Pašticada": {
     name: "Pašticada",
@@ -1785,6 +3101,375 @@ export const recipes: Record<string, Recipe> = {
     cookTime: "4-5 sati",
     servings: 8
   },
+  "Taco": {
+    name: "Tako",
+    description: "Meksički tradicIjonalni tako sa mesom, povrćem i sosovima.",
+    ingredients: [
+      "8 tako tortilja",
+      "500g mlevene govedine",
+      "1 luk, sitno seckan",
+      "2 čena belog luka",
+      "1 kašika tako začina",
+      "1 paradajz, isecan na kockice",
+      "1 avokado, isecan",
+      "100g rendanog čedara",
+      "Salata iceberg",
+      "Sour cream",
+      "Salsa sos",
+      "Limun"
+    ],
+    instructions: [
+      "U tavi propržite luk i beli luk dok ne postanu staklasti.",
+      "Dodajte mleveno meso i pržite dok se ne porumeni.",
+      "Dodajte tako začine i kuvajte 2 minuta.",
+      "Dodajte malo vode i kuvajte 5 minuta.",
+      "Zagrejte tortilje na suvom tiganju ili u mikrotalni.",
+      "Postavite meso u centar tortilje.",
+      "Dodajte paradajz, avokado, sir i salatu.",
+      "Dodajte sour cream i salsu po želji.",
+      "Poprskajte limunovim sokom.",
+      "Savijte tortilje i servirajte odmah."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "10 minuta",
+    servings: 4,
+    notes: ["Možete koristiti i pileće meso", "Dodajte ljutu papriku za pikantnost"],
+    nutrition: { calories: "380 po tako", protein: "22g", carbs: "28g", fat: "20g" }
+  },
+  "Burrito": {
+    name: "Burito",
+    description: "Veliki meksički vrap pun mesa, pirinca, pasulja i povrća.",
+    ingredients: [
+      "4 velike tortilje",
+      "400g pilećeg mesa",
+      "1 šolja kuvanog pirinca",
+      "1 konzerva crnog pasulja",
+      "1 avokado",
+      "100g čedara",
+      "2 kašike sour cream-a",
+      "Salsa sos",
+      "1 kašika kima",
+      "1 kašika čili praha",
+      "So i biber"
+    ],
+    instructions: [
+      "Začinite piletinu kimom, čili prahom, solju i biberom.",
+      "Pecite piletinu na tiganju dok se ne ispeče potpuno.",
+      "Zagrejte pasulj u šerpi.",
+      "Zagrejte tortilje da budu meši.",
+      "Na sredinu tortilje stavite pirinac.",
+      "Dodajte piletinu, pasulj, avokado i sir.",
+      "Dodajte sour cream i salsu.",
+      "Savijte donji deo tortilje preko punjenja.",
+      "Savijte levi i desni kraj prema centru.",
+      "Čvrsto zavijte odozgo naniže.",
+      "Ise ite po polovi ili servirajte ceo."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: ["Možete peći burito u rerni za hrskavost", "Dodajte jalapeño za ljutinu"],
+    nutrition: { calories: "520 po buritu", protein: "28g", carbs: "45g", fat: "24g" }
+  },
+  "Quesadilla": {
+    name: "Kesadila",
+    description: "Meksička tortilja punjena sirom i drugim sastojcima, zagrejana do topljenja sira.",
+    ingredients: [
+      "4 velike tortilje",
+      "200g čedara ili monterey jack sira",
+      "1 pileća prsa, kuvana i iseckana",
+      "1/2 crvene paprike",
+      "2 čena belog luka",
+      "1 kašika ulja",
+      "Sour cream za serviranje",
+      "Guacamole",
+      "Salsa sos"
+    ],
+    instructions: [
+      "Propržite papriku i beli luk na ulju 3 minuta.",
+      "Dodajte iseckano pileće meso i zagrejte.",
+      "Na polovinu tortilje stavite sir.",
+      "Dodajte smesu mesa i paprike.",
+      "Dodajte još sira i preklopite tortilje.",
+      "Pečite na suvom tiganju 2-3 minuta po strani.",
+      "Pečite dok sir se ne otopi i tortilja ne porumeni.",
+      "Isecite na trouglove.",
+      "Servirajte sa sour cream, guacamole i salsom."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "8 minuta",
+    servings: 2,
+    notes: ["Ne preoptereti punjenja da se lako savija", "Možete dodati gljive ili spanać"],
+    nutrition: { calories: "420 po porciji", protein: "24g", carbs: "32g", fat: "22g" }
+  },
+  "Enchiladas": {
+    name: "Enčilade",
+    description: "Meksičke tortilje punjen mesa, umotane i zapečene u sosu.",
+    ingredients: [
+      "8 manjh tortilja",
+      "400g pilećeg mesa",
+      "200g monterey jack sira",
+      "1 luk",
+      "400ml encilada sosa",
+      "100ml sour cream-a",
+      "1 kašika kima",
+      "1 kašičica oregana",
+      "So i biber",
+      "Korijander za ukras"
+    ],
+    instructions: [
+      "Zagrejte rernu na 180°C.",
+      "Propržite sitno seckan luk dok ne postane staklast.",
+      "Dodajte pileće meso i začine, pržite do gotovosti.",
+      "Zagrejte tortilje da budu savitljive.",
+      "Stavite meso u centar svake tortilje i zavi jte Čvrsto.",
+      "Poredajte enčilade u nauljenu tepsiju.",
+      "Prelijte encilada sosom.",
+      "Pospite rendanim sirom.",
+      "Pecite 20-25 minuta dok sir ne porumeni.",
+      "Servirajte sa sour cream-om i korijadorom."
+    ],
+    prepTime: "25 minuta",
+    cookTime: "25 minuta",
+    servings: 4,
+    notes: ["Možete napraviti vegetarijansku verziju sa pasuljom", "Dodajte jalapeño za ljutinu"],
+    nutrition: { calories: "380 po porciji", protein: "26g", carbs: "28g", fat: "18g" }
+  },
+  "Guacamole": {
+    name: "Gvakomole",
+    description: "Meksički namaz od avokada, tradicionalni prilog uz tako i čips.",
+    ingredients: [
+      "3 zrela avokada",
+      "1 mali luk, sitno seckan",
+      "2 paradajza, bez semena, uba kockice",
+      "2 čena belog luka",
+      "1-2 jalapeño papričice",
+      "Sok od 2 limuna",
+      "2 kašike sveežeg korijandera",
+      "1/2 kašičice soli",
+      "1/4 kašičice koma"
+    ],
+    instructions: [
+      "Prepolovite avokade i izvadite koštice.",
+      "Kašikom izdubite avokado iz kože.",
+      "U posudi iszgnječite avokado viljuškom.",
+      "Sitno usitni beli luk i jalapeño.",
+      "Dodajte luk, paradajz, beli luk i jalapeño.",
+      "Dodajte limunov sok, korijander, so i kim.",
+      "Dobro promešajte sve sastojke.",
+      "Probajte i podesite začine po ukusu.",
+      "Servirajte odmah sa tortila čips-ima."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "0 minuta",
+    servings: 6,
+    notes: ["Avokado mora biti zreo ali ne prezreo", "Dodajte cošticu avokada u guacamole da ne potamni"],
+    nutrition: { calories: "120 po porciji", protein: "2g", carbs: "6g", fat: "11g" }
+  },
+  "Nachos": {
+    name: "Načos",
+    description: "Meksički čips sa topljenim sirom i raznim prilozima.",
+    ingredients: [
+      "200g tortila čipsa",
+      "200g čedara, rendan",
+      "100g monterey jack sira",
+      "1 konzerva crnog pasulja",
+      "2 paradajza, uba kockice",
+      "1 avokado",
+      "100ml sour cream-a",
+      "2 jalapeño papričice",
+      "Salsa sos",
+      "Korijander"
+    ],
+    instructions: [
+      "Zagrejte rernu na 180°C.",
+      "Pospte čips po velikoj tepsiji.",
+      "Ravnomerno pospete sirovi na vrh.",
+      "Dodajte pasulj preko sira.",
+      "Pecite 8-10 minuta dok se sir ne otopi.",
+      "Izvadite iz rerne.",
+      "Dodajte paradajz, avokado i jalapeño.",
+      "Dodajte kleke sour cream-a.",
+      "Pospite korijadorom.",
+      "Servirajte odmah sa salsom."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "10 minuta",
+    servings: 4,
+    notes: ["Ne preoptereti priloge da čips ne omekša", "Servirajte odmah po pripremi"],
+    nutrition: { calories: "420 po porciji", protein: "16g", carbs: "35g", fat: "24g" }
+  },
+  "Chili con carne": {
+    name: "Čili kon karne",
+    description: "Ljuta meksička jela sa govedinom, pasuljom i začinima.",
+    ingredients: [
+      "500g mlevene govedine",
+      "1 konzerva crvenog pasulja",
+      "1 konzerva paradajza",
+      "1 luk, seckan",
+      "3 čena belog luka",
+      "2 kašike čili praha",
+      "1 kašika kima",
+      "1 kašika oregana",
+      "1 kašičica ljute paprike",
+      "So i biber",
+      "2 kašike ulja"
+    ],
+    instructions: [
+      "U velikoj šerpi zagrejte ulje i propržite luk.",
+      "Dodajte beli luk i pržite još minut.",
+      "Dodajte mleveno meso i pržite do rumene boje.",
+      "Dodajte sve začine i pržite 2 minuta.",
+      "Dodajte paradajz i pasulj sa tečnošću.",
+      "Dovedite do ključanja, zatim smanjitevat ru.",
+      "Kuvajte pokriveno 1 sat, povremeno mešajući.",
+      "Začinite solju i biberom po ukusu.",
+      "Servirajte sa pirinccsom ili tortila čips-ima."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "1 sat 10 minuta",
+    servings: 6,
+    notes: ["Ukus se poboljšava ako se ostavi da odmara", "Dodajte više čili za ljuđi ukus"],
+    nutrition: { calories: "320 po porciji", protein: "22g", carbs: "18g", fat: "16g" }
+  },
+  "Fajitas": {
+    name: "Fahitas",
+    description: "Meksičko jelo sa grilovanim mesom i povrćem, servirano sa tortiljama.",
+    ingredients: [
+      "500g pilećih prsa",
+      "2 paprike (crvena i žuta)",
+      "1 veliki luk",
+      "3 kašike maslinovog ulja",
+      "2 kašike soka limuna",
+      "1 kašika kima",
+      "1 kašičica čili praha",
+      "1 kašičica paprike",
+      "So i biber",
+      "8 malih tortilja",
+      "Guacamole, sour cream, salsa"
+    ],
+    instructions: [
+      "Isecite piletinu na tanke trake.",
+      "Marinirajte piletinu u ulju, limunu i začinima 30 minuta.",
+      "Isecite paprike i luk na trake.",
+      "Na visokoj vatri propržite piletinu 5-6 minuta.",
+      "Izvadite piletinu iz tave.",
+      "U istoj tavi propržite povrće 4-5 minuta.",
+      "Vratiteiletinu u tavu i promešajte.",
+      "Zagrejte tortilje.",
+      "Servirajte meso sa povrćem, tortiljama i prilozima."
+    ],
+    prepTime: "15 minuta + 30 min mariniranje",
+    cookTime: "12 minuta",
+    servings: 4,
+    notes: ["Možete koristiti i govedinu umesto piletine", "Servirajte na vrućoj tavi za bolji efekat"],
+    nutrition: { calories: "380 po porciji", protein: "28g", carbs: "32g", fat: "14g" }
+  },
+  "Churros": {
+    name: "Čuros",
+    description: "Španski/meksički desert - prženo testo u obliku štapića sa cimetom i šećerom.",
+    ingredients: [
+      "250ml vode",
+      "50g masla",
+      "1 kašičica šećera",
+      "1/2 kašičice soli",
+      "150g brašna",
+      "3 jaja",
+      "Ulje za duboko prženje",
+      "100g šećera za posipanje",
+      "1 kašičica cimeta",
+      "Čokoladni sos za umakanje"
+    ],
+    instructions: [
+      "U šerpi prokuvajte vodu, maslo, šećer i so.",
+      "Uklonite sa vatre i dodajte brašno odjednom.",
+      "Mešajte energično da se sve sjedini.",
+      "Vratite na vatru i mešajte 2 minuta.",
+      "Ostavite da se ohladi 5 minuta.",
+      "Dodajte jaja jedno po jedno, dobro mešajući.",
+      "Stavite testo u kesić sa zvezda stim vrh om.",
+      "Zagrejte ulje na 180°C.",
+      "Istisnite čurose direktno u vruće ulje.",
+      "Pržite 2-3 minuta do zlatne boje.",
+      "Uvaljajte u smesu šećera i cimeta."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: ["Ulje mora biti prave temperature", "Servirajte toplo sa čokoladnim sosom"],
+    nutrition: { calories: "280 po porciji", protein: "6g", carbs: "35g", fat: "12g" }
+  },
+  "Tres leches": {
+    name: "Tres lečes",
+    description: "Tradicionalni latinoamerički desert sa tri vrste mleka.",
+    ingredients: [
+      "6 jaja",
+      "200g šećera",
+      "200g brašna",
+      "1 kašičica ekstrakta vanile",
+      "1 kašičica praška za pecivo",
+      "400ml kondenzoovanog mleka",
+      "400ml eva porirani mleka",
+      "250ml teškog pavlake",
+      "300ml pavlake za šlag",
+      "3 kašike prah šećera",
+      "Cimet za posipanje"
+    ],
+    instructions: [
+      "Zagrejte rernu na 180°C. Navnet tepsiju 23x33cm.",
+      "Umutite jaja i šećer dok ne bud belo i p ffi.",
+      "Dodajte vanilu.",
+      "Pomješajte brašno i prašak za pecivo.",
+      "Lagano umesite brašno u jaja.",
+      "Sipajte u tepsiju i pecite 25-30 minuta.",
+      "Ohla ite potpuno.",
+      "Pomešajte tri vrste mleka.",
+      "Zabodite kolač viljuškom na više mesta.",
+      "Polako lijte mlena smesu preko kolača.",
+      "Dajme da se upije u frižideru preko noći.",
+      "Umutite pavlaku sa prah šećerom i namažite.",
+      "Pospite cimetom."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "30 minuta + preko noći hlađenje",
+    servings: 12,
+    notes: ["Kolač mora da odstoji preko noći", "Ukusniji je dan-dva posle primiprema"],
+    nutrition: { calories: "380 po porciji", protein: "8g", carbs: "48g", fat: "18g" }
+  },
+  "Pozole": {
+    name: "Pozole",
+    description: "Tradicionalna meksička čorba sa svinjskim mesom i hominy kukuruzom.",
+    ingredients: [
+      "1kg svinjskog rame a",
+      "500g svinjskih rebara",
+      "2 konzerve hominy kukuruza",
+      "6 guajillo čili paprika",
+      "2 ancho čili paprika",
+      "4 čena belog luka",
+      "1 luk",
+      "1 kašičica oregana",
+      "So po ukusu",
+      "Salata, redo ljuk, limun za serviranje"
+    ],
+    instructions: [
+      "Kuvajte meso u velikoj šerpi 1.5 sat dok ne omekša.",
+      "Izvadite meso i isce dite bujon.",
+      "Isecite me so na manje komade.",
+      "Uklonit rze ine iz čili paprika.",
+      "Blansirajte čili u vrućoj vodi 15 minuta.",
+      "Blendajte čili sa lukom, belim lukom i malo vode.",
+      "Proces ijanji čili smesu kroz sito.",
+      "Dodajte čili smesu u bujon.",
+      "Dodajte meso i hominy kukuruz.",
+      "Kuvajte 30 minuta da se ukusi sjedine.",
+      "Servirajte sa salatom, lukom i limunom."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "2.5 sata",
+    servings: 8,
+    notes: ["Tradicionalno se servira za praznike", "Možete koristiti i pileće meso"],
+    nutrition: { calories: "420 po porciji", protein: "32g", carbs: "22g", fat: "22g" }
+  },
   "Teleća pečenja": {
     name: "Teleća pečenja",
     ingredients: [
@@ -1820,6 +3505,168 @@ export const recipes: Record<string, Recipe> = {
     cookTime: "2-2.5 sata",
     servings: 8
   },
+  "Sushi": {
+    name: "Suši",
+    description: "Tradicionalno japansko jelo sa rižom, ribom i povrćem.",
+    ingredients: [
+      "2 šolje sushi riže",
+      "3 kašike rižovog sircećeta",
+      "2 kašike šećera",
+      "1 kašičica soli",
+      "200g svežeg lososa",
+      "200g svežeg tuna",
+      "4 lista nori alge",
+      "1 avokado",
+      "1 krastavac",
+      "Wasabi, đumbir, soja sos"
+    ],
+    instructions: [
+      "Kuvajte rižu po uputstvu dok ne bude lepljiva.",
+      "Pomešajte sirceće, šećer i so dok se ne rastvore.",
+      "Kada se riža ohladi, dodajte smesu sircećeta.",
+      "Lagano mešajte da se riža ne zgnječi.",
+      "Isecite ribu na tanke trake.",
+      "Isecite avokado i krastavac na štapiće.",
+      "Za nigiri: oblikujte rižu u ovalne kuglice.",
+      "Stavite ribu preko riže.",
+      "Za maki: stavite nori na bambus prostirku.",
+      "Rasporedite rižu, dodajte punjenje i zavijte.",
+      "Isecite oštrim nožom.",
+      "Servirajte sa wasabi, đumbirom i soja sosom."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "20 minuta",
+    servings: 4,
+    notes: ["Koristite samo svežu ribu sushi kvaliteta", "Riža mora biti sobne temperature"],
+    nutrition: { calories: "280 po porciji", protein: "18g", carbs: "35g", fat: "8g" }
+  },
+  "Ramen": {
+    name: "Ramen",
+    description: "Japanska čorba sa nudlama, mesom i povrćem u bogatom bujonu.",
+    ingredients: [
+      "4 porcije instant ramen nudli",
+      "1 litar pilećeg bujona",
+      "2 kašike miso paste",
+      "1 kašika soja sosa",
+      "4 jaja",
+      "200g pilećeg mesa",
+      "2 mladana luka",
+      "100g bambusovih mladica",
+      "2 lista nori alge",
+      "Susam za posipanje"
+    ],
+    instructions: [
+      "Skuvajte jaja 6-7 minuta za mekše žumance.",
+      "Ohladite ih u leddenoj vodi i ogulite.",
+      "Iseckajte pileće meso tanko i marinirajte soja sosom.",
+      "Propržite piletinu na tiganju 3-4 minuta.",
+      "Zagrejte bujon i dodajte miso pastu.",
+      "Kuvajte nudle po uputstvu i oscijedite.",
+      "Podelite nudle u 4 duboke zdjele.",
+      "Prelijte vrućim bujonom.",
+      "Dodajte piletinu, prepolovljena jaja, bambus.",
+      "Dodajte seckan mladi luk i nori.",
+      "Pospite susamom i servirajte vruće."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: ["Bujon može da se kuva satima za bolji ukus", "Dodajte čili ulje za pikantnost"],
+    nutrition: { calories: "420 po porciji", protein: "22g", carbs: "48g", fat: "14g" }
+  },
+  "Teriyaki chicken": {
+    name: "Teriyaki piletina",
+    description: "Japanska slatko-slana piletina sa teriyaki glasurom.",
+    ingredients: [
+      "4 pileća prsa",
+      "100ml soja sosa",
+      "50ml mirana (ili belo vino)",
+      "3 kašike šećera",
+      "1 kašika meda",
+      "2 čena belog luka",
+      "1 kašika svežeg đumbira",
+      "1 kašika ulja",
+      "1 kašičica corn starch",
+      "Susam i mladi luk za ukras"
+    ],
+    instructions: [
+      "Isecite pileća prsa na srednje komade.",
+      "U posudi pomešajte soja sos, mirin, šećer i med.",
+      "Sitno usitni beli luk i đumbir.",
+      "Zagrejte ulje u velikoj tavi na srednjoj vatri.",
+      "Propržite piletinu 5-6 minuta do rumene boje.",
+      "Dodajte beli luk i đumbir, pržite još minut.",
+      "Dodajte teriyaki sos i kuvajte 3-4 minuta.",
+      "Pomešajte corn starch sa malo vode.",
+      "Dodajte da se sos zgusne.",
+      "Servirajte sa pirinom posuto susamom."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "12 minuta",
+    servings: 4,
+    notes: ["Pazite da se sos ne zagoreli", "Možete koristiti i salmon umesto piletine"],
+    nutrition: { calories: "320 po porciji", protein: "28g", carbs: "18g", fat: "12g" }
+  },
+  "Miso soup": {
+    name: "Miso čorba",
+    description: "Tradicionalna japanska čorba sa miso pastom, tofuom i algama.",
+    ingredients: [
+      "4 šolje vode",
+      "1 komad kombua (kelp)",
+      "3 kašike miso paste",
+      "150g silky tofua",
+      "2 kašike wakame algi",
+      "2 mladana luka",
+      "1 kašika bonito flakes (opciono)"
+    ],
+    instructions: [
+      "Natopajte kombu u vodi 30 minuta.",
+      "Zagrejte vodu sa kombuom, ali ne dovedite do ključanja.",
+      "Uklonite kombu kad se voda zagreje.",
+      "U maloj posudi razblažite miso pastu sa malo tople vode.",
+      "Dodajte miso smesu u toplu vodu.",
+      "Natopajte wakame alge u vodi 5 minuta.",
+      "Isecite tofu na male kockice.",
+      "Dodajte tofu i wakame u čorbu.",
+      "Zagrejte ali ne kuvajte dugo.",
+      "Servirajte sa seckanim mladim lukom."
+    ],
+    prepTime: "10 minuta + 30 min natopanje",
+    cookTime: "10 minuta",
+    servings: 4,
+    notes: ["Miso ne sme da ključa jer gubi probiotike", "Možete dodati pečurke"],
+    nutrition: { calories: "80 po porciji", protein: "6g", carbs: "8g", fat: "3g" }
+  },
+  "Yakitori": {
+    name: "Yakitori",
+    description: "Japanski grilirani pileći ražnjići sa slatko-slanim sosom.",
+    ingredients: [
+      "500g pilećih bataka",
+      "100ml soja sosa",
+      "50ml mirana",
+      "2 kašike šećera",
+      "1 kašika sake (opciono)",
+      "2 mladana luka",
+      "Drveni ražnjići"
+    ],
+    instructions: [
+      "Potopite drvene ražnjiće u vodu 30 minuta.",
+      "Isecite piletinu na komade veličine 2cm.",
+      "Nanižite piletinu na ražnjiće.",
+      "Za sos: pomešajte soja sos, mirin, šećer i sake.",
+      "Kuvajte sos 5 minuta da se zgusne.",
+      "Zagrejte grill na srednjoj vatri.",
+      "Grilujte ražnjiće 8-10 minuta, okrećući često.",
+      "Poslednjih 2 minuta mažite sosom.",
+      "Pospite seckanim mladim lukom.",
+      "Servirajte toplo."
+    ],
+    prepTime: "20 minuta + 30 min natopanje",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: ["Koristite i kožu sa bataka za bolji ukus", "Možete dodati povrće na ražnjiće"],
+    nutrition: { calories: "280 po porciji", protein: "24g", carbs: "12g", fat: "14g" }
+  },
   "Jagnjetina": {
     name: "Jagnjetina",
     ingredients: [
@@ -1848,6 +3695,187 @@ export const recipes: Record<string, Recipe> = {
     prepTime: "30 minuta",
     cookTime: "3-4 sata",
     servings: 8
+  },
+  "Tikka masala": {
+    name: "Tikka masala",
+    description: "Krema sta indijska kari sa mariniranim pilećim mesom u bogatom sosu.",
+    ingredients: [
+      "500g pilećih prsa",
+      "200ml jogurta",
+      "2 kašike garam masala",
+      "1 kašika tandoori začina",
+      "400ml kokosovog mleka",
+      "400g konzerve paradajza",
+      "1 luk, seckan",
+      "3 čena belog luka",
+      "1 kašika đumbira",
+      "2 kašike ghee masla",
+      "1 kašičica kima",
+      "1 kašičica kurkume",
+      "Korijander za ukras"
+    ],
+    instructions: [
+      "Isecite piletinu na komade i marinirajte sa jogurtom i tandoori začinima 2 sata.",
+      "Propržite piletinu na visokoj vatri dok se ne porumeni.",
+      "U istoj tavi propržite luk dok ne postane staklast.",
+      "Dodajte beli luk, đumbir i garam masala.",
+      "Pržite 1 minut dok začini ne mirisaju.",
+      "Dodajte paradajz i kuvajte 10 minuta.",
+      "Dodajte kokosovo mleko i vra tite piletinu.",
+      "Kuvajte na slaboj vatri 15 minuta.",
+      "Dodajte kim i kurkumu.",
+      "Servirajte sa basmati pirinom i naan hlebom.",
+      "Ukrašavajte korijadorom."
+    ],
+    prepTime: "20 minuta + 2 sata mariniranje",
+    cookTime: "30 minuta",
+    servings: 4,
+    notes: ["Marini ranje je ključno za ukus", "Možete dodati krem za kremastiju teksturu"],
+    nutrition: { calories: "420 po porciji", protein: "32g", carbs: "18g", fat: "24g" }
+  },
+  "Butter chicken": {
+    name: "Puter piletina",
+    description: "Krema sta indijska kari sa pilećim mesom u bogatom tomato-krem sosu.",
+    ingredients: [
+      "500g pilećih prsa",
+      "200ml jogurta",
+      "400ml paradajz konzerve",
+      "200ml teškog krema",
+      "100g masla",
+      "1 luk",
+      "3 čena belog luka",
+      "1 kašika đumbira",
+      "2 kašičice garam masala",
+      "1 kašičica kima",
+      "1 kašičica crvene paprike",
+      "1 kašika paradajz koncentrata",
+      "So i šećer po ukusu"
+    ],
+    instructions: [
+      "Marinirajte piletinu u jogurtu sa polovima začina 1 sat.",
+      "Propržite piletinu u maslu dok se ne ispeče.",
+      "Izvadite piletinu i u istoj tavi propržite luk.",
+      "Dodajte beli luk, đumbir i ostale začine.",
+      "Pržite 2 minuta da se začini aktiviraju.",
+      "Dodajte paradajz i koncentrat, kuvajte 10 minuta.",
+      "Blendajte sos dok ne bude gla dak.",
+      "Vratite u tavu, dodajte krem i vra tite piletinu.",
+      "Kuvajte 10 minuta da se ukusi sjedine.",
+      "Podesite ukus sa solju i šećerom.",
+      "Servirajte sa pirinom i naan hlebom."
+    ],
+    prepTime: "15 minuta + 1 sat mariniranje",
+    cookTime: "25 minuta",
+    servings: 4,
+    notes: ["Sos može biti blanji ako dodaje više krema", "Tradicionalno se servira sa basmati pirinom"],
+    nutrition: { calories: "480 po porciji", protein: "34g", carbs: "12g", fat: "32g" }
+  },
+  "Biryani": {
+    name: "Biryani",
+    description: "Aro matičan indijski pirinac sa mesom ili povrćem i egzotičnim začinima.",
+    ingredients: [
+      "2 šolje basmati pirin ca",
+      "500g jagnjetine ili pile tine",
+      "1 šolja jogurta",
+      "2 luka, tanko secka na",
+      "1/4 šolje ghee masla",
+      "6 čena belog luka",
+      "1 kašika đumbira",
+      "2 kašičice garam masala",
+      "1 kašičica kurkume",
+      "6 klinovića",
+      "4 kardamoma",
+      "2 list lora vor a",
+      "1 štapić ci meta",
+      "Safran, ko rijander"
+    ],
+    instructions: [
+      "Natopajte pirinac u vodi 30 minuta.",
+      "Marinirajte meso sa jogurtom, lukom i začinima 2 sata.",
+      "U velikoj šerpi zagrejte ghee i pržite polovu luka do zlatne boje.",
+      "Izvadite prze ni luk i sačuvajte.",
+      "U istom ulju propržite meso do rumene boje.",
+      "Dodajte ostatak začina i kuvajte 15 minuta.",
+      "U drugim šerpi prokuvajte pirinac sa celim začinima 70% gotovosti.",
+      "U vatrostalnu tepsiju stavite sloj mesa.",
+      "Pokrijte slojem pirin ca.",
+      "Pospite prze nim lukom i safranom.",
+      "Pokrijte folijom i pecite na 180°C 45 minuta.",
+      "Servirajte sa jogurtom i korijadorom."
+    ],
+    prepTime: "30 minuta + 2 sata mari niranje",
+    cookTime: "1 sat 15 minuta",
+    servings: 6,
+    notes: ["Važno je ne prekuvati pirinac", "Safran daje karakterističan ukus i boju"],
+    nutrition: { calories: "520 po porciji", protein: "28g", carbs: "58g", fat: "18g" }
+  },
+  "Naan hleb": {
+    name: "Naan hleb",
+    description: "Mekani indijski hleb pečen u tandoor re rni, idealan uz kari.",
+    ingredients: [
+      "2 šolje brašna",
+      "1 kašičica kvasca",
+      "1 kašičica šećera",
+      "1/2 kašičice soli",
+      "3 kašike jogurta",
+      "2 kašike ulja",
+      "120ml mlake vode",
+      "2 kašike masla za maženje",
+      "Beli luk i peršun (opciono)"
+    ],
+    instructions: [
+      "U maloj posudi rastvorite kvasac u mlaku vodu sa šećerom.",
+      "U velikoj posudi pomešajte brašno i so.",
+      "Dodajte kvasac, jogurt i ulje.",
+      "Zamesite glatko testo, dodajući vodu po potrebi.",
+      "Pokrijte i ostavite da se diže 1 sat.",
+      "Podelite testo na 6 delova.",
+      "Razvaljajte svaki deo u oval.",
+      "Pečite u vruc oj tavi 1-2 minuta po strani.",
+      "Premažite topli naan maslo m.",
+      "Po želji dodajte seckan beli luk i peršun."
+    ],
+    prepTime: "20 minuta + 1 sat dižanje",
+    cookTime: "15 minuta",
+    servings: 6,
+    notes: ["Možete peći u rerni na naj višoj temperaturi", "Tradi cionalno se peče u tan door rerni"],
+    nutrition: { calories: "180 po kom", protein: "5g", carbs: "32g", fat: "4g" }
+  },
+  "Samosa": {
+    name: "Samosa",
+    description: "Krs ave indijske trokutave pir oke pune začinjen og povrća ili mesa.",
+    ingredients: [
+      "2 šolje brašna",
+      "4 kašike ulja",
+      "1/2 kašičice soli",
+      "6-8 kašika vode",
+      "3 krompira, kuva na",
+      "1 šolja graška",
+      "1 luk, seckan",
+      "2 čena belog luka",
+      "1 kašika đumbir a",
+      "2 kašičice garam masala",
+      "1 kašičica kima",
+      "Ulje za duboko prženje"
+    ],
+    instructions: [
+      "Za testo: pomešajte brašno, so i ulje.",
+      "Dodajte vodu postepeno i zamesite čvrsto testo.",
+      "Ostavite da odmara 30 minuta.",
+      "Za punje nje: propržite luk, beli luk i đumbir.",
+      "Dodajte iscedene komade krompira i grašak.",
+      "Dodajte začine i kuvajte 5 minuta.",
+      "Ostavite da se ohladi.",
+      "Razvaljajte testo i isecite na polukrugove.",
+      "Oblikujte čunj, napunite punjenje m i zatvorite.",
+      "Pržite u vrućem ulju do zlatne boje.",
+      "Servirajte sa čatni sosom."
+    ],
+    prepTime: "45 minuta + 30 min odmor",
+    cookTime: "20 minuta",
+    servings: 6,
+    notes: ["Važno je dobro zatvoriti krajeve", "Možete peći umesto pržiti"],
+    nutrition: { calories: "220 po kom", protein: "5g", carbs: "28g", fat: "10g" }
   },
   "Prasetina": {
     name: "Prasetina",
@@ -4836,6 +6864,305 @@ export const recipes: Record<string, Recipe> = {
     cookTime: "25 minuta",
     servings: 4
   },
+  "Tagine": {
+    name: "Tažin",
+    description: "Tradicionalno marokanski gulaš sa aromatic začinima, kuvano u posebnom zemljanom sudu.",
+    ingredients: [
+      "800g jagnjetine ili piletine, isečene na komadiće",
+      "2 crna luka, seckana",
+      "4 čena belog luka, seckana",
+      "2 šargarepe, seckane na krupnije komade",
+      "200g suvog voća (kajsije, šljive)",
+      "1 kašika đumbira u prahu",
+      "1 kašika cimeta",
+      "2 kašike meda",
+      "400ml bujona",
+      "2 kašike maslinovog ulja",
+      "So i biber po ukusu",
+      "Svež koriander za serviranje"
+    ],
+    instructions: [
+      "Zagrejte maslinovo ulje u velikoj šerpi ili tažinu na srednjoj vatri.",
+      "Dodajte crni luk i pržite dok ne postane providjan, oko 5 minuta.",
+      "Dodajte beli luk i pržite još minut.",
+      "Dodajte meso i pečite dok se ne porumeni sa svih strana.",
+      "Dodajte začine (đumbir, cimet), so i biber, i pržite minut.",
+      "Dodajte šargarepu, suvo voće i med.",
+      "Sipajte bujon i pustite da provri.",
+      "Smanjite vatru, pokrijte i kuvajte 1.5-2 sata dok meso ne postane meko.",
+      "Ukrasiti svežim korijandrom pre služenja."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "2 sata",
+    servings: 6,
+    notes: ["Tradicionalno se pravi u zemljanom tažinu", "Možete dodati i bademe na kraju"],
+    nutrition: { calories: "380 po porciji", protein: "28g", carbs: "25g", fat: "18g" }
+  },
+  "Jollof rice": {
+    name: "Džolof pirinač",
+    description: "Popularno zapadno-afričko jelo od pirinča sa paradajzom i začinima.",
+    ingredients: [
+      "400g jasmina pirinča",
+      "400g paradajz paste",
+      "1 veliki crni luk, seckan",
+      "3 čena belog luka, seckana",
+      "2 kašike ulja",
+      "750ml bujona od piletine",
+      "1 kašičica timijana",
+      "1 kašičica paprike u prahu",
+      "1/2 kašičice ljute paprike",
+      "2 lovora lista",
+      "So i biber po ukusu",
+      "Svež peršun za ukras"
+    ],
+    instructions: [
+      "Operite pirinač u hladnoj vodi dok voda ne postane bistra.",
+      "Zagrejte ulje u velikoj šerpi na srednjoj vatri.",
+      "Dodajte crni luk i pržite dok ne postane providjan.",
+      "Dodajte beli luk i pržite još minut.",
+      "Dodajte paradajz pastu i začine, pržite 3-4 minuta.",
+      "Dodajte pirinač i pržite 2 minuta dok se ne prekrije sosom.",
+      "Sipajte bujon, dodajte lovora lista.",
+      "Pustite da provri, zatim smanjite vatru na najnižu.",
+      "Pokrijte i kuvajte 18-20 minuta dok pirinač ne bude mek.",
+      "Ostavite da odstoji 5 minuta, zatim ukrasiti peršunom."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "25 minuta",
+    servings: 6,
+    notes: ["Važno je ne mešati previše tokom kuvanja", "Možete dodati piletinu ili govedinu"],
+    nutrition: { calories: "320 po porciji", protein: "8g", carbs: "65g", fat: "6g" }
+  },
+  "Biltong": {
+    name: "Biltong",
+    description: "Južno-afrički sušen i začinjen govedji ili divljač, bogat proteinima.",
+    ingredients: [
+      "2kg govedine (čanak ili but), isečeno u trake",
+      "100ml sirćeta",
+      "3 kašike grube morske soli",
+      "2 kašike šećera u prahu",
+      "2 kašike korijandera u zrnu, mlevenog",
+      "1 kašika crnog bibera, mlevenog",
+      "1 kašičica soli"
+    ],
+    instructions: [
+      "Isecite meso na trake debljine 2-3cm, u pravcu vlakana.",
+      "Potopite svaku traku u sirće na 2-3 sekunde.",
+      "Pomešajte sve suve začine u velikoj posudi.",
+      "Uvaljajte vlažno meso u smesu začina dok se ne prekrije potpuno.",
+      "Obesite trake na kuke u dobro provetrenom mestu.",
+      "Ostavite da se suši 3-7 dana, zavisno od debljine i vlažnosti.",
+      "Meso je gotovo kad postane čvrsto ali ne previše tvrdo.",
+      "Čuvajte u papirnim kesama u suvom mestu do 2 nedelje."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "3-7 dana sušenja",
+    servings: 20,
+    notes: ["Potrebna je dobra ventilacija", "Izbegavajte vlažne dane za početak sušenja"],
+    nutrition: { calories: "120 po porciji", protein: "25g", carbs: "1g", fat: "2g" }
+  },
+  "Hummus": {
+    name: "Humus",
+    description: "Kremasti bliskoistočni namaz od leblebija sa tahini i začinima.",
+    ingredients: [
+      "400g kuvanih leblebija (ili 1 konzerva)",
+      "3 kašike tahini paste",
+      "2 čena belog luka",
+      "3 kašike limunovog soka",
+      "1 kašičica kim semenja u prahu",
+      "3-4 kašike hladne vode",
+      "2 kašike maslinovog ulja",
+      "So po ukusu",
+      "Paprika u prahu za ukrašavanje",
+      "Maslinove"
+    ],
+    instructions: [
+      "Ako koristite suvi leblebij, kuvajte ga prethodne večeri.",
+      "U blender stavite leblebij, tahini, beli luk i limunov sok.",
+      "Dodajte kim i so, pa miksajte dok ne dobijete glatku pastu.",
+      "Postepeno dodajte vodu dok ne postignete željenu konzistenciju.",
+      "Probajte i korigujte začine po potrebi.",
+      "Prebacite u tanjir i napravite udubljenja kašikom.",
+      "Prelijte maslinovim uljem i posipajte paprikom.",
+      "Ukrasiti maslinima i peršunom.",
+      "Služiti sa pitom hleb ili povrćem."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "0 minuta",
+    servings: 6,
+    notes: ["Tahini je ključan za autentičan ukus", "Može se čuvati u frižideru 5 dana"],
+    nutrition: { calories: "180 po porciji", protein: "8g", carbs: "20g", fat: "9g" }
+  },
+  "Shawarma": {
+    name: "Šavarma",
+    description: "Bliskoistočka rolovana lepinja sa mariniranim mesom i svežim povrćem.",
+    ingredients: [
+      "600g pilećih bataka, bez kostiju",
+      "4 kašike maslinovog ulja",
+      "2 kašike limunovog soka",
+      "2 čena belog luka, seckana",
+      "1 kašičica kim semenja",
+      "1 kašičica paprike u prahu",
+      "1/2 kašičice cimeta",
+      "So i biber po ukusu",
+      "4 pita leba",
+      "1 krastavac, seckan",
+      "2 paradajza, seckana",
+      "1/2 crnog luka, tanko sečenog",
+      "Salata iceberg",
+      "4 kašike tahini soса"
+    ],
+    instructions: [
+      "Isecite piletinu na tanke trake.",
+      "Pomešajte ulje, limunov sok, beli luk i sve začine.",
+      "Marinirajte piletinu u ovoj smeši najmanje 2 sata.",
+      "Zagrejte tiganj ili roštilj na visokoj vatri.",
+      "Pecite piletinu 8-10 minuta dok ne porumeni i ne prokuva.",
+      "Zagrejte pita leb na tiganju ili u rerni.",
+      "Premažite pita sa tahini sosom.",
+      "Dodajte piletinu, povrće i salatu.",
+      "Čvrsto rolajte i služite odmah."
+    ],
+    prepTime: "15 minuta + 2 sata mariniranje",
+    cookTime: "10 minuta",
+    servings: 4,
+    notes: ["Mariniranje je ključno za ukus", "Možete koristiti i govedinu ili jagnjetinu"],
+    nutrition: { calories: "450 po porciji", protein: "35g", carbs: "35g", fat: "20g" }
+  },
+  "Baklava": {
+    name: "Baklava",
+    description: "Slatki bliskoistočni desert sa tankim korama testa, orasima i sirupom.",
+    ingredients: [
+      "500g filo testa",
+      "300g mešanih orašastih plodova (orasi, bademi, pistacije)",
+      "200g putera, otopljenog",
+      "2 kašike cimeta u prahu",
+      "Za sirup:",
+      "400g šećera",
+      "300ml vode",
+      "2 kašike meda",
+      "1 štapić cimeta",
+      "3 cela karanfilića",
+      "Kora od pola limuna"
+    ],
+    instructions: [
+      "Zagrejte rernu na 180°C.",
+      "Usitnjeno pomešajte orase sa cimetom.",
+      "Premažite vatrostalnu posudu (30x20cm) puterom.",
+      "Položite pola filo kora, premažući svaku puterom.",
+      "Rasporedite oreški fil po površini.",
+      "Prekrijte sa preostalim korama, svaku premažiti puterom.",
+      "Seči baklavu na romboide ili kvadrate.",
+      "Pecite 45-50 minuta dok ne postane zlatno braon.",
+      "Za sirup: kuvajte sve sastojke 10 minuta dok se ne zgusne.",
+      "Prelijte vrelu baklavu hladnim sirupom.",
+      "Ostavite da se ohladi potpuno pre služenja."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "50 minuta",
+    servings: 24,
+    notes: ["Filo testo mora biti pokriveno vlažnom krpom", "Čuva se na sobnoj temperaturi 5 dana"],
+    nutrition: { calories: "280 po komadu", protein: "5g", carbs: "35g", fat: "15g" }
+  },
+  "Schnitzel": {
+    name: "Šnicl",
+    description: "Tradicionalni nemački tanak kotlet u prezli, hrskav i sočan.",
+    ingredients: [
+      "4 tanke šnicle (teletina ili piletina)",
+      "2 jaja, umućena",
+      "150g prezle",
+      "100g brašna",
+      "Ulje za prženje",
+      "So i biber po ukusu",
+      "1 limun, isečen na četvrtine",
+      "Peršun za ukras"
+    ],
+    instructions: [
+      "Istanjite meso čekićem za meso do debljine od 3-4mm.",
+      "Posolite i pobiberite meso sa obe strane.",
+      "Pripremite tri tanjira: brašno, umućena jaja, prezlu.",
+      "Uvaljajte svaki šnicl prvo u brašno, zatim u jaja, pa u prezlu.",
+      "Zagrejte dovoljno ulja u tiganju da pokrije pola šnicla.",
+      "Pržite šnicle 2-3 minuta sa svake strane do zlatno braon boje.",
+      "Stavite na papirne ubrus da se ocedi višak ulja.",
+      "Služite odmah sa četvrtinama limuna i ukrasiti peršunom."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "10 minuta",
+    servings: 4,
+    notes: ["Meso mora biti tanko kako bi se brzo peklo", "Služiti odmah da ostane hrskavo"],
+    nutrition: { calories: "420 po porciji", protein: "35g", carbs: "25g", fat: "22g" }
+  },
+  "Sauerbraten": {
+    name: "Zauerbrate",
+    description: "Nemački marinirani pečeni govedji but u kiselom marinadama sa słodko-kislim sosom.",
+    ingredients: [
+      "2kg govedine (but ili rame)",
+      "2 šolje crvenog vinskog sirćeta",
+      "2 šolje crvenog vina",
+      "2 crna luka, seckana",
+      "2 šargarepe, seckane",
+      "4 lovora lista",
+      "10 cela karanfilića",
+      "1 kašika gorčice zrno",
+      "2 kašike ulja",
+      "3 kašike brašna",
+      "100g gingersnap kolačića, mrvljenih",
+      "So i biber po ukusu"
+    ],
+    instructions: [
+      "Pomešajte sirće, vino, povrće i začine za marinadu.",
+      "Marinirajte meso u ovoj smeši 3-4 dana u frižideru.",
+      "Izvadite meso iz marinade i osušite. Sačuvajte marinadu.",
+      "Posolite i pobiberite meso.",
+      "Zagrejte ulje u velikoj šerpi i porumenite meso sa svih strana.",
+      "Dodajte 2 šolje marinade, pokrijte i pecite na 160°C 2.5-3 sata.",
+      "Izvadite meso i napravite sos od soka od pečenja.",
+      "Pomešajte brašno sa malo marinade i dodajte u sos.",
+      "Dodajte mrvljene kolačiće za zaslađivanje.",
+      "Kuva još 10 minuta dok se ne zgusne."
+    ],
+    prepTime: "30 minuta + 3-4 dana mariniranje",
+    cookTime: "3 sata",
+    servings: 8,
+    notes: ["Mariniranje je obavezno za autentičan ukus", "Gingersnap kolačići daju slatko-kiselji ukus"],
+    nutrition: { calories: "480 po porciji", protein: "42g", carbs: "15g", fat: "28g" }
+  },
+  "Pretzel": {
+    name: "Precel",
+    description: "Tradicionalni nemački upredeni hleb sa karakterističnom slanom korem.",
+    ingredients: [
+      "500g brašna",
+      "300ml mlake vode",
+      "1 kašičica suvog kvasca",
+      "1 kašičica šećera",
+      "2 kašičice soli",
+      "50g putera, otopljenog",
+      "Za kupatilo:",
+      "1.5l vode",
+      "90g sode bikarbone",
+      "Krupna so za posipanje",
+      "1 žumance za premazivanje"
+    ],
+    instructions: [
+      "Pomešajte mlaku vodu, kvasac i šećer. Ostavite 5 minuta.",
+      "U velikoj posudi pomešajte brašno i so.",
+      "Dodajte kvasčevu smesu i otopljen puter.",
+      "Mešajte dok se ne formira testo, zatim mešite 8-10 minuta.",
+      "Ostavite da se diže 1 sat u toplom mestu.",
+      "Podelite testo na 8 delova i oblikujte u precel oblik.",
+      "Zagrejte rernu na 220°C.",
+      "Prokuvajte vodu sa sodom bikarbom.",
+      "Kratko (30 sekundi) potopite svaki precel u kupatilo.",
+      "Stavite na pleh, premažite žumance i posipajte solju.",
+      "Pecite 12-15 minuta do tamno braon boje."
+    ],
+    prepTime: "20 minuta + 1 sat dizanje",
+    cookTime: "15 minuta",
+    servings: 8,
+    notes: ["Kupatilo od sode bikarbone daje karakterističnu teksturu", "Služiti tople sa senfom"],
+    nutrition: { calories: "220 po komadu", protein: "6g", carbs: "42g", fat: "4g" }
+  },
   "Kačamak": {
     name: "Kačamak",
     ingredients: [
@@ -4884,6 +7211,117 @@ export const recipes: Record<string, Recipe> = {
     cookTime: "20 min",
     servings: 20
   },
+  "Borscht": {
+    name: "Boršč",
+    description: "Tradicionalna ruska supa od crvene repe sa kiselim ukusom i bogato povrće.",
+    ingredients: [
+      "500g sveže crvene repe, oćišćene i rendane",
+      "2 šargarepe, seckane",
+      "1 veliki crni luk, seckan",
+      "3 krompira, seckana na kockice",
+      "200g kupusa, isečenog na trake",
+      "400g paradajz paste",
+      "1.5l govedeg bujona",
+      "3 kašike sirćeta",
+      "2 kašike šećera",
+      "3 lovora lista",
+      "3 kašike maslinovog ulja",
+      "So i biber po ukusu",
+      "Pavlaka za serviranje",
+      "Svež kopar za ukras"
+    ],
+    instructions: [
+      "Zagrejte ulje u velikoj šerpi na srednjoj vatri.",
+      "Dodajte crni luk i pržite dok ne postane providjan.",
+      "Šargarepu pržite 3-4 minuta.",
+      "Dodajte rendanu crvenu repu i pržite 5 minuta.",
+      "Dodajte paradajz pastu i pržite 2 minuta.",
+      "Sipajte bujon, dodajte lovora lista.",
+      "Pustite da provri, zatim dodajte krompir i kupus.",
+      "Kuvajte 25-30 minuta dok povrće ne omekša.",
+      "Dodajte sirće, šećer, so i biber.",
+      "Kuvajte još 5 minuta i probajte ukus.",
+      "Služiti vrelo sa pavlakom i koparom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "40 minuta",
+    servings: 6,
+    notes: ["Ukus se poboljšava ako se ostavi preko noći", "Možete dodati meso za srčaniju varijantu"],
+    nutrition: { calories: "180 po porciji", protein: "6g", carbs: "28g", fat: "6g" }
+  },
+  "Beef Stroganoff": {
+    name: "Goveđi Stroganov",
+    description: "Kremasto rusko jelo sa govedinom u bogatom sosu od pečuraka i pavlake.",
+    ingredients: [
+      "600g govedine (biftek), isečene na trake",
+      "300g pečuraka, isečenih na kriške",
+      "1 veliki crni luk, seckan",
+      "3 čena belog luka, seckana",
+      "250ml pavlake za kuvanje",
+      "2 kašike senfa",
+      "2 kašike brašna",
+      "200ml govedeg bujona",
+      "3 kašike putera",
+      "2 kašike maslinovog ulja",
+      "So i biber po ukusu",
+      "Svež peršun za ukras",
+      "Kuvane testenice za serviranje"
+    ],
+    instructions: [
+      "Zagrejte ulje u velikoj tavi na visokoj vatri.",
+      "Pečite trake govedine 2-3 minuta dok se ne porumene. Staviti po strani.",
+      "U istoj tavi otopiti puter, dodati luk i pečurke.",
+      "Pržiti 5-6 minuta dok pečurke ne ispuste tečnost.",
+      "Dodati beli luk i pržiti minut.",
+      "Pospiti brašnom i mešati 1-2 minuta.",
+      "Postepeno dodati bujon, mešajući da se ne stvore grudvice.",
+      "Dodati senf i pavlaku, mešati dok se ne zgusne.",
+      "Vratiti govedinu u tavu, zagrevati 2-3 minuta.",
+      "Posoliti, pobiberiti i ukrasiti peršunom.",
+      "Služiti preko kuvanih testenina."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "20 minuta",
+    servings: 4,
+    notes: ["Ne kuvajte dugo nakon dodavanja pavlake", "Senf daje autentičan ruski ukus"],
+    nutrition: { calories: "520 po porciji", protein: "35g", carbs: "12g", fat: "38g" }
+  },
+  "Blini": {
+    name: "Blini",
+    description: "Tanke ruske palačinke, tradicionalno služene sa kavijarom ili slatkim dodacima.",
+    ingredients: [
+      "300g brašna",
+      "500ml mleka",
+      "2 jaja",
+      "1 kašika šećera",
+      "1/2 kašičice soli",
+      "2 kašike otopljenog putera",
+      "1 kašičica kvasca u prahu",
+      "Puter za mazanje tiganja",
+      "Za serviranje:",
+      "Pavlaka",
+      "Losos ili kavijjar",
+      "Svež vlasac",
+      "Med ili džem"
+    ],
+    instructions: [
+      "U velikoj posudi pomešajte brašno, šećer, so i kvasac.",
+      "U drugoj posudi umućite jaja sa mlekom.",
+      "Postepeno dodajte tečne sastojke u suve, mešajući.",
+      "Umešajte otopljen puter dok ne dobijete glatku smesu.",
+      "Ostavite testo da odstoji 15 minuta.",
+      "Zagrejte tiganj na srednjoj vatri i premažite puterom.",
+      "Sipajte tanku kašiku testa i razlijte po tiganju.",
+      "Pečite 1-2 minuta sa svake strane.",
+      "Slažite gotove blini jedan na drugi.",
+      "Služiti tople sa željenim dodacima."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "25 minuta",
+    servings: 12,
+    notes: ["Blini treba da budu tanki kao papir", "Mogu se napraviti unapred i zagrejati"],
+    nutrition: { calories: "150 po komadu", protein: "5g", carbs: "22g", fat: "5g" }
+  },
 
   // Mexican
   "Tacos": {
@@ -4921,6 +7359,110 @@ export const recipes: Record<string, Recipe> = {
     servings: 6
   },
 
+  "Kimchi": {
+    name: "Kimči",
+    description: "Tradicionalno korejsko fermentisano povrće, bogato probioticima i aromatičnim začinima.",
+    ingredients: [
+      "1 velika glava kineskog kupusa (nappa)",
+      "60g morske soli",
+      "1 kašika šećera",
+      "4 čena belog luka, seckana",
+      "1 komad đumbira (3cm), seckan",
+      "4 mladog luka, seckanih",
+      "3 kašike kimči začine (gochugaru)",
+      "2 kašike sojevog sosa",
+      "1 kašika rižovog sirćeta",
+      "1 kašičica senča ili ribe u prahu (opciono)"
+    ],
+    instructions: [
+      "Isečite kupus na delove od 5cm i premažite solju.",
+      "Ostavite da stoji 2 sata da ispusti vodu.",
+      "Isperite kupus i iscedite u kolanderu.",
+      "Pomešajte beli luk, đumbir, mladi luk i začine u pastu.",
+      "Dodajte sojin sos, sirće i šećer u smesu.",
+      "Premažite kupus ovom smesom, peći ručice.",
+      "Stavite u čistu teglicu, pritiskajući da ispusti vazduh.",
+      "Pokrijte tkaninom i ostavite na sobnoj temperaturi 1-3 dana.",
+      "Kada se kiseli, čuvajte u frižideru do 1 meseca."
+    ],
+    prepTime: "30 minuta + 2 sata soljenje",
+    cookTime: "1-3 dana fermentacije",
+    servings: 10,
+    notes: ["Fermentacija zavisi od temperature", "Staviti kameni težišć da pritisne"],
+    nutrition: { calories: "15 po porciji", protein: "1g", carbs: "3g", fat: "0g" }
+  },
+  "Bulgogi": {
+    name: "Bulgogi",
+    description: "Slatko-slano korejsko marinirano govedji meso, tradicionalno pečeno na roštilju.",
+    ingredients: [
+      "600g govedine (ribaj ili biftek), tanko isečene",
+      "1 azijska kruška, rendana",
+      "4 kašike sojevog sosa",
+      "2 kašike smeđeg šećera",
+      "1 kašika sezamovog ulja",
+      "1 kašika meda",
+      "4 čena belog luka, seckana",
+      "1 komad đumbira (2cm), seckan",
+      "3 mladog luka, seckanih",
+      "1 kašika susama",
+      "1/2 kašičice crnog bibera",
+      "1 kašika ulja za pečenje",
+      "Svež salata za serviranje"
+    ],
+    instructions: [
+      "Pomešajte rendanu krušku, sojin sos, šećer i med.",
+      "Dodajte beli luk, đumbir, mladi luk i začine.",
+      "Marinirajte meso u ovoj smeši najmanje 2 sata.",
+      "Zagrejte tiganj ili roštilj na visokoj vatri.",
+      "Iscedite meso od marinade.",
+      "Pečite meso 2-3 minuta sa svake strane.",
+      "Ne slažite previše komada odjednom.",
+      "Posipajte susamom pre služenja.",
+      "Služiti sa svežom salatom i pirinčem."
+    ],
+    prepTime: "15 minuta + 2 sata mariniranje",
+    cookTime: "10 minuta",
+    servings: 4,
+    notes: ["Kruška čini meso mekšim", "Najbolje peći na visokoj vatri"],
+    nutrition: { calories: "320 po porciji", protein: "28g", carbs: "15g", fat: "18g" }
+  },
+  "Bibimbap": {
+    name: "Bibimbap",
+    description: "Korejska činija pirinča sa mišovima povrća, mesa i jajetom, služena sa ljutom pastom.",
+    ingredients: [
+      "400g kuvanog pirinča",
+      "200g govedine, tanko isečene",
+      "1 šargarepa, rendana",
+      "1 tikvica, rendana",
+      "200g spanaća",
+      "150g klica soje",
+      "100g pečuraka shiitake",
+      "4 jaja",
+      "4 kašike sojevog sosa",
+      "2 kašike sezamovog ulja",
+      "2 kašike gochujang paste",
+      "2 čena belog luka, seckana",
+      "1 kašika susama",
+      "Ulje za pečenje"
+    ],
+    instructions: [
+      "Kuvajte pirinač prema uputstvu na pakovanju.",
+      "Marinirajte govedinu sa 1 kašikom sojevog sosa.",
+      "Sve povrće (sem klica) kratko prskućiti sa po malo soli.",
+      "Svako povrće zasebno proprzite sa belim lukom i sezamovim uljem.",
+      "Pečite marinirano meso na visokoj vatri.",
+      "Proprzite jaja samo sa jedne strane (sunny side up).",
+      "U činiju stavite pirinač u sredinu.",
+      "Oko pirinča rasporedite povrće u grupama.",
+      "Na vrh stavite meso i jaje.",
+      "Služiti sa gochujang pastom po strani."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "25 minuta",
+    servings: 4,
+    notes: ["Svako povrće se kuva zasebno", "Gochujang pasta se meša u činiji"],
+    nutrition: { calories: "450 po porciji", protein: "25g", carbs: "55g", fat: "15g" }
+  },
   "Burritos": {
     name: "Burritos",
     description: "Ukusno i lako jelo, savršeno za brzi ručak ili večeru.",
@@ -5026,6 +7568,109 @@ export const recipes: Record<string, Recipe> = {
     servings: 4
   },
 
+  "Paella": {
+    name: "Paelija",
+    description: "Tradicionalno špansko jelo sa pirinčem, morskim plodovima i šafranom.",
+    ingredients: [
+      "400g arborio pirinča",
+      "1l bujona od morskih plodova",
+      "Štipa šafrana",
+      "300g škampčića",
+      "300g dagnji",
+      "200g lignji, isečenih na kolutove",
+      "1 veliki crni luk, seckan",
+      "3 čena belog luka, seckana",
+      "1 crvena paprika, seckana",
+      "400g paradajza, rendanog",
+      "100ml maslinovog ulja",
+      "So i biber po ukusu",
+      "Limun za serviranje",
+      "Peršun za ukras"
+    ],
+    instructions: [
+      "Podgrejte bujon sa šafranom u maloj šerpi.",
+      "Zagrejte maslinovo ulje u velikoj paelija tavi.",
+      "Proprzite crni luk i beli luk dok ne postanu providni.",
+      "Dodajte papriku i pržite 2-3 minuta.",
+      "Dodajte rendan paradajz i kuvajte dok se ne zgusne.",
+      "Dodajte pirinač i mešajte 2 minuta.",
+      "Postepeno dodajte topli bujon sa šafranom.",
+      "Dodajte škampčiće, dagnje i lignje.",
+      "Kuvajte bez mešanja 18-20 minuta na srednjoj vatri.",
+      "Posolite i pobiberite po ukusu.",
+      "Služiti sa limunom i peršunom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "30 minuta",
+    servings: 6,
+    notes: ["Šafran je ključan za autentičan ukus", "Ne mešati tokom kuvanja"],
+    nutrition: { calories: "420 po porciji", protein: "25g", carbs: "55g", fat: "12g" }
+  },
+  "Gazpacho": {
+    name: "Gažpačo",
+    description: "Hladna španska supa od svežeg povrća, savršena za letnje dane.",
+    ingredients: [
+      "1kg zrelih paradajza",
+      "1 krastavac, oćišćen",
+      "1 zelena paprika",
+      "1/2 crvenog luka",
+      "3 čena belog luka",
+      "3 kašike šeri sirćeta",
+      "5 kašike maslinovog ulja",
+      "1 kašičica soli",
+      "Crni biber po ukusu",
+      "100g starog hleba, bez kore",
+      "Hladna voda po potrebi",
+      "Za ukras: kockice krastavca, paradajza i hleba"
+    ],
+    instructions: [
+      "Potopite paradajz u vreću vodu 1 minut, zatim oljuštite.",
+      "Isecite sve povrće na krupnije komade.",
+      "Potopite hleb u vodu da omekša.",
+      "U blenderu miksajte povrće, hleb i začine.",
+      "Dodajte maslinovo ulje i sirće.",
+      "Miksajte dok ne dobijete glatku smesu.",
+      "Procedite kroz sito za finu teksturu.",
+      "Dodajte hladnu vodu ako je pregusto.",
+      "Ohladite u frižideru najmanje 2 sata.",
+      "Služiti hladno sa kockicama povrća."
+    ],
+    prepTime: "20 minuta + 2 sata hlađenje",
+    cookTime: "0 minuta",
+    servings: 4,
+    notes: ["Bolje je da odstoji preko noći", "Konzistencija može da se podešava vodom"],
+    nutrition: { calories: "160 po porciji", protein: "4g", carbs: "18g", fat: "9g" }
+  },
+  "Tortilla Espanola": {
+    name: "Španska tortilla",
+    description: "Debeli omlet sa krompirom i lukom, najčešće jelo španske kuhinje.",
+    ingredients: [
+      "6 velikih jaja",
+      "4 velika krompira, oljuštena",
+      "1 veliki crni luk",
+      "200ml maslinovog ulja",
+      "1 kašičica soli",
+      "Crni biber po ukusu"
+    ],
+    instructions: [
+      "Isecite krompir na tanke kriške.",
+      "Isecite luk na tanke kolutove.",
+      "Zagrejte ulje u velikoj tavi.",
+      "Fržite krompir na spolja vatri 15 minuta.",
+      "Dodajte luk i fržite još 10 minuta.",
+      "Iscedite krompir i luk od ulja.",
+      "Umućite jaja sa solju i biberom.",
+      "Pomešajte jaja sa krompirom i lukom.",
+      "U istoj tavi (sa malo ulja) sipajte smesu.",
+      "Pečite 5 minuta, zatim okrenite i pečite još 3 minuta.",
+      "Služiti toplo ili na sobnoj temperaturi."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "35 minuta",
+    servings: 6,
+    notes: ["Okretanje zahteva veštinu ili veliki tanjir", "Može se jesti i hladno"],
+    nutrition: { calories: "280 po porciji", protein: "12g", carbs: "25g", fat: "16g" }
+  },
   "Guacamole": {
     name: "Guacamole",
     description: "Osvežavajući i kremasti dip od avokada, idealan kao prilog ili užina.",
@@ -5090,6 +7735,110 @@ export const recipes: Record<string, Recipe> = {
     servings: 6
   },
 
+  "Moussaka": {
+    name: "Musaka",
+    description: "Tradicionalno grčko jelo sa slojevima patližana, mesa i bešamel sosa.",
+    ingredients: [
+      "3 velike patližane, isečene na kriške",
+      "500g mlevene jagnjetine ili govedine",
+      "1 veliki crni luk, seckan",
+      "3 čena belog luka, seckana",
+      "400g konzerve paradajza",
+      "2 kašike paradajz paste",
+      "1 kašičica cimeta",
+      "1 kašičica origana",
+      "Za bešamel:",
+      "60g putera",
+      "60g brašna",
+      "500ml mleka",
+      "100g feta sira",
+      "2 žumanceta",
+      "Muskatni oreščić",
+      "Maslinovo ulje",
+      "So i biber"
+    ],
+    instructions: [
+      "Zagrejte rernu na 200°C.",
+      "Popištajte patližan kriške i ostavite 30 minuta.",
+      "Isperite i osušite patližane, zatim pečite u rerni 20 minuta.",
+      "Proprzite luk i beli luk, dodajte meso i pečite dok ne porumeni.",
+      "Dodajte paradajz, pastu, cimet i origano. Kuvajte 20 minuta.",
+      "Za bešamel: otopite puter, dodajte brašno, pa mleko.",
+      "Kuvajte uz mešanje dok se ne zgusne.",
+      "Dodajte feta sir, žumanceta i muskatni oreščić.",
+      "U vatrostalnu posudu slažite: patližan, meso, patližan, bešamel.",
+      "Pečite 45 minuta do zlatno braon boje.",
+      "Ostavite da se ohladi 15 minuta pre sečenja."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "1 sat 30 minuta",
+    servings: 8,
+    notes: ["Patližane moraju biti popištane", "Bolje je dan nakon pripreme"],
+    nutrition: { calories: "380 po porciji", protein: "22g", carbs: "15g", fat: "28g" }
+  },
+  "Souvlaki": {
+    name: "Suvlaki",
+    description: "Grčki šiš ćevap sa mariniranim mesom, serviran u pita hlebu.",
+    ingredients: [
+      "600g pilećih prsa, isečenih na kockice",
+      "3 kašike maslinovog ulja",
+      "2 kašike limunovog soka",
+      "2 čena belog luka, seckana",
+      "1 kašičica sušenog origana",
+      "So i biber po ukusu",
+      "4 pita hleba",
+      "1 krastavac, seckan",
+      "2 paradajza, seckana",
+      "1 crveni luk, tanko seckan",
+      "100g feta sira, mrvljenog",
+      "Tzatziki sos"
+    ],
+    instructions: [
+      "Pomešajte ulje, limunov sok, beli luk, origano, so i biber.",
+      "Marinirajte piletinu u ovoj smeši 2-4 sata.",
+      "Nanizajte meso na šiš ćevapcije.",
+      "Zagrejte roštilj ili tiganj na visokoj vatri.",
+      "Pečite šiš ćevapcije 10-12 minuta, okrecući.",
+      "Zagrejte pita hleb na roštilju.",
+      "Otvorite pita i stavite meso.",
+      "Dodajte povrće, feta sir i tzatziki.",
+      "Urolajte i služite odmah."
+    ],
+    prepTime: "15 minuta + 2-4 sata mariniranje",
+    cookTime: "12 minuta",
+    servings: 4,
+    notes: ["Mariniranje je važno za ukus", "Možete koristiti i svinjetinu"],
+    nutrition: { calories: "420 po porciji", protein: "35g", carbs: "30g", fat: "18g" }
+  },
+  "Greek Salad": {
+    name: "Grčka salata",
+    description: "Sveža mediteranska salata sa feta sirom, maslinama i maslinovim uljem.",
+    ingredients: [
+      "4 velike paradajza, isečena na klinove",
+      "1 veliki krastavac, isečen na kolutove",
+      "1 crveni luk, tanko seckan",
+      "1 zelena paprika, seckana",
+      "200g feta sira, isečenog na kockice",
+      "100g kalamata maslina",
+      "Za preliv:",
+      "5 kašika maslinovog ulja",
+      "2 kašike crvenog vinskog sirćeta",
+      "1 kašičica sušenog origana",
+      "So i biber po ukusu"
+    ],
+    instructions: [
+      "U velikoj posudi pomešajte paradajz, krastavac, luk i papriku.",
+      "U maloj posudi umućite ulje, sirće, origano, so i biber.",
+      "Prelijte povrće prelivom i lagano promešajte.",
+      "Dodajte feta sir i masline na vrh.",
+      "Služiti odmah ili ohladiti 30 minuta."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "0 minuta",
+    servings: 4,
+    notes: ["Ne dodavati feta sir prerano da se ne razmrvi", "Najbolja sa zrelim paradajzom"],
+    nutrition: { calories: "220 po porciji", protein: "8g", carbs: "12g", fat: "18g" }
+  },
   "Fajitas": {
     name: "Fajitas",
     description: "Ukusno i jednostavno jelo meksičke kuhinje, idealno za deljenje.",
@@ -5250,6 +7999,116 @@ export const recipes: Record<string, Recipe> = {
     servings: 4
   },
 
+  "Pho": {
+    name: "Fo",
+    description: "Tradicionalna vijetnamska supa sa nudlama, aromatičnim buljonom i mesom.",
+    ingredients: [
+      "500g govedih kostiju",
+      "200g govedine (biftek), tanko isečene",
+      "200g rižinih nudli (banh pho)",
+      "1 crni luk, prepolovljen",
+      "1 komad đumbira (5cm)",
+      "3 štapića cimeta",
+      "4 cela karanfilića",
+      "2 anis zvezde",
+      "1 kašika soli",
+      "2 kašike fish sauce",
+      "1 kašika šećera",
+      "Mladi luk, seckan",
+      "Svež koriander",
+      "Klice soje",
+      "Limeta",
+      "Ljute papričice"
+    ],
+    instructions: [
+      "Peku crni luk i đumbir na rerni 30 minuta.",
+      "U velikoj šerpi prokuvajte kosti 5 minuta, zatim iscedite.",
+      "Dodajte čistu vodu, pečeni luk i đumbir u šerpu.",
+      "Dodajte začine u gazu i stavite u šerpu.",
+      "Kuvajte na spokoj vatri 3-4 sata.",
+      "Procedite buljone i začinite sa fish sauce, solju i šećerom.",
+      "Kuvajte nudli prema uputstvu.",
+      "U činiju stavite nudli, presno meso i sipajte vruć bujon.",
+      "Služiti sa svežim dodacima po strani."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "4 sata",
+    servings: 4,
+    notes: ["Bujon mora da kuva sporo za jasan ukus", "Meso se kuva u vrućem buljonu"],
+    nutrition: { calories: "350 po porciji", protein: "25g", carbs: "40g", fat: "8g" }
+  },
+  "Banh Mi": {
+    name: "Ban mi",
+    description: "Vijetnamski sendvič sa hranljivim činima, kiseljim povrćem i sprečenim mesom.",
+    ingredients: [
+      "4 bageta (vijetnamski hleb)",
+      "200g pileće prsa",
+      "2 kašike sojevog sosa",
+      "1 kašika fish sauce",
+      "1 kašika šećera",
+      "1 šargarepa, rendana",
+      "1 beli retek, rendan",
+      "3 kašike belih sirćeta",
+      "1 kašika šećera",
+      "Pate od jetre (opciono)",
+      "Majonezu",
+      "Krastavac, isečen na štapiće",
+      "Svež koriander",
+      "Ljute papričice jalapeño"
+    ],
+    instructions: [
+      "Marinirajte piletinu sa sojevim sosom, fish sauce i šećerom.",
+      "Pečite piletinu na tiganu dok ne prokuva potpuno.",
+      "Pomešajte rendano povrće sa sirćetom i šećerom.",
+      "Ostavite povrće da se kiseli 15 minuta.",
+      "Presecite bagetu po dužini.",
+      "Premažite jednu stranu sa pate, drugu sa majonezom.",
+      "Dodajte pileće meso, kiselo povrće i krastavac.",
+      "Ukrasite korijanderom i ljutim papričicama.",
+      "Služiti odmah."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "10 minuta",
+    servings: 4,
+    notes: ["Kiselo povrće daje osnovan ukus", "Bageta mora biti svezća"],
+    nutrition: { calories: "380 po sendviču", protein: "22g", carbs: "45g", fat: "12g" }
+  },
+  "Vietnamese Spring Rolls": {
+    name: "Vijetnamski prolecći rola",
+    description: "Sveži rola sa transparentnim rižinim paprom, povrćem i dipom.",
+    ingredients: [
+      "8 riženih papara za rolne",
+      "200g kuvanih škampčića",
+      "100g rižinih nudli, kuvanih",
+      "1 glava salate iceberg",
+      "1 šargarepa, rendana",
+      "1/2 krastavca, isečenog na štapiće",
+      "Svež listovi mente",
+      "Svež koriander",
+      "Za dip:",
+      "3 kašike fish sauce",
+      "3 kašike limunove vode",
+      "2 kašike šećera",
+      "1 čen belog luka, seckan",
+      "1 ljuta papričica, seckana"
+    ],
+    instructions: [
+      "Potopite rižin papir u toplu vodu 30 sekundi.",
+      "Položite papir na ravnu površinu.",
+      "Na donji deo stavite salatu, šargarepu i krastavac.",
+      "Dodajte kuvane nudli i škampčiće.",
+      "Prekrijte svežim bilje.",
+      "Nab nab donji kraj papira preko fila.",
+      "Savijte leve i desne strane, zatim čvrsto rolajte.",
+      "Za dip: pomešajte sve sastojke dok se šećer ne rastopi.",
+      "Služiti rola odmah sa dipom."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "0 minuta",
+    servings: 4,
+    notes: ["Papir ne sme biti presize", "Rola jedite odmah da ne osuše"],
+    nutrition: { calories: "180 po rolu", protein: "12g", carbs: "25g", fat: "4g" }
+  },
   "Pozole": {
     name: "Pozole",
     description: "Tradicionalna meksička supa sa svinjetinom ili piletinom i hominy-jem, obično garnirana sa kupusom, rotkvicama, lukom, limetom i čili papričicama.",
@@ -5352,6 +8211,98 @@ export const recipes: Record<string, Recipe> = {
     servings: 6
   },
 
+  "Feijoada": {
+    name: "Fejuada",
+    description: "Tradicionalno brazilsko jelo sa crnim pasuljem, svinjskim mesom i kobasicama.",
+    ingredients: [
+      "500g crnog pasulja",
+      "300g svinjskih rebara",
+      "200g sušene svinjetine (carne seca)",
+      "200g dimljene kobasice",
+      "100g slanine, seckane",
+      "1 veliki crni luk, seckan",
+      "4 čena belog luka, seckana",
+      "2 lovora lista",
+      "1 kašičica kima u prahu",
+      "So i biber po ukusu",
+      "Svež narandža za serviranje",
+      "Pirinač za serviranje",
+      "Koli fllower za serviranje"
+    ],
+    instructions: [
+      "Potopite pasulj u vodu preko noći.",
+      "Kuvajte pasulj u velikoj šerpi 1 sat.",
+      "U drugoj šerpi pržite slaninu do hrskave.",
+      "Dodajte luk i beli luk, pržite do providne.",
+      "Dodajte svu svinjetinu i pečite 10 minuta.",
+      "Prebacite meso u šerpu sa pasuljem.",
+      "Dodajte lovora lista, kim, so i biber.",
+      "Kuvajte 2-3 sata dok meso ne postane meko.",
+      "Servirati sa pirinčem, narandžom i povrćem."
+    ],
+    prepTime: "20 minuta + preko noći pasulj",
+    cookTime: "3 sata",
+    servings: 8,
+    notes: ["Tradicionalno se priprema nedeljom", "Ukus je bolji dan posle"],
+    nutrition: { calories: "520 po porciji", protein: "32g", carbs: "45g", fat: "22g" }
+  },
+  "Brigadeiro": {
+    name: "Brigadeiro",
+    description: "Popularan brazilski desert, kremaste čokoladne kugline prekrivene granulama.",
+    ingredients: [
+      "400ml slađenog kondenzovanog mleka",
+      "2 kašike kakao praha",
+      "2 kašike putera",
+      "Štipa soli",
+      "Čokoladne granule za prekriavanje",
+      "Puter za ruke"
+    ],
+    instructions: [
+      "U šerpi pomešajte kondenzovano mleko, kakao i puter.",
+      "Kuvajte na srednjoj vatri, stalno mešajući.",
+      "Kuvajte 10-15 minuta dok se ne zgusne.",
+      "Smeša je gotova kad se odvoji od dna šerpe.",
+      "Prebacite u tašnu i ohladite 2 sata.",
+      "Namažite ruke puterom.",
+      "Oblikujite kuglice veličine orahe.",
+      "Uvaljajte u čokoladne granule.",
+      "Stavite u papirane čašure."
+    ],
+    prepTime: "5 minuta",
+    cookTime: "15 minuta + 2 sata hlađenje",
+    servings: 20,
+    notes: ["Ruke moraju biti namažene puterom", "Možete dodati kokos umesto granula"],
+    nutrition: { calories: "85 po kuglici", protein: "2g", carbs: "15g", fat: "3g" }
+  },
+  "Pao de Acucar": {
+    name: "Pao de Aćukar",
+    description: "Brazilski slaki hleb u obliku šećerne glavnice, lagan i vazdušast.",
+    ingredients: [
+      "500ml mleka",
+      "100ml ulja",
+      "1 kašičica soli",
+      "500g tapioka brašna (polvilho doce)",
+      "2 jaja",
+      "150g rendanog sira (queijo minas)"
+    ],
+    instructions: [
+      "Zagrejte rernu na 200°C.",
+      "U šerpi prokuvajte mleko sa uljem i solju.",
+      "Sklonite sa vatre i postepeno dodajte tapioka brašno.",
+      "Mešajte šporetom dok se ne stvori glatka masa.",
+      "Ostavite da se ohladi 10 minuta.",
+      "Dodajte jaja jedno po jedno, dobro mešajući.",
+      "Dodajte rendan sir i promešajte.",
+      "Oblikujte male kuglice.",
+      "Perite na plač za pečenje.",
+      "Pečite 15-20 minuta do zlatno braon boje."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "20 minuta",
+    servings: 20,
+    notes: ["Tapioka brašno je obavezno", "Jedu se topli"],
+    nutrition: { calories: "120 po komadu", protein: "4g", carbs: "18g", fat: "4g" }
+  },
   "Al Pastor": {
     name: "Al Pastor",
     description: "Marinirana svinjetina pečena na vatri, obično poslužena u tacosima.",
@@ -5514,6 +8465,108 @@ export const recipes: Record<string, Recipe> = {
     servings: 4
   },
 
+  "Doner Kebab": {
+    name: "Dener kebab",
+    description: "Tradicionalni turski kebab sa mariniranim mesom, služen u lepiniji sa povrćem.",
+    ingredients: [
+      "600g jagnjetine ili govedine, tanko isečene",
+      "3 kašike maslinovog ulja",
+      "2 kašike limunovog soka",
+      "2 čena belog luka, seckana",
+      "1 kašičica origana",
+      "1 kašičica kima u prahu",
+      "1 kašičica đumbira u prahu",
+      "So i biber po ukusu",
+      "4 turske lepinje (pita)",
+      "1 krastavac, seckan",
+      "2 paradajza, seckana",
+      "1 crveni luk, tanko seckan",
+      "Salata iceberg",
+      "Tzatziki sos"
+    ],
+    instructions: [
+      "Pomešajte ulje, limunov sok, beli luk i začine za marinadu.",
+      "Marinirajte meso u ovoj smeši 2-4 sata.",
+      "Zagrejte tiganj ili roštilj na visokoj vatri.",
+      "Pečite meso 6-8 minuta sa svake strane.",
+      "Ostavite meso da se odmori 5 minuta, zatim isecite.",
+      "Zagrejte lepinje na roštilju ili tiganju.",
+      "Otvorite lepinje i premažite tzatziki sosom.",
+      "Dodajte meso, povrće i salatu.",
+      "Urolajte i služite odmah."
+    ],
+    prepTime: "15 minuta + 2-4 sata mariniranje",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: ["Mariniranje je ključno za ukus", "Možete dodati ljute papričice"],
+    nutrition: { calories: "450 po porciji", protein: "35g", carbs: "32g", fat: "20g" }
+  },
+  "Dolma": {
+    name: "Dolma",
+    description: "Punjeni listovi vinove loze sa pirinčem, mesom i aromatičnim začinima.",
+    ingredients: [
+      "30 listova vinove loze (konzervirani)",
+      "300g mlevene jagnjetine ili govedine",
+      "150g pirinča",
+      "1 veliki crni luk, sitno seckan",
+      "3 kašike maslinovog ulja",
+      "2 kašike seckane peteške",
+      "1 kašika seckane mente",
+      "1 kašičica cimeta",
+      "1 kašičica đumbira u prahu",
+      "Sok od 1 limuna",
+      "400ml bujona",
+      "So i biber po ukusu"
+    ],
+    instructions: [
+      "Isperite listove vinove loze u hladnoj vodi.",
+      "U tiganu proprzite luk sa 2 kašike ulja.",
+      "Dodajte meso i pečite dok ne porumeni.",
+      "Dodajte pirinač, začine, so i biber.",
+      "Kuvajte 5 minuta, zatim dodajte 200ml bujona.",
+      "Kuvajte dok pirinač ne upije tečnost.",
+      "Dodajte petešku, mentu i limunov sok.",
+      "Na svaki list stavite kašiku fila.",
+      "Rolajte list, uvičiendo krajnje strane.",
+      "Slažite rolne u šerpu, prelijte bujonom.",
+      "Kuvajte pokriveno 45 minuta."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "1 sat",
+    servings: 6,
+    notes: ["Listovi ne smeju se pretrgnuti", "Može se jesti hladno"],
+    nutrition: { calories: "180 po komadu", protein: "12g", carbs: "18g", fat: "8g" }
+  },
+  "Turkish Delight": {
+    name: "Turska rašatloka",
+    description: "Slatki turski desert sa želastom teksturom, često sa ukusom ruže ili limuna.",
+    ingredients: [
+      "3 šolje šećera",
+      "1.25 šolje vode",
+      "120g škrobnog brašna",
+      "1 kašičica limbove kiseline",
+      "1 kašika ekstrakta ruže (ili limuna)",
+      "3-4 kapi crvene boje (opciono)",
+      "100g šećera u prahu",
+      "2 kašike škroba za posipanje"
+    ],
+    instructions: [
+      "Pomešajte šećer sa 1 šoljom vode u šerpi.",
+      "Kuvajte na srednjoj vatri dok se šećer ne rastopi.",
+      "U drugoj posudi pomešajte škrob sa preostalom vodom.",
+      "Dodajte škrobnu smesu u šerpu sa šećerom.",
+      "Kuvajte uz stalno mešanje 45 minuta do guste konzistencije.",
+      "Dodajte limbovu kiselinu, ekstrakt i boju.",
+      "Sipajte u podmažen pleh 20x20cm.",
+      "Ostavite da se ohladi 6 sati ili preko noći.",
+      "Sečite na kockice i uvaljajte u šećer u prahu."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "50 minuta + 6 sati hlađenje",
+    servings: 25,
+    notes: ["Mešanje mora biti kontinuirano", "Drzi se u suvom mestu"],
+    nutrition: { calories: "90 po komadu", protein: "0g", carbs: "23g", fat: "0g" }
+  },
   "Tostadas": {
     name: "Tostadas",
     description: "Hrskava i ukusna meksička poslastica, savršena za ručak, večeru ili kao predjelo.",
@@ -5605,6 +8658,106 @@ export const recipes: Record<string, Recipe> = {
     prepTime: "10 minuta",
     cookTime: "20 minuta",
     servings: 10
+  },
+  "Tabbouleh": {
+    name: "Tabule",
+    description: "Osvežavajuća libanska salata sa bulgur pirinčem, peteškom i aromatičnim začinima.",
+    ingredients: [
+      "100g finog bulgura",
+      "3 velike peteške, seckane",
+      "2 paradajza, seckana na sitne kockice",
+      "4 mladog luka, seckana",
+      "1/2 šolje sveže mente, seckane",
+      "1/4 šolje maslinovog ulja",
+      "1/4 šolje limunovog soka",
+      "1 kašičica soli",
+      "1/2 kašičice crnog bibera",
+      "Limonovi kraji za ukras"
+    ],
+    instructions: [
+      "Potopite bulgur u toplu vodu na 30 minuta.",
+      "Iscedite bulgur i istisnite višak vode.",
+      "U velikoj posudi pomešajte bulgur, petešku, paradajz.",
+      "Dodajte mladi luk i seckanu mentu.",
+      "U maloj posudi pomešajte ulje, limunov sok, so i biber.",
+      "Prelijte salatu prelivom i dobro promešajte.",
+      "Ohladite u frižideru najmanje 1 sat.",
+      "Služiti sa listovima salate kao čašurama.",
+      "Ukrasiti kraji limonama."
+    ],
+    prepTime: "20 minuta + 1 sat hlađenje",
+    cookTime: "0 minuta",
+    servings: 6,
+    notes: ["Peteška mora biti sitno seckana", "Najbolja je dan nakon pripreme"],
+    nutrition: { calories: "120 po porciji", protein: "3g", carbs: "18g", fat: "5g" }
+  },
+  "Fattoush": {
+    name: "Fatuš",
+    description: "Libanska salata sa mešanim povrćem i hrskavim komadićima pita hleba.",
+    ingredients: [
+      "2 pita hleba, isečena na komade",
+      "3 paradajza, seckana",
+      "2 krastavca, seckana",
+      "1 crveni luk, tanko seckan",
+      "1 zelena paprika, seckana",
+      "4 reteđe, seckana",
+      "1/2 šolje peteške, seckane",
+      "1/4 šolje mente, seckane",
+      "Za preliv:",
+      "1/4 šolje maslinovog ulja",
+      "3 kašike limunovog soka",
+      "1 kašika sumak začina",
+      "1 kašičica soli",
+      "1/2 kašičice bibera"
+    ],
+    instructions: [
+      "Zagrejte rernu na 200°C.",
+      "Pečite komade pita hleba 10 minuta do hrskave.",
+      "U velikoj posudi pomešajte svo povrće i bilje.",
+      "U maloj posudi pomešajte sastojke za preliv.",
+      "Neposredno pre služenja, dodajte hrskave komade hleba.",
+      "Prelijte prelivom i nemu mešajte.",
+      "Služiti odmah da hleb ne omekša."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "10 minuta",
+    servings: 6,
+    notes: ["Hleb dodavati tek pre služenja", "Sumak daje karakterističan ukus"],
+    nutrition: { calories: "160 po porciji", protein: "4g", carbs: "22g", fat: "7g" }
+  },
+  "Manakish": {
+    name: "Manakiš",
+    description: "Libanski ravni hleb sa za’atar začinima, popularan za doručak.",
+    ingredients: [
+      "300g brašna",
+      "1 kašičica suvog kvasca",
+      "1 kašičica šećera",
+      "1 kašičica soli",
+      "200ml mlake vode",
+      "3 kašike maslinovog ulja",
+      "Za preliv:",
+      "4 kašike za’atar začina",
+      "3 kašike maslinovog ulja",
+      "Općiono: sir ili kajmak"
+    ],
+    instructions: [
+      "Pomešajte kvasac, šećer i mlaku vodu. Ostavite 5 minuta.",
+      "U velikoj posudi pomešajte brašno i so.",
+      "Dodajte kvasčevu smesu i ulje.",
+      "Mešajte dok se ne stvori glatko testo.",
+      "Ostavite da se diže 1 sat u toplom mestu.",
+      "Podelite testo na 6 delova.",
+      "Razvijte svaki deo u tanak krug.",
+      "Pomešajte za’atar sa uljem.",
+      "Premažite svaki krug za’atar smesom.",
+      "Pečite u rerni na 220°C 8-10 minuta.",
+      "Služiti toplo."
+    ],
+    prepTime: "20 minuta + 1 sat dizanje",
+    cookTime: "10 minuta",
+    servings: 6,
+    notes: ["Za’atar možete napraviti od susama, timijana i sumaka", "Tradicionalno se jede rukama"],
+    nutrition: { calories: "180 po komadu", protein: "5g", carbs: "28g", fat: "6g" }
   },
   "Palačinke sa medom": {
     name: "Palačinke sa medom",
@@ -5817,6 +8970,98 @@ export const recipes: Record<string, Recipe> = {
     servings: 1
   },
 
+  "Injera": {
+    name: "Injera",
+    description: "Etiopski kiseli hleb koji služi kao baza za mnoga jela, napravljen od teff brašna.",
+    ingredients: [
+      "300g teff brašna (ili kombinacija pirčano brašno + sačeno brašno)",
+      "400ml vode",
+      "1 kašičica kvasca",
+      "Dodatna voda po potrebi"
+    ],
+    instructions: [
+      "Pomešajte teff brašno sa vodom u glatku smesu.",
+      "Dodajte kvasac i dobro promešajte.",
+      "Pokrijte i ostavite da fermentira 3 dana na sobnoj temperaturi.",
+      "Mešajte jednom dnevno tokom fermentacije.",
+      "Kada je smesu kisela, počinjte peći.",
+      "Zagrejte mitad (ili nelepuću tavu) na srednjoj vatri.",
+      "Sipajte smesu u tavu u tankom sloju.",
+      "Pečite 2-3 minuta dok se ne stvaraju mehųrići.",
+      "Ne okreci - peče se samo sa jedne strane.",
+      "Skinite kada postane suv na površini."
+    ],
+    prepTime: "15 minuta + 3 dana fermentacija",
+    cookTime: "3 minuta po komadu",
+    servings: 8,
+    notes: ["Fermentacija je ključna za ukus", "Služi kao i tanjir i pribor"],
+    nutrition: { calories: "120 po komadu", protein: "4g", carbs: "24g", fat: "1g" }
+  },
+  "Doro Wat": {
+    name: "Doro Vat",
+    description: "Tradicionalni etiopski gulaš od piletine sa čili pastom berbere.",
+    ingredients: [
+      "1 cela piletina, isečena na komade",
+      "6 kuvanih jaja",
+      "2 velike crvene luka, seckane",
+      "4 kašike berbere začina",
+      "3 kašike paprike u prahu",
+      "4 čena belog luka, seckana",
+      "1 komad đumbira (3cm), seckan",
+      "100g putera",
+      "2 kašike crvenog vina",
+      "500ml bujona od piletine",
+      "So po ukusu",
+      "1 kašičica meda"
+    ],
+    instructions: [
+      "U velikoj šerpi sušite luk na srednjoj vatri 10 minuta.",
+      "Dodajte malo vode ako se lepi.",
+      "Dodajte berbere začin i papriku, pržite 2 minuta.",
+      "Dodajte beli luk, đumbir i puter.",
+      "Dodajte komade piletine i pečite 10 minuta.",
+      "Sipajte vino i bujon, pustite da provri.",
+      "Smanjite vatru i kuvajte 45 minuta.",
+      "Dodajte kuvana jaja poslednjih 10 minuta.",
+      "Začinite solju i medom po ukusu.",
+      "Služiti sa injera hlebom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "1 sat 15 minuta",
+    servings: 6,
+    notes: ["Berbere začin daje autentičan ukus", "Jaja se tradicionalno jedu cela"],
+    nutrition: { calories: "420 po porciji", protein: "35g", carbs: "8g", fat: "28g" }
+  },
+  "Kitfo": {
+    name: "Kitfo",
+    description: "Etiopski tartar od govedine, služen sa začinima i sirom.",
+    ingredients: [
+      "500g najkvalitetnije govedine (tenderloin)",
+      "3 kašike clarified butter (niter kibbeh)",
+      "2 kašike berbere začina",
+      "1 kašičica kardamoma u prahu",
+      "So po ukusu",
+      "200g ayača sira (ili cottage cheese)",
+      "100g gučen povrća (collard greens)",
+      "Injera hleb za serviranje"
+    ],
+    instructions: [
+      "Uverite se da je meso največji kvalitet za sirovo jedenje.",
+      "Isečite meso nožom na najsitnije komadiće.",
+      "Ne koristite mašinu za mlevenje.",
+      "Pomešajte meso sa otopljenim puterom.",
+      "Dodajte berbere začin i kardamom.",
+      "Posolite po ukusu.",
+      "Služite na tanjiru sa sirom i povrćem.",
+      "Jedite sa injera hlebom.",
+      "NAPOMENA: Jede se sirovo - koristiti samo sveže meso."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "0 minuta",
+    servings: 4,
+    notes: ["SAMO najkvalitetnije meso", "Jedite odmah nakon pripreme"],
+    nutrition: { calories: "320 po porciji", protein: "28g", carbs: "2g", fat: "22g" }
+  },
   "Börek": {
     name: "Börek",
     description: "Pita od tankih kora punjena sirom.",
@@ -5959,6 +9204,101 @@ export const recipes: Record<string, Recipe> = {
     servings: 10
   },
 
+  "Ceviche": {
+    name: "Ceviče",
+    description: "Tradicionalno peruano jelo sa sirovom ribom “kuvanom” u limunov soku.",
+    ingredients: [
+      "500g sveže bele ribe (sea bass ili halibut)",
+      "1 šolja lime soka (oko 10-12 lime)",
+      "1 crveni luk, tanko seckan",
+      "2-3 aji amarillo papričice, seckane",
+      "1 komad đumbira (2cm), seckan",
+      "So i biber po ukusu",
+      "1 slatki krompir, kukan",
+      "Kukuruz za ukras",
+      "Svež koriander",
+      "1 avokado za serviranje"
+    ],
+    instructions: [
+      "Isečite ribu na kockice od 1cm.",
+      "Stavite ribu u staklenu posude.",
+      "Prelijte lime sokom da potpuno pokrije ribu.",
+      "Dodajte crveni luk, papričice i đumbir.",
+      "Posolite i pobiberite.",
+      "Marinirajte u frižideru 15-20 minuta.",
+      "Riba je “kuvana” kad postane bela.",
+      "Iscedite višak soka pre služenja.",
+      "Ukrasite korijanderom, avokadom i kukuruzom.",
+      "Služiti sa slatkim krompirom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "15-20 minuta mariniranje",
+    servings: 4,
+    notes: ["Koristiti samo najsvežiju ribu", "Ne marinirati previše dugo"],
+    nutrition: { calories: "180 po porciji", protein: "25g", carbs: "8g", fat: "5g" }
+  },
+  "Lomo Saltado": {
+    name: "Lomo Saltado",
+    description: "Peruansko jelo sa przenom govedinom, krompirom i povrćem u wok-u.",
+    ingredients: [
+      "600g govedeg filete, isečenog na trake",
+      "3 krompira, isečena na štapiće",
+      "1 crveni luk, seckan na trake",
+      "2 paradajza, seckana na klinove",
+      "3 kašike sojevog sosa",
+      "2 kašike crvenog vinskog sirćeta",
+      "3 čena belog luka, seckana",
+      "1 aji amarillo pasta (2 kašike)",
+      "Ulje za prženje",
+      "So i biber po ukusu",
+      "Svež koriander",
+      "Kuvani pirinač za serviranje"
+    ],
+    instructions: [
+      "Isprzite krompir štapiće u vruelom ulju do hrskave.",
+      "Iscedite na papiru i stavite po strani.",
+      "U wok-u ili velikoj tavi zagrejte ulje na visokoj vatri.",
+      "Dodajte govedinu i brzoo pržite 2-3 minuta.",
+      "Dodajte beli luk i aji amarillo pastu.",
+      "Dodajte crveni luk i pržite 2 minuta.",
+      "Dodajte paradajz, sojin sos i sirće.",
+      "Dodajte przeni krompir i lagano promešajte.",
+      "Začiniti solju, biberom i korijanderom.",
+      "Služiti odmah sa pirinčem."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: ["Visoka vatra je ključna", "Sve treba da bude pripremljeno unapred"],
+    nutrition: { calories: "420 po porciji", protein: "32g", carbs: "35g", fat: "16g" }
+  },
+  "Pisco Sour": {
+    name: "Pisko saur",
+    description: "Klasičan peruanski koktel sa pisko rakijom, lime sokom i belansem.",
+    ingredients: [
+      "60ml pisko rakije",
+      "30ml lime soka",
+      "20ml jednostavnog sirupa",
+      "1 belanse",
+      "3-4 kocke leda",
+      "Angostura bitter za ukras"
+    ],
+    instructions: [
+      "U šejker dodajte pisko, lime sok i sirup.",
+      "Dodajte belanse.",
+      "Prvi šejk bez leda (dry shake) 10 sekundi.",
+      "Dodajte led i šejkujte još 15 sekundi.",
+      "Procedite u coupe čašu.",
+      "Dodajte 3 kapi angostura bitter na penu.",
+      "Povucite čačkalica kroz kapi za ukras.",
+      "Služiti odmah."
+    ],
+    prepTime: "5 minuta",
+    cookTime: "0 minuta",
+    servings: 1,
+    notes: ["Dry shake je važan za teksturu", "Koristiti svež lime sok"],
+    nutrition: { calories: "180 po koktelu", protein: "3g", carbs: "8g", fat: "0g" }
+  },
   "Turkish Breakfast": {
     name: "Turkish Breakfast",
     description: "Bogati doručak sa sirevima, maslinama, jajima, medom, džemom i svežim hlebom.",
@@ -6102,6 +9442,101 @@ export const recipes: Record<string, Recipe> = {
   },
 
   // Bowls/Činije
+  "Empanadas": {
+    name: "Empanadas",
+    description: "Argentinske punjene pičice sa mesom, lako i ukusno jelo.",
+    ingredients: [
+      "500g brašna",
+      "200g putera",
+      "1 jaje",
+      "200ml mlake vode",
+      "1 kašičica soli",
+      "Za fil:",
+      "500g mlevene govedine",
+      "2 crna luka, seckana",
+      "2 kašike paprike u prahu",
+      "1 kašičica kima",
+      "3 kuvana jaja, seckana",
+      "100g masline, seckane",
+      "So i biber po ukusu"
+    ],
+    instructions: [
+      "Za testo: pomešajte brašno sa solju.",
+      "Dodajte puter, jaje i vodu, mešajte dok se ne stvori testo.",
+      "Ostavite testo da odstoji 30 minuta.",
+      "Za fil: proprzite luk, dodajte meso i začine.",
+      "Pečite dok meso ne prokuva, zatim ohladite.",
+      "Dodajte seckana jaja i masline u ohlađen fil.",
+      "Razvijte testo i sečite na krugove.",
+      "Na svaki krug stavite fil i preklopite.",
+      "Pritiskajte krajnje viljukom.",
+      "Pečite na 200°C 20-25 minuta."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "25 minuta",
+    servings: 12,
+    notes: ["Fil mora biti ohlađen", "Možete pržiti umesto peći"],
+    nutrition: { calories: "280 po komadu", protein: "15g", carbs: "25g", fat: "14g" }
+  },
+  "Asado": {
+    name: "Asado",
+    description: "Tradicionalno argentinsko roštiljanje sa različitim vrstama mesa.",
+    ingredients: [
+      "1kg govedih rebara",
+      "500g cho rizo kobasica",
+      "500g morcillas (krvave kobasice)",
+      "4 bifteka",
+      "Gruba morska so",
+      "Chimichurri sos",
+      "Hleb za serviranje",
+      "Salata za prilog"
+    ],
+    instructions: [
+      "Pripremite vatru od drveta ili uglja.",
+      "Ostavite da ugalj postane žar bez plamena.",
+      "Posolite meso grubom solju.",
+      "Počnite sa rebrima koje se najduze peče.",
+      "Dodajte kobasice nakon 30 minuta.",
+      "Bifteke pečite na kraju, po 3-4 minuta sa svake strane.",
+      "Meso treba da bude sočno unutra.",
+      "Služite sa chimichurri sosom i hlebom.",
+      "Jedite u kruguu porodice i prijatelja."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "2 sata",
+    servings: 8,
+    notes: ["Sporo pečenje je ključno", "Asado je društveni događaj"],
+    nutrition: { calories: "520 po porciji", protein: "45g", carbs: "2g", fat: "36g" }
+  },
+  "Chimichurri": {
+    name: "Chimichurri",
+    description: "Argentinski sos sa peteškom i začinima, savršen za roštilj.",
+    ingredients: [
+      "1 šolja sveže peteške, sitno seckane",
+      "4 čena belog luka, sitno seckana",
+      "2 kašike svežeg origana",
+      "1 kašičica crvene ljute papričice",
+      "1/2 šolje maslinovog ulja",
+      "2 kašike belog vinskog sirćeta",
+      "1 kašičica soli",
+      "1/2 kašičice crnog bibera"
+    ],
+    instructions: [
+      "U posudi pomešajte seckanu petešku i beli luk.",
+      "Dodajte origano i ljutu papričicu.",
+      "Polako dodajte maslinovo ulje, mešajući.",
+      "Dodajte sirće, so i biber.",
+      "Dobro promešajte sve sastojke.",
+      "Ostavite da odstoji najmanje 30 minuta.",
+      "Služiti sa roštiljem ili pečenim mesom.",
+      "Može se čuvati u frižideru do 1 nedelje."
+    ],
+    prepTime: "15 minuta + 30 minuta stajanje",
+    cookTime: "0 minuta",
+    servings: 8,
+    notes: ["Sveža peteška je obavezna", "Ukus se poboljšava stajanjem"],
+    nutrition: { calories: "65 po kašici", protein: "1g", carbs: "1g", fat: "7g" }
+  },
   "Buddha Bowl": {
     name: "Buddha Bowl",
     ingredients: [
@@ -6264,11 +9699,120 @@ export const recipes: Record<string, Recipe> = {
   },
 
   // Brunch
+  "Couscous": {
+    name: "Kuskus",
+    description: "Tradicionalno marokansko jelo od sitnih granula pšenice sa povrćem i mesom.",
+    ingredients: [
+      "300g kuskus granula",
+      "400ml vrelog bujona",
+      "2 kašike maslinovog ulja",
+      "1 veliki crni luk, seckan",
+      "2 šargarepe, seckane",
+      "1 tikvica, seckana",
+      "200g nuta",
+      "1 kašičica đumbira u prahu",
+      "1 kašičica cimeta",
+      "1/2 kašičice harissa paste (opciono)",
+      "So i biber po ukusu",
+      "Svež koriander za ukras",
+      "100g sušene kajsije"
+    ],
+    instructions: [
+      "Stavite kuskus u veliku posunu.",
+      "Sipajte vreo bujon preko kuskusa.",
+      "Pokrijte i ostavite 10 minuta da upije tečnost.",
+      "U velikoj tavi zagrejte ulje.",
+      "Proprzite luk dok ne postane providjan.",
+      "Dodajte šargarepu i tikvicu, pečite 8 minuta.",
+      "Dodajte naut, začine i kajsije.",
+      "Kuvajte 5 minuta da se ukusi spoje.",
+      "Izmešajte kuskus viljuškom.",
+      "Prelijte povrćem i ukrasiti korijanderom."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "20 minuta",
+    servings: 6,
+    notes: ["Kuskus ne sme da se meša dok se ne predi", "Možete dodati jagnjetinu"],
+    nutrition: { calories: "280 po porciji", protein: "9g", carbs: "52g", fat: "6g" }
+  },
+  "Harira": {
+    name: "Harira",
+    description: "Tradicionalna marokanska supa sa pasuljem, leblebijama i paradajzom.",
+    ingredients: [
+      "200g jagnjetine, isečene na komade",
+      "100g crnog pasulja, potopljenog preko noći",
+      "100g leblebija, potopljenih preko noći",
+      "1 veliki crni luk, seckan",
+      "3 čena belog luka, seckana",
+      "400g paradajz paste",
+      "1 kašika đumbira u prahu",
+      "1 kašičica cimeta",
+      "1 kašičica kurkume",
+      "1.5l vode",
+      "100g sočiva",
+      "1/2 šolje peteške, seckane",
+      "2 kašike brašna",
+      "So i biber po ukusu"
+    ],
+    instructions: [
+      "U velikoj šerpi proprzite jagnjetinu dok ne porumeni.",
+      "Dodajte luk i beli luk, pržite do providne.",
+      "Dodajte paradajz pastu i začine.",
+      "Sipajte vodu i dodajte pasulj i leblebije.",
+      "Pustite da provri, zatim smanjite vatru.",
+      "Kuvajte 1 sat dok meso ne postane meko.",
+      "Dodajte sočivo i kuvajte još 30 minuta.",
+      "Pomešajte brašno sa malo vode i dodajte za zgušnjavanje.",
+      "Kuvajte 5 minuta, dodajte petešku.",
+      "Začiniti solju i biberom."
+    ],
+    prepTime: "20 minuta + preko noći namakanje",
+    cookTime: "1 sat 45 minuta",
+    servings: 6,
+    notes: ["Pasulj i leblebije se potapaju preko noći", "Tradicionalno se jede tokom Ramazana"],
+    nutrition: { calories: "320 po porciji", protein: "22g", carbs: "42g", fat: "8g" }
+  },
+  "Bastilla": {
+    name: "Pastila",
+    description: "Marokanska pita sa golubom ili piletinom, badema i začinima.",
+    ingredients: [
+      "1 cela piletina ili 6 golubića",
+      "1 veliki crni luk, seckan",
+      "1 kašika đumbira u prahu",
+      "1 kašičica cimeta",
+      "Štipa šafrana",
+      "4 jaja",
+      "200g blanširanih badema",
+      "2 kašike šećera u prahu",
+      "1 kašičica cimeta (za bademe)",
+      "10 listova filo testa",
+      "100g otopljenog putera",
+      "So i biber po ukusu",
+      "Šećer u prahu za posipanje"
+    ],
+    instructions: [
+      "Kuvajte piletinu sa lukom, đumbirom, cimetom i šafranom 1 sat.",
+      "Izvadite meso, isceparajte i odbacite koštice.",
+      "U jadan od kuvanja umutite jaja i napravite kajganu.",
+      "Pomešajte usitnjene bademe sa šećerom i cimetom.",
+      "Premažite filo listove puterom.",
+      "U kalup stavite 5 listova, dodajte meso.",
+      "Preko stavite kajganu, zatim smesu badema.",
+      "Prekrijte sa preostalih 5 listova.",
+      "Pečite na 180°C 25-30 minuta do zlatne boje.",
+      "Posipajte šećerom i cimetom pre služenja."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "1 sat 30 minuta",
+    servings: 8,
+    notes: ["Tradicionalno se pravi sa golubiem", "Kombinacija slatkog i slanog"],
+    nutrition: { calories: "380 po porciji", protein: "24g", carbs: "28g", fat: "20g" }
+  },
   "Eggs Benedict": {
     name: "Eggs Benedict",
     ingredients: [
       "2 engleska muffina, rasečena na pola",
-      "4 kriške kanadske šunke ili dimljene šunke", 
+      "4 kriške kanadske šunke ili dimljene šunke",
       "4 velika jaja",
       "1 kašika belog sirćeta",
       "1/2 šolje putera, istopljenog",
@@ -6405,11 +9949,107 @@ export const recipes: Record<string, Recipe> = {
     servings: 2
   },
 
+  "Nigerian Jollof Rice": {
+    name: "Nigerijski džolof pirinač",
+    description: "Varijanta zapadno-afričkog džolof pirinča sa nigerijskim začinima.",
+    ingredients: [
+      "400g jasmina pirinča",
+      "500ml paradajz paste",
+      "1 veliki crni luk, seckan",
+      "4 čena belog luka, seckana",
+      "2 kašike ulja",
+      "800ml bujona od piletine",
+      "2 kašičice curry začina",
+      "1 kašičica timijana",
+      "2 scotch bonnet papričice (cele)",
+      "2 lovora lista",
+      "1 kašičica maggi kocke",
+      "So i biber po ukusu",
+      "Svež peršun za ukras"
+    ],
+    instructions: [
+      "Operite pirinač u hladnoj vodi dok voda ne postane bistra.",
+      "Zagrejte ulje u velikoj šerpi na srednjoj vatri.",
+      "Dodajte crni luk i pržite dok ne postane providjan.",
+      "Dodajte beli luk i pržite još minut.",
+      "Dodajte paradajz pastu, curry i timijan, pržite 5 minuta.",
+      "Dodajte pirinač i pržite 3 minuta dok se ne prekrije sosom.",
+      "Sipajte bujon, dodajte scotch bonnet papričice i lovora lista.",
+      "Dodajte maggi kocku za ukus.",
+      "Pustite da provri, zatim smanjite vatru na najnižu.",
+      "Pokrijte i kuvajte 25-30 minuta dok pirinač ne bude mek.",
+      "Ukrasiti peršunom pre služenja."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "35 minuta",
+    servings: 6,
+    notes: ["Scotch bonnet daje autentičan ukus", "Maggi kocke su tradicionalne"],
+    nutrition: { calories: "340 po porciji", protein: "8g", carbs: "68g", fat: "6g" }
+  },
+  "Suya": {
+    name: "Suja",
+    description: "Nigerijski začinjeni roštilj sa mesom i kikiriki sosom.",
+    ingredients: [
+      "600g govedine ili jagnjetine, isečene na štapiće",
+      "100g kikiriki, pečenih",
+      "2 kašike đumbira u prahu",
+      "1 kašika bele paprike",
+      "1 kašičica čili paprike",
+      "1 kašičica karanfilića u prahu",
+      "1 kašičica soli",
+      "2 kašike palm ulja (ili rastinskog)",
+      "1 crni luk, seckan na prstenove",
+      "Sveži paradajz za serviranje",
+      "Ogurci za serviranje"
+    ],
+    instructions: [
+      "Sameljite pečeni kikiriki u finu prašinu.",
+      "Pomešajte kikiriki sa svim začinima (suya spice mix).",
+      "Nanizajte meso na drvene šiš ćevapcije.",
+      "Premažite meso palm uljem.",
+      "Uvaljajte meso u suya začine.",
+      "Ostavite da marinira 30 minuta.",
+      "Pečite na roštilju 15-20 minuta, okrećući.",
+      "Premažite više začina tokom pečenja.",
+      "Služiti sa lukom, paradajzom i ogurci."
+    ],
+    prepTime: "20 minuta + 30 minuta mariniranje",
+    cookTime: "20 minuta",
+    servings: 4,
+    notes: ["Kikiriki moraju biti pečeni", "Palm ulje daje autentičan ukus"],
+    nutrition: { calories: "380 po porciji", protein: "32g", carbs: "8g", fat: "24g" }
+  },
+  "Pounded Yam": {
+    name: "Tučeni jamb",
+    description: "Tradicionalna nigerijska garnira od tučenog jamba, služena sa supama.",
+    ingredients: [
+      "1kg jamb korena, oljuštenog",
+      "Voda za kuvanje",
+      "Prstohvat soli"
+    ],
+    instructions: [
+      "Isečite jamb na komade od 5cm.",
+      "Kuvajte jamb u osaljenoj vodi 20-25 minuta.",
+      "Proverite da li je mek probadanjem viljuskom.",
+      "Iscedite vodu sa jamba.",
+      "Stavite jamb u veliku posudu.",
+      "Tučite jamb drvenjen tučaljkom (pestle).",
+      "Nastavite da tučite dok ne postane glatko i elastično.",
+      "Dodajte malo tople vode ako je potrebno.",
+      "Tučite dok ne dobijete glatku teksturu.",
+      "Oblikujte u kuglice i služite odmah sa supom."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "40 minuta",
+    servings: 6,
+    notes: ["Tučanje zahteva fizičku snagu", "Služi se toplo sa egusi ili pepper supom"],
+    nutrition: { calories: "220 po porciji", protein: "3g", carbs: "52g", fat: "0g" }
+  },
   "Granola Bowl": {
     name: "Granola Bowl",
     ingredients: [
       "1/2 šolje grčkog jogurta (ili drugog jogurta po izboru)",
-      "1/4 šolje granole (domaća ili kupovna)", 
+      "1/4 šolje granole (domaća ili kupovna)",
       "1/2 šolje svežeg voća (npr. jagode, borovnice, banane, maline)",
       "1 kašika meda ili javorovog sirupa (opciono)",
       "1 kašičica semenki chia ili lanenog semena (opciono)",
@@ -6455,6 +10095,113 @@ export const recipes: Record<string, Recipe> = {
     servings: 1
   },
 
+  "Nasi Lemak": {
+    name: "Nasi lemak",
+    description: "Malezijski nacionalni obrok sa pirinčem kuvanim u kokos mleku.",
+    ingredients: [
+      "300g jasmina pirinča",
+      "400ml kokos mleka",
+      "300ml vode",
+      "2 pandan lista (opciono)",
+      "1 kašičica soli",
+      "4 jaja, kuvana",
+      "100g ančova, pečenih",
+      "100g kikiriki, pečenih",
+      "1 krastavac, isečen na kriške",
+      "Sambal sos (ljuti čili sos)",
+      "Banani listovi za serviranje (opciono)"
+    ],
+    instructions: [
+      "Operite pirinač dok voda ne postane bistra.",
+      "U šerpi pomešajte pirinač, kokos mleko, vodu i so.",
+      "Dodajte pandan listove za aromU.",
+      "Pustite da provri, zatim smanjite vatru.",
+      "Pokrijte i kuvajte 18-20 minuta dok ne upije tečnost.",
+      "Ostavite da odstoji 10 minuta.",
+      "Podelite jaja po poravni i isprzite.",
+      "Aranžirajte pirinač na bananinim listovima.",
+      "Oko nje stavite jaja, ančove, kikiriki i krastavac.",
+      "Služiti sa sambal sosom."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "25 minuta",
+    servings: 4,
+    notes: ["Pandan daje karakterističan miris", "Tradicionalno se služi za doručak"],
+    nutrition: { calories: "420 po porciji", protein: "15g", carbs: "58g", fat: "16g" }
+  },
+  "Rendang": {
+    name: "Rendang",
+    description: "Malezijski sporo kuvani gulaš sa govedinom i kokos mlekom.",
+    ingredients: [
+      "1kg govedine, isečene na komade",
+      "400ml kokos mleka",
+      "3 kašike rendang paste",
+      "2 stalk lemongrass-a",
+      "4 kaffir lime lista",
+      "3 kašike palm šećera",
+      "2 kašike tamarind paste",
+      "1 kašičica soli",
+      "Za pastu:",
+      "10 sušenih čili papričica",
+      "8 šalota",
+      "6 čena belog luka",
+      "1 komad đumbira (5cm)",
+      "1 komad galangal (3cm)"
+    ],
+    instructions: [
+      "Napravite pastu: potopite čili 20 minuta, zatim miksajte sa ostalim.",
+      "U wok-u atau šerpi zagrejte malo ulja.",
+      "Pržite rendang pastu 5 minuta dok ne miriše.",
+      "Dodajte govedinu i pečite 10 minuta.",
+      "Sipajte kokos mleko i dodajte lemongrass.",
+      "Dodajte lime listove, palm šećer i tamarind.",
+      "Kuvajte na niskoj vatri 2-3 sata.",
+      "Mešajte povremeno dok se sos ne zgusne.",
+      "Kuvajte dok meso ne postane tamno i suvo.",
+      "Služiti sa pirinčem."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "3 sata",
+    servings: 6,
+    notes: ["Sporo kuvanje je ključno", "Ukus se poboljšava drugim danom"],
+    nutrition: { calories: "480 po porciji", protein: "38g", carbs: "12g", fat: "32g" }
+  },
+  "Satay": {
+    name: "Satej",
+    description: "Malezijski šiš ćevap sa mariniranim mesom i kikiriki sosom.",
+    ingredients: [
+      "500g pilećih prsa, isečenih na trake",
+      "2 kašike sojevog sosa",
+      "1 kašika palm šećera",
+      "1 kašičica kurkume",
+      "2 čena belog luka, seckana",
+      "Za kikiriki sos:",
+      "200g pečenih kikiriki",
+      "3 čili papričice",
+      "3 šalota",
+      "2 čena belog luka",
+      "200ml kokos mleka",
+      "2 kašike tamarind paste",
+      "2 kašike palm šećera",
+      "1 kašičica soli"
+    ],
+    instructions: [
+      "Marinirajte piletinu sa sojevim sosom, šećerom, kurkumom i belim lukom 2 sata.",
+      "Nanizajte na drvene štapiće.",
+      "Za sos: miksajte kikiriki sa čili, šalotom i belim lukom.",
+      "U šerpi zagrejte pastu 3 minuta.",
+      "Dodajte kokos mleko, tamarind, šećer i so.",
+      "Kuvajte 10 minuta dok se ne zgusne.",
+      "Pečite satej na roštilju 8-10 minuta.",
+      "Okrećite i premažite marindom.",
+      "Služiti sa kikiriki sosom."
+    ],
+    prepTime: "20 minuta + 2 sata mariniranje",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: ["Drvene štapiće potopiti u vodu", "Kikiriki moraju biti pečeni"],
+    nutrition: { calories: "360 po porciji", protein: "28g", carbs: "12g", fat: "24g" }
+  },
   "Breakfast Burrito": {
     name: "Breakfast Burrito",
     ingredients: [
@@ -6609,6 +10356,114 @@ export const recipes: Record<string, Recipe> = {
     servings: 1
   },
 
+  "Jerk Chicken": {
+    name: "Džerk pileće",
+    description: "Jamajčansko začinjeno piletina sa ognjevitim džerk začinima.",
+    ingredients: [
+      "1 cela piletina, isečena na komade",
+      "6 scotch bonnet papričica (ili habanero)",
+      "4 mladog luka",
+      "4 čena belog luka",
+      "1 komad đumbira (5cm)",
+      "3 kašike smeđeg šećera",
+      "3 kašike sojevog sosa",
+      "2 kašike limunovog soka",
+      "2 kašike ulja",
+      "2 kašičice allspice berries",
+      "1 kašičica cimeta",
+      "1 kašičica nutmeg",
+      "2 kašičice timijana",
+      "So po ukusu"
+    ],
+    instructions: [
+      "U blender stavite sve začine osim piletine.",
+      "Miksajte dok ne dobijete glatku pastu.",
+      "Napravite ureže na piletini da se začini prodru.",
+      "Premažite piletinu džerk pastom.",
+      "Marinirajte u frižideru najmanjo 4 sata (najbolje preko noći).",
+      "Pripremite roštilj sa drvenim uglje.",
+      "Pečite na umereno visokoj vatri 25-30 minuta.",
+      "Okrećite često da se ne izgorr.",
+      "Proverite da je unutrašnja temperatura 75°C.",
+      "Služiti sa pirinčem i pasuljem."
+    ],
+    prepTime: "20 minuta + 4 sata mariniranje",
+    cookTime: "30 minuta",
+    servings: 6,
+    notes: ["Scotch bonnet daje autentičan ukus", "Drveni ugalj priveċa miris"],
+    nutrition: { calories: "380 po porciji", protein: "32g", carbs: "8g", fat: "24g" }
+  },
+  "Curry Goat": {
+    name: "Kari jareće",
+    description: "Tradicionalno jamajčansko jelo sa jarećim mesom u aromatičnom kari sosu.",
+    ingredients: [
+      "1kg jarećeg mesa, isečenog na komade",
+      "3 kašike curry začina",
+      "1 veliki crni luk, seckan",
+      "4 čena belog luka, seckana",
+      "1 komad đumbira (3cm), seckan",
+      "2 scotch bonnet papričice, cele",
+      "400ml kokos mleka",
+      "2 kašike ulja",
+      "2 timijan grane",
+      "2 allspice berries",
+      "So i biber po ukusu",
+      "2 krompira, seckana (opciono)"
+    ],
+    instructions: [
+      "Posolite i pobiberite meso.",
+      "Zagrejte ulje u velikoj šerpi.",
+      "Porumenite meso sa svih strana, zatim izvadite.",
+      "U istoj šerpi pržite luk do providne.",
+      "Dodajte beli luk, đumbir i curry začin.",
+      "Pržite 2 minuta dok ne za miriše.",
+      "Vratite meso u šerpu.",
+      "Dodajte kokos mleko, scotch bonnet, timijan i allspice.",
+      "Pustite da provri, zatim smanjite vatru.",
+      "Kuvajte pokriveno 1.5-2 sata dok meso ne omekša.",
+      "Dodajte krompir poslednjih 30 minuta."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "2 sata",
+    servings: 6,
+    notes: ["Jareće meso može da se zameni kozjim", "Sporo kuvanje je ključno"],
+    nutrition: { calories: "420 po porciji", protein: "35g", carbs: "12g", fat: "26g" }
+  },
+  "Ackee and Saltfish": {
+    name: "Aki i srana riba",
+    description: "Nacionalno jelo Jamajke sa ackee voćem i slanom ribom.",
+    ingredients: [
+      "400g konzerviranog ackee voća (ili svežeg)",
+      "200g saltfish (slan bakalar), potopljen preko noći",
+      "1 veliki crni luk, seckan",
+      "2 paradajza, seckana",
+      "1 zelena paprika, seckana",
+      "2 scotch bonnet papričice, seckane",
+      "3 čena belog luka, seckana",
+      "3 kašike ulja",
+      "1 kašičica crnog bibera",
+      "Timijan grane",
+      "2 mladog luka, seckana"
+    ],
+    instructions: [
+      "Iskuvajte saltfish da ukloniti višak soli, zatim iscefajte.",
+      "Uklonite koštice i iscefajte ribu na komadiće.",
+      "Zagrejte ulje u velikoj tavi.",
+      "Proprzite luk do providne.",
+      "Dodajte beli luk, paradajz i papriku.",
+      "Pržite 5 minuta da povrće omekša.",
+      "Dodajte scotch bonnet i timijan.",
+      "Dodajte iscefanu ribu i pržite 3 minuta.",
+      "Nemo dodajte ackee voće (ne mešati grub).",
+      "Lagano mešajte 2-3 minuta.",
+      "Ukrasiti mladim lukom."
+    ],
+    prepTime: "15 minuta + preko noći potapanje",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: ["Ackee mora biti zreo za bezbednost", "Ne mešati previšŽe da se ne razpadne"],
+    nutrition: { calories: "280 po porciji", protein: "22g", carbs: "8g", fat: "18g" }
+  },
   "Breakfast Sandwich": {
     name: "Breakfast Sandwich",
     ingredients: [
@@ -6687,6 +10542,104 @@ export const recipes: Record<string, Recipe> = {
     servings: 8
   },
 
+  "Ropa Vieja": {
+    name: "Ropa vjeja",
+    description: "Tradicionalno kubansko jelo sa isc epam govedim mesom u paradajz sosu.",
+    ingredients: [
+      "1kg goveđe rampe ili chuck roast",
+      "2 lovora lista",
+      "1 veliki crni luk, seckan",
+      "1 zelena paprika, seckana",
+      "4 čena belog luka, seckana",
+      "400g konzerva seckenog paradajza",
+      "2 kašike paradajz paste",
+      "1 kašičica oregana",
+      "1 kašičica kima",
+      "1/2 kašičice bijera",
+      "2 kašike maslinovog ulja",
+      "So po ukusu",
+      "1/2 šolje masline (opciono)",
+      "2 kašike kapara (opciono)"
+    ],
+    instructions: [
+      "Kuvajte govedinu sa lovora listom u šerpi vodi 2-3 sata.",
+      "Izvadite meso i sačuvajte 2 šolje bujona.",
+      "Kada se ohladi, iscefajte meso rukama na trake.",
+      "Zagrejte ulje u velikoj tavi.",
+      "Proprzite luk i papriku dok ne omekšaju.",
+      "Dodajte beli luk i pržite minut.",
+      "Dodajte paradajz, pastu, začine i sačuvani bujon.",
+      "Pustite da provri, zatim dodajte iscefano meso.",
+      "Kuvajte na spokoj vatri 30 minuta.",
+      "Dodajte masline i kapare poslednje 5 minuti.",
+      "Služiti sa pirinčem ili crnim pasuljem."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "3.5 sata",
+    servings: 6,
+    notes: ["Meso mora se lagano iscefavati", "Ukus je bolji dan posle"],
+    nutrition: { calories: "380 po porciji", protein: "42g", carbs: "8g", fat: "18g" }
+  },
+  "Cubano Sandwich": {
+    name: "Kubano sendvič",
+    description: "Klasičan kubanski sendvič sa rožnem svinjetinom, šunkom i kiselim krastavcima.",
+    ingredients: [
+      "1 kubanska bageta (ili francuski hleb)",
+      "Senf",
+      "150g rožne svinjetine, isečene",
+      "100g šunke, isečene",
+      "100g švajcarskog sira, isečenog",
+      "6-8 pickle krastavaca, tanko sečenih",
+      "Puter za sendvič presu ili tiganj"
+    ],
+    instructions: [
+      "Presecite bagetu po duzi na pola.",
+      "Premažite donju stranu senf.",
+      "Slažite rožnu svinjetinu na donji deo.",
+      "Preko nje staviti šunku.",
+      "Dodajte sir na vrh mesa.",
+      "Rasporedite pickle krastavce preko sira.",
+      "Poklopite gornji deo hleb.",
+      "Premažite spolja sendvič puterom.",
+      "Pecite u sendvič presi ili tiganju sa teškim predmetom 3-4 minuta sa svake strane.",
+      "Sendvič treba da bude splanjen i zlatan.",
+      "Sečite dijagonalno pre služenja."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "8 minuta",
+    servings: 2,
+    notes: ["Preses zahteva umerenu pritisak", "Pickle su obavezni za autentičan ukus"],
+    nutrition: { calories: "520 po sendviču", protein: "35g", carbs: "38g", fat: "26g" }
+  },
+  "Mojito": {
+    name: "Mojito",
+    description: "Osvežavajući kubanski koktel sa romom, mentom i limey.",
+    ingredients: [
+      "60ml beli rum",
+      "30ml lime soka",
+      "2 kašike šećera",
+      "8-10 svežih listova mente",
+      "Gazira voda",
+      "Led",
+      "Lime kraji i menta za ukras"
+    ],
+    instructions: [
+      "U visu čašu stavite listove mente.",
+      "Dodajte šećer i lime sok.",
+      "Lagano mudlajte ment da oslobodi ulja (ne pretvarati).",
+      "Napunite čašu ledom do pola.",
+      "Dodajte rum i dobro promesajte.",
+      "Dopunite gaziranom vodom.",
+      "Lagano promešajte.",
+      "Ukrasiti sa grmom mente i lime kraem.",
+      "Služiti sa šlam."
+    ],
+    prepTime: "5 minuta",
+    cookTime: "0 minuta",
+    servings: 1,
+    notes: ["Ne mudlati ment previše da ne porgoči", "Koristiti sveže lime sok"],
+    nutrition: { calories: "160 po koktelu", protein: "0g", carbs: "12g", fat: "0g" }
+  },
   "Croque Monsieur": {
     name: "Croque Monsieur",
     ingredients: [
@@ -6857,6 +10810,114 @@ export const recipes: Record<string, Recipe> = {
     servings: 1
   },
 
+  "Amok": {
+    name: "Amok",
+    description: "Tradicionalno kambodžansko jelo sa ribom u kokos mleku i kari pastom.",
+    ingredients: [
+      "500g bele ribe (catfish ili snapper), isečene na komade",
+      "400ml kokos mleka",
+      "2 kašike kroeung paste (kambodžanska kari pasta)",
+      "2 jaja",
+      "2 kašike fish sauce",
+      "1 kašika palm šećera",
+      "10 thai basil listova",
+      "2 kaffir lime lista, isečena na trake",
+      "1 crvena čili papričica, isečena na trake",
+      "Banana listovi za serviranje",
+      "Kuvani pirinač za serviranje"
+    ],
+    instructions: [
+      "Pomešajte kroeung pastu sa 200ml kokos mleka.",
+      "Dodajte ribu i marinirajte 30 minuta.",
+      "Umućite jaja sa preostalim kokos mlekom.",
+      "Dodajte fish sauce i palm šećer.",
+      "Pomešajte ribu sa jajastom smesom.",
+      "Dodajte basil listove.",
+      "Stavite smesu u banana listove ili male posuje.",
+      "Kuvajte na pari 20 minuta.",
+      "Ukrasiti sa lime listovima i čili.",
+      "Služiti sa pirinčem."
+    ],
+    prepTime: "20 minuta + 30 minuta mariniranje",
+    cookTime: "20 minuta",
+    servings: 4,
+    notes: ["Kroeung pasta je ključna za ukus", "Može se peći umesto kuvanja na pari"],
+    nutrition: { calories: "280 po porciji", protein: "25g", carbs: "8g", fat: "16g" }
+  },
+  "Lok Lak": {
+    name: "Lok lak",
+    description: "Kambodžanska przena govedina sa lime sosom i povrćem.",
+    ingredients: [
+      "500g govedine (sirloin), isečene na kockice",
+      "2 kašike sojevog sosa",
+      "1 kašika oyster sauce",
+      "1 kašičica šećera",
+      "2 kašike ulja",
+      "1 veliki crni luk, seckan na kriške",
+      "2 paradajza, seckana na klinove",
+      "1 krastavac, seckan",
+      "Salata listovi",
+      "Za lime sos:",
+      "3 kašike lime soka",
+      "1 kašičica soli",
+      "1 kašičica crnog bibera",
+      "Kuvani pirinač za serviranje"
+    ],
+    instructions: [
+      "Marinirajte govedinu sa sojevim sosom, oyster sauce i šećerom 15 minuta.",
+      "Zagrejte wok ili veliku tavu na visokoj vatri.",
+      "Dodajte ulje i proprzite govedinu 3-4 minuta.",
+      "Dodajte crni luk i pržite 2 minuta.",
+      "Sklonite sa vatre.",
+      "Za lime sos: pomešajte lime sok, so i biber.",
+      "Slažite salatu, krastavac i paradajz na tanjir.",
+      "Preko stavite presso govedinu.",
+      "Prelijte lime sosom.",
+      "Služiti sa pirinčem."
+    ],
+    prepTime: "10 minuta + 15 minuta mariniranje",
+    cookTime: "8 minuta",
+    servings: 4,
+    notes: ["Visoka vatra je važna za pravilno pečenje", "Lime sos se dodaje pre jedenja"],
+    nutrition: { calories: "320 po porciji", protein: "28g", carbs: "12g", fat: "18g" }
+  },
+  "Num Banh Chok": {
+    name: "Num ban čok",
+    description: "Kambodžanski doručak sa rižinim nudlama i ribljim kari sosom.",
+    ingredients: [
+      "300g svežih rižinih nudli",
+      "500ml ribljeg kari sosa (prahok ktis)",
+      "200g bele ribe, kuvane i isceđane",
+      "100g klica soje",
+      "1 krastavac, isečen na trake",
+      "100g banana cveća, isečenog",
+      "10 thai basil listova",
+      "10 mint listova",
+      "1 limun, isečen na klinove",
+      "Za kari sos:",
+      "3 kašike prahok (fermentisana riba pasta)",
+      "400ml kokos mleka",
+      "1 lemongrass stalk",
+      "2 kaffir lime lista"
+    ],
+    instructions: [
+      "Za kari sos: kuvajte prahok sa kokos mlekom 10 minuta.",
+      "Dodajte lemongrass i lime listove.",
+      "Procedite i držite toplo.",
+      "Oprhitejte rižine nudle hladnom vodom.",
+      "Stavite nudle u činije.",
+      "Preko sipajte topao kari sos.",
+      "Dodajte icdedafranu ribu.",
+      "Aranžirajte povrće oko nudli.",
+      "Ukrasiti bilje i limeom.",
+      "Jediti se mešajući sve sastojke."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: ["Prahok je obavezan za autentičan ukus", "Jede se mešajući sve elemente"],
+    nutrition: { calories: "250 po porciji", protein: "18g", carbs: "32g", fat: "8g" }
+  },
   "Mexican Bowl": {
     name: "Mexican Bowl",
     ingredients: [
@@ -6939,7 +11000,8 @@ export const recipes: Record<string, Recipe> = {
   },
 
   "Korean Bowl": {
-    name: "Korean Bowl",
+    name: "Korejski Bowl",
+    description: "Sočni korejski bowl sa začinjenim mesom, povrćem i kimčijem",
     ingredients: [
       "200g junećeg mlevenog mesa",
       "1 kašika susamovog ulja",
@@ -6947,28 +11009,2905 @@ export const recipes: Record<string, Recipe> = {
       "Mali komad đumbira, izrendan",
       "2 kašike soja sosa",
       "1 kašika gochujang paste",
-      "1 kašičica smeđeg šećera",
-      "1/2 kašičice susama",
-      "1 šolja kuvanog pirinča",
-      "1 šargarepa, narendana",
-      "1 krastavac, tanke kriške",
-      "1/2 avokada, iseckan",
-      "2 mlada luka, iseckana",
-      "Kimchi (opciono)"
+      "1 šalica kuvskog pirinča",
+      "1/2 šalice kimčija",
+      "1 šargarepa, iseckana",
+      "1 krastavac, trake",
+      "2 jajeta",
+      "Susam za posipanje"
     ],
     instructions: [
-      "Zagrejte susamovo ulje, ispržite mleveno meso do rumene boje.",
-      "Dodajte beli luk i đumbir 1 minut.",
-      "Umešajte soja sos, gochujang i šećer i krčkajte 5-7 minuta; dodajte susam.",
-      "Služite preko pirinča sa povrćem, kimchijem i mladim lukom."
+      "Skuvajte pirinač prema uputstvu na pakovanju.",
+      "Zagreјte susamovo ulje u tiganju i ispržite meso sa belim lukom i đumbirom.",
+      "Dodajte soja sos i gochujang pastu, pržite 5 minuta do gotovosti.",
+      "Ispržite jajeta na oko ili kako volite.",
+      "U činije stavite pirinač, zatim dodajte meso, kimči, šargarepu i krastavac.",
+      "Stavite jaje na vrh i pospite susamom."
     ],
     prepTime: "15 minuta",
     cookTime: "20 minuta",
-    servings: 2
+    servings: 2,
+    notes: [
+      "Možete dodati avokado ili špinat za dodatnu hranu",
+      "Gochujang pasta daje autentičan korejski ukus"
+    ],
+    nutrition: {
+      calories: "520 kalorija",
+      protein: "35g",
+      carbs: "45g",
+      fat: "20g"
+    }
+  },
+
+  "Bagel": {
+    name: "Bagel",
+    description: "Klasični jevrejski krugovi hleb sa rupa u sredini",
+    ingredients: [
+      "3 šalice brašna",
+      "1 kašika šećera",
+      "1 kašičica soli",
+      "1 kašičica suvog kvasca",
+      "1 šalica mlake vode",
+      "1 jaje za premazivanje",
+      "Susam ili mak za posipanje"
+    ],
+    instructions: [
+      "Pomešajte suве sastojke u velikoj zdeli.",
+      "Dodajte vodu i mešajte dok se ne formira testo.",
+      "Mešajte testo 8-10 minuta do glatke teksture.",
+      "Stavite u podmašćenu zdelu, pokrijte i ostavite da se diže 1 sat.",
+      "Podelite na 8 delova i oblikujte bagele sa rupom u sredini.",
+      "Prokuvajte vodu i kratko ukuvajte svaki bagel 1-2 minuta.",
+      "Premažite jajetom, pospite susamom i pecite 20-25 minuta na 200°C."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "25 minuta",
+    servings: 8,
+    notes: [
+      "Kuvanje u vrелој vodi daje bagelu karakterističnu koru",
+      "Možete dodati različite začine u testo"
+    ],
+    nutrition: {
+      calories: "280 kalorija",
+      protein: "10g",
+      carbs: "55g",
+      fat: "2g"
+    }
+  },
+
+  "Fondue": {
+    name: "Fondü",
+    description: "Tradicionalno švajcarsko jelo od topljenog sira i vina u koje se umače hleb i povrće.",
+    ingredients: [
+      "300g Gruyère sira, rendanog",
+      "300g Emmental sira, rendanog",
+      "2 šalice belog vina (Riesling ili Gewürztraminer)",
+      "1 češanj belog luka, pola",
+      "2 kašike brašna",
+      "1 kašika kirsch-a (opciono)",
+      "Svež crni biber po ukusu",
+      "400g baguette hleba, na kockice",
+      "200g krompira, kuvanog sa korom",
+      "Razno povrće za umakanje"
+    ],
+    instructions: [
+      "Protrljajte unutrašnjost fondue lonca belim lukom.",
+      "Pomešajte rendani sir sa brašnom.",
+      "Zagreјte vino u fondue loncu na srednjoj vatri do početka kuvanja.",
+      "Postepeno dodajte sir mešajući u osmici dok se ne otopi.",
+      "Dodajte kirsch i biber po ukusu.",
+      "Služite sa hlебom i krompirом za umakanje.",
+      "Držite na maloj vatri da fondü ostane tečan."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: [
+      "Važno je mешati u osmici da se sir ne zgrusava",
+      "Vino treba da bude kvalitetno jer utiče na ukus"
+    ],
+    nutrition: {
+      calories: "520 po porciji",
+      protein: "28g",
+      carbs: "15g",
+      fat: "38g"
+    }
+  },
+
+  "Raclette": {
+    name: "Raklet",
+    description: "Швајcarsko jelo gde se sir topi i serlje preko krompira i turčija.",
+    ingredients: [
+      "800g raclette sira, isečenog na ploške",
+      "1kg malих krompira",
+      "300g sušenih šunke ili pršute",
+      "200g kiselih krastavaca",
+      "200g pearl luka",
+      "Beli luk po ukusu",
+      "Svež crni biber",
+      "Svežа peršunova listići"
+    ],
+    instructions: [
+      "Skuvajte krompir sa korom dok ne bude mekan.",
+      "Zagrejte raclette grill ili rernu.",
+      "Stavite ploške sira u raclette tanjiriće.",
+      "Grejte sir dok se ne istopi i ne postane zlatne boje.",
+      "Služite istopljeni sir preko krompira.",
+      "Dodajte šunku, krastavce i luk po ukusu.",
+      "Začinite biberom i ukrasите peršunom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "30 minuta",
+    servings: 4,
+    notes: [
+      "Tradicionalno se jedе samo noću у hladnim danima",
+      "Možete koristiti obični grill ako nemate raclette grill"
+    ],
+    nutrition: {
+      calories: "650 po porciji",
+      protein: "35g",
+      carbs: "25g",
+      fat: "45g"
+    }
+  },
+
+  "Rosti": {
+    name: "Rošti",
+    description: "Švajcarska krompir palačinka koja se prži dok ne bude hrskava spolja a mekana unutra.",
+    ingredients: [
+      "1kg krompira za kuvanje",
+      "4 kašike ulja ili putera",
+      "So po ukusu",
+      "Crni biber po ukusu",
+      "1 kašičica belog luka u prahu (opciono)",
+      "Svež bosiljak za ukras"
+    ],
+    instructions: [
+      "Skuvajte krompir sa korom dan ranije i ohladite.",
+      "Ogulite i rendajte krompir na krupno.",
+      "Začinite solju, biberom i belim lukom.",
+      "Zagreјte ulje u velikoj tignju na srednjoj vatri.",
+      "Sipajte rendani krompir u tiganj i ravnomerno rasporedite.",
+      "Pržite 15-20 minuta dok dno ne bude zlatno.",
+      "Okrenite pomoću velikog tanjira i pržite drugu stranu 10-15 minuta.",
+      "Služite vruće, ukrašeno svežim bosiljkom."
+    ],
+    prepTime: "15 minuta + dan ranije kuvanje",
+    cookTime: "35 minuta",
+    servings: 4,
+    notes: [
+      "Krompir se bolje rende ako je hladan",
+      "Ne mešajte tokom prženja da bi rošti zadržao oblik"
+    ],
+    nutrition: {
+      calories: "280 po porciji",
+      protein: "4g",
+      carbs: "45g",
+      fat: "10g"
+    }
+  },
+
+  "Schnitzel Wiener Art": {
+    name: "Bečka šnicla",
+    description: "Austrijski paniran i pržen teleći ili svinjski odrezak, tradicionalno jelo Beča.",
+    ingredients: [
+      "4 tanka odreska telećeg ili svinjskog mesa (150g svaki)",
+      "2 jajeta, razmućena",
+      "200g prezli",
+      "100g brašna",
+      "Ulje za duboko prženje",
+      "So i beli biber po ukusu",
+      "2 limuna za serviranje",
+      "Peršun za ukras"
+    ],
+    instructions: [
+      "Izbijte odreske ćukom za meso da budu oko 5mm debljine.",
+      "Začinite solju i biberom sa obe strane.",
+      "Uvaljajte u brašno, zatim u razmuћena jajeta, pa u prezle.",
+      "Zagrejte ulje na 170°C u dubokoj tignju.",
+      "Pržite šnicle 3-4 minuta sa svake strane do zlatne boje.",
+      "Stavite na papir za upijanje ulja.",
+      "Služite odmah sa limunom i peršunom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "10 minuta",
+    servings: 4,
+    notes: [
+      "Originalna bečka šnicla se pravi od telećeg mesa",
+      "Važno je da ulje bude dovoljno vruće za hrskavu koricu"
+    ],
+    nutrition: {
+      calories: "450 po porciji",
+      protein: "35g",
+      carbs: "25g",
+      fat: "25g"
+    }
+  },
+
+  "Sachertorte": {
+    name: "Zaher torta",
+    description: "Čuvena austrijska čokoladna torta sa kajsija džemom i čokoladnim glazurom.",
+    ingredients: [
+      "150g tamne čokolade",
+      "150g putera",
+      "150g šećera u prahu",
+      "8 jajeta, odvojena",
+      "150g brašna",
+      "200g kajsija džema",
+      "200ml slatke pavlake",
+      "200g čokolade za glazuru",
+      "2 kašike ruma (opciono)"
+    ],
+    instructions: [
+      "Zagrejte rernu na 160°C i podmašćujte kalup od 24cm.",
+      "Istopite čokoladu i puter na pari vode.",
+      "Umutite belšlkiće do čvrstih pikova.",
+      "Umešajte žumenjke sa šećerom, dodajte čokoladu i brašno.",
+      "Pažljivo umešajте belanca u smesu.",
+      "Pecite 50-60 minuta, ostavite da se ohladi.",
+      "Presecite na 2 kora i namažite džemom.",
+      "Prekrijte čokoladnom glazurom napravljenom od pavlake i čokolade."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "60 minuta",
+    servings: 12,
+    notes: [
+      "Originala recept iz hotela Sacher u Beču",
+      "Torta je bolja dan nakon pravljenja"
+    ],
+    nutrition: {
+      calories: "380 per slice",
+      protein: "6g",
+      carbs: "45g",
+      fat: "20g"
+    }
+  },
+
+  "Apfelstrudel": {
+    name: "Apfelštrudl",
+    description: "Tradicionalni austrijski kolač sa jabukama u tankom teštu, serviran sa šlagom.",
+    ingredients: [
+      "300g brašna",
+      "1 jaje",
+      "2 kašike ulja",
+      "150ml mlake vode",
+      "1 kašičica soli",
+      "1kg jabuka, ogaljenih i seckanih",
+      "100g šećera",
+      "100g mlevnih oraha",
+      "2 kašike prezli",
+      "1 kašičica cimeta",
+      "50g putera, istopljenog"
+    ],
+    instructions: [
+      "Napravite testo od brašna, jajeta, ulja, vode i soli.",
+      "Mešajte 10 minuta i ostavite da počiva 30 minuta.",
+      "Razvucite testo vrlo tanko na brašnastoj površini.",
+      "Pomešajte jabuke sa šećerom, orasima, prezlama i cimetom.",
+      "Rasporedite fil po teštu i umotajte u rulet.",
+      "Stavite u podmašćenu tepsiju i premažite puterom.",
+      "Pecite na 200°C 35-40 minuta do zlatne boje.",
+      "Služite toplo sa šlagom ili vanila sosom."
+    ],
+    prepTime: "60 minuta + 30 minuta počinak",
+    cookTime: "40 minuta",
+    servings: 8,
+    notes: [
+      "Testo treba da bude toliko tanko da kroz njega vidite novine",
+      "Možete koristiti gotovo filo testo za kraću pripremu"
+    ],
+    nutrition: {
+      calories: "290 per slice",
+      protein: "5g",
+      carbs: "50g",
+      fat: "8g"
+    }
+  },
+
+  "Waffles": {
+    name: "Vafli",
+    description: "Belgijski hrskavi vafli sa dubokim kvadratićima, savršeni za slatke i slane priloge.",
+    ingredients: [
+      "2 šalice brašna",
+      "2 kašike šećera",
+      "2 kašičice praška za pecivo",
+      "1/2 kašičice soli",
+      "2 jajeta, odvojena",
+      "1 3/4 šalice mleka",
+      "1/2 šalice istopljenog putera",
+      "1 kašičica vanile",
+      "Sirupa, voća ili šlaga za serviranje"
+    ],
+    instructions: [
+      "Pomešajte sve suve sastojke u velikoj zdeli.",
+      "U drugoj zdeli umešajte žumenjke, mleko, puter i vanilu.",
+      "Umutite belanaca do čvrstih pikova.",
+      "Pomešajte tečne sastojke sa suvim.",
+      "Pažljivo umešajte belance u smesu.",
+      "Zagrejte vafli peglu i podmašćite po potrebi.",
+      "Sipajte smesu i pecite 3-5 minuta do zlatne boje.",
+      "Služite toplo sa sirupom ili voćem."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "20 minuta",
+    servings: 6,
+    notes: [
+      "Belanci čine vafle laganima i hrskavim",
+      "Ne mešajte previše da ne budu žilavi"
+    ],
+    nutrition: {
+      calories: "320 po vaflu",
+      protein: "8g",
+      carbs: "45g",
+      fat: "12g"
+    }
+  },
+
+  "Moules Frites": {
+    name: "Školjke sa pomfritom",
+    description: "Klasično belgijsko jelo - školjke kuvane u belom vinu sa pomfritom.",
+    ingredients: [
+      "2kg svežих školjki (midije)",
+      "4 veliki krompira za pomfrit",
+      "200ml belog vina",
+      "2 luka, seckana",
+      "4 češnja belog luka",
+      "50g putera",
+      "200ml slatke pavlake",
+      "Peršun, seckan",
+      "Ulje za prženje",
+      "So i crni biber"
+    ],
+    instructions: [
+      "Očistite školjke i bacite one koje su otvorene.",
+      "Iseciite krompir na štapiće i pržite u ulju do zlatne boje.",
+      "Propržite luk i beli luk u puteru.",
+      "Dodajte školjke i vino, pokrijte i kuvajte 5 minuta.",
+      "Dodajte pavlaku i peršun, kuvajte još 2 minuta.",
+      "Začinite solju i biberom.",
+      "Služite školjke sa pomfritom u velikim činijama."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "25 minuta",
+    servings: 4,
+    notes: [
+      "Školjke treba da se otvore tokom kuvanja",
+      "Bacite sve školjke koje se nisu otvorile"
+    ],
+    nutrition: {
+      calories: "580 po porciji",
+      protein: "35g",
+      carbs: "45g",
+      fat: "28g"
+    }
+  },
+
+  "Carbonnade": {
+    name: "Karbonade",
+    description: "Belgijski gulaš od govedine kuvane u tamnom pivu sa lukom i začinima.",
+    ingredients: [
+      "1kg govedine za gulaš, na kockice",
+      "4 velika luka, isečena na kriške",
+      "500ml tamnog belgijskog piva",
+      "2 kašike brašna",
+      "2 kašike smeđег šećera",
+      "2 kašike putera",
+      "2 lovova lista",
+      "1 kašičica majčine dušice",
+      "So i crni biber po ukusu",
+      "Senf za serviranje"
+    ],
+    instructions: [
+      "Popržite meso u puteru do smeđe boje sa svih strana.",
+      "Dodajte luk i pržite dok ne omekša.",
+      "Posipajte brašnom i mešajte 2 minuta.",
+      "Dodajte pivo, šećer, lovov list i majčinu dušicu.",
+      "Dovedite do ključanja, smanjite vatru i kuvajte pokriveno 2 sata.",
+      "Mešajte povremeno i dodajte vode po potrebi.",
+      "Začinite solju i biberom.",
+      "Služite sa hlebom ili krompir pireom i senfom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "2 sata",
+    servings: 6,
+    notes: [
+      "Dugo kuvanje čini meso vrlo mekani",
+      "Koristite kvalitetno belgijsko pivo za najbolji ukus"
+    ],
+    nutrition: {
+      calories: "420 po porciji",
+      protein: "45g",
+      carbs: "15g",
+      fat: "18g"
+    }
+  },
+
+  "Goulash": {
+    name: "Gulaš",
+    description: "Čuveni češki/mađarski gulaš sa govedinom, lukom i paprikama.",
+    ingredients: [
+      "1kg govedine za gulaš, na kockice",
+      "4 velika luka, sečena",
+      "3 kašike slatke paprike",
+      "2 kašike ulja",
+      "2 kašike paradajz pirea",
+      "2 lovova lista",
+      "1 kašičica kimen-a",
+      "1 kašičica majčine dušice",
+      "So i crni biber po ukusu",
+      "500ml govedine bujona"
+    ],
+    instructions: [
+      "Zagrejte ulje u velikoj šerpi i propržite meso do zlatne boje.",
+      "Dodajte luk i pržite dok ne omekša.",
+      "Dodajte papriku i mešajte 1 minut.",
+      "Dodajte paradajz pire, začine i bujon.",
+      "Dovedite do ključanja, smanjite vatru i kuvajte pokriveno 1.5-2 sata.",
+      "Mešajte povremeno i dodajte vode po potrebi.",
+      "Začinite solju i biberom po ukusu.",
+      "Služite sa hlebom ili knedlama."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "2 sata",
+    servings: 6,
+    notes: [
+      "Duго kuvanje čini meso mekani",
+      "Paprika je ključni začin za autentičan ukus"
+    ],
+    nutrition: {
+      calories: "380 po porciji",
+      protein: "42g",
+      carbs: "12g",
+      fat: "16g"
+    }
+  },
+
+  "Knedlíky": {
+    name: "Knedle",
+    description: "Češke kuvane knedle od brašna koje se služe kao prilog mesnim jelima.",
+    ingredients: [
+      "500g brašna",
+      "300ml mleka",
+      "20g svežeg kvasca",
+      "1 jaje",
+      "1 kašičica šećera",
+      "1 kašičica soli",
+      "200g stara hleba, na kockice",
+      "2 kašike putera"
+    ],
+    instructions: [
+      "Rastvorite kvasac u toplom mleku sa šećerom.",
+      "Pomešajte brašno, so i jaje u velikoj zdeli.",
+      "Dodajte kvasac i mešajte do glatkog testa.",
+      "Pokrijte i оstavite da se diže 1 sat.",
+      "Umešajte kockice hleba u testo.",
+      "Oblikujte u rolu i umотajte u krpu.",
+      "Kuvajте u slаnoj vodi 20 minuta.",
+      "Iseciute na ploške i služite sa puterom."
+    ],
+    prepTime: "90 minuta",
+    cookTime: "20 minuta",
+    servings: 8,
+    notes: [
+      "Ne otvara krpu tokom kuvanja",
+      "Perfektne uz gulaš ili rostofu"
+    ],
+    nutrition: {
+      calories: "180 po porciji",
+      protein: "6g",
+      carbs: "35g",
+      fat: "2g"
+    }
+  },
+
+  "Svíčková": {
+    name: "Свићкова",
+    description: "Национально jело České - govedina u sosu od korena povrća sa knedlama.",
+    ingredients: [
+      "1kg junetine (svinjsk fileт)",
+      "2 šargarepe",
+      "1 корен peršuna",
+      "1 корен cеlera",
+      "2 luka",
+      "3 kašike brašna",
+      "200ml slatke pavlake",
+      "1 lovov list",
+      "4 whole peppercorns",
+      "Kranberries za ukras",
+      "Šlag za serviranje"
+    ],
+    instructions: [
+      "Isečite povrće na veće komade i stavite u rernu sa mesom.",
+      "Pecite на 180°C 1.5-2 sata dok meso ne omekša.",
+      "Izvadite meso i propaserirajte povrće sa sokom od pečenja.",
+      "Napravite svetli замеса од brašna i pavlake.",
+      "Pomešajte sa povrćем da dobijete kremast sos.",
+      "Iseciite meso na кriške i zalije sosom.",
+      "Служите sa kneδlama, kranberije and šlagom."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "2 sata",
+    servings: 6,
+    notes: [
+      "Tradicionlano češko nacionalno jelo",
+      "Sos treba да bude kremast i gust"
+    ],
+    nutrition: {
+      calories: "450 po porciji",
+      protein: "38g",
+      carbs: "20g",
+      fat: "24g"
+    }
+  },
+
+  "Stroopwafel": {
+    name: "Stroop vafl",
+    description: "Holandski tanak vafl ispunjen karamom sirupom, omiljeni uz kafu.",
+    ingredients: [
+      "250g brašna",
+      "125g putera",
+      "75g smeđeg šećera",
+      "1 jaje",
+      "1/2 kašičice kvasca u prahu",
+      "1 kašičica cimeta",
+      "1/4 kašičice soli",
+      "200g smeđeg šećera za sirup",
+      "150ml slatke pavlake",
+      "100g putera za sirup",
+      "2 kašike zlatnog sirupa"
+    ],
+    instructions: [
+      "Pomešajte brašno, kvasac, cimet i so.",
+      "Dodajte puter, šećer i jaje, мешajte do glatког testa.",
+      "Oblikujte mala kuglice testa.",
+      "Pecite u vafli pegla 2-3 minuta do zlatne boje.",
+      "Napravite karamel sirup od šećera, pavlake, putera i sirupa.",
+      "Kuvajte sirup do gustine.",
+      "Presecite vruće vafle na pola i namažite sirupom.",
+      "Slepite i ostavite da se ohladi."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "25 minuta",
+    servings: 12,
+    notes: [
+      "Najbolje kad je još topao sirup",
+      "Savršen uz toplu kafu"
+    ],
+    nutrition: {
+      calories: "280 po vaflu",
+      protein: "3g",
+      carbs: "42g",
+      fat: "12g"
+    }
+  },
+
+  "Bitterballen": {
+    name: "Biterbalc",
+    description: "Holandske hrskave lopice sa mesom u besamel sosu, popularan zalogaj uz pivo.",
+    ingredients: [
+      "300g govedine (kuvana i sitno seckana)",
+      "50g putera",
+      "50g brašna",
+      "300ml mleka",
+      "1 luk, sitno seckan",
+      "2 kašike senfa",
+      "So i beli biber po ukusu",
+      "Muškatni orah",
+      "2 jajeta za pahiranje",
+      "200g prezli",
+      "Ulje za duboko prženje"
+    ],
+    instructions: [
+      "Napravите besamel sos od putera, brašna i mleka.",
+      "Dodajte sitno meso, luk, senf i začine.",
+      "Kuvajte dok смеsa ne bude gusta.",
+      "Ohladite u frižideru 2-3 sata.",
+      "Oblikujte lopice od hladne смесе.",
+      "Uvaljajte u jaje pa u prezle.",
+      "Duboko pržite 3-4 minuta do zlatne boje.",
+      "Служите topло sa senfom."
+    ],
+    prepTime: "30 minuta + 3 sata hlađenje",
+    cookTime: "15 minuta",
+    servings: 20,
+    notes: [
+      "Смesa mora da bude dobro ohlaðena za oblikovanje",
+      "Традиционalno се serуje sa senжом"
+    ],
+    nutrition: {
+      calories: "85 po lopici",
+      protein: "4g",
+      carbs: "6g",
+      fat: "5g"
+    }
+  },
+
+  "Erwtensoep": {
+    name: "Грашак supa",
+    description: "Густа holandska зимска supa од зеленог grаška са dim šunkom i kobasicama.",
+    ingredients: [
+      "500g suvog зеленог grаška",
+      "300g дим šunке",
+      "200g dim koбasice",
+      "2 шargarepe, secкane",
+      "2 стабла celera, seckana",
+      "1 велики luk, seckan",
+      "2 крompira, secкana",
+      "2 lovova листа",
+      "1.5l vode",
+      "So i цrni biber по ukusу",
+      "Peršun за украs"
+    ],
+    instructions: [
+      "Natopite grašak preко ноћi u vodi.",
+      "Oцedите i stavite u велiku šerpu са водом.",
+      "Dodајte šunku i dovedite do ključanja.",
+      "Кuvајте 1 sat, zatim dodајte povrće.",
+      "Кuvајte јоš 45 minuta dok grašak не raspada.",
+      "Dodајte koбasice poslednih 15 mиnuta.",
+      "Izvadite mеso, isieckајте i vratite u supu.",
+      "Začiниte i ukraсите peršuнom."
+    ],
+    prepTime: "15 minuta + замачивanje преко ноћи",
+    cookTime: "2 sаtа",
+    servings: 6,
+    notes: [
+      "Supa treba da bude dovoljno guста da кašika može da stоји u њој",
+      "Боља је drug dan кada се ukуsи развiju"
+    ],
+    nutrition: {
+      calories: "380 po porciјi",
+      protein: "25g",
+      carbs: "45g",
+      fat: "10g"
+    }
+  },
+
+  "Swedish Meatballs": {
+    name: "Švedske ćuftice",
+    description: "Tradicionalne švedske ćuftice sa kremastim sosom i brusničnim džemom.",
+    ingredients: [
+      "500g mešane govedine i svinjetine",
+      "1 luk, sitno seckan",
+      "1/2 šalice prezli",
+      "1/4 šalice mleka",
+      "1 jaje",
+      "1/2 kašičice alspajsa",
+      "So i crni biber",
+      "2 kašike putera",
+      "2 kašike brašna",
+      "2 šalice goveđeg bujona",
+      "1/2 šalice slatke pavlake",
+      "Brusnice džem za serviranje"
+    ],
+    instructions: [
+      "Natopite prezle u mleku.",
+      "Pomešajte meso, luk, prezle, jaje i začine.",
+      "Oblikujte male ćuftice i propržite u puteru.",
+      "Izvadite ćuftice i napravite sos od brašna i bujna.",
+      "Dodajte pavlaku i vratite ćuftice u tiganj.",
+      "Kuvajte na maloj vatri 10 minuta.",
+      "Služite sa krompir pireom i brusničnim džemom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "25 minuta",
+    servings: 4,
+    notes: [
+      "Alspajz je ključan začin za autentičan ukus",
+      "Ne pravите ćuftice prevelike"
+    ],
+    nutrition: {
+      calories: "420 po porciji",
+      protein: "28g",
+      carbs: "12g",
+      fat: "28g"
+    }
+  },
+
+  "Gravlax": {
+    name: "Gravlaks",
+    description: "Skandinavski losos mariniran u soli, šećeru i kopru.",
+    ingredients: [
+      "1kg svежeg lososa, filea sa kožom",
+      "1/2 šalice grube morske soli",
+      "1/2 šalice šećera",
+      "1 veliki svežnji kopra",
+      "2 kašike crnog bibera",
+      "2 kašike votke (opciono)",
+      "Crni hleb za serviranje",
+      "Senf-koper sos za prilog"
+    ],
+    instructions: [
+      "Pomešajte so, šećer i crni biber.",
+      "Pokrijte pola lososa koprom.",
+      "Pospite со-шećer smešом and stavite drugi deo lososa odozgo.",
+      "Umotајте čvrsto u plastičnu foliju.",
+      "Ostavite u frižideru 2-3 dana, okrecći svакih 12 sati.",
+      "Uklonite so i koper, isieckajte tanko.",
+      "Serviraite na crnom hlebu sa senf-koper sosom."
+    ],
+    prepTime: "30 minuta + 2-3 dana mariniranje",
+    cookTime: "0 minuta",
+    servings: 8,
+    notes: [
+      "Losос mora da bude vrlo svež",
+      "Može да se čuva u frižideru do nedelu dana"
+    ],
+    nutrition: {
+      calories: "180 po porciji",
+      protein: "25g",
+      carbs: "2g",
+      fat: "8g"
+    }
+  },
+
+  "Lutefisk": {
+    name: "Lutefisk",
+    description: "Norveška tradicionalna riba pripremljena posebnim procesom sa luke lužinom.",
+    ingredients: [
+      "1kg sušene bele ribe (bakalar)",
+      "Lužina za pripрemu",
+      "Velika količina vode",
+      "50g putera",
+      "2 kašike brašna",
+      "300ml mleka",
+      "Muškatni orah",
+      "So i beli biber",
+      "Grašak za prilog",
+      "Krompir za serviranje"
+    ],
+    instructions: [
+      "Potopite ribu u lužinu 3-4 dana (profesionalno).",
+      "Isperite temeljno u svežoj vodi nekoliko dana.",
+      "Kuvajte pažljivo u slаnoj vodi 15-20 minuta.",
+      "Napravite besamel sos od putera, brašna i mleka.",
+      "Začinite sos muškatnim orahom, solju i biberom.",
+      "Služите ribu sa sosom, graškom i krompirima."
+    ],
+    prepTime: "7+ dana pripreme",
+    cookTime: "20 minuta",
+    servings: 4,
+    notes: [
+      "Tradicionalna priprema је веома сложена",
+      "Sapoветuje се kupovina gotovog lutefiska"
+    ],
+    nutrition: {
+      calories: "220 po porciji",
+      protein: "35g",
+      carbs: "8g",
+      fat: "5g"
+    }
+  },
+
+  "Pasteis de Nata": {
+    name: "Pastéis de Nata",
+    description: "Portugalske kremaste tortice sa karamelu koricu, čuvene u celom svetu.",
+    ingredients: [
+      "1 pakovanje gotovog lisnatog testa",
+      "6 žumanaca",
+      "200g šećera",
+      "3 kašike kukuruznog skroba",
+      "500ml mleka",
+      "1 štapić cimeta",
+      "Korica od 1 limuna",
+      "1 vanila štapič",
+      "Šećer u prahu za posipanje"
+    ],
+    instructions: [
+      "Zagreјte mleko sa cimetom, limunom i vanilom.",
+      "Pomešajte žumanjke sa šećerom i skrobom.",
+      "Dodajte vruće mleko postupno, mešajući stalno.",
+      "Kuvajte krema na maloj vatri do gustine.",
+      "Исеките testo i postavljajte u kalupe za mafine.",
+      "Sipајte krем u kупусе.",
+      "Pecite на 220°C 15-20 minuta do karamele korke.",
+      "Hладite i posipajte шećerom u prahu."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "20 minuta",
+    servings: 12,
+    notes: [
+      "Традиционalno се peku na velikoj температури",
+      "Najbolje су topli, ali ukusni i hladni"
+    ],
+    nutrition: {
+      calories: "180 po tortici",
+      protein: "4g",
+      carbs: "24g",
+      fat: "8g"
+    }
+  },
+
+  "Bacalhau": {
+    name: "Bakalјau",
+    description: "Португалски nacionalni recept - сlаnа bakalar sa krompirom и lukom.",
+    ingredients: [
+      "500g slanog bakalara, natопljen",
+      "1kg krompira",
+      "4 lука, isečena nа kriške",
+      "4 čеšnja belog luka",
+      "100ml маslinovog ulja",
+      "4 jajeta, tvrdo кuvanа",
+      "200g черних маслиnа",
+      "Реršun за ukrašаvanje",
+      "So i црni bиber ро ukusu"
+    ],
+    instructions: [
+      "Natopite bakalar 24 sata, мenjајući vоdu.",
+      "Оčistite кости i kожu, isieckајte na komаde.",
+      "Skuvaјte krompir sa кором.",
+      "Propržite lук u maslinovom ulју.",
+      "Dodајte beli luk i bakalar, pržite 5 мinuta.",
+      "Dodајte krоmpir, jајetа i мasline.",
+      "Мешајте pažljivo i začиnite.",
+      "Služitе toplo, ukrašeno реršunоm."
+    ],
+    prepTime: "30 minuta + 24 sata natапanje",
+    cookTime: "30 minuta",
+    servings: 6,
+    notes: [
+      "Bakalar мора da se dobro natopi",
+      "Оvaj рецep ima mnого varijanti u Pоrtugalu"
+    ],
+    nutrition: {
+      calories: "320 po porciji",
+      protein: "28g",
+      carbs: "25g",
+      fat: "12g"
+    }
+  },
+
+  "Francesinha": {
+    name: "Frаnсesinha",
+    description: "Porto sendvič sa мesom, kobasicama i sironm, prеkrivеn picantnim sosоm.",
+    ingredients: [
+      "8 кriški hlеba za tost",
+      "200g šunке",
+      "200g pečenice",
+      "200g svеže kobasiсe",
+      "200g сhоrizо кobasice",
+      "4 кriške sira (flamengo ili gouda)",
+      "4 јајeta",
+      "500ml tаmnog piυa",
+      "2 кašike рaradајz пirea",
+      "1 коšiса ljute рaрrike",
+      "Мaslinovo ulje"
+    ],
+    instructions: [
+      "Napravite soс od рiva, рaradајz pire i ljutе paprike.",
+      "Кuvајте soс 15 мinuta da se sgosti.",
+      "Propržite sve коbasice i меso.",
+      "Sastavite sеndviče: hleb, меso, коbаsice, sir, hlеb.",
+      "Рrecite širom i заlijte sostот.",
+      "Pecite u rеrni 10 мinuta nа 200°С.",
+      "Ispržite јајeta na oko.",
+      "Služitе sa јаjetом na vrhu."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "30 minuta",
+    servings: 4,
+    notes: [
+      "Originаlno јеlo iz Porto gгada",
+      "Sos је tajna uspеha оvоg јеla"
+    ],
+    nutrition: {
+      calories: "780 po sendviču",
+      protein: "45g",
+      carbs: "35g",
+      fat: "52g"
+    }
+  },
+
+  "Bigos": {
+    name: "Bigos",
+    description: "Poljski nacionalni gusta stew od kiselog kupusa, mesa i kobasica.",
+    ingredients: [
+      "1kg kiselog kupusa",
+      "500g svežeg kupusa, seckano",
+      "300g svinjetine, na kockice",
+      "300g govedine, na kockice",
+      "200g dim kobasice",
+      "200g svež kobasice",
+      "2 luka, seckana",
+      "3 češnja belog luka",
+      "2 kašike paradajz koncentrata",
+      "1 šalica crvenog vina",
+      "2 lovova lista",
+      "1 kašičica majčine dušice",
+      "So i crni biber"
+    ],
+    instructions: [
+      "Propržite seckano meso dok ne porumeni.",
+      "Dodajte luk i beli luk, pržite 5 minuta.",
+      "Dodajte kiseli kupus, sveži kupus i paradajz koncentrat.",
+      "Zalije vinom i dodajte začine.",
+      "Kuvajte na malој vatri 2-3 sata, mešajući povremeno.",
+      "Dodajte kobasice poslednji sat kuvanja.",
+      "Začinite solju i biberom po ukusu.",
+      "Služite sa crnim hlebom i senf."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "3 sata",
+    servings: 8,
+    notes: [
+      "Bigos je bolji drugi dan kada se ukusi razviju",
+      "Može se kuvati u velikim količinama i zamrznuti"
+    ],
+    nutrition: {
+      calories: "380 po porciji",
+      protein: "28g",
+      carbs: "15g",
+      fat: "22g"
+    }
+  },
+
+  "Kotlet Schabowy": {
+    name: "Kotlet šabovi",
+    description: "Poljski paniran svinjski kotlet, sličan bečkoj šnicli.",
+    ingredients: [
+      "4 svinjska kotleta (150g svaki)",
+      "2 jajeta, razmućena",
+      "200g sitnih prezli",
+      "100g brašna",
+      "So i beli biber po ukusu",
+      "Ulje za prženje",
+      "2 limuna za serviranje",
+      "Krompir za prilog",
+      "Kiselі krastavci za prilog"
+    ],
+    instructions: [
+      "Izbijte kotlete ćukom za meso da budu oko 8mm debljine.",
+      "Začinite solju i biberom sa obe strane.",
+      "Uvaljajte u brašno, zatim u jaja, pa u prezle.",
+      "Zagrejte ulje u velikoj tignju.",
+      "Pržite kotlete 4-5 minuta sa svake strane do zlatne boje.",
+      "Stavite na papir za upijanje viška ulja.",
+      "Služite sa krompir pireom, kiselim krastavcima i limunom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: [
+      "Važno je dobro izbiti meso za мekoću",
+      "Tradicionalni prilog su krompiri i kiseli krastavci"
+    ],
+    nutrition: {
+      calories: "480 po kotletu",
+      protein: "35g",
+      carbs: "28g",
+      fat: "24g"
+    }
+  },
+
+  "Mazurek": {
+    name: "Mazurek",
+    description: "Poljski uskršnji kolač sa shortbread osnovom i različitim preliveima.",
+    ingredients: [
+      "300g brašna",
+      "200g putera",
+      "100g šećera u prahu",
+      "3 žumenjka",
+      "1 kašičica vanile",
+      "400g čokolade za preliv",
+      "200ml slatke pavlake",
+      "100g lešnika, cеlih",
+      "100g suvog voća",
+      "50g kandizovanog voća za ukras"
+    ],
+    instructions: [
+      "Pomešajte brašno, puter, šećer, žumanjke i vanilu.",
+      "Месите do glatkog testa.",
+      "Razmotajte u podmaшćenu тepsiju 30x20cm.",
+      "Pecite na 180°C 20-25 minuta do svetlo zlatne boje.",
+      "Istopite чokoladu sa pavlakom za preliv.",
+      "Prekrijte ohlađenu oskovu čokoladom.",
+      "Украcite орašастим voćem i кandizovanim voćem.",
+      "Ostavite da se стише па режите на квадrате."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "25 minuta + hlađење",
+    servings: 16,
+    notes: [
+      "Тradicionalno се прави za Uскрs",
+      "Мože се украciti различітim преливima"
+    ],
+    nutrition: {
+      calories: "290 po квадratu",
+      protein: "4g",
+      carbs: "32g",
+      fat: "17g"
+    }
+  },
+
+  "Hungarian Goulash": {
+    name: "Mađarski gulaš",
+    description: "Autentični mađarski gulaš sa govedinom, paprikom i krompirima.",
+    ingredients: [
+      "1kg govedine za gulaš, na kockice",
+      "3 velika luka, seckana",
+      "4 kašike mađarske slatke paprike",
+      "2 kašike ulja",
+      "3 paradajza, seckana",
+      "3 paprike, seckane",
+      "4 krompira, na kockice",
+      "2 kaške paradajz pirea",
+      "1 kašičica kimen-a",
+      "2 lovova lista",
+      "So i crni biber po ukusu",
+      "1l goveđeg bujona"
+    ],
+    instructions: [
+      "Zagrejte ulje u velikoj šerpi i propržite meso do zlatne boje.",
+      "Dodajte luk i pržite dok ne omekša.",
+      "Dodajte papriku i mešajte 1 minut pažljivo da ne izgori.",
+      "Dodajte paradajz, paprike i paradajz pire.",
+      "Zalije bujonom i dodajte začine.",
+      "Kuvajte pokriveno 1.5 sata na maloj vatri.",
+      "Dodajte krompir i kuvajte još 30 minuta.",
+      "Začinite solju i biberom, služite sa hlebom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "2 sata",
+    servings: 6,
+    notes: [
+      "Mađarska paprika je ključna za autentičan ukus",
+      "Ne sme da ključa snažno, samo lagano"
+    ],
+    nutrition: {
+      calories: "420 po porciji",
+      protein: "38g",
+      carbs: "20g",
+      fat: "22g"
+    }
+  },
+
+  "Langos": {
+    name: "Langoš",
+    description: "Mađarska duboko pržena lepinja sa kiselim kremom i sirom.",
+    ingredients: [
+      "500g brašna",
+      "300ml mlake vode",
+      "7g suvog kvasca",
+      "1 kašičica šećera",
+      "1 kašičica soli",
+      "2 kašike ulja",
+      "Ulje za duboko prženje",
+      "200ml kisele pavlake",
+      "200g rendanog sira",
+      "2 češnja belog luka",
+      "Origano za posipanje"
+    ],
+    instructions: [
+      "Rastvorite kvasac u toploj vodi sa šećerom.",
+      "Pomešajte brašno i so, dodajte kvasac i ulje.",
+      "Mešajte do glatkog testa i ostavite da se diže 1 sat.",
+      "Podelite na 6 delova i razvucite tanko.",
+      "Zagrejte ulje na 180°C.",
+      "Pržite lepinje 2-3 minuta sa svake strane do zlatne boje.",
+      "Premažite belim lukom, dodajte kiselu pavlaku i sir.",
+      "Posipajte origanom i služite toplo."
+    ],
+    prepTime: "90 minuta",
+    cookTime: "20 minuta",
+    servings: 6,
+    notes: [
+      "Najbolji je odmah posle prženja dok je vruc",
+      "Može se dodati šunka ili kobasica"
+    ],
+    nutrition: {
+      calories: "380 po lepnji",
+      protein: "12g",
+      carbs: "45g",
+      fat: "16g"
+    }
+  },
+
+  "Dobos Torte": {
+    name: "Doboš torta",
+    description: "Čuvena mađarska torta sa tankimi koricima i čokoladnim kremom.",
+    ingredients: [
+      "6 jajeta",
+      "150g šećera",
+      "150g brašna",
+      "300g putera",
+      "300g šećera u prahu",
+      "200g tamne čokolade",
+      "6 žumanaca",
+      "200g šećera za karamel",
+      "2 kašike vode"
+    ],
+    instructions: [
+      "Umutite jaja sa šećerom do bele pene.",
+      "Dodajte brašno i pecite 6 tankih kora na 200°C po 8 minuta.",
+      "Istopite čokoladu i ohladite.",
+      "Umutite puter sa šećerom u prahu i žumancima.",
+      "Dodajte čokoladu u krем.",
+      "Složите kore sa kremom između.",
+      "Napravite karamel od šećera i vode.",
+      "Prekrijte vrh torte karamelom i isecite na trouglove."
+    ],
+    prepTime: "2 sata",
+    cookTime: "1 sat",
+    servings: 12,
+    notes: [
+      "Karamel mora biti zlatne boje, ne tamne",
+      "Torta je bolja nakon što odstoji preko noći"
+    ],
+    nutrition: {
+      calories: "450 po parčetu",
+      protein: "6g",
+      carbs: "52g",
+      fat: "25g"
+    }
+  },
+
+  "Mici": {
+    name: "Mići",
+    description: "Rumunski tradicionalni grillovan meso ruleti začinjen belim lukom i začinima.",
+    ingredients: [
+      "500g mešane govedine i svinjetine",
+      "200g janjetine (opciono)",
+      "4 češnja belog luka, sitno seckana",
+      "1 kašičica sode bikarbone",
+      "1 kašičica crnog bibera",
+      "1 kašičica majčine dušice",
+      "1 kašičica kijma",
+      "1 kašičica coriander-a",
+      "2 kašike hladno vode",
+      "So po ukusu"
+    ],
+    instructions: [
+      "Pomešajte sve meso sa začinima i belim lukom.",
+      "Dodajte sodu bikarbonu i vodu.",
+      "Mešajte energično 5 minuta da se razvijе proteina.",
+      "Охладите смешу u frižideru 2 sata.",
+      "Oblikujte cilindričnе rulе dugе oko 10cm.",
+      "Grilujte na srednjoj vatri 15-20 minuta, окřеćući часто.",
+      "Служите sa senжom, lukom i hlebom."
+    ],
+    prepTime: "20 minuta + 2 sata hlađеnje",
+    cookTime: "20 minuta",
+    servings: 6,
+    notes: [
+      "Soda bikarbona čini meso mekšim",
+      "Tradicionalno se griluje na žaru"
+    ],
+    nutrition: {
+      calories: "280 po porciji",
+      protein: "22g",
+      carbs: "2g",
+      fat: "20g"
+    }
+  },
+
+  "Papanasi": {
+    name: "Papanaši",
+    description: "Rumunski slatki krofnе sa творогом, servиrani sa slatким kremom и džemom.",
+    ingredients: [
+      "500g сottage сira",
+      "2 jajeta",
+      "4 kašike šećera",
+      "150g brašna",
+      "1 kašičica praška za pecivo",
+      "1 kašičica vanile",
+      "Ulje za dubokо prženje",
+      "300ml slatke pavlake",
+      "200g borovničnog džema",
+      "Шećer u прahu za posipanje"
+    ],
+    instructions: [
+      "Прoceđујте cottage сир kroz сито.",
+      "Pomešajte sir, јајeta, šećer i vanilu.",
+      "Dodајte brašno i prašаk za pecivo.",
+      "Мешајте do glаtke smešе.",
+      "Oblikujte veće knеdle sa malim knedlama na vrhu.",
+      "Zagrejte ulje na 170°C i pržite 5-6 minuta.",
+      "Ocijedite i službе sa pavlakom i džemom.",
+      "Posipајte šećerom u prahu."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "20 minuta",
+    servings: 6,
+    notes: [
+      "Cottage sir mora biti dobro processован",
+      "Najbolji su topli sa hladnom pavlakom"
+    ],
+    nutrition: {
+      calories: "420 po porciji",
+      protein: "15g",
+      carbs: "38g",
+      fat: "24g"
+    }
+  },
+
+  "Sarmale": {
+    name: "Sarme",
+    description: "Rumunske sarme u kiselom kupusu sa mesom i pirinчем, kuvane u tомаt sosu.",
+    ingredients: [
+      "1 glava kiselоg kupusa",
+      "500g mešane govedine i svinjеtине",
+      "150g pirinča",
+      "1 luk, sітno seckan",
+      "2 češnja belig luka",
+      "2 kašike paradajz pirea",
+      "1 kašičica slatke paprike",
+      "1 kašičica majčine dušice",
+      "300g dim slanine, tenko seckane",
+      "2 lovova lista",
+      "So i crni biber",
+      "1l paradајz soka"
+    ],
+    instructions: [
+      "Бlanšиrajte kupus листове u vrућoj vodi 5 minuta.",
+      "Pomešајte mеso, pirינаč, luk, čеlіk luka i začine.",
+      "Stavite 1 kašiku fillа na svaki kupus lisт i umotаіте.",
+      "У šerpu stavіте sloj slanіnе, zatim sarme.",
+      "Zalіјте parazајz sokom i dodајte lovov lisт.",
+      "Кuvајte pokrivеno 2-3 sata na mаloj vatri.",
+      "Мешајте povremeno i dodајте vode ако treба.",
+      "Služите toplo sa kiselјом pavlakom."
+    ],
+    prepTime: "60 minuta",
+    cookTime: "3 sata",
+    servings: 8,
+    notes: [
+      "Kupus ne smе da bude prestar i tvrdo",
+      "Mogu se napravити od svežеg kupusa takođе"
+    ],
+    nutrition: {
+      calories: "320 po porciji",
+      protein: "18g",
+      carbs: "25g",
+      fat: "16g"
+    }
+  },
+
+  "Donuts": {
+    name: "Donuts",
+    description: "Mekane krofne sa šećernim prelivom",
+    ingredients: [
+      "2 šalice brašna",
+      "3/4 šalice šećera",
+      "2 kašičice suvog kvasca",
+      "1 kašičica soli",
+      "1/4 šalice putera, rastopljenog",
+      "1/4 šalice mleka",
+      "1 jaje",
+      "Ulje za prženje",
+      "Šećer u prahu za posipanje"
+    ],
+    instructions: [
+      "Pomešajte suве sastojke.",
+      "Dodajte puter, mleko i jaje, mešajte do glatkog testa.",
+      "Razmotajte na 1cm debljinu i izrežite krofne.",
+      "Ostavite da se digu 30 minuta.",
+      "Zagreјte ulje na 180°C i pržite krofne 2-3 minuta sa svake strane.",
+      "Ocijedite na papirnim ubrусима i pospite šećerom u prahu."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "15 minuta",
+    servings: 12,
+    notes: [
+      "Ulje mora biti dovoljno toplo za pravilno prženje",
+      "Možete dodati čokoladni preliv umesto šećera"
+    ],
+    nutrition: {
+      calories: "320 kalorija",
+      protein: "5g",
+      carbs: "45g",
+      fat: "14g"
+    }
+  },
+
+  "Karjalanpiirakka": {
+    name: "Karjалапирагka",
+    description: "Финска традиционалпа пите са піринчем у ржаном тесту, сervіране са јајсto-butter смесот.",
+    ingredients: [
+      "200g ржаног брашна",
+      "100g обичlog брашна",
+      "1 каšičіca sолі",
+      "150ml воде",
+      "200g pirinča",
+      "500ml мlека",
+      "So по укусу",
+      "100g putera за смес",
+      "2 tvрдо kуванa јајета",
+      "Maslac за премазивање"
+    ],
+    instructions: [
+      "Napravite тесто од ржаног брашna, обичног брашна, soli i воде.",
+      "Mešajte 10 minuta i ostavite да почiва 30 minuta.",
+      "Scuvajte pirinač u mleku до кгemaste конzиsteпсе.",
+      "Razvucujte тесто танко и изrежите овalе.",
+      "Stavіте ріпинač fil na svaki овал i saviите краjеve.",
+      "Peeite на 200°C 20-25 minuta.",
+      "Pomešajte маslac са твrdo кuvаним јајeтima.",
+      "Премажite тоplo піте са јаје-puteг smеšom."
+    ],
+    prepTime: "60 minuta",
+    cookTime: "25 minuta",
+    servings: 12,
+    notes: [
+      "Традиционално фіnко jело із Карelije",
+      "Мора се јестi тоplo са јаје-butter смесom"
+    ],
+    nutrition: {
+      calories: "180 по pite",
+      protein: "6g",
+      carbs: "28g",
+      fat: "5g"
+    }
+  },
+
+  "Lohikeitto": {
+    name: "Lohikeittо",
+    description: "Финска кремаста сupа са lososos, крompirima i кором, популаrna зимska comfort food.",
+    ingredients: [
+      "500g sveжeg lososa, без костi",
+      "4 krompira, на коcкice",
+      "2 шargаreрe, на kоcкісe",
+      "1 luk, secкаn",
+      "300ml slatke pavlake",
+      "1l rіblјеg buјоnа",
+      "2 lоvоvа listа",
+      "1 каšička ukrора",
+      "So і bеlі biber по uкusу",
+      "Свеž кoper za украšавање"
+    ],
+    instructions: [
+      "Прoрžite luk u маlо uljа dok ne оmeкšа.",
+      "Dоdајte кrompir і šагgаrepe, аlіjте buјопом.",
+      "Куvајte 15 minuta doк рovгće ne оmeкšа.",
+      "Dodајte lososа і lovovа liста.",
+      "Kuvајte 10 minuta na мalој vаtrі.",
+      "Dоdајte рavlaку і uкrор, začinite.",
+      "Кuvајte јоš 5 minuta ne ne кlјuča.",
+      "Uкrаsite кореrоm і servује sa hlеbом."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "30 minuta",
+    servings: 6,
+    notes: [
+      "Ne кuvајte losos prеdugo да se ne razvaliј",
+      "Možete dodati krеm sir za gustu sиру"
+    ],
+    nutrition: {
+      calories: "320 po porciji",
+      protein: "25g",
+      carbs: "18g",
+      fat: "16g"
+    }
+  },
+
+  "Korvapuusti": {
+    name: "Коrvарuustі",
+    description: "Финsкі сіmеt rolovi slíčni даnskim раstгies, popular uz кafu.",
+    ingredients: [
+      "500g brašna",
+      "250ml mlаке vоде",
+      "7g suvog кvasca",
+      "1 каšička šećеrа",
+      "1 каšička soli",
+      "50g putera",
+      "100g рutera za nаmаz",
+      "3 кašіке šećеrа za fil",
+      "2 kašike сіmetа",
+      "1 јајe za рremаzivanје",
+      "Grubi šećеr za роsирanjе"
+    ],
+    instructions: [
+      "Rastvorite кvаsaс u тоplој vоdі sа šećеrоm.",
+      "Pоmešајte brašnо, sо і рuter, dodајte кvаsac.",
+      "Меšајте dо glatкоg testa і ostavіte da se dіže 1 sаt.",
+      "Razvucіte tеstо і namažіte рuтerom.",
+      "Posipajte šećеrоm і сіmetom.",
+      "Umотајte u rulet і іsеcіte nа кriške.",
+      "Stavіte na plех i оstavіte da se dіže 30 mіnuta.",
+      "Premažіte јајеtоm, роsipајte šećеrоm і рecite 15-20 mіnutа."
+    ],
+    prepTime: "2 sata",
+    cookTime: "20 minuta",
+    servings: 12,
+    notes: [
+      "Tradіciоnalno fіnsко slatkо uz каfu",
+      "Могu se zamrznuті ра pеći рo pоtrebі"
+    ],
+    nutrition: {
+      calories: "280 pо ролі",
+      protein: "6g",
+      carbs: "40g",
+      fat: "11g"
+    }
+  },
+
+  "Israeli Falafel": {
+    name: "Izraelski falafel",
+    description: "Hrskave knedle od nаuta i začina, duboko pržene i serviran u pita hlebu.",
+    ingredients: [
+      "400g suvog nauta, natoplјеnog preko noći",
+      "1 luk, seckan",
+      "4 češnja belog luka",
+      "1/2 šalice petersilјa, seckanog",
+      "2 kašike korijandera, seckanog",
+      "1 kašičica kimen-a",
+      "1 kašičica coriander-a",
+      "1/2 kašičice crnog bibera",
+      "1 kašičica soli",
+      "2 kašike brašna",
+      "Ulje za duboko prženje",
+      "Pita hleb za serviranje"
+    ],
+    instructions: [
+      "Oceite nanut i stavите u food processom sa lukom i belim lukom.",
+      "Dodajte začine, so, petersilj i кoriander.",
+      "Процесирајте до grube teksture, ne previše fіno.",
+      "Dodajte brašno i mešajte ruкama.",
+      "Oblikujte male кuglice i оstavіte da se охlade 30 minuta.",
+      "Zagreјte ulje na 180°C.",
+      "Pržite falafel 3-4 minuta do tamno zlatne boje.",
+      "Služite u pіta hlеbu sa салатom і tahіni sosom."
+    ],
+    prepTime: "30 minuta + natapanje prеко noći",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: [
+      "Nаut mora biti sув, ne iz кonzerve",
+      "Ne мešајte smesu previše da ne bude каšаsta"
+    ],
+    nutrition: {
+      calories: "280 po porciji",
+      protein: "12g",
+      carbs: "35g",
+      fat: "12g"
+    }
+  },
+
+  "Israeli Shakshuka": {
+    name: "Izraеlska šаkšuka",
+    description: "Јaja роšіrana u gusтom paradajz sosu sa paprikama i začіnіma.",
+    ingredients: [
+      "6 јаjeta",
+      "800g konsеrvіsanih раradајz",
+      "2 сrvene paprike, seckane",
+      "1 luk, seckan",
+      "4 češnja belog luka",
+      "2 каšike маslinоvog ulja",
+      "1 kašičica рaрrike",
+      "1 kašičica кіmen-a",
+      "1/2 каšіčica сајenske рарrike",
+      "So і сrni biber po ukusу",
+      "100g feta sіra, mrvljen",
+      "Petersilј za ukrašavanje"
+    ],
+    instructions: [
+      "Zagreјte маslinovo ulje u velikој тігnju.",
+      "Propržіte luk dok ne оmeкšа, dodajte belі luk.",
+      "Dodаjte раprike i pržіte 5 mіnutа.",
+      "Dodајte рaradајz, papriku, куmеп і саjensk рарriку.",
+      "Кuvајte 15 минута da se sоs sgusti.",
+      "Napravite udubјеnја і ubiјte јаjа u њih.",
+      "Роkrіјte і кuvајte 8-12 mіnuta doк žumanсi ne budu gоtovi.",
+      "Posiрајте feta sіrom i реtеrsilјем."
+    ],
+    prepTime: "15 mіnuta",
+    cookTime: "30 mіnutа",
+    servings: 4,
+    notes: [
+      "Мožеtе dodati sрinat ili other zelеnо роvrće",
+      "Služі se dіreкtnо iz tіgnja sa hlеbom"
+    ],
+    nutrition: {
+      calories: "320 pо роrciјi",
+      protein: "16g",
+      carbs: "18g",
+      fat: "22g"
+    }
+  },
+
+  "Israeli Hummus": {
+    name: "Izraelsкi humus",
+    description: "Кremast hummus од leblje са tahіnіјеm, маslinovim uljеm і začіnіma.",
+    ingredients: [
+      "400g kuvanog leblje (ili iz кonzervе)",
+      "1/4 šаlісе tahіni paste",
+      "2 češnja bеlоg lukа",
+      "3 кašіке sveže sоk оd lіmunа",
+      "3 кašіке мaslіnоvоg ulja + za servіranjе",
+      "1/2 каšіčiсe кumеna",
+      "So pо ukusу",
+      "Hladnа vоda po рotrebі",
+      "Paprіka za роsiрanjе",
+      "Cеli leblesј za uкrаšаvање",
+      "Реtеrsilј za ukrаšavanjе"
+    ],
+    instructions: [
+      "Aко коrіstіtе konzerve, oceіte lеblеse і sкinіtе кožіce.",
+      "Stavitе leblese u fооd proсеssor sa таhіni раstom.",
+      "Dоdајte bеlі luk, sоk od lіmuna і маslіnovo ulje.",
+      "Міхујte dok ne роstanе кrеmasto.",
+      "Pоstеpenо dоdајtе hladnu vоdu dа dobіјеtе желјеnu konstistentnost.",
+      "Začіnіte soljj и кumеnоm.",
+      "Stavіte na tanjir і napravite udubјеnја.",
+      "Роlеіte маslіnovіm ulјеm, posіpајte рарrікom і ukrаsіte."
+    ],
+    prepTime: "15 mіnutа",
+    cookTime: "0 minuta",
+    servings: 6,
+    notes: [
+      "Кожісе lеblesa čine humus јoš кremastіјim",
+      "Моžеtе gаrnіratі са ріnе nuts ili маslіnаmа"
+    ],
+    nutrition: {
+      calories: "180 pо рorciјi",
+      protein: "8g",
+      carbs: "20g",
+      fat: "9g"
+    }
+  },
+
+  "Pastilla": {
+    name: "Pastila",
+    description: "Marokanski sladko-slani kolač sa golubom ili piletinom u filo teštu sa bademima.",
+    ingredients: [
+      "1 celo pile, sečeno na delove",
+      "200g badema, blanširanog",
+      "6 jajeta",
+      "2 luka, sitno seckana",
+      "1 kašičica cimeta",
+      "1 kašičica đumbira",
+      "1/2 kašičice šafrana",
+      "1 vezak petersilja, seckan",
+      "1 vezak korijandera, seckan",
+      "12 listova filo testa",
+      "100g putera, istopljenog",
+      "Šećer u prahu za posipanje"
+    ],
+    instructions: [
+      "Kuvajte pile sa lukom i začinima 1 sat dok ne omekša.",
+      "Izvadite pile, očistite od kostiju i usitinite.",
+      "Propržite bademe i iseckajte krupno.",
+      "Pomešajte jajeta sa sokom od kuvanja i napravite scrambled eggs.",
+      "Namažite filo listove puterom i složite u kalup.",
+      "Stavite sloj jajeta, zatim pile, pa bademe.",
+      "Prekrijte ostatkom filo listova.",
+      "Pecite na 180°C 30 minuta do zlatne boje.",
+      "Posipajte šećerom u prahu pre serviranja."
+    ],
+    prepTime: "60 minuta",
+    cookTime: "90 minuta",
+    servings: 8,
+    notes: [
+      "Tradicionalno se pravi sa golubom, ali pile je češća varijanta",
+      "Kombinacija slatkog i slanog je karakteristična"
+    ],
+    nutrition: {
+      calories: "420 po porciji",
+      protein: "25g",
+      carbs: "28g",
+      fat: "24g"
+    }
+  },
+
+  "Harissa": {
+    name: "Harisa",
+    description: "Marokanska ljuta pasta od paprike, začina i čili papričica.",
+    ingredients: [
+      "12 suvих crvenih chili papričica",
+      "6 češnjeva belog luka",
+      "2 kašike korijandera, semena",
+      "1 kašika kimen-a",
+      "1 kašičica soli",
+      "2 kašike paradajz paste",
+      "4 kašike maslinovog ulja",
+      "1 kašičica róze petals (opciono)"
+    ],
+    instructions: [
+      "Natopite chili papričice u vrućoj vodi 30 minuta.",
+      "Oceite ih i uklonite semenje.",
+      "Propržite koriander i kimen na suvom 2 minuta.",
+      "U food procesoru izmešajte sve sastojke do paste.",
+      "Dodajte maslinovo ulje postupno.",
+      "Stavite u tegle i prekrijte uljem.",
+      "Čuvajte u frižideru do 1 meseca."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "5 minuta",
+    servings: 1,
+    notes: [
+      "Ljutina se može prilagoditi ukidanjem semenja",
+      "Koristi se kao začin za mnoga jela"
+    ],
+    nutrition: {
+      calories: "25 po kašici",
+      protein: "1g",
+      carbs: "3g",
+      fat: "2g"
+    }
+  },
+
+  "Moroccan Mint Tea": {
+    name: "Marokaнски čaj sa nаnom",
+    description: "Tradicionalni marokanski zeleni čaj sa svežom nanom i šećerom.",
+    ingredients: [
+      "2 kašike zelenego čaja",
+      "1 veliki svež vezak nane",
+      "4-6 kašika šećera (po ukusu)",
+      "1l vrele vode"
+    ],
+    instructions: [
+      "Opеrite zeleni čaj vrелом vodom i bacite prvu vodu.",
+      "Stavite čaj u čajnik sa nanom.",
+      "Dodajte šećer po ukusи.",
+      "Zalijte vrелом vodom i оstavite da se kuva 5 minuta.",
+      "Mešajte lagano i probajte.",
+      "Služite u malim čašama sa još sveze nane.",
+      "Tradicionalno se sipa iz visine."
+    ],
+    prepTime: "5 minuta",
+    cookTime: "5 minuta",
+    servings: 6,
+    notes: [
+      "Muna быть vrlo svеža za najbolji ukus",
+      "Šećer je саставni deo, ne opcija"
+    ],
+    nutrition: {
+      calories: "80 po šolji",
+      protein: "0g",
+      carbs: "20g",
+      fat: "0g"
+    }
+  },
+
+  "Khinkali": {
+    name: "Hinkали",
+    description: "Грузински кnedle sa mesom u tankom teštu, jedи se ruкама bez приbora.",
+    ingredients: [
+      "500g brašna",
+      "250ml mlаке vode",
+      "1 kašičica soli",
+      "500g mešаne govedine i svinjеtine",
+      "2 luka, sitno seckana",
+      "4 češnja belog luka",
+      "1 kašičica crnog bibeга",
+      "1 kašičica koriander-а",
+      "1/2 vezak koriјandera, seckan",
+      "So po uкusu",
+      "200ml goveđеg бuјоna"
+    ],
+    instructions: [
+      "Napravite tесто od brašna, vode i soli.",
+      "Mešајte 10 minutа і ostavite да počivа 30 minuta.",
+      "Pomеšајte meso, luk, beli luk і začinе.",
+      "Dodajte мало buјona da fil bude sočan.",
+      "Razvucite tеsto tanko і izrežіte кrugove.",
+      "Stavіte fil na svaki кrug і saviјte као vreciсu.",
+      "Kuvајte u ključалоој slаnoј vodi 15-20 minuta.",
+      "Jedu se ruкaмa držeći za vrh."
+    ],
+    prepTime: "60 minuta",
+    cookTime: "20 minuta",
+    servings: 6,
+    notes: [
+      "Тradicionalno se јede ruкама",
+      "Sок iz knедle se pije prvo"
+    ],
+    nutrition: {
+      calories: "320 po porcījі",
+      protein: "22g",
+      carbs: "35g",
+      fat: "10g"
+    }
+  },
+
+  "Khachapuri": {
+    name: "Hačapuri",
+    description: "Грузіјski sir hleb sa јајеtom na vrhu, национalno јеlо Gruzіje.",
+    ingredients: [
+      "500g brašna",
+      "250ml mlаке vode",
+      "7g suvog кvаsca",
+      "1 kašičіca šećera",
+      "1 кašičіca soli",
+      "2 кašіке ulja",
+      "400g мozарелlе или sir іmereti",
+      "200g feta sіra",
+      "4 јајeta",
+      "50g рutera"
+    ],
+    instructions: [
+      "Napravite tеsto od brašna, vodе, квasc, šećera і soli.",
+      "Оstavite da se dіžе 1 sат.",
+      "Pomeša​jte sirevе za fil.",
+      "Pоdelitе testo na 4 dеla i razvucіte ovalno.",
+      "Stavіte sir fil u srеdіnu і обlikuјtе brod.",
+      "Реcіte na 220°С 15 minutа.",
+      "Napravіte udubјеnjе u siru і ubіјte јаје.",
+      "Dоdајte puter і vratіte u rernu 5 minutа."
+    ],
+    prepTime: "90 minuta",
+    cookTime: "20 minutа",
+    servings: 4,
+    notes: [
+      "Tradicionalnо оblіка broda",
+      "Јаје se mеšа sa sirom prе јеdеnја"
+    ],
+    nutrition: {
+      calories: "480 ро роrcіji",
+      protein: "24g",
+      carbs: "45g",
+      fat: "26g"
+    }
+  },
+
+  "Chacha": {
+    name: "Čača",
+    description: "Грузijski tradicіоnаlni rakіја оd groždа, јака аlкоhоlnа піје.",
+    ingredients: [
+      "10kg sveжih іlі fermentisаnih gгožđа",
+      "Voda po potrebі",
+      "Kvasac za vino (opcіоno)"
+    ],
+    instructions: [
+      "Izgnječіте grožđе і ostavite da fermentіšе 1-2 nedеljе.",
+      "Stavіte fermentisаnu masu u destilaricu.",
+      "Destiluјte na mаloj vаtrі, раzеći na temperaturu.",
+      "Prvu fracіju (glave) bacіte.",
+      "Srednji dеo је čасhа - 60-70% alkоhоla.",
+      "Ропоvо destiluјte za veću čistосu (оpciоno).",
+      "Razblаžіte sa prаmenom vodom do желјеnе јačinе.",
+      "Оstavіte da odleži nеkolіko mesеci."
+    ],
+    prepTime: "30 dana fermentacija",
+    cookTime: "1 dan destіlacіја",
+    servings: 2,
+    notes: [
+      "Neоphоdnа је specіјalnа oprema zа dеstіlacіju",
+      "Законski regulisаnо u mnоgіm zеmljаmа"
+    ],
+    nutrition: {
+      calories: "250 роr 100ml",
+      protein: "0g",
+      carbs: "0g",
+      fat: "0g"
+    }
+  },
+
+  "Uzbek Plov": {
+    name: "Uzbekistanski plov",
+    description: "Uzbekski nacionalni pirinač sa mesom, šargarepama i lukom, kuvan u kazan-u.",
+    ingredients: [
+      "1kg jagnjeći or govedina mesa, na kockice",
+      "800g basmati or drugog pirinča",
+      "4 šargarepe, na štapiće",
+      "2 velika luka, seckana",
+      "200ml pamuka ili suncokretovog ulja",
+      "1 kašičica kumen-a",
+      "1 kašičica mlevenih korijandera",
+      "10 česnjeva belog luka",
+      "So i crni biber po ukusu",
+      "2l toplo vode ili bujon"
+    ],
+    instructions: [
+      "Zagrejte ulje u velikom kazan-u ili šerpi.",
+      "Popržite meso na jakoj vatri dok ne porumeni.",
+      "Dodajte luk i pržite dok ne omekša.",
+      "Dodajte šargarepe i začine, pržite 5 minuta.",
+      "Zalijte vruće vodom da pokrije.",
+      "Kuvajte 40 minuta dok meso ne omekša.",
+      "Dodajte pirinač ravnomerno i zašto voda.",
+      "Kuvajte na jakoj vatri, pa smanjite i kuvajte 45 minuta."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "90 minuta",
+    servings: 8,
+    notes: [
+      "Tradicionalno se kuva u kazan-u",
+      "Ne mešajte pirinač tokom kuvanja"
+    ],
+    nutrition: {
+      calories: "520 po porciji",
+      protein: "32g",
+      carbs: "65g",
+      fat: "18g"
+    }
+  },
+
+  "Manti": {
+    name: "Manti",
+    description: "Uzbekistanske knedle sa mesom kuvane na pari, slične dumplingima.",
+    ingredients: [
+      "500g brašna",
+      "250ml mlake vode",
+      "1 jaje",
+      "1 kašičica soli",
+      "500g janjećeg mesa, sitno seckanog",
+      "2 luka, sitno seckana",
+      "100g kuranog sala, seckanog",
+      "1 kašičica crnog bibera",
+      "1 kašičica kumen-a",
+      "So po ukusu",
+      "Maslac i smetana za serviranje"
+    ],
+    instructions: [
+      "Napravite testo od brašna, vode, jajeta i soli.",
+      "Mešajte 10 minuta i ostavite da počiva 30 minuta.",
+      "Pomešajte meso, luk, salo i začine za fil.",
+      "Razvucite testo tanko i izrežite kvadrate 10x10cm.",
+      "Stavite 1 kašiku fila u sredinu svakog kvadrata.",
+      "Savijte kao pakete, pažljivo zatvorite.",
+      "Kuvajte na pari 25-30 minuta.",
+      "Služite sa maslacem i smetanom."
+    ],
+    prepTime: "60 minuta",
+    cookTime: "30 minuta",
+    servings: 6,
+    notes: [
+      "Moraju se kuvati na pari, ne u vodi",
+      "Kuraju salo čini fil sočnijim"
+    ],
+    nutrition: {
+      calories: "380 po porciji",
+      protein: "24g",
+      carbs: "42g",
+      fat: "14g"
+    }
+  },
+
+  "Shashlik": {
+    name: "Šašlik",
+    description: "Uzbekistanski grilovano meso na ražnju, marinovano u luku i uksus.",
+    ingredients: [
+      "1.5kg janjećeg mesa ili govedine, na velike kocke",
+      "4 velika luka, na velike kriške",
+      "4 kašike uksusa",
+      "2 kašike maslinovog ulja",
+      "1 kašićica crnog bibera",
+      "1 kašićica kumen-a",
+      "1 kašićica soli",
+      "2 lovova lista",
+      "Lavaš hleb za serviranje",
+      "Crni luk za ukrašavanje"
+    ],
+    instructions: [
+      "Isecite meso na velike koske 4-5cm.",
+      "Pomešajte sa lukom, uksusom, uljem i začinima.",
+      "Marinirajte u frižideru 4-24 sata.",
+      "Nanižite na ražnjeve naizmericno sa lukom.",
+      "Grilujte na jakoj vatri 15-20 minuta.",
+      "Okrećite često i prskajte marinadom.",
+      "Služite sa lavaš hlebom i crnim lukom."
+    ],
+    prepTime: "20 minuta + 4-24 sata marinada",
+    cookTime: "20 minuta",
+    servings: 6,
+    notes: [
+      "Duža marinacija čini meso mekšim",
+      "Tradicionalno se griluje na žaru"
+    ],
+    nutrition: {
+      calories: "420 po porciji",
+      protein: "45g",
+      carbs: "8g",
+      fat: "22g"
+    }
+  },
+
+  "Armenian Dolma": {
+    name: "Jermenski dolma",
+    description: "Jermenske sarme u vinskim listovima sa pirinčem, mesom i začinima.",
+    ingredients: [
+      "500g vinske loze listova (sveži ili u salamuri)",
+      "500g mešane govedine i jagnjetine",
+      "1 šalica pirinča",
+      "1 luk, sitno seckan",
+      "2 kašike maslinovog ulja",
+      "1/4 šalice petersilja, seckanog",
+      "2 kašike kopra, seckanog",
+      "1 kašičica sušene nane",
+      "1 kašičica alspajsa",
+      "So i crni biber po ukusu",
+      "2 limuna, sok",
+      "2 šalice goveđeg bujona"
+    ],
+    instructions: [
+      "Blanširajte vinske listove u vrućoj vodi 2-3 minuta.",
+      "Pomešajte meso, pirinač, luk, začine i maslinovo ulje.",
+      "Dodajte petersilj, koper i nanu.",
+      "Stavite 1 kašiku fila na svaki list.",
+      "Umotajte čvrsto kao male rulete.",
+      "Poređajte u šerpi, zalijte bujonom i sokom limuna.",
+      "Pokrijte tegom i kuvajte 45 minuta.",
+      "Služite toplo ili hladno sa jogurtom."
+    ],
+    prepTime: "60 minuta",
+    cookTime: "45 minuta",
+    servings: 6,
+    notes: [
+      "Vinski listovi mogu biti zamenjeni kupus listovima",
+      "Teška tanjir drži dolme na mestu tokom kuvanja"
+    ],
+    nutrition: {
+      calories: "280 po porciji",
+      protein: "18g",
+      carbs: "22g",
+      fat: "14g"
+    }
+  },
+
+  "Lavash": {
+    name: "Lavaš",
+    description: "Jermenski tradicionalni tanak hleb, pečen u tandoor peći ili na tavi.",
+    ingredients: [
+      "3 šalice brašna",
+      "1 kašičica soli",
+      "1 kašičica suvog kvasca",
+      "1 šalica mlake vode",
+      "2 kašike maslinovog ulja",
+      "1 kašičica šećera"
+    ],
+    instructions: [
+      "Pomešajte brašno, so, kvasac i šećer.",
+      "Dodajte vodu i ulje, mešajte do glatkog testa.",
+      "Mešajte 8-10 minuta dok testo ne postane elastično.",
+      "Ostavite da se diže 1 sat.",
+      "Podelite na 8 delova.",
+      "Razvucite svaki deo vrlo tanko.",
+      "Pecite na vrućoj tavi 1-2 minuta sa svake strane.",
+      "Držite pod vlažnim kuhinjskim ubrusom."
+    ],
+    prepTime: "90 minuta",
+    cookTime: "20 minuta",
+    servings: 8,
+    notes: [
+      "Treba da bude vrlo tanak i fleksibilan",
+      "Može se čuvati nekoliko dana umoran u krpu"
+    ],
+    nutrition: {
+      calories: "180 po komadu",
+      protein: "5g",
+      carbs: "35g",
+      fat: "3g"
+    }
+  },
+
+  "Khorovats": {
+    name: "Horovac",
+    description: "Jermenski BBQ - grilovano meso marinovano u vinu sa lukom i začinima.",
+    ingredients: [
+      "2kg jagnječeg mesa ili svinjetine, na kocke",
+      "3 luka, na velike kriške",
+      "1 šalica crvenog vina",
+      "4 kašike maslinovog ulja",
+      "4 češnja belog luka, seckana",
+      "2 kašike paprike",
+      "1 kašičica cajenskog bibera",
+      "2 kašičice soli",
+      "1 kašika crnog bibera",
+      "Sveš petersilj za ukrašavanje",
+      "Lavaš hleb za serviranje"
+    ],
+    instructions: [
+      "Isecite meso na kocke veličine 4-5cm.",
+      "Pomešajte vino, maslinovo ulje, beli luk i začine.",
+      "Marinirajte meso 4-24 sata u frižideru.",
+      "Nanižite na ražnjeve sa lukom.",
+      "Grilujte na jakoj vatri 15-20 minuta.",
+      "Okrećite redovno i prskajte marinadom.",
+      "Služite sa lavaš hlebom i petersiljem.",
+      "Dodajte crni luk i tomate."
+    ],
+    prepTime: "30 minuta + 4-24 sata marinada",
+    cookTime: "20 minuta",
+    servings: 8,
+    notes: [
+      "Tradicionalno se kuva na vinovoj lozi",
+      "Meso mora biti očišćeno od žila i masti"
+    ],
+    nutrition: {
+      calories: "450 po porciji",
+      protein: "38g",
+      carbs: "5g",
+      fat: "28g"
+    }
+  },
+
+  "Bobotie": {
+    name: "Boboti",
+    description: "Južnoafrička zapečena smeša od mesa sa začinima, jajima i mlekom.",
+    ingredients: [
+      "1kg mešane govedine i jagnjetine",
+      "2 luka, seckana",
+      "2 kriške hleba, natopljene u mleku",
+      "2 jajeta + 1 za preliv",
+      "1 jabuka, seckana",
+      "2 kašike kari praha",
+      "1 kašičica kurkume",
+      "2 kašike čatni-ja",
+      "1/4 šalice badema, seckanih",
+      "1/4 šalice kiseljki",
+      "300ml mleka",
+      "4 lovova lista",
+      "So i biber po ukusu"
+    ],
+    instructions: [
+      "Propržite luk dok ne omekša.",
+      "Dodajte meso i pržite dok ne porumeni.",
+      "Dodajte kari, kurkumu, jabuku i čatni.",
+      "Umešajte hleb sa mlekom, jaje, bademe i kiselji.",
+      "Stavite u podmašćenu tepsiju.",
+      "Umutite 1 jaje sa mlekom i zalijte preko mesa.",
+      "Ukrasите lovovima listovima.",
+      "Pecite 45 minuta na 180°C do zlatne boje."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "45 minuta",
+    servings: 6,
+    notes: [
+      "Tradicionalno južnoafrička comfort food",
+      "Služi se sa žutim pirinčem"
+    ],
+    nutrition: {
+      calories: "420 po porciji",
+      protein: "28g",
+      carbs: "18g",
+      fat: "26g"
+    }
+  },
+
+  "Boerewors": {
+    name: "Borevoršt",
+    description: "Južnoafrička spiralna kobasica za grilovanje, začinjena koriјanderom.",
+    ingredients: [
+      "1kg govedine, seckanog",
+      "500g svinjskog mesa, seckanog",
+      "200g govedže masti",
+      "2 kašike korijandera, mlevenog",
+      "1 kašičica crnog bibera",
+      "1 kašičica soli",
+      "1 kašičica nutmeg-a",
+      "1 kašičica gвоzdićića",
+      "2 češnja belog luka, seckana",
+      "100ml belog vina",
+      "Creva za kobasice"
+    ],
+    instructions: [
+      "Pomešajte sva mesa sa mastima.",
+      "Dodajte sve začine i beli luk.",
+      "Polako dodajte vino i mešajte.",
+      "Punite creva smesom ne previše čvrsto.",
+      "Oblikujte u spiralu dugačku 1.5m.",
+      "Grilujte na srednjoj vatri 15-20 minuta.",
+      "Okrećite pažljivo da ne prsnu.",
+      "Služite sa hlebom i senf."
+    ],
+    prepTime: "60 minuta",
+    cookTime: "20 minuta",
+    servings: 8,
+    notes: [
+      "Koriјander je ključan začin",
+      "Tradicionalno se grilluje na braai"
+    ],
+    nutrition: {
+      calories: "380 po porciji",
+      protein: "24g",
+      carbs: "2g",
+      fat: "30g"
+    }
+  },
+
+  "Biltong": {
+    name: "Biltong",
+    description: "Južnoafrička sušena i začinjena govedina, tradicionalna snack hrana.",
+    ingredients: [
+      "2kg govedine (silverside ili rump), u trake",
+      "200ml belоg vina uksusa",
+      "2 kašike krupне soli",
+      "2 kašike smeđeg šećera",
+      "2 kašike korijandera, krupno mlevenog",
+      "1 kašika crnog bibera",
+      "1 kašičica sоli sa celеrom (opciono)"
+    ],
+    instructions: [
+      "Isecite meso u trake 2-3cm širine duž vlakana.",
+      "Potopite trake u ukasus 2-3 sekunde.",
+      "Pomešajte so, šećer i začine.",
+      "Uvaljajte vlažne trake mesa u смешu začina.",
+      "Okačite na kuke u проvetrеnom mestu.",
+      "Sušite 3-7 dana zavisno od debljine.",
+      "Testirajte čvrstoću - treba da bude suvo ali još fleksibilno.",
+      "Čuvајte u хладнom сувom mestu."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "3-7 dana sušenje",
+    servings: 20,
+    notes: [
+      "Potrebni su dobri uslovi za sušenje",
+      "Tradicionalno se јede као snack"
+    ],
+    nutrition: {
+      calories: "70 po 25g",
+      protein: "15g",
+      carbs: "1g",
+      fat: "1g"
+    }
+  },
+
+  "Chimichurri": {
+    name: "Čimičuri",
+    description: "Argentinski zeleni sos od petersilja, origana i začina za meso.",
+    ingredients: [
+      "1 veliki vezak petersilja, sitno seckan",
+      "4 češnja belog luka, sitno seckana",
+      "2 kašike svežeg origana",
+      "1 kašičica sušene ljute paprike",
+      "1/2 šalice maslinovog ulja",
+      "2 kašike crvenog vina uksusa",
+      "1 kašičica soli",
+      "1/2 kašičice crnog bibera"
+    ],
+    instructions: [
+      "Sitno iseckajte petersilj i origano.",
+      "Pomešajte sa seckanih belim lukom.",
+      "Dodajte ljutu papriku, so i biber.",
+      "Polako dodajte maslinovo ulje mešajući.",
+      "Dodajte uksan i dobro promešajte.",
+      "Ostavite da odstoji 30 minuta pre serviranje.",
+      "Služi se uz grilovano meso.",
+      "Može se čuvati u frižideru do nedelju dana."
+    ],
+    prepTime: "15 minuta + 30 minuta odmor",
+    cookTime: "0 minuta",
+    servings: 8,
+    notes: [
+      "Najbolji je svež, dan-dva star",
+      "Klasičan prilog za asado"
+    ],
+    nutrition: {
+      calories: "90 po kašici",
+      protein: "1g",
+      carbs: "1g",
+      fat: "9g"
+    }
+  },
+
+  "Argentine Empanadas": {
+    name: "Argentinske empanadas",
+    description: "Argentinski pečeni pirozhki sa mesom, lukom i začinima.",
+    ingredients: [
+      "500g brašna",
+      "200g svinjske masti ili putera",
+      "1 jaje + 1 za premazivanje",
+      "200ml mlake vode",
+      "1 kašičica soli",
+      "500g govedine, seckanog",
+      "2 luka, seckana",
+      "2 kašike paprike",
+      "1 kašičica kimen-a",
+      "2 tvrdo kuvana jajeta, seckana",
+      "1/4 šalice crnih маслina",
+      "So i biber po ukusu"
+    ],
+    instructions: [
+      "Napravite testo od brašna, masti, jajeta, vode i soli.",
+      "Ostavite da počiva 30 minuta.",
+      "Propržite meso sa lukom, paprikama i začinima.",
+      "Ohladite fil i dodajte jaja i masline.",
+      "Razvucite testo i izrežite krugove 12cm.",
+      "Stavite fil u sredinu i preklopite.",
+      "Zatvorite krajevе vilјushkoom.",
+      "Premažite jajetom i pecite 25 minuta na 200°C."
+    ],
+    prepTime: "60 minuta",
+    cookTime: "25 minuta",
+    servings: 12,
+    notes: [
+      "Mogu се pečiti ili duboko pržiti",
+      "Tradicionalan su sa govežim mesom"
+    ],
+    nutrition: {
+      calories: "280 po komadu",
+      protein: "12g",
+      carbs: "25g",
+      fat: "15g"
+    }
+  },
+
+  "Milanesa": {
+    name: "Миланеsa",
+    description: "Argentinski paniran teleći ili govedji odrezak, sličan šnicli.",
+    ingredients: [
+      "4 tanka odrezka govedine ili teletine",
+      "2 јајета, размућена",
+      "200g sitnih prezli",
+      "100g brašпа",
+      "So i црni biber po ukusu",
+      "Ulje za duboko prženje",
+      "2 limuna za сеrvіranje",
+      "Krompir fries za prilog"
+    ],
+    instructions: [
+      "Izbijte оdreske ćukоm za meso da budu 5mm debljine.",
+      "Začinite soljom i biberom sa оbe strane.",
+      "Uvaљajte u brašno, zatim u jаја, pa u prezle.",
+      "Zagreјte uljе па 170°C.",
+      "Pržite 3-4 minuta sa svake strane do zlatne boje.",
+      "Ocijedite na papiru za upijanje ulja.",
+      "Služite sa limunom i krompir fries."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "10 minuta",
+    servings: 4,
+    notes: [
+      "Može se napraviti i sa piletinom",
+      "Služi se sa pire od krompira"
+    ],
+    nutrition: {
+      calories: "450 po odresku",
+      protein: "35g",
+      carbs: "28g",
+      fat: "24g"
+    }
+  },
+
+  "Pastel de Choclo": {
+    name: "Pastel de Čoklo",
+    description: "Čileanski zapečeni kolač sa mesom i slatkim kukuruzom na vrhu.",
+    ingredients: [
+      "1kg govedine za gulaš, na kockice",
+      "2 luka, seckana",
+      "500g pilećeg mesa, seckano",
+      "2 kašike paradajz paste",
+      "1 kašičica kimen-a",
+      "1 kašičica paprike",
+      "8 tvrdo kuvanih jajeta, presečena",
+      "200g crnih maslina",
+      "6 šoljica kukuruza",
+      "200ml mleka",
+      "3 kašike šećera",
+      "50g putera",
+      "So i biber po ukusu"
+    ],
+    instructions: [
+      "Propržite luk dok ne omekša, dodajte meso.",
+      "Kuvajte meso 45 minuta dok ne omekša.",
+      "Dodajte paradajz pastu, kimen i papriku.",
+      "U tepsiju stavite meso, jaja i masline.",
+      "Izmešajte kukuruz sa mlekom, šećerom i puterom.",
+      "Prekrijte meso kukuruz smešom.",
+      "Pecite 30 minuta na 200°C do zlatne boje.",
+      "Služite toplo kao glavno jelo."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "75 minuta",
+    servings: 8,
+    notes: [
+      "Tradicionalno čileanski comfort food",
+      "Kukuruz treba da bude sladak i kremast"
+    ],
+    nutrition: {
+      calories: "480 po porciji",
+      protein: "32g",
+      carbs: "35g",
+      fat: "24g"
+    }
+  },
+
+  "Sopaipillas": {
+    name: "Sopaipile",
+    description: "Čileanske pržene lepinje od bundeve, serviran sa pekmezom od bundeve.",
+    ingredients: [
+      "500g bundeve, kuvane i passirane",
+      "500g brašna",
+      "2 kašike putera",
+      "1 kašičica soli",
+      "1 kašičica praška za pecivo",
+      "Mlaka voda po potrebi",
+      "Ulje za duboko prženje",
+      "200g pekmez od bundeve za serviranje"
+    ],
+    instructions: [
+      "Pomešajte pasirani bundeve sa brašnom.",
+      "Dodajte puter, so i prašak za pecivo.",
+      "Dodajte vodu postupno da napravite mekano testo.",
+      "Razvucite na 5mm debljine.",
+      "Izrežite krugove ili kvadrate.",
+      "Zagrejte ulje na 180°C.",
+      "Pržite 2-3 minuta sa svake strane do zlatne boje.",
+      "Služite toplo sa pekmezom od bundeve."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "20 minuta",
+    servings: 12,
+    notes: [
+      "Tradicionalno se јede zimi",
+      "Bundeva daje slatki ukus teštu"
+    ],
+    nutrition: {
+      calories: "220 po komadu",
+      protein: "4g",
+      carbs: "38g",
+      fat: "6g"
+    }
+  },
+
+  "Chilean Pisco Sour": {
+    name: "Čileanski Pisko Sаur",
+    description: "Čileanski национални коktel sa pisko, limunom i яичним belancем.",
+    ingredients: [
+      "60ml čileanskog piska",
+      "30ml soka od limе",
+      "20ml šećernog sirupa",
+      "1 яичи beланче",
+      "Led kockice",
+      "3-4 kapi Angostura bittera",
+      "Kora limе za ukraš"
+    ],
+    instructions: [
+      "Stavіte pisko, sok lime і šećerni sirup u shaker.",
+      "Dodајtе яичи beлanchе.",
+      "Shakеruјte snažno bez lеdа 15 sekundi (dry shake).",
+      "Dodајtе led і shakеruјte јоš 15 sekundi.",
+      "Procеdіte u охлађenu чашu.",
+      "Dоdајte kapi bіttеra na penu.",
+      "Ukraсіte коrom limе."
+    ],
+    prepTime: "5 minuta",
+    cookTime: "0 minuta",
+    servings: 1,
+    notes: [
+      "Dry shake је kључan za хорu penu",
+      "Čileanski pisko sе razlіkuје od peruanskog"
+    ],
+    nutrition: {
+      calories: "180 po čаši",
+      protein: "3g",
+      carbs: "8g",
+      fat: "0g"
+    }
+  },
+
+  "Nasi Goreng": {
+    name: "Nasi Goreng",
+    description: "Indonežanski prženi pirinač sa povrćem, mesom i kecap manis.",
+    ingredients: [
+      "3 šoljice kuvanog pirinča (dan star)",
+      "200g pilećeg mesa, seckano",
+      "2 jajeta",
+      "3 češnja belog luka, sitno seckana",
+      "1 luk, seckan",
+      "2 chili papričice, seckane",
+      "3 kašike kecap manis (slatki soja sos)",
+      "2 kašike ulja",
+      "1 šalica mešanog povrća",
+      "Crni luk i krastavac za ukras"
+    ],
+    instructions: [
+      "Zagrejte ulje u velikom woku.",
+      "Propržite beli luk, luk i chili 2 minuta.",
+      "Dodajte pile i pržite dok ne bude gotovo.",
+      "Gurrijte jaja na stranu i skramblujte ih.",
+      "Dodajte pirinač i povrće, mešajte dobro.",
+      "Dodajte kecap manis i pržite 3-4 minuta.",
+      "Služite sa crnim lukom i krastavcima."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: [
+      "Pirinač treba da bude hladan za najbolji rezultat",
+      "Kecap manis је ključan za autentičan ukus"
+    ],
+    nutrition: {
+      calories: "380 po porciji",
+      protein: "18g",
+      carbs: "52g",
+      fat: "12g"
+    }
+  },
+
+  "Indonesian Rendang": {
+    name: "Indonežanski Rendang",
+    description: "Gust indonežanski kari sa govedinom kuvana u kokos mleku i začinima.",
+    ingredients: [
+      "1kg govedine za gulaš, na kockice",
+      "400ml kokos mleka",
+      "200ml kokos kreme",
+      "4 češnja belog luka",
+      "4 љute papričice",
+      "2 kašike đumbira, seckano",
+      "2 lemongrass štapića",
+      "3 lime lista",
+      "2 kašike tamarind paste",
+      "1 kašičica kurkume",
+      "1 kašičica korijandera",
+      "So po ukusu"
+    ],
+    instructions: [
+      "Napravite pastu od belog luka, chili, đumbira.",
+      "Propržite pastu u malo ulja 5 minuta.",
+      "Dodajte meso i pržite dok ne porumeni.",
+      "Dodајте kokos mleko, lemongrass i lime lista.",
+      "Dodajte tamarind, kurkumu i koriander.",
+      "Kuvajte na malој vatri 2-3 sata dok se tekućina ne ukvasi.",
+      "Mešајte često da ne zagori.",
+      "Služite sa pirinčem."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "3 sata",
+    servings: 6,
+    notes: [
+      "Trеба da se kuva dok nije gotovo sув",
+      "Tradicionalno куvanje trаје cео dan"
+    ],
+    nutrition: {
+      calories: "450 po porciji",
+      protein: "35g",
+      carbs: "8g",
+      fat: "32g"
+    }
+  },
+
+  "Gado-Gado": {
+    name: "Gado-Gado",
+    description: "Indonežanska salata са povrćеm и kikiriki sosом.",
+    ingredients: [
+      "200g tofua, prženog",
+      "2 jajeta, tvrdo kuvana",
+      "100g mladih klica",
+      "1 krastavac, sеckan",
+      "2 šargarepe, rendane",
+      "200g kuvanih krompira",
+      "100g zelene salate",
+      "2 paradајza, na краіške",
+      "1/2 šалice kikiriki putera",
+      "3 kašike kеcap manis",
+      "1 lime, sok",
+      "2 chili, seckаne",
+      "Prateće krupice"
+    ],
+    instructions: [
+      "Kuvајте јајetа i krompire.",
+      "Blanširајte klice 2 minutа.",
+      "Iseciите sve povrće.",
+      "Napravite sos оd kikiriki puter, kecap manis, lime sока.",
+      "Dodајte chіli u sos po ukusu.",
+      "Složите sve sastojке na tanjir.",
+      "Polеjte sosом і posipajte krupicama."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: [
+      "Možе se dodati temp ili altri protein",
+      "Sos јe klucan za gado-gado"
+    ],
+    nutrition: {
+      calories: "320 po porciji",
+      protein: "16g",
+      carbs: "25g",
+      fat: "18g"
+    }
+  },
+
+  "Bangladeshi Biryani": {
+    name: "Bangladeški birijani",
+    description: "Aromatičan bengalski pirinač sa mesom, začinima i šafranom.",
+    ingredients: [
+      "1kg basmati pirinča",
+      "1kg kozjeg mesa ili govedine",
+      "300ml jogurta",
+      "4 luka, tanko seckana",
+      "4 češnja belog luka",
+      "2 kašike đumbira",
+      "1 kašičica šafrana",
+      "4 kašike ghee-a",
+      "2 kašike garam masala",
+      "1 kašičica crvene čili",
+      "4 lovova lista",
+      "200ml toplog mleka",
+      "So po ukusu"
+    ],
+    instructions: [
+      "Marinirajte meso u jogurtu sa začinima 2 sata.",
+      "Propržite luk do zlatne boje, ostavite pola.",
+      "Dodajte meso u tiganj i kuvajte 45 minuta.",
+      "Skuvajte pirinač do 70% spremnosti.",
+      "Rastvorite šafran u toplom mleku.",
+      "U dubokoj tepsiji stavite sloj mesa, pa pirinča.",
+      "Prekrijte lukom, šafranom i ghee-om.",
+      "Pecite pokriveno 45 minuta na 180°C."
+    ],
+    prepTime: "150 minuta",
+    cookTime: "90 minuta",
+    servings: 8,
+    notes: [
+      "Dum pečenje je ključno za pravi birijani",
+      "Služi se sa raita sosom"
+    ],
+    nutrition: {
+      calories: "520 po porciji",
+      protein: "32g",
+      carbs: "68g",
+      fat: "14g"
+    }
+  },
+
+  "Bengali Fish Curry": {
+    name: "Bengalski kari sa ribom",
+    description: "Tradicionalni bangladeški kari sa ribom u kurkuma i kokos mleku.",
+    ingredients: [
+      "1kg ribe (rohu ili katla), na komade",
+      "400ml kokos mleka",
+      "2 luka, seckana",
+      "4 češnja belog luka",
+      "2 kašike đumbira",
+      "2 kašike kurkume",
+      "2 kašike coriander praha",
+      "1 kašička garam masala",
+      "4 zelene chili",
+      "3 kašike gorčičnog ulja",
+      "2 lovova lista",
+      "So po ukusu",
+      "Sveš koriander za ukras"
+    ],
+    instructions: [
+      "Marinirajte ribu sa kurkumom i soli 15 minuta.",
+      "Lako propržite ribu i postavite sa strane.",
+      "U istom ulju propržite luk, beli luk i đumbir.",
+      "Dodajte začine i pržite 2 minuta.",
+      "Dodajte kokos mleko i dovedite do ključanja.",
+      "Vratite ribu u tiganj i kuvajte 15 minuta.",
+      "Ukrasite korijanderom i služite sa pirinčem."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "25 minuta",
+    servings: 6,
+    notes: [
+      "Gorčično ulje daje autentičan ukus",
+      "Ne prekuvajte ribu da se ne raspadne"
+    ],
+    nutrition: {
+      calories: "280 po porciji",
+      protein: "28g",
+      carbs: "8g",
+      fat: "15g"
+    }
+  },
+
+  "Pitha": {
+    name: "Pitha",
+    description: "Bangladeška tradicionalna slatka kolačić od pirinča brašna.",
+    ingredients: [
+      "2 šalice pirinač brašna",
+      "1 šalica jagre (palm šećer)",
+      "400ml kokos mleka",
+      "1/2 šalice rendanog kokosa",
+      "1 kašičica kardamoma",
+      "1/4 kašičice soli",
+      "2 kašike ghee-a",
+      "Banana listovi za umotavanje",
+      "Voda za testo"
+    ],
+    instructions: [
+      "Pomešajte pirinač brašno sa solju i vodom.",
+      "Napravite mekano testo i ostavite 30 minuta.",
+      "Kuvajte jagru sa malo vode do sirupа.",
+      "Dodajte kokos, kardamom i kuvajte do gustine.",
+      "Razvucite testo tanko i stavite fil.",
+      "Umotajte u banana listove.",
+      "Kuvajte na pari 20-25 minuta.",
+      "Služite toplo ili hladno."
+    ],
+    prepTime: "60 minuta",
+    cookTime: "30 minuta",
+    servings: 12,
+    notes: [
+      "Banana listovi dodaju aromu",
+      "Može se napraviti i u kalupima"
+    ],
+    nutrition: {
+      calories: "180 po komadu",
+      protein: "3g",
+      carbs: "32g",
+      fat: "5g"
+    }
+  },
+
+  "Croissants": {
+    name: "Kroасani",
+    description: "Francuske maslane peciva sa slojevitom teksturom",
+    ingredients: [
+      "2 šalice brašna",
+      "1 kašika šećera",
+      "1 kašičica soli",
+      "1 kašičica suvog kvasca",
+      "1/2 šalice mlake vode",
+      "200g hladnog putera",
+      "1 jaje za premazivanje"
+    ],
+    instructions: [
+      "Napravite testo od brašna, šećera, soli, kvasca i vode.",
+      "Umотajte i ostavite u frižideru 30 minuta.",
+      "Razvucite puter u pravougaonik između papira za pečenje.",
+      "Stavite puter na testo i preklopite, razvucite i preklopite 3 puta.",
+      "Ostavite u frižideru između preklapanja.",
+      "Konačno razvucite, izrežite trouglove i oblikujte kroasane.",
+      "Ostavite da se digu 2 sata, premažite jajetom i pecite 15-20 minuta na 200°C."
+    ],
+    prepTime: "4 sata",
+    cookTime: "20 minuta",
+    servings: 8,
+    notes: [
+      "Proces je dug ali vredi truda",
+      "Puter mora biti hladan za dobru slojevitost"
+    ],
+    nutrition: {
+      calories: "340 kalorija",
+      protein: "7g",
+      carbs: "35g",
+      fat: "20g"
+    }
+  },
+
+  "Muffins": {
+    name: "Mafini",
+    description: "Mekani kolačići sa borovnicama ili čokoladom",
+    ingredients: [
+      "2 šalice brašna",
+      "1/2 šalice šećera",
+      "2 kašičice suvog kvasca",
+      "1/2 kašičice soli",
+      "1/3 šalice ulja",
+      "1 jaje",
+      "1 šalica mleka",
+      "1 šalica borovnica ili čokolаdе"
+    ],
+    instructions: [
+      "Zagreјte reru na 200°C i podmastite forme za mafine.",
+      "Pomešajte suве sastojke u velikoj zdeli.",
+      "U drugoj zdeli umutite ulje, jaje i mleko.",
+      "Dodajte tečne sastojke u suве i kratko promešajte.",
+      "Pažljivo umeštajte borovnice ili čokoladu.",
+      "Podelite u forme i pecite 18-20 minuta."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "20 minuta",
+    servings: 12,
+    notes: [
+      "Ne mešajte previše da mafini ne budu tvrdi",
+      "Možete koristiti smrznute borovnice"
+    ],
+    nutrition: {
+      calories: "220 kalorija",
+      protein: "5g",
+      carbs: "35g",
+      fat: "8g"
+    }
+  },
+
+  "Falafel": {
+    name: "Falafel",
+    description: "Srednjoistočne krokete od leblebije sa začinima",
+    ingredients: [
+      "2 šalice suve leblebije (natopljena preko noći)",
+      "1/4 šalice crvenog luka, seckanog",
+      "4 čena belog luka",
+      "1/4 šalice peršina",
+      "2 kašike korijandera",
+      "1 kašičica kuma",
+      "1 kašičica soli",
+      "1/2 kašičice bibera",
+      "Ulje za prženje"
+    ],
+    instructions: [
+      "Ocijedite natopljenu leblebiju.",
+      "Stavite sve sastojke u blender i impulse do grube smeše.",
+      "Formikajte male kuglice mokrim rukama.",
+      "Zagreјte ulje na 180°C.",
+      "Pržite falafel kuglice 3-4 minuta do zlatne boje.",
+      "Servikate sa tahini sosom i salatom."
+    ],
+    prepTime: "20 minuta + natапање",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: [
+      "Leblebija mora biti sirova, ne kuvana",
+      "Savršено uz pita hleb i tahini"
+    ],
+    nutrition: {
+      calories: "180 kalorija",
+      protein: "8g",
+      carbs: "25g",
+      fat: "6g"
+    }
+  },
+
+  "Spring Rolls": {
+    name: "Prolećni rolnici",
+    description: "Svezi azijski rolnici sa povrćem i piletinom",
+    ingredients: [
+      "8 listova rižinog papira",
+      "200g kuvanog pilećeg mesa, trake",
+      "1 šargarepa, tanke trake",
+      "1 krastavac, tanke trake",
+      "1 crvena paprika, trake",
+      "100g svežeg špinata",
+      "Svezi mint i korijander",
+      "2 kašike nuoc mam sosa",
+      "1 kašika limeta soka",
+      "1 kašička šećera"
+    ],
+    instructions: [
+      "Potopite list rižinog papira u toplu vodu 10 sekundi.",
+      "Stavite na radnu površinu i dodajte nadjev u centar.",
+      "Preklopite strane, zatim rolajte čvrsto.",
+      "Umutite sos od nuoc mam, limeta i šećera.",
+      "Servikate odmah sa sosom."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "0 minuta",
+    servings: 4,
+    notes: [
+      "Rolujte čvrsto da se ne raspadnu",
+      "Možete dodati karšice ili avokado"
+    ],
+    nutrition: {
+      calories: "160 kalorija",
+      protein: "15g",
+      carbs: "20g",
+      fat: "3g"
+    }
+  },
+
+  "Borscht": {
+    name: "Borš",
+    description: "Ruska/ukrainska čorbica od crvene repe",
+    ingredients: [
+      "500g sveže crvene repe",
+      "200g kupusa, seckanog",
+      "2 šargarepe, kockice",
+      "1 luk, seckano",
+      "3 čena belog luka",
+      "1.5l govećeg buljona",
+      "2 kašike sirćeta",
+      "Svezi kopar",
+      "Pavlaka za serviranje"
+    ],
+    instructions: [
+      "Ugrejte repu u rermi 45 minuta na 200°C.",
+      "Oljuštite i narendajte repu.",
+      "Propržite luk i šargarepu u velikom loncu.",
+      "Dodajte repu, kupus i bujlon, kuvajte 30 minuta.",
+      "Dodajte sirće i kopar na kraju.",
+      "Servikate sa pavlakom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "1 sat 15 minuta",
+    servings: 6,
+    notes: [
+      "Repa će obojiti sve u crveno",
+      "Ukus se poboljšava preko noći"
+    ],
+    nutrition: {
+      calories: "120 kalorija",
+      protein: "6g",
+      carbs: "15g",
+      fat: "4g"
+    }
+  },
+
+  "Fish and Chips": {
+    name: "Riba sa pomfritom",
+    description: "Britanski klasik - pržena riba u testu sa pomfritom",
+    ingredients: [
+      "4 fileta bele ribe",
+      "1 šalica brašna",
+      "1 šalica hladnog piva",
+      "1 kašička praška za pecivo",
+      "Sol i biber",
+      "4 velika krompira",
+      "Ulje za prženje",
+      "Limun za serviranje"
+    ],
+    instructions: [
+      "Oljuštite krompir i sećite na štapiće, potopite u vodu.",
+      "Umutite testo od brašna, piva i praška za pecivo.",
+      "Zagrejte ulje na 180°C.",
+      "Prvo pržite pomfrit 3-4 minuta, izvadite.",
+      "Umočite ribu u testo i pržite 4-5 minuta.",
+      "Vratite pomfrit za 2 minuta da završi.",
+      "Servikate sa limunom i sirćetom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: [
+      "Hladno pivo čini testo lakše",
+      "Pržite u dve faze za savršen pomfrit"
+    ],
+    nutrition: {
+      calories: "580 kalorija",
+      protein: "30g",
+      carbs: "45g",
+      fat: "32g"
+    }
+  },
+
+  "Ceviche": {
+    name: "Sevič",
+    description: "Peruanska sirova riba 'kuvana' u limunskom soku",
+    ingredients: [
+      "500g sveže bele ribe, kockice",
+      "1/2 šalice limeta soka",
+      "1 crveni luk, tanko seckano",
+      "1 čili paprika, sitno",
+      "2 kašike korijandera",
+      "1 slatki krompir, kuvan",
+      "Kukuruz za serviranje",
+      "Sol po ukusu"
+    ],
+    instructions: [
+      "Stavite ribu u staklenu posuku.",
+      "Prelijte limeta sokom, posolite i ostavite 15 minuta.",
+      "Dodajte luk, čili i korijander.",
+      "Mešajte pažljivo i ostavite još 10 minuta.",
+      "Servikate sa slatkim krompirm i kukuruzom."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "0 minuta",
+    servings: 4,
+    notes: [
+      "Riba mora biti izuzetno sveža",
+      "Kiselina 'kuva' ribu"
+    ],
+    nutrition: {
+      calories: "180 kalorija",
+      protein: "25g",
+      carbs: "12g",
+      fat: "2g"
+    }
+  },
+
+  "Clam Chowder": {
+    name: "Čorba od školjki",
+    description: "Američka kremasta čorba sa školjkama",
+    ingredients: [
+      "1kg svežih školjki",
+      "4 parčeta slanine, seckane",
+      "1 luk, seckano",
+      "2 celerove stabljike, kockice",
+      "3 krompira, kockice",
+      "2 šalice mleka",
+      "1 šalica pavlake",
+      "2 kašike brašna",
+      "Timijan i lovorov list"
+    ],
+    instructions: [
+      "Prokuvajte školjke u vodi do otvaranja, sačuvajte tečnost.",
+      "Propržite slaninu, dodajte luk i celer.",
+      "Dodajte brašno, kuvajte 1 minut.",
+      "Dodajte tečnost od školjki i krompir, kuvajte 15 minuta.",
+      "Dodajte mleko, pavlaku i školjke, zagrejte.",
+      "Začinite timijanom i lovorom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "30 minuta",
+    servings: 6,
+    notes: [
+      "Ne kuvajte dugo nakon dodavanja školjki",
+      "Bacite školjke koje se ne otvore"
+    ],
+    nutrition: {
+      calories: "320 kalorija",
+      protein: "18g",
+      carbs: "20g",
+      fat: "18g"
+    }
   },
 
   "Breakfast Bowl": {
-    name: "Breakfast Bowl",
+    name: "Dorucak Bowl",
+    description: "Hranjiv jutarnji bowl sa kinojem i jajima",
     ingredients: [
       "1/2 šolje kuvane kinoe",
       "1/4 avokada, iseckan",
@@ -6986,11 +13925,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "5 minuta",
     cookTime: "5 minuta",
-    servings: 1
+    servings: 1,
+    notes: [
+      "Možete dodati bebe špinat za više hranljivih materija",
+      "Savršeno za brz i zdrav doručak"
+    ],
+    nutrition: {
+      calories: "380 kalorija",
+      protein: "18g",
+      carbs: "25g",
+      fat: "22g"
+    }
   },
 
   "Salad Bowl": {
-    name: "Salad Bowl",
+    name: "Salata Bowl",
+    description: "Sveža salata sa miksovanim povrćem i dresingom",
     ingredients: [
       "100g mešane zelene salate",
       "1/2 krastavca, kolutići",
@@ -7042,7 +13992,8 @@ export const recipes: Record<string, Recipe> = {
   },
 
   "Curry Bowl": {
-    name: "Curry Bowl",
+    name: "Kari Bowl",
+    description: "Kremastan veganski kari sa leblebijom i povrćem",
     ingredients: [
       "1 kašika kokosovog ulja",
       "1 mali crni luk, sitno",
@@ -7069,11 +14020,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "15 minuta",
     cookTime: "25 minuta",
-    servings: 2
+    servings: 2,
+    notes: [
+      "Možete koristiti bilo koju vrstu curry paste",
+      "Dodajte više povrća po želji"
+    ],
+    nutrition: {
+      calories: "420 kalorija",
+      protein: "15g",
+      carbs: "45g",
+      fat: "20g"
+    }
   },
 
   "Burrito Bowl": {
-    name: "Burrito Bowl",
+    name: "Burito Bowl",
+    description: "Meksički bowl sa pirinčem, pasuljom i mesom",
     ingredients: [
       "1 šolja pirinča",
       "2 šolje vode",
@@ -7102,9 +14064,21 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "20 minuta",
     cookTime: "25 minuta",
-    servings: 4
+    servings: 4,
+    notes: [
+      "Možete koristiti i beli pasulj umesto crnog",
+      "Dodajte sir za kreamiji ukus"
+    ],
+    nutrition: {
+      calories: "520 kalorija",
+      protein: "28g",
+      carbs: "55g",
+      fat: "18g"
+    }
   },
+
   "Palačinke sa sirom i spanaćem": {
+    description: "Slatke palačinke punjene sirom i spanaćem",
     name: "Palačinke sa sirom i spanaćem",
     ingredients: [
       "2 jaja",
@@ -7134,11 +14108,23 @@ export const recipes: Record<string, Recipe> = {
       "Izvadite iz rerne i ostavite da se malo prohladi pre serviranja."
     ],
     prepTime: "20 minuta",
-    cookTime: "30 minuta", 
-    servings: 6
+    cookTime: "30 minuta",
+    servings: 6,
+    notes: [
+      "Dobro iscedite spanać da se ne pokvari fil",
+      "Možete dodati druge sireve po ukusu"
+    ],
+    nutrition: {
+      calories: "320 kalorija",
+      protein: "18g",
+      carbs: "25g",
+      fat: "16g"
+    }
   },
+
   "Suzette palačinke": {
-    name: "Suzette palačinke", 
+    name: "Suzette palačinke",
+    description: "Elgantne francuske palačinke sa pomoranžinim sosom", 
     ingredients: [
       "125g brašna",
       "250ml mleka",
@@ -7170,12 +14156,24 @@ export const recipes: Record<string, Recipe> = {
       "Sklonite tiganj sa vatre, ulijte zagrejani liker u tiganj i pažljivo flambirajte (upalite vatru). Budite oprezni!",
       "Kada se plamen ugasi, odmah servirajte palačinke."
     ],
-    prepTime: "20 minuta", 
+    prepTime: "20 minuta",
     cookTime: "30 minuta",
-    servings: 4
+    servings: 4,
+    notes: [
+      "Budite pažljivi sa flambiranje - koristite sa oprezom",
+      "Možete zameniti liker pomorandžinim sokom"
+    ],
+    nutrition: {
+      calories: "420 kalorija",
+      protein: "8g",
+      carbs: "45g",
+      fat: "22g"
+    }
   },
+
   "Američke palačinke": {
     name: "Američke palačinke",
+    description: "Debele i pahuljaste američke palačinke za doručak",
     ingredients: [
       "1 1/2 šolje brašna",
       "3 1/2 kašičice praška za pecivo", 
@@ -7197,11 +14195,23 @@ export const recipes: Record<string, Recipe> = {
       "Poslužite toplo sa omiljenim dodacima."
     ],
     prepTime: "10 minuta",
-    cookTime: "15 minuta", 
-    servings: 6
+    cookTime: "15 minuta",
+    servings: 6,
+    notes: [
+      "Ne mešajte previše da ostanu pahuljaste",
+      "Servirajte sa jabukovim sirupom ili medom"
+    ],
+    nutrition: {
+      calories: "180 kalorija",
+      protein: "6g",
+      carbs: "28g",
+      fat: "5g"
+    }
   },
+
   "Krep palačinke": {
     name: "Krep palačinke",
+    description: "Tanke francuske palačinke - krep",
     ingredients: [
       "125g brašna",
       "2 jajeta",
@@ -7225,11 +14235,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "10 minuta",
     cookTime: "20-30 minuta",
-    servings: 10
+    servings: 10,
+    notes: [
+      "Smesa mora biti glatka bez grudvica",
+      "Možete dodati omiljene nadeve"
+    ],
+    nutrition: {
+      calories: "120 kalorija",
+      protein: "4g",
+      carbs: "20g",
+      fat: "3g"
+    }
   },
 
-  "Acai Bowl Bowl": {
-    name: "Acai Bowl",
+  "Acai Bowl": {
+    name: "Asai Bowl",
+    description: "Brazilski smoothie bowl sa superfood acai bobicama",
     ingredients: [
       "100g zamrznutog acai pirea",
       "1/2 smrznute banane",
@@ -7244,11 +14265,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "5 minuta",
     cookTime: "0 minuta",
-    servings: 1
+    servings: 1,
+    notes: [
+      "Koristite dosta smrznuto voće za gustu teksturu",
+      "Možete koristiti bilo koje voće za topping"
+    ],
+    nutrition: {
+      calories: "320 kalorija",
+      protein: "8g",
+      carbs: "45g",
+      fat: "12g"
+    }
   },
 
   "Power Bowl": {
-    name: "Power Bowl",
+    name: "Pauer Bowl",
+    description: "Energetski bowl sa kinojem i super hranljivim sastojcima",
     ingredients: [
       "1/2 šolje kinoe",
       "1 šolja vode",
@@ -7271,11 +14303,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "15 minuta",
     cookTime: "20 minuta",
-    servings: 1
+    servings: 1,
+    notes: [
+      "Možete koristiti bilo koje pseće po želji",
+      "Savršeno za post-trening obrok"
+    ],
+    nutrition: {
+      calories: "520 kalorija",
+      protein: "22g",
+      carbs: "55g",
+      fat: "20g"
+    }
   },
 
   "Zen Bowl": {
     name: "Zen Bowl",
+    description: "Umirujući veganski bowl sa tofuom i edamame",
     ingredients: [
       "1 šolja kuvanog smeđeg pirinča",
       "150g tofu-a (čvrsti), kockice",
@@ -7296,12 +14339,23 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "15 minuta",
     cookTime: "15 minuta",
-    servings: 2
+    servings: 2,
+    notes: [
+      "Miso pasta dodaje umami složenost",
+      "Možete dodati wakame alge za više morskog ukusa"
+    ],
+    nutrition: {
+      calories: "420 kalorija",
+      protein: "18g",
+      carbs: "45g",
+      fat: "16g"
+    }
   },
 
   // Desserts
   "Tiramisu": {
     name: "Tiramisu",
+    description: "Klasični italijanski desert sa mascarpone sirom i kafom",
     ingredients: [
       "500g mascarpone sira",
       "4 velika jaja, razdvojena",
@@ -7324,10 +14378,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "30 minuta (+ min 4h hlađenje)",
     cookTime: "0 minuta",
-    servings: 10
+    servings: 10,
+    notes: [
+      "Moranje hladiti najmanje 4 sata za najbolji ukus",
+      "Možete dodati voće za ukras"
+    ],
+    nutrition: {
+      calories: "380 kalorija",
+      protein: "6g",
+      carbs: "28g",
+      fat: "26g"
+    }
   },
+
   "Cheesecake": {
-    name: "Cheesecake",
+    name: "Čizkejk",
+    description: "Kremasti američki desert sa krem sirom",
     ingredients: [
       "1 1/2 šolje mrvljenog graham krekera",
       "1/3 šolje otopljenog putera",
@@ -7351,10 +14417,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "20 minuta",
     cookTime: "50-60 minuta (+ hlađenje)",
-    servings: 8
+    servings: 8,
+    notes: [
+      "Vodena kupka sprеčava pucanje",
+      "Mora se hladiti dugo za savršenu teksturu"
+    ],
+    nutrition: {
+      calories: "520 kalorija",
+      protein: "12g",
+      carbs: "45g",
+      fat: "34g"
+    }
   },
+
   "Chocolate Cake": {
-    name: "Chocolate Cake",
+    name: "Čokoladna torta",
+    description: "Božanstvena čokoladna torta vlаžna i bogata",
     ingredients: [
       "200g brašna",
       "200g šećera",
@@ -7378,10 +14456,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "20 minuta",
     cookTime: "30-35 minuta",
-    servings: 8
+    servings: 8,
+    notes: [
+      "Vruća voda čini testo vlažnim",
+      "Ne otvarajte rernu tokom pečenja"
+    ],
+    nutrition: {
+      calories: "420 kalorija",
+      protein: "6g",
+      carbs: "65g",
+      fat: "16g"
+    }
   },
+
   "Vanilla Ice Cream": {
-    name: "Vanilla Ice Cream",
+    name: "Vanila sladoled",
+    description: "Kremasti domaći vanila sladoled",
     ingredients: [
       "500 ml slatke pavlake za kuvanje (35% masti ili više)",
       "250 ml punomasnog mleka",
@@ -7400,10 +14490,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "10 minuta",
     cookTime: "30 minuta + hlađenje",
-    servings: 6
+    servings: 6,
+    notes: [
+      "Potreban aparat za sladoled",
+      "Možete koristiti vanila ekstrakt umesto mahune"
+    ],
+    nutrition: {
+      calories: "280 kalorija",
+      protein: "4g",
+      carbs: "32g",
+      fat: "15g"
+    }
   },
+
   "Chocolate Ice Cream": {
-    name: "Chocolate Ice Cream",
+    name: "Čokoladni sladoled",
+    description: "Bogat i kremast čokoladni sladoled",
     ingredients: [
       "2 šolje punomasnog mleka",
       "1 šolja slatke pavlake za kuvanje (35% masnoće ili više)",
@@ -7422,10 +14524,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "15 minuta",
     cookTime: "30 minuta (hlajenje) + 20-25 minuta (u aparatu za sladoled)",
-    servings: 6
+    servings: 6,
+    notes: [
+      "Kakao mora biti kvalitetan za najbolji ukus",
+      "Ne dozvolite da provi tokom zagrevanja"
+    ],
+    nutrition: {
+      calories: "320 kalorija",
+      protein: "5g",
+      carbs: "38g",
+      fat: "16g"
+    }
   },
+
   "Strawberry Ice Cream": {
-    name: "Strawberry Ice Cream",
+    name: "Jagodni sladoled",
+    description: "Osvežavajući sladoled sa svežim jagodama",
     ingredients: [
       "500g svežih jagoda, očišćenih i isečenih",
       "150g šećera",
@@ -7444,10 +14558,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "20 minuta",
     cookTime: "25 minuta (hlađenje i mešanje)",
-    servings: 6
+    servings: 6,
+    notes: [
+      "Koristite najpuniju kremu sa jagodama",
+      "Limunov sok pojačava ukus jagoda"
+    ],
+    nutrition: {
+      calories: "290 kalorija",
+      protein: "4g",
+      carbs: "35g",
+      fat: "14g"
+    }
   },
+
   "Mint Chocolate Chip": {
-    name: "Mint Chocolate Chip",
+    name: "Nana čokolada kuglice",
+    description: "Zdrave sladoled kuglice sa nanom i čokoladom",
     ingredients: [
       "1 šolja indijskih oraha (sirovih)",
       "1/2 šolje urmi (Medjool, bez koštica)",
@@ -7467,10 +14593,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "15 minuta",
     cookTime: "0 minuta",
-    servings: 20
+    servings: 20,
+    notes: [
+      "Veganske kuglice bez pečenja",
+      "Možete koristiti bilo koje orahe"
+    ],
+    nutrition: {
+      calories: "85 kalorija",
+      protein: "2g",
+      carbs: "8g",
+      fat: "5g"
+    }
   },
+
   "Cookies and Cream": {
-    name: "Cookies and Cream",
+    name: "Keksi i krem",
+    description: "Klasični kolaci sa keksima i kremom",
     ingredients: [
       "1 šolja (225g) neslanog maslaca, omekšalog",
       "¾ šolje (150g) šećera",
@@ -7495,10 +14633,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "15 minuta",
     cookTime: "10-12 minuta",
-    servings: 24
+    servings: 24,
+    notes: [
+      "Ne pečite previše da ostanu mekani",
+      "Možete koristiti bilo koje kekse umesto Oreo"
+    ],
+    nutrition: {
+      calories: "220 kalorija",
+      protein: "3g",
+      carbs: "32g",
+      fat: "9g"
+    }
   },
+
   "Rocky Road": {
-    name: "Rocky Road",
+    name: "Roki Road",
+    description: "Čokoladni desert sa orašastim plodovima i maršmalou",
     ingredients: [
       "400g mlečne ili crne čokolade, izlomljene na kockice",
       "100g mini marshmallowa",
@@ -7518,36 +14668,58 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "15 minuta",
     cookTime: "5 minuta (vreme hlađenja: 2 sata)",
-    servings: 16
+    servings: 16,
+    notes: [
+      "Obavezno ohladiti da se stegne",
+      "Možete dodati bilo koje orahe"
+    ],
+    nutrition: {
+      calories: "180 kalorija",
+      protein: "3g",
+      carbs: "18g",
+      fat: "11g"
+    }
   },
+
   "Neapolitan": {
     name: "Neapolitan",
+    description: "Tri boje sladoleda - vanila, čokolada i jagoda",
     ingredients: [
-      "1 konzerva (800g) seckanog paradajza",
-      "2 kašike maslinovog ulja",
-      "2 čena belog luka, sitno iseckana",
-      "1 mala glavica crnog luka, sitno iseckana",
-      "1 kašičica suvog origana",
-      "1/2 kašičice suvog bosiljka",
-      "1/4 kašičice crvene paprike (po želji)",
-      "So i biber, po ukusu",
-      "Sveži bosiljak, za serviranje (opciono)",
-      "Parmezan, za serviranje (opciono)"
+      "2 šalice mleka",
+      "1 šalica slatke pavlake",
+      "3/4 šalice šećera",
+      "1 kašičica vanila ekstrakta",
+      "1/4 šalice kakao praha",
+      "1/2 šalice jagoda pirea",
+      "Crvena boja za hranu (opciono)"
     ],
     instructions: [
-      "U velikom tiganju, zagrejte maslinovo ulje na srednjoj temperaturi.",
-      "Dodajte crni luk i beli luk i pržite dok ne omekšaju, oko 5 minuta. Pripazite da beli luk ne zagori.",
-      "Dodajte seckani paradajz, origano, bosiljak i crvenu papriku (ako koristite).",
-      "Promešajte, smanjite vatru i ostavite da se krčka 15 minuta, povremeno mešajući.",
-      "Začinite solju i biberom po ukusu.",
-      "Poslužite preko kuvane testenine. Ukrasite svežim bosiljkom i parmezanom, ako želite."
+      "Podelite osnovnu smešu od mleka, pavlake i šećera na tri dela.",
+      "U prvi deo dodajte vanila ekstrakt.",
+      "U drugi deo dodajte kakao prah.",
+      "U treći deo dodajte jagoda pire i malo crvene boje.",
+      "Svaku smešu posebno stavite u aparat za sladoled.",
+      "Kada su gotovi, složite u kalup u slojevima.",
+      "Zamrznite najmanje 4 sata."
     ],
-    prepTime: "5 minuta",
-    cookTime: "20 minuta",
-    servings: 4
+    prepTime: "30 minuta",
+    cookTime: "45 minuta + zamrzavanje",
+    servings: 8,
+    notes: [
+      "Potrebno je napraviti tri olika ukusa",
+      "Slaganje u slojevima daje prepoznatljivu Neapolitan smu"
+    ],
+    nutrition: {
+      calories: "250 kalorija",
+      protein: "4g",
+      carbs: "30g",
+      fat: "12g"
+    }
   },
+
   "Pistachio": {
-    name: "Pistachio",
+    name: "Pistačna torta",
+    description: "Lužna pistačna torta sa belom čokoladom",
     ingredients: [
       "6 jaja",
       "150g šećera",
@@ -7573,10 +14745,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "45 minuta",
     cookTime: "35 minuta",
-    servings: 8
+    servings: 8,
+    notes: [
+      "Pistaće mogu biti skupe ali vredi",
+      "Možete zameniti bademima"
+    ],
+    nutrition: {
+      calories: "450 kalorija",
+      protein: "8g",
+      carbs: "38g",
+      fat: "28g"
+    }
   },
+
   "Rum Raisin": {
-    name: "Rum Raisin",
+    name: "Rum grožđe",
+    description: "Luksuzan sladoled sa rumom i grožđem",
     ingredients: [
       "1 šolja suvih grožđica",
       "1/2 šolje ruma (tamnog ili svetlog)",
@@ -7599,10 +14783,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "20 minuta (plus vreme za potapanje grožđica)",
     cookTime: "30 minuta",
-    servings: 6
+    servings: 6,
+    notes: [
+      "Grožđe mora da se potopi u rum preko noći",
+      "Možete koristiti brandy umesto ruma"
+    ],
+    nutrition: {
+      calories: "300 kalorija",
+      protein: "5g",
+      carbs: "35g",
+      fat: "14g"
+    }
   },
+
   "Coffee Ice Cream": {
-    name: "Coffee Ice Cream",
+    name: "Kafe sladoled",
+    description: "Intenzivan sladoled sa okusom jake kafe",
     ingredients: [
       "2 šolje guste pavlake (minimum 35% mlečne masti)",
       "1 šolja punomasnog mleka",
@@ -7621,10 +14817,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "15 minuta",
     cookTime: "20 minuta",
-    servings: 6
+    servings: 6,
+    notes: [
+      "Kafa mora biti jaka za intenzivan ukus",
+      "Ne dozvolite da smesa provri"
+    ],
+    nutrition: {
+      calories: "280 kalorija",
+      protein: "4g",
+      carbs: "28g",
+      fat: "16g"
+    }
   },
+
   "Caramel Ice Cream": {
-    name: "Caramel Ice Cream",
+    name: "Karamel sladoled",
+    description: "Slatki sladoled sa bogatim karamel ukusom",
     ingredients: [
       "1 šolja (200g) šećera",
       "1/4 šolje (60ml) vode",
@@ -7645,10 +14853,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "20 minuta",
     cookTime: "30 minuta (plus vreme hlađenja i zamrzavanja)",
-    servings: 6
+    servings: 6,
+    notes: [
+      "Budite pažljivi sa karamelizacijom šećera",
+      "Pavlaka će da se peniti kada se dodaje u karamel"
+    ],
+    nutrition: {
+      calories: "320 kalorija",
+      protein: "4g",
+      carbs: "36g",
+      fat: "18g"
+    }
   },
+
   "Banana Split": {
     name: "Banana Split",
+    description: "Klasični američki desert sa bananom i sladoledom",
     ingredients: [
       "1 banana, oljuštena i prepolovljena po dužini",
       "3 kugle sladoleda (vanila, čokolada, jagoda)",
@@ -7671,11 +14891,136 @@ export const recipes: Record<string, Recipe> = {
       "Poslužite odmah."
     ],
     prepTime: "10 minuta",
-    cookTime: "10 minuta",
-    servings: 1
+    cookTime: "0 minuta",
+    servings: 1,
+    notes: [
+      "Idealno za leta i praznično serviranje",
+      "Možete koristiti bilo koje ukuse sladoleda"
+    ],
+    nutrition: {
+      calories: "580 kalorija",
+      protein: "8g",
+      carbs: "75g",
+      fat: "28g"
+    }
   },
+
+  "Brownies": {
+    name: "Brauni",
+    description: "Božanstveni čokoladni kolacići - brauni",
+    ingredients: [
+      "200g tamne čokolade",
+      "150g putera",
+      "200g šećera",
+      "3 jajeta",
+      "100g brašna",
+      "30g kakao praha",
+      "1/2 kašičice soli",
+      "100g orašastih plodova (opciono)"
+    ],
+    instructions: [
+      "Zagrejte rernu na 180°C i podmastite kalup 20x20cm.",
+      "Istopite čokoladu i puter na pari ili u mikrotalasnoj.",
+      "Umutite jaja sa šećerom dok ne postanu penasta.",
+      "Dodajte rastopljenu čokoladu u jaja.",
+      "Pomešajte brašno, kakao i so, pa dodajte u smešu.",
+      "Umešajte orahe ako koristite.",
+      "Sipajte u kalup i pecite 25-30 minuta.",
+      "Ohladite pre sečenja."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "30 minuta",
+    servings: 16,
+    notes: [
+      "Ne pečite previše da ostanu vlažni",
+      "Možete dodati čokoladne komadiće"
+    ],
+    nutrition: {
+      calories: "240 kalorija",
+      protein: "4g",
+      carbs: "28g",
+      fat: "14g"
+    }
+  },
+
+  "Apple Pie": {
+    name: "Pita od jabuka",
+    description: "Klasična američka pita sa jabukama i cimetom",
+    ingredients: [
+      "2 gotova kora za pitu",
+      "6 velikih jabuka, oljusti i iseči",
+      "100g šećera",
+      "2 kašike brašna",
+      "1 kašičica cimeta",
+      "1/4 kašičice muškatnog oraša",
+      "30g putera, kockice",
+      "1 jaje za premazivanje"
+    ],
+    instructions: [
+      "Zagrejte rernu na 200°C.",
+      "Pomešajte jabuke, šećer, brašno i začine.",
+      "Stavite jednu koru u kalup za pitu.",
+      "Dodajte fil od jabuka i puter.",
+      "Pokrijte drugom korom i zapecatite ivice.",
+      "Napravi te nekoliko reza na vrhu za paru.",
+      "Premažite jajetom i pecite 45-50 minuta.",
+      "Ohladite pre serviranja."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "50 minuta",
+    servings: 8,
+    notes: [
+      "Koristite kisele jabuke za najbolji ukus",
+      "Servikajte sa sladoledom od vanile"
+    ],
+    nutrition: {
+      calories: "320 kalorija",
+      protein: "4g",
+      carbs: "52g",
+      fat: "12g"
+    }
+  },
+
+  "Lemon Tart": {
+    name: "Tarta sa limunom",
+    description: "Osvežavajuća tarta sa kiselim limun kremom",
+    ingredients: [
+      "1 gotova kora za tartu",
+      "4 jajeta",
+      "150g šećera",
+      "100ml limun soka",
+      "Korica 2 limuna",
+      "100g putera",
+      "200ml slatke pavlake"
+    ],
+    instructions: [
+      "Ispečite koru za tartu prema uputstvu.",
+      "Umutite jaja i šećer u šerpi.",
+      "Dodajte limun sok i koricu.",
+      "Kuvajte na tihoj vatri mešajući do zgrušavanja.",
+      "Dodajte puter i mešajte do tođenja.",
+      "Ohladite krem i umutite pavlaku.",
+      "Umešajte pavlaku u krem i sipajte u koru.",
+      "Hladite 2 sata pre serviranja."
+    ],
+    prepTime: "25 minuta",
+    cookTime: "20 minuta",
+    servings: 8,
+    notes: [
+      "Koristite sveže limunove za najbolji ukus",
+      "Možete ukrasiti lista čama mente"
+    ],
+    nutrition: {
+      calories: "280 kalorija",
+      protein: "5g",
+      carbs: "32g",
+      fat: "15g"
+    }
+  },
+
   "Sundae": {
-    name: "Sundae",
+    name: "Sande",
+    description: "Brz desert sa sladoledom i prelivom",
     ingredients: [
       "2 kugle sladoleda (po izboru)",
       "2 kašike čokoladnog preliva",
@@ -7693,10 +15038,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "5 minuta",
     cookTime: "0 minuta",
-    servings: 1
+    servings: 1,
+    notes: [
+      "Možete koristiti bilo koji ukus sladoleda",
+      "Dodajte voćni preliv za raznolikost"
+    ],
+    nutrition: {
+      calories: "320 kalorija",
+      protein: "6g",
+      carbs: "38g",
+      fat: "16g"
+    }
   },
+
   "Milkshake": {
-    name: "Milkshake",
+    name: "Milkšejk",
+    description: "Kremast napitak od sladoleda i mleka",
     ingredients: [
       "2 kugle sladoleda (vanila, čokolada ili po izboru)",
       "120 ml mleka",
@@ -7711,10 +15068,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "2 minuta",
     cookTime: "0 minuta",
-    servings: 1
+    servings: 1,
+    notes: [
+      "Dodajte više mleka za ređi milkšejk",
+      "Možete dodati voće ili čokoladu"
+    ],
+    nutrition: {
+      calories: "380 kalorija",
+      protein: "8g",
+      carbs: "42g",
+      fat: "20g"
+    }
   },
+
   "Ice Cream Sandwich": {
-    name: "Ice Cream Sandwich",
+    name: "Sladoled sendvič",
+    description: "Sladoled sendvič između keksa",
     ingredients: [
       "12 komada omiljenih keksa (npr. čokoladni, vanila)",
       "500ml omiljenog sladoleda (omekšanog)"
@@ -7730,10 +15099,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "15 minuta",
     cookTime: "0 minuta (osim ako se keksi peku)",
-    servings: 6
+    servings: 6,
+    notes: [
+      "Sladoled mora biti omekšao za lako nanošenje",
+      "Umotajte u foliju da se ne lepi"
+    ],
+    nutrition: {
+      calories: "280 kalorija",
+      protein: "5g",
+      carbs: "38g",
+      fat: "12g"
+    }
   },
+
   "Gelato": {
-    name: "Gelato",
+    name: "Đelato",
+    description: "Italijanski kremasti sladoled",
     ingredients: [
       "500 ml punomasnog mleka",
       "150 ml slatke pavlake (35% masti ili više)",
@@ -7752,10 +15133,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "15 minuta",
     cookTime: "20 minuta (plus vreme hlađenja)",
-    servings: 6
+    servings: 6,
+    notes: [
+      "Gustći od običnog sladoleda",
+      "Možete koristiti različite arome"
+    ],
+    nutrition: {
+      calories: "220 kalorija",
+      protein: "4g",
+      carbs: "28g",
+      fat: "10g"
+    }
   },
+
   "Sorbet": {
-    name: "Sorbet",
+    name: "Šorbet",
+    description: "Ledeni desert od voća bez mlečnih proizvoda",
     ingredients: [
       "1 kg voća (npr. maline, jagode, limun, mango)",
       "200g šećera",
@@ -7776,10 +15169,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "15 minuta",
     cookTime: "20 minuta + vreme za zamrzavanje (najmanje 4 sata)",
-    servings: 6
+    servings: 6,
+    notes: [
+      "Mešajte na svakih sat vremena da se spreče kristali",
+      "Možete koristiti bilo koje voće"
+    ],
+    nutrition: {
+      calories: "180 kalorija",
+      protein: "1g",
+      carbs: "45g",
+      fat: "0g"
+    }
   },
+
   "Frozen Yogurt": {
-    name: "Frozen Yogurt",
+    name: "Smrznut jogurt",
+    description: "Zdravlja alternativa sladoledu sa jogurtom",
     ingredients: [
       "500g grčkog jogurta (sa visokim procentom masti)",
       "100g meda ili javorovog sirupa",
@@ -7798,10 +15203,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "5 minuta",
     cookTime: "2-4 sata (zamrzavanje)",
-    servings: 4
+    servings: 4,
+    notes: [
+      "Grčki jogurt daje najkremasiju teksturu",
+      "Mešajte često da se spreče kristali"
+    ],
+    nutrition: {
+      calories: "150 kalorija",
+      protein: "12g",
+      carbs: "25g",
+      fat: "2g"
+    }
   },
+
   "Ice Cream Cake": {
-    name: "Ice Cream Cake",
+    name: "Sladoled torta",
+    description: "Svečana torta od sladoleda sa keksom",
     ingredients: [
       "200g čokoladnih keksa (npr. Oreo)",
       "75g otopljenog putera",
@@ -7821,10 +15238,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "20 minuta",
     cookTime: "najmanje 4 sata",
-    servings: 8
+    servings: 8,
+    notes: [
+      "Možete koristiti bilo koji ukus sladoleda",
+      "Savršeno za rođendane i proslave"
+    ],
+    nutrition: {
+      calories: "320 kalorija",
+      protein: "6g",
+      carbs: "45g",
+      fat: "14g"
+    }
   },
+
   "Affogato": {
-    name: "Affogato",
+    name: "Afogato",
+    description: "Italijanski desert - sladoled 'udavljen' u espreso",
     ingredients: [
       "1 kugla sladoleda od vanile (oko 75g)",
       "1 espresso (oko 30ml)"
@@ -7836,10 +15265,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "2 minuta",
     cookTime: "0 minuta",
-    servings: 1
+    servings: 1,
+    notes: [
+      "Mora se servirati odmah",
+      "Espresso mora biti vrуo"
+    ],
+    nutrition: {
+      calories: "120 kalorija",
+      protein: "2g",
+      carbs: "18g",
+      fat: "4g"
+    }
   },
+
   "Pavlova": {
     name: "Pavlova",
+    description: "Australijski/novozelandski desert sa bezom i voćem",
     ingredients: [
       "4 belanca",
       "200g šećera",
@@ -7858,10 +15299,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "30 minuta",
     cookTime: "75 minuta (+ hlađenje)",
-    servings: 10
+    servings: 10,
+    notes: [
+      "Mora se hladiti u rerni posle pečenja",
+      "Dodajte voće tek pre serviranja"
+    ],
+    nutrition: {
+      calories: "280 kalorija",
+      protein: "4g",
+      carbs: "45g",
+      fat: "8g"
+    }
   },
+
   "Trifle": {
-    name: "Trifle",
+    name: "Trajfl",
+    description: "Britanski slojeviti desert sa voćem i kremom",
     ingredients: [
       "500g voća (mešano)",
       "250g piškota/biskvita",
@@ -7878,10 +15331,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "30 minuta",
     cookTime: "15 minuta (+ hlađenje)",
-    servings: 8
+    servings: 8,
+    notes: [
+      "Slagatje u slojevima je ključno",
+      "Najbolji nakon hlađenja preko noći"
+    ],
+    nutrition: {
+      calories: "320 kalorija",
+      protein: "6g",
+      carbs: "42g",
+      fat: "12g"
+    }
   },
+
   "Mousse": {
-    name: "Mousse",
+    name: "Mus",
+    description: "Francuski kremasti čokoladni desert",
     ingredients: [
       "200g tamne čokolade (≥70%)",
       "4 jaja",
@@ -7900,10 +15365,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "15 minuta",
     cookTime: "10 minuta (+ hlađenje)",
-    servings: 4
+    servings: 4,
+    notes: [
+      "Mora se hladiti najmanje 2 sata",
+      "Pažljivo umešajte da ostane vazdušast"
+    ],
+    nutrition: {
+      calories: "340 kalorija",
+      protein: "6g",
+      carbs: "28g",
+      fat: "22g"
+    }
   },
+
   "Flan": {
     name: "Flan",
+    description: "Španski/latino kremasti desert sa karamelom",
     ingredients: [
       "Karamel: 200g šećera + 60ml vode",
       "5 velikih jaja",
@@ -7920,10 +15397,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "20 minuta",
     cookTime: "50-60 minuta (+ hlađenje)",
-    servings: 8
+    servings: 8,
+    notes: [
+      "Vodena kupka sprečava prepečenje",
+      "Mora da se hla di potpuno pre istrestanja"
+    ],
+    nutrition: {
+      calories: "280 kalorija",
+      protein: "8g",
+      carbs: "35g",
+      fat: "12g"
+    }
   },
+
   "Cannoli": {
-    name: "Cannoli",
+    name: "Kanoli",
+    description: "Sicilijski hrskavi cevi punjeni slatkim sirom",
     ingredients: [
       "Testo: 250g brašna 00, 15g šećera, 1/2 kašičice cimeta, 1/4 kašičice soli, 30g putera, 60ml suvog crvenog vina, 1 jaje, ulje za prženje",
       "Fil: 500g rikote (oceđene), 150g šećera u prahu, 50g kandiranog voća, 50g čokoladnih kapljica, 1 kašičica vanile, korica 1 pomorandže",
@@ -7938,10 +15427,124 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "45 minuta",
     cookTime: "15-20 minuta",
-    servings: 12
+    servings: 12,
+    notes: [
+      "Puniti tek pred serviranje da ostanu hrskavi",
+      "Možete koristiti gotove korpice"
+    ],
+    nutrition: {
+      calories: "220 kalorija",
+      protein: "8g",
+      carbs: "28g",
+      fat: "9g"
+    }
   },
+
+  "Panna Cotta": {
+    name: "Pana kota",
+    description: "Italijanski kremasti desert sa želatinom",
+    ingredients: [
+      "500ml slatke pavlake",
+      "100g šećera",
+      "1 paket želatina (7g)",
+      "3 kašike vode",
+      "1 kašičica vanila ekstrakta",
+      "200g jagoda za preliv",
+      "2 kašike šećera za preliv"
+    ],
+    instructions: [
+      "Rastopite želatin u vodi.",
+      "Zagrejte pavlaku sa šećerom do rastapanja.",
+      "Dodajte želatin i vanilu.",
+      "Podelite u kaliče i hladite 4 sata.",
+      "Napravite preliv od jagoda i šećera.",
+      "Servikate sa prelivom."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "10 minuta + 4h hlađenja",
+    servings: 6,
+    notes: [
+      "Mora se hladiti najmanje 4 sata",
+      "Možete koristiti bilo koji voćni preliv"
+    ],
+    nutrition: {
+      calories: "280 kalorija",
+      protein: "4g",
+      carbs: "22g",
+      fat: "20g"
+    }
+  },
+
+  "Baklava": {
+    name: "Baklava",
+    description: "Turski/grčki slatki kolac sa orasima i medom",
+    ingredients: [
+      "500g kora za baklavu",
+      "300g mlevenih oraha",
+      "100g šećera",
+      "1 kašičica cimeta",
+      "200g putera, rastopljenog",
+      "Sirup: 400g šećera, 300ml vode, 200g meda, 1 limun (sok)"
+    ],
+    instructions: [
+      "Pomešajte orahe, šećer i cimet.",
+      "Prekažite kore sa puterom i nadeve.",
+      "Podelite na kvadrate i pecite 45 min na 180°C.",
+      "Skuvajte sirup od šećera, vode, meda i limuna.",
+      "Prelijte vruću baklavu hladnim sirupom.",
+      "Ostavite da upije preko noći."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "45 minuta + očđe preko noći",
+    servings: 20,
+    notes: [
+      "Sirup mora biti hladan kada se lije na vruću baklavu",
+      "Najbolja nakon što upije sirup preko noći"
+    ],
+    nutrition: {
+      calories: "250 kalorija",
+      protein: "4g",
+      carbs: "35g",
+      fat: "12g"
+    }
+  },
+
+  "Crème Brûlée": {
+    name: "Krem briule",
+    description: "Francuski kremasti desert sa karamelizovanim šećerom",
+    ingredients: [
+      "500ml slatke pavlake",
+      "6 žumanca",
+      "100g šećera + dodatno za pokrimaće",
+      "1 kašičica vanila ekstrakta",
+      "1 mahuna vanile (opciono)"
+    ],
+    instructions: [
+      "Zagrejte pavlaku sa vanilom.",
+      "Umutite žumanca sa šećerom.",
+      "Polako dodajte toplu pavlaku u žumanca.",
+      "Podelite u ramekine i pecite u vodenoj kupki 40 min na 160°C.",
+      "Ohladite i pospite šećerom.",
+      "Karamelizujte šećer brenzerom ili pod grilom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "40 minuta + hlađenje",
+    servings: 6,
+    notes: [
+      "Potreban je brenzèr za karamelizaciju",
+      "Servikate odmah nakon karamelizacije"
+    ],
+    nutrition: {
+      calories: "320 kalorija",
+      protein: "5g",
+      carbs: "28g",
+      fat: "22g"
+    }
+  },
+
   "Profiteroles": {
-    name: "Profiteroles",
+    name: "Profitroli",
+    description: "Francuski polnjeni cevi sa kremom i čokoladom",
     ingredients: [
       "Testo: 125ml voda, 50g putera, prstohvat soli, 75g brašna, 2 jaja",
       "Krem: 500ml mleka, 100g šećera, 40g gustina, 4 žumanca, 1 kašičica vanile, 200ml slatke pavlake (umućene)",
@@ -7956,10 +15559,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "30 minuta",
     cookTime: "30-35 minuta",
-    servings: 20
+    servings: 20,
+    notes: [
+      "Testo mora biti glatko i sjajna",
+      "Ne otvarajte rernu tokom pečenja"
+    ],
+    nutrition: {
+      calories: "180 kalorija",
+      protein: "4g",
+      carbs: "18g",
+      fat: "10g"
+    }
   },
+
   "Éclair": {
-    name: "Éclair",
+    name: "Ekler",
+    description: "Francuske džgovste polnjene kremom",
     ingredients: [
       "Testo: 125ml vode, 125ml mleka, 115g putera, 1 kašičica šećera, 1/4 kašičice soli, 150g brašna, 4 jaja",
       "Krem: 500ml mleka, 100g šećera, 40g gustina, 4 žumanca, 1 kašičica vanile, 50g putera",
@@ -7972,12 +15587,23 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "30 minuta",
     cookTime: "35-40 minuta",
-    servings: 12
+    servings: 12,
+    notes: [
+      "Krem mora da se pokrije folijom da se ne posuši",
+      "Glazura treba da bude topla za lako umakanje"
+    ],
+    nutrition: {
+      calories: "220 kalorija",
+      protein: "5g",
+      carbs: "22g",
+      fat: "12g"
+    }
   },
 
   // European recipes
   "Schnitzel": {
-    name: "Schnitzel",
+    name: "Šnicla",
+    description: "Austrijski/nemački pohovano meso",
     ingredients: [
       "4 teleća šnicle (oko 150g svaka), tanko isečene",
       "100g brašna",
@@ -8002,10 +15628,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "20 minuta",
     cookTime: "15 minuta",
-    servings: 4
+    servings: 4,
+    notes: [
+      "Istucajte meso pažljivo da ne pukne",
+      "Ulje mora biti dovoljno vruće za hrskavo pohovanje"
+    ],
+    nutrition: {
+      calories: "420 kalorija",
+      protein: "35g",
+      carbs: "18g",
+      fat: "24g"
+    }
   },
+
   "Pasta Carbonara": {
-    name: "Pasta Carbonara",
+    name: "Pasta Karbonara",
+    description: "Klasična italijanska pasta sa jajetom i pančetom",
     ingredients: [
       "350g špageta",
       "150g pančete ili guanciale, isečene na kockice",
@@ -8027,10 +15665,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "10 minuta",
     cookTime: "20 minuta",
-    servings: 4
+    servings: 4,
+    notes: [
+      "Ne mešajte jaja previše da se ne skruše",
+      "Pasta mora biti vruća za pravi sos"
+    ],
+    nutrition: {
+      calories: "620 kalorija",
+      protein: "28g",
+      carbs: "65g",
+      fat: "26g"
+    }
   },
+
   "Paella": {
-    name: "Paella",
+    name: "Paeja",
+    description: "Španska tradicionalna jela sa pirinčem i seafood",
     ingredients: [
       "400g pirinča za paellu (npr. bomba rice)",
       "500g pilećeg mesa, isečenog na komade",
@@ -8067,10 +15717,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "30 minuta",
     cookTime: "45 minuta",
-    servings: 6
+    servings: 6,
+    notes: [
+      "Ne mešajte pirinč tokom kuvanja",
+      "Bacite dagnje koje se ne otvore"
+    ],
+    nutrition: {
+      calories: "480 kalorija",
+      protein: "32g",
+      carbs: "55g",
+      fat: "15g"
+    }
   },
+
   "Ratatouille": {
-    name: "Ratatouille",
+    name: "Ratatuj",
+    description: "Francuski povrćni ďanac sa mediteranskim povrćem",
     ingredients: [
       "1 veći crni luk",
       "2 čena belog luka",
@@ -8099,11 +15761,23 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "20 minuta",
     cookTime: "45 minuta",
-    servings: 4
+    servings: 4,
+    notes: [
+      "Seckajte povrće na podjednačne kockice",
+      "Kuvajte polako da se svi ukusi sjedine"
+    ],
+    nutrition: {
+      calories: "180 kalorija",
+      protein: "4g",
+      carbs: "25g",
+      fat: "8g"
+    }
   },
+
   // Fish recipes
   "Grilled Salmon": {
-    name: "Grilled Salmon",
+    name: "Grilovan losos",
+    description: "Sočan i ukusan losos sa grila",
     ingredients: [
       "2 komada fileta lososa (oko 150g svaki), sa kožom ili bez",
       "2 kašike maslinovog ulja",
@@ -8127,10 +15801,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "10 minuta",
     cookTime: "12 minuta",
-    servings: 2
+    servings: 2,
+    notes: [
+      "Ne prešarvajte losos da ostane sočan",
+      "Proverite da li je gotov kada se lako odvaja vijuškom"
+    ],
+    nutrition: {
+      calories: "380 kalorija",
+      protein: "42g",
+      carbs: "2g",
+      fat: "22g"
+    }
   },
+
   "Fish and Chips": {
-    name: "Fish and Chips",
+    name: "Riba sa pomfritom",
+    description: "Britanski klasik - pržena riba sa hrskavim pomfritom",
     ingredients: [
       "400g fileta bele ribe (bakalar, oslić)",
       "150g brašna",
@@ -8159,10 +15845,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "20 minuta",
     cookTime: "25 minuta",
-    servings: 2
+    servings: 2,
+    notes: [
+      "Pržite pomfrit dva puta za savršenu hrskavost",
+      "Testo mora biti hladno za najbolji rezultat"
+    ],
+    nutrition: {
+      calories: "680 kalorija",
+      protein: "38g",
+      carbs: "52g",
+      fat: "35g"
+    }
   },
+
   "Tuna Steak": {
-    name: "Tuna Steak",
+    name: "Tuna bife",
+    description: "Sočan bife od tune na žarė ili tiganju",
     ingredients: [
       "2 tuna steak-a (oko 200g svaki)",
       "2 kašike maslinovog ulja",
@@ -8183,10 +15881,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "5 minuta",
     cookTime: "8 minuta",
-    servings: 2
+    servings: 2,
+    notes: [
+      "Za medium rare pecite 3-4 minuta sa svake strane",
+      "Marinirajte kratko da se ne 'skuva' u kiselini"
+    ],
+    nutrition: {
+      calories: "420 kalorija",
+      protein: "48g",
+      carbs: "2g",
+      fat: "24g"
+    }
   },
+
   "Cod Fillet": {
-    name: "Cod Fillet",
+    name: "Filet bakalara",
+    description: "Delikatan beli riba filet na najбoji način",
     ingredients: [
       "2 fileta bakalara (oko 150g svaki)",
       "1 kašika maslinovog ulja",
@@ -8208,10 +15918,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "5 minuta",
     cookTime: "15 minuta",
-    servings: 2
+    servings: 2,
+    notes: [
+      "Bakalar je gotov kada se lako raspada viљуškom",
+      "Ne prepecite da se ne osуši"
+    ],
+    nutrition: {
+      calories: "280 kalorija",
+      protein: "32g",
+      carbs: "2g",
+      fat: "15g"
+    }
   },
+
   "Sea Bass": {
-    name: "Sea Bass",
+    name: "Brancin",
+    description: "Elegantan morski bas iz Mediterana",
     ingredients: [
       "2 fileta brancina (oko 150g svaki)",
       "2 kašike maslinovog ulja",
@@ -8233,10 +15955,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "10 minuta",
     cookTime: "20 minuta",
-    servings: 2
+    servings: 2,
+    notes: [
+      "Kriške limuna dodaju svežinu i ukus",
+      "Proverite da li je meso opaque belo"
+    ],
+    nutrition: {
+      calories: "320 kalorija",
+      protein: "28g",
+      carbs: "3g",
+      fat: "22g"
+    }
   },
+
   "Mackerel": {
-    name: "Mackerel",
+    name: "Skuša",
+    description: "Masna morska riba bogata omega-3 masnim kiselinama",
     ingredients: [
       "2 skuše (oko 200g svaka), očišćene",
       "2 kašike maslinovog ulja",
@@ -8258,10 +15992,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "5 minuta",
     cookTime: "20 minuta",
-    servings: 2
+    servings: 2,
+    notes: [
+      "Napravite rezove da se bolje ispeče",
+      "Skuša je bogata omega-3 kiselinama"
+    ],
+    nutrition: {
+      calories: "420 kalorija",
+      protein: "38g",
+      carbs: "2g",
+      fat: "28g"
+    }
   },
+
   "Sardines": {
-    name: "Sardines",
+    name: "Sardine",
+    description: "Mala morska riba iz konzerve - brza i ukusna",
     ingredients: [
       "1 konzerva sardina u ulju (100g)",
       "1 limun",
@@ -8282,10 +16028,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "5 minuta",
     cookTime: "10 minuta",
-    servings: 1
+    servings: 1,
+    notes: [
+      "Možete koristiti sveze sardine umesto konzerve",
+      "Odlično za brz obrok"
+    ],
+    nutrition: {
+      calories: "220 kalorija",
+      protein: "24g",
+      carbs: "2g",
+      fat: "12g"
+    }
   },
+
   "Trout": {
-    name: "Trout",
+    name: "Pastrmka",
+    description: "Slatkovodna riba sa delikatnim ukusom",
     ingredients: [
       "2 cele pastrmke, ociscene",
       "1 limun, isecen na kolutove",
@@ -8308,10 +16066,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "10 minuta",
     cookTime: "25 minuta",
-    servings: 2
+    servings: 2,
+    notes: [
+      "Seckanje omogućava bolje pečenje",
+      "Pastrmka je najbolja kada je sveža"
+    ],
+    nutrition: {
+      calories: "380 kalorija",
+      protein: "42g",
+      carbs: "3g",
+      fat: "20g"
+    }
   },
+
   "Halibut": {
     name: "Halibut",
+    description: "Velika morska riba sa čvrstim belim mesom",
     ingredients: [
       "2 fileta halibuta (oko 150-200g svaki)",
       "2 kašike maslinovog ulja",
@@ -8332,10 +16102,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "5 minuta",
     cookTime: "15 minuta",
-    servings: 2
+    servings: 2,
+    notes: [
+      "Halibut ima vrlo nežno meso",
+      "Ne prepecite da ne postane suv"
+    ],
+    nutrition: {
+      calories: "340 kalorija",
+      protein: "36g",
+      carbs: "2g",
+      fat: "18g"
+    }
   },
+
   "Swordfish": {
-    name: "Swordfish",
+    name: "Riba mač",
+    description: "Velika morska riba sa čvrstim mesom",
     ingredients: [
       "2 odreska sabljarke (oko 150g svaki)",
       "2 kašike maslinovog ulja",
@@ -8354,10 +16136,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "10 minuta",
     cookTime: "10 minuta",
-    servings: 2
+    servings: 2,
+    notes: [
+      "Marinirajte kratko - do 30 minuta",
+      "Sabljarko ima čvrsto meso koje ne tr kuvati dugo"
+    ],
+    nutrition: {
+      calories: "420 kalorija",
+      protein: "45g",
+      carbs: "3g",
+      fat: "24g"
+    }
   },
+
   "Fish Tacos": {
-    name: "Fish Tacos",
+    name: "Riba takosi",
+    description: "Meksički takosi sa začinjenom ribom i svežima sastojcima",
     ingredients: [
       "400g fileta bele ribe (bakalar, tilapija ili oslić), isečenog na komade veličine zalogaja",
       "1 kašika maslinovog ulja",
@@ -8387,10 +16181,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "20 minuta",
     cookTime: "15 minuta",
-    servings: 4
+    servings: 4,
+    notes: [
+      "Zagrejte tortilje pre serviranja",
+      "Možete dodati piљu papriku za više ljubog ukusa"
+    ],
+    nutrition: {
+      calories: "320 kalorija",
+      protein: "28g",
+      carbs: "32g",
+      fat: "12g"
+    }
   },
+
   "Fish Curry": {
-    name: "Fish Curry",
+    name: "Riba kari",
+    description: "Indijski/azijski kari sa ribom u kokosovom mleku",
     ingredients: [
       "500g fileta bele ribe (npr. bakalar, oslić), isečenog na komade",
       "2 kašike biljnog ulja",
@@ -8421,10 +16227,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "15 minuta",
     cookTime: "25 minuta",
-    servings: 4
+    servings: 4,
+    notes: [
+      "Dodajte ribu tek na kraju da se ne prekuвa",
+      "Možete prilagoditi nivo ljutine"
+    ],
+    nutrition: {
+      calories: "380 kalorija",
+      protein: "32g",
+      carbs: "18g",
+      fat: "20g"
+    }
   },
+
   "Baked Fish": {
-    name: "Baked Fish",
+    name: "Pečena riba",
+    description: "Prosto i ukusno pečenje ribe u rerni",
     ingredients: [
       "4 fileta bele ribe (npr. bakalar, oslić, list)",
       "1 limun",
@@ -8447,10 +16265,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "10 minuta",
     cookTime: "20 minuta",
-    servings: 4
+    servings: 4,
+    notes: [
+      "Tempertura rerne je ključna za sočnost",
+      "Ne prekuvavajte da ne postane suvo"
+    ],
+    nutrition: {
+      calories: "280 kalorija",
+      protein: "34g",
+      carbs: "3g",
+      fat: "14g"
+    }
   },
+
   "Smoked Salmon": {
-    name: "Smoked Salmon",
+    name: "Dimљeni losos",
+    description: "Luksuzna pretkap sa dimљenim lososom",
     ingredients: [
       "200g dimljenog lososa, tanko narezanog",
       "1 limun, isečen na kriške",
@@ -8467,10 +16297,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "5 minuta",
     cookTime: "0 minuta",
-    servings: 4
+    servings: 4,
+    notes: [
+      "Servirajte na sobnoj temperaturi",
+      "Odlično uz kremeč sir na bagelu"
+    ],
+    nutrition: {
+      calories: "180 kalorija",
+      protein: "24g",
+      carbs: "2g",
+      fat: "8g"
+    }
   },
+
   "Fish Cakes": {
-    name: "Fish Cakes",
+    name: "Riblji kolačići",
+    description: "Hrskavi kolačići od ribe i krompira",
     ingredients: [
       "500g fileta bele ribe (npr. bakalar, oslić)",
       "1 srednji krompir, kuvan i izgnječen",
@@ -8496,10 +16338,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "20 minuta",
     cookTime: "15 minuta",
-    servings: 4
+    servings: 4,
+    notes: [
+      "Riba mora biti dobro skвana pre miksovanja",
+      "Možete dodati kukuruz za slatki kontrast"
+    ],
+    nutrition: {
+      calories: "280 kalorija",
+      protein: "24g",
+      carbs: "22g",
+      fat: "12g"
+    }
   },
+
   "Ceviche": {
-    name: "Ceviche",
+    name: "Seviče",
+    description: "Peruanski desert od sirove ribe 'kuvane' u kiselini",
     ingredients: [
       "500g sveže bele ribe (brancin, orada, list), isečene na kockice veličine 1cm",
       "1 crveni luk, tanko isečen",
@@ -8525,11 +16379,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "20 minuta",
     cookTime: "15 minuta (vreme mariniranja)",
-    servings: 4
+    servings: 4,
+    notes: [
+      "Riba mora biti izuzetno sveža",
+      "Kiselina 'kuva' ribu u marinadi"
+    ],
+    nutrition: {
+      calories: "220 kalorija",
+      protein: "28g",
+      carbs: "12g",
+      fat: "8g"
+    }
   },
+
   "Sashimi": {
-    name: "Sashimi",
-    description: "Sashimi je japansko jelo koje se sastoji od tanko narezanih sirovih komada ribe ili morskih plodova.",
+    name: "Sašimi",
+    description: "Japansko jelo od tanko narezanih sirovih komada ribe",
     ingredients: [
       "200g svežeg fileta tune (sushi kvaliteta)",
       "100g svežeg fileta lososa (sushi kvaliteta)",
@@ -8549,7 +16414,163 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "15 minuta",
     cookTime: "0 minuta",
-    servings: 2
+    servings: 2,
+    notes: [
+      "Riba mora biti sushi kvaliteta",
+      "Nož mora biti izuzetno oštar"
+    ],
+    nutrition: {
+      calories: "180 kalorija",
+      protein: "32g",
+      carbs: "2g",
+      fat: "4g"
+    }
+  },
+
+  "BBQ Ribs": {
+    name: "BBQ rebarca",
+    description: "Američka BBQ rebarca sa slatko-ljutim sosom",
+    ingredients: [
+      "1.5kg svinjskih rebarica",
+      "2 kašike smeđeg šećera",
+      "1 kašika dimljene paprike",
+      "1 kašičica čili praha",
+      "1 kašičica belog luka u prahu",
+      "1 kašičica soli",
+      "BBQ sos: 200ml kečapa, 100ml jabukovog sirćeta, 50ml meda, 2 kašike Worcestershire sosa"
+    ],
+    instructions: [
+      "Pomešajte suve začine za rub.",
+      "Utrljajte rub u rebarca i ostavite 2 sata.",
+      "Zagrejte rernu na 150°C.",
+      "Umotajte rebarca u foliju i pečite 2.5 sata.",
+      "Pomešajte sastojke za BBQ sos.",
+      "Izvadite rebarca, premažite sosom i pečite bez folije 30 minuta.",
+      "Servirajte sa dodatnim sosom."
+    ],
+    prepTime: "15 minuta + 2h mariniranje",
+    cookTime: "3 sata",
+    servings: 4,
+    notes: [
+      "Sporo pečenje čini meso nežnim",
+      "Možete koristiti roštilj umesto rerne"
+    ],
+    nutrition: {
+      calories: "520 kalorija",
+      protein: "45g",
+      carbs: "18g",
+      fat: "28g"
+    }
+  },
+
+  "Beef Brisket": {
+    name: "Goveđi prsni deo",
+    description: "Texas BBQ klasik - sporo pečen goveđi prsni deo",
+    ingredients: [
+      "2kg goveđeg prsnog dela",
+      "3 kašike soli",
+      "3 kašike crnog bibera",
+      "2 kašike dimljene paprike",
+      "1 kašika belog luka u prahu",
+      "1 kašika origana",
+      "Hickory wood chips za dimљenje"
+    ],
+    instructions: [
+      "Pomešajte sve začine za rub.",
+      "Utrljajte rub u meso i ostavite preko noći.",
+      "Pripremite smoker ili roštilj na 120°C.",
+      "Dodajte wood chips za dim.",
+      "Dimite meso 12-16 sati do unutrašnje temperature 95°C.",
+      "Zamotajte u foliju i pečite do 102°C.",
+      "Ostavite da se odmori 1 sat pre sečenja."
+    ],
+    prepTime: "20 minuta + preko noći",
+    cookTime: "12-16 sati",
+    servings: 8,
+    notes: [
+      "Strpljenje je ključ - ne žurite proces",
+      "Unutrašnja temperatura je najvažnija"
+    ],
+    nutrition: {
+      calories: "380 kalorija",
+      protein: "52g",
+      carbs: "2g",
+      fat: "16g"
+    }
+  },
+
+  "Pulled Pork": {
+    name: "Pulled pork",
+    description: "Rastrgana svinjetina sporo pečena sa BBQ sosom",
+    ingredients: [
+      "2kg svinjskog ramena",
+      "2 kašike smeđeg šećera",
+      "2 kašike dimljene paprike",
+      "1 kašika soli",
+      "1 kašika belog luka u prahu",
+      "1 kašičica kima",
+      "BBQ sos po ukusu",
+      "Hamburger perce za serviranje"
+    ],
+    instructions: [
+      "Pomešajte začine i utrljajte u meso.",
+      "Ostavite da se marinira najmanje 4 sata.",
+      "Zagrejte rernu na 150°C.",
+      "Pečite meso 6-8 sati do unutrašnje temperature 90°C.",
+      "Izvadite meso i ostavite da se odmori 30 minuta.",
+      "Rastrgajte meso viljuszkama u niti.",
+      "Pomešajte sa BBQ sosom.",
+      "Servirajte u percima sa salatom."
+    ],
+    prepTime: "15 minuta + 4h mariniranje",
+    cookTime: "6-8 sati",
+    servings: 8,
+    notes: [
+      "Meso je gotovo kada se lako rastrga",
+      "Možete koristiti slow cooker"
+    ],
+    nutrition: {
+      calories: "420 kalorija",
+      protein: "48g",
+      carbs: "8g",
+      fat: "20g"
+    }
+  },
+
+  "Lamb Chops": {
+    name: "Jagneći kotleti",
+    description: "Sočni jagneći kotleti sa travama",
+    ingredients: [
+      "8 jagnećih kotleta",
+      "3 kašike maslinovog ulja",
+      "3 čena belog luka",
+      "2 kašike svežeg ruzmarina",
+      "1 kašika svežeg timijana",
+      "Sol i biber po ukusu",
+      "1 limun"
+    ],
+    instructions: [
+      "Pomešajte ulje, beli luk, ruzmarin i timijan.",
+      "Marinirajte kotlete 30 minuta.",
+      "Zagrejte tiganj na jakoj vatri.",
+      "Posolite i pobiberite kotlete.",
+      "Pržite kotlete 3-4 minuta sa svake strane za medium rare.",
+      "Ostavite da se odmori 5 minuta.",
+      "Servirajte sa kriškama limuna."
+    ],
+    prepTime: "10 minuta + 30min mariniranje",
+    cookTime: "8 minuta",
+    servings: 4,
+    notes: [
+      "Ne prekuvavajte - jagnje je najukusnije medium rare",
+      "Ostavite da se odmori posle pečenja"
+    ],
+    nutrition: {
+      calories: "480 kalorija",
+      protein: "42g",
+      carbs: "2g",
+      fat: "32g"
+    }
   },
   "Fish Stew": {
     name: "Fish Stew",
@@ -8607,11 +16628,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "15 minuta",
     cookTime: "8 minuta",
-    servings: 2
+    servings: 2,
+    notes: [
+      "Sredina tune treba da ostane blago roza",
+      "Ne prekuvavajte da ne postane suva"
+    ],
+    nutrition: {
+      calories: "420 kalorija",
+      protein: "48g",
+      carbs: "3g",
+      fat: "22g"
+    }
   },
 
   "Shepherd's Pie": {
-    name: "Shepherd's Pie",
+    name: "Čobanska pita",
+    description: "Tradicionalna britanska pita sa mesom i pireom",
     ingredients: [
       "1 kg mlevene jagnjetine (ili govedine)",
       "1 veliki luk, sitno iseckan",
@@ -8648,10 +16680,22 @@ export const recipes: Record<string, Recipe> = {
     ],
     prepTime: "30 minuta",
     cookTime: "60 minuta",
-    servings: 6
+    servings: 6,
+    notes: [
+      "Dodajte sir na vrh pre serviranja",
+      "Možete koristiti goveđu ili jagneću mlevenu"
+    ],
+    nutrition: {
+      calories: "480 kalorija",
+      protein: "28g",
+      carbs: "45g",
+      fat: "18g"
+    }
   },
+
   "Goulash": {
-    name: "Goulash",
+    name: "Gulaš",
+    description: "Mađarski tradicionalni čanac sa paprikama",
     ingredients: [
       "1.5 kg junećeg mesa (plećka ili vrat), isečenog na kockice od 2-3 cm",
       "2 velike glavice crnog luka, sitno iseckane",
@@ -11974,6 +20018,12095 @@ export const recipes: Record<string, Recipe> = {
     prepTime: "15 min",
     cookTime: "30 min",
     servings: 4
+  },
+
+  // Priority missing recipes
+  "Mac and Cheese": {
+    name: "Makaroni sa sirom",
+    description: "Kremasti makaroni sa toplim, rastopljenim sirom. Klasično amerikansko jelo za uživanje.",
+    ingredients: [
+      "450g makarona (elbow pasta)",
+      "4 kašike putera",
+      "4 kašike brašna",
+      "2 šolje mleka",
+      "2 šolje rendanog čedar sira",
+      "1 šolja rendanog mocarela sira",
+      "1/2 kašičice soli",
+      "1/4 kašičice bibera",
+      "1/4 kašičice muskatnog oraščića",
+      "1/2 šolje prezle (opciono)",
+      "2 kašike rastopljenog putera za preliv"
+    ],
+    instructions: [
+      "Zagrejte rernu na 200°C.",
+      "Skuvajte makaron po uputstvu na pakovanju do al dente. Ocedite.",
+      "U velikoj šerpi zagrejte puter na srednjoj vatri. Dodajte brašno i mešajte 1 minut.",
+      "Postupno dodajte mleko, mešajući bez prestanka dok se ne zgusne (5-7 minuta).",
+      "Sklonite sa vatre i dodajte čedar i mocarela sir. Mešajte dok se sir ne rastopi.",
+      "Dodajte so, biber i muskatni oraščić. Probajte i podesiti začine.",
+      "Dodajte kuvan makaron i dobro pomešajte.",
+      "Prebacite u podmaženu vatrostalnu posudu.",
+      "Pomešajte prezle sa rastopljenim puterom i posipajte po makaronu.",
+      "Pecite 20-25 minuta dok se ne zaruži na vrhu."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "30 minuta",
+    servings: 6,
+    notes: [
+      "Možete dodati i druge sireve po ukusu - gryer, parmezan.",
+      "Za bogatiji ukus, dodajte kašičicu senfa u sir.",
+      "Može se pripremiti unapred i čuvati u frižideru 2 dana."
+    ],
+    nutrition: {
+      calories: "450-500 kcal po porciji",
+      protein: "20-25g",
+      fat: "25-30g",
+      carbohydrates: "40-45g"
+    }
+  },
+
+  "Fried Chicken": {
+    name: "Pržena piletina",
+    description: "Hrskava, zlatno pržena piletina sa začinskom koricu. Savršena za porodični obrok.",
+    ingredients: [
+      "1 cela piletina (1.5-2kg), isečena na delove",
+      "2 šolje mleka ili buttermilk",
+      "2 šolje brašna",
+      "1 kašika soli",
+      "1 kašika bibera",
+      "1 kašika belog luka u prahu",
+      "1 kašika paprike",
+      "1 kašičica timijana",
+      "1 kašičica origana",
+      "1/2 kašičice kajenske paprike",
+      "Ulje za duboko prženje"
+    ],
+    instructions: [
+      "Namočite delove piletine u mleko/buttermilk najmanje 2 sata ili preko noći.",
+      "U velikoj posudi pomešajte brašno i sve začine.",
+      "Zagrejte ulje u dubokom tiganju ili fritezi na 175°C.",
+      "Izvadite piletinu iz mleka i uvaljajte u začinjeno brašno, pritisnuvši da se dobro zakači.",
+      "Pažljivo stavite piletinu u vrelo ulje. Ne pretrpavajte.",
+      "Pržite 12-15 minuta, okreu ćivši jednom, dok temperatura unutar mesa ne dostigne 75°C.",
+      "Izvadite i stavite na papirni ubrus da se ocedi masnoća.",
+      "Poslužite toplo sa omiljenim prilozima."
+    ],
+    prepTime: "20 minuta (+ 2 sata mariniranje)",
+    cookTime: "15 minuta po šarži",
+    servings: 4,
+    notes: [
+      "Buttermilk daje mekaniji ukus od običnog mleka.",
+      "Temperatura ulja je ključna - previsoka će sagoreti spolja, a unutra ostati sirovo.",
+      "Možete dodati hot sauce u mleko za ljući ukus."
+    ],
+    nutrition: {
+      calories: "350-400 kcal po delou",
+      protein: "25-30g",
+      fat: "20-25g",
+      carbohydrates: "15-20g"
+    }
+  },
+
+  "Clam Chowder": {
+    name: "Školjke čorba",
+    description: "Bogata, kremasta čorba sa školjkama, krompirom i slaninom. Nova engleska specijalnost.",
+    ingredients: [
+      "1kg svežih školjaka ili 2 konzerve (400g)",
+      "150g slanine, isečene na kockice",
+      "1 srednji luk, sitno secan",
+      "2 stabla celera, seckana",
+      "3 krompira, oljuštena i sečena na kockice",
+      "3 kašike brašna",
+      "4 šolje mleka",
+      "1 šolja pavlake za kuvanje",
+      "2 lovorova lista",
+      "1 kašičica timijana",
+      "So i biber po ukusu",
+      "Vlašac za ukrašavanje"
+    ],
+    instructions: [
+      "Ako koristite sveže školjke, očistite ih i skuvajte u slanoj vodi 5-8 minuta. Izvadite meso i sačuvajte tečnost.",
+      "U velikoj šerpi propržite slaninu na srednjoj vatri dok ne postane hrskava.",
+      "Dodajte luk i celer, kuvajte 5 minuta dok ne omeknu.",
+      "Dodajte krompir i kuvajte još 3 minute.",
+      "Posipajte brašnom i mešajte 1 minut.",
+      "Postupno dodajte mleko i tečnost od školjaka, mešajući da se ne prave grudvice.",
+      "Dodajte lovorov list i timijan. Kuvajte 15-20 minuta dok krompir ne omekne.",
+      "Dodajte školjke i pavlaku, kuvajte još 5 minuta.",
+      "Začinite solju i biberom. Uklonite lovorov list.",
+      "Poslužite vrelo, ukrašeno vlašcem."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "35 minuta",
+    servings: 6,
+    notes: [
+      "Konzervovane školjke se dodaju na kraju da se ne skuvaju previše.",
+      "Čorba se može čuvati u frižideru 2-3 dana.",
+      "Za gušću čorbu, zdrobite deo krompira kašikom."
+    ],
+    nutrition: {
+      calories: "300-350 kcal po porciji",
+      protein: "15-20g",
+      fat: "20-25g",
+      carbohydrates: "20-25g"
+    }
+  },
+
+  "Pad Thai Authentic": {
+    name: "Pad taj",
+    description: "Autentična tajlandska nudle sa tamarind sosom, tofu i kikirikijem. Balans slatkog, kiselog i slanog.",
+    ingredients: [
+      "200g ravnih rižinih nudli",
+      "200g račića ili piletine (opciono)",
+      "200g tvrdg tofu, sečen na kockice",
+      "3 jaja",
+      "1 šolja klica soje",
+      "4 mladog luka, seckanog",
+      "3 kašike tamarind paste",
+      "3 kašike fish sauce",
+      "3 kašike šećera od palme",
+      "2 kašike soja sosa",
+      "3 čena belog luka, sitno seckanog",
+      "2 čili papričice, seckane",
+      "1/2 šolje prženog kikirikija",
+      "1 limun, secan na čevrice",
+      "Vlašac za ukrašavanje"
+    ],
+    instructions: [
+      "Potopite nudli u toplu vodu 30 minuta dok ne omeknu. Ocedite.",
+      "U wok-u zagrejte ulje na jakoj vatri. Dodajte beli luk i čili, pržite 30 sekundi.",
+      "Dodajte račiće/piletinu, pržite 2-3 minute. Gurnite na jednu stranu.",
+      "Dodajte jaja i umutite ih u wok-u. Gurnite na drugu stranu.",
+      "Dodajte tofu i nudli, pa tamarind pastu, fish sauce, šećer od palme i soja sos.",
+      "Mešajte sve zajedno 2-3 minute dok se nudli ne zagreju.",
+      "Dodajte klice soje i mladi luk, pržite još 1 minut.",
+      "Poslužite odmah sa kikirikijem, limunom i vlašcem."
+    ],
+    prepTime: "40 minuta (uključuje namakanje nudli)",
+    cookTime: "10 minuta",
+    servings: 4,
+    notes: [
+      "Tamarind pasta je ključna za autentičan ukus - može se naći u azijskim prodavnicama.",
+      "Wok na visokoj temperaturi je bitan za pravi ukus.",
+      "Može se prilagoditi vegetarijancima ostavljanjem mesa."
+    ],
+    nutrition: {
+      calories: "400-450 kcal po porciji",
+      protein: "20-25g",
+      fat: "15-20g",
+      carbohydrates: "50-60g"
+    }
+  },
+
+  "Key Lime Pie": {
+    name: "Pita od lajma",
+    description: "Osvežavajuća američka pita sa kremom od lajma na hrskavojcokoli. Florida specijalnost.",
+    ingredients: [
+      "Za koricu:",
+      "200g krekera od grahama, smrvljenih",
+      "80g rastopljenog putera",
+      "2 kašike šećera",
+      "Za fil:",
+      "4 žumanca",
+      "400g kondenovanog slatkozg mleka",
+      "120ml soka od key lime-a (ili običnog limuna)",
+      "1 kašika rendane korice od limuna",
+      "Za preliv:",
+      "200ml pavlake za šlag",
+      "2 kašike šećera u prahu",
+      "Tanke kriške limuna za ukrašavanje"
+    ],
+    instructions: [
+      "Zagrejte rernu na 180°C.",
+      "Pomešajte smrvljene krekere, puter i šećer. Utisnite u podmazanu formu za pitu (23cm).",
+      "Pecite koricu 10 minuta. Ostavite da se ohladi.",
+      "Za fil: U činiji umutite žumanca dok ne postanu bleda.",
+      "Dodajte kondenzovano mleko, sok i koricu od limuna. Mešajte dok se ne sjedini.",
+      "Sipaite fil na ohlađenu koricu.",
+      "Pecite 15-20 minuta dok se sredina ne zgusne.",
+      "Ohladiti potpuno, zatim staviti u frižider najmanje 4 sata.",
+      "Pre serviranja, umutiti pavlaku sa šećerom u prahu do čvrstog šlaga.",
+      "Ukrasite šlagom i kriškama limuna."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "30 minuta",
+    servings: 8,
+    notes: [
+      "Key lime ima specifičan ukus, ali može se zameniti običnim limunom.",
+      "Pita se može napraviti dan ranije.",
+      "Čuvati u frižideru do 3 dana."
+    ],
+    nutrition: {
+      calories: "350-400 kcal po komadu",
+      protein: "6-8g",
+      fat: "20-25g",
+      carbohydrates: "35-40g"
+    }
+  },
+
+  "Tom Yum": {
+    name: "Tom jam",
+    description: "Pikantna i aromatična tajlandska supa sa račićima, gljivama i lemongrass-om. Savršen balans ljuto-kiselo.",
+    ingredients: [
+      "500g velikih račića, oljuštenih",
+      "1L vode ili pileće supe",
+      "3 stabla lemongrass-a, izdrobljena",
+      "5 kaffir lime listova",
+      "200g šampinjona, iseceanih na kriške",
+      "3 čili papričice (po ukusu)",
+      "3 kašike fish sauce-a",
+      "2 kašike soka od limuna",
+      "1 kašika šećera",
+      "2 paradajza, isečena na wedges",
+      "1 luk, secan na kriške",
+      "Vlašac, secan",
+      "1 kašika tom yum paste (opciono)"
+    ],
+    instructions: [
+      "Zagrejte vodu u velikoj šerpi. Dodajte lemongrass, kaffir lime listove i čili papričice.",
+      "Kuvajte 5 minuta da se oslobode aromi.",
+      "Dodajte račiće i kuvajte 2-3 minute dok ne postanu roze.",
+      "Dodajte gljive, paradajz i luk. Kuvajte još 3-4 minute.",
+      "Dodajte fish sauce, sok od limuna i šećer. Probajte i podesiti ukus.",
+      "Dodajte tom yum pastu ako želite intenzivniji ukus.",
+      "Sklonite sa vatre i dodajte secan vlašac.",
+      "Poslužite vrelo sa jasmine pirinčem."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: [
+      "Kaffir lime listovi se mogu naći u azijskim prodavnicama.",
+      "Podesiti ljutinu dodavanjem ili oduzimanjem čili papričica.",
+      "Tom yum pasta daje autentičniji ukus."
+    ],
+    nutrition: {
+      calories: "150-200 kcal po porciji",
+      protein: "20-25g",
+      fat: "2-5g",
+      carbohydrates: "10-15g"
+    }
+  },
+
+  "Pho Vietnamese": {
+    name: "Fo",
+    description: "Aromatična vijetnamska supa sa nudlama, govedinom i svežim začinskim biljem. Comfort food iz Vijetnama.",
+    ingredients: [
+      "400g tankih rižinih nudli (banh pho)",
+      "1.5L goveđe supe (ili kockice + voda)",
+      "300g tanko isecanog sirovog goveđeg mesa",
+      "1 luk, tanko isecan",
+      "3cm parče đumbira",
+      "2 stabla cimeta",
+      "4 čina anisa",
+      "4 karanfilića",
+      "1 kašika coriander semena",
+      "2 kašike fish sauce-a",
+      "1 kašika šećera",
+      "So po ukusu",
+      "Za seriranje:",
+      "Sveže klice soje",
+      "Sveže listove mente",
+      "Sveže listove bosiljka",
+      "Lime wedges",
+      "Tanko secnane čili paprice",
+      "Hoisin sos i sriracha (opciono)"
+    ],
+    instructions: [
+      "Pržite začine (cimet, anis, karanfilić, coriander) u suvoj šerpi 2-3 minute dok ne mirisnu.",
+      "Dodajte začine u vrelu supu sa đumbirom. Kuvajte na laganoj vatri 20-30 minuta.",
+      "Procedte supu i dodajte fish sauce, šećer i so po ukusu.",
+      "Potopite nudli u vruću vodu 2-3 minute dok ne omeknu. Ocedite.",
+      "Stavite nudli u duboke činije i dodajte sirovo meso po vrhu.",
+      "Prelijte vrelu supu preko mesa (toplota će ga skuvati).",
+      "Dodajte tanko secan luk.",
+      "Poslužite sa svežim dodacima na strani - klicama, mentom, bosiljkom, lime-om, čili papricama."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "35 minuta",
+    servings: 4,
+    notes: [
+      "Ključ je u aromatičnoj, dugokuvnoj supi sa začinima.",
+      "Meso se 'kuva' u vrućoj supi, tako da mora biti tanko isečeno.",
+      "Tradicionalno se jede sa palčicima i kašikom."
+    ],
+    nutrition: {
+      calories: "400-500 kcal po porciji",
+      protein: "25-30g",
+      fat: "8-12g",
+      carbohydrates: "60-70g"
+    }
+  },
+
+  "Tempura": {
+    name: "Tempura",
+    description: "Japanska tehnika kranja povrća i morskih plodova u laganom, hrskavom testu. Lako i osvežavajuće.",
+    ingredients: [
+      "Za tempura testo:",
+      "1 šolja ledeno hladne vode",
+      "1 žumance",
+      "1 šolja brašna (plus dodatno za posipanje)",
+      "Za prženje:",
+      "Mešano povrće: brokoli, šargarepu, tikvice, paprike, gljive",
+      "Račići ili kalmari (opciono)",
+      "Ulje za duboko prženje",
+      "Za dipping sos:",
+      "4 kašike soja sosa",
+      "2 kašike mirinta",
+      "2 kašike dashi (ili pileće supe)",
+      "1 kašika rendanog đumbira"
+    ],
+    instructions: [
+      "Zagrejte ulje za prženje na 180°C.",
+      "Za testo: U hladnoj činiji lagano umutite žumance sa ledenom vodom. Dodajte brašno odjednom i mešajte LAGANO - testo treba da ostane grudvičasto!",
+      "Pripremite povrće - iseckajte na uniformne komade.",
+      "Za sos: Pomešajte sve sastojke za sos.",
+      "Poprašite povrće dodatnim brašnom, zatim umočite u tempura testo.",
+      "Pržite u vrućem ulju 2-3 minute dok ne postane svetlo zlatno. Ne pretrpavajte.",
+      "Izvadite i stavite na papir za upijanje ulja.",
+      "Poslužite odmah sa dipping sosom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: [
+      "KLJUČNO: Ne preterivajte sa mešanjem testa - grudvice su poželjne!",
+      "Hladno testo na vrućem ulju pravi hrskavu teksturu.",
+      "Poslužiti odmah da ostane hrskavo."
+    ],
+    nutrition: {
+      calories: "250-300 kcal po porciji",
+      protein: "8-12g",
+      fat: "15-20g",
+      carbohydrates: "20-25g"
+    }
+  },
+
+  "French Toast": {
+    name: "Francuski tost",
+    description: "Mekani, zlatno pečeni tost namotan u jaja i mleko. Klasičan doručak sa cimetom i vanilom.",
+    ingredients: [
+      "8 kriški debljeg hleba (brioche ili chalah idealno)",
+      "4 velika jaja",
+      "1/2 šolje mleka",
+      "2 kašike šećera",
+      "1 kašičica ekstrakta vanile",
+      "1/2 kašičice cimeta",
+      "Prstohvat soli",
+      "Puter za prženje",
+      "Za seriranje:",
+      "Javorov sirup",
+      "Šećer u prahu",
+      "Sveze voće",
+      "Šlag (opciono)"
+    ],
+    instructions: [
+      "U plitkoj posudi umutite jaja, mleko, šećer, vanilu, cimet i so.",
+      "Zagrejte tiganj ili ploču na srednjoj vatri i dodajte puter.",
+      "Umočite svaku krišku hleba u smešu od jaja, okrenuvši da se natopi sa obe strane (10-15 sekundi po strani).",
+      "Stavite na zagrean tiganj i pržite 2-3 minute po strani dok ne postane zlatno braon.",
+      "Ponavljajte sa preostalim kriškama, dodajući puter po potrebi.",
+      "Poslužite odmah sa javorovim sirupom, šećerom u prahu ili svežim voćem."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: [
+      "Dan-stari hleb radi bolje jer ne upija previše tečnosti.",
+      "Ne ostavite hleb dugo u smesi - može se raspasti.",
+      "Možete pripremiti smesu uveče i ostaviti u frižideru."
+    ],
+    nutrition: {
+      calories: "280-320 kcal po porciji",
+      protein: "12-15g",
+      fat: "12-15g",
+      carbohydrates: "30-35g"
+    }
+  },
+
+  "Cornbread": {
+    name: "Kukuruzni hleb",
+    description: "Tradicionalni američki hleb od kukuruznog brašna. Sladak, vlažan i savršen uz čili ili BBQ.",
+    ingredients: [
+      "1 šolja kukuruznog brašna",
+      "1 šolja belog brašna",
+      "1/4 šolje šećera",
+      "1 kašika praška za pecivo",
+      "1 kašičica soli",
+      "1 šolja mleka",
+      "1/3 šolje rastopljenog putera",
+      "2 velika jaja",
+      "1/4 šolje meda (opciono, za slađi ukus)"
+    ],
+    instructions: [
+      "Zagrejte rernu na 200°C. Podmažite kvadratnu formu 20x20cm.",
+      "U velikoj činiji pomešajte kukuruzno brašno, belo brašno, šećer, prašak za pecivo i so.",
+      "U drugoj činiji umutite mleko, rastopljeni puter, jaja i med.",
+      "Sipajte mokre sastojke u suve sastojke i mešajte dok se ne sjedine. Ne preterivajte sa mešanjem.",
+      "Sipajte testo u pripremljenu formu.",
+      "Pecite 20-25 minuta, ili dok čačkalica izvučena iz sredine ne izađe čista.",
+      "Ostavite da se ohladi 5 minuta pre sečenja."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "25 minuta",
+    servings: 9,
+    notes: [
+      "Za bogatiji ukus, dodajte rendani sir ili secan čili.",
+      "Čuva se u frižideru do 3 dana.",
+      "Odličan uz čili con carne ili BBQ."
+    ],
+    nutrition: {
+      calories: "220-250 kcal po komadu",
+      protein: "6-8g",
+      fat: "8-10g",
+      carbohydrates: "30-35g"
+    }
+  },
+
+  "Pulled Pork": {
+    name: "Čupana svinjetina",
+    description: "Sočna, nežna svinjetina kuvana na sporom ognju i 'čupana' na niti. BBQ klasik iz američkog juga.",
+    ingredients: [
+      "2kg svinjskog ramena (Boston butt)",
+      "2 kašike smeđeg šećera",
+      "2 kašike paprike",
+      "1 kašika soli",
+      "1 kašika bibera",
+      "1 kašika belog luka u prahu",
+      "1 kašika luka u prahu",
+      "1 kašičica cumin-a",
+      "1 kašičica cimeta",
+      "Za BBQ sos:",
+      "1 šolja kečap-a",
+      "1/4 šolje jabučnog sirćeta",
+      "2 kašike smeđeg šećera",
+      "1 kašika Worcester sos",
+      "1 kašika Dijon senfa"
+    ],
+    instructions: [
+      "Pomešajte sve suve začine za rub (dry rub).",
+      "Utrljajte začine u meso i ostavite u frižideru preko noći.",
+      "Zagrejte sporni štednjak (slow cooker) ili rernu na 150°C.",
+      "Stavite meso u slow cooker ili vatrostalni sud sa poklopcem.",
+      "Kuvajte 8-10 sati dok se meso ne raspadne viluškom.",
+      "Za sos: Pomešajte sve sastojke i kuvajte 10 minuta.",
+      "Izvadite meso i 'čupajte' ga na niti pomoću 2 viljuške.",
+      "Pomešajte čupano meso sa BBQ sosom.",
+      "Poslužite na hamburger lepinjama sa coleslaw salad."
+    ],
+    prepTime: "20 minuta (+ mariniranje preko noći)",
+    cookTime: "8-10 sati",
+    servings: 8,
+    notes: [
+      "Temperatura mesa treba da dostigne 95°C za najbolje rezultate.",
+      "Može se napraviti u rerni na 150°C u pokrivenom sudu.",
+      "Ostatak se čuva u frižideru 3-4 dana."
+    ],
+    nutrition: {
+      calories: "350-400 kcal po porciji",
+      protein: "35-40g",
+      fat: "15-20g",
+      carbohydrates: "8-12g"
+    }
+  },
+
+  "Mashed Potatoes": {
+    name: "Pire krompir",
+    description: "Kremast, glatko umuten krompir sa puterom i mlekom. Savršen prilog uz meso i sos.",
+    ingredients: [
+      "1kg krompira (poželjno Russet ili Yukon Gold)",
+      "1/2 šolje toplog mleka",
+      "4 kašike putera",
+      "1 kašičica soli",
+      "1/4 kašičice bibera",
+      "2 kašike kisele pavlake (opciono)",
+      "1 vlašac, secan (za ukrašavanje)"
+    ],
+    instructions: [
+      "Oljuštite krompire i isecite na jednake komade.",
+      "Stavite u velik lonac sa slanom vodom. Kuvajte 15-20 minuta dok nisu mekani.",
+      "Ocedite krompir u cediljci.",
+      "Vratite krompir u lonac na laganoj vatri 1-2 minute da se isparava višak vlage.",
+      "Izmenite krompir sa pireštilom ili prođite kroz rende.",
+      "Postupno dodajte toplo mleko i puter, mešajući kontinuirano.",
+      "Dodajte so, biber i kiselu pavlaku po ukusu.",
+      "Umutite dok ne dobijete željenu teksturu.",
+      "Ukrasite vlašcem i poslužite odmah."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "25 minuta",
+    servings: 6,
+    notes: [
+      "Ne preterivajte sa mešanjem - može postati ljepljiv.",
+      "Koristite toplo mleko za najbolju teksturu.",
+      "Možete dodati rendani sir ili pečeni beli luk za varijacije."
+    ],
+    nutrition: {
+      calories: "180-220 kcal po porciji",
+      protein: "4-6g",
+      fat: "8-10g",
+      carbohydrates: "25-30g"
+    }
+  },
+
+  "Yakitori": {
+    name: "Jakitori",
+    description: "Japanski ražnjev od piletine mariniran u slatko-slanom tare sosu. Autentična izakaya specijalnost.",
+    ingredients: [
+      "600g pilećih bataka, bez kostiju, sečenih na kockice",
+      "8-10 bambusovih ražnjeva",
+      "Za tare sos:",
+      "1/2 šolje soja sosa",
+      "1/2 šolje mirin-a",
+      "1/4 šolje saké (ili belo vino)",
+      "2 kašike šećera",
+      "2 čena belog luka, seckana",
+      "1cm parče đumbira, rendanog",
+      "1 mladi luk, secan za ukrašavanje"
+    ],
+    instructions: [
+      "Potopite bambusove ražnjeve u vodu 30 minuta.",
+      "Za tare sos: U maloj šerpi pomešajte soja sos, mirin, saké i šećer. Kuvajte 10 minuta dok se ne zgusne za polovinu.",
+      "Dodajte beli luk i đumbir u sos, kuvajte još 2 minute. Ostavite da se ohladi.",
+      "Nađevajte kockice piletine na ražnjeve, ostavljajući malo prostora između.",
+      "Zagrejte roštilj ili grill tavu na srednjoj vatri.",
+      "Grillujte ražnjeve 3-4 minute po strani.",
+      "Četkajte tare sosom tokom grillovanja (zadnje 2 minute).",
+      "Grillujte još 1-2 minute dok ne dobije sjajan, karamelizovan izgled.",
+      "Posipajte mladim lukom i poslužite odmah."
+    ],
+    prepTime: "40 minuta (uključuje namakanje ražnjeva)",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: [
+      "Tradicionalno se koriste različiti delovi piletine - batak, file, jetra.",
+      "Tare sos se može čuvati u frižideru 1 sedmicu.",
+      "Grillovanje na drvenim ugljom daje autentičan ukus."
+    ],
+    nutrition: {
+      calories: "280-320 kcal po porciji",
+      protein: "30-35g",
+      fat: "8-12g",
+      carbohydrates: "12-15g"
+    }
+  },
+
+  "Teriyaki": {
+    name: "Terijaki",
+    description: "Japonska glazura/marinada sa soja sosom, mirinom i šećerom. Savršena za meso, ribu ili povrće.",
+    ingredients: [
+      "600g pilećeg fileta ili lososa",
+      "Za terijaki sos:",
+      "1/2 šolje soja sosa",
+      "1/4 šolje mirin-a",
+      "2 kašike saké ili belog vina",
+      "2 kašike šećera",
+      "1 kašička ren danog đumbira",
+      "2 čena belog luka, seckana",
+      "1 kašička kukuruznog skroba",
+      "Sezam i mladi luk za ukrašavanje"
+    ],
+    instructions: [
+      "Za sos: U maloj šerpi pomešajte soja sos, mirin, saké, šećer, đumbir i beli luk.",
+      "Kuvajte na laganoj vatri 5 minuta.",
+      "Pomešajte kukuruzni skrob sa 2 kašike vode i dodajte u sos.",
+      "Kuvajte još 2-3 minute dok se ne zgusne. Sklonite sa vatre.",
+      "Isecite piletinu/lososa na komade ili ostavite celo.",
+      "Zagrejte tiganj sa malo ulja na srednjoj vatri.",
+      "Pržite meso 4-5 minuta po strani.",
+      "U poslednje 2 minute, dodajte terijaki sos i okretajte meso da se prekrije.",
+      "Kuvajte dok sos ne postane sjajan i lepljiv.",
+      "Posipajte sezamom i mladim lukom pre serviranja."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: [
+      "Sos ne sme da se previše zgusne - treba da bude sirupasc.",
+      "Odlično ide sa kuvenim pirinčem i povrćem.",
+      "Sos se može napraviti unapred i čuvati 1 sedmicu."
+    ],
+    nutrition: {
+      calories: "250-300 kcal po porciji",
+      protein: "30-35g",
+      fat: "6-10g",
+      carbohydrates: "15-20g"
+    }
+  },
+
+  "Muffins": {
+    name: "Mafini",
+    description: "Mekani, vazdušasti kolačići savršeni za doručak ili užinu. Mogu biti slatki ili slani.",
+    ingredients: [
+      "2 šolje brašna",
+      "1/2 šolje šećera",
+      "2 kašičice praška za pecivo",
+      "1/2 kašičice soli",
+      "1/3 šolje rastopljenog putera",
+      "1 jaje",
+      "1 šolja mleka",
+      "1 kašičica ekstrakta vanile",
+      "Dodatci po izboru:",
+      "1 šolja borovnica, čokoladnih kapljica, ili seckanog voća"
+    ],
+    instructions: [
+      "Zagrejte rernu na 200°C. Podmažite forme za mafine ili stavite papirne kalupe.",
+      "U velikoj činiji pomešajte brašno, šećer, prašak za pecivo i so.",
+      "U drugoj činiji umutite rastopljeni puter, jaje, mleko i vanilu.",
+      "Dodajte mokre sastojke u suve sastojke. Mešajte LAGANO dok se ne sjedini - testo treba da bude grudvičasto.",
+      "Nežno umešajte dodatke (borovnice, čokolade, etc.).",
+      "Podelite testo u forme za mafine (3/4 puno).",
+      "Pecite 18-22 minute dok čačkalica ne izađe čista.",
+      "Ostavite u formi 5 minuta, zatim prebacite na rešetku.",
+      "Poslužite tople ili na sobnoj temperaturi."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "22 minuta",
+    servings: 12,
+    notes: [
+      "KLJUČNO: Ne preterivajte sa mešanjem - pravi čvrste mafine.",
+      "Mogu se zamrznuti do 3 meseca.",
+      "Za slane varijante: dodajte sir, slaninu, vlašac."
+    ],
+    nutrition: {
+      calories: "180-220 kcal po mafinu",
+      protein: "4-6g",
+      fat: "6-8g",
+      carbohydrates: "25-30g"
+    }
+  },
+
+  "General Tso's Chicken": {
+    name: "General Cao piletina",
+    description: "Slatko-ljuti kineski tač - hrskava piletina u karamelizovanom sosu sa čili. Popularna američko-kineska fuzija.",
+    ingredients: [
+      "600g pilećeg fileta, secanog na kockice",
+      "1 šolja brašna",
+      "1/2 šolje kukuruznog brašna",
+      "1 jaje",
+      "1/2 šolje vode",
+      "Ulje za duboko prženje",
+      "Za sos:",
+      "1/2 šolje soja sosa",
+      "1/3 šolje smeđeg šećera",
+      "1/4 šolje pirinčanog sirćeta",
+      "2 kašike kečap-a",
+      "1 kašika sesame ulja",
+      "3 čena belog luka, seckana",
+      "1 kašika đumbira, rendanog",
+      "2-3 suve čili paprice",
+      "2 kašike kukuruznog skroba",
+      "Mladi luk i sezam za ukras"
+    ],
+    instructions: [
+      "Za testo: Pomešajte brašno, kukuruzno brašno, jaje i vodu do glatke smese.",
+      "Umočite komade piletine u testo.",
+      "Zagrejte ulje na 180°C i pržite piletinu 4-5 minuta dok ne postane zlatno braon. Odložite.",
+      "Za sos: U wok ili velikom tiganju zagrejte malo ulja. Dodajte beli luk, đumbir i čili paprice, pržite 30 sekundi.",
+      "Dodajte soja sos, smeđi šećer, sirće, kečap i sesame ulje. Prokuvajte.",
+      "Pomešajte kukuruzni skrob sa 2 kašike vode i dodajte da se sos zgusne.",
+      "Dodajte prženu piletinu u sos i mešajte da se prekrije.",
+      "Pržite 1-2 minute dok sos ne postane sjajan.",
+      "Posipajte mladim lukom i sezamom. Poslužite sa pirinčem."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: [
+      "Ključ je u hrskavoj piletini i lepljivom, karamelizovanom sosu.",
+      "Možete podesiti ljutinu brojem čili paprica.",
+      "Najbolje poslužiti odmah da piletina ostane hrskava."
+    ],
+    nutrition: {
+      calories: "450-500 kcal po porciji",
+      protein: "30-35g",
+      fat: "18-22g",
+      carbohydrates: "40-50g"
+    }
+  },
+
+  "Peking Duck": {
+    name: "Peking Duck",
+    description: "Tradicionalna kineska specijalnost - krispy patka sa tankim palačinkama, kukumerom i hoisin sosom.",
+    ingredients: [
+      "1 cela patka (2-3kg)",
+      "2 kašike petospice mešavine",
+      "2 kašike soli",
+      "2 kašike soja sosa",
+      "2 kašike meda",
+      "1 kašika pirinčanog sirćeta",
+      "Za serviranje:",
+      "Tanke kineske palačinke (ili tortilje)",
+      "Hoisin sos",
+      "1 krastavac, secan na štapiće",
+      "4 mladog luka, seckanog",
+      "Rendani đumbir"
+    ],
+    instructions: [
+      "Operite patku i osušite. Prokoljite kožu viljuškom po celoj površini.",
+      "Pomešajte petospice, so i utrljajte u patku iznutra i spolja.",
+      "Ostavite u frižideru preko noći da se marinira.",
+      "Zagrejte rernu na 220°C.",
+      "Okačite patku na kuku u rerni ili stavite na rešetku iznad tepsije sa vodom.",
+      "Pecite 20 minuta, zatim smanjite na 180°C.",
+      "Pomešajte soja sos, med i sirće za glazuru.",
+      "Četkajte patku glazurom svakih 30 minuta tokom pečenja (ukupno 2-3 sata).",
+      "Patka je gotova kad koža postane tamno braon i hrskava.",
+      "Stavite šalju tanko mesa i kože u palačinke sa hoisin sosom, krastavcem i lukom."
+    ],
+    prepTime: "30 minuta (+ mariniranje preko noći)",
+    cookTime: "3 sata",
+    servings: 6,
+    notes: [
+      "Tradicionalno se koristi specijalna peć, ali rerna radi dovoljno dobro.",
+      "Ključ je u hrskavoj koži - česta glazura je važna.",
+      "Može se naručiti i u kineskim restoranima."
+    ],
+    nutrition: {
+      calories: "400-500 kcal po porciji",
+      protein: "25-30g",
+      fat: "25-35g",
+      carbohydrates: "15-20g"
+    }
+  },
+
+  "Wontons": {
+    name: "Wontons",
+    description: "Kineski kuvani oblici od tankog testa punjeni mesom ili povrćem. Mogu se servirati u supi ili prženo.",
+    ingredients: [
+      "1 pakovanje wonton korica (30-40 komada)",
+      "Za punjenje:",
+      "300g umljevene svinjetine ili piletine",
+      "2 mladoa luka, sitno seckana",
+      "2 čena belog luka, seckana",
+      "1 kašika đumbira, rendanog",
+      "1 kašika soja sosa",
+      "1 kašičica sesame ulja",
+      "1 kašičica kukuruznog skroba",
+      "1/2 kašičice soli",
+      "1/4 kašičice bibera",
+      "Za supu (opciono):",
+      "1.5L pileće supe",
+      "2 kašike soja sosa",
+      "1 kašika sesame ulja",
+      "Mladi luk za ukras"
+    ],
+    instructions: [
+      "Za punjenje: Pomešajte meso, mladi luk, beli luk, đumbir, soja sos, sesame ulje, kukuruzni skrob, so i biber.",
+      "Stavite 1 kašičicu punjenja u centar wonton korice.",
+      "Navlažite krajeva korice vodom.",
+      "Savijte dijagonalno u trougao, zatim spojite krajnje uglove.",
+      "Ponavljajte dok ne potrošite sve sastojke.",
+      "Za kuvano: Stavite u ključalu supu na 4-5 minuta dok ne isplivaju.",
+      "Za prženo: Pržite u vrućem ulju 2-3 minute dok ne postanu zlatne.",
+      "Za supu: Prokuvajte pileću supu sa soja sosom i sesame uljem.",
+      "Dodajte wontons i kuvajte 5 minuta.",
+      "Posipajte mladim lukom i poslužite."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "10 minuta",
+    servings: "30-40 wontons",
+    notes: [
+      "Wonton korice se mogu naći u azijskim prodavnicama.",
+      "Mogu se zamrznuti na tepsiji, pa prebaciti u kese.",
+      "Prženi wontons su odlični sa slatko-kiselim sosom."
+    ],
+    nutrition: {
+      calories: "25-30 kcal po wonton-u",
+      protein: "2-3g",
+      fat: "1-2g",
+      carbohydrates: "2-3g"
+    }
+  },
+
+  "Mapo Tofu": {
+    name: "Mapo Tofu",
+    description: "Sečuanska klasika - svilenkasti tofu u ljutom, aromatičnom sosu sa mlevenim mesom. Numbing heat effect.",
+    ingredients: [
+      "400g mekanog tofu, sečenog na kockice",
+      "100g mlevene svinjetine ili govedine",
+      "2 kašike doubanjiang (fermented bean paste)",
+      "2 kašike soja sosa",
+      "1 kašika shaoxing vina (ili suvog sherry)",
+      "1 kašička šećera",
+      "1/2 šolje pileće supe ili vode",
+      "2 kašike ulja",
+      "3 čena belog luka, seckana",
+      "1 kašika đumbira, rendanog",
+      "2-3 suve čili paprice",
+      "1 kašička Sečuan peppercorn-a, zdrobljena",
+      "2 kašičice kukuruznog skroba",
+      "2 mladoa luka, seckana"
+    ],
+    instructions: [
+      "Potopite tofu u toplu slanu vodu 5 minuta da postane čvršći. Ocedite.",
+      "U wok-u zagrejte ulje na jakoj vatri.",
+      "Dodajte mleveno meso i pržite dok ne omrčani, oko 3-4 minuta.",
+      "Dodajte beli luk, đumbir i čili paprice. Pržite 30 sekundi.",
+      "Dodajte doubanjiang pastu i pržite još 1 minut dok ne mirise.",
+      "Dodajte soja sos, vino, šećer i supu. Prokuvajte.",
+      "Nežno dodajte kockice tofu i smanjite vatru.",
+      "Pomešajte kukuruzni skrob sa 2 kašike vode i dodajte da se zgusne.",
+      "Kuvajte 3-4 minuta da se ukusi sjedine.",
+      "Posipajte zdrobljenim Sečuan peppercorn-om i mladim lukom.",
+      "Poslužite sa jasmine pirinčem."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: [
+      "Doubanjiang je ključni sastojak - može se naći u azijskim prodavnicama.",
+      "Sečuan peppercorn daje karakterističan 'numbing' efekat.",
+      "Koristite mekši tofu za autentičnu teksturu."
+    ],
+    nutrition: {
+      calories: "200-250 kcal po porciji",
+      protein: "15-18g",
+      fat: "12-15g",
+      carbohydrates: "8-12g"
+    }
+  },
+
+  "Bagel": {
+    name: "Begl",
+    description: "Jevrejski krągla hleb, kuvan pre pečenja. Savršen za doručak sa kremom sir ili lososom.",
+    ingredients: [
+      "4 šolje hleba brašna",
+      "2 kašičice kvasa",
+      "2 kašike šećera",
+      "2 kašičice soli",
+      "1 1/4 šolje tople vode",
+      "1 jaje za četkanje",
+      "Sezam ili mak za posipanje (opciono)",
+      "1 kašika šećera za vodu"
+    ],
+    instructions: [
+      "U velikoj činiji pomešajte brašno, kvas, šećer i so.",
+      "Dodajte toplu vodu i mesite 8-10 minuta do glatkog testa.",
+      "Stavite testo u podmašenu činiju, pokrijte i ostavite da naraste 1 sat.",
+      "Podelite testo na 8 delova. Oblikujte svaki u loptu.",
+      "Protisnite prst kroz centar svake lopte i oblikujte bagel.",
+      "Ostavite da narastu još 20 minuta.",
+      "Zagrejte rernu na 220°C. Prokuvajte veliku šerpu vode sa šećerom.",
+      "Kuvajte bagele u vreloj vodi 1-2 minuta po strani.",
+      "Stavite na tepsiju, četkajte jajetom i posipajte sezamom.",
+      "Pecite 20-25 minuta dok ne postanu zlatno braon."
+    ],
+    prepTime: "30 minuta (+ 1.5 sat za dizanje)",
+    cookTime: "30 minuta",
+    servings: 8,
+    notes: [
+      "Kuvanje pre pečenja daje bagelu karakterističnu teksturu.",
+      "Mogu se zamrznuti posle pečenja.",
+      "Tradicionalno se jedu sa krem sirom i dimljenim lososom."
+    ],
+    nutrition: {
+      calories: "280-320 kcal po bagelu",
+      protein: "10-12g",
+      fat: "2-4g",
+      carbohydrates: "55-60g"
+    }
+  },
+
+  "Scones": {
+    name: "Skons",
+    description: "Britanski brza kolač, sličan American biscuit. Tradicionalno sa clotted cream i džemom.",
+    ingredients: [
+      "2 šolje brašna",
+      "3 kašike šećera",
+      "1 kašika praška za pecivo",
+      "1/2 kašičice soli",
+      "6 kašika hladnog putera, sečenog na kockice",
+      "1/2 šolje hladnog mleka",
+      "1 jaje",
+      "1 kašičica ekstrakta vanile",
+      "1/2 šolje grožđica ili borovnica (opciono)"
+    ],
+    instructions: [
+      "Zagrejte rernu na 200°C. Obložite tepsiju pečenjskim papirom.",
+      "U velikoj činiji pomešajte brašno, šećer, prašak za pecivo i so.",
+      "Dodajte hladne kockice putera i utrljajte prstima dok ne liči na krupne mrvice.",
+      "U drugoj činiji umutite mleko, jaje i vanilu.",
+      "Napravite udubinu u suvim sastojcima i sipajte mokre sastojke.",
+      "Nežno mešajte dok se ne sjedini. Dodajte grožđice ako koristite.",
+      "Prebacite testo na pobrašnjavanu površinu i nežno oblikujte disk debljine 2cm.",
+      "Secite u trouglove ili koristite kalup za kolače.",
+      "Stavite na tepsiju i pecite 15-18 minuta dok ne postanu zlatni.",
+      "Poslužite tople sa džemom i pavlakom."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "18 minuta",
+    servings: 8,
+    notes: [
+      "Ključ je u hladnim sastojcima - ne preterivajte sa mešanjem.",
+      "Mogu se napraviti slani sa sirom i vlašcem.",
+      "Najbolji su kada se jedu tople."
+    ],
+    nutrition: {
+      calories: "250-300 kcal po skonsu",
+      protein: "6-8g",
+      fat: "12-15g",
+      carbohydrates: "30-35g"
+    }
+  },
+
+  "Smoothie": {
+    name: "Smuti",
+    description: "Osvežavajući napitak od blendovanog voća, povrća i tečnosti. Zdrav i hranjiv.",
+    ingredients: [
+      "Bazni smuti:",
+      "1 banana, smrznuta",
+      "1 šolja mešanog voća (jagode, borovnice, mango)",
+      "1/2 šolje jogurta ili mleka",
+      "1 kašika meda ili javorov sirup",
+      "1/2 šolje leda",
+      "Dodatci po izboru:",
+      "1 kašika chia semena",
+      "1/2 šolje spanaća",
+      "1 kašika protein praška",
+      "1 kašika badmovog putera",
+      "1/2 avokado za kremoznost"
+    ],
+    instructions: [
+      "Stavite sve sastojke u blender.",
+      "Blendajte na jakoj brzini 1-2 minuta dok ne postane glatko.",
+      "Dodajte više tečnosti ako je pregust, ili led ako je pretanak.",
+      "Probajte i dodajte med po potrebi za slatkoću.",
+      "Sipajte u velike čaše.",
+      "Dekorisajte sa svežim voćem, orasima ili semenkama.",
+      "Poslužite odmah sa slamčicama."
+    ],
+    prepTime: "5 minuta",
+    cookTime: "0 minuta",
+    servings: 2,
+    notes: [
+      "Smrznuto voće čini smuti gušći bez dodavanja leda.",
+      "Experiment sa različitim kombinacijama voća.",
+      "Dodatak spanaća povećava nutritivnu vrednost bez promene ukusa."
+    ],
+    nutrition: {
+      calories: "200-300 kcal po šoli",
+      protein: "8-15g (sa protein praškom)",
+      fat: "2-8g",
+      carbohydrates: "30-45g"
+    }
+  },
+
+  "Muesli": {
+    name: "Mjusli",
+    description: "Švajcarsku mešavina ovsenih pahuljica, orašastog voća i suvog voća. Zdrav doručak.",
+    ingredients: [
+      "2 šolje ovsenih pahuljica",
+      "1/2 šolje seckanih oraha",
+      "1/2 šolje seckanih lešnika",
+      "1/4 šolje semena suncokreta",
+      "1/4 šolje tikvinih semena",
+      "1/2 šolje suvog voća (grožđice, kajsije, datule)",
+      "2 kašike chia semena",
+      "1 kašičica cimeta",
+      "Za serviranje:",
+      "Mleko, jogurt ili biljno mleko",
+      "Sveže voće",
+      "Med po ukusu"
+    ],
+    instructions: [
+      "U velikoj činiji pomešajte ovsene pahuljice, sve orahe, semena i cimet.",
+      "Dodajte suve voće i chia semena.",
+      "Dobro promešajte sve sastojke.",
+      "Čuvajte u zatvorenim tegla do 1 meseca.",
+      "Za serviranje: Stavite 1/2 šolje mešavine u činiju.",
+      "Dodajte mleko ili jogurt po ukusu.",
+      "Ostavite 5 minuta da omekne.",
+      "Dodajte sveže voće i med.",
+      "Možete pripremiti uveče i ostaviti u frižideru preko noći."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "0 minuta",
+    servings: 10,
+    notes: [
+      "Tradicionalno se priprema uveče i jede ujutro.",
+      "Možete dodati rendanu jabuku za autentičan ukus.",
+      "Čuva se u frižideru do 1 meseca."
+    ],
+    nutrition: {
+      calories: "300-350 kcal po porciji",
+      protein: "10-12g",
+      fat: "15-20g",
+      carbohydrates: "35-40g"
+    }
+  },
+
+  "Chicken Alfredo": {
+    name: "Pileća alfredo",
+    description: "Kremasta italijanska pasta sa pilećinom u bogatom alfredo sosu od putera i parmezana.",
+    ingredients: [
+      "400g fettuccine paste",
+      "500g pilećeg fileta, sečenog na trake",
+      "1/2 šolje putera",
+      "1 šolja pavlake za kuvanje",
+      "1 šolja rendanog parmezan sira",
+      "3 čena belog luka, seckana",
+      "So i biber po ukusu",
+      "2 kašike maslinovog ulja",
+      "Vlašac za ukrašavanje"
+    ],
+    instructions: [
+      "Skuvajte fettuccine po uputstvu na pakovanju do al dente. Ocedite, sačuvajte 1 šolju vode od kuvanja.",
+      "Začinite piletinu solju i biberom. Zagrejte ulje u velikoj tavi.",
+      "Pržite piletinu 6-7 minuta dok ne postane zlatna. Izvadite i odložite.",
+      "U istoj tavi rastopite puter na srednjoj vatri.",
+      "Dodajte beli luk i pržite 1 minut dok ne mirisnu.",
+      "Dodajte pavlaku i prokuvajte.",
+      "Smanjite vatru i dodajte parmezan, mešajući dok se ne rastopi.",
+      "Ako je sos pregust, dodajte vodu od paste.",
+      "Vratite piletinu u sos, dodajte skuvanu pastu.",
+      "Mešajte nežno da se sve pomiša. Posipajte vlašcem."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "20 minuta",
+    servings: 4,
+    notes: [
+      "Ne kuvajte sos na jakoj vatri - može se gruvoriti.",
+      "Sveže rendani parmezan daje najbolji ukus.",
+      "Možete dodati brokoli ili gljive za dodatno povrće."
+    ],
+    nutrition: {
+      calories: "650-750 kcal po porciji",
+      protein: "35-40g",
+      fat: "35-45g",
+      carbohydrates: "45-55g"
+    }
+  },
+
+  "Chicken Kiev": {
+    name: "Pileća kijev",
+    description: "Pileći file punjen puter-začin smesom, pohovano i prženo. Elegantno jelo sa iznenađujućim efektom.",
+    ingredients: [
+      "4 pileća fileta",
+      "100g putera, omekšanog",
+      "3 čena belog luka, sitno seckana",
+      "2 kašike seckanog vlašca",
+      "1 kašike seckanog mirođije",
+      "So i biber po ukusu",
+      "1 šolja brašna",
+      "2 jaja, umućena",
+      "2 šolje prezle",
+      "Ulje za duboko prženje"
+    ],
+    instructions: [
+      "Pomešajte omekšali puter, beli luk, vlašac, mirođiju, so i biber.",
+      "Oblikujte smesu u 4 štapića i stavite u zamrzivač na 30 minuta.",
+      "Pileće fileje istanjite na 1cm debljine između folije.",
+      "Začinite fileje solju i biberom.",
+      "Stavite po jedan štapić putera u centar svakog fileta.",
+      "Uvijte čvrsto, zavijajte krajeve unutra.",
+      "Umočite u brašno, zatim u jaja, pa u prezle.",
+      "Ohladite u frižideru 30 minuta.",
+      "Zagrejte ulje na 180°C.",
+      "Pržite 8-10 minuta dok ne postanu zlatno braon.",
+      "Ostavite da se odmore 5 minuta pre serviranja."
+    ],
+    prepTime: "45 minuta (+ hlađenje)",
+    cookTime: "10 minuta",
+    servings: 4,
+    notes: [
+      "Važno je dobro zaviti da se puter ne iscedi.",
+      "Hlađenje pomaže da se pohovanje držu na mestu.",
+      "Pažljivo prosecite - vreli puter će iscuriti."
+    ],
+    nutrition: {
+      calories: "450-550 kcal po porciji",
+      protein: "35-40g",
+      fat: "25-35g",
+      carbohydrates: "15-25g"
+    }
+  },
+
+  "Buffalo Wings": {
+    name: "Bafalo krilca",
+    description: "Klasična američka pilea krilca u ljutom Buffalo sosu. Tradicionalno sa celerom i blue cheese dip-om.",
+    ingredients: [
+      "1kg pilećih krilaca, podeljenа na 2 dela",
+      "1/2 šolje hot sauce (Frank's RedHot ili sličan)",
+      "1/2 šolje rastopljenog putera",
+      "1 kašika jabučnog sirćeta",
+      "1/4 kašičice belog luka u prahu",
+      "1/8 kašičice kajenske paprike",
+      "Za blue cheese dip:",
+      "1/2 šolje majoneza",
+      "1/4 šolje kisele pavlake",
+      "100g blue cheese, mrvljenog",
+      "1 kašika limuntovog soka",
+      "Stabljike celera za serviranje"
+    ],
+    instructions: [
+      "Zagrejte rernu na 220°C ili pripremite roštilj.",
+      "Osušite krilca papirnim ubrusima i začinite solju.",
+      "Pecite u rerni 45-50 minuta, okretajući jednom.",
+      "Za sos: Pomešajte hot sauce, rastopljeni puter, sirće, beli luk u prahu i kajensku papriku.",
+      "Za dip: Pomešajte majonez, kiselu pavlaku, blue cheese i limuntov sok.",
+      "Kada su krilca gotova i hrskava, prebacite u veliku činiju.",
+      "Dodajte Buffalo sos i mešajte da se prekrije.",
+      "Poslužite odmah sa celerom i blue cheese dip-om."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "50 minuta",
+    servings: 4,
+    notes: [
+      "Ključ je u hrskavoj koži - ne prekrivajte tokom pečenja.",
+      "Možete kontrolisati ljutinu količinom hot sauce-a.",
+      "Tradicionalno se jedu rukama sa mnogim salveta."
+    ],
+    nutrition: {
+      calories: "400-500 kcal po porciji",
+      protein: "30-35g",
+      fat: "25-35g",
+      carbohydrates: "2-5g"
+    }
+  },
+
+  "Biscuits and Gravy": {
+    name: "Keks sa sosom",
+    description: "Južnjački američki doručak - mekani buttermilk keksovi sa bogatim sausage sosom.",
+    ingredients: [
+      "Za keksove:",
+      "2 šolje brašna",
+      "1 kašika praška za pecivo",
+      "1 kašičica soli",
+      "1 kašika šećera",
+      "6 kašika hladnog putera",
+      "3/4 šolje buttermilk-a",
+      "Za sos:",
+      "400g breakfast sausage-a",
+      "1/4 šolje brašna",
+      "3 šolje mleka",
+      "So i crni biber po ukusu",
+      "1/4 kašičice cayenne paprike"
+    ],
+    instructions: [
+      "Za keksove: Zagrejte rernu na 220°C.",
+      "Pomešajte brašno, prašak za pecivo, so i šećer.",
+      "Umešajte hladan puter dok ne postane kao krupne mrvice.",
+      "Dodajte buttermilk i nežno mešajte dok se ne sjedini.",
+      "Razvaljajte na 2cm debljine i secite krugove.",
+      "Pecite 15-17 minuta dok ne postanu zlatni.",
+      "Za sos: U velikoj tavi propržite sausage dok ne omrčani i izmrvite se.",
+      "Posipajte brašnom preko mesa i mešajte 1 minut.",
+      "Postupno dodajte mleko, mešajući konstantno.",
+      "Kuvajte 5-7 minuta dok se ne zgusne. Začinite.",
+      "Poslužite sos preko presečenih toplih keksova."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "25 minuta",
+    servings: 6,
+    notes: [
+      "Buttermilk čini keksove tangier i tender.",
+      "Sos mora biti dovoljno gust da se drži na keksu.",
+      "Tradicionalno se jede kao obilazni doručak."
+    ],
+    nutrition: {
+      calories: "500-600 kcal po porciji",
+      protein: "15-20g",
+      fat: "30-40g",
+      carbohydrates: "40-50g"
+    }
+  },
+
+  "Ramen Traditional": {
+    name: "Ramen",
+    description: "Japanska supa sa nudlama u bogatom buljon-u. Comfort food sa duboko razvijenim ukusima.",
+    ingredients: [
+      "Za buljon:",
+      "1kg svinjskih kostiju",
+      "500g pilećih kostiju",
+      "1 luk, prepolovljen",
+      "3cm đumbira",
+      "4 čena belog luka",
+      "Za ramen:",
+      "400g svežih ramen nudli",
+      "4 jaja, kuvana 6-7 minuta",
+      "200g char siu svinjetine (ili pečene)",
+      "4 mladog luka, seckanog",
+      "Nori alge, seckane",
+      "Kukuruz (opciono)",
+      "Za tare (base):",
+      "4 kašike miso paste ili soja sosa",
+      "2 kašike sesame ulja",
+      "1 kašika mirin-a"
+    ],
+    instructions: [
+      "Za buljon: Blanšujte kosti u ključaloj vodi 5 minuta, ocedite.",
+      "Stavite kosti u sporý štednjak sa 3L vode, lukom, đumbirom, belim lukom.",
+      "Kuvajte 12-24 sata na laganoj vatri (ili 4-6 sati u običnom loncu).",
+      "Procedte buljon - treba da bude bogat i mlečno-beo.",
+      "Skuvajte jaja 6-7 minuta, stavite u ledenu vodu. Oljuštite.",
+      "Za serviranje: Stavite po 1 kašiku tare u svaku duboku činiju.",
+      "Dodajte vreli buljon i umešajte.",
+      "Skuvajte nudli 2-3 minuta, ocedite i dodajte u buljon.",
+      "Dodajte prepolovljeno jaje, isečenu svinjetinu, mladi luk, nori.",
+      "Poslužite odmah sa štapićima."
+    ],
+    prepTime: "30 minuta (+ dugo kuvanje buljona)",
+    cookTime: "4-24 sata za buljon",
+    servings: 4,
+    notes: [
+      "Prava ramen supa zahteva dugo kuvanje buljona.",
+      "Možete koristiti instant buljon za brže pripremanje.",
+      "Tradicionalni toppings se mogu menjati po ukusu."
+    ],
+    nutrition: {
+      calories: "550-650 kcal po porciji",
+      protein: "25-30g",
+      fat: "20-25g",
+      carbohydrates: "60-70g"
+    }
+  },
+
+  "Udon": {
+    name: "Udon",
+    description: "Debele japanske nudle od pšeničnog brašna u toplu buljon-u. Jednostavno i utešno jelo.",
+    ingredients: [
+      "400g svežih ili smrznutih udon nudli",
+      "1L dashi buljona (ili pileća supa)",
+      "3 kašike soja sosa",
+      "2 kašike mirin-a",
+      "1 kašika šećera",
+      "200g tempure ili pohovane svinjetine",
+      "2 mladog luka, seckanog",
+      "1 komad kamaboko (riblje kolačice)",
+      "Nori alge",
+      "1 kašika rendanog đumbira"
+    ],
+    instructions: [
+      "Zagrejte dashi buljon u velikom loncu.",
+      "Dodajte soja sos, mirin i šećer. Probajte i podesiti ukus.",
+      "Skuvajte udon nudli po uputstvu (obično 8-10 minuta za smrznute).",
+      "Ocedite nudli i podelite u duboke činije.",
+      "Prelijte vreli buljon preko nudli.",
+      "Dodajte tempuru ili meso, mladi luk, kamaboko, nori.",
+      "Posipajte rendanim đumbirom.",
+      "Jede se štapićima uz kašiku za buljon.",
+      "Možete dodati pohovano jaje ili povrće."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: [
+      "Udon nudli su guste i žvakave - ne kuvajte ih previše.",
+      "Dashi se može napraviti od kombu algi i bonito pahuljica.",
+      "Topljsi obrok za hladne dane."
+    ],
+    nutrition: {
+      calories: "400-500 kcal po porciji",
+      protein: "15-20g",
+      fat: "8-12g",
+      carbohydrates: "70-80g"
+    }
+  },
+
+  "Tonkatsu": {
+    name: "Tonkatsu",
+    description: "Panirani i duboko pržen svinjski šnicl. Hrskav spolja, sočan iznutra sa tonkatsu sosom.",
+    ingredients: [
+      "4 svinjska šnicla (500-600g)",
+      "1 šolja brašna",
+      "2 jaja, umućena",
+      "2 šolje panko prezle",
+      "Ulje za duboko prženje",
+      "Za tonkatsu sos:",
+      "4 kašike kečap-a",
+      "2 kašike Worcester sos",
+      "1 kašika soja sosa",
+      "1 kašika meda",
+      "1/2 kašičice đumbira u prahu",
+      "Kupus salata i pirinač za serviranje"
+    ],
+    instructions: [
+      "Istanjite šnicle na 1cm debljine i zasecite ivice da se ne savijaju.",
+      "Posolite i popiberite šnicle, ostavite 15 minuta.",
+      "Za sos: Pomešajte sve sastojke za tonkatsu sos.",
+      "Zagrejte ulje na 170°C.",
+      "Umočite šnicle u brašno, zatim u jaja, pa u panko prezle.",
+      "Dobro pritisnite prezle da se drže.",
+      "Pržite 4-5 minuta po strani dok ne postanu zlatno braon.",
+      "Stavite na papir da se ocedi masnoća.",
+      "Isecite na trake i poslužite sa kupus salatom.",
+      "Prelijte tonkatsu sosom pre serviranje."
+    ],
+    prepTime: "25 minuta",
+    cookTime: "10 minuta",
+    servings: 4,
+    notes: [
+      "Panko prezle daju hrskaviju teksturu od običnih prezli.",
+      "Ne okretajte često tokom prženja.",
+      "Poslužuje se sa finim kupusom i pirinčem."
+    ],
+    nutrition: {
+      calories: "500-600 kcal po porciji",
+      protein: "30-35g",
+      fat: "25-35g",
+      carbohydrates: "30-40g"
+    }
+  },
+
+  "Soba": {
+    name: "Soba",
+    description: "Japanske nudli od heljdine brašna. Mogu se jesti tople u buljon-u ili hladne sa dipping sosom.",
+    ingredients: [
+      "400g soba nudli (heljda nudle)",
+      "Za hladno serviranje:",
+      "1/2 šolje soja sosa",
+      "1/4 šolje mirin-a",
+      "1/4 šolje dashi buljona",
+      "1 kašika šećera",
+      "Za toplo serviranje:",
+      "1L dashi buljona",
+      "3 kašike soja sosa",
+      "2 kašike mirin-a",
+      "Toppings:",
+      "Mladi luk, nori, tempura, wasabi"
+    ],
+    instructions: [
+      "Skuvajte soba nudli u ključaloj vodi 4-5 minuta (ne prekuvavajte).",
+      "Za hladno: Ocedite nudli i isplaknite hladnom vodom da se ohlade.",
+      "Pomešajte sastojke za dipping sos.",
+      "Poslužite hladne nudli sa sosom za umakanje.",
+      "Za toplo: Ocedite nudli i stavite u duboke činije.",
+      "Zagrejte dashi sa soja sosom i mirin-om.",
+      "Prelijte topli buljon preko nudli.",
+      "Dodajte željene toppings - mladi luk, nori, tempura.",
+      "Jede se štapićima, glasno usrkavanje je prihvatljivo."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "10 minuta",
+    servings: 4,
+    notes: [
+      "Soba nudli imaju orzački ukus od heljde.",
+      "Hladnu verziju tradicionalno jedem leti.",
+      "Ne kuvajte predugfo - mogu postati kašaste."
+    ],
+    nutrition: {
+      calories: "350-400 kcal po porciji",
+      protein: "12-15g",
+      fat: "2-4g",
+      carbohydrates: "70-75g"
+    }
+  },
+
+  "Bento": {
+    name: "Bento",
+    description: "Japanska lunch kutija sa pirinčem i različitim prilog. Izbalansiran, praktičan obrok.",
+    ingredients: [
+      "2 šolje kuvenog pirinča",
+      "200g pečene piletine ili lososa",
+      "2 jaja za tamagoyaki (japanska kajgana)",
+      "1 šolja kuvanja povrća (brokoli, šargarepa)",
+      "4 japanse kišele šljive (umeboshi)",
+      "Malo seckane nori alge",
+      "Soja sos za tamagoyaki:",
+      "2 jaja",
+      "1 kašika šećera",
+      "1/2 kašičice soja sosa",
+      "1/2 kašičice mirin-a"
+    ],
+    instructions: [
+      "Skuvajte pirinač i ostavite da se ohladi.",
+      "Za tamagoyaki: Umutite jaja sa šećerom, soja sosom i mirin-om.",
+      "Napravite tanku kajganu u pravougaonoj tavi, savijte u rolo.",
+      "Isecite na komade.",
+      "Skuvajte povrće na pari dok ne omekne, začinite malo.",
+      "Isecite pečenu piletinu na komade.",
+      "U bento kutiju stavite pirinač kao bazu.",
+      "Organizovano rasporedite kajganu, meso, povrće.",
+      "Dodajte umeboshi šljive i posipajte nori.",
+      "Zatvorite i nosite za lunch."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "20 minuta",
+    servings: 2,
+    notes: [
+      "Ključ je u balasnim bojama i ukusima.",
+      "Sve komponente treba da budu na sobnoj temperaturi.",
+      "Tradicionalno se jede bez grejanja."
+    ],
+    nutrition: {
+      calories: "450-550 kcal po bento kutiji",
+      protein: "20-25g",
+      fat: "10-15g",
+      carbohydrates: "60-70g"
+    }
+  },
+
+  "Hot Dogs": {
+    name: "Hot Dogs",
+    description: "Klasični američki fast food - viršla u meknoj lepijni sa različitim dodacima. Brza i popularna hrana.",
+    ingredients: [
+      "6 hot dog viršli",
+      "6 hot dog lepinja",
+      "Senf",
+      "Kečap",
+      "Sitno secan luk",
+      "Kišeli krastavci, seckani",
+      "Chili con carne (opciono)",
+      "Rendani sir (opciono)",
+      "Relish (pickled cucumber relish)",
+      "Puter za lepinje"
+    ],
+    instructions: [
+      "Zagrejte roštilj ili veliku tavu na srednjoj vatri.",
+      "Zasecite viršle dijagonalno da se ne pucaju.",
+      "Grillujte viršle 5-7 minuta, okretajući često dok ne postanu zlatne.",
+      "Prepolovite lepinje i blago ih zagrejte na grilu ili u tavi.",
+      "Namazite lepinje puterin (opciono).",
+      "Stavite po jednu viršlu u svaku lepitiju.",
+      "Dodajte željene dodatke - senf, kečap, luk, krastavce.",
+      "Možete dodati chili ili sir za Chicago style.",
+      "Poslužite odmah sa čipsim ili pomfritom."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "10 minuta",
+    servings: 6,
+    notes: [
+      "Za autentičan ukus, koristite dobke kvaliteten hot dog viršle.",
+      "Chicago style uključuje sport peppers i celery salt.",
+      "New York style često ima senf i kiseli krastavac."
+    ],
+    nutrition: {
+      calories: "300-400 kcal po hot dog-u",
+      protein: "12-15g",
+      fat: "15-25g",
+      carbohydrates: "25-30g"
+    }
+  },
+
+  "Jambalaya": {
+    name: "Jambalaya",
+    description: "Začinjeno kreolsko jelo iz Luisijane sa pirinčem, mesom, morskim plodovima i povrćem.",
+    ingredients: [
+      "2 šolje jasmine pirinča",
+      "300g andouille kobasice, seckane",
+      "300g pilećih bataka, isečenih",
+      "300g račića, očišćenih",
+      "1 luk, secan",
+      "1 paprika, seckana",
+      "3 stabla celera, seckana",
+      "3 čena belog luka, seckana",
+      "1 konzerva paradajza (400g)",
+      "3 šolje pileće supe",
+      "2 kašike kreolskog začina",
+      "1 kašičica kajenske paprike",
+      "2 lovorova lista",
+      "3 mladog luka, seckana"
+    ],
+    instructions: [
+      "U velikom loncu ili Dutch oven-u zagrejte ulje na srednjoj vatri.",
+      "Propržite kobasice dok ne postanu braon, izvadite.",
+      "U istom ulju pržite piletinu dok ne postane zlatna, izvadite.",
+      "Dodajte luk, papriku, celer i kuvajte 5 minuta.",
+      "Dodajte beli luk, kuvajte još 1 minut.",
+      "Dodajte paradajz, kreolski začin, kajensku papriku, lovorov list.",
+      "Vratite kobasice i piletinu, dodajte pirinač.",
+      "Dodajte pileću supu i prokuvajte.",
+      "Smanjite vatru, pokrijte i kuvajte 18-20 minuta.",
+      "U poslednje 5 minuta dodajte račiće.",
+      "Posipajte mladim lukom pre serviranja."
+    ],
+    prepTime: "25 minuta",
+    cookTime: "35 minuta",
+    servings: 6,
+    notes: [
+      "Ne mešajte često tokom kuvanja - pirinač može postati lepljiv.",
+      "Možete dodati školjke ili rak za bogatiji ukus.",
+      "Kreolski začin možete napraviti ili kupiti gotov."
+    ],
+    nutrition: {
+      calories: "450-550 kcal po porciji",
+      protein: "25-30g",
+      fat: "15-20g",
+      carbohydrates: "50-60g"
+    }
+  },
+
+  "Gumbo": {
+    name: "Gumbo",
+    description: "Gusta kreolska čorba iz Luisijane. Kombinacija francuskih, španskih, afričkih i indijanskih kuhinjskih uticaja.",
+    ingredients: [
+      "1/2 šolje brašna",
+      "1/2 šolje ulja",
+      "1 luk, secan",
+      "1 paprika, seckana",
+      "3 stabla celera, seckana",
+      "3 čena belog luka, seckana",
+      "300g andouille kobasice",
+      "300g pilećih bataka",
+      "2L pileće supe",
+      "1 konzerva paradajza (400g)",
+      "2 kašike kreolskog začina",
+      "1 kašičica timijana",
+      "2 lovorova lista",
+      "300g okre, seckane",
+      "200g račića (opciono)",
+      "Kuvan pirinač za serviranje"
+    ],
+    instructions: [
+      "Napravite roux: U velikom loncu mešajte brašno i ulje na srednjoj vatri 20-30 minuta dok ne postane tamno braon.",
+      "Dodajte luk, papriku, celer ('holy trinity') i kuvajte 5 minuta.",
+      "Dodajte beli luk, kobasice i piletinu, pržite 5 minuta.",
+      "Postupno dodajte pileću supu, mešajući da se ne prave grudvice.",
+      "Dodajte paradajz, kreolski začin, timijan, lovorov list.",
+      "Prokuvajte, smanjite vatru i kuvajte 1 sat.",
+      "Dodajte okru i kuvajte još 30 minuta.",
+      "U poslednje 10 minuta dodajte račiće (ako koristite).",
+      "Uklonite lovorov list, začinite po ukusu.",
+      "Poslužite preko kuvenog pirinča."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "2 sata",
+    servings: 8,
+    notes: [
+      "Roux je ključan - mora biti tamno braon za pravi ukus.",
+      "Okra pomaže da se čorba zgusne prirodno.",
+      "Može se napraviti dan ranije - ukus postaje bolji."
+    ],
+    nutrition: {
+      calories: "350-400 kcal po porciji",
+      protein: "20-25g",
+      fat: "15-20g",
+      carbohydrates: "30-35g"
+    }
+  },
+
+  "Philly Cheesesteak": {
+    name: "Philly Cheesesteak",
+    description: "Ikonični sendvič iz Filadelfije sa tanko sečenim steakom, lukom i rastopljenim sirom.",
+    ingredients: [
+      "600g ribeye steak-a, smrznutog i tanko sečenog",
+      "4 hoagie lepinje ili dugačka bela lepinja",
+      "2 luka, tanko seckana",
+      "8 šajbi Provolone sira ili Cheez Whiz",
+      "4 kašike ulja",
+      "So i biber po ukusu",
+      "Opciono: zelena paprika, gljive"
+    ],
+    instructions: [
+      "Stavite ribeye u zamrzivač 30 minuta da bude čvršći.",
+      "Tanko isecite meso na najljuće moguće trake.",
+      "Zagrejte veliku tavu ili griddle na jakoj vatri.",
+      "Zagrejte lepinje u rerni.",
+      "Dodajte ulje u tavu, zatim luk. Pržite 5-7 minuta dok ne omekne.",
+      "Gurnite luk na jednu stranu tave.",
+      "Dodajte tanko meso na drugu stranu i brzo pržite 1-2 minute.",
+      "Posolite i popiberite meso.",
+      "Pomešajte meso sa lukom.",
+      "Podelite smesu na 4 dela i stavite po 2 šajbe sira na svaki deo.",
+      "Kada se sir rastopi, stavite u zagrejane lepinje.",
+      "Poslužite odmah."
+    ],
+    prepTime: "40 minuta (uključuje zamrzavanje mesa)",
+    cookTime: "10 minuta",
+    servings: 4,
+    notes: [
+      "Ključ je u tanko sečenom mesu - zamrznuto je lakše seći.",
+      "Tradicionalno se koristi Cheez Whiz, ali Provolone je popularan.",
+      "Jede se 'wit' (sa lukom) ili 'wit-out' (bez luka)."
+    ],
+    nutrition: {
+      calories: "650-750 kcal po sendviču",
+      protein: "35-40g",
+      fat: "35-45g",
+      carbohydrates: "40-50g"
+    }
+  },
+
+  "Dan Dan Nudli": {
+    name: "Dan Dan Nudli",
+    description: "Pikantne sečduanske nudli sa prelivom od susama, čili ulja i mlevenog mesa.",
+    ingredients: [
+      "300g svežih ili sušenih kineskih nudli",
+      "200g mlevene svinjetine",
+      "3 kašike sečduanske paste ya cai (ili kimči)",
+      "2 kašike svetlog sojevog sosa",
+      "1 kašika tamnog sojevog sosa",
+      "2 kašike kineskog crnog sirćeta",
+      "2 kašike susam paste (tahini)",
+      "1 kašika čili ulja sa sečduanskim biberom",
+      "1 kašičica šećera",
+      "3 čena belog luka, sitno seckana",
+      "2 mlada crna luka, seckana",
+      "1 kašičica sečduanskog bibera, mlevenog",
+      "Kikiriki, seckan za ukras"
+    ],
+    instructions: [
+      "Skuvajte nudli prema uputstvima na pakovanju, ocijedite i ostavite sa strane.",
+      "U wok-u na jakoj vatri propržite mleveno meso dok ne postane hrskavo.",
+      "Dodajte beli luk i ya cai pastu, kuvajte 1-2 minuta.",
+      "U činiji pomešajte sojeve sosove, sirće, susam pastu, čili ulje i šećer.",
+      "Dodajte nudli u wok sa mesom i brzo promešajte.",
+      "Dodajte pripremljeni preliv i promešajte da se sve dobro promeša.",
+      "Servirajte u činijama, ukrasite crnim lukom i kirikijem.",
+      "Pospite mlevenim sečduanskim biberom po ukusu."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "10 minuta",
+    servings: 2,
+    notes: [
+      "Ya cai pasta se može naći u azijskim prodavnicama",
+      "Možete koristiti tahini umesto susam paste",
+      "Jačina začina se može prilagoditi po ukusu"
+    ],
+    nutrition: {
+      calories: "520 kcal po porciji",
+      protein: "28g",
+      carbs: "55g",
+      fat: "22g",
+      fiber: "4g"
+    }
+  },
+
+  "Char Siu": {
+    name: "Char Siu",
+    description: "Tradicionalna kantonska pečena svinjetina sa slatko-slanim glazurom.",
+    ingredients: [
+      "1kg svinjskog vrata ili plećke, sečeno na dugačke trake",
+      "3 kašike hoisin sosa",
+      "2 kašike sojevog sosa",
+      "2 kašike kineskog vina za kuvanje (ili suvog šerija)",
+      "2 kašike maltose ili meda",
+      "1 kašika fermentisane crvene tofu paste",
+      "1 kašika ulja od susama",
+      "2 čena belog luka, sitno seckana",
+      "1 kašičica petparezovog začina",
+      "1/2 kašičice belog bibera",
+      "Crvena boja za hranu (opciono)"
+    ],
+    instructions: [
+      "Pomešajte sve sastojke za marinadu u velikoj činiji.",
+      "Dodajte meso i marinirajte najmanje 4 sata ili preko noći u frižideru.",
+      "Zagrejte rernu na 220°C.",
+      "Postavite meso na rešetku iznad tepsije sa vodom.",
+      "Pecite 15 minuta, zatim okrenite i pecite još 10 minuta.",
+      "Premažite sa ostalom marinadom i pecite još 5-10 minuta.",
+      "Ostavite da se odmori 5 minuta pre sečenja.",
+      "Isecite na tanke kriške i servirajte."
+    ],
+    prepTime: "20 minuta (+ 4h mariniranje)",
+    cookTime: "30 minuta",
+    servings: 4,
+    notes: [
+      "Maltose daje bolji sjaj od meda",
+      "Fermentisana crvena tofu pasta je ključna za autentičan ukus",
+      "Može se čuvati u frižideru do 3 dana"
+    ],
+    nutrition: {
+      calories: "380 kcal po porciji",
+      protein: "35g",
+      carbs: "12g",
+      fat: "20g",
+      sodium: "850mg"
+    }
+  },
+
+  "Xiaolongbao": {
+    name: "Xiaolongbao",
+    description: "Šangajski pareni knedle punjeni mesom i želatinoznim bujonom.",
+    ingredients: [
+      "Za testo:",
+      "300g brašna",
+      "150ml tople vode",
+      "1/2 kašičice soli",
+      "Za punjenje:",
+      "300g mlevane svinjetine",
+      "200ml hladnog pileć bujona (želatinoznog)",
+      "2 mlada crna luka, sitno seckana",
+      "1 kašika sojevog sosa",
+      "1 kašika kineskog vina za kuvanje",
+      "1 kašičica ulja od susama",
+      "1 kašičica đumbira, rendanog",
+      "So i beli biber po ukusu"
+    ],
+    instructions: [
+      "Napravite testo mešanjem brašna, vode i soli. Mesijte 10 minuta.",
+      "Pokrijte i ostavite da odmara 30 minuta.",
+      "Za punjenje, pomešajte meso sa svim začinima.",
+      "Postepeno dodajte hladan bujon u meso, mešajući u istom smeru.",
+      "Razvucite testo tanko i isecite na krugove od 8cm.",
+      "Na svaki krug stavite kašiku punjenja.",
+      "Paželjivo zatvorite knedle praveći nabore na vrhu.",
+      "Parite u parnom loncu 8-10 minuta na jakoj pari.",
+      "Servirajte odmah sa sojevim sosom i đumbirom."
+    ],
+    prepTime: "60 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: [
+      "Bujon mora biti dovoljno želatinoznan da se stegne kada se ohladi",
+      "Ne otvarajte poklopac tokom parenja",
+      "Jedite paželjivo jer je bujon unutra vrlo vreo"
+    ],
+    nutrition: {
+      calories: "280 kcal po porciji (4 knedla)",
+      protein: "18g",
+      carbs: "30g",
+      fat: "10g",
+      sodium: "650mg"
+    }
+  },
+
+  "Lo Mein": {
+    name: "Lo Mein",
+    description: "Meke kineskе nudli pržene sa povrćem i mesom u ukusnom sosu.",
+    ingredients: [
+      "300g svežих lo mein nudli (ili spageta)",
+      "200g piletine, isečene na trake",
+      "2 šargarepe, isečene na tanke štapiće",
+      "1 crveni biber, isekan na trake",
+      "200g sveže kelj repe, iseckane",
+      "2 mlada crna luka, seckana",
+      "3 čena belog luka, sitno seckana",
+      "2 kašike sojevog sosa",
+      "1 kašika ostriga sosa",
+      "1 kašičica ulja od susama",
+      "2 kašike ulja za kuvanje",
+      "1 kašičica rendanog đumbira",
+      "So i biber po ukusu"
+    ],
+    instructions: [
+      "Skuvajte nudli prema uputstvu na pakovanju, ocijedite.",
+      "Zagrejte wok ili veliku tiganj na jakoj vatri.",
+      "Dodajte ulje i propržite piletinu 3-4 minuta.",
+      "Dodajte šargarepe i crveni biber, pržite 2 minuta.",
+      "Dodajte beli luk, đumbir i kelj repu, pržite 1 minut.",
+      "Dodajte kuvane nudli u wok.",
+      "Polite sojevim sosom, ostriga sosom i uljem od susama.",
+      "Brzo promešajte sve sastojke 2-3 minuta.",
+      "Ukrasite crnim lukom i servirajte odmah."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "10 minuta",
+    servings: 3,
+    notes: [
+      "Ne prekuvavajte nudli, trebaju da budu al dente",
+      "Wok mora biti vrlo vreo za najbolji rezultat",
+      "Možete zameniti piletinu govedinom ili tofu-om"
+    ],
+    nutrition: {
+      calories: "420 kcal po porciji",
+      protein: "22g",
+      carbs: "48g",
+      fat: "15g",
+      sodium: "980mg"
+    }
+  },
+
+  "Chow Mein": {
+    name: "Chow Mein",
+    description: "Hrskave kineske nudli pržene sa povrćem - klasični kantonski stil.",
+    ingredients: [
+      "300g sveže chow mein nudli",
+      "150g mladog špinata",
+      "1 šargarepa, isečena na tanke štapiće",
+      "200g klica soје",
+      "4 šitake gljiva, isečene na kriške",
+      "2 mlada crna luka, seckana",
+      "3 čena belog luka, sitno seckana",
+      "2 kašike svetlog sojevog sosa",
+      "1 kašika tamnog sojevog sosa",
+      "1 kašičica šećera",
+      "3 kašike ulja za duboko prženje",
+      "1 kašičica ulja od susama",
+      "Beli biber po ukusu"
+    ],
+    instructions: [
+      "Skuvajte nudli u ključaloj vodi 2-3 minuta, ocijedite.",
+      "Zagrejte ulje u wok-u na jakoj vatri.",
+      "Dodajte nudli i pržite 2-3 minuta da postanu hrskave.",
+      "Prebacite nudli u činiju i ostavite sa strane.",
+      "U isti wok dodajte beli luk i gljive, pržite 1 minut.",
+      "Dodajte šargarеpu i pržite 2 minuta.",
+      "Dodajte klice soje i špиnat, pržite 1 minut.",
+      "Vratite nudli u wok i dodajte sosove i šećer.",
+      "Brzo promešajte 1-2 minuta.",
+      "Ukrasite crnim lukom i servirajte."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "8 minuta",
+    servings: 3,
+    notes: [
+      "Ključ је postići hrskavost nudli",
+      "Ne dodajte previše sosa - nudli treba da ostanu relativno suvi",
+      "Možete dodati bilo koje povrće po želji"
+    ],
+    nutrition: {
+      calories: "380 kcal po porciji",
+      protein: "12g",
+      carbs: "52g",
+      fat: "16g",
+      fiber: "4g"
+    }
+  },
+
+  "Laksa": {
+    name: "Laksa",
+    description: "Začinjena malajska supa sa nudli, kokosovim mlekom i morskim plodovima.",
+    ingredients: [
+      "300g debelih rice nudli",
+      "400ml kokosovog mleka",
+      "300ml pileće supe",
+      "200g škampa, oljuštenih",
+      "200g dagnji, očišćenih",
+      "100g klica soje",
+      "2 jaja, kuvanа natvrdо",
+      "2 limuna (sok)",
+      "Za laksa pastu:",
+      "6 suvих čili papričica",
+      "4 šalota, seckanе",
+      "4 čena belog luka",
+      "2cm đumbira",
+      "2 stabla lemon grass-a",
+      "1 kašika paste od škampа",
+      "2 kašike ulja"
+    ],
+    instructions: [
+      "Potopite čili u toplu vodu 15 minuta, zatim ih ocijedite.",
+      "U blenderu smiksajte sve sastojke za laksa pastu.",
+      "U loncu zagrejte ulje i pržite laksa pastu 5 minuta.",
+      "Dodajte kokosovo mleko i pile ću supu, kuvajte 10 minuta.",
+      "Skuvajte nudli prema uputstvu i поделite ih u činije.",
+      "Dodajte škampe i dagnje u supu i kuvajte 3-4 minuta.",
+      "Dodajte klice soje i kuvajte još 1 minut.",
+      "Začinite limunovim sokom, soli i biberom.",
+      "Polijte nudli sa supom i ukrasite polovina jajeta."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "25 minuta",
+    servings: 4,
+    notes: [
+      "Laksa pasta može da sе kupi gotova u azijskim prodavnicama",
+      "Možete zameniti morske plodove piletinom",
+      "Jačinu začina prilagodite po ukusu"
+    ],
+    nutrition: {
+      calories: "520 kcal po porciji",
+      protein: "28g",
+      carbs: "45g",
+      fat: "26g",
+      sodium: "1100mg"
+    }
+  },
+
+  "Francuski Tost": {
+    name: "Francuski Tost",
+    description: "Klasični francuski tost sa vanil aroemom, savršen za doručak.",
+    ingredients: [
+      "6 kriški belog hleba (najbolje dan starог)",
+      "3 jaja",
+      "1/2 šolje mleka",
+      "1 kašičica vanilin ekstrakta",
+      "1/2 kašičice cimeta",
+      "Prstohvat soli",
+      "2 kašike putera za prženje",
+      "Medni sirup ili šećer u prahu za serviranje",
+      "Sveže bobičasto voće (opciono)"
+    ],
+    instructions: [
+      "U plitkoj činiji umutite jaja, mleko, vanilin, cimet i so.",
+      "Zagrejte tiganj ili tiganj na srednjoj temperaturi i dodajte puter.",
+      "Potopite svaku krišku hleba u jaje smesу sa obe strane.",
+      "Stavite u zagrejan tiganj i pecite 2-3 minuta sa svake strane.",
+      "Pecite dok nije zlatno smeđi sa obe strane.",
+      "Servirajte odmah sa mednim sirupom ili šećerom u prahu.",
+      "Ukrasite svežim voćem po želji."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "10 minuta",
+    servings: 3,
+    notes: [
+      "Stariji hleb upija smesu bolje od svežeg",
+      "Ne ostavljajte hleb predugо u smesi da se ne raspadne",
+      "Možete dodati malo rendane kore narandže za dodatnu aromu"
+    ],
+    nutrition: {
+      calories: "280 kcal po porciji",
+      protein: "12g",
+      carbs: "35g",
+      fat: "10g",
+      sugar: "8g"
+    }
+  },
+
+  "Palačinke": {
+    name: "Palačinke",
+    description: "Tanke srpske palačinke koje se mogu puniti slatkim ili slanim nadjevom.",
+    ingredients: [
+      "2 šolje brašna",
+      "3 jaja",
+      "2 i 1/2 šolje mleka",
+      "2 kašike ulja",
+      "1 kašika šećera",
+      "1/2 kašičice soli",
+      "Ulje za podmazivanje tiganja",
+      "Za nadjev - džem, nutela, sir, šunka (po želji)"
+    ],
+    instructions: [
+      "U velikој činiji pomešajte brašno, šećer i so.",
+      "U drugoj činiji umutite jaja pa dodajte mleko i ulje.",
+      "Postepeno dodajte tečne sastojke u brašno, mešајući da ne ostane grudica.",
+      "Ostavite testo da odmara 30 minuta.",
+      "Zagrejte antilepljivи tiganj na srednjoj temperaturi.",
+      "Podmazivje tanko sa uljem i sipajte tanak sloj testa.",
+      "Pecite 1-2 minuta sa svake strane dok ne postanu zlatne.",
+      "Punite po želji i motajte ili preklapajte.",
+      "Servirajte odmah dok su topli."
+    ],
+    prepTime: "15 minuta (+ 30min odmor)",
+    cookTime: "20 minuta",
+    servings: 4,
+    notes: [
+      "Testo ne sme biti predebelo",
+      "Prvi palačinki су običнo neуspešна - to је normalno",
+      "Mogu се čuvati i ponovno zagrejati"
+    ],
+    nutrition: {
+      calories: "220 kcal po palačinki (bez nadjeva)",
+      protein: "8g",
+      carbs: "30g",
+      fat: "7g",
+      calcium: "120mg"
+    }
+  },
+
+  "Benedikt jaja": {
+    name: "Benedikt jaja",
+    description: "Luksuzni doručak sa poširanim jajima и holandskim sosom.",
+    ingredients: [
+      "4 sveža jaja",
+      "2 engleska muffin-a (English muffins)",
+      "4 tanke kriške kanadske slanine ili šunke",
+      "2 kašike belog sirćeta",
+      "Za holandski sos:",
+      "3 žumanca",
+      "100g putera",
+      "2 kašike limunovog soka",
+      "Prstohvat kajenne paprike",
+      "So po ukusu"
+    ],
+    instructions: [
+      "Za holandski sos: zagrejte puter da se otopi.",
+      "U banji mariji umutite žumanca sa limunovim sokom.",
+      "Postepeno dodajte topli puter, stalno mutite dok ne postane gust.",
+      "Dodajte kajenne papriku i so, держite топло.",
+      "Pokuvajte vodu sa sirćetom za poširana jaja.",
+      "Pažljivo razbite jaje u činiju i sipajte u ključalu voду.",
+      "Kuvајte 3-4 minuta za meko žumance.",
+      "Podgrejte muffin kriške i prekrijte ih šunkom.",
+      "Stavite poširano jaje na vrh i prelijte holandskim sosom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "15 minuta",
+    servings: 2,
+    notes: [
+      "Holandski sos mora da bude serviran odmah",
+      "Poširana jaja zahtevaju vežbu - ne brinite ako se prvi pokušaj ne poradi",
+      "Možete zameniti kanadsku slaninu bekonom"
+    ],
+    nutrition: {
+      calories: "520 kcal po porciji",
+      protein: "28g",
+      carbs: "25g",
+      fat: "35g",
+      cholesterol: "480mg"
+    }
+  },
+
+  "Shepherd's Pie": {
+    name: "Shepherd's Pie",
+    description: "Tradicionalni britanski paj sa jagnjetinom i pireom od krompira.",
+    ingredients: [
+      "500g mlevane jagnjetine (ili govedine za Cottage Pie)",
+      "1kg krompira",
+      "1 glavica crnog luka, seckana",
+      "2 šargarepe, seckane na kockice",
+      "100g grašaka (sveži ili smrznuti)",
+      "2 kašike paradajz paste",
+      "300ml jagnjeće supe (ili govcije)",
+      "2 kašike Worcestershire sosa",
+      "1 kašika svežeg rozmarina",
+      "50g putera",
+      "100ml mleka",
+      "So i biber po ukusu",
+      "Ulje za prženje"
+    ],
+    instructions: [
+      "Oljuštite i skuvajte krompire, zatim ih promećite sa puterom i mlekom.",
+      "U velikoj tiganj zagrejte ulje i propržite luk i šargarepe 5 minuta.",
+      "Dodajte mlevenu jagnjetinu i pržite dok ne postane smeđa.",
+      "Dodajte paradajz pastu, rozmearin i Worcestershire sos.",
+      "Dodajte supu i pustite da ključa 20 minuta.",
+      "Dodajte grašak u poslednih 5 minuta kuvanja.",
+      "Prebacite meso u vatrostalan sud.",
+      "Pokrijte sa pireom od krompira i zagladite viljuškom.",
+      "Pecite u rerni na 190°C 25-30 minuta dok vrh ne porumeni."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "45 minuta",
+    servings: 6,
+    notes: [
+      "Tradicionalno se pravi od jagnjetine, ali govedina takođe ide",
+      "Možete dodati malo sirca za kremosii pire",
+      "Ostavite da se ohladi 5 minuta pre serviranje"
+    ],
+    nutrition: {
+      calories: "420 kcal po porciji",
+      protein: "25g",
+      carbs: "35g",
+      fat: "20g",
+      fiber: "4g"
+    }
+  },
+
+  "Meatloaf": {
+    name: "Meatloaf",
+    description: "Američki mesni hlebić sa glazurom, savršen comfort food.",
+    ingredients: [
+      "800g mešane mlevene (govedina + svinjetina)",
+      "1 šolja prezli",
+      "1 jaje",
+      "1 glavica crnog luka, sitno seckana",
+      "2 čena belog luka, sitno seckana",
+      "1/2 šolje mleka",
+      "2 kašike Worcestershire sosa",
+      "1 kašičica origana",
+      "Za glazuru:",
+      "3 kašike kečapa",
+      "2 kašike smeđeg šećera",
+      "1 kašika senfa",
+      "So i biber po ukusu"
+    ],
+    instructions: [
+      "Zagrejte rernu na 175°C.",
+      "U velikoj činiji pomešajte prezle sa mlekom.",
+      "Dodajte mleveno meso, jaje, luk, beli luk, Worcestershire sos i origano.",
+      "Dobro promešajte rukama i začinite solju i biberom.",
+      "Oblikujte u oblik hleba na tepsiji obložеnoj papirom.",
+      "Za glazuru, pomešajte kečap, šećer i senf.",
+      "Premažite meatloaf glazurom.",
+      "Pecite 45-50 minuta dok unutrašnja temperatura ne dostigne 70°C.",
+      "Ostavite da odmara 10 minuta pre sečenja."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "50 minuta",
+    servings: 6,
+    notes: [
+      "Ne mešajte smesu previše da ne postane tvrda",
+      "Možete dodati sitno seckanu papriku ili šargarepu",
+      "Odličan je i hladan za sendviče"
+    ],
+    nutrition: {
+      calories: "380 kcal po porciji",
+      protein: "28g",
+      carbs: "18g",
+      fat: "22g",
+      iron: "3mg"
+    }
+  },
+
+  "Tuna Casserole": {
+    name: "Tuna Casserole",
+    description: "Klasična američka tunjevina zapečnica sa testoninom i povrćem.",
+    ingredients: [
+      "300g širokih nudli ili makarona",
+      "2 konzerve tunjevine u vodi (400g)",
+      "1 konzerva krem supe od gljiva",
+      "200g smrznutog mešanog povrća",
+      "100g rendanog cheddar sira",
+      "1/2 šolje mleka",
+      "1 šolja crushed crackers ili prezli",
+      "2 kašike putera, otopljenog",
+      "So i biber po ukusu",
+      "1 kašičica origana"
+    ],
+    instructions: [
+      "Zagrejte rernu na 180°C.",
+      "Skuvajte nudli al dente prema uputstvu, ocijedite.",
+      "U velikoj činiji pomešajte tunjevinu, krem supu i mleko.",
+      "Dodajte kuvanu testoninu i smrznuto povrće.",
+      "Dodajte pola sira, origano, so i biber.",
+      "Prebacite u podmazane vatrostalni sud.",
+      "Pospite ostali sir i crackers pomešane sa puterom.",
+      "Zapecite 25-30 minuta dok vrh ne postane zlatni.",
+      "Ostavite da odmara 5 minuta pre serviranje."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "30 minuta",
+    servings: 6,
+    notes: [
+      "Možete koristiti sveže povrće umesto smrznutog",
+      "Dodajte malo limunovog soka za svežinu",
+      "Leftovers se odlično zagrevaju u mikrotalasa"
+    ],
+    nutrition: {
+      calories: "340 kcal po porciji",
+      protein: "22g",
+      carbs: "35g",
+      fat: "12g",
+      omega3: "vysokо"
+    }
+  },
+
+  "Curry Chicken": {
+    name: "Curry Chicken",
+    description: "Aromatična indijska piletina u bogatom kari sosu sa začinima.",
+    ingredients: [
+      "800g piletine, iseckane na kockice",
+      "2 glavice crnog luka, seckane",
+      "4 čena belog luka, sitno seckana",
+      "3cm đumbira, rendanog",
+      "400ml kokosovog mleka",
+      "400g konzervisanih paradajza",
+      "2 kašike kari pasta ili praha",
+      "1 kašika kurkume",
+      "1 kašičica kimena",
+      "1 kašičica korijandera",
+      "1/2 kašičice cimeta",
+      "2 lovorova lista",
+      "So po ukusu",
+      "Ulje za prženje",
+      "Sveži koriander za ukras"
+    ],
+    instructions: [
+      "U velikoj tiganj zagrejte ulje na srednjoj vatri.",
+      "Propržite crni luk do zlatne boje, oko 5 minuta.",
+      "Dodajte beli luk i đumbir, pržite još 1 minut.",
+      "Dodajte kari pastu i sve začine, pržite 30 sekundi.",
+      "Dodajte piletinu i pržite dok ne postane bela sa svih strana.",
+      "Dodajte paradajz i pustite da ključa 5 minuta.",
+      "Dodajte kokosovo mleko i lovor list.",
+      "Smanjite vatru i kuvajte pod poklopcem 20-25 minuta.",
+      "Začinite solju po ukusu i ukrasite korijanderom."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "35 minuta",
+    servings: 4,
+    notes: [
+      "Servirajte sa basmati pirinčem ili naan hlebom",
+      "Možete dodati krompir ili druge povrće",
+      "Jačinu začina prilagodite po ukusu"
+    ],
+    nutrition: {
+      calories: "380 kcal po porciji",
+      protein: "32g",
+      carbs: "12g",
+      fat: "22g",
+      fiber: "4g"
+    }
+  },
+
+  "Biryani": {
+    name: "Biryani",
+    description: "Kraljevski indijski pirinac sa aromatičnim začinima i mesom.",
+    ingredients: [
+      "500g basmati pirinča",
+      "600g piletine, iseckane",
+      "1 šolja jogurta",
+      "2 glavice crnog luka, tanko seckane",
+      "4 čena belog luka",
+      "3cm đumbira",
+      "1 kašika garam masala",
+      "1 kašičica kurkume",
+      "1/2 kašičice cimeta",
+      "4 kardamoma",
+      "2 lovorova lista",
+      "Prstohvat šafrana",
+      "1/4 šolje toplog mleka",
+      "Ulje za duboko prženje",
+      "So po ukusu"
+    ],
+    instructions: [
+      "Potopite pirinac u vodu 30 minuta, zatim ocijedite.",
+      "Marinirajte piletinu u jogurtu, beli luk, đumbir i začine 2 sata.",
+      "Propržite pola luka do zlatne boje i ostavite sa strane.",
+      "U istom ulju propržite marinirane pile tino 15 minuta.",
+      "Skuvajte pirinac do pola sa začinima, zatim ocijedite.",
+      "Potopite šafran u toplo mleko.",
+      "U teškom loncu postavite slojeve: piletina, pirinac, propržен luk.",
+      "Polite šafran mlekom preko poslednjeg sloja.",
+      "Pokrijte lonac i kuvajte na dum method 45 minuta.",
+      "Ostavите da odmara 10 minuta pre serviranje."
+    ],
+    prepTime: "45 minuta (+ 2h mariniranje)",
+    cookTime: "60 minuta",
+    servings: 6,
+    notes: [
+      "Dum cooking je kuvanje na veoma maloj vatri",
+      "Možete dodati kuvane jaja ili povrće",
+      "Servirajte sa raita salatom"
+    ],
+    nutrition: {
+      calories: "520 kcal po porciji",
+      protein: "28g",
+      carbs: "65g",
+      fat: "18g",
+      sodium: "800mg"
+    }
+  },
+
+  "Dal Tadka": {
+    name: "Dal Tadka",
+    description: "Kremasn indijski dal sočivo sa aromatičnim tempering začinima.",
+    ingredients: [
+      "1 šolja žutog dal sočiva",
+      "3 šolje vode",
+      "1/2 kašičice kurkume",
+      "1 paradajz, seckan",
+      "1 zelena čili paprica",
+      "So po ukusu",
+      "Za tadka (tempering):",
+      "2 kašike topljenog putera (ghee)",
+      "1 kašičica kim семena",
+      "1 kašičica semen gorčice",
+      "2 čena belog luka, seckana",
+      "1cm đumbira, seckan",
+      "1 crni luk, seckan",
+      "Sveži koriander za ukras"
+    ],
+    instructions: [
+      "Isperite dal sočivo i skuvajte sa vodom i kurkumom 20 minuta.",
+      "Progrebajte dal do kremaste konzistencije.",
+      "Dodajte paradajz, čili i so, kuvajte još 5 minuta.",
+      "Za tadka: zagrejte ghee u maloj tiganj.",
+      "Dodajte kim i горчицу семена, pržite dok ne počnu da pukaju.",
+      "Dodajte beli luk, đumbir i luk, pržite 2 minuta.",
+      "Sipajte tadka preko dal-a i dobro promešajte.",
+      "Kuvajte još 2-3 minuta da se ukusi sjedine.",
+      "Ukrasite korijanderom i servirajte."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "30 minuta",
+    servings: 4,
+    notes: [
+      "Dal treba da bude kremaste konzistencije",
+      "Tadka je ključan za autentičan ukus",
+      "Servirajte sa pirinčем ili chapati hlebom"
+    ],
+    nutrition: {
+      calories: "220 kcal po porciji",
+      protein: "12g",
+      carbs: "32g",
+      fat: "8g",
+      fiber: "8g"
+    }
+  },
+
+  "Tacos": {
+    name: "Tacos",
+    description: "Autentični meksički tacos sa svežim sastojcima u kukuruznim tortiljama.",
+    ingredients: [
+      "8 malih kukuruznih tortilja",
+      "400g mlevene govedine",
+      "1 glavica crnog luka, seckana",
+      "2 čena belog luka, sitno seckana",
+      "1 kašika kim semena",
+      "1 kašika čili praha",
+      "1 kašičica paprike",
+      "1/2 kašičice origana",
+      "1 paradajz, seckan na kockice",
+      "1 avokado, seckan",
+      "100g rendanog čedar sira",
+      "Zelena salata, seckana",
+      "Sour cream",
+      "Salsa sos",
+      "So i biber po ukusu"
+    ],
+    instructions: [
+      "Zagrejte tiganj na srednjoj vatri i dodajte mlevenu govedinu.",
+      "Propržite meso dok ne porumeni, dodajte luk i beli luk.",
+      "Dodajte sve začine i kuvajte 2-3 minuta dok ne mirisne.",
+      "Začinite solju i biberom po ukusu.",
+      "Zagrejte tortilje na suvoj tiganju ili u mikrotalasnoj.",
+      "Stavite 2-3 kašike mesa na svaku tortilju.",
+      "Dodajte paradajz, avokado, sir i salatu.",
+      "Polite sa sour cream i salsa sosom.",
+      "Preklopite tortilje i servirajte odmah."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: [
+      "Kukuruzne tortilje su autentičnije od pšeničnih",
+      "Možete dodati limun za svežinu",
+      "Prethodnje zagrevanje tortilja ih čini mekcijim"
+    ],
+    nutrition: {
+      calories: "320 kcal po porciji (2 taco-a)",
+      protein: "18g",
+      carbs: "25g",
+      fat: "16g",
+      fiber: "4g"
+    }
+  },
+
+  "Quesadillas": {
+    name: "Quesadillas",
+    description: "Hrskave meksičke tortilje punjene sirom i vašim omiljenim dodacima.",
+    ingredients: [
+      "4 velike pšenične tortilje",
+      "200g rendanog mexicanskog sira ili čedar-a",
+      "1 pileći file, kuvano i seckano",
+      "1/2 crvenog bibera, seckano",
+      "1/4 šolje seckanih paprika jalapeño",
+      "2 mlada crna luka, seckana",
+      "1 kašika ulja",
+      "Sour cream za serviranje",
+      "Guacamole za serviranje",
+      "Salsa sos za serviranje"
+    ],
+    instructions: [
+      "Na jednu polovinu svake tortilje stavite sir, piletinu i povrće.",
+      "Preklopite tortilje preko punjenja.",
+      "Zagrejte tiganj na srednjoj vatri sa malo ulja.",
+      "Stavite quesadille u tiganj i pecite 2-3 minuta sa svake strane.",
+      "Pecite dok tortilje ne postanu zlatne i sir se ne otopi.",
+      "Izvadite iz tiganja i ostavite da se ohlade 1 minut.",
+      "Isecite na trouglove kao picu.",
+      "Servirajte sa sour cream, guacamole i salsa sosom."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "12 minuta",
+    servings: 4,
+    notes: [
+      "Ne preopterećujte tortilju punjenjem",
+      "Možete koristiti bilo koji sir koji se dobro topi",
+      "Vegetarijanska varijanta bez mesa takođe je ukusna"
+    ],
+    nutrition: {
+      calories: "380 kcal po porciji",
+      protein: "22g",
+      carbs: "32g",
+      fat: "18g",
+      calcium: "250mg"
+    }
+  },
+
+  "Guacamole": {
+    name: "Guacamole",
+    description: "Kremasti meksički umak od avokada sa limunom i začinima.",
+    ingredients: [
+      "3 zrela avokada",
+      "1 limun (sok)",
+      "1 mali crni luk, sitno seckan",
+      "2 čena belog luka, sitno seckana",
+      "1 paradajz, seckan na sitne kockice",
+      "1-2 jalapeño paprice, sitno seckane",
+      "1/4 šolje seckane svežeg korijandera",
+      "1/2 kašičice kim semena",
+      "So po ukusu",
+      "Tortilla chips za serviranje"
+    ],
+    instructions: [
+      "Prepolovite avokade, izvadite koštice i izdubite meso.",
+      "U velikoj činiji gnječite avokade viljuškom do željene konzistencije.",
+      "Dodajte limunov sok odmah da sprečite tamnjenje.",
+      "Umešajte crni luk, beli luk, paradajz i jalapeño.",
+      "Dodajte koriander, kim i so.",
+      "Dobro promešajte sve sastojke.",
+      "Probajte i prilagodite začine po ukusu.",
+      "Servirajte odmah sa tortilla chips."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "0 minuta",
+    servings: 6,
+    notes: [
+      "Koristite avokade koji malo popuštaju na pritisak",
+      "Može se čuvati u frižideru do 2 dana",
+      "Stavite košticu avokada u guacamole da sporije tamni"
+    ],
+    nutrition: {
+      calories: "120 kcal po porciji",
+      protein: "2g",
+      carbs: "8g",
+      fat: "11g",
+      fiber: "7g"
+    }
+  },
+
+  "Burritos": {
+    name: "Burritos",
+    description: "Velike meksičke tortilje punjene mesom, pirinčem, pasuljem i povrćem.",
+    ingredients: [
+      "4 velike pšenične tortilje",
+      "400g mlevene govedine",
+      "1 šolja kuvanog crnog pasulja",
+      "1 šolja kuvanog pirinča",
+      "1 glavica crnog luka, seckana",
+      "2 čena belog luka, sitno seckana",
+      "1 kašika čili praha",
+      "1 kašičica kim semena",
+      "1 kašičica paprike",
+      "100g rendanog čedar sira",
+      "2 paradajza, seckana",
+      "1 avokado, seckan",
+      "Sour cream",
+      "Salsa sos",
+      "Zelena salata",
+      "So i biber po ukusu"
+    ],
+    instructions: [
+      "Propržite govedinu u tiganju sa lukom i belim lukom.",
+      "Dodajte začine i kuvajte dok meso ne porumeni.",
+      "Zagrejte tortilje u mikrotalasnoj ili na tiganju.",
+      "Na sredinu svake tortilje stavite pirinač, pasulj i meso.",
+      "Dodajte sir, paradajz, avokado i salatu.",
+      "Polite sa sour cream i salsa sosom.",
+      "Preklopite donji deo tortilje preko punjenja.",
+      "Preklopite levi i desni kraj, zatim čvrsto zamotajte.",
+      "Po želji, kratko zapecite na tiganju da postane hrskav."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: [
+      "Ne preopteretite tortilju da se ne pocepa",
+      "Možete dodati jalapeño za dodatnu ljutinu",
+      "Burrito može biti i vegetarijanski bez mesa"
+    ],
+    nutrition: {
+      calories: "520 kcal po porciji",
+      protein: "28g",
+      carbs: "48g",
+      fat: "22g",
+      fiber: "8g"
+    }
+  },
+
+  "Enchiladas": {
+    name: "Enchiladas",
+    description: "Meksičke tortilje punjene mesom i prekrivene čili sosom i sirom.",
+    ingredients: [
+      "8 kukuruznih tortilja",
+      "400g kuvanog piletine, seckano",
+      "200g rendanog monterrey jack sira",
+      "1 glavica crnog luka, seckana",
+      "Za enchilada sos:",
+      "3 kašike čili praha",
+      "2 kašike brašna",
+      "2 kašike ulja",
+      "400ml pileće supe",
+      "1 kašika kim semena",
+      "1 kašičica origana",
+      "So po ukusu",
+      "Za serviranjem:",
+      "Sour cream",
+      "Seckan koriander",
+      "Crni luk, seckan"
+    ],
+    instructions: [
+      "Za sos: zagrejte ulje u tiganju, dodajte brašno i čili prah.",
+      "Kuvajte 1 minut, zatim postepeno dodajte supu.",
+      "Dodajte kim i origano, kuvajte 10 minuta dok ne zgusne.",
+      "Pomešajte piletinu sa polovinom luka i malo sira.",
+      "Zagrejte tortilje da postanu mekce.",
+      "Stavite punjenje na svaku tortilju i zamotajte.",
+      "Postavite enchiladas u vatrostalni sud.",
+      "Polite sa sosom i pospite ostatak sira.",
+      "Pecite na 180°C 20 minuta dok sir ne se otopi."
+    ],
+    prepTime: "25 minuta",
+    cookTime: "30 minuta",
+    servings: 4,
+    notes: [
+      "Možete koristiti govedinu umesto piletine",
+      "Enchilada sos možete kupiti gotov",
+      "Servirajte sa guacamole i salsa sosom"
+    ],
+    nutrition: {
+      calories: "420 kcal po porciji",
+      protein: "26g",
+      carbs: "35g",
+      fat: "20g",
+      calcium: "280mg"
+    }
+  },
+
+  "Nachos": {
+    name: "Nachos",
+    description: "Hrskavi tortilla chips sa rastopljenim sirom i meksičkim dodacima.",
+    ingredients: [
+      "200g tortilla chips",
+      "200g rendanog čedar sira",
+      "100g rendanog monterrey jack sira",
+      "200g mlevene govedine, propržene",
+      "1/2 šolje crnog pasulja, kuvanog",
+      "2 paradajza, seckana na kockice",
+      "1 avokado, seckan",
+      "1/4 šolje jalapeño paprica, seckanih",
+      "3 mlada crna luka, seckana",
+      "Sour cream za serviranje",
+      "Guacamole za serviranje",
+      "Salsa sos za serviranje"
+    ],
+    instructions: [
+      "Zagrejte rernu na 200°C.",
+      "Rasporedite tortilla chips na velikoj tepsiji.",
+      "Ravnomerno pospite govedinu i pasulj preko chips-a.",
+      "Pokrijte sa oba tipa sira.",
+      "Pecite 5-7 minuta dok se sir ne otopi.",
+      "Izvadite iz rerne i dodajte paradajz, avokado i jalapeño.",
+      "Pospite crnim lukom.",
+      "Servirajte odmah sa sour cream, guacamole i salsa.",
+      "Jedite dok su još topli i hrskavi."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "7 minuta",
+    servings: 4,
+    notes: [
+      "Ne ostavljajte dugo u rerni da chips ne postanu soggy",
+      "Možete dodati koriander za svežinu",
+      "Vegetarijanska varijanta bez mesa je takođe ukusna"
+    ],
+    nutrition: {
+      calories: "480 kcal po porciji",
+      protein: "22g",
+      carbs: "32g",
+      fat: "28g",
+      sodium: "820mg"
+    }
+  },
+
+  "Hummus": {
+    name: "Hummus",
+    description: "Kremasti bliskoistočni namaz od leblebija sa tahini i limunom.",
+    ingredients: [
+      "400g kuvanog leblebija (ili 1 konzerva)",
+      "3 kašike tahini paste",
+      "2 limuna (sok)",
+      "2 čena belog luka",
+      "3 kašike maslinovog ulja",
+      "1/2 kašičice kim semena",
+      "So po ukusu",
+      "2-3 kašike vode od kuvanja leblebija",
+      "Za ukras:",
+      "Maslinovo ulje",
+      "Paprika",
+      "Leblebije",
+      "Pita hleb za serviranje"
+    ],
+    instructions: [
+      "Ocijedite leblebije i sačuvajte tečnost.",
+      "U kuhinjski robot stavite leblebije, tahini i beli luk.",
+      "Dodajte limunov sok, kim i so.",
+      "Miksajte dok smeša ne postane glatka.",
+      "Dodajte maslinovo ulje dok miksate.",
+      "Postepeno dodajte vodu dok ne dostignete željenu konzistenciju.",
+      "Probajte i prilagodite začine po ukusu.",
+      "Prebacite u činiju i ukrasite maslinovim uljem.",
+      "Pospite paprikom i leblebijama, servirajte sa pita hlebom."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "0 minuta",
+    servings: 6,
+    notes: [
+      "Koristite kvalitetnu tahini pastu za najbolji ukus",
+      "Može se čuvati u frižideru do 5 dana",
+      "Dodajte led u blender za kremastiju teksturu"
+    ],
+    nutrition: {
+      calories: "180 kcal po porciji",
+      protein: "8g",
+      carbs: "16g",
+      fat: "10g",
+      fiber: "6g"
+    }
+  },
+
+  "Falafel": {
+    name: "Falafel",
+    description: "Hrskave bliskoistočne lopte od leblebija sa začinima, pržene u ulju.",
+    ingredients: [
+      "400g suvog leblebija (potopljenog preko noći)",
+      "1 velika glavica crnog luka",
+      "4 čena belog luka",
+      "1/4 šolje svežeg peršuna",
+      "1/4 šolje svežeg korijandera",
+      "1 kašika kim semena",
+      "1 kašičica korijandera (mlevenog)",
+      "1 kašičica soli",
+      "1/2 kašičice crnog bibera",
+      "1/4 kašičice kajenne paprike",
+      "2 kašike brašna",
+      "Ulje za duboko prženje"
+    ],
+    instructions: [
+      "Potopite leblebije u vodu preko noći, zatim ih ocijedite.",
+      "U kuhinjski robot stavite leblebije, luk i beli luk.",
+      "Dodajte peršun, koriander i sve začine.",
+      "Pulsno miksajte dok se ne formira gruba pasta.",
+      "Dodajte brašno i miksajte kratko da se sjedini.",
+      "Ostavite smesu u frižideru 1 sat da se stegne.",
+      "Oblikujte male lopte od 3cm prečnika.",
+      "Zagrejte ulje na 180°C i pržite falafel 3-4 minuta.",
+      "Servirajte u pita hlebu sa humus i salatom."
+    ],
+    prepTime: "30 minuta (+ 1h hlađenje)",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: [
+      "Ne koristite kuvane leblebije - tekstura neće biti dobra",
+      "Falafel možete peći u rerni na 190°C 25 minuta",
+      "Možete zameniti deo leblebija favom"
+    ],
+    nutrition: {
+      calories: "280 kcal po porciji (5 kugli)",
+      protein: "12g",
+      carbs: "35g",
+      fat: "12g",
+      fiber: "8g"
+    }
+  },
+
+  "Grčka Salata": {
+    name: "Grčka Salata",
+    description: "Osvežavajuća mediteranska salata sa feta sirom, maslinama i povrćem.",
+    ingredients: [
+      "4 paradajza, seckana na klinove",
+      "1 krastavac, seckan na kockice",
+      "1 crveni luk, seckan na tanke kolutove",
+      "200g feta sira, seckano na kockice",
+      "100g kalamata maslina",
+      "1 zelena paprika, seckana na trake",
+      "Za preliv:",
+      "4 kašike extra virgin maslinovog ulja",
+      "2 kašike crvenog vinskog sirćeta",
+      "1 kašičica suvog origana",
+      "So i crni biber po ukusu"
+    ],
+    instructions: [
+      "U velikoj činiji pomešajte paradajz, krastavac i papriku.",
+      "Dodajte crveni luk i masline.",
+      "U maloj činiji umutite maslinovo ulje, sirće i origano.",
+      "Začinite preliv solju i biberom.",
+      "Polite salatu prelivom i lagano promešajte.",
+      "Dodajte feta sir na vrh.",
+      "Ostavite da odstoji 10 minuta da se ukusi sjedine.",
+      "Servirajte sa svežim hlebom ili pita krekerima."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "0 minuta",
+    servings: 4,
+    notes: [
+      "Koristite najkvalitetnije maslinovo ulje",
+      "Feta sir dodajte tek na kraju",
+      "Najbolje je kada se ostavi da odmara 30 minuta"
+    ],
+    nutrition: {
+      calories: "220 kcal po porciji",
+      protein: "8g",
+      carbs: "12g",
+      fat: "17g",
+      fiber: "4g"
+    }
+  },
+
+  "Tiramisu": {
+    name: "Tiramisu",
+    description: "Klasični italijanski dezert sa kafom, mascarpone i kakao prahom.",
+    ingredients: [
+      "6 žumanca",
+      "100g šećera",
+      "500g mascarpone sira",
+      "400ml jakog espresso kafa, ohlaćenog",
+      "3 kašike konyak-a ili ruma",
+      "300g lady finger keksa",
+      "Kakao prah za posipanje",
+      "Tamna čokolada za ukras (opciono)"
+    ],
+    instructions: [
+      "Umutite žumanca sa šećerom dok ne postanu svetla i penasta.",
+      "Dodajte mascarpone i lagano umešajte.",
+      "Pomešajte kafu sa konjakom u plitkoj činiji.",
+      "Brzo umočite svaki keks u kafu i postavite u red u sud.",
+      "Pokrijte sa polovinom mascarpone smeše.",
+      "Ponovite sa još jednim slojem keksa i ostatak kreme.",
+      "Pokrijte folijom i stavite u frižider najmanje 4 sata.",
+      "Pre serviranja posipte kakao prahom."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "0 minuta (+ 4h hlađenje)",
+    servings: 8,
+    notes: [
+      "Ne držite kekse predugo u kafi da se ne raspadnu",
+      "Najbolje je kada se ostavi preko noći",
+      "Koristite stvarni mascarpone, ne zamenu"
+    ],
+    nutrition: {
+      calories: "380 kcal po porciji",
+      protein: "8g",
+      carbs: "28g",
+      fat: "26g",
+      sugar: "22g"
+    }
+  },
+
+  "Chocolate Chip Cookies": {
+    name: "Chocolate Chip Cookies",
+    description: "Klasični američki kolačići sa čokoladnim čipsovima, mekani i hrskavi.",
+    ingredients: [
+      "225g putera, na sobnoj temperaturi",
+      "150g smeđeg šećera",
+      "100g belog šećera",
+      "2 jaja",
+      "2 kašičice vanilin ekstrakta",
+      "280g brašna",
+      "1 kašičica sode bikarbone",
+      "1 kašičica soli",
+      "350g čokoladnih čipsova"
+    ],
+    instructions: [
+      "Zagrejte rernu na 180°C.",
+      "Umutite puter sa oba šećera dok ne postane kremasto.",
+      "Dodajte jaja jedno po jedno, zatim vanilin.",
+      "U drugoj činiji pomešajte brašno, sodu i so.",
+      "Postepeno dodajte suve sastojke u kremaste.",
+      "Umešajte čokoladne čipsove.",
+      "Pravljene lopte veličine kašike na tepsiju sa pek-papirom.",
+      "Pecite 9-11 minuta dok krajevi ne porumene."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "11 minuta",
+    servings: 24,
+    notes: [
+      "Ne pecite previše - centar treba da bude mek",
+      "Ostavite da se ohlade na tepsiji 5 minuta",
+      "Mogu se zamrznuti do 3 meseca"
+    ],
+    nutrition: {
+      calories: "180 kcal po kolačiću",
+      protein: "3g",
+      carbs: "25g",
+      fat: "8g",
+      sugar: "16g"
+    }
+  },
+
+  "Spaghetti Aglio e Olio": {
+    name: "Spaghetti Aglio e Olio",
+    description: "Jednostavna italijanska pasta sa belim lukom, uljem i čili.",
+    ingredients: [
+      "400g spageta",
+      "6 čenova belog luka, tanko seckanih",
+      "1/2 šolje extra virgin maslinovog ulja",
+      "1 kašičica sušenih čili pahuljica",
+      "1/4 šolje seckanog peršuna",
+      "50g parmezana, rendanog",
+      "So i crni biber po ukusu"
+    ],
+    instructions: [
+      "Kuvajte spagete u slanoj vodi al dente prema uputstvu.",
+      "Zagrejte maslinovo ulje u velikoj tiganj na srednjoj vatri.",
+      "Dodajte beli luk i pržite dok ne postane zlatni.",
+      "Dodajte čili pahuljice i pržite 30 sekundi.",
+      "Dodajte malo vode od kuvanja paste u tiganj.",
+      "Dodajte spagete u tiganj sa uljem.",
+      "Dodajte peršun i dobro promešajte.",
+      "Servirajte sa parmezanom i crnim biberom."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: [
+      "Ne dozvolite da se beli luk prepeče",
+      "Zadržite vodu od kuvanja paste za kremastiju teksturu",
+      "Jednostavnost je ključ ovog jela"
+    ],
+    nutrition: {
+      calories: "420 kcal po porciji",
+      protein: "12g",
+      carbs: "60g",
+      fat: "16g",
+      fiber: "3g"
+    }
+  },
+
+  "Caesar Salad": {
+    name: "Caesar Salad",
+    description: "Klasična rimska salata sa hrskavom salatom, parmezanom i kremastim prelivom.",
+    ingredients: [
+      "2 glave rimske salate, seckane",
+      "100g parmezana, rendanog",
+      "1 šolja krutonа",
+      "Za preliv:",
+      "3 žumanca",
+      "2 čena belog luka",
+      "4 sardele",
+      "2 kašike limunovog soka",
+      "1 kašičica Worcestershire sosa",
+      "1/2 šolje maslinovog ulja",
+      "So i crni biber po ukusu"
+    ],
+    instructions: [
+      "Isperite i osušite rimsku salatu.",
+      "Za preliv: u blenderu smiksajte žumanca, beli luk i sardele.",
+      "Dodajte limunov sok i Worcestershire sos.",
+      "Polako dodajte maslinovo ulje dok miksate.",
+      "Začinite solju i biberom.",
+      "U velikoj činiji polite salatu prelivom.",
+      "Dodajte parmezan i krutone.",
+      "Dobro promešajte i servirajte odmah."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "0 minuta",
+    servings: 4,
+    notes: [
+      "Koristite sveža žumanca za najbolji ukus",
+      "Krutone možete napraviti sami od starog hleba",
+      "Servirajte odmah da salata ne uvene"
+    ],
+    nutrition: {
+      calories: "280 kcal po porciji",
+      protein: "12g",
+      carbs: "8g",
+      fat: "24g",
+      calcium: "200mg"
+    }
+  },
+
+  "Dim Sum": {
+    name: "Dim Sum",
+    description: "Tradicionalni kineski zalogaji kuvani na pari sa različitim punjenjem.",
+    ingredients: [
+      "Za testo:",
+      "200g brašna",
+      "100ml vrele vode",
+      "1 kašika ulja",
+      "1/2 kašičice soli",
+      "Za punjenje od škampa:",
+      "300g škampa, seckanih",
+      "100g slanine, sitno seckane",
+      "2 mlada crna luka, seckana",
+      "1 kašika sojevog sosa",
+      "1 kašičica ulja od susama",
+      "1 kašičica kukuruznog skroba"
+    ],
+    instructions: [
+      "Pomešajte brašno sa solju, dodajte vrelu vodu i ulje.",
+      "Mesijte do glatkog testa, pokrijte i ostavite 30 minuta.",
+      "Za punjenje: pomešajte škampe, slaninu, luk i začine.",
+      "Razvucite testo tanko i isecite krugove od 8cm.",
+      "Stavite kašiku punjenja na svaki krug.",
+      "Zatvorite dim sum formirajući nabore na vrhu.",
+      "Parite u košarici 12-15 minuta.",
+      "Servirajte toplo sa sojevim sosom za umakanje."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: [
+      "Košarica za parenje mora biti dobro namazana",
+      "Ne otvarajte poklopac tokom parenja",
+      "Možete napraviti različita punjenja"
+    ],
+    nutrition: {
+      calories: "180 kcal po porciji (4 komada)",
+      protein: "15g",
+      carbs: "20g",
+      fat: "6g",
+      sodium: "480mg"
+    }
+  },
+
+  "Bibimbap": {
+    name: "Bibimbap",
+    description: "Korejska činija sa pirinčem, povrćem, mesom i jajom.",
+    ingredients: [
+      "2 šolje kuvanog pirinča",
+      "200g tanko seckane govedine",
+      "1 šargarepa, isečena na štapiće",
+      "200g špinata",
+      "200g klica soje",
+      "4 šitake gljiva, sečene",
+      "2 jaja",
+      "Za gochujang sos:",
+      "3 kašike gochujang paste",
+      "1 kašika susam ulja",
+      "1 kašika sirćeta",
+      "1 kašičica šećera",
+      "So po ukusu"
+    ],
+    instructions: [
+      "Kratko prokuvajte svako povrće posebno i začinite solju.",
+      "Marinirajte govedinu sa sojom i susam uljem, zatim propržite.",
+      "Pomešajte sastojke za gochujang sos.",
+      "U činije stavite pirinač kao bazu.",
+      "Rasporedite povrće i meso oko pirinča.",
+      "Ispržite jaja i stavite na vrh.",
+      "Servirajte sa gochujang sosom sa strane.",
+      "Promešajte sve pre jedenja."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "20 minuta",
+    servings: 2,
+    notes: [
+      "Svako povrće se priprema posebno za najbolji ukus",
+      "Možete dodati kimči za dodatnu kiselost",
+      "Tradicionalno se servira u kamenim činijama"
+    ],
+    nutrition: {
+      calories: "520 kcal po porciji",
+      protein: "25g",
+      carbs: "58g",
+      fat: "18g",
+      fiber: "6g"
+    }
+  },
+
+  "Tom Yum": {
+    name: "Tom Yum",
+    description: "Tajlandska ljuta i kisela supa sa škampima i aromantičnim začinima.",
+    ingredients: [
+      "500ml pileće supe",
+      "200g škampa, oljuštenih",
+      "100g šitake gljiva, sečenih",
+      "2 stabla lemon grass-a",
+      "4 kaffir lime lista",
+      "3 thai chili paprice",
+      "3cm galanga korena",
+      "3 šalota, prepolovljena",
+      "3 kašike fish sauce",
+      "2 kašike tamarind paste",
+      "1 kašika palm šećera",
+      "2 limuna (sok)",
+      "Koriander za ukras"
+    ],
+    instructions: [
+      "Zakuvajte supu sa lemon grass, galanga, lime listovima.",
+      "Dodajte šalot i chili paprice, kuvajte 5 minuta.",
+      "Dodajte gljive i kuvajte 3 minuta.",
+      "Dodajte škampe i kuvajte dok ne postanu roze.",
+      "Začinite sa fish sauce, tamarind pastom i šećerom.",
+      "Skinite sa vatre i dodajte limunov sok.",
+      "Uklonite lemon grass i galanga.",
+      "Ukrasite korijanderom i servirajte."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "15 minuta",
+    servings: 2,
+    notes: [
+      "Ne kuvajte škampe predugo da ne postanu gumasti",
+      "Balans kiselog, slanog, slatkog i ljutog je ključan",
+      "Galanga ima drugačiji ukus od đumbira"
+    ],
+    nutrition: {
+      calories: "180 kcal po porciji",
+      protein: "20g",
+      carbs: "12g",
+      fat: "6g",
+      vitamin_c: "visoko"
+    }
+  },
+
+  "Pho": {
+    name: "Pho",
+    description: "Vijetnamska aromatična supa sa nudlama, mesom i začinskim biljem.",
+    ingredients: [
+      "200g phở nudli (pirinčane)",
+      "1l govedji bujon",
+      "200g tanko seckane sirove govedine",
+      "1 glavica belog luka",
+      "5cm đumbira",
+      "2 zvezdasta anisa",
+      "4 klinčića",
+      "1 cimet štap",
+      "2 kašike fish sauce",
+      "1 kašika rock šećera",
+      "Za garniranje:",
+      "Klice soje",
+      "Thai bosiljak",
+      "Koriander",
+      "Limun",
+      "Chili paprice"
+    ],
+    instructions: [
+      "Opržite začine na suvoj tiganj 2 minuta.",
+      "Dodajte u bujon sa celim lukom i đumbirom.",
+      "Kuvajte 45 minuta na laganoj vatri.",
+      "Procedite bujon i začinite fish sauce i šećerom.",
+      "Skuvajte nudli prema uputstvu.",
+      "Stavite nudli u činije, dodajte sirovu govedinu.",
+      "Polite vrućim buljonom da se meso skuva.",
+      "Servirajte sa svežim biljem i dodacima."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "50 minuta",
+    servings: 2,
+    notes: [
+      "Bujon je osnova - mora biti bogat i aromatičan",
+      "Sirova govedina se kuva od vrelog bujona",
+      "Tradicionalno se jede sa štapićima i kašikom"
+    ],
+    nutrition: {
+      calories: "380 kcal po porciji",
+      protein: "22g",
+      carbs: "45g",
+      fat: "12g",
+      sodium: "1200mg"
+    }
+  },
+
+  "Pad Thai": {
+    name: "Pad Thai",
+    description: "Najpoznatije tajlandsko jelo sa nudlama, škampima i kikirikijem.",
+    ingredients: [
+      "200g phở nudli",
+      "200g škampa",
+      "2 jaja",
+      "100g tofu, seckano na kockice",
+      "3 kašike tamarind paste",
+      "2 kašike fish sauce",
+      "2 kašike palm šećera",
+      "2 čena belog luka",
+      "2 šalota, seckana",
+      "100g klica soje",
+      "3 mlada crna luka",
+      "1/2 šolje kikirikija, seckanih",
+      "Limun za serviranje"
+    ],
+    instructions: [
+      "Potopite nudli u toplu vodu 30 minuta.",
+      "Zagrejte wok na jakoj vatri sa uljem.",
+      "Propržite beli luk i šalot 1 minut.",
+      "Dodajte škampe i tofu, pržite 2 minuta.",
+      "Gurnite na jednu stranu, dodajte jaja i promešajte.",
+      "Dodajte nudli i sosove, brzo mešajte.",
+      "Dodajte klice soje i crni luk.",
+      "Servirajte sa kirikijem i limunom."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "10 minuta",
+    servings: 2,
+    notes: [
+      "Wok mora biti vrlo vreo za najbolji rezultat",
+      "Ne kuvajte nudli unapred - samo potopite",
+      "Tamarind pasta daje autentičnu kiselost"
+    ],
+    nutrition: {
+      calories: "480 kcal po porciji",
+      protein: "24g",
+      carbs: "52g",
+      fat: "18g",
+      vitamin_c: "40mg"
+    }
+  },
+
+  "Sashimi": {
+    name: "Sashimi",
+    description: "Japanske tanke kriške sirove ribe vrhunskog kvaliteta.",
+    ingredients: [
+      "200g sushi-grade tuna",
+      "200g sushi-grade lososa",
+      "Wasabi pasta",
+      "Sojevi sos za umakanje",
+      "Ukiseljeni đumbir",
+      "Daikon ren za ukras",
+      "Shiso listovi za ukras"
+    ],
+    instructions: [
+      "Uverite se da je riba sushi kvaliteta.",
+      "Oštriti nož i čistite između sečenja.",
+      "Secite ribu pod uglom od 45 stepeni.",
+      "Napravite kriške debljine 6-8mm.",
+      "Rasporedite na hladnu tanjiru.",
+      "Ukrasite sa daikon renom i shiso listovima.",
+      "Servirajte sa wasabi i sojom.",
+      "Jedite odmah nakon pripreme."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "0 minuta",
+    servings: 2,
+    notes: [
+      "Koristite samo sushi-grade ribu",
+      "Nož mora biti izuzetno oštar",
+      "Jedite u roku od 30 minuta"
+    ],
+    nutrition: {
+      calories: "180 kcal po porciji",
+      protein: "35g",
+      carbs: "0g",
+      fat: "4g",
+      omega3: "vrlo visoko"
+    }
+  },
+
+  "Buffalo Wings": {
+    name: "Buffalo Wings",
+    description: "Američka pileća krilca u ljutom bufalo sosu sa blue cheese dipom.",
+    ingredients: [
+      "1kg pilećih krilaca",
+      "Za bufalo sos:",
+      "120ml hot sauce (Frank's RedHot)",
+      "60g putera",
+      "1 kašika belog sirćeta",
+      "1/8 kašičice garlic praha",
+      "Za blue cheese dip:",
+      "120g sour cream",
+      "60g mayonnaise",
+      "60g blue cheese sira",
+      "1 kašika limunovog soka",
+      "Celer štapići za serviranje"
+    ],
+    instructions: [
+      "Zagrejte rernu na 220°C.",
+      "Začinite krilca solju i biberom.",
+      "Pecite 45-50 minuta dok ne postanu hrskava.",
+      "Za sos: istopite puter i pomešajte sa hot sauce.",
+      "Za dip: pomešajte sve sastojke i izdrobite sir.",
+      "Polite vruća krilca sa bufalo sosom.",
+      "Dobro promešajte da se prekriu.",
+      "Servirajte sa blue cheese dipom i celerom."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "50 minuta",
+    servings: 4,
+    notes: [
+      "Frank's RedHot je tradicionalni sos",
+      "Krilca moraju biti potpuno suva pre pečenja",
+      "Možete prilagoditi ljutinu po ukusu"
+    ],
+    nutrition: {
+      calories: "420 kcal po porciji",
+      protein: "28g",
+      carbs: "2g",
+      fat: "32g",
+      sodium: "980mg"
+    }
+  },
+
+  "Baklava": {
+    name: "Baklava",
+    description: "Slojeviti bliskoistočni dezert sa orasima i medom.",
+    ingredients: [
+      "500g phyllo testa",
+      "300g mešanih orašastih plodova, seckanih",
+      "200g putera, otopljenog",
+      "1 kašičica cimeta",
+      "Za sirup:",
+      "200g šećera",
+      "200ml vode",
+      "150ml meda",
+      "2 kašike limunovog soka",
+      "1 cimet štap"
+    ],
+    instructions: [
+      "Zagrejte rernu na 180°C.",
+      "Pomešajte orahe sa cimetom.",
+      "Premažite tepsiju puterom.",
+      "Postavite pola phyllo listova, mažući svaki puterom.",
+      "Rasporedite orehu smesu.",
+      "Pokrijte ostalom phyllo, mažući svaki list.",
+      "Isecite na romboide pre pečenja.",
+      "Pecite 30-35 minuta dok ne pozlati.",
+      "Za sirup: skuvajte sve sastojke 10 minuta.",
+      "Polite vrućom baklavom hladni sirup."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "35 minuta",
+    servings: 12,
+    notes: [
+      "Phyllo testo se brzo suši - pokrijte vlažnom krpom",
+      "Sirup mora biti hladan kada se polije",
+      "Najbolja je sutradan kada se slegne"
+    ],
+    nutrition: {
+      calories: "320 kcal po porciji",
+      protein: "6g",
+      carbs: "35g",
+      fat: "18g",
+      sugar: "28g"
+    }
+  },
+
+  "Fish and Chips": {
+    name: "Fish and Chips",
+    description: "Klasično britansko jelo sa prženom ribom u testu i pomfritom.",
+    ingredients: [
+      "4 komada belog filea ribe (cod ili haddock)",
+      "500g krompira za pomfrit",
+      "Za testo:",
+      "200g brašna",
+      "250ml hladnog piva",
+      "1 kašičica soli",
+      "1/2 kašičice praška za pecivo",
+      "Ulje za duboko prženje",
+      "Limun za serviranje",
+      "Mushy peas (opciono)"
+    ],
+    instructions: [
+      "Oljuštite krompir i isecite na deblje štapiće.",
+      "Zagrejte ulje na 160°C i predpržite pomfrit 4 minuta.",
+      "Za testo: pomešajte brašno, so i prašak za pecivo.",
+      "Dodajte hladno pivo i umešajte do glatkog testa.",
+      "Ostavite testo da odmara 30 minuta.",
+      "Umočite ribu u testo i pržite na 180°C 4-5 minuta.",
+      "Povećajte temperaturu na 190°C i dovršite pomfrit.",
+      "Servirajte sa limunom i malim sirćetom."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "20 minuta",
+    servings: 4,
+    notes: [
+      "Koristite hladno pivo za hrskavo testo",
+      "Riba mora biti svoja pre umakanja u testo",
+      "Dvostruko prženje čini pomfrit hrskaiji"
+    ],
+    nutrition: {
+      calories: "580 kcal po porciji",
+      protein: "32g",
+      carbs: "48g",
+      fat: "28g",
+      omega3: "visoko"
+    }
+  },
+
+  "Paella": {
+    name: "Paella",
+    description: "Španski pirinac sa morskim plodovima, piletinom i šafranom.",
+    ingredients: [
+      "400g bomba pirinča (ili arborio)",
+      "800ml pileće supe",
+      "200g piletine, seckane",
+      "200g škampa",
+      "200g dagnji",
+      "100g grašaka",
+      "2 paradajza, rendana",
+      "1 crvena paprika, seckana",
+      "4 čena belog luka",
+      "1/2 kašičice šafrana",
+      "4 kašike maslinovog ulja",
+      "So i biber po ukusu",
+      "Limun za serviranje"
+    ],
+    instructions: [
+      "Potopite šafran u toplu supu.",
+      "Zagrejte maslinovo ulje u paella tiganju.",
+      "Propržite piletinu dok ne porumeni.",
+      "Dodajte beli luk, paradajz i papriku, kuvajte 5 minuta.",
+      "Dodajte pirinac i mešajte 2 minuta.",
+      "Polite šafran supom i ne mešajte više.",
+      "Kuvajte 10 minuta, zatim dodajte morske plodove.",
+      "Kuvajte još 8-10 minuta dok pirinac ne upije tečnost.",
+      "Ostavite da odmara 5 minuta pre serviranja."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "30 minuta",
+    servings: 6,
+    notes: [
+      "Ne mešajte pirinac nakon dodavanja supe",
+      "Šafran je ključan za autentičan ukus i boju",
+      "Tradicionalno se pravi u paella tiganju"
+    ],
+    nutrition: {
+      calories: "420 kcal po porciji",
+      protein: "24g",
+      carbs: "52g",
+      fat: "12g",
+      iron: "2.5mg"
+    }
+  },
+
+  "Shawarma": {
+    name: "Shawarma",
+    description: "Bliskoistočni wrap sa mariniranim mesom, povrćem i tahini sosom.",
+    ingredients: [
+      "500g jagnjeće plećke ili piletine",
+      "4 pita hleba",
+      "Za marinadu:",
+      "3 kašike maslinovog ulja",
+      "2 kašike limunovog soka",
+      "2 čena belog luka",
+      "1 kašičica kim semena",
+      "1 kašičica korijandera",
+      "1/2 kašičice cimeta",
+      "Za tahini sos:",
+      "3 kašike tahini paste",
+      "2 kašike limunovog soka",
+      "1 čen belog luka",
+      "Voda po potrebi",
+      "Paradajz, krastavac, crni luk za serviranje"
+    ],
+    instructions: [
+      "Pomešajte sve sastojke za marinadu.",
+      "Marinirajte meso najmanje 2 sata.",
+      "Propržite meso na jakoj vatri 6-8 minuta sa svake strane.",
+      "Ostavite da odmara 5 minuta, zatim isecite tanko.",
+      "Za tahini sos: pomešajte tahini, limun, beli luk i vodu.",
+      "Zagrejte pita hleb.",
+      "Napunite pitu mesom, povrćem i tahini sosom.",
+      "Zamotajte čvrsto i servirajte."
+    ],
+    prepTime: "15 minuta (+ 2h mariniranje)",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: [
+      "Duže mariniranje daje bolji ukus",
+      "Možete koristiti roštilj umesto tiganja",
+      "Tradicionalno se meso kuva na rotisserie"
+    ],
+    nutrition: {
+      calories: "480 kcal po porciji",
+      protein: "32g",
+      carbs: "35g",
+      fat: "22g",
+      fiber: "4g"
+    }
+  },
+
+  "Minestrone": {
+    name: "Minestrone",
+    description: "Hranljiva italijanska supa sa povrćem, pasuljem i pastom.",
+    ingredients: [
+      "2 kašike maslinovog ulja",
+      "1 glavica crnog luka, seckana",
+      "2 šargarepe, seckane na kockice",
+      "2 stabla celera, seckana",
+      "3 čena belog luka, sitno seckana",
+      "400g konzervisanih paradajza",
+      "1.5l povrćne supe",
+      "400g konzervisanog borlotti pasulja",
+      "100g malih pasta (ditalini)",
+      "2 šolje špinata",
+      "2 kašike svežeg bosiljka",
+      "Parmezan za serviranje"
+    ],
+    instructions: [
+      "Zagrejte maslinovo ulje u velikom loncu.",
+      "Propržite luk, šargarepe i celer 5 minuta.",
+      "Dodajte beli luk i pržite još 1 minut.",
+      "Dodajte paradajz i kuvajte 5 minuta.",
+      "Dodajte supu i pasulj, kuvajte 15 minuta.",
+      "Dodajte pastu i kuvajte 10 minuta.",
+      "Dodajte špиnat u poslednja 2 minuta.",
+      "Začinite solju, biberom i bosiljkom.",
+      "Servirajte sa parmezanom."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "35 minuta",
+    servings: 6,
+    notes: [
+      "Možete koristiti bilo koji sezonski povrće",
+      "Supa je još bolja sutradan",
+      "Dodajte parmezan kore za dodatni ukus"
+    ],
+    nutrition: {
+      calories: "250 kcal po porciji",
+      protein: "12g",
+      carbs: "35g",
+      fat: "8g",
+      fiber: "8g"
+    }
+  },
+
+  "Bruschetta": {
+    name: "Bruschetta",
+    description: "Italijanski antipasto sa paradajzom na prženom hlebu.",
+    ingredients: [
+      "1 baget, seckan na 1cm kriške",
+      "4 zrela paradajza, seckana na kockice",
+      "3 čena belog luka",
+      "1/4 šolje svežeg bosiljka, seckanog",
+      "3 kašike extra virgin maslinovog ulja",
+      "1 kašika balzamiko sirćeta",
+      "So i crni biber po ukusu",
+      "100g mozzarella sira (opciono)"
+    ],
+    instructions: [
+      "Zagrejte rernu na 200°C.",
+      "Postavite kriške hleba na tepsiju i pecite 5-7 minuta.",
+      "Protrljajte topao hleb sa čenom belog luka.",
+      "U činiji pomešajte paradajz, bosiljak, ulje i sirće.",
+      "Začinite solju i biberom.",
+      "Ostavite smesu da odmara 15 minuta.",
+      "Stavite smesu od paradajza na hleb.",
+      "Po želji dodajte komad mozzarelle.",
+      "Servirajte odmah."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "7 minuta",
+    servings: 6,
+    notes: [
+      "Koristite najzrelije paradajze",
+      "Svež bosiljak je ključan",
+      "Ne stavljajte paradajz prerano da hleb ne omekša"
+    ],
+    nutrition: {
+      calories: "180 kcal po porciji",
+      protein: "6g",
+      carbs: "25g",
+      fat: "7g",
+      vitamin_c: "15mg"
+    }
+  },
+
+  "Goulash": {
+    name: "Goulash",
+    description: "Mađarski gulaš sa govedinom, paprikama i začinima.",
+    ingredients: [
+      "800g govedine za gulaš, seckane na kockice",
+      "2 glavice crnog luka, seckane",
+      "3 crvene paprike, seckane",
+      "3 kašike slatke paprike",
+      "2 kašike paradajz paste",
+      "500ml goveđeg bujona",
+      "400g konzervisanih paradajza",
+      "2 lovorova lista",
+      "1 kašičica kim semena",
+      "500g krompira, seckanih",
+      "So i biber po ukusu",
+      "Sour cream za serviranje"
+    ],
+    instructions: [
+      "U teškom loncu propržite luk dok ne postane mek.",
+      "Dodajte govedinu i propržite dok ne porumeni.",
+      "Dodajte papriku i pržite 5 minuta.",
+      "Dodajte slatku papriku i paradajz pastu.",
+      "Dodajte bujon, paradajz, lovor i kim.",
+      "Kuvajte pod poklopcem 1 sat na laganoj vatri.",
+      "Dodajte krompir i kuvajte još 30 minuta.",
+      "Začinite solju i biberom.",
+      "Servirajte sa sour cream."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "90 minuta",
+    servings: 6,
+    notes: [
+      "Slatka paprika je ključni sastojak",
+      "Sporije kuvanje čini meso mekšim",
+      "Tradicionalno se servira sa krumpli ili knedlama"
+    ],
+    nutrition: {
+      calories: "380 kcal po porciji",
+      protein: "28g",
+      carbs: "32g",
+      fat: "16g",
+      iron: "4mg"
+    }
+  },
+
+  "Pancakes": {
+    name: "Pancakes",
+    description: "Američke palačinke - debele i mekane, savršene za doručak.",
+    ingredients: [
+      "200g brašna",
+      "2 kašike šećera",
+      "2 kašičice praška za pecivo",
+      "1/2 kašičice soli",
+      "200ml mleka",
+      "1 jaje",
+      "3 kašike otopljenog putera",
+      "1 kašičica vanilin ekstrakta",
+      "Puter za maženje tiganja",
+      "Maplov sirup za serviranje"
+    ],
+    instructions: [
+      "U velikoj činiji pomešajte brašno, šećer, prašak za pecivo i so.",
+      "U drugoj činiji umutite mleko, jaje, puter i vanilin.",
+      "Dodajte tečne sastojke u suve i lagano pomešajte.",
+      "Ne mešajte previše - grudice su u redu.",
+      "Zagrejte tiganj na srednjoj vatri i podmaživje puterom.",
+      "Sipajte 1/4 šolje testa za svaki pancake.",
+      "Pecite dok se ne pojave mehurići na površini.",
+      "Okrenite i pecite još 1-2 minuta.",
+      "Servirajte toplo sa maplovim sirupom."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: [
+      "Ne mešajte testo previše da pancakes ostanu mekani",
+      "Možete dodati borovnice ili čokoladne čipsove",
+      "Držite gotove pancakes tople u rerni na 100°C"
+    ],
+    nutrition: {
+      calories: "280 kcal po porciji (3 pancake-a)",
+      protein: "8g",
+      carbs: "42g",
+      fat: "9g",
+      sugar: "12g"
+    }
+  },
+
+  "Ratatouille": {
+    name: "Ratatouille",
+    description: "Francuski čuvani povrće iz Provanse sa mediteranskim začinima.",
+    ingredients: [
+      "1 plavi patlidžan, seckan na kockice",
+      "2 tikvice, seckane na kockice",
+      "1 crvena paprika, seckana",
+      "1 žuta paprika, seckana",
+      "4 paradajza, seckana",
+      "1 glavica crnog luka, seckana",
+      "4 čena belog luka, sitno seckana",
+      "1/4 šolje maslinovog ulja",
+      "2 kašike svežeg timijana",
+      "1/4 šolje svežeg bosiljka",
+      "2 lovorova lista",
+      "So i crni biber po ukusu"
+    ],
+    instructions: [
+      "Posoljite patlidžan i ostavite 30 minuta, zatim osušite.",
+      "Zagrejte maslinovo ulje u velikoj tiganj.",
+      "Propržite luk 5 minuta dok ne omekša.",
+      "Dodajte beli luk i pržite još 1 minut.",
+      "Dodajte patlidžan i pržite 5 minuta.",
+      "Dodajte paprike i tikvice, pržite 5 minuta.",
+      "Dodajte paradajz, timijan i lovor.",
+      "Kuvajte na laganoj vatri 30-40 minuta.",
+      "Dodajte bosiljak u posledjih 5 minuta.",
+      "Začinite solju i biberom."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "50 minuta",
+    servings: 6,
+    notes: [
+      "Možete peći u rerni na 180°C umesto na tiganju",
+      "Odličan je i hladan kao salata",
+      "Ukus se poboljšava ako odstoji preko noći"
+    ],
+    nutrition: {
+      calories: "120 kcal po porciji",
+      protein: "3g",
+      carbs: "18g",
+      fat: "5g",
+      fiber: "6g"
+    }
+  },
+
+  "Carbonara": {
+    name: "Carbonara",
+    description: "Klasična rimska pasta sa jajima, sirom i slaninom.",
+    ingredients: [
+      "400g spageta",
+      "200g guanciale ili slanine, seckane na kockice",
+      "4 cela jaja",
+      "100g parmezana, rendanog",
+      "50g pecorino sira, rendanog",
+      "Crno mleveni biber",
+      "So za vodu"
+    ],
+    instructions: [
+      "Kuvajte spagete u obilno slanoj vodi al dente.",
+      "Propržite guanciale dok ne postane hrskav.",
+      "U činiji umutite jaja sa sirom i obilno crnim biberom.",
+      "Zadržite šolju vode od kuvanja paste.",
+      "Ocijedite pastu i dodajte u tiganj sa guanciale.",
+      "Skinite sa vatre i dodajte jaje smešu.",
+      "Brzo mešajte dodajući malo vode od paste.",
+      "Mešajte dok se ne formira kremasta tekstura.",
+      "Servirajte odmah sa dodatnim sirom."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: [
+      "Ne koristite pavlaku - samo jaja i sir",
+      "Tiganj mora biti van vatre kada dodajete jaja",
+      "Radite brzo da se jaja ne skuvaju"
+    ],
+    nutrition: {
+      calories: "520 kcal po porciji",
+      protein: "22g",
+      carbs: "60g",
+      fat: "20g",
+      calcium: "200mg"
+    }
+  },
+
+  "Coq au Vin": {
+    name: "Coq au Vin",
+    description: "Francuski klasik - piletina kuvana u crnom vinu sa povrćem.",
+    ingredients: [
+      "1 cela piletina, iseckana na delove",
+      "750ml crvenog vina",
+      "200g slanine, seckane na kockice",
+      "20 malih belog luka",
+      "250g šampinjona",
+      "2 šargarepe, seckane",
+      "2 stabla celera, seckana",
+      "3 čena belog luka, sitno seckana",
+      "2 kašike brašna",
+      "2 lovorova lista",
+      "3 grančice timijana",
+      "2 kašike putera",
+      "So i biber po ukusu"
+    ],
+    instructions: [
+      "Marinirajte delove piletine u vinu 2 sata.",
+      "Izdvojite piletinu i sačuvajte vino.",
+      "Propržite slaninu u teškom loncu.",
+      "Dodajte piletinu i propržite sa svih strana.",
+      "Dodajte povrće i pržite 5 minuta.",
+      "Posipajte brašnom i mešajte 1 minut.",
+      "Dodajte vino i začinsko bilje.",
+      "Kuvajte pod poklopcem 45 minuta.",
+      "Dodajte gljive u poslednih 15 minuta.",
+      "Začinite i umešajte puter pre serviranja."
+    ],
+    prepTime: "30 minuta (+ 2h mariniranje)",
+    cookTime: "60 minuta",
+    servings: 4,
+    notes: [
+      "Koristite dobro vino - ukus će biti bolji",
+      "Možete dodati malo konjaka za dodatnu aromu",
+      "Tradicionalno se servira sa krumpirom ili hlebom"
+    ],
+    nutrition: {
+      calories: "480 kcal po porciji",
+      protein: "35g",
+      carbs: "15g",
+      fat: "24g",
+      iron: "3mg"
+    }
+  },
+
+  "Tempura": {
+    name: "Tempura",
+    description: "Japanski način prženja povrća i škampa u lakom, hrskavom testu.",
+    ingredients: [
+      "200g škampa, oljuštenih",
+      "1 slatki krompir, seckan na štapiće",
+      "1 plavi patlidžan, seckan na kriške",
+      "8 špargli",
+      "Za testo:",
+      "1 šolja ledene vode",
+      "1 žumance",
+      "1 šolja brašna",
+      "Za umak:",
+      "3 kašike mirin-a",
+      "3 kašike sojevog sosa",
+      "1/2 šolje dashi supe",
+      "Ulje za duboko prženje"
+    ],
+    instructions: [
+      "Zagrejte ulje na 170°C.",
+      "Za umak: pomešajte mirin, soju i dashi.",
+      "Za testo: lagano umešajte žumance u ledenu vodu.",
+      "Dodajte brašno i kratko promešajte - grudice su dobro.",
+      "Umočite povrće i škampe u testo.",
+      "Pržite u ulju 2-3 minuta dok ne pozlati.",
+      "Ocijedite na papiru.",
+      "Servirajte odmah sa umakom za umakanje."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: [
+      "Testo mora biti hladno i ne sme biti glatko",
+      "Ne preopteretite ulje - pržite u manjim količinama",
+      "Jedite odmah dok je vruće i hrskavo"
+    ],
+    nutrition: {
+      calories: "320 kcal po porciji",
+      protein: "18g",
+      carbs: "35g",
+      fat: "12g",
+      omega3: "dobro"
+    }
+  },
+
+  "Pierogi": {
+    name: "Pierogi",
+    description: "Poljske knedle sa krumpirom, sirom ili mesom.",
+    ingredients: [
+      "Za testo:",
+      "400g brašna",
+      "200ml vrele vode",
+      "2 kašike ulja",
+      "1 kašičica soli",
+      "Za punjenje:",
+      "500g kuvanog krompira",
+      "200g farmer cheese-a",
+      "1 glavica crnog luka, propržena",
+      "So i biber po ukusu",
+      "Sour cream za serviranje"
+    ],
+    instructions: [
+      "Napravite testo od brašna, vode, ulja i soli.",
+      "Mesijte 10 minuta, pokrijte i ostavite 30 minuta.",
+      "Izdnječite krompir sa sirom i dodajte luk.",
+      "Začinite solju i biberom.",
+      "Razvucite testo na 3mm debljina.",
+      "Isecite krugove od 8cm prečnika.",
+      "Stavite kašiku punjenja na svaki krug.",
+      "Zatvorite kao polumedsec i zalepite krajeve.",
+      "Kuvajte u ključaloj vodi 3-4 minuta.",
+      "Servirajte sa sour cream i proprženim lukom."
+    ],
+    prepTime: "60 minuta",
+    cookTime: "15 minuta",
+    servings: 6,
+    notes: [
+      "Možete ih zamrznuti pre kuvanja",
+      "Tradicionalno punjenje je krompir i sir",
+      "Možete ih propržiti nakon kuvanja za hrskavost"
+    ],
+    nutrition: {
+      calories: "340 kcal po porciji (5 komada)",
+      protein: "12g",
+      carbs: "55g",
+      fat: "8g",
+      calcium: "150mg"
+    }
+  },
+
+  "Gelato": {
+    name: "Gelato",
+    description: "Italijanski sladoled sa intenzivnim ukusima, gušći od običnog sladoleda.",
+    ingredients: [
+      "500ml punomasnog mleka",
+      "200ml pavlake",
+      "150g šećera",
+      "6 žumanaca",
+      "1 kašičica vanilin ekstrakta",
+      "Prstohvat soli"
+    ],
+    instructions: [
+      "Zagrejte mleko i pavlaku do tačke ključanja.",
+      "Umutite žumanca sa šećerom dok ne pobele.",
+      "Polako dodajte vrelo mleko u žumanca, stalno mešajući.",
+      "Vratite smesu u lonac i kuvajte na laganoj vatri.",
+      "Mešajte dok ne zgusne (80°C) - prekriva kašiku.",
+      "Procedite kroz sito i dodajte vanilin.",
+      "Ohladite potpuno u frižideru 4 sata.",
+      "Stavite u mašinu za sladoled 20-25 minuta."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "15 minuta (+ 4h hlađenje)",
+    servings: 6,
+    notes: [
+      "Ne dozvolite da smeša provri kada kuvate krem",
+      "Gelato je gušći od običnog sladoleda",
+      "Možete dodati različite ukuse po želji"
+    ],
+    nutrition: {
+      calories: "220 kcal po porciji",
+      protein: "6g",
+      carbs: "28g",
+      fat: "10g",
+      calcium: "180mg"
+    }
+  },
+
+  "Churros": {
+    name: "Churros",
+    description: "Španski prženi štapići sa šećerom i cimetom, savršeni za umakanje.",
+    ingredients: [
+      "250ml vode",
+      "60g putera",
+      "1 kašičica šećera",
+      "1/2 kašičice soli",
+      "150g brašna",
+      "3 jaja",
+      "Ulje za duboko prženje",
+      "Za posipanje:",
+      "100g šećera",
+      "2 kašičice cimeta",
+      "Čokolada sos za umakanje"
+    ],
+    instructions: [
+      "U loncu zakuvajte vodu, puter, šećer i so.",
+      "Skinite sa vatre i dodajte brašno odjednom.",
+      "Energično mešajte dok se ne formira lopta.",
+      "Ohladite 5 minuta, zatim dodajte jaja jedno po jedno.",
+      "Stavite testo u špriceralicu sa zvezdastom nastavkom.",
+      "Zagrejte ulje na 180°C.",
+      "Špricajte churros direktno u ulje, 10cm dužine.",
+      "Pržite 2-3 minuta dok ne pozlate.",
+      "Ocijedite i valetajte u šećer sa cimetom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: [
+      "Jedite dok su još topli",
+      "Možete napraviti čokolada sos za umakanje",
+      "Ulje mora biti na tačno 180°C"
+    ],
+    nutrition: {
+      calories: "280 kcal po porciji (4 komada)",
+      protein: "6g",
+      carbs: "35g",
+      fat: "13g",
+      sugar: "18g"
+    }
+  },
+
+  "Miso Soup": {
+    name: "Miso Soup",
+    description: "Tradicionalna japanska supa sa miso pastom, tofu i morskim algama.",
+    ingredients: [
+      "4 šolje dashi supe",
+      "3 kašike miso paste",
+      "150g čvrstog tofu, seckano na kockice",
+      "2 kašike wakame algi",
+      "2 mlada crna luka, tanko seckana",
+      "1 kašika sake (opciono)"
+    ],
+    instructions: [
+      "Potopite wakame alge u toplu vodu 5 minuta.",
+      "Zagrejte dashi supu u loncu.",
+      "U maloj činiji razblažite miso pastu sa malo tople dashi.",
+      "Dodajte razblaženu miso u supu - ne kuvajte više.",
+      "Dodajte tofu i wakame alge.",
+      "Zagrejte 2 minuta bez ključanja.",
+      "Ukrasite crnim lukom pre serviranja.",
+      "Servirajte odmah u malim činijama."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "8 minuta",
+    servings: 4,
+    notes: [
+      "Ne kuvajte miso - samo zagrejte",
+      "Dashi možete kupiti ili napraviti sami",
+      "Tradicionalno se servira sa obrokom, ne kao starter"
+    ],
+    nutrition: {
+      calories: "80 kcal po porciji",
+      protein: "8g",
+      carbs: "6g",
+      fat: "3g",
+      sodium: "900mg"
+    }
+  },
+
+  "Gazpacho": {
+    name: "Gazpacho",
+    description: "Španska hladna supa od paradajza, savršena za letnje dane.",
+    ingredients: [
+      "1kg zrelih paradajza",
+      "1 krastavac, oljušten",
+      "1 crvena paprika",
+      "1 mala glavica crvenog luka",
+      "2 čena belog luka",
+      "3 kašike extra virgin maslinovog ulja",
+      "2 kašike šerri sirćeta",
+      "1 kašičica soli",
+      "Crni biber po ukusu",
+      "Za garniranje: sitno seckano povrće"
+    ],
+    instructions: [
+      "Blanširajte paradajze u ključaloj vodi 1 minut.",
+      "Ohladite u ledena vodi i oljuštite.",
+      "Grubо isecite sve povrće.",
+      "Stavite u blender sa uljem, sirćetom i začinima.",
+      "Blendajte dok ne postane glatko.",
+      "Procedite kroz grubo sito ako želite.",
+      "Ohladite u frižideru najmanje 2 sata.",
+      "Servirajte hladno sa sitno seckanim povrćem."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "0 minuta (+ 2h hlađenje)",
+    servings: 4,
+    notes: [
+      "Koristite najzrelije paradajze za najbolji ukus",
+      "Může se čuvati u frižideru do 3 dana",
+      "Tradicionalno se servira vrlo hladno"
+    ],
+    nutrition: {
+      calories: "120 kcal po porciji",
+      protein: "3g",
+      carbs: "15g",
+      fat: "6g",
+      vitamin_c: "60mg"
+    }
+  },
+
+  "Chicken Tikka Masala": {
+    name: "Chicken Tikka Masala",
+    description: "Britanska-indijska kremasta piletina u aromatičnom paradajz sosu.",
+    ingredients: [
+      "800g piletine, seckane na kockice",
+      "Za marinadu:",
+      "200g jogurta",
+      "2 kašike garam masala",
+      "1 kašika ingvera",
+      "2 čena belog luka",
+      "Za sos:",
+      "400g konzervisanih paradajza",
+      "200ml pavlake",
+      "1 glavica crnog luka",
+      "3 čena belog luka",
+      "2cm đumbira",
+      "2 kašike garam masala",
+      "1 kašika paprike",
+      "2 kašike putera"
+    ],
+    instructions: [
+      "Marinirajte piletinu u jogurtu i začinima 2 sata.",
+      "Pеcite piletinu u rerni na 200°C 20 minuta.",
+      "Propržite luk, beli luk i đumbir za sos.",
+      "Dodajte začine i pržite 1 minut.",
+      "Dodajte paradajz i kuvajte 10 minuta.",
+      "Blendajte sos do glatke teksture.",
+      "Vratite u tiganj, dodajte pavlaku i piletinu.",
+      "Kuvajte 10 minuta, dodajte puter pre serviranja."
+    ],
+    prepTime: "30 minuta (+ 2h mariniranje)",
+    cookTime: "40 minuta",
+    servings: 4,
+    notes: [
+      "Mariniranje je ključno za ukus",
+      "Možete koristiti kokosovo mleko umesto pavlake",
+      "Servirajte sa basmati pirinčem i naan hlebom"
+    ],
+    nutrition: {
+      calories: "420 kcal po porciji",
+      protein: "35g",
+      carbs: "15g",
+      fat: "24g",
+      iron: "3mg"
+    }
+  },
+
+  "Beef Stroganoff": {
+    name: "Beef Stroganoff",
+    description: "Ruski klasik sa govedinom u kremastom sosу sa gljivama.",
+    ingredients: [
+      "600g govedine (file), seckano na trake",
+      "300g šampinjona, sečenih",
+      "1 glavica crnog luka, seckana",
+      "3 čena belog luka",
+      "300ml govedјeg bujona",
+      "200ml sour cream",
+      "2 kašike brašna",
+      "2 kašike putera",
+      "1 kašika senfa",
+      "1 kašika Worcestershire sosa",
+      "So i biber po ukusu",
+      "Peršun za ukras"
+    ],
+    instructions: [
+      "Začinite govedinu solju i biberom.",
+      "Propržite meso u tiganj na jakoj vatri 2 minuta.",
+      "Izvadite meso i ostavite sa strane.",
+      "U istom tiganj dodajte puter i propržite luk.",
+      "Dodajte gljive i pržite 5 minuta.",
+      "Posipајte brašnom i mešajte 1 minut.",
+      "Postepeno dodajte bujon, senf i Worcestershire.",
+      "Vratite meso i kuvajte 5 minuta.",
+      "Dodajte sour cream van vatre, украsite peršunom."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "20 minuta",
+    servings: 4,
+    notes: [
+      "Ne dodajte sour cream dok je na vatri",
+      "Tradicionalno se servira sa nudlama ili pirinčem",
+      "Meso ne sme biti prekuvano"
+    ],
+    nutrition: {
+      calories: "380 kcal po porciji",
+      protein: "32g",
+      carbs: "12g",
+      fat: "22g",
+      iron: "4mg"
+    }
+  },
+
+  "Waffles": {
+    name: "Waffles",
+    description: "Hrskavi američki vafli sa dubokim udubljenjima za sirup.",
+    ingredients: [
+      "300g brašna",
+      "2 kašike šećera",
+      "2 kašičice praška za pecivo",
+      "1/2 kašičice soli",
+      "2 jaja, razdvojena",
+      "400ml mleka",
+      "80g otopljenog putera",
+      "1 kašičica vanilin ekstrakta"
+    ],
+    instructions: [
+      "Pomešajte brašno, šećer, prašak za pecivo i so.",
+      "U drugoj činiji umutite žumanca sa mlekom, puterom i vanilinom.",
+      "Dodajte tečne sastojke u suve i promešajte.",
+      "Umutite belance u čvrst sneg i lagano umešajte.",
+      "Zagrejte vafl mašinu i podmazivje.",
+      "Sipajte testo i pecite 3-4 minuta.",
+      "Servirajte toplo sa maplovim sirupom."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "20 minuta",
+    servings: 4,
+    nutrition: {
+      calories: "320 kcal po vaflu",
+      protein: "10g",
+      carbs: "45g",
+      fat: "12g"
+    }
+  },
+
+  "Lasagna": {
+    name: "Lasagna",
+    description: "Slojevita italijanska pasta sa mesom, sirom i bešamel sosom.",
+    ingredients: [
+      "12 listova lazanje",
+      "500g mlevene govedine",
+      "400g paradajz sosa",
+      "300g ricotta sira",
+      "200g rendanog mozzarelle",
+      "100g parmezana",
+      "1 jaje",
+      "Za bešamel:",
+      "50g putera",
+      "50g brašna",
+      "500ml mleka"
+    ],
+    instructions: [
+      "Propržite mlevenu govedinu i dodajte paradajz sos.",
+      "Napravite bešamel od putera, brašna i mleka.",
+      "Pomešajte ricotta sa jajetom.",
+      "Skuvajte lazanje al dente.",
+      "U tepsiji postavite slojeve: sos, lazanje, ricotta, bešamel.",
+      "Ponovite slojeve 3 puta.",
+      "Završite sa mozzarella i parmezanom.",
+      "Pecite na 180°C 45 minuta."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "45 minuta",
+    servings: 8,
+    nutrition: {
+      calories: "420 kcal po porciji",
+      protein: "25g",
+      carbs: "35g",
+      fat: "20g"
+    }
+  },
+
+  "Sushi": {
+    name: "Sushi",
+    description: "Japanski kuglice pirinča sa ribom, povrćem ili morskim plodovima.",
+    ingredients: [
+      "300g sushi pirinča",
+      "3 kašike rižvog sirćeta",
+      "1 kašika šećera",
+      "1 kašičica soli",
+      "200g sushi-grade tuna",
+      "200g sushi-grade lososa",
+      "Nori alge",
+      "Wasabi",
+      "Ukiseljeni đumbir",
+      "Sojevi sos"
+    ],
+    instructions: [
+      "Skuvajte pirinac i ohladite.",
+      "Pomešajte sirće, šećer i so, dodajte u pirinac.",
+      "Secite ribu na tanke kriške.",
+      "Navlaživim rukama formirajte kuglice pirinča.",
+      "Stavite ribu na svaku kuglicu.",
+      "Ili napravite rolove sa nori algama.",
+      "Servirajte sa wasabi, đumbirom i sojom."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "20 minuta",
+    servings: 4,
+    nutrition: {
+      calories: "280 kcal po porciji",
+      protein: "18g",
+      carbs: "42g",
+      fat: "4g"
+    }
+  },
+
+  "Risotto": {
+    name: "Risotto",
+    description: "Kremasti italijanski pirinac kuvam postupnim dodavanjem bujona.",
+    ingredients: [
+      "300g arborio pirinča",
+      "1.2l toplog pileće bujona",
+      "1 glavica crnog luka",
+      "100ml belog vina",
+      "50g putera",
+      "50g parmezana",
+      "2 kašike maslinovog ulja",
+      "So i biber"
+    ],
+    instructions: [
+      "Propržite sitno seckan luk na ulju.",
+      "Dodajte pirinac i pržite 2 minuta.",
+      "Dodajte vino i mešajte dok ne ispari.",
+      "Dodajte topao bujon kašiku po kašiku.",
+      "Mešajte neprestano 18-20 minuta.",
+      "Dodajte puter i parmezan van vatre.",
+      "Začinite solju i biberom."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "25 minuta",
+    servings: 4,
+    nutrition: {
+      calories: "380 kcal po porciji",
+      protein: "12g",
+      carbs: "58g",
+      fat: "12g"
+    }
+  },
+
+  "French Toast": {
+    name: "French Toast",
+    description: "Francuski tost - hleb potopljen u jaja i mleko, zatim pržen.",
+    ingredients: [
+      "8 kriški debelog hleba",
+      "4 jaja",
+      "200ml mleka",
+      "2 kašike šećera",
+      "1 kašičica vanilina",
+      "1/2 kašičice cimeta",
+      "Puter za prženje",
+      "Maplov sirup"
+    ],
+    instructions: [
+      "Umutite jaja sa mlekom, šećerom, vanilinom i cimetom.",
+      "Potopite kriške hleba u smesu sa obe strane.",
+      "Zagrejte tiganj sa puterom.",
+      "Pržite hleb 2-3 minuta sa svake strane.",
+      "Servirajte toplo sa maplovim sirupom."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    nutrition: {
+      calories: "280 kcal po porciji",
+      protein: "12g",
+      carbs: "35g",
+      fat: "10g"
+    }
+  },
+
+  "Schnitzel": {
+    name: "Schnitzel",
+    description: "Austrijski/njemački tanko tučena telena šnička u prezlama.",
+    ingredients: [
+      "4 telećа ili svinjska šnicle",
+      "2 jaja",
+      "100g brašna",
+      "200g prezli",
+      "Ulje za duboko prženje",
+      "So i biber",
+      "Limun za serviranje"
+    ],
+    instructions: [
+      "Istucajte šnicle na 3mm debljine.",
+      "Začinite solju i biberom.",
+      "Uvaljajte u brašno, zatim jaja, zatim prezle.",
+      "Zagrejte ulje na 170°C.",
+      "Pržite 3-4 minuta sa svake strane.",
+      "Ocijedite na papiru.",
+      "Servirajte sa limunom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "10 minuta",
+    servings: 4,
+    nutrition: {
+      calories: "420 kcal po porciji",
+      protein: "35g",
+      carbs: "25g",
+      fat: "20g"
+    }
+  },
+  "Pakistani Karahi": {
+    name: "Pakistanski karahi",
+    description: "Tradicionalno pakistansko jelo kuvano u wok-u sa paradajzom i začinima.",
+    ingredients: [
+      "1kg kozjeg mesa ili piletine",
+      "4 velika paradajza, seckan",
+      "1 veliki luk, seckan",
+      "6 čenova belog luka",
+      "5cm đumbira, seckan",
+      "3 zelene papričice",
+      "1 kašika garam masala",
+      "2 kašičice crvene paprike",
+      "1 kašičica kurkume",
+      "1 kašičica djumbira u prahu",
+      "4 kašike ulja",
+      "So po ukusu",
+      "Peršun za ukras"
+    ],
+    instructions: [
+      "Zagrejte ulje u karahi ili velikoj tavi.",
+      "Dodajte luk i pržite do zlatne boje.",
+      "Dodajte beli luk, đumbir i zelene papričice.",
+      "Pržite 2 minuta.",
+      "Dodajte meso i pržite 10-15 minuta.",
+      "Dodajte sve začine i pržite 2 minuta.",
+      "Dodajte paradajz i kuvajte 20 minuta.",
+      "Kuvajte dok se meso ne omekša.",
+      "Ukrasite peršunom i služite."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "45 minuta",
+    servings: 6,
+    notes: ["Karahi je tradicionalni pakistanski wok", "Služi se sa nan hlebom"],
+    nutrition: { calories: "480 po porciji", protein: "38g", carbs: "12g", fat: "32g" }
+  },
+  "Pakistani Nihari": {
+    name: "Pakistanski nihari",
+    description: "Bogat i začinjen gulaš sa govedinom koji se polako kuva preko noći.",
+    ingredients: [
+      "1kg govedine (šank ili rebro)",
+      "2 kašike nihari masala",
+      "1 kašika crvene paprike",
+      "1 kašičica kurkume",
+      "1 kašika korijandera u prahu",
+      "4 čena belog luka",
+      "3cm đumbira",
+      "2 kašike ulja ili gi",
+      "1 veliki luk, seckan",
+      "So po ukusu",
+      "Voda za kuvanje",
+      "Đumbir julijen za ukras",
+      "Limun za servirane"
+    ],
+    instructions: [
+      "Marinirajte meso sa nihari masala i začinima 1 sat.",
+      "Zagrejte ulje u velikom loncu.",
+      "Dodajte luk i pržite do brane boje.",
+      "Dodajte marinirano meso i pržite 15 minuta.",
+      "Dodajte dovoljno vode da pokrije meso.",
+      "Dovedite do ključanja, zatim smanjite vatru.",
+      "Kuvajte pokriveno 3-4 sata na slaboj vatri.",
+      "Mešajte povremeno i dodajte vodu po potrebi.",
+      "Servirajte sa đumbirom i limunom."
+    ],
+    prepTime: "80 minuta",
+    cookTime: "4 sata",
+    servings: 8,
+    notes: ["Tradicionalno se jede za doručak", "Dugo kuvanje je ključno za ukus"],
+    nutrition: { calories: "520 po porciji", protein: "42g", carbs: "8g", fat: "35g" }
+  },
+  "Pakistani Haleem": {
+    name: "Pakistanski haleem",
+    description: "Hranjiva smeša sočiva, žitarica i mesa, sporo kuvana do kremaste teksture.",
+    ingredients: [
+      "500g govedine ili kozjeg mesa",
+      "1 šolja masoor dal (crveno sočivo)",
+      "1/2 šolje chana dal (žuto sočivo)",
+      "1/4 šolje ječma",
+      "1/4 šolje pšenice",
+      "2 kašike haleem masala",
+      "1 veliki luk, pržen",
+      "4 čena belog luka",
+      "3cm đumbira",
+      "2 kašike ulja",
+      "So po ukusu",
+      "Peršun i nana za ukras",
+      "Limun za servirane"
+    ],
+    instructions: [
+      "Potopite sočivo i žitarice 4 sata.",
+      "Skuvajte meso u slano vodi do mekšanja.",
+      "Usitnite meso u malim komadićima.",
+      "Skuvajte sočivo i žitarice do kremaste strukture.",
+      "Izblendajte da dobijete glatku teksturu.",
+      "Zagrejte ulje, dodajte beli luk i đumbir.",
+      "Dodajte haleem masala i pržite 2 minuta.",
+      "Kombinujte sve sastojke i kuvajte 30 minuta.",
+      "Ukrasite peršunom i služite sa limunom."
+    ],
+    prepTime: "4 sata 30 minuta",
+    cookTime: "2 sata",
+    servings: 8,
+    notes: ["Tradicionalno jelo za Ramazan", "Mora se mešati tokom kuvanja"],
+    nutrition: { calories: "450 po porciji", protein: "28g", carbs: "45g", fat: "18g" }
+  },
+  "Sri Lankan Kottu Roti": {
+    name: "Srilankanski kottu roti",
+    description: "Popularna ulična hrana od sitno seckanog roti hleba sa povrćem i mesom.",
+    ingredients: [
+      "6 roti hlebova (ili tortilje)",
+      "300g piletine ili govedine, seckan",
+      "2 jajeta",
+      "1 veliki luk, seckan",
+      "2 šargarepe, seckan",
+      "1 paprika, sečen",
+      "3 zelene papričice",
+      "4 čena belog luka",
+      "2cm đumbira",
+      "2 kašike kottu masala",
+      "2 kašike soja sosa",
+      "3 kašike ulja",
+      "So po ukusu",
+      "Peršun za ukras"
+    ],
+    instructions: [
+      "Sitno iseckajte roti hlebove na male delove.",
+      "Zagrejte ulje u velikoj tavi ili wok-u.",
+      "Dodajte luk, beli luk i đumbir, pržite 2 minuta.",
+      "Dodajte meso i pržite dok se ne skuva.",
+      "Dodajte povrće i zelene papričice.",
+      "Pržite 5 minuta dok povrće ne omekša.",
+      "Umešajte jajeta i pržite 2 minuta.",
+      "Dodajte seckani roti i kottu masala.",
+      "Mešajte i pržite 5-10 minuta sa dve špajle."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "20 minuta",
+    servings: 4,
+    notes: ["Tradicionalno se priprema sa dve špajle", "Roti može zameniti tortiljama"],
+    nutrition: { calories: "520 po porciji", protein: "28g", carbs: "55g", fat: "22g" }
+  },
+  "Sri Lankan Fish Ambul Thiyal": {
+    name: "Srilankanska riba ambul thiyal",
+    description: "Kiselo-slana riba kuvana sa gorkom u tradicionalnom stilu.",
+    ingredients: [
+      "1kg čvrste ribe (tuna ili skuša)",
+      "3 kašike gorke paste",
+      "1 kašika kurkume",
+      "2 kašike crnog bibera",
+      "10 curry listova",
+      "5cm pandan lista",
+      "2 crvene papričice",
+      "1 veliki luk, seckan",
+      "4 čena belog luka",
+      "3cm đumbira",
+      "2 kašike kokosovog ulja",
+      "So po ukusu",
+      "Voda po potrebi"
+    ],
+    instructions: [
+      "Iseći ribu na deblje komade.",
+      "Namaže ribu kurkumom i solju, ostavite 15 minuta.",
+      "Zagrejte kokosovo ulje u loncu.",
+      "Dodajte luk, beli luk, đumbir i pržite.",
+      "Dodajte curry listove i pandan.",
+      "Dodajte gorku pastu i crvene papričice.",
+      "Pržite 2 minuta.",
+      "Dodajte ribu i malo vode.",
+      "Kuvajte pokriveno 20 minuta na slaboj vatri."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "25 minuta",
+    servings: 6,
+    notes: ["Gorka daje karakteristični kiseo ukus", "Ne treba dodati mnogo vode"],
+    nutrition: { calories: "280 po porciji", protein: "35g", carbs: "8g", fat: "12g" }
+  },
+  "Sri Lankan Watalappan": {
+    name: "Srilankanski watalappan",
+    description: "Tradicionalni desert od kokosovog mleka, jaja i palmovog šećera.",
+    ingredients: [
+      "400ml kokosovog mleka",
+      "150g palmovog šećera (jaggery)",
+      "6 jaja",
+      "1/4 kašičice mlevenog klinčića",
+      "1/4 kašičice mlevane karanfila",
+      "1/4 kašičice mlevenog muškatnog oreha",
+      "1 štap cimeta",
+      "2 kašike kešu oreha, seckan",
+      "2 kašike sultana grožđa",
+      "Prstohvat soli"
+    ],
+    instructions: [
+      "Rastopite palmov šećer sa malo vode do sirupaste konzistencije.",
+      "Ostavite da se ohladi.",
+      "Umutite jaja u velikoj posudi.",
+      "Dodajte kokosovo mleko i ohlađeni sirup.",
+      "Dodajte sve začine i malo soli.",
+      "Procedite smešu kroz fino sito.",
+      "Dodajte kešu i grožđe.",
+      "Ulije formu i sipajte smeša.",
+      "Kuvajte na pari 45 minuta do sat vremena."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "60 minuta",
+    servings: 8,
+    notes: ["Možete koristiti braon šećer umesto palmovog", "Proverite sa čačkalicom da li je gotovo"],
+    nutrition: { calories: "220 po porciji", protein: "6g", carbs: "32g", fat: "8g" }
+  },
+  "Turkish Kebab": {
+    name: "Turski kebab",
+    description: "Sočno grillovano meso sa tradicionalnim turskim začinima.",
+    ingredients: [
+      "1kg jagnjetine ili govedine",
+      "2 velika luka, seckan",
+      "4 čena belog luka",
+      "2 kašike maslinovog ulja",
+      "1 kašika slatke paprike",
+      "1 kašičica kima",
+      "1 kašičica cimeta",
+      "1 kašičica korijandera",
+      "So i crni biber po ukusu",
+      "Svež peršun",
+      "Limun za serviraje"
+    ],
+    instructions: [
+      "Iseći meso na kockice ili promleti grublje.",
+      "Pomešajte sa lukom, belim lukom i začinima.",
+      "Dodajte maslinovo ulje i ostavite da marinira 2 sata.",
+      "Umešajte seckan peršun.",
+      "Oblikujte na ražnjiće ili napravite ćufte.",
+      "Grilujte na visokoj temperaturi 12-15 minuta.",
+      "Okćite sa svih strana.",
+      "Služite sa limunom i salutom.",
+      "Tradicionalno sa pirinčom ili hlebom."
+    ],
+    prepTime: "2 sata 20 minuta",
+    cookTime: "15 minuta",
+    servings: 6,
+    notes: ["Mariniranje je ključno za ukus", "Možete koristiti mleveno meso"],
+    nutrition: { calories: "420 po porciji", protein: "35g", carbs: "5g", fat: "28g" }
+  },
+  "Turkish Baklava": {
+    name: "Turska baklava",
+    description: "Slatki desert od filo testa sa orasima u medu.",
+    ingredients: [
+      "500g filo testa",
+      "300g mlevenih oraha",
+      "200g putera, toplog",
+      "1 šolja šećera",
+      "1 šolja vode",
+      "1/2 šolje meda",
+      "1 kašičica cimeta",
+      "1 kašičica vanile",
+      "Limunov sok od 1 limuna",
+      "2 kašike ruže vodice (opcionalno)"
+    ],
+    instructions: [
+      "Pomešajte orahe sa cimetom.",
+      "Namažite tepsiju puterom.",
+      "Stavite 8 kora filo testa, maže svaku puterom.",
+      "Pospite tankim slojem oreha.",
+      "Dodajte 2 kore testa, opet namažite.",
+      "Ponavljajte dok ne potrošite sve sastojke.",
+      "Završite sa 8 kora na vrhu.",
+      "Isecite na rombove ili kvadrate.",
+      "Pecite na 180°C 45 minuta do zlatne boje."
+    ],
+    prepTime: "60 minuta",
+    cookTime: "45 minuta",
+    servings: 16,
+    notes: ["Sirup se dodaje na vrućу baklavu", "Čuvajte filo testo pod vlažnim kuh towelom"],
+    nutrition: { calories: "320 po porciji", protein: "6g", carbs: "28g", fat: "22g" }
+  },
+  "Turkish Dolma": {
+    name: "Turska dolma",
+    description: "Listovi vinove loze punjeni pirinčom, mesom i začinima.",
+    ingredients: [
+      "50 listova vinove loze",
+      "1 šolja pirinča",
+      "300g mlevenog mesa",
+      "1 veliki luk, seckan",
+      "3 čena belog luka",
+      "1/4 šolje maslinovog ulja",
+      "2 kašike paradajz paste",
+      "1 kašika dil-a, seckan",
+      "1 kašika peršuna, seckan",
+      "1 kašičica alspice",
+      "Limunov sok",
+      "So i biber po ukusu"
+    ],
+    instructions: [
+      "Potopite listove u vrelu vodu 2 minuta.",
+      "Propržite luk i beli luk u ulju.",
+      "Dodajte meso i pirinač, pržite 5 minuta.",
+      "Dodajte paradajz pastu i začine.",
+      "Kuvajte 10 minuta, zatim ohladite.",
+      "Stavite 1 kašiku nadeva na svaki list.",
+      "Zavrnite čvrsto u obliku cigare.",
+      "Složite u lonac, dodajte vodu i limun.",
+      "Kuvajte pokriveno 45 minuta na slaboj vatri."
+    ],
+    prepTime: "90 minuta",
+    cookTime: "45 minuta",
+    servings: 8,
+    notes: ["Možete koristiti i listove kupusa", "Služi se hladno ili toplo"],
+    nutrition: { calories: "180 po porciji", protein: "12g", carbs: "22g", fat: "6g" }
+  },
+  "Moroccan Tagine": {
+    name: "Marokanski tažin",
+    description: "Tradicionalno sporо kuvano jelo sa mesom, povrćem i začinima.",
+    ingredients: [
+      "1kg jagnjetine ili govedine, na komade",
+      "2 velika luka, seckan",
+      "4 čena belog luka",
+      "2 šargarepe, sečene",
+      "2 krompira, sečen",
+      "1 šolja suvog voća (kajsije, šljive)",
+      "2 kašike ras el hanout začina",
+      "1 kašika đumbira",
+      "1 štap cimeta",
+      "1/4 šolje maslinovog ulja",
+      "2 šolje bouillon-a",
+      "Bademi za ukras",
+      "Svež kiša korijander"
+    ],
+    instructions: [
+      "Zagrejte ulje u tažinu ili teškom loncu.",
+      "Propržite meso sa svih strana.",
+      "Dodajte luk i beli luk, pržite 5 minuta.",
+      "Dodajte sve začine i pržite 2 minuta.",
+      "Dodajte bouillon i dovedite do ključanja.",
+      "Smanjite vatru i kuvajte pokriveno 1 sat.",
+      "Dodajte povrće i suvo voće.",
+      "Kuvajte još 45 minuta do mekšanja.",
+      "Ukrasite bademima i koriandrom."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "2 sata",
+    servings: 6,
+    notes: ["Tradicionalno se kuva u zemljanoj posudi", "Služi se sa kusku-som"],
+    nutrition: { calories: "480 po porciji", protein: "38g", carbs: "32g", fat: "24g" }
+  },
+  "Moroccan Couscous": {
+    name: "Marokanski kusкus",
+    description: "Parna krup sa povrćem i mesom u tradicionalnom stilu.",
+    ingredients: [
+      "2 šolje kuskus a",
+      "3 šolje vrele vode",
+      "1kg jagnjetine ili piletine",
+      "3 šargarepe, velike",
+      "2 tikvice, sečene",
+      "1 beli luk",
+      "2 paradajza",
+      "1 šolja naut-a",
+      "2 kašike maslinovog ulja",
+      "1 kašika ras el hanout",
+      "So i biber po ukusu",
+      "Peršun za ukras"
+    ],
+    instructions: [
+      "Potopite naut preko noći.",
+      "Skuvajte meso u velikom loncu sa začinima.",
+      "U posebnoj posudi sipajte kusкus sa vrеlom vodom.",
+      "Покrijte i ostavite da upije vodu 10 minuta.",
+      "Razrahьite vilјuškom.",
+      "Dodajte povrće u lonac sa mesom.",
+      "Kuvajte dok povrće ne omekša.",
+      "Kuvajte kusкus na pari 20 minuta.",
+      "Služите kusкus sa mesom i povrćem."
+    ],
+    prepTime: "12 sati (za naut)",
+    cookTime: "2 sata",
+    servings: 8,
+    notes: ["Kusкus se tradicionalno kuva na pari", "Možete koristiti kusкus из кesе"],
+    nutrition: { calories: "420 po porciji", protein: "28g", carbs: "45g", fat: "16g" }
+  },
+  "Moroccan Pastilla": {
+    name: "Marokanska pastilја",
+    description: "Slika pita sa piletinom, bademima i cimetom.",
+    ingredients: [
+      "1 cela piletina",
+      "8 listova filo testa",
+      "6 jaja",
+      "1 šolja mlevenih badema",
+      "1 veliki luk, seckan",
+      "1 kaŝika cimeta",
+      "1 kašička đumbira",
+      "1/2 kašičice šafrana",
+      "1/4 šolje putera",
+      "1/4 šolje maslinovog ulja",
+      "Svež peršun i киша korijander",
+      "So i biber po ukusu",
+      "Mešavina šećera i cimeta za posipanje"
+    ],
+    instructions: [
+      "Skuvajte piletinu sa lukom i začinima.",
+      "Isitnite kuvanu piletinu.",
+      "Umutite jaja i napravite омлет, usitnite.",
+      "Pomešajte bademe sa cimetom.",
+      "Namažите filo listove puterom.",
+      "Stavite nadeve u Slojеvе.",
+      "Umotajte u oblik oguljеne pače.",
+      "Реcite na 180°C 25-30 minuta.",
+      "Posip te šećerom i cimetom."
+    ],
+    prepTime: "90 minuta",
+    cookTime: "30 minuta",
+    servings: 8,
+    notes: ["Tradicionalno se pravi sa golubovima", "Mora biti hrskava spolja"],
+    nutrition: { calories: "380 po porciji", protein: "22g", carbs: "24g", fat: "24g" }
+  },
+  "Ethiopian Injera": {
+    name: "Etiopijska injera",
+    description: "Tradicionalni etiopijski hleb od fermentirane teff brašno.",
+    ingredients: [
+      "2 šolje teff brašna",
+      "3 šolje vode",
+      "1/4 kašičice kvasca",
+      "1 kašičica soli",
+      "Dodatno voda za razređivanje"
+    ],
+    instructions: [
+      "Pomešajte teff sa vodom u velikoj posudi.",
+      "Dodajte kvasac i promešajte dobro.",
+      "Pokrijte i ostavite da fermentira 3 dana na sobnoj temperaturi.",
+      "Svaki dan promešajte smesu.",
+      "Dodajte so i malo vode ako je potrebno.",
+      "Zagrejte tavu na srednjoj temperaturi.",
+      "Sipajte tanki sloj smeše na tavu.",
+      "Pecite dok se ne pojave mehurići i površina ne postane suva.",
+      "Ne okrećite - kuva se samo sa jedne strane."
+    ],
+    prepTime: "3 dana (fermentacija)",
+    cookTime: "5 minuta po komadu",
+    servings: 8,
+    notes: ["Mora biti kiseo da je pravi", "Služi kao i tanjir i pribor"],
+    nutrition: { calories: "120 po komadu", protein: "4g", carbs: "24g", fat: "1g" }
+  },
+  "Ethiopian Doro Wat": {
+    name: "Etiopijski doro wat",
+    description: "Tradicionalni etiopijski gulaš od piletine sa berbere začinom.",
+    ingredients: [
+      "1 cela piletina, isečena",
+      "6 kuvanih jaja",
+      "2 velika crvena luka, seckan",
+      "4 čena belog luka",
+      "3cm đumbira, seckan",
+      "3 kašike berbere začina",
+      "2 kašike slatke paprike",
+      "1/4 šolje crnog vina",
+      "2 kašike putera",
+      "1 kašika paradajz paste",
+      "So po ukusu",
+      "Voda po potrebi"
+    ],
+    instructions: [
+      "Propržite luk u suvoj tavi dok ne porumeni.",
+      "Dodajte puter i pržite još 5 minuta.",
+      "Dodajte beli luk, đumbir i berbere.",
+      "Pržite 2 minuta, pazite da se ne zagori.",
+      "Dodajte paradajz pastu i malo vode.",
+      "Dodajte piletinu i pržite 10 minuta.",
+      "Dodajte vino i dovoljno vode da pokrije.",
+      "Kuvajte na slaboj vatri 1 sat.",
+      "Dodajte jaja poslednjih 15 minuta."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "90 minuta",
+    servings: 6,
+    notes: ["Berbere je ključni začin", "Služi se sa injera hlebom"],
+    nutrition: { calories: "520 po porciji", protein: "42g", carbs: "12g", fat: "32g" }
+  },
+  "Ethiopian Kitfo": {
+    name: "Etiopijski kitfo",
+    description: "Etiopski tartar od govedine sa začinima i ayib sirom.",
+    ingredients: [
+      "500g najkvalitetnije govedine (filet)",
+      "3 kašike mitmita začina",
+      "4 kašike clarified putera (niter kibbeh)",
+      "2 čena belog luka, sitno seckan",
+      "1 zelena papričica, sitno seckan",
+      "Svež ayib sir (ili cottage cheese)",
+      "Svež kiša korijander",
+      "So po ukusu",
+      "Injera hleb za serviranje"
+    ],
+    instructions: [
+      "Uklonite sve masnoće i žile iz mesa.",
+      "Sitno isecite meso oštrim nožem.",
+      "Zagrejte clarified puter lagano.",
+      "Dodajte beli luk i zelenu papričicu.",
+      "Zagrejte kratko, ne da se skuva.",
+      "Ostavite da se ohladi.",
+      "Pomešajte meso sa hlađenim puterom.",
+      "Dodajte mitmita začin i so.",
+      "Oblikujte na tanjiru sa sirom i koriandrom."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "5 minuta",
+    servings: 4,
+    notes: ["Koristite samo najsvežije meso", "Tradicionalno se jede sirovo"],
+    nutrition: { calories: "380 po porciji", protein: "32g", carbs: "4g", fat: "26g" }
+  },
+  "Peruvian Ceviche": {
+    name: "Peruanski sevče",
+    description: "Sveža riba marinirana u limunu sa začinima.",
+    ingredients: [
+      "500g svež beli ribe (sea bass ili flounder)",
+      "1 šolja soka od limona",
+      "1 crveni luk, tanko seckan",
+      "2-3 aji amarillo papričice",
+      "1cm đumbira, seckan",
+      "2 čena belog luka",
+      "Svež kiša korijander",
+      "So i crni biber po ukusu",
+      "1 slatki krompir, kuvan",
+      "Kukuruz za ukras",
+      "Lettuce listovi"
+    ],
+    instructions: [
+      "Isitnite ribu na maje kockice (1cm).",
+      "Stavite ribu u stakłenu posadu.",
+      "Dodajte limunov sok - mora potpuno pokriti ribu.",
+      "Ostavite da marinira 15-20 minuta.",
+      "Dodajte luk, aji papričice i beli luk.",
+      "Začinite solju i biberom.",
+      "Dodajte seckan korijander.",
+      "Promešajte pažljivo.",
+      "Služite odmah sa slatkim krompirom."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "0 minuta",
+    servings: 4,
+    notes: ["Riba mora biti veoma sveža", "Limunova kiselina 'kuva' ribu"],
+    nutrition: { calories: "180 po porciji", protein: "28g", carbs: "12g", fat: "3g" }
+  },
+  "Peruvian Lomo Saltado": {
+    name: "Peruanski lomo saltado",
+    description: "Pržena govedina sa povrćem i french fries, srpska fuzija kuhinja.",
+    ingredients: [
+      "500g govedine (sirloin), na trake",
+      "3 krompira, za french fries",
+      "2 paradajza, na klinove",
+      "1 veliki crveni luk, na trake",
+      "3 čena belog luka",
+      "2 aji amarillo paste",
+      "3 kašike soja sosa",
+      "2 kašike octa",
+      "1 kašika kiša korijandera",
+      "Ulje za prženje",
+      "So i biber po ukusu",
+      "Kuvan pirinač za servirane"
+    ],
+    instructions: [
+      "Isecite krompir i napravite french fries.",
+      "Zagrejte wok ili велику tavu na visokoj temperaturi.",
+      "Dodajte malo ulja i brzo propržite meso.",
+      "Uklonite meso, zadržite toplotu.",
+      "U istu tavu dodajte luk i beli luk.",
+      "Pržite 2 minuta, dodajte paradajz.",
+      "Dodajte aji pastu, soja sos i ocat.",
+      "Vratite meso u tavu.",
+      "Dodajte french fries i promešajte."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: ["Visoka temperatura je ključna", "Służi se sa belim pirinčem"],
+    nutrition: { calories: "520 po porciji", protein: "32g", carbs: "45g", fat: "24g" }
+  },
+  "Peruvian Aji de Gallina": {
+    name: "Peruanski aji de gallina",
+    description: "Kremasta piletina u žutom čili sosu sa orasima.",
+    ingredients: [
+      "1 cela piletina, skuvana",
+      "6 aji amarillo papričica",
+      "1 šolja mlevenih oraha",
+      "3 kriške hleba, bez kore",
+      "1 šolja mleka",
+      "1 veliki luk, seckan",
+      "3 čena belog luka",
+      "1 kašičica kurkume",
+      "1/2 šolje parmezana",
+      "2 kuvana jaja",
+      "Crne masline",
+      "Kuvan beli pirinač",
+      "So i biber po ukusu"
+    ],
+    instructions: [
+      "Potopite hleb u mleko 15 minuta.",
+      "Ositno iseckajte kuvanu piletinu.",
+      "Propržite luk i beli luk u ulju.",
+      "Dodajte aji papričice (bez semena).",
+      "Dodajte hleb sa mlekom i orahe.",
+      "Miksajte sve u blenderu do glatke masse.",
+      "Vratite smešу u tavu.",
+      "Додайте piletinu i kurkumu.",
+      "Kuvajte 15 minuta, dodajte parmezan."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "30 minuta",
+    servings: 6,
+    notes: ["Aji amarillo даје karakterističnu boju", "Služi se sa pirinčem"],
+    nutrition: { calories: "480 po porciji", protein: "38g", carbs: "28g", fat: "26g" }
+  },
+  "Colombian Bandeja Paisa": {
+    name: "Kolumbijska bandeja paisa",
+    description: "Tradicionalni kolumbijski obrok sa pasuljem, mesom i platanama.",
+    ingredients: [
+      "2 šolje crvenog pasulja",
+      "300g svinjskog mesa, sečeno",
+      "200g čvaraka",
+      "4 chorizo kobasice",
+      "4 jaja",
+      "2 platana, sečena",
+      "1 avokado, seckan",
+      "1 šolja belог pirinča",
+      "4 arepe",
+      "200g mlevene govedine",
+      "2 luka, seckan",
+      "3 čena belog luka",
+      "Ulje za prženje",
+      "So i biber po ukusu"
+    ],
+    instructions: [
+      "Skuvajte pasulj u slanoj vodi 2 sata.",
+      "Propržite luk i beli luk.",
+      "Dodajte mlevenu govedinu i kuvajte.",
+      "Pomešajte sa kuvanim pasuljem.",
+      "Ispržite svinjsko meso i čvarke.",
+      "Ispržite chorizo kobasice.",
+      "Ispržite jaja 'sunny side up'.",
+      "Ispržite platane do zlatne boje.",
+      "Skuvajte pirinač.",
+      "Složite sve na veliki tanjir."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "2.5 sata",
+    servings: 4,
+    notes: ["Tradicionalni obrok sa 12 komponenti", "Svaki deo se priprema posebno"],
+    nutrition: { calories: "1200 po porciji", protein: "65g", carbs: "85g", fat: "68g" }
+  },
+  "Colombian Arepas": {
+    name: "Kolumbijske arepe",
+    description: "Tradicionalne kolumbijske lepinje od kukuruznog brašna.",
+    ingredients: [
+      "2 šolje arepa brašna (masarepa)",
+      "2.5 šolje tople vode",
+      "1 kašičica soli",
+      "1 kašika ulja",
+      "Sir za punjenje (opcionalno)",
+      "Šunka za punjenje (opcionalno)",
+      "Avokado za punjenje (opcionalno)"
+    ],
+    instructions: [
+      "Rastvorite so u toploj vodi.",
+      "Dodajte arepa brašno postepeno.",
+      "Mešajte dok ne dobijete glatko testo.",
+      "Dodajte ulje i dobro umešajte.",
+      "Ostavite testo da odstoji 5 minuta.",
+      "Oblikujte kuglice i spljoštite.",
+      "Debljina treba biti oko 1cm.",
+      "Pecite na suvoj tavi 7 minuta sa svake strane.",
+      "Služite toplo sa punjenjем."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "15 minuta",
+    servings: 8,
+    notes: ["Arepa brašno je specijalno prerađen kukuruz", "Mogu se puniti različitim nadevima"],
+    nutrition: { calories: "180 po komadu", protein: "4g", carbs: "38g", fat: "2g" }
+  },
+  "Colombian Sancocho": {
+    name: "Kolumbijski sancocho",
+    description: "Tradicionalna колumbijska sup sa mesom, povrćem i platanama.",
+    ingredients: [
+      "1kg piletine, na komade",
+      "500g govedine, na komade",
+      "2 kukuruza, na komade",
+      "2 platana, sečena",
+      "2 yuca korena, sečen",
+      "3 krompira, sečen",
+      "1 velika šargarepa",
+      "1 cibula, seckan",
+      "4 čena belog luka",
+      "2 kašike sofrito paste",
+      "Kiša korijander",
+      "So i biber po ukusu",
+      "Voda po potrebi"
+    ],
+    instructions: [
+      "Skuvajte govedinu u velikom loncu 1 sat.",
+      "Dodajte piletinu i kuvajte još 30 minuta.",
+      "Dodajte luk, beli luk i sofrito.",
+      "Dodajte yuca i krompir.",
+      "Kuvajte 20 minuta.",
+      "Dodajte kukuruz i platane.",
+      "Kuvajte još 15 minuta.",
+      "Dodajte šargarepu poslednjih 10 minuta.",
+      "Украsite koriandrom pre serviranja."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "2 sata",
+    servings: 8,
+    notes: ["Tradicionalno se jede nedeljom", "Svaki region ima svoju verziju"],
+    nutrition: { calories: "420 po porciji", protein: "35g", carbs: "42g", fat: "14g" }
+  },
+  "Venezuelan Pabellon Criollo": {
+    name: "Venecuelanski pabellon criollo",
+    description: "Nacionalno jelo Venecuele sa govedinom, crnim pasuljem i platanima.",
+    ingredients: [
+      "500g govedine (flank steak)",
+      "2 šolje crnog pasulja",
+      "2 platana, zrela",
+      "1 šolja belог pirinča",
+      "1 veliki luk, seckan",
+      "3 čena belog luka",
+      "2 paradajza, sečena",
+      "1 paprika, sečena",
+      "2 kašike ulja",
+      "1 kašičica kima",
+      "So i crni biber po ukusu",
+      "Peršun za ukras",
+      "Beli sir za ukrašavanje"
+    ],
+    instructions: [
+      "Skuvajte govedinu u slanoj vodi 1.5 sat.",
+      "Usitnite kuvano meso na niti.",
+      "Propržite luk, beli luk, paradajz i papriku.",
+      "Dodajte usitnjeno meso i začine.",
+      "Pržite 15 minuta do mekšanja.",
+      "Skuvajte crni pasulj posebno.",
+      "Skuvajte beli pirinač.",
+      "Ispržite platane do zlatne boje.",
+      "Složite sve komponente na tanjir."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "2 sata",
+    servings: 6,
+    notes: ["Svaka komponenta se pravi posebno", "Nacionalno jelo Venecuele"],
+    nutrition: { calories: "620 po porciji", protein: "32g", carbs: "68g", fat: "22g" }
+  },
+  "Venezuelan Tequeños": {
+    name: "Venecuelanski tekenjos",
+    description: "Popularne venecuelanske štapići sa sirom u testo.",
+    ingredients: [
+      "500g brašna",
+      "4 kašike putera",
+      "1 jaje",
+      "1 kašičica soli",
+      "1/2 šolje mleka",
+      "400g venecuelanskog sira (ili mozzarella)",
+      "Ulje za duboko prženje"
+    ],
+    instructions: [
+      "Pomešajte brašno sa solju.",
+      "Dodajte puter i umešajte.",
+      "Dodajte jaje i mleko, umešajte do glatkog testa.",
+      "Ostavite testo да odstoji 30 minuta.",
+      "Isitnite sir na štapiće.",
+      "Razvucite testo tanko.",
+      "Isecite na trake široke 2cm.",
+      "Umotajte trake oko štapića sira.",
+      "Pržite u vrućem ulju do zlatne boje."
+    ],
+    prepTime: "60 minuta",
+    cookTime: "15 minuta",
+    servings: 20,
+    notes: ["Najpopularnija venecuelanska preska", "Služi se toplo"],
+    nutrition: { calories: "120 po komadu", protein: "6g", carbs: "12g", fat: "6g" }
+  },
+  "Venezuelan Hallacas": {
+    name: "Venecuelanske hallace",
+    description: "Tradicionalni božićni umotci sa mesom i povrćem u kukuruznom listu.",
+    ingredients: [
+      "2 šolje arepa brašna",
+      "3 šolje tople vode",
+      "500g svinjskog mesa",
+      "300g piletine",
+      "1 veliki luk, seckan",
+      "2 paprike, sečene",
+      "3 čena belog luka",
+      "100g mazlina",
+      "100g sušenih grožđica",
+      "2 kuvana jaja, sečena",
+      "Banana listovi (ili kukuruzni)",
+      "Kanap za vezivanje",
+      "So i začini po ukusu"
+    ],
+    instructions: [
+      "Napravite testo od arepa brašna i vode.",
+      "Skuvajte i usitnite meso.",
+      "Propržite luk, papriku i beli luk.",
+      "Pomešajte meso sa povrćem.",
+      "Dodajte masline, grožđice i jaja.",
+      "Očistite banana listove.",
+      "Namažite testo na list.",
+      "Dodajte nadeves na sredinu.",
+      "Umotajte i vežite kanapom."
+    ],
+    prepTime: "3 sata",
+    cookTime: "90 minuta",
+    servings: 12,
+    notes: ["Tradicionalno božićno jelo", "Priprema se u grupama"],
+    nutrition: { calories: "480 po komadu", protein: "24g", carbs: "52g", fat: "18g" }
+  },
+  "Argentinian Asado": {
+    name: "Argentinski asado",
+    description: "Tradicionalni argentinski roštilj sa različitim mesom na ugljу.",
+    ingredients: [
+      "1kg govedine (asado rib)",
+      "500g chorizo kobasica",
+      "500g morcilla (krvna kobasica)",
+      "4 kısta piletine",
+      "500g svinjskih rebara",
+      "Груба so za meso",
+      "Chimichurri sos",
+      "Peršun za chimichurri",
+      "Origano za chimichurri",
+      "Beli luk za chimichurri",
+      "Maslinovo ulje",
+      "Ocat",
+      "Crvene papričice"
+    ],
+    instructions: [
+      "Zapalite дрвени ugalj и čekajte da se žar utabani.",
+      "Припремите chimichurri sos.",
+      "Posolte meso grubo so 30 minuta ranije.",
+      "Stavite meso na žar, počnite sa debljim komadima.",
+      "Grilujte polako, ne žurite.",
+      "Kobasoce grilujte 15-20 minuta.",
+      "Piletinu grilujte još 25 minuta.",
+      "Govedina treba da bude roze unutra.",
+      "Služite sa chimichurri sosom."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "2-3 sata",
+    servings: 8,
+    notes: ["Asado je социјальни event", "Polako grilovanje је кључно"],
+    nutrition: { calories: "680 po porciji", protein: "58g", carbs: "2g", fat: "48g" }
+  },
+  "Argentinian Empanadas": {
+    name: "Argentinske empanadas",
+    description: "Tradicionalne argentinske pečene пите са mesom ili sirom.",
+    ingredients: [
+      "500g brašna",
+      "200g slanine ili putera",
+      "1 jaje",
+      "1 kašičica soli",
+      "Topa voda po potrebi",
+      "500g mlevene govedine",
+      "2 luka, sitno seckan",
+      "2 чена belog luka",
+      "1 kašičica kima",
+      "1 кашičica slatke paprike",
+      "2 kuvana jaja, sečena",
+      "Masline, sečene",
+      "So i biber po ukusu"
+    ],
+    instructions: [
+      "Napravite testo od брašна, slanine, jaja i soli.",
+      "Ostavite da odmori 30 minuta.",
+      "За nadeve: propržite лук и beli luk.",
+      "Dodajte mleveno meso i začine.",
+      "Kuvajte 15 minuta, dodajte јaja и masline.",
+      "Ostavite да се ohladi.",
+      "Развucite testo і isecite krugove.",
+      "Dodajte nadeves na polovinu круга.",
+      "Zatvorite і pecite na 180°C 25 минута."
+    ],
+    prepTime: "60 минута",
+    cookTime: "25 минута",
+    servings: 12,
+    notes: ["Mogu biti pečene ili пржене", "Svaki regija има своје nadeve"],
+    nutrition: { calories: "320 po комаду", protein: "18g", carbs: "28g", fat: "16g" }
+  },
+  "Argentinian Milanesas": {
+    name: "Argentinske milaneze",
+    description: "Пржени шницели у панировка са tradicionalним гарнирима.",
+    ingredients: [
+      "4 танких одреsaka телетине или говедина",
+      "2 јаја, умућена",
+      "2 šolje галете за панирање",
+      "1 šolja брашна",
+      "Уље за дубоko пржење",
+      "So і biber по ukusu",
+      "Лимон за сервирање",
+      "Кромпири за пире",
+      "Salatu за гарнир"
+    ],
+    instructions: [
+      "Потучите одреске да буду тањи.",
+      "Позойte і pobiberite сваки одресак.",
+      "Поваљујте у brašnu, затим у јајима.",
+      "Поваљујte у галети за панирање.",
+      "Загрејте уље до 180°C.",
+      "Пржите 3-4 минута са сваке стране.",
+      "Ставите на папирни убрус да се oceди.",
+      "Сервирајте са лимуном.",
+      "Традиционална гарнир је кремасти пире."
+    ],
+    prepTime: "20 минута",
+    cookTime: "15 минута",
+    servings: 4,
+    notes: ["Moraju biti хрскаве споља", "Сервирају се са limuном"],
+    nutrition: { calories: "520 po порцији", protein: "35g", carbs: "32g", fat: "28g" }
+  },
+  "Brazilian Feijoada": {
+    name: "Brazilska feijoada",
+    description: "Nacionalno jelo Brazila sa crnim pasuljem, svinjskim mesom i kobasicama.",
+    ingredients: [
+      "500g crnog pasulja",
+      "300g svinjskog vrata",
+      "200g slanine",
+      "200g linguiça kobasice",
+      "200g chouriço kobasice",
+      "1 svinjska noga",
+      "200g sušenog mesa",
+      "2 luka, seckan",
+      "4 čena belog luka",
+      "2 lista lovora",
+      "1 narandža, kora",
+      "2 kašike ulja",
+      "So i biber po ukusu",
+      "Pirinač za servirang"
+    ],
+    instructions: [
+      "Potopite crni pasulj preko noći.",
+      "Skuvajte svo meso u velikoj šerpi 1 sat.",
+      "Ocijedite i rezervišite čorbu.",
+      "Propržite luk i beli luk u ulju.",
+      "Dodajte pasulj i čorbu od mesa.",
+      "Dodajte list lovora i narančinu koru.",
+      "Kuvajte 2 sata na slaboj vatri.",
+      "Dodajte kuvano meso poslednjih 30 minuta.",
+      "Servirajte sa belim pirinčem."
+    ],
+    prepTime: "12 sati (pasulj)",
+    cookTime: "3 sata",
+    servings: 8,
+    notes: ["Tradicionalno se jede sredom i subotom", "Služi se sa farofom"],
+    nutrition: { calories: "680 po porciji", protein: "48g", carbs: "52g", fat: "32g" }
+  },
+  "Brazilian Caipirinha": {
+    name: "Brazilska caipirinja",
+    description: "Nacionalni brazilski koktel sa čačom, lajmom i šećerom.",
+    ingredients: [
+      "2 oz čače (brazilski rum)",
+      "1/2 lajma, seckan na komade",
+      "2 kašičice šećera",
+      "Led",
+      "1 kašika brown šećera (opcionalno)"
+    ],
+    instructions: [
+      "Stavite lajm u čašu za viski.",
+      "Dodajte šećer.",
+      "Mudlajte dobro da se izvuče sok iz lajma.",
+      "Napunite čašu ledom.",
+      "Dodajte čačу.",
+      "Mešajte dobro.",
+      "Služite odmah sa slamčicom.",
+      "Možete ukrasiti kriškom lajma."
+    ],
+    prepTime: "5 minuta",
+    cookTime: "0 minuta",
+    servings: 1,
+    notes: ["Čača je destilat od šećerne trske", "Ne filtrirati - led mora ostati"],
+    nutrition: { calories: "180 po poјі", protein: "0g", carbs: "12g", fat: "0g" }
+  },
+  "Brazilian Pao de Acucar": {
+    name: "Brazilski pao de asuka",
+    description: "Slatki brazilski hleb sa koksom i kondenzovanim mlekom.",
+    ingredients: [
+      "3 šolje brašna",
+      "1 šolja šećera",
+      "4 jaja",
+      "1 šolja kondenzovanog mleka",
+      "1/2 šolje putera, otopljen",
+      "1 šolja kokosovih pahuljica",
+      "1 kašika praška za pecivo",
+      "1 kašičica vanile",
+      "Prstohvat soli",
+      "Kokos za posipanje"
+    ],
+    instructions: [
+      "Zagrejte rernu na 180°C.",
+      "Pomešajte jaja sa šećerom dok ne postane penušavo.",
+      "Dodajte kondenzovano mleko i vanilu.",
+      "Dodajte otopljen puter.",
+      "Pomešajte brašno sa praškom za pecivo.",
+      "Dodajte suve sastojke u mokre.",
+      "Dodajte kokosove pahuljice.",
+      "Sipajte u namašten kalup.",
+      "Pecite 45 minuta do zlatne boje."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "45 minuta",
+    servings: 10,
+    notes: ["Ime znači 'šećerni hleb'", "Služi se sa kafom"],
+    nutrition: { calories: "380 po komadu", protein: "8g", carbs: "58g", fat: "14g" }
+  },
+  "Chilean Pastel de Choclo": {
+    name: "Čileanski pastel de čoklo",
+    description: "Tradicionalni čileanski kukuruzni paj sa mesom i maslinama.",
+    ingredients: [
+      "6 šolja sveži kukuruz",
+      "1/2 šolje mleka",
+      "4 jaja",
+      "2 kašike putera",
+      "500g mlevene govedine",
+      "2 luka, seckan",
+      "1 šargarepa, sečena",
+      "8 crnih maslina",
+      "4 kuvana jaja, prepolovljena",
+      "8 komada piletine",
+      "1 kašičica kima",
+      "1 kašička slatke paprike",
+      "So i biber po ukusu",
+      "Šećer po ukusu"
+    ],
+    instructions: [
+      "Skuvajte kukuruz i izblendajte sa mlekom.",
+      "Dodajte jaja i puter u kukuruznu smesu.",
+      "Propržite luk, dodajte meso i začine.",
+      "Dodajte šargarepu i kuvajte 15 minuta.",
+      "U tepsiju stavite mesni nadeve.",
+      "Dodajte piletinu, masline i jaja.",
+      "Prekrijte kukuruznom smešom.",
+      "Posipajte šećerom za karamelizaciju.",
+      "Pecite na 180°C 30 minuta."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "45 minuta",
+    servings: 8,
+    notes: ["Slatko-slani ukus je karakterističan", "Kukuruz mora biti svež"],
+    nutrition: { calories: "520 po porciji", protein: "32g", carbs: "42g", fat: "24g" }
+  },
+  "Chilean Completos": {
+    name: "Čileanski kompletos",
+    description: "Čuveni čileanski hot dog sa avokado kremom i majonezom.",
+    ingredients: [
+      "4 hot dog viršle",
+      "4 hot dog lepinje",
+      "2 avokada, zrela",
+      "1/2 šolje majoneza",
+      "1 paradajz, seckan",
+      "200g čileanskog sira (ili gouda)",
+      "1 limun, sok",
+      "1 kašika slatke paprike",
+      "So i biber po ukusu",
+      "Sos ají za pikantnost"
+    ],
+    instructions: [
+      "Skuvajte viršle u vrućoj vodi 5 minuta.",
+      "Zagrejte lepinje na tavi ili u rerni.",
+      "Izgnječite avokado sa limunovim sokom.",
+      "Dodajte so i biber u avokado.",
+      "Stavite viršlu u lepinje.",
+      "Namažite obilno avokado kremom.",
+      "Dodajte majonezu i sir.",
+      "Pospite paradajzom i paprikom.",
+      "Služite sa ají sosom."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "10 minuta",
+    servings: 4,
+    notes: ["Completo Italiano ima avokado, majonezu i paradajz", "Vrlo popularna ulična hrana"],
+    nutrition: { calories: "580 po komadu", protein: "22g", carbs: "38g", fat: "38g" }
+  },
+  "Chilean Sopaipillas": {
+    name: "Čileanske sopaipije",
+    description: "Tradicionalne čileanske pržene lepinje od bundevine.",
+    ingredients: [
+      "2 šolje brašna",
+      "1 šolja kuvane bundeve, pire",
+      "2 kašike putera",
+      "1 kašičica soli",
+      "1 kašička praška za pecivo",
+      "Mleka voda po potrebi",
+      "Ulje za duboko prženje",
+      "Pebre sos za serviranje",
+      "Med za slatku verziju"
+    ],
+    instructions: [
+      "Pomešajte brašno, so i prašak za pecivo.",
+      "Dodajte bundeva pire i puter.",
+      "Umešajte dok ne dobijete glatko testo.",
+      "Dodajte malo vode ako je potrebno.",
+      "Ostavite testo da odmori 30 minuta.",
+      "Razvucite testo na 0.5cm debljine.",
+      "Isecite na krugove ili kvadrate.",
+      "Pržite u vrućem ulju 2-3 minuta.",
+      "Služite toplo sa pebre ili medom."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "15 minuta",
+    servings: 12,
+    notes: ["Bundeva daje karakterističnu boju", "Mogu biti slatke ili slane"],
+    nutrition: { calories: "180 po komadu", protein: "4g", carbs: "28g", fat: "6g" }
+  },
+  "Uruguayan Chivito": {
+    name: "Urugvajski čivito",
+    description: "Nacionalni urugvajski sendvič sa govedinom, šunkom i jajima.",
+    ingredients: [
+      "4 odreska tanke govedine",
+      "4 lepinje za sendvič",
+      "4 kriške šunke",
+      "4 jaja",
+      "4 kriške sira",
+      "2 paradajza, sečena",
+      "1 salata iceberg",
+      "1 avokado, seckan",
+      "Majonezu",
+      "4 kriške slanine",
+      "Masline za ukras",
+      "French fries za servirani",
+      "So i biber po ukusu"
+    ],
+    instructions: [
+      "Propržite odreske govedine 3 minuta sa svake strane.",
+      "Ispržite slaninu do hrskavosti.",
+      "Napravite jaja na oko ili kajganu.",
+      "Zagrejte lepinje.",
+      "Namažite lepinje majonezom.",
+      "Stavite meso, šunku i sir.",
+      "Dodajte jaje, paradajz i salatu.",
+      "Dodajte avokado i slaninu.",
+      "Pokrijte drugim delom lepinje.",
+      "Služite sa french fries."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: ["Najpoznatiji urugvajski sendvič", "Često se jede sa nožem i viljuškom"],
+    nutrition: { calories: "850 po sendviču", protein: "42g", carbs: "48g", fat: "52g" }
+  },
+  "Uruguayan Asado": {
+    name: "Urugvajski asado",
+    description: "Tradicionalni urugvajski roštilj sa različitim mesima i čorizo.",
+    ingredients: [
+      "1kg govedine (bife de chorizo)",
+      "500g jagnjetine",
+      "6 čorizo kobasica",
+      "4 morcilla (krvne kobasice)",
+      "500g svinjskih rebara",
+      "Chimichurri sos",
+      "Grubo so za meso",
+      "1 šolja crvenog vina",
+      "Peršun za chimichurri",
+      "Origano",
+      "Beli luk",
+      "Maslinovo ulje",
+      "Ocat"
+    ],
+    instructions: [
+      "Zapalite žar sa drvenim ugljem.",
+      "Pripremite chimichurri sos.",
+      "Posolte meso 30 minuta ranije.",
+      "Počnite sa debljim komadima mesa.",
+      "Grilujte polako na srednjoj temperaturi.",
+      "Čorizo stavite kada je žar umeren.",
+      "Često okrećite kobasice.",
+      "Meso mora biti roze unutra.",
+      "Služite sa chimichurri i vinom."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "2-3 sata",
+    servings: 8,
+    notes: ["Asado je društveni događaj", "Kvalitet mesa je ključan"],
+    nutrition: { calories: "720 po porciji", protein: "58g", carbs: "2g", fat: "52g" }
+  },
+  "Uruguayan Dulce de Leche": {
+    name: "Urugvajski dulse de leče",
+    description: "Tradicionalni urugvajski karamel od mleka i šećera.",
+    ingredients: [
+      "4 šolje punog mleka",
+      "1 šolja šećera",
+      "1/4 kašičice soda bikarbone",
+      "1 štap vanile",
+      "Prstohvat soli"
+    ],
+    instructions: [
+      "Stavite mleko i šećer u težak lonac.",
+      "Dodajte štap vanile i prstohvat soli.",
+      "Kuvajte na srednjoj vatri mešajući.",
+      "Kada počne da ključa, smanjite vatru.",
+      "Kuvajte polako 2-3 sata.",
+      "Mešajte povremeno da se ne zalepi.",
+      "Dodajte soda bikarbonu poslednjih 30 minuta.",
+      "Kuvajte dok ne postane gusto i tamno.",
+      "Ostavite da se ohladi u tegli."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "3 sata",
+    servings: 16,
+    notes: ["Mora se često mešati", "Čuva se u frižideru mesec dana"],
+    nutrition: { calories: "120 po kašici", protein: "2g", carbs: "24g", fat: "2g" }
+  },
+  "Paraguayan Sopa Paraguaya": {
+    name: "Paragvajska sopa paragvaja",
+    description: "Tradicionalni paragvajski kukuruzni hleb sa sirom i lukom.",
+    ingredients: [
+      "2 šolje kukuruznog brašna",
+      "6 jaja",
+      "1 šolja mleka",
+      "200g sira, rendan",
+      "1 veliki luk, seckan",
+      "200g putera",
+      "2 kašike ulja",
+      "1 kašičica soli",
+      "1 kašička praška za pecivo",
+      "Svež peršun, seckan"
+    ],
+    instructions: [
+      "Zagrejte rernu na 180°C.",
+      "Propržite luk u ulju do zlatne boje.",
+      "Umutite jaja sa puterom.",
+      "Dodajte mleko i so.",
+      "Pomešajte kukuruzno brašno sa praškom.",
+      "Dodajte brašno u mokru smešu.",
+      "Dodajte sir, luk i peršun.",
+      "Sipajte u namašten plenum kalup.",
+      "Pecite 45 minuta do zlatne boje."
+    ],
+    prepTime: "25 minuta",
+    cookTime: "45 minuta",
+    servings: 8,
+    notes: ["Nije sup već kukuruzni hleb", "Služi se topao kao priloga"],
+    nutrition: { calories: "380 po komadu", protein: "15g", carbs: "32g", fat: "22g" }
+  },
+  "Paraguayan Chipa": {
+    name: "Paragvajska čipa",
+    description: "Tradicionalni paragvajski hleb od mandioke sa sirom.",
+    ingredients: [
+      "500g skroba od mandioke (tapioka)",
+      "200g sira, rendan",
+      "4 jaja",
+      "100ml mleka",
+      "100g putera, omekšan",
+      "1 kašičica soli",
+      "1 kašičica anis semena (opcionalno)"
+    ],
+    instructions: [
+      "Zagrejte rernu na 200°C.",
+      "Pomešajte skrob sa solju.",
+      "Dodajte sir i promešajte.",
+      "Umutite jaja sa mlekom.",
+      "Dodajte puter i umešajte.",
+      "Kombinujte mokre i suve sastojke.",
+      "Umešajte dok ne dobijete glatko testo.",
+      "Oblikujte male lopte.",
+      "Pecite 20-25 minuta do zlatne boje."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "25 minuta",
+    servings: 12,
+    notes: ["Traba se jede topala", "Tradicionalno za Veliki petak"],
+    nutrition: { calories: "220 po komadu", protein: "8g", carbs: "28g", fat: "9g" }
+  },
+  "Paraguayan Mbaipy": {
+    name: "Paragvajski mbaipi",
+    description: "Tradicionalni paragvajski gusti sup od kukuruza sa mesom.",
+    ingredients: [
+      "2 šolje mlevenog kukuruza (locro)",
+      "500g govedine, na komade",
+      "1 piletina, isečena",
+      "2 luka, seckan",
+      "3 čena belog luka",
+      "2 paradajza, sečena",
+      "1 paprika, sečena",
+      "2 kašike ulja",
+      "1 kašičica kima",
+      "So i biber po ukusu",
+      "Voda po potrebi",
+      "Peršun za ukras"
+    ],
+    instructions: [
+      "Skuvajte govedinu u slanoj vodi 1 sat.",
+      "Dodajte piletinu i kuvajte još 30 minuta.",
+      "Propržite luk, beli luk i papriku.",
+      "Dodajte paradajz i začine.",
+      "Dodajte kuvano meso i čorbu.",
+      "Dodajte kukuruz postepeno mešajući.",
+      "Kuvajte 30 minuta često mešajući.",
+      "Dodajte vodu ako je potrebno.",
+      "Ukrasite peršunom pre serviranja."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "2 sata",
+    servings: 8,
+    notes: ["Mora se često mešati", "Konzistencija treba biti kašasta"],
+    nutrition: { calories: "420 po porciji", protein: "28g", carbs: "35g", fat: "18g" }
+  },
+  "Ecuadorian Ceviche": {
+    name: "Ekvadorski sevče",
+    description: "Ekvadorska verzija sevčea sa škampima i pomarandžom.",
+    ingredients: [
+      "500g sveže bele ribe",
+      "300g škampa",
+      "1 šolja soka od limuna",
+      "1/2 šolje soka od pomarandže",
+      "1 crveni luk, tanko seckan",
+      "2 čili papričice",
+      "1 šolja kukuruza",
+      "Svež korijander",
+      "So i biber po ukusu",
+      "Patacones za serviranje",
+      "Avokado, seckan"
+    ],
+    instructions: [
+      "Isitnite ribu na maje kockice.",
+      "Skuvajte škampe i ohladite.",
+      "Marinirajte ribu u limunu 20 minuta.",
+      "Dodajte sok od pomarandže.",
+      "Dodajte luk i čili papričice.",
+      "Začinite solju i biberom.",
+      "Dodajte škampe i kukuruz.",
+      "Dodajte seckan korijander.",
+      "Služite sa patacones i avokadom."
+    ],
+    prepTime: "35 minuta",
+    cookTime: "5 minuta",
+    servings: 4,
+    notes: ["Pomarandža daje jedinstven ukus", "Škampe su obavezne u ekvadorskom sevčeu"],
+    nutrition: { calories: "220 po porciji", protein: "32g", carbs: "18g", fat: "4g" }
+  },
+  "Ecuadorian Llapingachos": {
+    name: "Ekvadorski lljapingačos",
+    description: "Tradicionalne ekvadorske lepinje od krompira sa sirom.",
+    ingredients: [
+      "2kg krompira",
+      "200g sira, rendan",
+      "2 luka, seckan",
+      "2 kašike achiote ulja",
+      "4 jaja",
+      "4 čorizo kobasice",
+      "1 avokado, seckan",
+      "2 paradajza, sečena",
+      "Salata iceberg",
+      "So i biber po ukusu",
+      "Ulje za prženje"
+    ],
+    instructions: [
+      "Skuvajte krompir i napravite pire.",
+      "Propržite luk u achiote ulju.",
+      "Pomešajte pire sa lukom i sirom.",
+      "Začinite solju i biberom.",
+      "Oblikujte lepinje od krompira.",
+      "Ispržite lepinje do zlatne boje.",
+      "Ispržite čorizo kobasice.",
+      "Napravite jaja na oko.",
+      "Služite sa salatom i avokadom."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "30 minuta",
+    servings: 6,
+    notes: ["Achiote ulje daje crvenu boju", "Tradicionalno se jede za doručak"],
+    nutrition: { calories: "480 po porciji", protein: "22g", carbs: "52g", fat: "22g" }
+  },
+  "Ecuadorian Hornado": {
+    name: "Ekvadorski hornado",
+    description: "Tradicionalni ekvadorski pečeni odojak sa komorčem i čičom.",
+    ingredients: [
+      "3kg svinjskog vrata ili pleka",
+      "6 čenova belog luka",
+      "2 kašike komorča",
+      "1 kašika origana",
+      "2 kašike soli",
+      "1 kašika crnog bibera",
+      "2 šolje tamnog piva (chicha)",
+      "Yuca za priloge",
+      "Mote (kuvana kukuruza)",
+      "Salsa criolla",
+      "Limun za serviranje"
+    ],
+    instructions: [
+      "Napravite marinadu od belog luka, komorča i začina.",
+      "Marinirajte meso preko noći.",
+      "Zagrejte rernu na 160°C.",
+      "Stavite meso u tepsiju sa pivom.",
+      "Pecite 4-5 sati polako.",
+      "Povremeno zalivajte sokovima.",
+      "Poslednjih sat vremena povećajte temperaturu.",
+      "Kora mora biti hrskava.",
+      "Služite sa yuca i mote."
+    ],
+    prepTime: "12 sati (mariniranje)",
+    cookTime: "5 sati",
+    servings: 12,
+    notes: ["Tradicionalno za proslave", "Chicha daje karakterističan ukus"],
+    nutrition: { calories: "620 po porciji", protein: "52g", carbs: "15g", fat: "38g" }
+  },
+  "Bolivian Salteñas": {
+    name: "Bolivijske salteńe",
+    description: "Tradicionalne bolivijske pečene empanadas sa sočnim nadevom.",
+    ingredients: [
+      "500g brašna",
+      "200g putera",
+      "2 jaja",
+      "1 kašičica soli",
+      "Topa voda po potrebi",
+      "500g govedine, isečene na kockice",
+      "2 luka, seckan",
+      "3 krompira, sečen",
+      "2 morkva, sečen",
+      "1 šolja grašaka",
+      "2 kuvana jaja, sečena",
+      "Masline, sečene",
+      "Aji amarillo paste",
+      "Gelatina od mesa"
+    ],
+    instructions: [
+      "Napravite testo od brašna, putera, jaja i soli.",
+      "Ostavite da odmori 1 sat.",
+      "Skuvajte meso sa povrćem i začinima.",
+      "Dodajte aji pastu za boju i ukus.",
+      "Ohladite nadeves potpuno.",
+      "Razvucite testo i isecite krugove.",
+      "Stavite nadeves u centar.",
+      "Zatvorite i oblikujte karakterističnu formu.",
+      "Pecite na 180°C 25 minuta."
+    ],
+    prepTime: "90 minuta",
+    cookTime: "25 minuta",
+    servings: 12,
+    notes: ["Nadeves mora biti sočan", "Tradicionalno se jede ujutru"],
+    nutrition: { calories: "380 po komadu", protein: "18g", carbs: "32g", fat: "20g" }
+  },
+  "Bolivian Anticuchos": {
+    name: "Bolivijski antikučos",
+    description: "Marinirana govedina na ražnju sa aji sosom.",
+    ingredients: [
+      "1kg goveđeg srca ili mesa",
+      "1/2 šolje aji panca paste",
+      "1/4 šolje soka od limuna",
+      "4 čena belog luka",
+      "1 kašika komorča",
+      "1 kašičica origana",
+      "2 kašike ulja",
+      "So i biber po ukusu",
+      "Krompir za priloge",
+      "Kukuruz za priloge",
+      "Aji sos za serviraje"
+    ],
+    instructions: [
+      "Isitnite meso na kockice.",
+      "Napravite marinadu od aji paste, limuna i začina.",
+      "Marinirajte meso 4 sata ili preko noći.",
+      "Nabodite meso na drvene ražnjiće.",
+      "Grilujte na visokoj temperaturi 10-12 minuta.",
+      "Često okrećite i premažite.",
+      "Skuvajte krompir i kukuruz.",
+      "Služite sa aji sosom.",
+      "Tradicionalno uz chicha de jora."
+    ],
+    prepTime: "4 sata (mariniranje)",
+    cookTime: "15 minuta",
+    servings: 6,
+    notes: ["Aji panca daje karakterističnu boju", "Popularno za ulične festivale"],
+    nutrition: { calories: "420 po porciji", protein: "35g", carbs: "12g", fat: "26g" }
+  },
+  "Bolivian Pique Macho": {
+    name: "Bolivijski pike mačo",
+    description: "Obilna bolivijska pita sa mesom, kobasicama i french fries.",
+    ingredients: [
+      "500g govedine, na trake",
+      "4 viršle, sečene",
+      "500g krompira, za french fries",
+      "4 jaja",
+      "2 paradajza, sečena",
+      "1 veliki luk, seckan",
+      "2 paprike, sečene",
+      "4 čena belog luka",
+      "2 kašike ulja",
+      "1 kašičica komorča",
+      "Aji amarillo sos",
+      "Majonezu za serviće",
+      "So i biber po ukusu"
+    ],
+    instructions: [
+      "Napravite french fries i držite toplo.",
+      "Propržite meso na visokoj temperaturi.",
+      "Dodajte luk, papriku i beli luk.",
+      "Dodajte viršle i začine.",
+      "Napravite jaja na oko.",
+      "Na veliki tanjir stavite french fries.",
+      "Preko stavite meso sa povrćem.",
+      "Dodajte jaja i paradajz.",
+      "Služite sa aji sosom i majonezom."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "25 minuta",
+    servings: 4,
+    notes: ["Vrlo obilna porcija za deljenje", "Popularno u Santa Cruz"],
+    nutrition: { calories: "920 po porciji", protein: "38g", carbs: "58g", fat: "58g" }
+  },
+  "German Schnitzel": {
+    name: "Nemački šnicl",
+    description: "Tradicionalni nemački pohovani odrezak od telećina ili svinjetine.",
+    ingredients: [
+      "4 odreska telećine ili svinjetine",
+      "2 jaja, umućena",
+      "2 šolje prezli",
+      "1 šolja brašna",
+      "Ulje za duboko prženje",
+      "So i biber po ukusu",
+      "Limun za serviće",
+      "Puter za finish",
+      "Peršun za ukras"
+    ],
+    instructions: [
+      "Potučite odreske da budu tanki.",
+      "Posolite i pobiberite svaki odresak.",
+      "Uvaljujte u brašno, zatim u jaje.",
+      "Poslednji korak - uvaljujte u prezle.",
+      "Zagrejte ulje do 170°C.",
+      "Pržite 3-4 minuta sa svake strane.",
+      "Stavite na papirnu salvetu.",
+      "Dodajte malo putera na vrh.",
+      "Služite sa limunom i peršunom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "10 minuta",
+    servings: 4,
+    notes: ["Mora biti hrskav spolja i sočan unutra", "Klasično sa krompir salatom"],
+    nutrition: { calories: "480 po porciji", protein: "32g", carbs: "28g", fat: "26g" }
+  },
+  "German Bratwurst": {
+    name: "Nemački bratvurst",
+    description: "Tradicionalne nemške kobasice sa začinima i prirodnim omotačem.",
+    ingredients: [
+      "1kg svinjetine (plće)",
+      "500g telećine",
+      "30g soli",
+      "1 kašička belog bibera",
+      "1 kašika mlevenih karanfilića",
+      "1 kašika mlevenog đumbira",
+      "1 kašička mlevnog mušktatnog oreha",
+      "100ml ledeno vode",
+      "Prirodni omotači",
+      "Senf za serviće",
+      "Kiseli kupus",
+      "Nemački hleb"
+    ],
+    instructions: [
+      "Isitnite meso krupno u mašini.",
+      "Dodajte so i začine.",
+      "Dodajte ledenu vodu postepeno.",
+      "Mešajte dok masa ne postane kompaktna.",
+      "Napunite prirodne omotače.",
+      "Zavežite na segmente od 15cm.",
+      "Pustite da odstoje preko noći.",
+      "Grilujte ili pržite na srednjoj vatri.",
+      "Služite sa senfom i kiselim kupusom."
+    ],
+    prepTime: "2 sata + prekonoćni odmor",
+    cookTime: "15 minuta",
+    servings: 8,
+    notes: ["Omotač mora biti prirodan", "Tradicionalno sa senfom i pivom"],
+    nutrition: { calories: "380 po kobasici", protein: "24g", carbs: "3g", fat: "30g" }
+  },
+  "German Sauerkraut": {
+    name: "Nemački kiseli kupus",
+    description: "Tradicionalni fermentisani nemački kupus sa začinima.",
+    ingredients: [
+      "1 velika glavica belog kupusa",
+      "2 kašike krupne soli",
+      "1 kašika kima",
+      "10 zrna jlovora",
+      "1 kašika sementei",
+      "Crni biber, zrna"
+    ],
+    instructions: [
+      "Isitnite kupus tanko na rezance.",
+      "Pomešajte sa solju u velikoj posudi.",
+      "Mešajte dok kupus ne pusti sok.",
+      "Dodajte začine i promešajte.",
+      "Stavite u sterilizovanu tegli.",
+      "Pritisnite da se pokrije sokom.",
+      "Pokrijte tkaninom i ostavite.",
+      "Fermentišite 2-4 nedelje na sobnoj temperaturi.",
+      "Čuvajte u frižideru kada je gotov."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "2-4 nedelje fermentacije",
+    servings: 16,
+    notes: ["Fermentacija traje 2-4 nedelje", "Mora uvek biti pokriven sokom"],
+    nutrition: { calories: "25 po porciji", protein: "1g", carbs: "6g", fat: "0g" }
+  },
+  "Austrian Wiener Schnitzel": {
+    name: "Austrijski bečki šnicl",
+    description: "Originalni bečki šnicl od telećine u zlatanom pohovanje.",
+    ingredients: [
+      "4 odreska telećine (topside)",
+      "2 jaja, umućena",
+      "2 šolje finih prezli",
+      "1 šolja brašna",
+      "Ulje za duboko prženje",
+      "So po ukusu",
+      "Limun za serviće",
+      "Peršun za ukras",
+      "Krompir salata za prilog"
+    ],
+    instructions: [
+      "Potučite odreske telećine do 3mm debljine.",
+      "Posolite sa obe strane.",
+      "Uvaljujte u brašno, otresite višak.",
+      "Potopite u umućena jaja.",
+      "Pohovajte u prezlama pritiskom.",
+      "Zagrejte obilno ulje do 160°C.",
+      "Pržite 2-3 minuta sa svake strane.",
+      "Mora da 'pliva' u ulju.",
+      "Služite odmah sa limunom."
+    ],
+    prepTime: "25 minuta",
+    cookTime: "6 minuta",
+    servings: 4,
+    notes: ["Originalno samo od telećine", "Mora 'plivati' u ulju tokom prženja"],
+    nutrition: { calories: "520 po porciji", protein: "35g", carbs: "25g", fat: "32g" }
+  },
+  "Austrian Sachertorte": {
+    name: "Austrijska zaher torta",
+    description: "Čuvena austrijska čokoladna torta sa džemom od kajsija.",
+    ingredients: [
+      "200g tamne čokolade",
+      "150g putera",
+      "150g šećera",
+      "8 jaja, odvojena",
+      "150g brašna",
+      "300g džema od kajsija",
+      "250g tamne čokolade za glazuru",
+      "200ml slatke pavlake",
+      "2 kašike ruma",
+      "Prstohvat soli"
+    ],
+    instructions: [
+      "Rastopite čokoladu i puter na pari.",
+      "Umutite žumanca sa šećerom.",
+      "Dodajte rastopljenu čokoladu.",
+      "Umutite belanca u čvrst sneg.",
+      "Pažljivo umešajte brašno i belanca.",
+      "Pecite na 180°C 45 minuta.",
+      "Ohladite i prepolovite.",
+      "Namažite džemom i složite.",
+      "Prekrijte čokoladnom glazurom."
+    ],
+    prepTime: "60 minuta",
+    cookTime: "45 minuta",
+    servings: 12,
+    notes: ["Originalna receptura iz hotela Sacher", "Mora odmarati dan pre serviranja"],
+    nutrition: { calories: "420 po komadu", protein: "6g", carbs: "52g", fat: "22g" }
+  },
+  "Austrian Goulash": {
+    name: "Austrijski gulaš",
+    description: "Bečka verzija mađarskog gulaša sa više supa i začina.",
+    ingredients: [
+      "1kg govedine (plće ili vrat)",
+      "3 velika luka, seckan",
+      "3 kašike slatke paprike",
+      "2 kašike paradajz paste",
+      "2 crvene paprike, sečene",
+      "4 čena belog luka",
+      "2 kašike komorča",
+      "1 kašičica majčine dušice",
+      "2 lista lovora",
+      "500ml goveđe čorbe",
+      "3 kašike ulja",
+      "So i biber po ukusu"
+    ],
+    instructions: [
+      "Isitnite meso na kockice od 3cm.",
+      "Propržite luk u ulju do zlatne boje.",
+      "Dodajte papriku i pržite kratko.",
+      "Dodajte meso i propržite sa svih strana.",
+      "Dodajte paradajz pastu i začine.",
+      "Zalije vrućom čorbom.",
+      "Kuvajte pokriveno 2 sata na slaboj vatri.",
+      "Dodajte papriku poslednjih 30 minuta.",
+      "Služite sa hlebom ili knedlama."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "2.5 sata",
+    servings: 6,
+    notes: ["Austrijska verzija je sočnija od mađarske", "Tradicionalno sa semmel knedlama"],
+    nutrition: { calories: "380 po porciji", protein: "32g", carbs: "18g", fat: "20g" }
+  },
+  "Swiss Fondue": {
+    name: "Švajcarski fondi",
+    description: "Tradicionalni švajcarski rastopljen sir sa belim vinom.",
+    ingredients: [
+      "400g gruyere sira, rendan",
+      "400g emmental sira, rendan",
+      "300ml suvog belog vina",
+      "1 čen belog luka",
+      "2 kašike kirša (ili ruma)",
+      "1 kašika kukuruznog skroba",
+      "Crni biber, sveže mleven",
+      "Muskatni oreh, mleven",
+      "Hleb za umakanje, kockice",
+      "Krompir, kuvan"
+    ],
+    instructions: [
+      "Protrljajte lonac belim lukom.",
+      "Zagrejte vino na srednjoj vatri.",
+      "Dodajte sir postepeno mešajući.",
+      "Rastvorite skrob u kiršu.",
+      "Dodajte smeša skroba kada sir omekša.",
+      "Začinite biberom i muškatnim orehom.",
+      "Mešajte dok ne postane glatko.",
+      "Održavajte toplo na fondi šporetu.",
+      "Umačite hleb na viljušku i jedite."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: ["Mora se jesti odmah", "Tradicionalno sa belim vinom"],
+    nutrition: { calories: "620 po porciji", protein: "38g", carbs: "18g", fat: "42g" }
+  },
+  "Swiss Raclette": {
+    name: "Švajcarski raklet",
+    description: "Tradicionalni švajcarski topljen sir servironan sa krompirom.",
+    ingredients: [
+      "800g raclette sira",
+      "1kg sitnih krompira",
+      "200g kiselih krastavaca",
+      "200g luka u sirćetu",
+      "Crni biber, grub",
+      "Slatka paprika",
+      "Suvo belo vino za piće"
+    ],
+    instructions: [
+      "Skuvajte krompir u kori do mekšanja.",
+      "Ostavite toplo u šerpi.",
+      "Isecite sir na kriške od 5mm.",
+      "Zagrejte raclette gril.",
+      "Stavite sir u male tave.",
+      "Rastopite sir pod grilom.",
+      "Servirajte odmah preko krompira.",
+      "Dodajte krastavce i luk kao prilog.",
+      "Ponovite dok ne pojedete sve."
+    ],
+    prepTime: "25 minuta",
+    cookTime: "30 minuta",
+    servings: 4,
+    notes: ["Tradicionalno se jede sa malim krompirom", "Sir mora biti originalni raclette"],
+    nutrition: { calories: "680 po porciji", protein: "35g", carbs: "45g", fat: "42g" }
+  },
+  "Swiss Rosti": {
+    name: "Švajcarski rešti",
+    description: "Tradicionalni švajcarski prženi krompir sa hrskavom korom.",
+    ingredients: [
+      "1kg krompira",
+      "4 kašike putera",
+      "2 kašike ulja",
+      "So po ukusu",
+      "Crni biber po ukusu",
+      "Slanina, sečena (opcionalno)",
+      "Luk, seckan (opcionalno)"
+    ],
+    instructions: [
+      "Skuvajte krompir u kori dan ranije.",
+      "Ohladite u frižideru preko noći.",
+      "Ogulite i narendajte krupno.",
+      "Zagrejte puter i ulje u velikoj tavi.",
+      "Dodajte krompir i posolite.",
+      "Pritisnite u kompaktnu masu.",
+      "Pržite 10 minuta bez mešanja.",
+      "Okrenite i pržite još 10 minuta.",
+      "Mora biti hrskav spolja, mekan unutra."
+    ],
+    prepTime: "24 sata (hlađenje)",
+    cookTime: "20 minuta",
+    servings: 4,
+    notes: ["Krompir mora biti skuvan dan ranije", "Ne smeće se mešati tokom prženja"],
+    nutrition: { calories: "320 po porciji", protein: "6g", carbs: "52g", fat: "12g" }
+  },
+  "Norwegian Salmon": {
+    name: "Norveški losos",
+    description: "Tradicionalno norveški losos pripremljen sa vreljem i koprom.",
+    ingredients: [
+      "1kg sveži norveški losos",
+      "3 kašike krupne soli",
+      "2 kašike šećera",
+      "1 veliki kečap svežeg kopra",
+      "1 kašika belog bibera",
+      "2 kašike akvavita (ili vodke)",
+      "Limun za serviće",
+      "Senf sos za prilog",
+      "Krompir za serviće"
+    ],
+    instructions: [
+      "Isitnite koper veoma fino.",
+      "Pomešajte so, šećer i biber.",
+      "Namažite file lososa smešom začina.",
+      "Pospite koprom sa obe strane.",
+      "Poprskajte akvavitom.",
+      "Umotajte u plastični film.",
+      "Ostavite u frižideru 2-3 dana.",
+      "Okrećite svaki dan.",
+      "Isitnite tanko i služite."
+    ],
+    prepTime: "30 minuta + 3 dana",
+    cookTime: "0 minuta",
+    servings: 8,
+    notes: ["Mora biti svež losos", "Tradicionalni gravlaks proces"],
+    nutrition: { calories: "220 po porciji", protein: "35g", carbs: "2g", fat: "8g" }
+  },
+  "Norwegian Lefse": {
+    name: "Norveška lefse",
+    description: "Tradicionalna norveška tanke lepinja od krompira.",
+    ingredients: [
+      "1kg krompira, kuvan",
+      "2 kašike putera",
+      "1/4 šolje mleka",
+      "1 kašičica soli",
+      "1 kašičica šećera",
+      "1.5 šolje brašna",
+      "Puter za serviće",
+      "Šećer za posipanje"
+    ],
+    instructions: [
+      "Propasiran krompir kroz sito.",
+      "Dodajte puter, mleko, so i šećer.",
+      "Ohladite smesu potpuno.",
+      "Postepeno dodajte brašno.",
+      "Umešajte do glatkog testa.",
+      "Podelite na 12 delova.",
+      "Razvucite svaki deo tanko.",
+      "Pecite na suvoj tavi 2 minuta po strani.",
+      "Služite sa puterom i šećerom."
+    ],
+    prepTime: "45 minuta + hlađenje",
+    cookTime: "30 minuta",
+    servings: 12,
+    notes: ["Mora biti razvučena veoma tanko", "Tradicionalno za božićne praznike"],
+    nutrition: { calories: "180 po komadu", protein: "4g", carbs: "32g", fat: "4g" }
+  },
+  "Norwegian Farikal": {
+    name: "Norveški farikal",
+    description: "Nacionalno norveško jelo od jagnjetine i kupusa.",
+    ingredients: [
+      "1.5kg jagnjetine sa kostima",
+      "1 velika glavica kupusa",
+      "2 kašike cele zrna crnog bibera",
+      "2 kašike brašna",
+      "So po ukusu",
+      "Svež peršun",
+      "Krompir za serviće"
+    ],
+    instructions: [
+      "Isitnite jagnjetinu na veće komade.",
+      "Iseckajte kupus na klinove.",
+      "Uvaljajte meso u brašno i posolite.",
+      "U težak lonac naizmence stavljajte meso i kupus.",
+      "Pospite zrnima bibera između slojeva.",
+      "Dodajte malo vode na dno.",
+      "Pokrijte i kuvajte na slaboj vatri 2 sata.",
+      "Ne mešajte tokom kuvanja.",
+      "Služite sa kuvanim krompirom."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "2 sata",
+    servings: 6,
+    notes: ["Nacionalno jelo Norveške", "Ne sme se mešati tokom kuvanja"],
+    nutrition: { calories: "520 po porciji", protein: "42g", carbs: "18g", fat: "32g" }
+  },
+  "Danish Smørrebrød": {
+    name: "Danski smerbred",
+    description: "Tradicionalni danski otvoreni sendvič sa ružnim hlebom.",
+    ingredients: [
+      "8 kriški ružnog hleba",
+      "4 kašike putera",
+      "200g dimljenog lososa",
+      "200g roast beefa",
+      "4 kuvana jaja",
+      "1 krastavac, tanko seckan",
+      "Crveni luk, tanko seckan",
+      "Svež koper",
+      "Kretin sir",
+      "Redkvice za ukras"
+    ],
+    instructions: [
+      "Namažite hleb tankim slojem putera.",
+      "Za losos verziju: dodajte losos, jaje i koper.",
+      "Za roast beef verziju: dodajte meso i redkvice.",
+      "Ukrasite krastavcem i lukom.",
+      "Dodajte kretin sir po ukusu.",
+      "Arranžirati lepo na tanjiru.",
+      "Jedite viljuškom i nožem.",
+      "Tradicionalno sa akvavitom.",
+      "Svaki komad mora biti umetnost."
+    ],
+    prepTime: "25 minuta",
+    cookTime: "0 minuta",
+    servings: 4,
+    notes: ["Mora biti lepo arrangiran", "Jede se viljuškom i nožem"],
+    nutrition: { calories: "380 po porciji", protein: "28g", carbs: "22g", fat: "20g" }
+  },
+  "Danish Frikadeller": {
+    name: "Danske frikadele",
+    description: "Tradicionalne danske ćufte od svinjetine i telećine.",
+    ingredients: [
+      "500g mlevene svinjetine",
+      "300g mlevene telećine",
+      "1 veliko jaje",
+      "1 veliki luk, sitno seckan",
+      "3 kašike brašna",
+      "200ml mleka",
+      "2 kašike putera",
+      "So i beli biber po ukusu",
+      "1 kašičica allspice-a",
+      "Ulje za prženje"
+    ],
+    instructions: [
+      "Potopite brašno u mleko 10 minuta.",
+      "Propržite luk u puteru do transparentnosti.",
+      "Pomešajte oba mesa sa jajetom.",
+      "Dodajte hlađeni luk i brašno sa mlekom.",
+      "Začinite solju, biberom i allspice-om.",
+      "Mešajte dok ne dobijete glatku masu.",
+      "Oblikujte ovalne ćufte mokrim rukama.",
+      "Pržite u ulju 5-6 minuta sa svake strane.",
+      "Služite sa krompirom i sosом."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "15 minuta",
+    servings: 6,
+    notes: ["Tradicionalno ovalne forme", "Služe se sa brunatnim sosom"],
+    nutrition: { calories: "420 po porciji", protein: "32g", carbs: "12g", fat: "28g" }
+  },
+  "Danish Æbleskiver": {
+    name: "Danske ebleskiver",
+    description: "Tradicionalne danske kuglaste palačinke sa jabukama.",
+    ingredients: [
+      "2 šolje brašna",
+      "2 kašike šećera",
+      "1 kašičica praška za pecivo",
+      "1/2 kašičice soli",
+      "2 jaja, odvojena",
+      "2 šolje puterмilka",
+      "4 kašike putera, otopljen",
+      "2 jabuke, sitno sečene",
+      "Ulje za mazanje",
+      "Šećer u prahu za posipanje"
+    ],
+    instructions: [
+      "Pomešajte brašno, šećer, prašak za pecivo i so.",
+      "Umutite žumanca sa puterмilkom.",
+      "Dodajte otopljen puter.",
+      "Umešajte mokre sastojke u suve.",
+      "Umutite belanca u čvrst sneg.",
+      "Pažljivo umešajte belanca.",
+      "Zagrejte æbleskiver tavu.",
+      "Sipajte testo u udubljenja.",
+      "Dodajte jabuke i okrećite čačkalicom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "20 minuta",
+    servings: 20,
+    notes: ["Potrebna je specijalna æbleskiver tava", "Tradicionalno za božićne praznike"],
+    nutrition: { calories: "120 po komadu", protein: "4g", carbs: "18g", fat: "4g" }
+  },
+  "Swedish Meatballs": {
+    name: "Švedske ćufte",
+    description: "Čuvene švedske ćufte sa kremastim sosom.",
+    ingredients: [
+      "500g mlevene govedine",
+      "500g mlevene svinjetine",
+      "1 jaje",
+      "1/2 šolje prezli",
+      "1/4 šolje mleka",
+      "1 mali luk, sitno seckan",
+      "2 kašike putera",
+      "So i beli biber po ukusu",
+      "1/4 kašičice allspice-a",
+      "2 kašike ulja za prženje"
+    ],
+    instructions: [
+      "Potopite prezle u mleko 5 minuta.",
+      "Propržite luk u puteru do mekšanja.",
+      "Pomešajte oba mesa sa jajetom.",
+      "Dodajte prezle, luk i začine.",
+      "Mešajte dok ne dobijete kompaktnu masu.",
+      "Oblikujte male kuglaste ćufte.",
+      "Pržite u ulju dok ne porumene.",
+      "Dodajte u sos i dinstavajte 10 minuta.",
+      "Služite sa lingonberry džemom."
+    ],
+    prepTime: "25 minuta",
+    cookTime: "20 minuta",
+    servings: 6,
+    notes: ["Moraju biti male i kuglaste", "Služe se sa lingonberry džemом"],
+    nutrition: { calories: "380 po porciji", protein: "28g", carbs: "8g", fat: "26g" }
+  },
+  "Swedish Gravlax": {
+    name: "Švedski gravlaks",
+    description: "Tradicionalni švedski losos kuriran sa solju i koprom.",
+    ingredients: [
+      "1kg svežeg lososa, sa kožom",
+      "3 kašike krupne soli",
+      "3 kašike šećera",
+      "2 kašike belog bibera, grubо mlevenog",
+      "1 veliki kečap svežeg kopra",
+      "2 kašike akvavita"
+    ],
+    instructions: [
+      "Pomešajte so, šećer i biber.",
+      "Namažite file lososa smešom začina.",
+      "Pospite obilno koprom sa obe strane.",
+      "Poprskajte akvavitom.",
+      "Umotajte čvrsto u plastični film.",
+      "Stavite u frižider pod teg.",
+      "Ostavite 2-3 dana, okrećući svaki dan.",
+      "Isecite tanko nakrivo.",
+      "Služite sa senf sosom."
+    ],
+    prepTime: "30 minuta + 3 dana",
+    cookTime: "0 minuta",
+    servings: 10,
+    notes: ["Mora biti pod tegom tokom kuriranja", "Tradicionalni sa hovmästarsås sosom"],
+    nutrition: { calories: "180 po porciji", protein: "28g", carbs: "1g", fat: "6g" }
+  },
+  "Swedish Kanelbullar": {
+    name: "Švedski kanelbular",
+    description: "Tradicionalni švedski rolat sa cimetом.",
+    ingredients: [
+      "500g brašna",
+      "250ml mleka",
+      "75g putera",
+      "50g svežeg kvasca",
+      "75g šećera",
+      "1 jaje",
+      "1 kašičica soli",
+      "100g putera za nadeves",
+      "3 kašike cimeta",
+      "75g braon šećera",
+      "Jaje za mazanje",
+      "Krupan šećer za posipanje"
+    ],
+    instructions: [
+      "Zagrejte mleko i rastopite puter.",
+      "Ohladite na mlako i dodajte kvasac.",
+      "Dodajte šećer, jaje i so.",
+      "Umešajte brašno i mesите 10 minuta.",
+      "Ostavite da raste 1 sat.",
+      "Razvucite u pravougaonik.",
+      "Namažite puterom i pospite smešom cimeta.",
+      "Urolajte i isecite na rolne.",
+      "Pecite na 200°C 12-15 minuta."
+    ],
+    prepTime: "2 sata (sa rastom)",
+    cookTime: "15 minuta",
+    servings: 20,
+    notes: ["Tradicionalno za fika (kafу pauzu)", "Moraju biti mekani i aromatični"],
+    nutrition: { calories: "220 po komadu", protein: "5g", carbs: "32g", fat: "9g" }
+  },
+  "Finnish Karjalanpiirakka": {
+    name: "Finska karjalanpirakka",
+    description: "Tradicionalne finske pite od ražanog testa sa pirinčem.",
+    ingredients: [
+      "2 šolje ražanog brašna",
+      "1 šolja vode",
+      "1 kašičica soli",
+      "1 šolja pirinča",
+      "4 šolje mleka",
+      "2 kašike putera",
+      "So za kuvanje pirinča",
+      "4 kuvana jaja za serviće",
+      "Puter za serviće"
+    ],
+    instructions: [
+      "Napravite testo od ražanog brašna, vode i soli.",
+      "Ostavite da odmori 30 minuta.",
+      "Skuvajte pirinač u mleku do kašaste konzistencije.",
+      "Dodajte puter i so u pirinač.",
+      "Razvucite testo tanko i isecite ovale.",
+      "Stavite pirinač u centar svakog ovale.",
+      "Podignite krajeve i oblikujte čamčiće.",
+      "Pecite na 250°C 15 minuta.",
+      "Namažite puterom dok su vrući."
+    ],
+    prepTime: "60 minuta",
+    cookTime: "15 minuta",
+    servings: 12,
+    notes: ["Tradicionalno se jedu sa munavoi sosom", "Oblik mora biti kao čamčić"],
+    nutrition: { calories: "180 po komadu", protein: "6g", carbs: "32g", fat: "4g" }
+  },
+  "Finnish Kalakukko": {
+    name: "Finski kalakuko",
+    description: "Tradicionalni finski hleb sa ribom iz Savonlina.",
+    ingredients: [
+      "500g ražanog brašna",
+      "200ml vode",
+      "1 kašika soli",
+      "2 kašike ulja",
+      "1kg sveže ribe (šarani ili forel)",
+      "500g slanine",
+      "So za začinjavanje",
+      "Crni biber po ukusu"
+    ],
+    instructions: [
+      "Napravite čvrsto testo od ražanog brašna.",
+      "Ostavite da odmori 1 sat.",
+      "Očistite ribu i isecite na komade.",
+      "Isecite slaninu na trake.",
+      "Razvucite testo u veliki oval.",
+      "Naizmence stavite ribu i slaninu.",
+      "Začinite solju i biberom.",
+      "Zatvorite testo oko nadeva.",
+      "Pecite na 200°C 3-4 sata."
+    ],
+    prepTime: "90 minuta",
+    cookTime: "4 sata",
+    servings: 8,
+    notes: ["Tradicionalno jelo iz Savonlina", "Dugo pečenje je ključno"],
+    nutrition: { calories: "480 po porciji", protein: "35g", carbs: "45g", fat: "18g" }
+  },
+  "Finnish Ruisleipä": {
+    name: "Finski ružni hleb",
+    description: "Tradicionalni finski tamni ražani hleb sa kiselim ukusom.",
+    ingredients: [
+      "3 šolje ražanog brašna",
+      "1 šolja brašna",
+      "2 šolje mlake vode",
+      "1/4 šolje startera (ili kvasca)",
+      "2 kašike meda",
+      "1 kašika soli",
+      "1 kašika semena kima"
+    ],
+    instructions: [
+      "Pomešajte starter sa mlakom vodom.",
+      "Dodajte med i so.",
+      "Postepeno dodajte oba brašna.",
+      "Mesите 10 minuta do glatkog testa.",
+      "Dodajte kim i umešajte.",
+      "Ostavite da raste 2 sata.",
+      "Oblikujte u okruglu šukicu.",
+      "Napravite rupu u sredini.",
+      "Pecite na 200°C 45 minuta."
+    ],
+    prepTime: "3 sata (sa rastom)",
+    cookTime: "45 minuta",
+    servings: 12,
+    notes: ["Tradicionalno sa rupom u sredini", "Čuva se nedeljama"],
+    nutrition: { calories: "160 po kriški", protein: "5g", carbs: "34g", fat: "1g" }
+  },
+  "Dutch Stroopwafel": {
+    name: "Holandski strupvafel",
+    description: "Tradicionalni holandski vafel sa karamel sirupom.",
+    ingredients: [
+      "2 šolje brašna",
+      "100g putera",
+      "75g šećera",
+      "1 jaje",
+      "7g svežeg kvasca",
+      "4 kašike mleka",
+      "1 kašičica cimeta",
+      "Prstohvat soli",
+      "200g braon šećera za sirup",
+      "100g putera za sirup",
+      "4 kašike meda",
+      "1 kašika cimeta za sirup"
+    ],
+    instructions: [
+      "Rastvorite kvasac u toplom mleku.",
+      "Pomešajte brašno, šećer, cimet i so.",
+      "Dodajte puter, jaje i mleko sa kvascem.",
+      "Mesите do glatkog testa.",
+      "Ostavite da raste 1 sat.",
+      "Za sirup: rastopite sve sastojke.",
+      "Oblikujte male lopte testa.",
+      "Pecite u stroopwafel mašini.",
+      "Prepolovite i namažite sirupom."
+    ],
+    prepTime: "90 minuta",
+    cookTime: "20 minuta",
+    servings: 20,
+    notes: ["Potrebna je specijalna stroopwafel mašina", "Najbolji su sveži i topli"],
+    nutrition: { calories: "180 po komadu", protein: "3g", carbs: "28g", fat: "7g" }
+  },
+  "Dutch Bitterballen": {
+    name: "Holandski biterbal",
+    description: "Tradicionalne holandske pržene kuglice sa mesom.",
+    ingredients: [
+      "50g putera",
+      "75g brašna",
+      "500ml goveđe čorbe",
+      "300g kuvanog mesa, sitno seckan",
+      "1 luk, sitno seckan",
+      "2 kašike peršuna",
+      "So, biber i muškatni oreh",
+      "2 jaja za paniranje",
+      "2 šolje prezli",
+      "Ulje za duboko prženje",
+      "Senf za serviće"
+    ],
+    instructions: [
+      "Propržite luk u puteru.",
+      "Dodajte brašno i napravite ru.",
+      "Postepeno dodajte čorbu mešajući.",
+      "Dodajte meso i začine.",
+      "Kuvajte 10 minuta dok ne zgusne.",
+      "Ohladite potpuno u frižideru.",
+      "Oblikujte kuglice mokrim rukama.",
+      "Uvaljajte u jaje, zatim u prezle.",
+      "Pržite u vrućem ulju 3-4 minuta."
+    ],
+    prepTime: "2 sata (sa hlađenjem)",
+    cookTime: "15 minuta",
+    servings: 20,
+    notes: ["Moraju biti potpuno hladni pre prženja", "Služe se sa senfом"],
+    nutrition: { calories: "120 po komadu", protein: "8g", carbs: "8g", fat: "7g" }
+  },
+  "Dutch Erwtensoep": {
+    name: "Holandska čorba od graska",
+    description: "Tradicionalna gusta holandska čorba od graska.",
+    ingredients: [
+      "500g žutog suvog graska",
+      "2l vode",
+      "500g svinjskih rebara",
+      "200g slanine",
+      "2 kobasice rookworst",
+      "2 luka, seckan",
+      "3 šargarepe, sečene",
+      "2 стабла celera, sečen",
+      "2 krompira, sečen",
+      "2 lista lovora",
+      "So i biber po ukusu"
+    ],
+    instructions: [
+      "Potopite grasak preko noći.",
+      "Skuvajte rebra u vodi 1 sat.",
+      "Dodajte grasak i kuvajte 1 sat.",
+      "Dodajte slaninu i kobasice.",
+      "Kuvajte još 30 minuta.",
+      "Dodajte povrće i začine.",
+      "Kuvajte dok povrće ne omekša.",
+      "Uklonite meso i iseckajte.",
+      "Vratite meso u čorbu i servirajte."
+    ],
+    prepTime: "12 sati (grasak)",
+    cookTime: "3 sata",
+    servings: 8,
+    notes: ["Mora biti veoma gusta", "Tradicionalno za hladne dane"],
+    nutrition: { calories: "420 po porciji", protein: "28g", carbs: "35g", fat: "20g" }
+  },
+  "Belgian Waffles": {
+    name: "Belgijski vafli",
+    description: "Tradicionalni belgijski vafli sa dubokim džepovima, savršeni za sirup i voće.",
+    ingredients: [
+      "2 šolje brašna",
+      "2 kašičice praška za pecivo",
+      "1 kašičica soli",
+      "2 kašike šećera",
+      "2 jajeta",
+      "1¾ šolje mleka",
+      "½ šolje rastopljenog putera",
+      "1 kašičica vanile"
+    ],
+    instructions: [
+      "Pomešajte brašno, prašak za pecivo, so i šećer.",
+      "U drugoj posudi umutite jajeta, dodajte mleko, puter i vanilu.",
+      "Sjedinite mokre i suve sastojke, ne mešajte previše.",
+      "Zagrejte vafl-tiganj i namažite uljem.",
+      "Sipajte testo i pecite 3-4 minuta do zlatne boje.",
+      "Služite toplo sa sirupom ili voćem."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "15 minuta",
+    servings: 6,
+    notes: ["Ne mešajte testo previše", "Najbolji su topli"],
+    nutrition: { calories: "280 po komadu", protein: "8g", carbs: "35g", fat: "12g" }
+  },
+  "Moules Frites": {
+    name: "Školjke sa pomfritom",
+    description: "Klasičan belgijski jelo - školjke kuvane u belom vinu sa hrskavim pomfritom.",
+    ingredients: [
+      "2kg svežih dagnji",
+      "1kg krompira",
+      "1 šolja belog vina",
+      "2 crna luka",
+      "4 čena belog luka",
+      "100ml slatke pavlake",
+      "50g putera",
+      "Peršun, so, biber",
+      "Ulje za prženje"
+    ],
+    instructions: [
+      "Očistite dagnje, bacite one koje se ne zatvaraju.",
+      "Isecite krompir na štapiće i pržite u ulju.",
+      "U velikoj šerpi propržite luk i beli luk u puteru.",
+      "Dodajte vino, pa dagnje, pokrijte i kuvajte 5 minuta.",
+      "Dodajte pavlaku i peršun, začinite.",
+      "Služite sa hrskavim pomfritom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "25 minuta",
+    servings: 4,
+    notes: ["Dagnje moraju biti sveže", "Bacite one koje se ne otvore"],
+    nutrition: { calories: "520 po porciji", protein: "25g", carbs: "45g", fat: "28g" }
+  },
+  "Carbonnade": {
+    name: "Belgijski gulaš",
+    description: "Tradicionalni belgijski gulaš od govedine kuvane u tamnom pivu.",
+    ingredients: [
+      "1kg govedine za gulaš",
+      "4 velika crna luka",
+      "3 kašike brašna",
+      "500ml tamnog belgijskog piva",
+      "2 kašike braon šećera",
+      "2 lista lovora",
+      "Timijan, so, biber",
+      "2 kašike putera"
+    ],
+    instructions: [
+      "Isecite meso na kockice, posolite i pobiberite.",
+      "Propržite meso u puteru dok ne porumeni.",
+      "Dodajte sitno secan luk, pržite 5 minuta.",
+      "Umirite brašno, dodajte pivo i šećer.",
+      "Dodajte lovor i timijan, pokrijte.",
+      "Kuvajte na tihoj vatri 2-3 sata."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "3 sata",
+    servings: 6,
+    notes: ["Koristite kvalitetno tamno pivo", "Treba da se dugo kuva"],
+    nutrition: { calories: "380 po porciji", protein: "32g", carbs: "15g", fat: "18g" }
+  },
+  "Austrian Schnitzel": {
+    name: "Austrijski šnicl",
+    description: "Tradicionalni austrijski pohovani odrezak, tanak i hrskav.",
+    ingredients: [
+      "4 telećih odrezaka",
+      "2 jajeta",
+      "1 šolja brašna",
+      "2 šolje prezli",
+      "200ml ulja za prženje",
+      "So i biber",
+      "Limun za serviranje",
+      "100g putera"
+    ],
+    instructions: [
+      "Istanjite odreske maljem za meso na 3mm.",
+      "Posolite i pobiberite meso sa obe strane.",
+      "Pripremite tri tanjira: brašno, umućena jajeta, prezle.",
+      "Uvaljajte odrezak prvo u brašno, zatim jaje, pa prezle.",
+      "Zagrejte ulje u velikoj tavi na srednjoj vatri.",
+      "Pržite šnicl 2-3 minuta po strani do zlatne boje.",
+      "Stavite na papirni ubrus da se ocedi.",
+      "Služite odmah sa limunskim krišicama."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "10 minuta",
+    servings: 4,
+    notes: ["Meso mora biti tanko", "Ulje ne sme biti prevruće"],
+    nutrition: { calories: "450 po porciji", protein: "35g", carbs: "25g", fat: "24g" }
+  },
+  "Apfelstrudel": {
+    name: "Apfelštrudl",
+    description: "Tradicionalni austrijski desert sa jabukama u tankom testu.",
+    ingredients: [
+      "6 velikih jabuka",
+      "1 pakovanje filo testa",
+      "100g putera",
+      "1/2 šolje prezli",
+      "1/2 šolje šećera",
+      "1 kašička cimeta",
+      "1/4 šolje sultana",
+      "Prašak šećer za posipanje"
+    ],
+    instructions: [
+      "Ogulite i naseckajte jabuke na tanke kriške.",
+      "Pomešajte jabuke sa šećerom, cimetom i sultanama.",
+      "Rastopite puter i propržite prezle do zlatne boje.",
+      "Namažite filo testo rastopljenim puterom.",
+      "Rasporedite jabuke po testu i pospite prezlama.",
+      "Zamotajte štrudl i stavite na pleh.",
+      "Pecite na 180°C 25-30 minuta do zlatne boje.",
+      "Pospite prašak šećerom pre serviranje."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "30 minuta",
+    servings: 8,
+    notes: ["Filo testo mora biti vlažno", "Najbolji je topao"],
+    nutrition: { calories: "220 po komadu", protein: "3g", carbs: "35g", fat: "8g" }
+  },
+  "Sachertorte": {
+    name: "Zaher torta",
+    description: "Čuvena austrijska čokoladna torta sa kajsijskim džemom.",
+    ingredients: [
+      "150g tamne čokolade",
+      "150g putera",
+      "150g šećera",
+      "6 jajeta",
+      "150g brašna",
+      "200g kajsijskog džema",
+      "200g čokolade za glazuru",
+      "100ml slatke pavlake"
+    ],
+    instructions: [
+      "Zagrejte rernu na 180°C i namastite kalup.",
+      "Istopite čokoladu i puter na pari.",
+      "Umutite žumanca sa šećerom do bele pene.",
+      "Umutite belanaca u čvrst sneg.",
+      "Pomešajte čokoladu sa žumancima, dodajte brašno.",
+      "Pažljivo umesite belanca u smesu.",
+      "Pecite 45 minuta, ohladite.",
+      "Prežite tortu, namažite džemom i glazirajte."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "45 minuta",
+    servings: 12,
+    notes: ["Mora potpuno da se ohladi", "Tradicionalno sa šlagom"],
+    nutrition: { calories: "380 po komadu", protein: "6g", carbs: "42g", fat: "22g" }
+  },
+  "Pierogi": {
+    name: "Pjerogi",
+    description: "Tradicionalne poljske knedle sa različitim punjenjima.",
+    ingredients: [
+      "3 šolje brašna",
+      "1 jaje",
+      "1 šolja mlake vode",
+      "1 kašika ulja",
+      "1 kašička soli",
+      "500g krompira",
+      "200g sira",
+      "1 luk",
+      "So i biber"
+    ],
+    instructions: [
+      "Zamesite testo od brašna, jajeta, vode, ulja i soli.",
+      "Ostavite da odmara 30 minuta.",
+      "Skuvajte i ispaširajte krompir sa sirom.",
+      "Propržite luk i pomešajte sa krempirom.",
+      "Razvaljajte testo tanko i isecite krugove.",
+      "Stavite kašiku punja u centar i zatvorite.",
+      "Kuvajte u osoljnoj vodi 3-5 minuta.",
+      "Propržite sa lukom i služite toplo."
+    ],
+    prepTime: "1 sat",
+    cookTime: "15 minuta",
+    servings: 6,
+    notes: ["Testo mora biti elastično", "Možete ih zamrznuti"],
+    nutrition: { calories: "320 po porciji", protein: "12g", carbs: "45g", fat: "10g" }
+  },
+  "Bigos": {
+    name: "Bigos",
+    description: "Tradicionalni poljski kupus sa mesom i kobasicama.",
+    ingredients: [
+      "1kg kiseloog kupusa",
+      "500g svežeg kupusa",
+      "300g dimljene slanine",
+      "300g kobasica",
+      "200g svinjskog mesa",
+      "2 crna luka",
+      "3 suve šljive",
+      "2 lista lovora",
+      "1 kašika mlevene paprike",
+      "So i biber"
+    ],
+    instructions: [
+      "Isecite slaninu na kockice i propržite.",
+      "Dodajte sitno secan luk i pržite do staklaste boje.",
+      "Dodajte meso i kobasice, pržite 10 minuta.",
+      "Dodajte oba kupusa i pomešajte.",
+      "Dodajte šljive, lovor i začine.",
+      "Dodajte malo vode, pokrijte.",
+      "Dinstajte na slaboj vatri 2 sata.",
+      "Mešajte povremeno i dolijte vodu po potrebi."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "2 sata",
+    servings: 8,
+    notes: ["Bolji je sutradan", "Tradicionalno za Božić"],
+    nutrition: { calories: "280 po porciji", protein: "18g", carbs: "15g", fat: "18g" }
+  },
+  "Zurek": {
+    name: "Žurek",
+    description: "Tradicionalna poljska kisela čorba od raženog brašna.",
+    ingredients: [
+      "500ml žurek starter-a",
+      "500ml koštane supe",
+      "200g kobasica",
+      "200g slanine",
+      "3 čena belog luka",
+      "1 luk",
+      "2 jajeta",
+      "100ml kisele pavlake",
+      "Majoran, lovor",
+      "So i biber"
+    ],
+    instructions: [
+      "Propržite slaninu i kobasice, izvadite.",
+      "U istoj tavi propržite luk i beli luk.",
+      "Dodajte žurek starter i koštanu supu.",
+      "Dodajte majoran i lovor, kuvajte 15 minuta.",
+      "Vratite meso, kuvajte još 10 minuta.",
+      "Umutite jaja sa kiselom pavlakom.",
+      "Dodajte u čorbu van vatre, mešajte.",
+      "Začinite solju i biberom."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "30 minuta",
+    servings: 6,
+    notes: ["Ne kuvajte nakon dodavanja jaja", "Tradicionalno sa kuvanim jajetom"],
+    nutrition: { calories: "250 po porciji", protein: "15g", carbs: "12g", fat: "16g" }
+  },
+  "Doner Kebab": {
+    name: "Doner kebab",
+    description: "Tradicionalno tursko meso pečeno na ražnju, služi sa pomfritom i salatom.",
+    ingredients: [
+      "500g jagnjetine ili govedine",
+      "4 tortije ili pita hleba",
+      "1 paradajz",
+      "1 krastavac",
+      "1 luk",
+      "Salata lista",
+      "200ml jogurta",
+      "2 čena belog luka",
+      "1 kašika mlevene paprike",
+      "Kuminovo seme, so, biber"
+    ],
+    instructions: [
+      "Marinirajte meso sa začinima 2 sata.",
+      "Isecite meso na tanke trake.",
+      "Pečite meso na visokoj vatri 5-7 minuta.",
+      "Pripremite salatu od paradajza, krastavca i luka.",
+      "Napravite sos od jogurta i belog luka.",
+      "Zagrejte tortije ili pitu.",
+      "Stavite meso u hleb, dodajte salatu.",
+      "Prelijte jogurt sosom i služite."
+    ],
+    prepTime: "15 minuta + 2 sata mariniranje",
+    cookTime: "10 minuta",
+    servings: 4,
+    notes: ["Meso mora biti tanko seckano", "Najbolje sa svežim hlebom"],
+    nutrition: { calories: "420 po porciji", protein: "28g", carbs: "35g", fat: "18g" }
+  },
+  "Baklava": {
+    name: "Baklava",
+    description: "Sladak turski desert od filo testa sa orasima i medenim sirupom.",
+    ingredients: [
+      "1 pakovanje filo testa",
+      "200g oraha, mleven",
+      "200g putera",
+      "1 šolja šećera",
+      "1 šolja vode",
+      "1/2 šolje meda",
+      "1 kašika limunov sok",
+      "1 kašička cimeta"
+    ],
+    instructions: [
+      "Napravite sirup od šećera, vode, meda i limunov sok.",
+      "Pomešajte orahe sa cimetom.",
+      "Rastopite puter.",
+      "Namažite pleh i stavite list filo testa.",
+      "Namažite puterom, ponovite 5 puta.",
+      "Pospite orah smesumm stavite još 5 listova.",
+      "Isecite na romboide pre pecenja.",
+      "Pecite na 180°C 30-35 minuta do zlatne boje.",
+      "Prelijte vrućim sirupom i ostavite da se ohladi."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "35 minuta",
+    servings: 16,
+    notes: ["Sirup mora biti vruc", "Ostaviti da se ohladi potpuno"],
+    nutrition: { calories: "280 po komadu", protein: "4g", carbs: "35g", fat: "14g" }
+  },
+  "Dolma": {
+    name: "Dolma",
+    description: "Turski listovi vinove loze punjeni pirinom, mesom i začinima.",
+    ingredients: [
+      "30 listova vinove loze",
+      "1 šolja pirinča",
+      "300g mlevene jagnjetine",
+      "1 luk, sitno seckan",
+      "3 kašike maslinovina ulja",
+      "2 kašike peršuna",
+      "1 kašika nane",
+      "1 kašika cimeta",
+      "So, biber",
+      "Limunov sok"
+    ],
+    instructions: [
+      "Potopite listove u vrelu vodu 5 minuta.",
+      "Propržite luk u ulju do staklaste boje.",
+      "Dodajte meso i pržite 5 minuta.",
+      "Dodajte pirinac, začine i malo vode.",
+      "Kuvajte 10 minuta dok pirinac ne postane polukuvan.",
+      "Stavite kašiku smese na svaki list.",
+      "Savijte listove u malu ruličicu.",
+      "Poredajte u šerpuk pokrijte vodom.",
+      "Kuvajte 45 minuta na slaboj vatri."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "45 minuta",
+    servings: 6,
+    notes: ["Listovi ne smeju biti prekuvani", "Služiti sa jogurtom"],
+    nutrition: { calories: "180 po porciji", protein: "12g", carbs: "20g", fat: "6g" }
+  },
+  "Russian Borscht": {
+    name: "Ruski borš",
+    description: "Tradicionalna ruska čorba od crvene repe sa mesom i kiselajm pamlakom.",
+    ingredients: [
+      "500g govedine za čorbu",
+      "2 velike crvene repe",
+      "3 šargarepe",
+      "1 velika glavica kupusa",
+      "3 krompira",
+      "2 crna luka",
+      "3 čena belog luka",
+      "3 kašike koncentrata od paradajza",
+      "2 lista lovora",
+      "200ml kisele pavlake",
+      "So, biber, šećer"
+    ],
+    instructions: [
+      "Skuvajte meso u 2l vode sa lovorm 1.5 sata.",
+      "Narendajte repu na krupnoj rendama.",
+      "Propržite luk, dodajte repu i dinstajte 15 minuta.",
+      "Dodajte paradajz koncentrat i šećer.",
+      "U mesnu supu dodajte krompir i šargarepu.",
+      "Nakon 10 minuta dodajte kupus.",
+      "Dodajte repu i kuvajte još 15 minuta.",
+      "Začinite i služite sa kiselom pavlakom."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "2 sata",
+    servings: 8,
+    notes: ["Može se jesti topao ili hladan", "Bolji je sutradan"],
+    nutrition: { calories: "220 po porciji", protein: "18g", carbs: "20g", fat: "8g" }
+  },
+  "Beef Stroganoff": {
+    name: "Govedina Stroganof",
+    description: "Kremasta ruska jela sa govedinom u bogatom sosu od pavlake.",
+    ingredients: [
+      "600g govedine (file)",
+      "300g šampinjona",
+      "1 veliki luk",
+      "3 kašike brašna",
+      "300ml kisele pavlake",
+      "2 kašike senfa",
+      "3 kašike ulja",
+      "2 kašike putera",
+      "1 šolja mesne supe",
+      "So, biber, peršun"
+    ],
+    instructions: [
+      "Isecite meso na tanke trake.",
+      "Propržite meso na visokoj vatri 2 minute, izvadite.",
+      "U istoj tavi propržite luk do staklaste boje.",
+      "Dodajte šampinjone i pržite 5 minuta.",
+      "Pospite brašnom i mešajte 1 minut.",
+      "Dodajte supu i dovedite do ključanja.",
+      "Smanjite vatru, dodajte pavlaku i senf.",
+      "Vratite meso, zagrejte bez kuvanja."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "20 minuta",
+    servings: 4,
+    notes: ["Ne kuvajte nakon dodavanja pavlake", "Odličo sa pilovom ili taljatelama"],
+    nutrition: { calories: "380 po porciji", protein: "32g", carbs: "12g", fat: "22g" }
+  },
+  "Blini": {
+    name: "Blini",
+    description: "Tanke ruske palačinke, slične krep-ima, služe sa slanlim ili slatkim prilozima.",
+    ingredients: [
+      "2 šolje brašna",
+      "2½ šolje mleka",
+      "3 jajeta",
+      "2 kašike šećera",
+      "1 kašička soli",
+      "3 kašike rastopljenog putera",
+      "1 kašička praška za pecivo",
+      "Ulje za maženje tave"
+    ],
+    instructions: [
+      "U velikoj posudi pomešajte brašno, šećer, so i prašak.",
+      "U drugoj posudi umutite jajeta sa mlekom.",
+      "Dodajte mokre sastojke u suve, mešajte do glatkože.",
+      "Dodajte rastopljeni puter i promešajte.",
+      "Ostavite testo da odmara 30 minuta.",
+      "Zagrejte napalačinke i namažite uljem.",
+      "Sipajte tanke blini, pecite 1-2 minuta po strani.",
+      "Služite toplo sa kajmakom, džemom ili ikrom."
+    ],
+    prepTime: "15 minuta + 30 min odmor",
+    cookTime: "20 minuta",
+    servings: 6,
+    notes: ["Testo mora biti glatko", "Najbolji su topli"],
+    nutrition: { calories: "180 po komadu", protein: "6g", carbs: "28g", fat: "5g" }
+  },
+  "Feijoada": {
+    name: "Feijaoada",
+    description: "Tradicionalno brazilsko jelo sa crnim pasuljem i różnim mesom.",
+    ingredients: [
+      "500g crnog pasulja",
+      "300g svinjskih rebara",
+      "200g dimljene kobasice",
+      "200g slanine",
+      "150g dimljenog mesa",
+      "2 crna luka",
+      "4 čena belog luka",
+      "2 lista lovora",
+      "Narandža kora",
+      "So, biber, kuminov"
+    ],
+    instructions: [
+      "Natopajte pasulj preko noći u hladnoj vodi.",
+      "Skuvajte pasulj u novoj vodi 1 sat.",
+      "U velikoj šerpi propržite slaninu.",
+      "Dodajte rebra i kobasice, pržite 10 minuta.",
+      "Dodajte luk, beli luk i začine.",
+      "Dodajte kuvan pasulj sa vodom.",
+      "Dodajte narandža koru i lovor.",
+      "Kuvajte 2 sata na slaboj vatri dok se ne zgusne."
+    ],
+    prepTime: "30 minuta + preko noći",
+    cookTime: "3 sata",
+    servings: 8,
+    notes: ["Tradicionalno za sreda", "Služi sa pirinom i collard green"],
+    nutrition: { calories: "450 po porciji", protein: "28g", carbs: "35g", fat: "22g" }
+  },
+  "Caipirinha": {
+    name: "Kaipirinja",
+    description: "Brazilski nacionalni koktel sa kašasom, laimom i šećerom.",
+    ingredients: [
+      "2 laima, iseckana na osmake",
+      "2 kašike braon šećera",
+      "60ml kašase",
+      "Led kockice",
+      "Malo slatke vode (opciono)"
+    ],
+    instructions: [
+      "Stavite lime osmake u čašu.",
+      "Dodajte braon šećer preko laima.",
+      "Gnemite dobro mudler-om da se sok istisne.",
+      "Napunite čašu ledom.",
+      "Dodajte kašasu i dobro promešajte.",
+      "Po želji dodajte malo slatke vode.",
+      "Ukrašavajte krišicom laima."
+    ],
+    prepTime: "5 minuta",
+    cookTime: "0 minuta",
+    servings: 1,
+    notes: ["Koristite svež laim", "Ne filtnlrite - ostává pulpa"],
+    nutrition: { calories: "200 po porciji", protein: "0g", carbs: "15g", fat: "0g" }
+  },
+  "Brigadeiros": {
+    name: "Brigadeiros",
+    description: "Brazilski čokoladni bonboni, omiljeni na rođendanima.",
+    ingredients: [
+      "1 konzerva slašenog kondenzovanog mleka",
+      "3 kašike kakaoa u prahu",
+      "2 kašike putera",
+      "Čokoladne mrvice za obavijanje",
+      "Malo soli"
+    ],
+    instructions: [
+      "U šerpi pomešajte sladko mleko, kakao i puter.",
+      "Kuvajte na slaboj vatri mešajući 10-15 minuta.",
+      "Smeša je gotova kad se odvaja od dna šerpe.",
+      "Dodajte so, promešajte i ostavite da se ohladi.",
+      "Namastite ruke puterom.",
+      "Oblikujte male lopticice od smese.",
+      "Uvaljajte u čokoladne mrvice.",
+      "Stavite u papirne korpice."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "15 minuta + 2 sata hlađenje",
+    servings: 20,
+    notes: ["Mora biti hladno za oblikovanje", "Može se praviti dan unapred"],
+    nutrition: { calories: "120 po komadu", protein: "2g", carbs: "18g", fat: "4g" }
+  },
+  "Moroccan Tagine": {
+    name: "Marokanski tadžin",
+    description: "Tradicionalno marokansko jelo kuvano u glinenom sudu sa mesom i povrćem.",
+    ingredients: [
+      "800g jagnjetine ili govedine",
+      "2 crna luka, seckan",
+      "3 šargarepe, sečene",
+      "2 tikvice, sečene",
+      "1 konzerva nara u komadima",
+      "100g suvog voća (kajsije, šljive)",
+      "2 kašičice ras el hanout začina",
+      "1 kašička cimeta",
+      "3 kašike maslinovog ulja",
+      "Fresh korijander, so"
+    ],
+    instructions: [
+      "Isecite meso na krupne komade i začinite.",
+      "U tadžin ili težoj šerpi zagrejte ulje.",
+      "Propržite meso sa svih strana 10 minuta.",
+      "Dodajte luk i pržite još 5 minuta.",
+      "Dodajte začine i pržite 1 minut.",
+      "Dodajte paradajz, povrće i suvo voće.",
+      "Dodajte malo vode, pokrijte i dinstajte 1.5 sata.",
+      "Pospite korijadorom i služite sa kuskusom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "1.5 sata",
+    servings: 6,
+    notes: ["Tradicionalno se kuva u tadžin posudi", "Ras el hanout je mesavina od 20+ začina"],
+    nutrition: { calories: "350 po porciji", protein: "28g", carbs: "25g", fat: "15g" }
+  },
+  "Couscous": {
+    name: "Kuskus",
+    description: "Tradicionalno severnoafrické žitarice, osnovni prilogs u marokanskoj kuhinji.",
+    ingredients: [
+      "2 šolje kuskusa",
+      "2½ šolje vrele vode ili supe",
+      "3 kašike putera",
+      "1 kašička soli",
+      "2 kašike maslinovog ulja",
+      "1/4 šolje badema ili pinjola",
+      "2 kašike peršuna",
+      "Cimet i sultanji (opciono)"
+    ],
+    instructions: [
+      "Stavite kuskus u veliku posuda.",
+      "Dodajte so, puter i maslinovo ulje.",
+      "Sipajte vrelu vodu preko kuskusa.",
+      "Pokrijte i ostavite da stoji 10 minuta.",
+      "Razrahljajte viljuškam da se ne stvaraju grudvice.",
+      "Propržite bademe u suvoj tavi.",
+      "Dodajte bademe i peršun u kuskus.",
+      "Služite kao prilog uz tadžin ili meso."
+    ],
+    prepTime: "5 minuta",
+    cookTime: "15 minuta",
+    servings: 6,
+    notes: ["Ne mešajte previše - samo razrahljajte", "Može se začiniti cimetom"],
+    nutrition: { calories: "180 po porciji", protein: "6g", carbs: "32g", fat: "4g" }
+  },
+  "Pastilla": {
+    name: "Pastila",
+    description: "Marokanska pita sa golubovima ili piletinom, začinjena cimetom i šećerom.",
+    ingredients: [
+      "1 piletina, isečena",
+      "6 listova filo testa",
+      "6 jajeta",
+      "1 šolja badema, mleven",
+      "1 veliki luk, seckan",
+      "2 kašike cimeta",
+      "1 kašička đumbira",
+      "1/4 šolje peršuna",
+      "3 kašike prašak šećer",
+      "100g putera, rastopljen"
+    ],
+    instructions: [
+      "Dinstajte piletinu sa lukom, đumbirom i peršunom 45 minuta.",
+      "Izvadite meso, istrpajte i raskomadajte.",
+      "Umutite jajeta i kuvajte u teci od mesa.",
+      "Pomešajte bademe sa cimetom i prašak šećerom.",
+      "Namažite filo testo puterom i postavite u kalup.",
+      "Stavite sloj badema, zatim meso, pa jaja.",
+      "Pokrijte ostatak filo testa.",
+      "Pecite na 180°C 25-30 minuta do zlatne boje."
+    ],
+    prepTime: "1 sat",
+    cookTime: "1 sat 15 minuta",
+    servings: 8,
+    notes: ["Tradicionalno sa golubovima", "Slatko-slano jelo"],
+    nutrition: { calories: "420 po porciji", protein: "22g", carbs: "28g", fat: "24g" }
+  },
+  "Injera": {
+    name: "Injera",
+    description: "Tradicionalni etiopski kiseli hleb od tef brašna, osnova etiopske kuhinje.",
+    ingredients: [
+      "2 šolje tef brašna (ili smeša tef i običnog brašna)",
+      "3 šolje mlake vode",
+      "1/4 šolje starter fermentacije (ili kvas)",
+      "1/2 kašičice soli"
+    ],
+    instructions: [
+      "Pomešajte tef brašno sa vodom u glatko testo.",
+      "Dodajte starter i dobro promešajte.",
+      "Pokrijte i ostavite da fermentira 3 dana na sobnoj temperaturi.",
+      "Testo treba da mirise kiselo.",
+      "Zagrejte injera tava ili veliku antiaderenu tavu.",
+      "Sipajte testo u tankom sloju po celoj tavi.",
+      "Pecite 1-2 minuta dok površina ne postane suva.",
+      "Ne okrećite - peče se samo sa jedne strane."
+    ],
+    prepTime: "15 minuta + 3 dana fermentacije",
+    cookTime: "2 minuta po komadu",
+    servings: 8,
+    notes: ["Mora fermentirati za pravi ukus", "Služi kao tanjir i pribor"],
+    nutrition: { calories: "120 po komadu", protein: "4g", carbs: "24g", fat: "1g" }
+  },
+  "Doro Wat": {
+    name: "Doro Vat",
+    description: "Etiopska prileta u ljutom sosu sa kuvanim jajetima, nacionalno jelo.",
+    ingredients: [
+      "1 koko (piletina), isečena na komade",
+      "6 kuvanih jajeta",
+      "2 velike crne luke, sitno seckanée",
+      "1/4 šolje berbere začina",
+      "3 kašike ulja",
+      "2 kašike putera",
+      "1 kašika đumbira",
+      "4 čena belog luka",
+      "1 šolja pileće supe",
+      "So po ukusu"
+    ],
+    instructions: [
+      "Propržite luk u ulju 15 minuta bez dodavanja začina.",
+      "Dodajte berbere začin i pržite 2 minuta.",
+      "Dodajte beli luk i đumbir, pržite 1 minut.",
+      "Dodajte pileće komade i pržite 10 minuta.",
+      "Sipajte supu, dovedite do ključanja.",
+      "Smanjite vatru i dinstajte 45 minuta.",
+      "Dodajte kuvana jajeta poslednjih 10 minuta.",
+      "Služite sa injera hlebom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "1 sat 15 minuta",
+    servings: 6,
+    notes: ["Berbere je etiopska mesavina začina", "Tradicionalno se jede rukama"],
+    nutrition: { calories: "380 po porciji", protein: "32g", carbs: "8g", fat: "24g" }
+  },
+  "Kitfo": {
+    name: "Kitfo",
+    description: "Etiopski sirovi govedli, začinjen mitmita začinima i servan sa injera.",
+    ingredients: [
+      "500g najfinijih govedine (tartar kvalitet)",
+      "3 kašike mitmita začina",
+      "2 kašike clarified putera (niter kibbeh)",
+      "1 kašička kardamoma",
+      "1/2 kašička cimeta",
+      "So po ukusu",
+      "Ayib sir (ili cottage sir)",
+      "Injera hleb za serviranje"
+    ],
+    instructions: [
+      "Sitno useckajte govedinu oštrim nožom.",
+      "U maloj tavi zagrejte clarified puter.",
+      "Dodajte mitmita, kardamom i cimet.",
+      "Zagrejte začine 1 minut, ostavite da se ohladi.",
+      "Pomešajte sirovo meso sa začinima.",
+      "Dodajte so po ukusu.",
+      "Oblikujte u gomilu na tanjir.",
+      "Služite sa ayib sirom i injera hlebom."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "2 minuta",
+    servings: 4,
+    notes: ["Meso mora biti najsvežije kvaliteta", "Može se lagano podgrejati po želji"],
+    nutrition: { calories: "320 po porciji", protein: "28g", carbs: "2g", fat: "22g" }
+  },
+  "Lebanese Hummus": {
+    name: "Libanski humus",
+    description: "Krema sti libanski namaz od leblebija sa tahini i limunovim sokom.",
+    ingredients: [
+      "2 šolje kuvane leblebije",
+      "1/4 šolje tahini",
+      "1/4 šolje svežeg limunov sok",
+      "2 čena belog luka",
+      "1/2 kašičice soli",
+      "2-3 kašike ledene vode",
+      "3 kašike maslinov ulja",
+      "Paprika i peršun za ukras"
+    ],
+    instructions: [
+      "Procedite leblebiju i sačuvajte tečnost.",
+      "U blender stavite leblebiju, tahini, limunov sok i beli luk.",
+      "Blendajte dok ne postane glatko.",
+      "Dodajte so i ledenu vodu po potrebi za kremastost.",
+      "Blendajte još 2-3 minuta do savršne teksture.",
+      "Prebacite u tanjir i napravite udubljenje.",
+      "Prelijte maslinovim uljem i pospite paprikom.",
+      "Ukrašavajte peršunom i služite sa pita hlebom."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "0 minuta",
+    servings: 6,
+    notes: ["Ledena voda pravi kremastiju teksturu", "Najbolji je odmah posle pripreme"],
+    nutrition: { calories: "180 po porciji", protein: "8g", carbs: "20g", fat: "8g" }
+  },
+  "Tabbouleh": {
+    name: "Tabu li",
+    description: "Svježa libanska salata sa peršunom, paradajzom, bulgurpm i limunovim sokom.",
+    ingredients: [
+      "1/4 šolje finom bulgura",
+      "2 velike vezice svežeg peršuna",
+      "4 paradajza, sitno seckana",
+      "4 mladog luka, sitno seckan",
+      "1/4 šolje sveže nane",
+      "1/4 šolje limunov sok",
+      "3 kašike maslinovog ulja",
+      "1 kašička soli",
+      "1/2 kašičice crnog bibera"
+    ],
+    instructions: [
+      "Potopite bulgur u mlaku vodu 15 minuta.",
+      "Procedite i dobro iscedite bulgur.",
+      "Sitno iseckajte peršun (mora biti veoma sitno).",
+      "Iseckajte paradajz na male kockice.",
+      "Sitno iseckajte mladi luk i nanu.",
+      "Pomešajte sve sastojke u velikoj posudi.",
+      "Dodajte limunov sok, ulje, so i biber.",
+      "Mešajte dobro i ostavite 30 minuta."
+    ],
+    prepTime: "30 minuta + 30 min odmaranje",
+    cookTime: "0 minuta",
+    servings: 4,
+    notes: ["Peršun mora biti finijom sečen", "Bolji je nakon odmaranja"],
+    nutrition: { calories: "120 po porciji", protein: "3g", carbs: "18g", fat: "5g" }
+  },
+  "Kibbeh": {
+    name: "Kibe",
+    description: "Tradicionalne libanske knedle od bulgura punjenje mesom, začinjem i pržene.",
+    ingredients: [
+      "2 šolje finommm bulgura",
+      "500g mlevene jagnjetine",
+      "1 veliki luk, sitno seckan",
+      "100g pinjola",
+      "2 kašičice allspice začina",
+      "1 kašička cimeta",
+      "1/4 šolje peršuna",
+      "So, biber",
+      "Ulje za duboko prženje"
+    ],
+    instructions: [
+      "Potopite bulgur u vodi 30 minuta, iscedite.",
+      "Pomešajte polovu mlevene jagnjetinu sa bulgurom.",
+      "Propržite ostatak mesa sa lukom i pinjolitma.",
+      "Dodajte začine u prženo meso za punjenje.",
+      "Od mešavinne bulgura i mesa napravite ljuske.",
+      "Napunite sa pripremljenim pununjem.",
+      "Zatvorite i oblikajte u ovalne loptice.",
+      "Pržite u vrućem ulju 5-7 minuta do zlatne boje."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "20 minuta",
+    servings: 6,
+    notes: ["Tradicionalnoovalne oblik", "Možeže se peći umesto pržanja"],
+    nutrition: { calories: "350 po porciji", protein: "22g", carbs: "28g", fat: "18g" }
+  },
+  "Australian Meat Pie": {
+    name: "Australijska pita sa mesom",
+    description: "Tradicionalna australijska pita sa govedinom u bogatom sosu.",
+    ingredients: [
+      "2 lista kore za pitu",
+      "500g mlevene govedine",
+      "1 veliki luk, seckan",
+      "2 šargarepe, seckane",
+      "2 kašike brašna",
+      "2 šolje govedije supe",
+      "2 kašike tomato paste",
+      "1 kašika Worcestershire sosa",
+      "So, biber, timijan",
+      "1 jaje za premazivanje"
+    ],
+    instructions: [
+      "Zagrejte rernu na 200°C.",
+      "Propržite luk i šargarepu 5 minuta.",
+      "Dodajte mleveno meso i pržite 10 minuta.",
+      "Dodajte brašno i mešajte 1 minut.",
+      "Dodajte supu, tomato paste i Worcestershire sos.",
+      "Kuvajte 15 minuta dok se ne zgusne.",
+      "Stavite koru u kalup, napunite mesom.",
+      "Pokrijte drugom korom, premaže jajetom i pecite 30 minuta."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "45 minuta",
+    servings: 6,
+    notes: ["Tradicionalno sa tomato sosom", "Može se zamrzno pre pecenja"],
+    nutrition: { calories: "420 po komadu", protein: "24g", carbs: "35g", fat: "22g" }
+  },
+  "Lamingtons": {
+    name: "Lemington kolaci",
+    description: "Australijski biskviti oblijeni čokoladnom glazurom i kokosovine strugotin.",
+    ingredients: [
+      "4 jajeta",
+      "120g šećera",
+      "120g brašna",
+      "1 kašička praška za pecivo",
+      "50g putera, rastopljen",
+      "300g prašak šećer",
+      "50g kakaoa",
+      "100ml mleka",
+      "200g kokosovih strugotina"
+    ],
+    instructions: [
+      "Zagrejte rernu na 180°C i namastite kalup.",
+      "Umutite jajeta i šećer 5 minuta do bele pene.",
+      "Dodajte brašno, prašak i puter, pažljivo umesajte.",
+      "Pecite 25 minuta, ohladite i isecite na kockice.",
+      "Za glazuru: pomešajte prašak šećer, kakao i mleko.",
+      "Umočite kockice u glazuru sa svih strana.",
+      "Uvaljajte u kokosu i stavite na rešetku.",
+      "Ostavite da se glazura stavi 1 sat."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "25 minuta + 1 sat sušenje",
+    servings: 16,
+    notes: ["Mora potpuno da se ohladi pre glaziranja", "Tradicionalna australijska slaskća"],
+    nutrition: { calories: "220 po komadu", protein: "4g", carbs: "35g", fat: "8g" }
+  },
+  "Vegemite Toast": {
+    name: "Tost sa Vegemitom",
+    description: "Klasičan australijski doručak - hrskav tost sa maslacem i Vegemitom.",
+    ingredients: [
+      "4 krajška belog hleba",
+      "50g putera, omekšan",
+      "1-2 kašičice Vegemita",
+      "Opciono: avokado ili sir"
+    ],
+    instructions: [
+      "Opecite hleb u tostur ili na tavi do zlatne boje.",
+      "Odmah namažite topao tost puterom.",
+      "Tanko namažite Vegemit (malo je dovoljno!).",
+      "Po želji dodajte krške avokada ili sira.",
+      "Isecite na trougliće ili polovina.",
+      "Służite odmah dok je topao."
+    ],
+    prepTime: "5 minuta",
+    cookTime: "5 minuta",
+    servings: 2,
+    notes: ["Vegemit je slani namaz - koristit malo", "Australijska ikona"],
+    nutrition: { calories: "180 po porciji", protein: "6g", carbs: "28g", fat: "5g" }
+  },
+  "Poutine": {
+    name: "Putin",
+    description: "Kanadski fast food - pomfrit sa sirom i gratinom od mesa.",
+    ingredients: [
+      "1kg krompira za pomfrit",
+      "200g svežeg sira za skripanje",
+      "2 šolje govedije supe",
+      "2 kašike brašna",
+      "2 kašike putera",
+      "1 kašika soja sosa",
+      "Ulje za prženje",
+      "So i biber"
+    ],
+    instructions: [
+      "Isecite krompir na štapiće i pržite u vrućem ulju.",
+      "Za gravy: rastopite puter u šerpi.",
+      "Dodajte brašno i mešajte 1 minut.",
+      "Dodajte supu i soja sos, kuvajte dok se ne zgusne.",
+      "Stavite vrući pomfrit u činiju.",
+      "Dodajte komade sira preko pomfrita.",
+      "Prelijte vrućim gravy-jem.",
+      "Služite odmah dok je sir topao."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "20 minuta",
+    servings: 4,
+    notes: ["Sir mora da škripi", "Najboiji je dok je vru̧ć"],
+    nutrition: { calories: "520 po porciji", protein: "15g", carbs: "65g", fat: "22g" }
+  },
+  "Tourtiere": {
+    name: "Turtijer",
+    description: "Tradicionalna kanadska pita sa mesom iz Kvebeka, posebno za Božić.",
+    ingredients: [
+      "2 lista kore za pitu",
+      "500g mlevene svinjetine",
+      "250g mlevene govedine",
+      "1 veliki luk, seckan",
+      "2 krompira, seckana",
+      "1 kašička allspice",
+      "1 kašička timijana",
+      "1 list lovora",
+      "So, biber",
+      "1 jaje za premazivanje"
+    ],
+    instructions: [
+      "Propržite luk 5 minuta do staklaste boje.",
+      "Dodajte oba mesa i pržite 15 minuta.",
+      "Dodajte krompir, začine i malo vode.",
+      "Kuvajte 20 minuta dok krompir ne omekša.",
+      "Uklonite lovor i ohladite smešu.",
+      "Stavite koru u kalup, napunite mesom.",
+      "Pokrijte drugom korom i zapečatite.",
+      "Premažite jajetom i pecite na 200°C 35 minuta."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "1 sat 10 minuta",
+    servings: 8,
+    notes: ["Tradicionalna za Božić", "Može se zamrznuti pre pecenja"],
+    nutrition: { calories: "380 po komadu", protein: "20g", carbs: "28g", fat: "22g" }
+  },
+  "Butter Tarts": {
+    name: "Tarte sa maslacem",
+    description: "Slatke kanadske tartice sa maslacem, jajima i sirupom.",
+    ingredients: [
+      "12 mini kora za tarte",
+      "1/2 šolje braon šećera",
+      "1/2 šolje kukuruznog sirupa",
+      "1/4 šolje rastopljenog putera",
+      "1 jaje",
+      "1 kašička vanile",
+      "1/4 kašičice soli",
+      "1/2 šolje rozina ili oraha"
+    ],
+    instructions: [
+      "Zagrejte rernu na 190°C.",
+      "Postavite kore za tarte u kalupi.",
+      "U posudi umutite šećer, sirup i puter.",
+      "Dodajte jaje, vanilu i so, dobro promešajte.",
+      "Stavite rozine ili orase u svaku koru.",
+      "Sipajte smesu preko rozina.",
+      "Pecite 15-18 minuta dok vrh ne postane zlatni.",
+      "Ohladite u kalupima pre vađenja."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "18 minuta",
+    servings: 12,
+    notes: ["Ne pecite previše - centar treba biti blago klizav", "Karakteristični kanadski desert"],
+    nutrition: { calories: "280 po komadu", protein: "3g", carbs: "42g", fat: "12g" }
+  },
+  "Empanadas": {
+    name: "Empanadas",
+    description: "Argentinske pité sa mesom, povrćem ili sirom, pečene ili pržene.",
+    ingredients: [
+      "2 šolje brašna",
+      "100g putera",
+      "1 jaje",
+      "1/2 šolje mlake vode",
+      "1 kašička soli",
+      "500g mlevene govedine",
+      "2 crna luka",
+      "2 kuvana jajeta, seckan",
+      "50g masllina",
+      "1 kašička kima",
+      "Paprika, so, biber"
+    ],
+    instructions: [
+      "Zamesite testo od brašna, putera, jajeta, vode i soli.",
+      "Ostavite da odmara 30 minuta.",
+      "Propržite luk, dodajte meso i začine.",
+      "Ohladite meso, dodajte jaja i masline.",
+      "Razvaljajte testo i isecite krugove.",
+      "Stavite kašiku punja, presavijte i zatvorite.",
+      "Pecite na 200°C 20 minuta do zlatne boje.",
+      "Možete ih i pržiti u ulju."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "20 minuta",
+    servings: 12,
+    notes: ["Tradicionalno sa govedinom", "Mogu se zamrznuti pre pecenja"],
+    nutrition: { calories: "250 po komadu", protein: "12g", carbs: "22g", fat: "12g" }
+  },
+  "Asado": {
+    name: "Asado",
+    description: "Tradicionalno argentinsko roštiljanje, družba oko mesa i vatre.",
+    ingredients: [
+      "1kg govedjih odrezaka",
+      "500g kobasica (chorizo)",
+      "500g rebara",
+      "Crni luk, seckan na krugove",
+      "Chimichurri sos:",
+      "1/2 šolje peršuna",
+      "4 čena belog luka",
+      "1/4 šolje sirćeta",
+      "1/2 šolje maslinovog ulja",
+      "So, biber, crvena paprika"
+    ],
+    instructions: [
+      "Pripremite chimichurri: pomešajte sve sastojke za sos.",
+      "Zagrejte roštilj na srednjoj vatri.",
+      "Posolite meso 30 minuta pre pečenja.",
+      "Postavite rebra prvo - pecite 30 minuta.",
+      "Dodajte kobasice i pecite 15 minuta.",
+      "Dodajte odreske i luk - pecite 10 minuta po strani.",
+      "Služite sa chimichurri sosom.",
+      "Tradicionalno uz crveno vino."
+    ],
+    prepTime: "20 minuta + 30 min mariniranje",
+    cookTime: "1 sat",
+    servings: 8,
+    notes: ["Sporo pećenje je ključno", "Družbena je aktivnost"],
+    nutrition: { calories: "520 po porciji", protein: "45g", carbs: "5g", fat: "35g" }
+  },
+  "Alfajores": {
+    name: "Alfalhores",
+    description: "Argentinski slatkiši - meki keksići punjeni dulce de leche-om.",
+    ingredients: [
+      "200g brašna",
+      "200g kukuruznog skroba",
+      "200g putera",
+      "100g šećera",
+      "3 žumanca",
+      "1 kašička praška za pecivo",
+      "1 kašička vanile",
+      "300g dulce de leche",
+      "Kokosove strugotime za obavijanje"
+    ],
+    instructions: [
+      "Umutite puter i šećer do bele pene.",
+      "Dodajte žumanca i vanilu.",
+      "Pomešajte brašno, skrob i prašak.",
+      "Sjedinite mokre i suve sastojke.",
+      "Razvaljajte testo na 5mm debljine.",
+      "Isecite krugove i pecite na 180°C 10 minuta.",
+      "Ohladite, namažite sa dulce de leche.",
+      "Spajite po dva i uvaljajte u kokos."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "10 minuta + hlađenje",
+    servings: 20,
+    notes: ["Dulce de leche mora biti gust", "Najbolji su nakon nekoliko sati"],
+    nutrition: { calories: "180 po komadu", protein: "3g", carbs: "25g", fat: "8g" }
+  },
+  "Ceviche": {
+    name: "Sevič",
+    description: "Peruansko sirovo riba 'kuvano' u limunovoj kiselini sa ljutom paprikom.",
+    ingredients: [
+      "500g sveze ribe (dorada ili brancin)",
+      "1 šolja svežeg limunov sok",
+      "1 crveni luk, tanko seckan",
+      "1-2 ají ljute papričice",
+      "1 šolja slatkog krompira, kuvanog",
+      "100g kukuruza",
+      "Korijander, so",
+      "Leche de tigre (tečnost od sevič)"
+    ],
+    instructions: [
+      "Isecite ribu na kockice od 1cm.",
+      "Stavite ribu u posude sa svežim limunov sok.",
+      "Dodajte so i mešajte - riba treba da 'se kuva' 15 minuta.",
+      "Sitno iseckajte luk i ají papričice.",
+      "Dodajte luk, papričice i korijander u ribu.",
+      "Kuvajte slatki krompir i kukuruz.",
+      "Servirajte sevič sa slatkim krempirom i kukuruzom.",
+      "Popijte 'leche de tigre' tečnost na kraju."
+    ],
+    prepTime: "20 minuta + 15 min mariniranje",
+    cookTime: "0 minuta",
+    servings: 4,
+    notes: ["Riba mora biti najsvežija", "Tradicionalno se jede sa rukama"],
+    nutrition: { calories: "220 po porciji", protein: "28g", carbs: "20g", fat: "4g" }
+  },
+  "Lomo Saltado": {
+    name: "Lomo saltado",
+    description: "Peruansko jelo - prženo govedine sa pomfrit i pirinom, stir-fry stil.",
+    ingredients: [
+      "600g govedinje file",
+      "3 krompira, seckan na štapiće",
+      "2 paradajza, seckan na kriške",
+      "1 veliki crveni luk, seckan",
+      "3 kašike soja sosa",
+      "2 kašike sirće ta",
+      "3 čena belog luka",
+      "1 kašika ají panca paste",
+      "Ulje za prženje, so, biber",
+      "Kuvan pirinac za serviranje"
+    ],
+    instructions: [
+      "Isecite meso na trake i začinite.",
+      "Pržite krompir u vrućem ulju do zlatne boje.",
+      "U wok tavi propržite meso na visokoj vatri 3 minuta.",
+      "Dodajte luk i beli luk, pržite 2 minuta.",
+      "Dodajte paradajz, soja sos i sirće.",
+      "Dodajte ají paste i pomfrit.",
+      "Pržite još 2 minuta mešajući.",
+      "Služite preko kuvanog pirinča."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: ["Vatra mora biti veoma visoka", "Tradicionalno sa dva priloga"],
+    nutrition: { calories: "480 po porciji", protein: "35g", carbs: "45g", fat: "18g" }
+  },
+  "Pisco Sour": {
+    name: "Pisko sour",
+    description: "Peruanski nacionalni koktel sa pisko brandiom, limunom i belsancem.",
+    ingredients: [
+      "60ml pisko brandi",
+      "30ml svežeg limunov sok",
+      "20ml šećernog sirupa",
+      "1 belanac",
+      "3 kapi angostura biters",
+      "Led kockice"
+    ],
+    instructions: [
+      "Stavite pisko, limunov sok i sirup u šejker.",
+      "Dodajte belanac.",
+      "Šejkajte snažno bez leda 10 sekundi.",
+      "Dodajte led i šejkajte još 15 sekundi.",
+      "Procijedite u čašu za koktel.",
+      "Dodajte 3 kapi biters-a na penu.",
+      "Ukrašavajte laimskom krišicom."
+    ],
+    prepTime: "5 minuta",
+    cookTime: "0 minuta",
+    servings: 1,
+    notes: ["Dry shaking prvo bez leda", "Peru vs Čile spor o poreklu"],
+    nutrition: { calories: "180 po koktelu", protein: "3g", carbs: "8g", fat: "0g" }
+  },
+  "Swedish Meatballs": {
+    name: "Švedske ćuftice",
+    description: "Traditionalne švedske ćuftice u kremastom sosu, ikona švedske kuhinje.",
+    ingredients: [
+      "500g mešane mlevena mesa (govedina i svinjetina)",
+      "1/2 šolje prezli",
+      "1/4 šolje mleka",
+      "1 jaje",
+      "1 mali luk, sitno seckan",
+      "2 kašike putera",
+      "2 kašike brašna",
+      "2 šolje govedije supe",
+      "200ml slatke pavlake",
+      "Allspice, so, biber"
+    ],
+    instructions: [
+      "Potopite prezle u mleku 5 minuta.",
+      "Pomešajte meso sa prezlama, jajetom i lukom.",
+      "Dodajte začine i oblikajte male ćuftice.",
+      "Propržite ćuftice u puteru do rumene boje.",
+      "Za sos: u istoj tavi dodajte brašno.",
+      "Dodajte supu i pavlaku, kuvajte dok se ne zgusne.",
+      "Vratite ćuftice u sos i grijte 10 minuta.",
+      "Služite sa kuvanim krumpirima i borovnicom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "25 minuta",
+    servings: 4,
+    notes: ["Tradicionalno sa krumpirima", "IKEA popularne verzija"],
+    nutrition: { calories: "420 po porciji", protein: "28g", carbs: "18g", fat: "26g" }
+  },
+  "Gravlax": {
+    name: "Gravlaks",
+    description: "Skandinavski losos dimljen sa koprom, solju i šećerom.",
+    ingredients: [
+      "1kg svežeg lososa (sa kožom)",
+      "1/2 šolje krupne soli",
+      "1/4 šolje šećera",
+      "3 kašike mleven crnog bibera",
+      "1 vezica svežeg kopra",
+      "2 kašike brendija (opciono)"
+    ],
+    instructions: [
+      "Pomešajte so, šećer i biber u posudi.",
+      "Naseckajte kopar sitno i dodajte u smesu.",
+      "Premazajte obe strane lososa smešom.",
+      "Omatajte losos u plastični foliju čvrsto.",
+      "Stavite u frižider sa teškim predmetom odozgo.",
+      "Okrecete svaka 12 sati u toku 48-72 sata.",
+      "Sastruzi te cure i isecite tanko na kriške.",
+      "Servirajte sa žitujem hlebom i sosjem od kopra."
+    ],
+    prepTime: "20 minuta + 2-3 dana",
+    cookTime: "0 minuta",
+    servings: 8,
+    notes: ["Mora biti svež losos", "Proces traje 2-3 dana"],
+    nutrition: { calories: "180 po porciji", protein: "25g", carbs: "0g", fat: "8g" }
+  },
+  "Lefse": {
+    name: "Lefse",
+    description: "Tradicionalni norveški tanki hleb od krompira, fleksibilan kao tortilja.",
+    ingredients: [
+      "2 šolje pire krompira (ohladiti)",
+      "1/4 šolje putera, rastopljen",
+      "1/4 šolje mleka",
+      "1 kašička soli",
+      "1-2 šolje brašna"
+    ],
+    instructions: [
+      "Pomešajte ohladjeli pire sa puterom i mlekom.",
+      "Dodajte so i postepeno dodajte brašno.",
+      "Zamesite meko testo koje se ne lepi.",
+      "Podelite na 12 loptica i razvaljajte tanko.",
+      "Pećite na vrućoj nemasnoj tavi 1-2 minuta po strani.",
+      "Prebacujte na kuhinjski ubrus da se ohlade.",
+      "Namažite puterom i šećerom, presavijte.",
+      "Čuvajte omatane u vlažnom ubrusu."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "30 minuta",
+    servings: 12,
+    notes: ["Krompir mora biti hladan", "Tradicionalno za prazničke"],
+    nutrition: { calories: "140 po komadu", protein: "4g", carbs: "24g", fat: "4g" }
+  },
+  "Vietnamese Pho": {
+    name: "Vijetnamska Fo",
+    description: "Tradicijanala vijetnamska čorba sa rižinim nudlama, mesom i aromačnim začinima.",
+    ingredients: [
+      "1kg govedjih kostiju",
+      "500g govedine za čorbu",
+      "200g rižinih nudli (banh pho)",
+      "1 luk, prepolje na žigosi",
+      "5cm korena đumbira",
+      "3 klinčića",
+      "2 anis zvezde",
+      "1 štapić cimeta",
+      "2 kašike fish sauce",
+      "Svež korijander, luk, limuns",
+      "Bean sprouts, bazilji"
+    ],
+    instructions: [
+      "Opržite luk i đumbir dok se ne potame.",
+      "U velikoj šerpi kuvajte kosti i meso 3 sata.",
+      "Dodajte žigosani luk, đumbir i začine.",
+      "Kuvajte još 2 sata, procedte juhu.",
+      "Dodajte fish sauce po ukusu.",
+      "Potopi te nuddle u vrelu vodu 1 minut.",
+      "Stavite nudlle u činiju, dodajte toplo mesو.",
+      "Prelijte vrućom juhom, dodajte świeże biljke."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "5 sati",
+    servings: 6,
+    notes: ["Juha treba da kuva vrlo dugo", "Servis za stoli uz sveže biljke"],
+    nutrition: { calories: "350 po porciji", protein: "28g", carbs: "35g", fat: "8g" }
+  },
+  "Banh Mi": {
+    name: "Ban Mi",
+    description: "Vijetnamski sendvič u bageti sa mesom, povrćem i sosjem.",
+    ingredients: [
+      "4 bagete",
+      "300g svinjetine ili pilétine",
+      "2 šargarepe, rendane",
+      "1 krastavac, seckan na trake",
+      "2 kašike sirćeta",
+      "1 kašika šećera",
+      "Majoneз, soja sos",
+      "Korijander, chili papčke",
+      "Pate (opciono)"
+    ],
+    instructions: [
+      "Marinirajte rendane šargarepe u sirćetu i šećeru.",
+      "Pečite meso začinjeno soja sosом.",
+      "Isecite bagete po dužin i izvadite deo sredine.",
+      "Namažite majonnezom i pate-om.",
+      "Stavite toplo meso u hleb.",
+      "Dodajte marinirane šargarepe i krastavac.",
+      "Dodajte korijander i chili.",
+      "Služite toplo odmah."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: ["Hleb mora biti hrskav", "Balans slatko-kiselo-ljuto"],
+    nutrition: { calories: "420 po sendviču", protein: "22g", carbs: "45g", fat: "16g" }
+  },
+  "Vietnamese Spring Rolls": {
+    name: "Vijetnamski prolećni zavitci",
+    description: "Svežи vijetnamski zavitci u rižinim listićima sa povrćem i mesom.",
+    ingredients: [
+      "12 rižinih papira",
+      "200g kuvanih šrimpi",
+      "200g svinjskih juha",
+      "1 vezica salate",
+      "1 krastavac, seckan",
+      "2 šargarepe, rendane",
+      "Sviježi korijander i nana",
+      "Rižini vermičeli, kuvani"
+    ],
+    instructions: [
+      "Potopite rižin papir u mlaju vodu 10 sekundi.",
+      "Stavite na radnu površinu i ostavite da omekša.",
+      "Stavite salatu u centar papira.",
+      "Dodajte vermičeli, povrće i meso.",
+      "Dodajte świeże biljke.",
+      "Presavijte dole, zatim strane, pa zavijte čvrsto.",
+      "Služite sa nuoc cham sosom.",
+      "Čuvajte pokrivene vlažnim ubrusом."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "0 minuta",
+    servings: 6,
+    notes: ["Papir ne sme biti preмok", "Najbolji su свежи"],
+    nutrition: { calories: "120 po комads", protein: "8g", carbs: "18g", fat: "2g" }
+  },
+  "Korean BBQ": {
+    name: "Korejski roštilj",
+    description: "Mariniran korejski roštilj sa soja sosom i sesamom.",
+    ingredients: [
+      "800g govedine (bulgogi rez)",
+      "1/2 šolje soja sosa",
+      "3 kašike braon šećera",
+      "2 kašike sesamovog ulja",
+      "1 azijska kruška, rendana",
+      "4 čena belog luka",
+      "1 kašika đumbira",
+      "2 mlada luka",
+      "1 kašika sesama",
+      "Kimči za serviranje"
+    ],
+    instructions: [
+      "Isecite meso tanko protiv vlakana.",
+      "Pomešajte soja sos, šećer, sesamovo ulje.",
+      "Dodajte rendan krušku, beli luk i đumbir.",
+      "Marinirajte meso 2 sata u frižideru.",
+      "Zagrejte roštilj ili tavu na visokoj vatri.",
+      "Pećite meso 2-3 minuta po strani.",
+      "Pospite sesamom i mladim lukom.",
+      "Služite sa kimči i pirinom."
+    ],
+    prepTime: "15 minuta + 2 sata mariniranje",
+    cookTime: "10 minuta",
+    servings: 4,
+    notes: ["Azijska kruška omekšava meso", "Tradicionalno sa kimči"],
+    nutrition: { calories: "380 po porciji", protein: "32g", carbs: "15g", fat: "22g" }
+  },
+  "Kimchi": {
+    name: "Kimči",
+    description: "Fermentovani korejski kupus, osnova korejske kuhinje.",
+    ingredients: [
+      "1 velika glavica kinneskog kupusa",
+      "1/4 šolje krupne soli",
+      "1 kašika brašna",
+      "1 kašika šećera",
+      "3 kašike korejske crvene paprike",
+      "6 čenova belog luka",
+      "1 kašika đumbira",
+      "4 mlada luka",
+      "2 kašike fish sauce"
+    ],
+    instructions: [
+      "Isecite kupus na komade i osolite 2 sata.",
+      "Isprale dobro kupus hladnom vodom.",
+      "Napravite pastu od brašna, šećera i 1 šolju vode.",
+      "Ohladite pastu, dodajte papriuу, luk, đumbir.",
+      "Dodajte fish sauce i mladi luk.",
+      "Pomešajte kupus sa pastom.",
+      "Stavite u staklenu posudu i fermentiraj 3-5 dana.",
+      "Čuvajte u frižideru nakon fermentacije."
+    ],
+    prepTime: "3 sata",
+    cookTime: "5 minuta + 3-5 dana fermentacija",
+    servings: 8,
+    notes: ["Fermentacija traje 3-5 dana", "Mora biti anaeroban proces"],
+    nutrition: { calories: "25 po porciji", protein: "2g", carbs: "5g", fat: "0g" }
+  },
+  "Bulgogi": {
+    name: "Bulgogi",
+    description: "Tradicionalni korejski mariniran govedina, slatko-slana kombinacija.",
+    ingredients: [
+      "600g govedine za bulgogi",
+      "1 azijska kruška",
+      "1/2 šolje soja sosa",
+      "3 kašike braon šećera",
+      "2 kašike sesamovog ulja",
+      "1 kašika rižinog vina",
+      "4 čena belog luka",
+      "1 kašika đumbira",
+      "3 mlada luka",
+      "1 šargarepa, rendana"
+    ],
+    instructions: [
+      "Zamrznite meso 30 minuta, zatim secite tanko.",
+      "Rendajte kruška i pomešajte sa soja sosom.",
+      "Dodajte šećer, sesamovo ulje i rižino vino.",
+      "Dodajte sitno mlen beli luk i đumbir.",
+      "Marinirajte meso 30 minuta do 4 sata.",
+      "Pećite na visokoj vatri 2-3 minuta po strani.",
+      "Dodajte mladi luk i šargarepu poslednje minute.",
+      "Služite sa pirinom i kimči."
+    ],
+    prepTime: "20 minuta + mariniranje",
+    cookTime: "8 minuta",
+    servings: 4,
+    notes: ["Meso mora biti tanko", "Kruška je ključna za omekšavanje"],
+    nutrition: { calories: "320 po porciji", protein: "28g", carbs: "18g", fat: "16g" }
+  },
+  "Irish Stew": {
+    name: "Irsko kuvano",
+    description: "Tradicionalno irsko jelo sa jagnjetinom, krompirom i povrćem.",
+    ingredients: [
+      "1kg jagnjetine za kuvanje",
+      "6 krompira, oguljen i iseckan",
+      "3 crna luka, seckana",
+      "3 šargarepe, seckane",
+      "2 lista lovora",
+      "1 vezica svežeg timijana",
+      "2l koštane supe",
+      "So, crni biber",
+      "2 kašike peršuna"
+    ],
+    instructions: [
+      "Isecite jagnjetinu na krupne komade.",
+      "U velikoj šerpi propržite meso sa svih strana.",
+      "Dodajte luk i pržite do staklaste boje.",
+      "Dodajte šargarepe, lovor i timijan.",
+      "Dodajte supu i dovedite do ključanja.",
+      "Smanjite vatru i dinstajte 1.5 sata.",
+      "Dodajte krompir i kuvajte još 30 minuta.",
+      "Začinite i ukrtsite peršunom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "2 sata",
+    servings: 6,
+    notes: ["Tradicionalno bez šargarepe", "Meso mora biti mekano"],
+    nutrition: { calories: "380 po porciji", protein: "28g", carbs: "32g", fat: "16g" }
+  },
+  "Irish Soda Bread": {
+    name: "Irski soda hleb",
+    description: "Brzi irski hleb sa sodom bikarbonom umesto kvasca.",
+    ingredients: [
+      "4 šolje brašna",
+      "1 kašička soli",
+      "1 kašička soda bikarbone",
+      "400ml kiselog mleka",
+      "1 jaje za premazivanje"
+    ],
+    instructions: [
+      "Zagrejte rernu na 200°C.",
+      "U velikoj posudi pomešajte brašno, so i sodu.",
+      "Napravite udubljenje u centru.",
+      "Dodajte kiselo mleko i brzo zamešajte.",
+      "Oblikajte u okrugli hleb na brašnjavoj površini.",
+      "Namažite jajetom i isecite krst na vrhu.",
+      "Pecite 30-40 minuta do zlatne boje.",
+      "Proverite čačkalicom da li je gotovo."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "40 minuta",
+    servings: 8,
+    notes: ["Ne mešajte previše", "Najbolji je svež"],
+    nutrition: { calories: "220 po komau", protein: "8g", carbs: "44g", fat: "2g" }
+  },
+  "Shepherd's Pie": {
+    name: "Ovčarski kolač",
+    description: "Tradicionalni irski kolač sa jagnjetinom i pire krompirom.",
+    ingredients: [
+      "500g mlevene jagnjetine",
+      "1kg krompira",
+      "2 crna luka, seckana",
+      "2 šargarepe, seckane",
+      "100ml govedije supe",
+      "2 kašike tomato paste",
+      "1 kašika Worcestershire sosa",
+      "100ml mleka",
+      "50g putera",
+      "So, biber, timijan"
+    ],
+    instructions: [
+      "Skuvajte i ispaširajte krompir sa puterom i mlekom.",
+      "Propržite luk u velikoj tavi do staklaste boje.",
+      "Dodajte mlevenu jagnjetinu i pržite 10 minuta.",
+      "Dodajte šargarepe, tomato pastu i začine.",
+      "Dodajte supu i Worcestershire sos.",
+      "Stavite meso u vatrostalnu posudu.",
+      "Pokrijte sa piretom i napravite brazde viljuškom.",
+      "Pecite na 200°C 25 minuta do zlatne boje."
+    ],
+    prepTime: "25 minuta",
+    cookTime: "40 minuta",
+    servings: 6,
+    notes: ["Sa govedinom se zove Cottage Pie", "Pire mora biti gust"],
+    nutrition: { calories: "420 po porciji", protein: "24g", carbs: "35g", fat: "22g" }
+  },
+  "Jollof Rice": {
+    name: "Džolof pirinac",
+    description: "Zapadnoafrički pirinac sa paradajzom i začinima, nacionalno jelo Nigerije.",
+    ingredients: [
+      "2 šolje basmati pirinča",
+      "400g konzerve paradajza",
+      "1 veliki luk, seckan",
+      "3 čena belog luka",
+      "2 kašike tomato paste",
+      "2 šolje pileće supe",
+      "1 kašika karija",
+      "1 kašička timijana",
+      "2 lista lovora",
+      "So, biber, papar",
+      "3 kašike palminog ulja"
+    ],
+    instructions: [
+      "Propržite luk u palminion ulju do staklaste boje.",
+      "Dodajte beli luk i pržite još 1 minut.",
+      "Dodajte tomato pastu i pržite 2 minuta.",
+      "Dodajte paradajz i začine, kuvajte 5 minuta.",
+      "Dodajte pirinac i mešajte 2 minuta.",
+      "Dodajte supu, dovedite do ključanja.",
+      "Pokrijte i kuvajte 18 minuta na slaboj vatri.",
+      "Ostavite da odmara 10 minuta pre služenja."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "25 minuta",
+    servings: 6,
+    notes: ["Palmino ulje je ključno za ukus", "Ne mešajte tokom kuvanja"],
+    nutrition: { calories: "320 po porciji", protein: "8g", carbs: "58g", fat: "6g" }
+  },
+  "Bobotie": {
+    name: "Boboti",
+    description: "Južnoafrički kolač sa mlevenim mesom i jajima, sladak i začinjen.",
+    ingredients: [
+      "500g mlevene jagnjetine ili govedine",
+      "2 crna luka, seckana",
+      "2 krajška hleba, natopljena u mleku",
+      "2 jajeta",
+      "300ml mleka",
+      "2 kašike karija",
+      "1 kašika kurkume",
+      "2 kašike čnija",
+      "50g badema",
+      "2 lista lovora"
+    ],
+    instructions: [
+      "Zagrejte rernu na 180°C.",
+      "Propržite luk do staklaste boje.",
+      "Dodajte meso i pržite dok ne porumeni.",
+      "Dodajte začine i isceđen hleb.",
+      "Dodajte čatni i bademe.",
+      "Stavite u vatrostalnu posudu.",
+      "Umutite jajeta sa mlekom, prelijte preko mesa.",
+      "Pecite 45 minuta do zlatne boje."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "45 minuta",
+    servings: 6,
+    notes: ["Tradicionalno sa žutim pirinom", "Malajski uticaj"],
+    nutrition: { calories: "380 po porciji", protein: "26g", carbs: "18g", fat: "22g" }
+  },
+  "Bunny Chow": {
+    name: "Bani čau",
+    description: "Južnoafrički fast food - kari u hleben, iz indijsko-afričke fuzije.",
+    ingredients: [
+      "1 hleb (neisečen)",
+      "500g jagnjetine ili govedine",
+      "2 crna luka, seckana",
+      "3 čena belog luka",
+      "2 kašike karija",
+      "1 kašička kima",
+      "1 kašička kurkume",
+      "400g konzerve paradajza",
+      "2 krompira, seckana",
+      "So, biber"
+    ],
+    instructions: [
+      "Isecite meso na kockice.",
+      "Propržite luk i beli luk u ulju.",
+      "Dodajte meso i začine, pržite 5 minuta.",
+      "Dodajte paradajz i krompir.",
+      "Kuvajte 45 minuta dok meso ne omekša.",
+      "Isecite hleb na četvrtine.",
+      "Izvadite sredinu svakog komada hleba.",
+      "Napunite sa karijem i pokrijte poklopcem od hleba."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "50 minuta",
+    servings: 4,
+    notes: ["Jede se rukama", "Indijska zajednica Durbana"],
+    nutrition: { calories: "520 po porciji", protein: "32g", carbs: "55g", fat: "18g" }
+  },
+  "Jerk Chicken": {
+    name: "Džerk piletina",
+    description: "Jamajska ljuto-slatka piletina sa tradicijskim začinima.",
+    ingredients: [
+      "1 cela piletina, isečena",
+      "3 scotch bonnet papričice",
+      "1/4 šolje soja sosa",
+      "1/4 šolje limunov sok",
+      "3 kašike braon šećera",
+      "2 čena belog luka",
+      "1 kašika đumbira",
+      "2 kašičice allspice",
+      "1 kašička cimeta",
+      "2 mlada luka"
+    ],
+    instructions: [
+      "Blendajte sve sastojke osim piletine za marinadu.",
+      "Marinirajte piletinu 4-24 sata u frižideru.",
+      "Zagrejte roštilj na srednjoj vatri.",
+      "Pečite piletinu 30-40 minuta, okrećući često.",
+      "Premazujte marindom tokom pečenja.",
+      "Proverite da je unutrašnja temperatura 75°C.",
+      "Ostavite da odmara 5 minuta pre služenja."
+    ],
+    prepTime: "20 minuta + 4-24 sata mariniranje",
+    cookTime: "40 minuta",
+    servings: 4,
+    notes: ["Scotch bonnet daje autentičnu ljutinu", "Tradicionalno na drvenom ugnju"],
+    nutrition: { calories: "380 po porciji", protein: "35g", carbs: "8g", fat: "22g" }
+  },
+  "Rice and Peas": {
+    name: "Pirinac sa graškom",
+    description: "Jamajski prilogs sa kokosovim mlekom i crvenim pasuljem.",
+    ingredients: [
+      "2 šolje basmati pirinča",
+      "400ml kokosovog mleka",
+      "1 konzerva crvenog pasulja",
+      "2 mlada luka",
+      "2 čena belog luka",
+      "1 scotch bonnet papřička (cela)",
+      "2 lista timijana",
+      "So, crni biber"
+    ],
+    instructions: [
+      "U velikoj šerpi kombinajte kokosovo mleko sa vodom.",
+      "Dodajte pasulj sa tečnošću iz konzerve.",
+      "Dodajte mladi luk, beli luk i scotch bonnet.",
+      "Dovedite do ključanja, dodajte pirinac.",
+      "Dodajte timijan, so i biber.",
+      "Pokrijte i kuvajte 18 minuta na slaboj vatri.",
+      "Uklonite scotch bonnet pre služenja."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "25 minuta",
+    servings: 6,
+    notes: ["Ne izbirajte scotch bonnet", "Tradicionalno sa \"gungo peas\""],
+    nutrition: { calories: "320 po porciji", protein: "10g", carbs: "58g", fat: "6g" }
+  },
+  "Sweet Plantains": {
+    name: "Slatke plantane",
+    description: "Karipski desert ili prilog - pržene zrele plantane.",
+    ingredients: [
+      "4 zrele plantane (žute sa crnim mrljama)",
+      "3 kašike kokosovog ulja",
+      "2 kašike braon šećera",
+      "1/2 kašičice cimeta",
+      "Prstohvat soli"
+    ],
+    instructions: [
+      "Ogulite plantane i isecite dijagonalno.",
+      "Zagrejte kokosovo ulje u velikoj tavi.",
+      "Pržite plantane 2-3 minuta po strani.",
+      "Pospite braon šećerom i cimetom.",
+      "Pržite još 1 minut dok se ne karamelizuje.",
+      "Dodajte prstohvat soli za kontrast.",
+      "Služite toplo kao desert ili prilog."
+    ],
+    prepTime: "5 minuta",
+    cookTime: "8 minuta",
+    servings: 4,
+    notes: ["Plantane moraju biti zrele", "Odličo uz jerk piletinu"],
+    nutrition: { calories: "180 po porciji", protein: "2g", carbs: "38g", fat: "6g" }
+  },
+  "Nasi Lemak": {
+    name: "Nasi lemak",
+    description: "Malezijski pirinac kuvam u kokosovom mleku, nacionalno jelo Malezije.",
+    ingredients: [
+      "2 šolje basmati pirinča",
+      "400ml kokosovog mleka",
+      "1 list pandan lista (opciono)",
+      "1 kašička soli",
+      "4 jajeta",
+      "100g kikirikija",
+      "1 krastavac, seckan",
+      "Sambal oelek sos",
+      "Anchovie za ukras"
+    ],
+    instructions: [
+      "Sperite pirinac dok voda ne bude bistřa.",
+      "U šerpi kombinajte pirinac, kokosovo mleko i vodu 1:1.",
+      "Dodajte pandan list i so.",
+      "Kuvajte 18 minuta na slaboj vatri, pokriveno.",
+      "Skuvajte jajeta na tvrdo, ogulite.",
+      "Propržite kikiriki do zlatne boje.",
+      "Služite pirinac sa jajetima, kirisem i sambal sosom."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "25 minuta",
+    servings: 4,
+    notes: ["Pandan list daje autentičan aroma", "Tradicionalno za doručak"],
+    nutrition: { calories: "420 po porciji", protein: "16g", carbs: "55g", fat: "16g" }
+  },
+  "Rendang": {
+    name: "Rendang",
+    description: "Malezijski sporo kuvane govedina u bogatom sosu od začina i kokosa.",
+    ingredients: [
+      "1kg govedine za kuvanje",
+      "400ml kokosovog mleka",
+      "3 crna luka",
+      "6 čenova belog luka",
+      "3 čili papričice",
+      "2 kašike tamarind paste",
+      "2 kašike gula melaka",
+      "1 kašika đumbira",
+      "Serai, galangal, lovor"
+    ],
+    instructions: [
+      "Blendajte luk, beli luk, čili i đumbir u pastu.",
+      "Isecite meso na krupne komade.",
+      "U wok-u propržite pastu 5 minuta na slaboj vatri.",
+      "Dodajte meso i pržite 10 minuta.",
+      "Dodajte kokosovo mleko i ostale začine.",
+      "Kuvajte 2-3 sata dok se tečnost ne upari.",
+      "Mešajte često, posebno na kraju."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "3 sata",
+    servings: 6,
+    notes: ["Mora se često mešati", "Bolji je sutradan"],
+    nutrition: { calories: "380 po porciji", protein: "32g", carbs: "8g", fat: "24g" }
+  },
+  "Laksa": {
+    name: "Laksa",
+    description: "Malezijska kari nuddle čorba sa kokosovim mlekom i seafood-om.",
+    ingredients: [
+      "400g rižinih nudli",
+      "300g šrimpi",
+      "200g školjki",
+      "400ml kokosovog mleka",
+      "2 kašike laksa paste",
+      "1l pileće supe",
+      "Bean sprouts",
+      "Tofu, krastavac",
+      "Limunov list, čili"
+    ],
+    instructions: [
+      "Skuvajte nuddle prema uputstvu i iscedite.",
+      "U velikoj šerpi zagrejte laksa pastu 2 minuta.",
+      "Dodajte kokosovo mleko i pileću supu.",
+      "Dodajte šrimpe i školjke, kuvajte 5 minuta.",
+      "Stavite nudlle u činije.",
+      "Prelijte vrućom juhom.",
+      "Dodajte bean sprouts, tofu i krastavac.",
+      "Ukrašavajte čili i limunov list."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: ["Laksa pasta je ključna", "Najbolji je sa fresh seafood-om"],
+    nutrition: { calories: "450 po porciji", protein: "28g", carbs: "38g", fat: "22g" }
+  },
+  "Sauerbraten": {
+    name: "Sauerbraten",
+    description: "Tradicionalni nemački mariniran rostbif, kišelo-slatki ukus.",
+    ingredients: [
+      "2kg govedije pleće",
+      "2 šolje crvenog sirće ta",
+      "1 šolja crvenog vina",
+      "2 crna luka, seckana",
+      "2 šargarepe, seckane",
+      "4 klinčića",
+      "2 lista lovora",
+      "1 kašika semena đumbira",
+      "2 kašike šećera",
+      "100g medenjaka"
+    ],
+    instructions: [
+      "Marinirajte meso u sirće tu, vinu i začinima 3 dana.",
+      "Izvadite meso, zadržite marinadu.",
+      "Propržite meso sa svih strana do rumene boje.",
+      "Dodajte povrće iz marinade.",
+      "Sipajte marinadu, pokrijte i pecite 3 sata na 160°C.",
+      "Za sos: proceDite tečnost, dodajte medenjak.",
+      "Kuvajte dok se ne zgusne.",
+      "Isecite meso i prelijte sosom."
+    ],
+    prepTime: "30 minuta + 3 dana mariniranje",
+    cookTime: "3 sata",
+    servings: 8,
+    notes: ["Mariniranje je ključno", "Tradicionalno sa rendanim kupusom"],
+    nutrition: { calories: "420 po porciji", protein: "38g", carbs: "12g", fat: "22g" }
+  },
+  "Bratwurst": {
+    name: "Bratvurst",
+    description: "Nemška žarena kobasica, tradicionalna sa zeljem i senfonion.",
+    ingredients: [
+      "6 bratwurst kobasica",
+      "2 crna luka, seckana",
+      "500ml nemačkog piva",
+      "2 kašike putera",
+      "6 bratwurst pantova",
+      "Senf po ukusu",
+      "Kiseli kupus"
+    ],
+    instructions: [
+      "U velikoj tavi rastopite puter.",
+      "Propržite luk do staklaste boje.",
+      "Dodajte kobasice i pržite do rumene boje.",
+      "Dodajte pivo i kuvajte 15 minuta.",
+      "Zagrejte pantave na tavi ili roštilju.",
+      "Stavite kobasice u pantave.",
+      "Dodajte luk, senf i kiseli kupus po ukusu."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "20 minuta",
+    servings: 6,
+    notes: ["Ne probadajte kobasice", "Njemačko pivo daje autentičnost"],
+    nutrition: { calories: "480 po komadu", protein: "20g", carbs: "28g", fat: "32g" }
+  },
+  "Black Forest Cake": {
+    name: "Švarcvald torta",
+    description: "Nemška čokoladna torta sa višnjama i šlagom iz Crne šume.",
+    ingredients: [
+      "6 jajeta",
+      "150g šećera",
+      "100g brašna",
+      "50g kakaoa",
+      "500ml slatke pavlake",
+      "3 kašike prašak šećer",
+      "500g kisele višnje",
+      "3 kašike kirsch likera",
+      "Čokoladne strugotine"
+    ],
+    instructions: [
+      "Zagrejte rernu na 180°C i namastite 3 kalupa.",
+      "Umutite jajeta sa šećerom 10 minuta do bele pene.",
+      "Dodajte brašno i kakao, pažljivo umešajte.",
+      "Podelite testo u 3 kalupa i pecite 25 minuta.",
+      "Umutite pavlaku sa prašak šećer.",
+      "Namočite kotre sa kirsch-om.",
+      "Složite tortu sa šlagom i višnjama između slojeva.",
+      "Ukrašavajte čokoladnim strugotin."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "25 minuta + hlađenje",
+    servings: 12,
+    notes: ["Mora biti dobro ohlajeno", "Kirsch je tradicionalan"],
+    nutrition: { calories: "380 po komadu", protein: "6g", carbs: "35g", fat: "24g" }
+  },
+  "Greek Moussaka": {
+    name: "Grčka musaka",
+    description: "Tradicionalna grčka zapečena musaka sa patlidžanom i mesom.",
+    ingredients: [
+      "3 patlidžana, seckan na kriške",
+      "500g mlevene jagnjetine",
+      "2 crna luka, seckana",
+      "400g konzerve paradajza",
+      "100ml crnog vina",
+      "500ml beschamel sosa",
+      "100g feta sira",
+      "50g parmezan sira",
+      "Maslinovo ulje",
+      "Cimet, lovor"
+    ],
+    instructions: [
+      "Posolite patlidžan i ostavite 30 minuta.",
+      "Opržite patlidžan u maslinovon ulju.",
+      "Propržite luk, dodajte meso i začine.",
+      "Dodajte paradajz i vino, kuvajte 20 minuta.",
+      "Napravite bešamel sos.",
+      "U vatrostabnu posudu stavite slojeve: patlidžan, meso, patlidžan.",
+      "Pokrijte bešamel sosom i parmezanom.",
+      "Pecite na 180°C 45 minuta do zlatne boje."
+    ],
+    prepTime: "1 sat",
+    cookTime: "45 minuta",
+    servings: 8,
+    notes: ["Patlidžan mora biti dobro osoljen", "Najbolja je odmorna dan"],
+    nutrition: { calories: "420 po porciji", protein: "26g", carbs: "18g", fat: "28g" }
+  },
+  "Greek Souvlaki": {
+    name: "Grčki suvlaki",
+    description: "Grčki ražnjiči sa mariniranim mesom u pita hlebu.",
+    ingredients: [
+      "600g svinjskog ili jagnjeciog mesa",
+      "1/4 šolje maslinovog ulja",
+      "2 kašike limunov sok",
+      "3 čena belog luka",
+      "1 kašička oregana",
+      "4 pita hleba",
+      "1 krastavac, seckan",
+      "2 paradajza, seckana",
+      "Ciki sos (jogurt, krastavac, beli luk)"
+    ],
+    instructions: [
+      "Isecite meso na kockice i marinirajte 2 sata.",
+      "Navucite meso na drvene štapiće.",
+      "Pećite na roštilju 10-12 minuta, okrećući često.",
+      "Zagrejte pita hleb.",
+      "Napravite ciki sos od jogurta i krastavca.",
+      "Stavite meso u pitu.",
+      "Dodajte paradajz, krastavac i ciki sos."
+    ],
+    prepTime: "20 minuta + 2 sata mariniranje",
+    cookTime: "12 minuta",
+    servings: 4,
+    notes: ["Oregano je ključan za grčki ukus", "Tradicionalno sa ciki sosom"],
+    nutrition: { calories: "380 po porciji", protein: "28g", carbs: "25g", fat: "20g" }
+  },
+  "Baklava": {
+    name: "Baklava",
+    description: "Grčki/turski desert sa filo testom, orašima i medenim sirupom.",
+    ingredients: [
+      "1 pakovanje filo testa",
+      "300g mešanih orašastih plodova",
+      "200g putera, rastopljen",
+      "1 šolja šećera",
+      "1 šolja vode",
+      "1/2 šolje meda",
+      "2 kašike limunov sok",
+      "1 kašička cimeta"
+    ],
+    instructions: [
+      "Zagrejte rernu na 180°C.",
+      "Pomešajte orase sa cimetom.",
+      "Namažite pleh puterom.",
+      "Stavite polovu filo listova, mažući svaki puterom.",
+      "Pospite orašasne plodove.",
+      "Pokrijte ostatkom filo listova.",
+      "Isecite na romboide pre pecenja.",
+      "Pecite 45 minuta do zlatne boje.",
+      "Prelijte hladnim sirupom od meda."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "45 minuta",
+    servings: 24,
+    notes: ["Sirup mora biti hladan", "Filo testo ne sme da se osuši"],
+    nutrition: { calories: "180 po komadu", protein: "3g", carbs: "22g", fat: "9g" }
+  },
+  "Falafel": {
+    name: "Falafel",
+    description: "Bliskoistočno prženo kuglice od leblebije ili graha, veganske",
+    ingredients: [
+      "2 šolje suvog leblebije, natopljen preko noći",
+      "1 mali luk, seckan",
+      "4 čena belog luka",
+      "1/4 šolje svežeg peršuna",
+      "2 kašike svežeg korijandera",
+      "1 kašička kima",
+      "1 kašička coriander-a",
+      "1/2 kašičice crvene paprike",
+      "So, biber",
+      "Ulje za duboko prženje"
+    ],
+    instructions: [
+      "Iscedite natopljeni leblebija, ne kuvajte.",
+      "U blender stavite leblebiju, luk, beli luk.",
+      "Dodajte začine i sveže biljke.",
+      "Blendajte u grubu teksturu, ne potpuno glatko.",
+      "Dodajte so i biber, promešajte.",
+      "Oblikujte lopticice ili kotlete.",
+      "Pržite u vrućem ulju 3-4 minuta do zlatne boje.",
+      "Služite u piti sa tahini sosom i salátom."
+    ],
+    prepTime: "20 minuta + preko noći natapanje",
+    cookTime: "15 minuta",
+    servings: 6,
+    notes: ["Ne koristite konserviran leblebija", "Tekstura mora biti gruba"],
+    nutrition: { calories: "180 po porciji", protein: "8g", carbs: "24g", fat: "6g" }
+  },
+  "Shakshuka": {
+    name: "Šakšuka",
+    description: "Bliskoistočno jelo sa jajetima kuvana u pikantnom paradajz sosu.",
+    ingredients: [
+      "6 jajeta",
+      "400g konzerve paradajza",
+      "1 crvena paprika, seckana",
+      "1 luk, seckan",
+      "3 čena belog luka",
+      "1 kašička kima",
+      "1 kašička paprike",
+      "1/2 kašičice čili",
+      "100g feta sira",
+      "Maslinovo ulje"
+    ],
+    instructions: [
+      "U velikoj tavi zagrejte maslinovo ulje.",
+      "Propržite luk i papriku do mekanoće.",
+      "Dodajte beli luk i začine, pržite 1 minut.",
+      "Dodajte paradajz i kuvajte 10 minuta.",
+      "Napravite udubljenja u sosu sa kašikom.",
+      "Razbijte jajeta u udubljenja.",
+      "Pokrijte i kuvajte 8-10 minuta.",
+      "Pospite feta sirom i peršunom."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "20 minuta",
+    servings: 4,
+    notes: ["Žumanca treba da budu tečna", "Služi se u istoj tavi"],
+    nutrition: { calories: "220 po porciji", protein: "12g", carbs: "8g", fat: "16g" }
+  },
+  "Challah": {
+    name: "Hala",
+    description: "Jevrejski pleteni hleb, sladak i mekani, za Šabat i praznike.",
+    ingredients: [
+      "4 šolje brašna",
+      "7g kvasca",
+      "1/4 šolje šećera",
+      "1 kašička soli",
+      "3 jajeta + 1 za premazivanje",
+      "1/4 šolje rastopljenog putera",
+      "3/4 šolje mlake vode",
+      "1 kašika maka ili sezama"
+    ],
+    instructions: [
+      "Rastvorite kvasac u mlajoj vodi sa 1 kašičkm šećera.",
+      "U velikoj posudi pomešajte brašno, šećer i so.",
+      "Dodajte jajeta, puter i kvasac.",
+      "Zamesite elastично testo 10 minuta.",
+      "Stavite u namašćenu posudu, pokrijte 1 sat.",
+      "Podelite na 3 dela i isplétite.",
+      "Premaže jajetom, pospite makom.",
+      "Pecite na 180°C 30-35 minuta do zlatne boje."
+    ],
+    prepTime: "20 minuta + 1 sat dižanje",
+    cookTime: "35 minuta",
+    servings: 8,
+    notes: ["Mora biti dobro umešan", "Tradicionalno za praznjke"],
+    nutrition: { calories: "280 po komadu", protein: "8g", carbs: "48g", fat: "6g" }
+  },
+  "Hungarian Goulash": {
+    name: "Mađarski gulaš",
+    description: "Tradicionalna mađarska čorba sa govedinom i paprikašom.",
+    ingredients: [
+      "1kg govedine za kuvanje",
+      "3 crna luka, seckana",
+      "3 kašike mađarske paprike",
+      "2 paradajza, seckana",
+      "3 krompira, seckana",
+      "2 šargarepe, seckane",
+      "2 lista lovora",
+      "1 kašička kima",
+      "So, biber",
+      "3 kašike ulja"
+    ],
+    instructions: [
+      "Isecite meso na krupne kockice.",
+      "Propržite luk u ulju do zlatne boje.",
+      "Dodajte papriku i pržite 1 minut.",
+      "Dodajte meso i pržite 10 minuta.",
+      "Dodajte paradajz, lovor i začine.",
+      "Dodajte vodu da pokrijte, kuvajte 1.5 sata.",
+      "Dodajte krompir i šargarepu.",
+      "Kuvajte još 30 minuta dok povrće ne omekša."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "2 sata",
+    servings: 6,
+    notes: ["Mađarska paprika je ključna", "Mora biti gusta čorba"],
+    nutrition: { calories: "360 po porciji", protein: "32g", carbs: "28g", fat: "14g" }
+  },
+  "Czech Goulash": {
+    name: "Češki gulaš",
+    description: "Česka verzija gulaša sa tamnijim sosom i knedle.",
+    ingredients: [
+      "1kg govedine",
+      "2 velika luka",
+      "2 kašike paprike",
+      "2 kašike tomato paste",
+      "500ml tamnog piva",
+      "2 kašike brašna",
+      "1 kašika kima",
+      "2 lista lovora",
+      "So, biber",
+      "Knedle za serviranje"
+    ],
+    instructions: [
+      "Isecite meso na kockice i posolite.",
+      "Propržite luk do karamelizacije.",
+      "Dodajte meso i pržite dok ne porumeni.",
+      "Dodajte papriku i tomato pastu.",
+      "Sipajte pivo i dodajte začine.",
+      "Kuvajte pokriveno 2 sata na slaboj vatri.",
+      "Zgusne brašnom razblaženim u vodi.",
+      "Služite sa knedlama ili hlebom."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "2 sata 15 minuta",
+    servings: 6,
+    notes: ["Tamno pivo daje poseban ukus", "Tradicionalno sa knedlama"],
+    nutrition: { calories: "380 po porciji", protein: "34g", carbs: "18g", fat: "18g" }
+  },
+  "Swiss Fondue": {
+    name: "Švajcarsko fondi",
+    description: "Tradicionalno švajcarsko topljeni sir sa belim vinom.",
+    ingredients: [
+      "400g gruyere sira",
+      "400g ementalskog sira",
+      "300ml suvog belog vina",
+      "2 čena belog luka",
+      "2 kašike kornštarha",
+      "2 kašike kirsch-a",
+      "Muškatni orah, biber",
+      "Hleb za umakanje"
+    ],
+    instructions: [
+      "Rendajte sirove na krupnoj rendama.",
+      "Protrljajte fondi posudu belim lukom.",
+      "Zagrejte vino u posudi, ne kuvajte.",
+      "Postepeno dodajte sir mešajući osmicama.",
+      "Pomešajte kornštarh sa kirsch-om i dodajte.",
+      "Začinite muškatnim orahom i biberom.",
+      "Održavajte toplo na maloj vatri.",
+      "Umačite hleb u sir koristeviljuške."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: ["Ne sme da se pregreје", "Mešajte u osmice"],
+    nutrition: { calories: "520 po porciji", protein: "28g", carbs: "8g", fat: "38g" }
+  },
+  "Portuguese Pasteis": {
+    name: "Portugalski pastéis",
+    description: "Portugalski krem kolačici, specijalnst iz Bělém-a.",
+    ingredients: [
+      "1 pakovanje puff pastry testa",
+      "3 žumanca",
+      "1/3 šolje šećera",
+      "2 kašike kornštarha",
+      "300ml mleka",
+      "1 štapić vanile",
+      "Cimet za posipanje"
+    ],
+    instructions: [
+      "Zagrejte rernu na 220°C.",
+      "Razvucite testo i isecite krugove za kalupiće.",
+      "U šerpi pomešajte žumanca, šećer i kornštarh.",
+      "Dodajte mleko i vanilu, kuvajte do zgušnjavanja.",
+      "Napunite kalupiće testom.",
+      "Dodajte krem u svaки kalupić.",
+      "Pecite 15-20 minuta do zlatnih mrlja na vrhu.",
+      "Pospite cimetom i služite toplo."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "20 minuta",
+    servings: 12,
+    notes: ["Moraju imati crne tačke na vrhu", "Najbolji su topli"],
+    nutrition: { calories: "180 po komadu", protein: "4g", carbs: "22g", fat: "8g" }
+  },
+  "Dutch Stroopwafel": {
+    name: "Holandski stroopwafel",
+    description: "Holandski tanak vafel sa karamel sirupom između dva sloja.",
+    ingredients: [
+      "2 šolje brašna",
+      "100g putera",
+      "1 jaje",
+      "1/4 šolje mleka",
+      "1 kašika kvasca",
+      "1 kašička soli",
+      "Za sirup: 200g braon šećera",
+      "100g putera",
+      "3 kašike zlatnog sirupa",
+      "1 kašička cimeta"
+    ],
+    instructions: [
+      "Zamesite testo od prvih 6 sastojaka.",
+      "Ostavite da se diže 1 sat.",
+      "Za sirup: rastopite sve sastojke zajedno.",
+      "Podelite testo na loptice.",
+      "Pecite u vafel tosteru 1-2 minuta.",
+      "Presecite vafle po horizontal.",
+      "Namažite sirupom između slojeva.",
+      "Slepite i služite toplo."
+    ],
+    prepTime: "20 minuta + 1 sat dižanje",
+    cookTime: "15 minuta",
+    servings: 10,
+    notes: ["Najbolji topli над šoljom kafe", "Sirup mora biti topao"],
+    nutrition: { calories: "220 po komadu", protein: "3g", carbs: "35g", fat: "8g" }
+  },
+  "Spanish Churros": {
+    name: "Španski čuros",
+    description: "Španski prženi desert sa cimetom i šećerom, serviran sa čokoladom.",
+    ingredients: [
+      "1 šolja vode",
+      "2 kašike šećera",
+      "1/2 kašičice soli",
+      "2 kašike putera",
+      "1 šolja brašna",
+      "2 jajeta",
+      "1/2 kašičice vanile",
+      "Ulje za prženje",
+      "Cimet i šećer za posipanje",
+      "Topla čokolada za umakanje"
+    ],
+    instructions: [
+      "U šerpi prokuvajte vodu, šećer, so i puter.",
+      "Skinite sa vatre, dodajte brašno odjednom.",
+      "Mešajte energično dok se ne formira loptica.",
+      "Ohladite malo, dodajte jajeta jedno po jedno.",
+      "Dodajte vanilu.",
+      "Ubrizgajte testo u vruo ulje kroz dresir torbu.",
+      "Pržite 2-3 minuta do zlatne boje.",
+      "Uvaljajte u mešavinu cimeta i šećera."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "15 minuta",
+    servings: 6,
+    notes: ["Umačite u toplu čokoladu", "Najbolji su svežci"],
+    nutrition: { calories: "180 po komadu", protein: "4g", carbs: "24g", fat: "8g" }
+  },
+  "Italian Osso Buco": {
+    name: "Italijanski oso buko",
+    description: "Milansko jelo sa telećim kolenom u belom vinu i povrćem.",
+    ingredients: [
+      "4 telećih kolena sa kostju",
+      "1/2 šolje brašna",
+      "3 kašike maslinov ulja",
+      "1 luk, seckan",
+      "2 šargarepe, seckane",
+      "2 stabla celera, seckana",
+      "1 šolja belog vina",
+      "400g konzerve paradajza",
+      "2 šolje teleće supe",
+      "Gremolata (limun, peršun, beli luk)"
+    ],
+    instructions: [
+      "Uvaljajte meso u brašno i propržite u ulju.",
+      "Izvadite meso, u istoj tavi propržite povrće.",
+      "Vratite meso, dodajte vino i paradajz.",
+      "Dodajte supu, pokrijte i pecite 2 sata na 160°C.",
+      "Napravite gremolatu od sitno seckanog limunkog zira, peršuna i belog luka.",
+      "Služite sa rizotom i gremolata.",
+      "Tradicionalno jelo iz Milana."
+    ],
+    prepTime: "25 minuta",
+    cookTime: "2 sata",
+    servings: 4,
+    notes: ["Gremolata je obavezna", "Koška mora ostati cela"],
+    nutrition: { calories: "420 po porciji", protein: "38g", carbs: "12g", fat: "22g" }
+  },
+  "French Ratatouille": {
+    name: "Francuski ratatul",
+    description: "Provansalko tradicionalno povrće stew sa začinskim biljkama.",
+    ingredients: [
+      "1 patlidžan, seckan",
+      "2 tikvice, seckane",
+      "1 crvena paprika",
+      "1 žuta paprika",
+      "3 paradajza, seckana",
+      "1 luk, seckan",
+      "4 čena belog luka",
+      "1/4 šolje maslinovog ulja",
+      "Timijan, ruzmarin, baziljaj",
+      "So, biber"
+    ],
+    instructions: [
+      "Posoljte patlidžan i ostavite 30 minuta.",
+      "Propržite luk i beli luk u maslinovom ulju.",
+      "Dodajte paprike i pržite 5 minuta.",
+      "Dodajte patlidžan i tikvice.",
+      "Dodajte paradajz i sveže biljke.",
+      "Pokrijte i dinstajte 45 minuta na slaboj vatri.",
+      "Mešajte povremeno i začinite."
+    ],
+    prepTime: "20 minuta + 30 min patlidžan",
+    cookTime: "50 minuta",
+    servings: 6,
+    notes: ["Može se jesti topao ili hladan", "Provansalske biljke su ključne"],
+    nutrition: { calories: "120 po porciji", protein: "3g", carbs: "15g", fat: "6g" }
+  },
+  "British Fish and Chips": {
+    name: "Britansko ribe i pomfrit",
+    description: "Klasičan britanski ribe u testu sa pomfritom i mushy peas.",
+    ingredients: [
+      "4 komada bele ribe (cod ili haddock)",
+      "2 šolje brašna",
+      "1 šolja ledenog piva",
+      "1 kašička praška za pecivo",
+      "6 krompira za pomfrit",
+      "Ulje za duboko prženje",
+      "So, biber",
+      "Sirće i so za serviranje"
+    ],
+    instructions: [
+      "Napravite testo od brašna, piva i praška.",
+      "Isecite krompir na štapiće i pržite prvi put.",
+      "Uvaljajte ribu u brašno, zatim u testo.",
+      "Pržite ribu u vrućem ulju 4-5 minuta.",
+      "Pržite pomfrit drugi put do hrskavosti.",
+      "Služite na novinama sa sirćetom i solju.",
+      "Tradicionalno sa mushy peas."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: ["Ledeno pivo pravi hrskavo testo", "Tradicionalno na novinama"],
+    nutrition: { calories: "520 po porciji", protein: "32g", carbs: "45g", fat: "24g" }
+  },
+  "Russian Borscht": {
+    name: "Ruski borš",
+    description: "Tradiciona ruska čorba od crvene repe, može biti topla ili hladna.",
+    ingredients: [
+      "500g sveze crvene repe",
+      "500g kiselog kupusa",
+      "300g govedine za čorbu",
+      "3 krompira",
+      "2 šargarepe",
+      "1 luk",
+      "3 čena belog luka",
+      "2 kašike tomato paste",
+      "2l vode",
+      "200ml kisele pavlake"
+    ],
+    instructions: [
+      "Skuvajte meso u vodi 1 sat sa lukom.",
+      "Rendajte repu i šargarepu na krupnoj rendama.",
+      "Propržite povrće u ulju 10 minuta.",
+      "Dodajte u mesnu supu sa krompirom.",
+      "Kuvajte još 30 minuta.",
+      "Dodajte kupus i tomato pastu.",
+      "Kuvajte još 15 minuta i začinite.",
+      "Služite sa kiselom pavlakom."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "1 sat 45 minuta",
+    servings: 8,
+    notes: ["Može se jesti hladan ljeti", "Tradicionalno sa pavlakom"],
+    nutrition: { calories: "180 po porciji", protein: "12g", carbs: "22g", fat: "6g" }
+  },
+  "Moroccan Tagine": {
+    name: "Marokanski tadžin",
+    description: "Marokansko tradicionalno jelo kuvano u glinenoj posudi sa začinima.",
+    ingredients: [
+      "1kg jagnjetine ili piletine",
+      "2 luka, seckana",
+      "3 šargarepe",
+      "400g konzerve paradajza",
+      "100g suvog voća",
+      "2 kašičice ras el hanout",
+      "1 kašička đumbira",
+      "1 kašička cimeta",
+      "3 kašike maslinov ulja",
+      "Bademi, măsline"
+    ],
+    instructions: [
+      "Isecite meso na krupne komade.",
+      "Propržite meso u ulju do rumene boje.",
+      "Dodajte luk i začine, pržite 5 minuta.",
+      "Dodajte paradajz, šargarepe i suvo voće.",
+      "Pokrijte i kuvajte 1.5 sata na slaboj vatri.",
+      "Dodajte bademe i măsline poslednjih 15 minuta.",
+      "Služite sa kuskusom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "1 sat 45 minuta",
+    servings: 6,
+    notes: ["Ras el hanout je mesavina 20+ začina", "Tradicionalno u glinenoj posudi"],
+    nutrition: { calories: "380 po porciji", protein: "32g", carbs: "25g", fat: "18g" }
+  },
+  "Ethiopian Doro Wat": {
+    name: "Etiopski doro vat",
+    description: "Etiopski nacionalni jelo - ljuta piletina sa kuvanim jajetima.",
+    ingredients: [
+      "1 piletina, isečena",
+      "6 kuvanih jajeta",
+      "2 velika luka, sitno seckana",
+      "1/4 šolje berbere začina",
+      "6 čenova belog luka",
+      "2cm korena đumbira",
+      "3 kašike ulja",
+      "1 šolja pileće supe",
+      "Injera hleb za serviranje"
+    ],
+    instructions: [
+      "Propržite luk u ulju 15 minuta.",
+      "Dodajte berbere začin i pržite 2 minuta.",
+      "Dodajte beli luk i đumbir.",
+      "Dodajte piletinu i pržite 10 minuta.",
+      "Dodajte supu i kuvajte 45 minuta.",
+      "Dodajte kuvana jajeta poslednjih 10 minuta.",
+      "Služite sa injera hlebom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "1 sat 15 minuta",
+    servings: 6,
+    notes: ["Berbere je etiopska mešavina začina", "Jede se rukama sa injera"],
+    nutrition: { calories: "380 po porciji", protein: "35g", carbs: "8g", fat: "24g" }
+  },
+  "Thai Green Curry": {
+    name: "Tajski zeleni kari",
+    description: "Kremas tajski kari sa zelenim čili pastom i kokosovim mlekom.",
+    ingredients: [
+      "400ml kokosovog mleka",
+      "500g pilećih prsa",
+      "2 kašike zelene kari paste",
+      "1 patlidžan, seckan",
+      "100g green beans",
+      "2 kašike fish sauce",
+      "1 kašika braon šećera",
+      "Tajski bazilij",
+      "Limunov list",
+      "Thai chili"
+    ],
+    instructions: [
+      "Zagrejte pola kokosovog mleka u wok-u.",
+      "Dodajte zelenu kari pastu i pržite 2 minuta.",
+      "Dodajte piletinu isečenu na trake.",
+      "Dodajte ostatak kokosovog mleka.",
+      "Dodajte patlidžan i green beans.",
+      "Kuvajte 15 minuta dok povrće ne omekša.",
+      "Začinite fish sauce-om i šećerom.",
+      "Dodajte tajski bazilij i limunov list."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "20 minuta",
+    servings: 4,
+    notes: ["Zelena kari pasta je ključna", "Služiti sa jasmine pirinom"],
+    nutrition: { calories: "380 po porciji", protein: "28g", carbs: "12g", fat: "26g" }
+  },
+  "Indian Chicken Tikka": {
+    name: "Indijska pileca tikka",
+    description: "Marinirana indijska piletina pečena u tandoor rerni.",
+    ingredients: [
+      "800g pilećih prsa",
+      "1 šolja jogurta",
+      "2 kašike tandoori begin",
+      "1 kašika garam masala",
+      "2 čena belog luka",
+      "1 kašika đumbira",
+      "1 kašika limunov sok",
+      "2 kašike ulja",
+      "So po ukusu",
+      "Naan hleb i chutney"
+    ],
+    instructions: [
+      "Isecite piletinu na krupne komade.",
+      "Pomešajte jogurt sa svim začinima.",
+      "Marinirajte piletinu 4-8 sati u frižideru.",
+      "Navucite meso na štapiće.",
+      "Pećite na roštilju ili u rerni na 200°C.",
+      "Pećite 15-18 minuta, okrećući često.",
+      "Služite sa naan hlebom i chutney-jem."
+    ],
+    prepTime: "20 minuta + 4-8 sati mariniranje",
+    cookTime: "18 minuta",
+    servings: 4,
+    notes: ["Mariniranje je ključno", "Tradicionalno u tandoor rerni"],
+    nutrition: { calories: "320 po porciji", protein: "42g", carbs: "6g", fat: "14g" }
+  },
+  "Mexican Tacos": {
+    name: "Meksički takos",
+    description: "Autentični meksički takos sa mesom i svežim prilozima.",
+    ingredients: [
+      "500g govedine za tacos",
+      "12 corn tortillas",
+      "1 luk, sitno seckan",
+      "2 paradajza, seckana",
+      "1 avokado",
+      "Limun sočice",
+      "Korijander",
+      "Salsa verde",
+      "Krema mexicana",
+      "Ljuta papričica"
+    ],
+    instructions: [
+      "Začinite meso sa kuminovom, paprirom i solju.",
+      "Propržite meso u tavi 8-10 minuta.",
+      "Zagrejte tortillas na suvoj tavi.",
+      "Isecite avokado na tanke kriške.",
+      "Stavite meso u tortillas.",
+      "Dodajte luk, paradajz i avokado.",
+      "Pospite korijadorom i potprsnite limunov sok.",
+      "Dodajte salsu i kremu po ukusu."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "10 minuta",
+    servings: 4,
+    notes: ["Corn tortillas su tradicionalne", "Svež korijander je obavezan"],
+    nutrition: { calories: "420 po porciji", protein: "24g", carbs: "32g", fat: "22g" }
+  },
+  "Japanese Teriyaki": {
+    name: "Japanski terijaki",
+    description: "Slatko-slani japanski glaze sa soja sosom i mirin-om.",
+    ingredients: [
+      "600g pilećih bedara",
+      "1/4 šolje soja sosa",
+      "1/4 šolje mirin-a",
+      "2 kašike šećera",
+      "1 kašika sake-a",
+      "1 čeno belog luka",
+      "1 kašička đumbira",
+      "1 kašika kornštarha",
+      "Susam za ukras",
+      "Zeleni luk"
+    ],
+    instructions: [
+      "Pomešajte soja sos, mirin, šećer i sake.",
+      "Dodajte beli luk i đumbir.",
+      "Propržite piletinu sa kožom naniže 6 minuta.",
+      "Okrenite i pećite još 4 minuta.",
+      "Dodajte terijaki sos u tavu.",
+      "Zgusajte kornštarhom ako treba.",
+      "Karamelize dok se ne glazira.",
+      "Pospite sesamom i zelenim lukom."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: ["Mirin je japansko slatko vino za kuvanje", "Ne peracati često"],
+    nutrition: { calories: "320 po porciji", protein: "32g", carbs: "18g", fat: "14g" }
+  },
+  "Mediterranean Paella": {
+    name: "Mediteranska paeja",
+    description: "Španska paeja sa seafood-om, piletinom i šafranom.",
+    ingredients: [
+      "2 šolje bomba pirinča",
+      "4 šolje pileće supe",
+      "500g mešanog seafood-a",
+      "4 pilića komada",
+      "1/2 kašičice šafrana",
+      "1 luk, seckan",
+      "2 paradajza",
+      "100g green beans",
+      "1/4 šolje maslinovog ulja",
+      "Limun za serviranje"
+    ],
+    instructions: [
+      "U paella tavi zagrejte maslinovo ulje.",
+      "Propržite piletinu do zlatne boje.",
+      "Dodajte luk i paradajz, pržite 5 minuta.",
+      "Dodajte pirinac i mešajte 2 minuta.",
+      "Dodajte vrelu supu sa šafranom.",
+      "Ne mešajte nakon ovoga!",
+      "Dodajte green beans i seafood.",
+      "Kuvajte 18-20 minuta bez mešanja."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "25 minuta",
+    servings: 6,
+    notes: ["Ne mešati tokom kuvanja", "Šafran daje žutu boju"],
+    nutrition: { calories: "420 po porciji", protein: "28g", carbs: "45g", fat: "14g" }
+  },
+  "American BBQ Ribs": {
+    name: "Američka BBQ rebra",
+    description: "Američa BBQ rebra sa dimenim ukusom i slađim sosom.",
+    ingredients: [
+      "2kg svinjskih rebara",
+      "2 kašike paprike",
+      "1 kašika braon šećera",
+      "1 kašika čili praha",
+      "1 kašičica kima",
+      "1 kašička belog bibera",
+      "Za sos: ketchup, med, sirće",
+      "Worcestershire sos",
+      "Dimne drvne piljevine"
+    ],
+    instructions: [
+      "Pomešajte sve začine za rub.",
+      "Utrljajte začine u rebra, ostavite 4 sata.",
+      "Pripremite smoker ili BBQ na 110°C.",
+      "Pušite rebra 6 sati sa drvenim piljevinama.",
+      "Napravite sos od ketchupa, meda i sirćeta.",
+      "Poslednjih 30 minuta premažite sosom.",
+      "Služite sa coleslaw-om i bread-om."
+    ],
+    prepTime: "30 minuta + 4 sata mariniranje",
+    cookTime: "6 sati",
+    servings: 8,
+    notes: ["Sporo pušenje je ključno", "Hickory piljkeine su najbolje"],
+    nutrition: { calories: "580 po porciji", protein: "42g", carbs: "8g", fat: "42g" }
+  },
+  "Gravlax": {
+    name: "Gravlaks (Nordijska marinirana losos)",
+    description: "Tradicionalni skandinavski losos mariniran sa solju, šećerom i koprom.",
+    ingredients: [
+      "1kg svežeg lososa (filej bez kože)",
+      "3 kašike krupne morske soli",
+      "3 kašike šećera",
+      "1 veliki pečat svežeg kopra",
+      "2 kašike belog bibera (grubo mleven)",
+      "2 kašike džina ili akvavita (opciono)"
+    ],
+    instructions: [
+      "Pomešajte so, šećer i biber u činiji.",
+      "Stavite polovina smeše na dno pliče posude.",
+      "Položite losos na smesu, pokrij koprom.",
+      "Posipajte ostatkom smeše soli i šećera.",
+      "Pokrij plastičnom folijom i stavite teg od 1-2kg odozgo.",
+      "Hladi 2-3 dana, okrenite svakih 12 sati.",
+      "Ukloni so i kopar, iseći tanko po dijagonali.",
+      "Serviraj sa mustard sosom ili krempom."
+    ],
+    prepTime: "20 minuta + 2-3 dana mariniranje",
+    cookTime: "0 minuta",
+    servings: 8,
+    notes: ["Koristite najsvežiji losos", "Držite u frižideru tokom mariniranja"],
+    nutrition: { calories: "180 po porciji", protein: "25g", carbs: "2g", fat: "8g" }
+  },
+  "Swedish Meatballs": {
+    name: "Švedske ćufte",
+    description: "Tradicionalne švedske ćufte u kremastom sosu sa brusnicama.",
+    ingredients: [
+      "500g mešanog mesa (govedina i svinjetina)",
+      "1 sitno seckan luk",
+      "1/2 šolje prezli",
+      "1/4 šolje mleka",
+      "1 jaje",
+      "1 kašičica soli",
+      "1/2 kašičice belog bibera",
+      "2 kašike putera za prženje",
+      "2 kašike brašna",
+      "2 šolje goveđe čorbe",
+      "1/2 šolje pavlake",
+      "Brusnice za serviranje"
+    ],
+    instructions: [
+      "Namočite prezle u mleko 10 minuta.",
+      "Pomešajte meso, luk, prezle, jaje, so i biber.",
+      "Oblikujte manje ćufte veličine orahe.",
+      "Pržite ćufte u puteru dok ne postanu smeđe.",
+      "Sklonite ćufte, dodajte brašno u tiganj.",
+      "Postupno dodajte čorbu mešajući.",
+      "Dodajte pavlaku, vratite ćufte u sos.",
+      "Krčkajte 10 minuta, serviraj sa brusnicama."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "25 minuta",
+    servings: 6,
+    notes: ["Tradicionalno sa lingonberry sosom", "Idealno sa krompirom"],
+    nutrition: { calories: "380 po porciji", protein: "28g", carbs: "8g", fat: "26g" }
+  },
+  "Norwegian Lefse": {
+    name: "Norveška lefse",
+    description: "Tradicionalna norveška tanaka lepinja od krompira.",
+    ingredients: [
+      "1kg krompira",
+      "4 kašike putera",
+      "1/2 šolje mleka",
+      "1 kašičica soli",
+      "2-3 šolje brašna",
+      "Puter i šećer za serviranje"
+    ],
+    instructions: [
+      "Skuvajte krompir u slanoj vodi do mekote.",
+      "Iscedite i propasirati krompir dok je još topao.",
+      "Dodajte puter, mleko i so, ohladiti.",
+      "Zamešajte sa brašnom u glatko testo.",
+      "Razvijaj tanke okrugle lepinje.",
+      "Pecite na vrućoj ploči bez ulja 1-2 minuta po strani.",
+      "Držite toplo u kuhinjskim krpama.",
+      "Serviraj sa puterom i šećerom."
+    ],
+    prepTime: "45 minuta + hlađenje",
+    cookTime: "30 minuta",
+    servings: 12,
+    notes: ["Testo mora biti hladni", "Lefse se drži u krpama"],
+    nutrition: { calories: "150 po lepinja", protein: "4g", carbs: "30g", fat: "3g" }
+  },
+  "Finnish Salmon Soup": {
+    name: "Finska losos supa",
+    description: "Kremasta finska supa sa lososom i povrćem.",
+    ingredients: [
+      "400g fileja lososa",
+      "4 krompira (seckani)",
+      "1 šargarepa (seckana)",
+      "1 luk (seckan)",
+      "1 litar riblje čorbe",
+      "200ml pavlake",
+      "2 kašike putera",
+      "So i biber po ukusu",
+      "Svež kopar za garnituru"
+    ],
+    instructions: [
+      "U velikoj šerpi istopije puter.",
+      "Propasirati luk do zlatne boje.",
+      "Dodajte krompir i šargarepu, kuvaj 5 minuta.",
+      "Ulijte ribju čorbu, kuvaj 15 minuta.",
+      "Dodajte losos isečen na kockice.",
+      "Kuvaj 5-8 minuta dok se losos ne skuva.",
+      "Dodajte pavlaku, začini po ukusu.",
+      "Serviraj posuto svežim koprom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "30 minuta",
+    servings: 6,
+    notes: ["Ne prekuvavaju losos", "Idealno sa raženim hlebom"],
+    nutrition: { calories: "280 po porciji", protein: "24g", carbs: "15g", fat: "14g" }
+  },
+  "Danish Pastry": {
+    name: "Danski kolač",
+    description: "Tradicionalni danski lisnat kolač sa filom po izboru.",
+    ingredients: [
+      "500g brašna",
+      "250g hladnog putera",
+      "250ml hladnog mleka",
+      "7g suvog kvasca",
+      "50g šećera",
+      "1 jaje",
+      "1 kašičica soli",
+      "Fil po izboru (džem, sir, jabuke)"
+    ],
+    instructions: [
+      "Rastopi kvasac u malo toplom mleku.",
+      "Pomešajte brašno, šećer i so.",
+      "Dodajte kvasac, jaje i ostatak mleka.",
+      "Zamesije meko testo, ostavite 1 sat.",
+      "Uvaljajte puter između papira u pravougaonik.",
+      "Razvijaj testo, stavi puter u centar.",
+      "Savijaj testo preko putera, valjaj.",
+      "Ponovi postupak savijanja i valjanja 3 puta.",
+      "Oblikuj kolače, dodaj fil, peci na 200°C 20 minuta."
+    ],
+    prepTime: "3 sata (sa odmaracima)",
+    cookTime: "20 minuta",
+    servings: 12,
+    notes: ["Puter mora biti hladan", "Pravi lisnat kolač zahteva strpljenje"],
+    nutrition: { calories: "320 po kolač", protein: "6g", carbs: "35g", fat: "18g" }
+  },
+  "Icelandic Fish Stew": {
+    name: "Islandska riblju juhan",
+    description: "Tradicionalna islandska gusto riblju juhan sa povrćem.",
+    ingredients: [
+      "600g belih riba (bakalar, lufer)",
+      "4 krompira",
+      "2 šargarepe",
+      "1 veliki luk",
+      "1 litar riblje čorbe",
+      "200ml pavlake",
+      "2 kašike putera",
+      "2 lista lovora",
+      "So, biber, majčina dušica"
+    ],
+    instructions: [
+      "Iseći ribu na veće komade.",
+      "Kockaj krompir, šargarepu i luk.",
+      "U velikoj šerpi rastopi puter.",
+      "Propasirati luk do mekote.",
+      "Dodaj krompir i šargarepu, kuvaj 5 minuta.",
+      "Ulijte čorbu, dodajte lovor i začine.",
+      "Kuvaj 15 minuta do mekote povrća.",
+      "Dodaj ribu i kuvaj još 8-10 minuta.",
+      "Umeša pavlaku na kraju."
+    ],
+    prepTime: "25 minuta",
+    cookTime: "35 minuta",
+    servings: 6,
+    notes: ["Koristi svežu ribu", "Tradicionalno se jede sa crnim hlebom"],
+    nutrition: { calories: "290 po porciji", protein: "30g", carbs: "18g", fat: "12g" }
+  },
+  "Apple Pie": {
+    name: "Amerikana pita od jabuka",
+    description: "Klasična američka pita od jabuka sa hrskavim testom i cimetom.",
+    ingredients: [
+      "6-8 jabuka (Granny Smith ili Golden Delicious)",
+      "1/2 šolje šećera",
+      "2 kašike brašna",
+      "1 kašičica cimeta",
+      "1/4 kašičice orašićevog oraha",
+      "2 kašike putera",
+      "Testo za 2 kore pite",
+      "1 jaje za premaz"
+    ],
+    instructions: [
+      "Zagrijte rernu na 190°C.",
+      "Oljuštite i isecite jabuke na tanke kriške.",
+      "Pomešajte jabuke sa šećerom, brašnom i začinima.",
+      "Razvijte dno testa i stavite u pleh za pitu.",
+      "Dodajte jabuke, pokrij gornjom korom.",
+      "Zalepite ivice, napravite rupe za paru.",
+      "Premažite jajetom, pecite 45-60 minuta."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "60 minuta",
+    servings: 8,
+    notes: ["Serviraj sa sladoledom", "Može se zamrznuti"],
+    nutrition: { calories: "320 po parče", protein: "4g", carbs: "58g", fat: "12g" }
+  },
+  "Bagel": {
+    name: "Bajgel",
+    description: "Tradicionalni jevrejski hleb u obliku prstena, kuhan i pečen.",
+    ingredients: [
+      "500g jakog brašna",
+      "1 kašička suvog kvasca",
+      "1 kašička šećera",
+      "1 kašička soli",
+      "300ml mlake vode",
+      "1 kašika meda (za kuvanicu)",
+      "Susam ili mak za posipanje"
+    ],
+    instructions: [
+      "Rastvoriti kvasac i šećer u vodi 10 minuta.",
+      "Dodaj brašno i so, zamesiti čvrsto testo.",
+      "Dižte 1 sat, podeli na 8 delova.",
+      "Oblikuj prstenove, dižte još 30 minuta.",
+      "Kuva u vodi sa medom 1 minut po strani.",
+      "Posipaj sezamom, peci na 200°C 20 minuta."
+    ],
+    prepTime: "2 sata (sa dizanjem)",
+    cookTime: "25 minuta",
+    servings: 8,
+    notes: ["Tradicionalno sa lososom i krem sirom", "Čuva se 2-3 dana"],
+    nutrition: { calories: "240 po bajgel", protein: "9g", carbs: "48g", fat: "2g" }
+  },
+  "Baklava Traditional": {
+    name: "Tradicionalna baklava",
+    description: "Grčka/turska slana sa filom od orahima i medovim sirupom.",
+    ingredients: [
+      "500g fila testa",
+      "400g sitno seckan oraha",
+      "1/2 šolje šećera",
+      "1 kašička cimeta",
+      "200g otopljenog putera",
+      "1 šolja meda",
+      "1 šolja vode",
+      "1 kašika limunovog soka"
+    ],
+    instructions: [
+      "Pomešaj orahe, šećer i cimet.",
+      "Premažuj svaki list fila puterom.",
+      "Stavi 8 listova, dodaj fil, ponovi.",
+      "Završi sa 8 listova odozgo.",
+      "Iseci romove pre pečenja.",
+      "Peci na 180°C 45 minuta do zlatne.",
+      "Kuha sirup od meda, vode i limuna.",
+      "Prelij vruć sirup preko tople baklave."
+    ],
+    prepTime: "60 minuta",
+    cookTime: "45 minuta",
+    servings: 24,
+    notes: ["Ostavi da se natopi preko noći", "Drži se 1 sedmicu"],
+    nutrition: { calories: "180 po parče", protein: "4g", carbs: "25g", fat: "8g" }
+  },
+  "BBQ Chicken": {
+    name: "BBQ piletina",
+    description: "Američka dimna piletina sa barbeku sosom.",
+    ingredients: [
+      "1 celo pile (parčano)",
+      "2 kašike paprike",
+      "1 kašika garlic praška",
+      "1 kašika crngg bibera",
+      "1 kašická soli",
+      "1/2 kašike čili praha",
+      "1 šolja BBQ sosa",
+      "2 kašike jabučnog sirćeta"
+    ],
+    instructions: [
+      "Pomešaj sve suhe začine za rub.",
+      "Utrlj začine u piletinu, mariniraj 2 sata.",
+      "Pripremi roštilj na srednju vatru.",
+      "Griljuj piletinu 15 minuta po strani.",
+      "Premažuj BBQ sosom poslednih 10 minuta.",
+      "Kuva dok unutrašnja temp. nije 75°C.",
+      "Ostavi da se odmori 5 minuta."
+    ],
+    prepTime: "20 minuta + 2 sata mariniranje",
+    cookTime: "40 minuta",
+    servings: 4,
+    notes: ["Koristi termometar za meso", "Može se peći u rerni"],
+    nutrition: { calories: "320 po porciji", protein: "45g", carbs: "12g", fat: "12g" }
+  },
+  "Banh Mi": {
+    name: "Ban Mi (Vijetnamski sendvič)",
+    description: "Vijetnamski sendvič sa mariniranim povrćem i mesom.",
+    ingredients: [
+      "4 bageta",
+      "400g svinjskog pečenja ili pilea",
+      "1/2 šolje majoneža",
+      "2 kašike soja sosa",
+      "1 šargarepa (na trake)",
+      "1/2 krastavca (na trake)",
+      "Svež korijander",
+      "Ljute paprike po ukusu"
+    ],
+    instructions: [
+      "Mariniraj šargarepu u sirću i šećeru 30 minuta.",
+      "Pocepi bagete po dužini.",
+      "Premažj majonezo na obe strane.",
+      "Stavi meso, marinirano povrće.",
+      "Dodaj krastavac i korijander.",
+      "Začini soja sosom i ljutim paprikama.",
+      "Serviraj odmah."
+    ],
+    prepTime: "20 minuta + 30 minuta mariniranje",
+    cookTime: "0 minuta",
+    servings: 4,
+    notes: ["Najbolji sa svežim bagetom", "Može sa tofu za vegetarijansku opciju"],
+    nutrition: { calories: "420 po sendvič", protein: "28g", carbs: "45g", fat: "16g" }
+  },
+  "Bao Buns": {
+    name: "Bao lepinje (Kineske parne)",
+    description: "Meke kineske parne lepinje sa filom po izboru.",
+    ingredients: [
+      "500g brašna",
+      "1 kašička suvog kvasca",
+      "1 kašika šećera",
+      "1 kašička soli",
+      "250ml mlake vode",
+      "2 kašike ulja",
+      "Fil: svinjsko pečenje, povrće, ili drugi"
+    ],
+    instructions: [
+      "Rastvorite kvasac u vodi sa šećerom.",
+      "Dodajte brašno, so i ulje, zamesite.",
+      "Dizanje 1 sat do udvostručavanja.",
+      "Podeli testo na 12 delova.",
+      "Razvij krugove, stavi fil u centar.",
+      "Zatvori kao kesa, dižte 30 minuta.",
+      "Kuva na pari 15 minuta.",
+      "Serviraj toplo."
+    ],
+    prepTime: "2 sata (sa dizanjem)",
+    cookTime: "15 minuta",
+    servings: 12,
+    notes: ["Može se zamrznuti sirovo", "Varijante fila su neograničene"],
+    nutrition: { calories: "180 po bao", protein: "8g", carbs: "32g", fat: "3g" }
+  },
+  "Baked Beans": {
+    name: "Pečeni pasulj",
+    description: "Tradicionalni američki pečeni pasulj u slatko-slanom sosu.",
+    ingredients: [
+      "400g belog pasulja (preko noći namočen)",
+      "200g slanine (seckana)",
+      "1 luk (seckan)",
+      "1/4 šolje melase",
+      "2 kašike braon šećera",
+      "2 kašike kečapa",
+      "1 kašika senfa",
+      "So i biber po ukusu"
+    ],
+    instructions: [
+      "Skuva pasulj 1 sat do polu-mekote.",
+      "Prži slaninu do hrskavosti.",
+      "Dodaj luk, kuva 5 minuta.",
+      "Pomešaj melasu, šećer, kečap i senf.",
+      "Kombinuj sve sastojke u zemljanoj posudi.",
+      "Peci na 150°C 3-4 sata, dodaj vodu po potrebi.",
+      "Serviraj toplo."
+    ],
+    prepTime: "15 minuta + namačanje preko noći",
+    cookTime: "4 sata",
+    servings: 8,
+    notes: ["Sporo pečenje je ključno", "Idealno uz BBQ"],
+    nutrition: { calories: "280 po porciji", protein: "15g", carbs: "35g", fat: "8g" }
+  },
+  "Arepas": {
+    name: "Arepas (Venecuelanske lepinje)",
+    description: "Venecuelanske kukuruzne lepinje sa filom po izboru.",
+    ingredients: [
+      "2 šolje arepa brašna (Masarepa)",
+      "2.5 šolje tople vode",
+      "1 kašička soli",
+      "Fil po izboru: sir, meso, avokado, crni pasulj"
+    ],
+    instructions: [
+      "Pomešaj brašno i so u činiji.",
+      "Postupno dodaj vodu, mešaj rukama.",
+      "Zamesite glatko testo, odmaraj 5 minuta.",
+      "Oblikuj lepinje od 8cm prečnika.",
+      "Peci na vrućoj ploči 7 minuta po strani.",
+      "Završi u rerni na 200°C 15 minuta.",
+      "Secí po sredini, dodaj fil."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "30 minuta",
+    servings: 8,
+    notes: ["Mora biti topla kada se dodaje fil", "Bez glutena"],
+    nutrition: { calories: "150 po arepa", protein: "4g", carbs: "32g", fat: "1g" }
+  },
+  "Antipasto": {
+    name: "Antipasto",
+    description: "Italijanska predjela sa mesom, sirom i povrćem.",
+    ingredients: [
+      "200g pršute",
+      "200g salama",
+      "200g mozzarelle",
+      "150g maslenica",
+      "1 tegla marinirane artičoke",
+      "1 tegla pečenih paprika",
+      "Masline (crne i zelene)",
+      "Svež bosiljak"
+    ],
+    instructions: [
+      "Araniraj meso na velikoj tanjir.",
+      "Dodaj sir isečen na kockice.",
+      "Rasporedi artičoke i papriku.",
+      "Postavi masline oko tanjira.",
+      "Ukrasi svežim bosiljkom.",
+      "Pokapaj maslinovim uljem.",
+      "Serviraj sa krekerama ili hlebom."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "0 minuta",
+    servings: 6,
+    notes: ["Najbolji sa svežim sastojcima", "Idealno za zabave"],
+    nutrition: { calories: "320 po porciji", protein: "18g", carbs: "8g", fat: "26g" }
+  },
+  "American Waffles": {
+    name: "Američki vafli",
+    description: "Klasični američki vafli sa sirupom od javora.",
+    ingredients: [
+      "2 šolje brašna",
+      "2 kašike šećera",
+      "2 kašičice praška za pecivo",
+      "1/2 kašičice soli",
+      "2 jaja",
+      "1.5 šolje mleka",
+      "1/3 šolje otopljenog putera",
+      "1 kašička vanile"
+    ],
+    instructions: [
+      "Pomešaj brašno, šećer, prašak i so.",
+      "U drugoj činiji umuti jaja.",
+      "Dodaj mleko, puter i vanilu u jaja.",
+      "Kombinuj mokre i suve sastojke.",
+      "Zagrej aparat za vafle.",
+      "Kuva vafle 3-4 minuta do zlatne.",
+      "Serviraj sa sirupom i puterom."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "20 minuta",
+    servings: 8,
+    notes: ["Ne premešavaj testo", "Najbolji serviran odmah"],
+    nutrition: { calories: "280 po vafl", protein: "8g", carbs: "42g", fat: "10g" }
+  },
+  "Avocado Toast": {
+    name: "Tost sa avokadom",
+    description: "Moderan zdravi doručak sa avokadom na hlebu.",
+    ingredients: [
+      "2 kriške celog zrna hleba",
+      "1 zreo avokado",
+      "1/2 limuna",
+      "So i biber po ukusu",
+      "Crvene papričice (opciono)",
+      "1 jaje (opciono)",
+      "Mikro zeleniš za garnir"
+    ],
+    instructions: [
+      "Toastuj hleb do zlatne boje.",
+      "Gnječi avokado sa limunom, soli i biberom.",
+      "Namažž avokado miks na toast.",
+      "Dodaj crvene papričice po ukusu.",
+      "Opciono: dodaj kuvano ili prženo jaje.",
+      "Ukrasi mikro zelenišom.",
+      "Serviraj odmah."
+    ],
+    prepTime: "5 minuta",
+    cookTime: "3 minuta",
+    servings: 2,
+    notes: ["Koristi zreo avokado", "Dodaj limun da ne potamni"],
+    nutrition: { calories: "220 po toast", protein: "6g", carbs: "25g", fat: "12g" }
+  },
+  "Banana Waffles": {
+    name: "Banana vafli",
+    description: "Slatki vafli sa svežim bananama i cimetom.",
+    ingredients: [
+      "2 šolje brašna",
+      "2 kašike šećera",
+      "2 kašičice praška za pecivo",
+      "1 kašička cimeta",
+      "1/2 kašičice soli",
+      "2 jaja",
+      "1.5 šolje mleka",
+      "1/3 šolje otopljenog putera",
+      "2 zrele banane (gnječene)"
+    ],
+    instructions: [
+      "Pomešaj brašno, šećer, prašak, cimet i so.",
+      "Umuti jaja u drugoj činiji.",
+      "Dodaj mleko, puter i gnječene banane.",
+      "Kombinuj sve sastojke ne premešavajući.",
+      "Kuva u aparatu za vafle 4-5 minuta.",
+      "Serviraj sa svežim bananama i sirupom."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "25 minuta",
+    servings: 8,
+    notes: ["Koristi preżrele banane", "Odličo sa orasima"],
+    nutrition: { calories: "310 po vafl", protein: "9g", carbs: "48g", fat: "11g" }
+  },
+  "Banchan": {
+    name: "Banchan (Korejski garnituri)",
+    description: "Tradicionalni korejski fermentovani i marinirani garnituri.",
+    ingredients: [
+      "200g kimči",
+      "150g mariniran spinat",
+      "100g mariniranih šargarepa",
+      "150g soje pupak",
+      "100g mariniran daikon",
+      "2 kašike sezam ulja",
+      "1 kašika pirinčanog sirćeta",
+      "Susam za posipanje"
+    ],
+    instructions: [
+      "Pripremi kimči po tradicionalnom receptu.",
+      "Blanširaj spanać, mari sa sezam uljem.",
+      "Marinirati šargarepu u sirću i šećeru.",
+      "Kuva soje pupak do mekote.",
+      "Iseci daikon, mariniraj sa solju.",
+      "Araniraj sve banchan u malim činijama.",
+      "Posip susam i serviraj."
+    ],
+    prepTime: "45 minuta + mariniranje",
+    cookTime: "20 minuta",
+    servings: 6,
+    notes: ["Sastavni deo korejskog obroka", "Mogu se čuvati u frižideru"],
+    nutrition: { calories: "80 po porciji", protein: "4g", carbs: "12g", fat: "3g" }
+  },
+  "Baked Wings": {
+    name: "Pečena krilca",
+    description: "Hrskava pečena pileća krilca sa začinima.",
+    ingredients: [
+      "1kg pilejih krilaca",
+      "2 kašike praška za pecivo",
+      "2 kašike paprike",
+      "1 kašika garlic praška",
+      "1 kašika crnog bibera",
+      "1 kašička soli",
+      "2 kašike ulja",
+      "Sos po izboru za serviranje"
+    ],
+    instructions: [
+      "Zagrej rernu na 220°C.",
+      "Osuši krilca papirnim ubrususom.",
+      "Pomešaj sve začine sa praškom za pecivo.",
+      "Utrljaj mešavinu začina u krilca.",
+      "Stavi na pleh sa rešetkom.",
+      "Peci 25 minuta, obrni, peci još 20.",
+      "Serviraj sa omiljenim sosom."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "45 minuta",
+    servings: 4,
+    notes: ["Prašak za pecivo čini ih hrskavim", "Može sa raznim sosovima"],
+    nutrition: { calories: "280 po porciji", protein: "24g", carbs: "2g", fat: "19g" }
+  },
+  "Buffalo Wings": {
+    name: "Bafalo krilca",
+    description: "Klasična američka ljuta krilca sa Blue cheese sosom.",
+    ingredients: [
+      "1kg pilejih krilaca",
+      "1/2 šolje ljutog sosa (Frank's RedHot)",
+      "1/2 šolje putera",
+      "1 kašika sirćeta",
+      "1/4 kašičice garlic praška",
+      "Blue cheese sos za serviranje",
+      "Štapići celera"
+    ],
+    instructions: [
+      "Peci krilca na 220°C 45 minuta.",
+      "U tiganju istopi puter na maloj vatri.",
+      "Dodaj ljuti sos, sirće i garlic.",
+      "Promešaj dok se ne sjedini.",
+      "Prelijeme krilca sosom dok su vruca.",
+      "Serviraj sa Blue cheese i celerom."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "45 minuta",
+    servings: 4,
+    notes: ["Originated in Buffalo, NY", "Tradicionalno sa celerom"],
+    nutrition: { calories: "320 po porciji", protein: "24g", carbs: "1g", fat: "24g" }
+  },
+  "Chicken Wings": {
+    name: "Pileća krilca",
+    description: "Klasična pileća krilca sa različitim sosovima.",
+    ingredients: [
+      "1kg pilejih krilaca",
+      "2 kašike ulja",
+      "1 kašička soli",
+      "1 kašička crnog bibera",
+      "1 kašička paprike",
+      "Sos po izboru (BBQ, teriyaki, med-senf)"
+    ],
+    instructions: [
+      "Zagrej rernu ili roštilj na 200°C.",
+      "Začini krilca soli, biberom i paprikom.",
+      "Polij uljem i dobro promešaj.",
+      "Peci 35-40 minuta, okrećući jednom.",
+      "Poslednih 10 minuta premažuj sosom.",
+      "Serviraj toplo sa napkins."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "40 minuta",
+    servings: 4,
+    notes: ["Popularan party food", "Može se raditi na roštilju"],
+    nutrition: { calories: "290 po porciji", protein: "26g", carbs: "3g", fat: "20g" }
+  },
+  "Chicken Caesar Wrap": {
+    name: "Pileći Cezar vrap",
+    description: "Vrap sa grilovanom piletinom i Cezar dresingom.",
+    ingredients: [
+      "2 pileća filea",
+      "4 velike tortije",
+      "1 glavica salata romaine",
+      "1/2 šolje Cezar dressinga",
+      "1/4 šolje parmezana",
+      "Krutons"
+    ],
+    instructions: [
+      "Griljuj piletinu do 75°C unutrašnje temp.",
+      "Iseći piletinu na trake.",
+      "Zagrej tortiju na vrućoj ploči.",
+      "Premažu dresingom po sredini tortije.",
+      "Dodaj salatu, piletinu, parmezan.",
+      "Posipaj krutons, zarolaj čvrsto.",
+      "Preseci na pola dijagonalno."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "12 minuta",
+    servings: 4,
+    notes: ["Najbolji serviran odmah", "Može sa grilovnom piletinom"],
+    nutrition: { calories: "420 po vrap", protein: "32g", carbs: "35g", fat: "18g" }
+  },
+  "Club Sandwich": {
+    name: "Klub sendvič",
+    description: "Tradicionalni američki trosjpratni sendvič.",
+    ingredients: [
+      "3 kriške toasta hleba",
+      "4 kriške pećurane (ili piletine)",
+      "4 kriške slanine",
+      "2 lista salate",
+      "2 kriške paradajza",
+      "2 kašike majoneza",
+      "Čačkalice za držanje"
+    ],
+    instructions: [
+      "Toastuj hleb do zlatne boje.",
+      "Prži slaninu do hrskavosti.",
+      "Premažu jedan toast majoneom.",
+      "Stavi meso, salatu na prvi toast.",
+      "Dodaj drugi toast, më premazu majoneom.",
+      "Stavi slaninu, paradajz, salatu.",
+      "Pokrij trećim toastom, naboći čačkalicama.",
+      "Preseci na četiri trougla."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "8 minuta",
+    servings: 1,
+    notes: ["Tradicionalno sa čačkalicama", "Popularan u hotel restoranima"],
+    nutrition: { calories: "520 po sendvič", protein: "28g", carbs: "45g", fat: "26g" }
+  },
+  "Cornbread": {
+    name: "Kukuruzni hleb",
+    description: "Tradicionalni američki slatki kukuruzni hleb.",
+    ingredients: [
+      "1 šolja kukuruznog brašna",
+      "1 šolja belog brašna",
+      "1/4 šolja šećera",
+      "1 kašika praška za pecivo",
+      "1 kašička soli",
+      "1 šolja mleka",
+      "1/3 šolje ulja",
+      "1 jaje"
+    ],
+    instructions: [
+      "Zagrej rernu na 200°C.",
+      "Pomešaj suve sastojke u velikoj činiji.",
+      "U drugoj činiji umuti jaje.",
+      "Dodaj mleko i ulje u jaje.",
+      "Kombinuj mokre i suve sastojke.",
+      "Prelij u podmašćen pleh 20x20cm.",
+      "Peci 20-25 minuta do zlatne boje."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "25 minuta",
+    servings: 9,
+    notes: ["Odlično uz čili", "Najbolji serviran topao"],
+    nutrition: { calories: "210 po parče", protein: "5g", carbs: "32g", fat: "8g" }
+  },
+  "Fish Tacos": {
+    name: "Riblji takos",
+    description: "Meksički takos sa grilovnom ribom i salsom.",
+    ingredients: [
+      "400g bele ribe",
+      "8 malih tortija",
+      "2 šolje seckane salate",
+      "1 avokado (seckan)",
+      "1/2 šolje kisele pavlake",
+      "1/4 šolje limunovog soka",
+      "1 kašička cimena",
+      "1 kašička čili praha"
+    ],
+    instructions: [
+      "Začini ribu cimenom i čili prahom.",
+      "Griljuj ribu 4 minuta po strani.",
+      "Zagrej tortije na vrućoj ploči.",
+      "Iseckaj ribu na komade.",
+      "Stavi ribu na tortiju.",
+      "Dodaj salatu, avokado, kiselu pavlaku.",
+      "Prskuj limunovim sokom, serviraj."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "8 minuta",
+    servings: 4,
+    notes: ["Koristi svežu ribu", "Idealno uz pivo"],
+    nutrition: { calories: "280 po takos", protein: "22g", carbs: "25g", fat: "12g" }
+  },
+  "French Toast": {
+    name: "Francuski tost",
+    description: "Slatki doručak od hleba natopljenog u jajni mešavini.",
+    ingredients: [
+      "8 kriški debljeg hleba",
+      "4 jaja",
+      "1/2 šolje mleka",
+      "2 kašike šećera",
+      "1 kašička vanile",
+      "1 kašička cimeta",
+      "Puter za prženje",
+      "Sirup od javora"
+    ],
+    instructions: [
+      "Umuti jaja, mleko, šećer, vanilu i cimet.",
+      "Natopi svaku krišku hleba u mešavini.",
+      "Zagrej tiganj sa puterom na srednjoj vatri.",
+      "Prži hleb 2-3 minuta po strani do zlatne.",
+      "Serviraj toplo sa puterom i sirupom."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: ["Koristi stariji hleb", "Može sa svežim voćem"],
+    nutrition: { calories: "320 po porciji", protein: "12g", carbs: "38g", fat: "14g" }
+  },
+  "Greek Salad": {
+    name: "Grčka salata",
+    description: "Tradicionalna grčka salata sa feta sirom i maslinama.",
+    ingredients: [
+      "3 paradajza (seckana)",
+      "1 krastavac (seckan)",
+      "1 crveni luk (tanko seckan)",
+      "200g feta sira",
+      "1/2 šolje kalamata maslenica",
+      "1/4 šolje maslinovog ulja",
+      "2 kašike crvenog vinskog sirćeta",
+      "1 kašička origana"
+    ],
+    instructions: [
+      "Iseci paradajz i krastavac na krupne kockice.",
+      "Tanko iseci crveni luk.",
+      "Kombinuj povrće u velikoj činiji.",
+      "Dodaj masline i feta sir.",
+      "Pomešaj ulje, sirće i origano.",
+      "Prelij salatu dresingom.",
+      "Ostavi 30 minuta da se ukusi sjedine."
+    ],
+    prepTime: "15 minuta + 30 minuta mariranje",
+    cookTime: "0 minuta",
+    servings: 4,
+    notes: ["Najbolja sa zrelim paradajzom", "Ne dodavaj salatu"],
+    nutrition: { calories: "220 po porciji", protein: "8g", carbs: "12g", fat: "18g" }
+  },
+  "Grilled Cheese": {
+    name: "Grilovani sir sendvič",
+    description: "Klasični američki sendvič sa rastopljenim sirom.",
+    ingredients: [
+      "8 kriški hleba",
+      "4 kriške čedar sira",
+      "4 kašike putera (na sobnoj temperaturi)",
+      "Opciono: kriška slanine ili paradajza"
+    ],
+    instructions: [
+      "Premažu spoljašnju stranu hleba puterom.",
+      "Stavi sir između kriški (puter spolja).",
+      "Zagrej tiganj na srednje-maloj vatri.",
+      "Prži sendvič 3-4 minuta po strani.",
+      "Prži dok hleb ne postane zlatn i sir rastopi.",
+      "Preseci dijagonalno, serviraj toplo."
+    ],
+    prepTime: "5 minuta",
+    cookTime: "8 minuta",
+    servings: 2,
+    notes: ["Mala vatra za ravnomerno topljenje", "Idealno uz sup paradajza"],
+    nutrition: { calories: "380 po sendvič", protein: "16g", carbs: "32g", fat: "22g" }
+  },
+  "Hamburger": {
+    name: "Hamburger",
+    description: "Klasični američki hamburger sa svim dodacima.",
+    ingredients: [
+      "4 hamburger žemljice",
+      "500g mlevene govedine (80/20)",
+      "4 kriške sira",
+      "1 paradajz (seckan)",
+      "1 luk (seckan)",
+      "4 lista salate",
+      "Kečap, senf, majonez",
+      "Kiśeli krastavci"
+    ],
+    instructions: [
+      "Oblikuj 4 hamburger ploče od mesa.",
+      "Začini solju i biberom.",
+      "Griljuj ili prži 4 minuta po strani.",
+      "Poslednji minut dodaj sir na meso.",
+      "Toastuj žemljice na roštilju.",
+      "Slaži: žemljica, sos, salata, meso, dodaci.",
+      "Pokrij gornjom žemljic, serviraj."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "8 minuta",
+    servings: 4,
+    notes: ["Ne pritiskaj meso tokom kuvanja", "Najbolji sa svežim dodacima"],
+    nutrition: { calories: "520 po hamburger", protein: "28g", carbs: "35g", fat: "32g" }
+  },
+  "Beef Stroganoff": {
+    name: "Goveđi stroganof",
+    description: "Ruski klasik sa govedinom u kremastom sosu sa pečurkama.",
+    ingredients: [
+      "600g goveđe šnice (seckane na trake)",
+      "300g šampinjona",
+      "1 veliki luk",
+      "3 kašike brašna",
+      "1 šolja kisele pavlake",
+      "2 kašike senfa",
+      "1 šolja goveđe čorbe",
+      "Široke nudle za serviranje"
+    ],
+    instructions: [
+      "Iseći meso na tanke trake.",
+      "Prži meso u vrućem ulju 3-4 minuta.",
+      "Dodaj luk i pečurke, kuva 5 minuta.",
+      "Posip brašno, meša 1 minut.",
+      "Postupno dodaj čorbu.",
+      "Umeša kiselu pavlaku i senf.",
+      "Krčka 10 minuta, serviraj preko nudla."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "25 minuta",
+    servings: 4,
+    notes: ["Ne kuva kiselu pavlaku predugo", "Klasično sa širokim nudlama"],
+    nutrition: { calories: "420 po porciji", protein: "32g", carbs: "28g", fat: "22g" }
+  },
+  "Belgian Waffles": {
+    name: "Belgijski vafli",
+    description: "Duboki belgijski vafli sa svežim voćem i šlagom.",
+    ingredients: [
+      "2 šolje brašna",
+      "2 kašike šećera",
+      "2 kašičice praška za pecivo",
+      "1/2 kašičice soli",
+      "2 jaja (odvojena)",
+      "1.5 šolje mleka",
+      "1/3 šolje otopljenog putera",
+      "1 kašička vanile"
+    ],
+    instructions: [
+      "Pomešaj brašno, šećer, prašak i so.",
+      "Umuti žumanca sa mlekom i vanilom.",
+      "Dodaj otopljen puter u žumanca.",
+      "Umuti belanca u čvrst sneg.",
+      "Kombinuj mokre i suve sastojke.",
+      "Pažljivo umeša belanca.",
+      "Kuva u aparatu za belgijske vafle 4-5 minuta."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "25 minuta",
+    servings: 6,
+    notes: ["Belanca čine ih lažišim", "Najbolji sa svežim voćem"],
+    nutrition: { calories: "350 po vafl", protein: "10g", carbs: "45g", fat: "16g" }
+  },
+  "Bento": {
+    name: "Bento (Japanska kutija za ručak)",
+    description: "Tradicionalna japanska kutija sa pirinčem i raznim dodacima.",
+    ingredients: [
+      "2 šolje kuvanog pirinča",
+      "200g grilovanog lososa",
+      "4 kuvana jaja",
+      "1 šolja kuvane brokolije",
+      "Marinirani krastavci",
+      "Nori alge",
+      "Soja sos"
+    ],
+    instructions: [
+      "Kuva pirinač prema uputstvima.",
+      "Griljuj losos i iseci na komade.",
+      "Kuva jaja 7 minuta za meki žumanac.",
+      "Blanširaj brokolije 3 minuta.",
+      "Araniraj sve komponente u bento kutije.",
+      "Garnir sa nori algama.",
+      "Serviraj sa soja sosom."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "25 minuta",
+    servings: 2,
+    notes: ["Balans boja i ukusa", "Može se pripremiti unapred"],
+    nutrition: { calories: "450 po bento", protein: "28g", carbs: "55g", fat: "14g" }
+  },
+  "Beef and Broccoli": {
+    name: "Govedina sa brokolom",
+    description: "Kinesko-američka wok kombinacija govedine i brokolija.",
+    ingredients: [
+      "500g goveđe šnice",
+      "1 velika glavica brokolija",
+      "3 kašike soja sosa",
+      "2 kašike ustričnog sosa",
+      "1 kašika skroba",
+      "2 kašike ulja",
+      "2 čena belog luka",
+      "1 kašićica đumbira"
+    ],
+    instructions: [
+      "Iseći meso na tanke trake.",
+      "Mari meso sa soja sosom i skrobom.",
+      "Podeli brokolije na malo buckets.",
+      "Zagrej wok ili veliki tiganj.",
+      "Prži meso 3 minuta na jakoj vatri.",
+      "Dodaj brokoli, luk, đumbir.",
+      "Dodaj ostali soja sos i ustrični sos.",
+      "Wok-uj 2-3 minuta, serviraj sa pirinčem."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "8 minuta",
+    servings: 4,
+    notes: ["Jaka vatra je ključna", "Brokolije treba biti hrskav"],
+    nutrition: { calories: "290 po porciji", protein: "26g", carbs: "12g", fat: "16g" }
+  },
+  "Asian Wrap": {
+    name: "Azijski vrap",
+    description: "Vrap sa azijskim ukusima i hrsкavim povrćem.",
+    ingredients: [
+      "4 velike tortije",
+      "300g grilovanog pilea",
+      "2 šolje mix salate",
+      "1 šargarepa (na trake)",
+      "1/2 krastavca (tanko seckan)",
+      "1/4 šolje kikiriki",
+      "3 kašike sezam dressing",
+      "2 kašike sezam ulja"
+    ],
+    instructions: [
+      "Griljuj piletinu i iseći na trake.",
+      "Iseci povrće na tanke trake.",
+      "Zagrej tortiju na vrućoj ploči.",
+      "Premažu tortiju sezam dressingom.",
+      "Stavi salatu, piletinu, povrće.",
+      "Posipaj kikiriki, pokapaj sezam uljem.",
+      "Zarolaj čvrsto, preseci na pola."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "10 minuta",
+    servings: 4,
+    notes: ["Hrskavo povrće je ključno", "Može sa tofu umesto mesa"],
+    nutrition: { calories: "380 po vrap", protein: "28g", carbs: "32g", fat: "18g" }
+  },
+  "Avocado Wrap": {
+    name: "Avokado vrap",
+    description: "Zdrav vegetarijanski vrap sa avokadom i svežim povrćem.",
+    ingredients: [
+      "4 velike tortije",
+      "2 zrela avokada",
+      "2 šolje baby špineta",
+      "1 paradajz (seckan)",
+      "1/2 krastavca (seckan)",
+      "1/4 crvenog luka",
+      "2 kašike limunovog soka",
+      "Humus za premazivanje"
+    ],
+    instructions: [
+      "Gnjeći avokado sa limunovim sokom.",
+      "Premažu tortiju humusom.",
+      "Rasporedi avokado smesu po sredini.",
+      "Dodaj špinat, paradajz, krastavac, luk.",
+      "Začini soli i biberom.",
+      "Zarolaj čvrsto, preseci dijagonalno.",
+      "Serviraj odmah."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "0 minuta",
+    servings: 4,
+    notes: ["Koristi zrele avokado", "Odličan za vegetarijance"],
+    nutrition: { calories: "320 po vrap", protein: "8g", carbs: "38g", fat: "16g" }
+  },
+  "Biryani": {
+    name: "Biryani (Indijska pirinač)",
+    description: "Aromatična indijska pirinač sa začinima i mesom.",
+    ingredients: [
+      "2 šolje basmati pirinča",
+      "500g pilećeg mesa",
+      "1 šolja jogurta",
+      "2 luka (tanko seckana)",
+      "4 čena belog luka",
+      "1 kašika đumbira",
+      "2 kašičice garam masala",
+      "1 kašička kurkume",
+      "Šafran i toplo mleko"
+    ],
+    instructions: [
+      "Mariniraj pile u jogurtu sa začinima 2 sata.",
+      "Prži luk do zlatne boje, ostavi po strani.",
+      "Prži marinirano pile 15 minuta.",
+      "Kuva pirinač sa kardamom i lovorom do pola.",
+      "Slaži meso i pirinač u slojeve.",
+      "Dodaj prženi luk i šafran sa mlekom.",
+      "Peci pokriveno 45 minuta na maloj vatri.",
+      "Serviraj sa raita i salata."
+    ],
+    prepTime: "45 minuta + 2 sata mariniranje",
+    cookTime: "60 minuta",
+    servings: 6,
+    notes: ["Šafran daje autentičan ukus", "Tradicionalno se pravi u dum metodi"],
+    nutrition: { calories: "450 po porciji", protein: "35g", carbs: "55g", fat: "12g" }
+  },
+  "Bibimbap": {
+    name: "Bibimbap",
+    description: "Korejska mešavina pirinča sa povrćem i mesom u činiji.",
+    ingredients: [
+      "2 šolje kuvanog pirinča",
+      "200g goveđe šnice",
+      "1 šolja spanaća",
+      "1 šolja klica soje",
+      "1 šargarepa (na štapiće)",
+      "4 shiitake pečurke",
+      "2 jaja",
+      "Gochujang pasta",
+      "Sezam ulje i susam"
+    ],
+    instructions: [
+      "Mari meso sa soja sosom 30 minuta.",
+      "Blanširaj spanać, iscedi dobro.",
+      "Blanširaj klice soje 2 minuta.",
+      "Prži šargarepu i pečurke posebno.",
+      "Prži meso do gotovosti.",
+      "Prži jaja na oko.",
+      "Stavi pirinač u činije.",
+      "Rasporedi sve komponente oko pirinča.",
+      "Stavi jaje na vrh, serviraj sa gochujang."
+    ],
+    prepTime: "30 minuta + 30 minuta mariniranje",
+    cookTime: "25 minuta",
+    servings: 2,
+    notes: ["Promešaj sve pre jedenja", "Važno je da svaki sastojak zadrži svoju teksturu"],
+    nutrition: { calories: "520 po porciji", protein: "30g", carbs: "60g", fat: "18g" }
+  },
+  "Biscuits and Gravy": {
+    name: "Keks sa pavlakom (Američki doručak)",
+    description: "Tradicionalni američki južni doručak sa mekane keksove i kremasta pavlaka.",
+    ingredients: [
+      "2 šolje brašna",
+      "1 kašika praška za pecivo",
+      "1 kašička soli",
+      "6 kašika hladnog putera",
+      "3/4 šolje mleka",
+      "250g kobasica",
+      "1/4 šolje brašna za sos",
+      "2 šolje mleka za sos"
+    ],
+    instructions: [
+      "Pomešaj brašno, prašak za pecivo i so.",
+      "Utrljaj hladan puter u brašno.",
+      "Dodaj mleko, zamesite meko testo.",
+      "Razvaljaj i iseći keksove.",
+      "Peci na 220°C 15 minuta.",
+      "Prži kobasice, dodaj brašno.",
+      "Postupno dodaj mleko, kuva do gustine.",
+      "Prelij keksove vrućom pavlakom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "25 minuta",
+    servings: 6,
+    notes: ["Hladan puter je ključan", "Najbolji serviran odmah"],
+    nutrition: { calories: "520 po porciji", protein: "18g", carbs: "45g", fat: "32g" }
+  },
+  "Bruschetta": {
+    name: "Brušketa",
+    description: "Italijanska predjela sa paradajzom na tostu hleba.",
+    ingredients: [
+      "1 bagetа (seckana na kriške)",
+      "4 zrela paradajza",
+      "3 čena belog luka",
+      "1/4 šolje svežeg bosiljka",
+      "3 kašike maslinovog ulja",
+      "1 kašika balsamico sirćeta",
+      "So i biber po ukusu",
+      "Parmezan sir (opciono)"
+    ],
+    instructions: [
+      "Toastuj kriške hleba do zlatne.",
+      "Trljaj čen belog luka po tostu.",
+      "Iseći paradajz na sitne kockice.",
+      "Pomešaj paradajz sa seckane bosiljak.",
+      "Dodaj maslinovo ulje i sirće.",
+      "Začini soli i biberom.",
+      "Stavi mešavinu na toast.",
+      "Posipaj parmezanom ako želiš."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "5 minuta",
+    servings: 8,
+    notes: ["Koristi najzreliji paradajz", "Serviraj odmah da hleb ne omekne"],
+    nutrition: { calories: "180 po parče", protein: "6g", carbs: "25g", fat: "7g" }
+  },
+  "Buddha Bowl": {
+    name: "Buda činija",
+    description: "Zdrava činija sa raznolikim povrćem, zrnastim namirnicama i proteinima.",
+    ingredients: [
+      "1 šolja kuvane kinoe",
+      "1 šolja pečene batata",
+      "1 šolja brokolija",
+      "1/2 šolje crvene salate",
+      "1/2 avokada",
+      "1/4 šolje crvenog crnog pasulja",
+      "2 kašike tahini",
+      "1 kašika limunovog soka",
+      "Semenke po izboru"
+    ],
+    instructions: [
+      "Kuva kinou prema uputstvima.",
+      "Peci batat na 200°C 25 minuta.",
+      "Blanširaj brokolije 3 minuta.",
+      "Pripremi tahini dressing sa limunom.",
+      "Araniraj sve sastojke u činiju.",
+      "Polij dresingom.",
+      "Posipaj semenkama."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "30 minuta",
+    servings: 2,
+    notes: ["Varijanti su beskrajne", "Odličo za meal prep"],
+    nutrition: { calories: "420 po činiji", protein: "15g", carbs: "65g", fat: "14g" }
+  },
+  "Buffalo Chicken Wrap": {
+    name: "Bafalo pileći vrap",
+    description: "Ljuti američki vrap sa buffalo piletinom i Blue cheese.",
+    ingredients: [
+      "2 pileća filea",
+      "4 velike tortije",
+      "1/2 šolje buffalo sosa",
+      "1/4 šolje Blue cheese dressinga",
+      "2 šolje salate iceberg",
+      "2 štapića celera (seckani)",
+      "1/4 crvenog luka"
+    ],
+    instructions: [
+      "Griljuj piletinu do 75°C unutrašnje temp.",
+      "Iseći na trake i pomešaj sa buffalo sosom.",
+      "Zagrej tortije na vrućoj ploči.",
+      "Premažu Blue cheese dresingom.",
+      "Dodaj salatu, buffalo piletinu, celer.",
+      "Zarolaj čvrsto, preseci na pola.",
+      "Serviraj sa extra Blue cheese."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "12 minuta",
+    servings: 4,
+    notes: ["Najbolji dok je piletina topla", "Tradicionalno sa celerom"],
+    nutrition: { calories: "480 po vrap", protein: "32g", carbs: "35g", fat: "24g" }
+  },
+  "Börek": {
+    name: "Börek (Turska pita)",
+    description: "Tradicionalna turska pita sa fila testom i filom.",
+    ingredients: [
+      "500g fila testa",
+      "400g spanaća",
+      "200g feta sira",
+      "3 jaja",
+      "1/2 šolje maslinovog ulja",
+      "1 luk (seckan)",
+      "2 čena belog luka",
+      "So, biber, muskatni oraščić"
+    ],
+    instructions: [
+      "Prži luk i beli luk do mekote.",
+      "Dodaj spanać, kuva dok se ne uvene.",
+      "Pomešaj sa feta sirom i začinima.",
+      "Umuti jaja sa malo ulja.",
+      "Sloj fila, premažu uljem, dodaj fil.",
+      "Ponovi slojeve do kraja.",
+      "Peci na 180°C 45 minuta do zlatne.",
+      "Ohladiti pre sečenja."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "45 minuta",
+    servings: 8,
+    notes: ["Drži fila vlažno tokom rada", "Može se praviti i sa mesom"],
+    nutrition: { calories: "280 po parče", protein: "12g", carbs: "22g", fat: "18g" }
+  },
+  "Breakfast Pizza": {
+    name: "Doručak pica",
+    description: "Američka pica sa jajetom i slaninom za doručak.",
+    ingredients: [
+      "1 gotova pica testo",
+      "4 jaja",
+      "6 kriški slanine",
+      "1 šolja čedar sira",
+      "1/4 šolje majoneza",
+      "2 kašike seckanog vlasca",
+      "So i biber po ukusu"
+    ],
+    instructions: [
+      "Razvij pica testo na plehu.",
+      "Prži slaninu do hrskavosti, iseci na komade.",
+      "Premažu testo majoneom.",
+      "Posipaj pola sira preko testa.",
+      "Dodaj slaninu na picu.",
+      "Razbij jaja ravnomerno preko pice.",
+      "Posipaj ostatkom sira.",
+      "Peci na 200°C 12-15 minuta."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "20 minuta",
+    servings: 4,
+    notes: ["Jaja treba da budu set ali meki", "Odličo za brunch"],
+    nutrition: { calories: "420 po parče", protein: "22g", carbs: "35g", fat: "24g" }
+  },
+  "Breakfast Wrap": {
+    name: "Doručak vrap",
+    description: "Brzi doručak vrap sa jajetom, sirom i povrćem.",
+    ingredients: [
+      "4 velike tortije",
+      "6 jaja",
+      "1 šolja čedar sira",
+      "4 kriške slanine",
+      "1 paradajz (seckan)",
+      "1/4 šolje seckanog vlasca",
+      "2 kašike putera",
+      "So i biber"
+    ],
+    instructions: [
+      "Prži slaninu do hrskavosti.",
+      "Umuti jaja, prži sa puterom kao kajganu.",
+      "Zagrej tortije na vrućoj ploči.",
+      "Rasporedi jaja na tortije.",
+      "Dodaj sir, slaninu, paradajz, vlasac.",
+      "Začini soli i biberom.",
+      "Zarolaj čvrsto, preseci na pola."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "10 minuta",
+    servings: 4,
+    notes: ["Najbolji serviran topao", "Može se pripremiti unapred"],
+    nutrition: { calories: "380 po vrap", protein: "20g", carbs: "28g", fat: "22g" }
+  },
+  "Bean Stew": {
+    name: "Varijanti pasulja",
+    description: "Hranjiva varijanta pasulja sa povrćem i začinima.",
+    ingredients: [
+      "2 šolje belog pasulja (preko noći namočen)",
+      "1 luk (seckan)",
+      "2 šargarepe (seckane)",
+      "2 štapa celera (seckan)",
+      "3 čena belog luka",
+      "1 tegla paradajza",
+      "2 lista lovora",
+      "1 kašička timijana",
+      "Vegetal čorba"
+    ],
+    instructions: [
+      "Kuva pasulj 1 sat do polu-mekote.",
+      "Prži luk, šargarepu, celer 5 minuta.",
+      "Dodaj beli luk, kuva 1 minut.",
+      "Dodaj paradajz, lovor, timijan.",
+      "Dodaj pasulj sa vodom za kuvanje.",
+      "Dopuni čorbom po potrebi.",
+      "Krčkajte 45 minuta do mekote.",
+      "Začini soli i biberom."
+    ],
+    prepTime: "15 minuta + namačanje preko noći",
+    cookTime: "2 sata",
+    servings: 6,
+    notes: ["Sporo kuvanje daje najbolji ukus", "Može sa kobasicama"],
+    nutrition: { calories: "280 po porciji", protein: "18g", carbs: "45g", fat: "3g" }
+  },
+  "BLT Wrap": {
+    name: "BLT vrap",
+    description: "Klasična kombinacija slanine, salate i paradajza u vrapu.",
+    ingredients: [
+      "4 velike tortije",
+      "8 kriški slanine",
+      "4 lista salate romaine",
+      "2 velika paradajza",
+      "1/4 šolje majoneza",
+      "So i biber po ukusu"
+    ],
+    instructions: [
+      "Prži slaninu do hrskavosti.",
+      "Iseći paradajz na deblje kriške.",
+      "Zagrej tortije na vrućoj ploči.",
+      "Premažu tortije majoneom.",
+      "Dodaj salatu, paradajz, slaninu.",
+      "Začini soli i biberom.",
+      "Zarolaj čvrsto, naboći čačkalicom.",
+      "Preseci dijagonalno."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "8 minuta",
+    servings: 4,
+    notes: ["Koristi čvrste paradajze", "Odličo za ručak"],
+    nutrition: { calories: "350 po vrap", protein: "14g", carbs: "32g", fat: "20g" }
+  },
+  "Blueberry Waffles": {
+    name: "Borovnica vafli",
+    description: "Sladki vafli sa svežim borovnicama.",
+    ingredients: [
+      "2 šolje brašna",
+      "2 kašike šećera",
+      "2 kašičice praška za pecivo",
+      "1/2 kašičice soli",
+      "2 jaja",
+      "1.5 šolje mleka",
+      "1/3 šolje otopljenog putera",
+      "1 šolja svežih borovnica",
+      "1 kašička vanile"
+    ],
+    instructions: [
+      "Pomešaj brašno, šećer, prašak i so.",
+      "Umuti jaja sa mlekom i vanilom.",
+      "Dodaj otopljen puter u jaja.",
+      "Kombinuj mokre i suve sastojke.",
+      "Pažljivo umeša borovnice.",
+      "Kuva u aparatu za vafle 4-5 minuta.",
+      "Serviraj sa sirupom i puterom."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "20 minuta",
+    servings: 6,
+    notes: ["Ne premešavaj testo", "Lahko posip borovnice brašnom"],
+    nutrition: { calories: "320 po vafl", protein: "9g", carbs: "48g", fat: "12g" }
+  },
+  "Buckwheat": {
+    name: "Heljda",
+    description: "Nutritivna pseudožitarica bogata proteinima i vlaknima.",
+    ingredients: [
+      "1 šolja heljde",
+      "2 šolje vode ili čorbe",
+      "1 kašička soli",
+      "2 kašike putera",
+      "1 luk (seckan)",
+      "Povrće po izboru"
+    ],
+    instructions: [
+      "Isperi heljdu pod hladnom vodom.",
+      "Prži heljdu u suvom tiganju 3 minuta.",
+      "Dodaj vodu i so, dovedi do ključanja.",
+      "Smanjii vatru, krčka 15 minuta pokriveno.",
+      "Prži luk u puteru do zlatne.",
+      "Pomešaj heljdu sa lukom.",
+      "Dodaj povrće po ukusu."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "20 minuta",
+    servings: 4,
+    notes: ["Bogata proteinima", "Odličo umesto pirinča"],
+    nutrition: { calories: "150 po porciji", protein: "6g", carbs: "30g", fat: "2g" }
+  },
+  "Buffalo Chicken": {
+    name: "Bafalo piletina",
+    description: "Ljuta piletina u Buffalo sosu sa Blue cheese.",
+    ingredients: [
+      "4 pileća filea",
+      "1/2 šolje buffalo sosa",
+      "1/4 šolje putera",
+      "1 kašika jabučnog sirćeta",
+      "1 kašička garlic praška",
+      "Blue cheese dressing",
+      "Štapići celera"
+    ],
+    instructions: [
+      "Griljuj piletinu do 75°C unutrašnje temp.",
+      "U tiganju istopi puter na maloj vatri.",
+      "Dodaj buffalo sos, sirće i garlic.",
+      "Iseći piletinu na trake.",
+      "Prelijeme piletinu buffalo sosom.",
+      "Serviraj sa Blue cheese i celerom."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: ["Nastao u Buffalo, NY", "Klasično sa celerom"],
+    nutrition: { calories: "290 po porciji", protein: "32g", carbs: "2g", fat: "16g" }
+  },
+  "Beef Noodle Soup": {
+    name: "Goveđi nudle supa",
+    description: "Aromatična azijska supa sa govedinom i nudlama.",
+    ingredients: [
+      "300g goveđe šnice",
+      "200g svežih nudla",
+      "1 litar goveđe čorbe",
+      "2 kašike soja sosa",
+      "1 kašika ustričnog sosa",
+      "2 čena belog luka",
+      "1 kašička đumbira",
+      "Zeleni luk za garnir"
+    ],
+    instructions: [
+      "Iseći govedinu na tanke trake.",
+      "Mari meso sa soja sosom 15 minuta.",
+      "Kuva nudla prema uputstvima.",
+      "Prži meso u vrućem ulju 3 minuta.",
+      "Dodaj čorbu, beli luk, đumbir.",
+      "Krčka 10 minuta.",
+      "Stavi nudla u činije, prelij čorbom.",
+      "Garnir sa zelenim lukom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: ["Popularno u azijskim zemljama", "Možze sa raznim nudlama"],
+    nutrition: { calories: "380 po porciji", protein: "28g", carbs: "35g", fat: "14g" }
+  },
+  "Boneless Wings": {
+    name: "Krilca bez kostiju",
+    description: "Pileća krilca bez kostiju u raznim sosovima.",
+    ingredients: [
+      "500g pilećeg mesa (isećenog na komade)",
+      "1 šolja brašna",
+      "2 jaja",
+      "1 šolja prezli",
+      "Ulje za prženje",
+      "Sos po izboru (BBQ, Buffalo, Med-senf)"
+    ],
+    instructions: [
+      "Iseći pile na komade veličine krilaca.",
+      "Pripremi tri činije: brašno, umućena jaja, prezle.",
+      "Oblij meso u brašno, jaja, pa prezle.",
+      "Prži u vrućem ulju 5-6 minuta.",
+      "Iscedi na papirnim ubrusima.",
+      "Pomešaj sa omiljenim sosom.",
+      "Serviraj toplo."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: ["Lakše za jedno od pravih krilaca", "Popularan party food"],
+    nutrition: { calories: "320 po porciji", protein: "26g", carbs: "18g", fat: "16g" }
+  },
+  "BBQ Wings": {
+    name: "BBQ krilca",
+    description: "Dimna pileća krilca sa barbeku sosom.",
+    ingredients: [
+      "1kg pilejih krilaca",
+      "1/2 šolje BBQ sosa",
+      "2 kašike paprike",
+      "1 kašika garlic praška",
+      "1 kašička soli",
+      "1/2 kašičice cayenne bibera",
+      "2 kašike braon šećera"
+    ],
+    instructions: [
+      "Pomešaj paprika, garlic, so, cayenne, šećer.",
+      "Utrljaj mešavinu začina u krilca.",
+      "Mariniraj 1 sat.",
+      "Peci na 200°C 35 minuta, okreći jednom.",
+      "Premažuj BBQ sosom poslednih 10 minuta.",
+      "Servirati toplo."
+    ],
+    prepTime: "15 minuta + 1 sat mariniranje",
+    cookTime: "35 minuta",
+    servings: 4,
+    notes: ["Može se raditi na roštilju", "Popularno za Super Bowl"],
+    nutrition: { calories: "310 po porciji", protein: "24g", carbs: "8g", fat: "20g" }
+  },
+  "Bossam": {
+    name: "Bossam (Korejska svinjska wrap)",
+    description: "Tradicionalna korejska svinjska wrap sa kimči i povrćem.",
+    ingredients: [
+      "1kg svinjskog plećka",
+      "1 lista kelj za wrap",
+      "1/2 šolje kimči",
+      "2 kašike doenjang paste",
+      "4 čena belog luka",
+      "2 kašike soja sosa",
+      "1 kašika sezam ulja",
+      "Zeleni luk"
+    ],
+    instructions: [
+      "Kuva svinjsko meso 1.5 sata do mekote.",
+      "Blanširaj lista kelj 2 minuta.",
+      "Iseći meso na tanke kriške.",
+      "Pomešaj doenjang sa beli luk i sezam ulje.",
+      "Stavi meso na list kelj.",
+      "Dodaj kimči i doenjang paste.",
+      "Zarolaj i jedi sa rukama."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "1.5 sata",
+    servings: 6,
+    notes: ["Tradicionalno se jede sa rukama", "Popularan na korejskim žurkama"],
+    nutrition: { calories: "280 po porciji", protein: "32g", carbs: "8g", fat: "14g" }
+  },
+  "Chorizo": {
+    name: "Čorizo kobasica",
+    description: "Španska začinjena kobasica sa paprikom i česnom.",
+    ingredients: [
+      "400g čorizo kobasice",
+      "1 luk (seckan)",
+      "3 čena belog luka",
+      "400g konzerviranih paradajza",
+      "1 kašička dimljene paprike",
+      "1/2 šolje belog vina",
+      "Peršun za garnir"
+    ],
+    instructions: [
+      "Iseći čorizo na kriške od 1cm.",
+      "Prži čorizo 3 minuta dok ne otpusti mast.",
+      "Dodaj luk, kuva 5 minuta.",
+      "Dodaj beli luk, kuva 1 minut.",
+      "Ulijte vino, kuva 2 minuta.",
+      "Dodaj paradajz i papriku.",
+      "Krčka 15 minuta, garnir peršunom."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "25 minuta",
+    servings: 4,
+    notes: ["Odličо sa hlebom", "Špansko tradicionalno jelo"],
+    nutrition: { calories: "320 po porciji", protein: "18g", carbs: "8g", fat: "24g" }
+  },
+  "Chimichurri": {
+    name: "Čimičuri (Argentinski sos)",
+    description: "Argentinski zeleni sos od peršuna i začina.",
+    ingredients: [
+      "1 šolja svežeg peršuna",
+      "1/4 šolje svežeg origana",
+      "4 čena belog luka",
+      "2 kašike crvenog vinskog sirćeta",
+      "1/2 šolje maslinovog ulja",
+      "1 kašička crvenih papričica",
+      "So i crni biber"
+    ],
+    instructions: [
+      "Sitno iseci peršun i origano.",
+      "Izgnječi beli luk sa soli.",
+      "Pomešaj sve bilge u činiji.",
+      "Dodaj sirće i maslinovo ulje.",
+      "Začini crvenim papričicama i biberom.",
+      "Ostavi 30 minuta da se ukusi sjedine.",
+      "Serviraj sa grilovanim mesom."
+    ],
+    prepTime: "15 minuta + 30 minuta odmaraj",
+    cookTime: "0 minuta",
+    servings: 8,
+    notes: ["Tradicionalno sa govedinom", "Drži se u frižideru 1 sedmicu"],
+    nutrition: { calories: "120 po porciji", protein: "1g", carbs: "2g", fat: "13g" }
+  },
+  "Ceviche": {
+    name: "Sevič (Latinska kiselа riba)",
+    description: "Peruanska sirova riba 'kuvana' u citrusnom soku.",
+    ingredients: [
+      "500g svežeg belog ribe filea",
+      "1/2 šolje soka limete",
+      "1 crveni luk (tanko seckan)",
+      "2 ljute papričice",
+      "1/4 šolje korijanda",
+      "1 slatka krompir",
+      "Kukuruza po ukusu",
+      "So i biber"
+    ],
+    instructions: [
+      "Iseći ribu na kockice od 2cm.",
+      "Polij ribu sokom limete.",
+      "Dodaj luk, papričice, korijander.",
+      "Mariniraj 15-20 minuta dok riba ne 'omekne'.",
+      "Skuva slatka krompir, iseci na kriške.",
+      "Začini soli i biberom.",
+      "Serviraj sa krompir i kukuruz."
+    ],
+    prepTime: "30 minuta + 20 minuta mariniranje",
+    cookTime: "10 minuta",
+    servings: 4,
+    notes: ["Koristi najsvežiju ribu", "Sushi kvalitet obavezan"],
+    nutrition: { calories: "180 po porciji", protein: "24g", carbs: "12g", fat: "4g" }
+  },
+  "Chicken Parmesan": {
+    name: "Piletina parmezana",
+    description: "Italijansko-američka piletina sa sirom i paradajz sosom.",
+    ingredients: [
+      "4 pileća filea",
+      "1 šolja brašna",
+      "2 jaja",
+      "1 šolja prezli",
+      "1/2 šolje parmezana",
+      "2 šolje marinara sosa",
+      "200g mozzarelle",
+      "Maslinovo ulje za prženje"
+    ],
+    instructions: [
+      "Otkucaj piletinu da bude ravna.",
+      "Panira u brašno, jaja, prezle+parmezan.",
+      "Prži u ulju 4 minuta po strani.",
+      "Prelij marinara sosom.",
+      "Posipaj mozzarellom.",
+      "Peci na 180°C 20 minuta.",
+      "Serviraj sa pastom."
+    ],
+    prepTime: "25 minuta",
+    cookTime: "30 minuta",
+    servings: 4,
+    notes: ["Klasični comfort food", "Popularno u Americi"],
+    nutrition: { calories: "520 po porciji", protein: "42g", carbs: "28g", fat: "26g" }
+  },
+  "Chicken Tikka": {
+    name: "Pilećа tikka",
+    description: "Indijska marinirana piletina sa začinima i jogurtom.",
+    ingredients: [
+      "1kg pilećih komada",
+      "1 šolja jogurta",
+      "2 kašike garam masala",
+      "1 kašika kurkume",
+      "2 kašike đumbira",
+      "4 čena belog luka",
+      "2 kašike limunovog soka",
+      "Crvena boja po ukusu"
+    ],
+    instructions: [
+      "Pomešaj jogurt sa svim začinima.",
+      "Mariniraj piletinu 4 sata ili preko noći.",
+      "Nabadaj na ražnjić.",
+      "Griljuj 15 minuta, okreći često.",
+      "Premažuj marinidom tokom grilovanja.",
+      "Serviraj sa nanami i čatneyom."
+    ],
+    prepTime: "20 minuta + 4 sata mariniranje",
+    cookTime: "15 minuta",
+    servings: 6,
+    notes: ["Mariniraj preko noći za najbolji ukus", "Tradicionalno u tandur pećnici"],
+    nutrition: { calories: "280 po porciji", protein: "38g", carbs: "6g", fat: "12g" }
+  },
+  "Clam Chowder": {
+    name: "Školjka čorba",
+    description: "Američka kremasta čorba sa školjkama i krompirom.",
+    ingredients: [
+      "1kg svežih školjki",
+      "4 kriške slanine",
+      "1 luk (seckan)",
+      "3 krompira (kockice)",
+      "2 šolje mleka",
+      "1/4 šolje brašna",
+      "2 lista lovora",
+      "Timijan i peršun"
+    ],
+    instructions: [
+      "Kuva školjke u vodi 10 minuta.",
+      "Izdvoj meso školjki, sačuvaj čorbu.",
+      "Prži slaninu, dodaj luk.",
+      "Dodaj krompir i čorbu od školjki.",
+      "Kuva 15 minuta.",
+      "Napravi ružu od brašna i mleka.",
+      "Dodaj školjke i začine.",
+      "Krčka 5 minuta."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "35 minuta",
+    servings: 6,
+    notes: ["New England stil", "Najbolji sa krekovima"],
+    nutrition: { calories: "320 po porciji", protein: "22g", carbs: "25g", fat: "16g" }
+  },
+  "Coq au Vin": {
+    name: "Kok o ven (Francuska pile u vinu)",
+    description: "Klasična francuska piletina kuvana u crvenom vinu.",
+    ingredients: [
+      "1 celo pile (parčano)",
+      "1 boca crvenog vina",
+      "200g slanine",
+      "12 malih luka",
+      "250g pečurki",
+      "2 šargarepe",
+      "3 kašike brašna",
+      "Timijan i lovor"
+    ],
+    instructions: [
+      "Mari piletinu u vinu preko noći.",
+      "Prži slaninu, pa luk i pečurke.",
+      "Prži komade piletine do zlatne.",
+      "Polij vinom i dodaj povrće.",
+      "Dodaj začine, kuva 1 sat pokriveno.",
+      "Zgusni sa brašnom ako treba.",
+      "Serviraj sa krompirom."
+    ],
+    prepTime: "30 minuta + mariniranje preko noći",
+    cookTime: "1.5 sata",
+    servings: 4,
+    notes: ["Francuska klasika", "Koristi dobro vino"],
+    nutrition: { calories: "420 po porciji", protein: "35g", carbs: "15g", fat: "22g" }
+  },
+  "Crab Cakes": {
+    name: "Keksi od kraba (Američki)",
+    description: "Zlatni pečeni keksi od kraba sa začinima iz Čezapik zaliva.",
+    ingredients: [
+      "500g mesa kraba",
+      "1/2 šolje breadcrumbs-a",
+      "1 jaje",
+      "2 kašike majoneza",
+      "1 kašika senfa",
+      "1 kašička worcestershire sosa",
+      "Limunov sok",
+      "Old Bay začin",
+      "Peršun"
+    ],
+    instructions: [
+      "Pomešaj meso kraba sa breadcrumbs-ima.",
+      "Dodaj jaje, majonez i začine.",
+      "Formiraju se keksi i stave u frižider 30 min.",
+      "Peči u rerni 15-20 minuta na 200°C.",
+      "Služi sa limunovim sosom."
+    ],
+    prepTime: "15 minuta + 30 min hlađenje",
+    cookTime: "20 minuta",
+    servings: 4,
+    notes: ["Američka klasika", "Krab mora biti sveži", "Old Bay začin je ključan"],
+    nutrition: { calories: "280 po keksu", protein: "25g", carbs: "8g", fat: "16g" }
+  },
+  "Croque Monsieur": {
+    name: "Krok monsjeu (Francuski sendvič)",
+    description: "Elegantni francuski sendvič sa šunkom i bešamel sosom.",
+    ingredients: [
+      "8 kriški belog hleba",
+      "200g šunke",
+      "150g gruyere sira",
+      "2 kašike butera",
+      "2 kašike brašna",
+      "300ml mleka",
+      "Muškatni orah",
+      "So i biber"
+    ],
+    instructions: [
+      "Napravi bešamel sos od butera, brašna i mleka.",
+      "Na hleb stavi šunku i sir.",
+      "Pokrij bešamel sosom.",
+      "Pospi rendanim sirom.",
+      "Peči do zlatne boje."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: ["Francuski bistro klasik", "Gruyere je tradicionalan", "Može se dodati i jaje za Croque Madame"],
+    nutrition: { calories: "520 po sendviču", protein: "28g", carbs: "35g", fat: "32g" }
+  },
+  "Cucumber Sandwiches": {
+    name: "Sendviči sa krastavcima (Engleski)",
+    description: "Delikatni engleski sendviči za popodnevni čaj.",
+    ingredients: [
+      "8 tankih kriški belog hleba",
+      "1 veliki krastavac",
+      "100g krem sira",
+      "2 kašike butera",
+      "Sveži dill",
+      "So",
+      "Beli biber"
+    ],
+    instructions: [
+      "Krastavac iseci vrlo tanko.",
+      "Posolji i ostavi 15 minuta, pa osusi.",
+      "Hleb namaži buterom i krem sirom.",
+      "Složi krastavce, dodaj dill.",
+      "Ukloni kore i iseci na trouglove."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "0 minuta",
+    servings: 4,
+    notes: ["Engleski afternoon tea", "Hleb mora biti vrlo sveži", "Tanko seckanje je ključno"],
+    nutrition: { calories: "180 po sendviču", protein: "6g", carbs: "20g", fat: "9g" }
+  },
+  "Dal": {
+    name: "Dal (Indijski)",
+    description: "Kremasta indijska supa od crvenog sočiva sa začinima.",
+    ingredients: [
+      "1 šolja crvenog sočiva",
+      "3 šolje vode",
+      "1 luk",
+      "3 čena belog luka",
+      "1 kašička kurkume",
+      "1 kašička kumina",
+      "1 kašička korijandera",
+      "Garam masala",
+      "Paradajz",
+      "Đumbir"
+    ],
+    instructions: [
+      "Isperi sočivo i skuvaj sa kurkumom.",
+      "Na ulju proprži luk, luk i đumbir.",
+      "Dodaj začine i paradajz.",
+      "Pomešaj sa kuvanim sočivom.",
+      "Krčkaj 10 minuta."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "30 minuta",
+    servings: 4,
+    notes: ["Indijska osnovna hrana", "Može se praviti od raznog sočiva", "Služi se sa roti ili pirinčem"],
+    nutrition: { calories: "220 po porciji", protein: "16g", carbs: "35g", fat: "4g" }
+  },
+  "Duck Confit": {
+    name: "Konfi od patke (Francuski)",
+    description: "Sporo kuvana patka u sopstvenoj masti - francuska delicija.",
+    ingredients: [
+      "4 buta patke",
+      "2 kašike morske soli",
+      "4 čena belog luka",
+      "2 grančice timijana",
+      "2 lovorova lista",
+      "1 kašička crnog bibera",
+      "500ml patje masti"
+    ],
+    instructions: [
+      "Meso potrepi solju i začinima, ostavi 24h.",
+      "Očisti od soli i stavi u patju mast.",
+      "Kuva sporo 2-3 sata na 75°C.",
+      "Čuva se u masti do 3 meseca.",
+      "Pre služenja, kriški da se koža zlačava."
+    ],
+    prepTime: "30 minuta + 24h mariniranje",
+    cookTime: "3 sata",
+    servings: 4,
+    notes: ["Francuska tradicionalna metoda", "Sporo kuvanje je ključno", "Može se čuvati mesecima"],
+    nutrition: { calories: "580 po butu", protein: "42g", carbs: "2g", fat: "44g" }
+  },
+  "Eggs Benedict": {
+    name: "Jaja Benedikt (Američki)",
+    description: "Luksuzan američki doručak sa poširanim jajima i holandez sosom.",
+    ingredients: [
+      "4 sveža jaja",
+      "2 english muffins-a",
+      "4 kriške kanadske slanine",
+      "3 žumanca",
+      "120g butera",
+      "Limunov sok",
+      "Kajenska paprika",
+      "So"
+    ],
+    instructions: [
+      "Napravi holandez sos od žumanaca i butera.",
+      "Poširaj jaja u vodi sa sirćetom.",
+      "Opeci muffins i slaninu.",
+      "Složi: muffin, slanina, jaje, sos.",
+      "Pospi kajenom paprikom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "15 minuta",
+    servings: 2,
+    notes: ["Američki brunch klasik", "Holandez sos treba da bude topao", "Služi se odmah"],
+    nutrition: { calories: "620 po porciji", protein: "28g", carbs: "24g", fat: "48g" }
+  },
+  "Empanadas": {
+    name: "Empanadas (Argentinske)",
+    description: "Pečene argentinske pite sa mesom i povrćem.",
+    ingredients: [
+      "2 šolje brašna",
+      "100g butera",
+      "1 jaje",
+      "300g mlevenog mesa",
+      "1 luk",
+      "2 kuvana jaja",
+      "Masline",
+      "Kumin",
+      "Paprika"
+    ],
+    instructions: [
+      "Napravi testo od brašna, butera i jajeta.",
+      "Fil: proprži luk, meso i začine.",
+      "Dodaj seckana jaja i masline.",
+      "Razvij testo, napuni i zatvori.",
+      "Peči 25 minuta na 180°C."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "25 minuta",
+    servings: "12 komada",
+    notes: ["Argentinski nacionalni obrok", "Može biti i sa sirom", "Tradicionalno se peku u zemlji"],
+    nutrition: { calories: "280 po komadu", protein: "12g", carbs: "22g", fat: "16g" }
+  },
+  "Falafel": {
+    name: "Falafel (Bliskoistočni)",
+    description: "Hrskave kuglice od slanutak sa začinima iz Bliskog istoka.",
+    ingredients: [
+      "2 šolje kuvanog slanutak",
+      "1/2 šolje peršuna",
+      "1/4 šolje luka",
+      "4 čena belog luka",
+      "2 kašike brašna",
+      "1 kašička kumina",
+      "1 kašička korijandera",
+      "Kajenska paprika",
+      "Ulje za prženje"
+    ],
+    instructions: [
+      "Slanučak blenduj sa lukom i belim lukom.",
+      "Dodaj začine i peršun.",
+      "Formiraju se kuglice, pa se prže.",
+      "Prži u dubokom ulju 3-4 minuta.",
+      "Služi sa tahini sosom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: ["Bliskoistočna klasika", "Može se peći umesto pržiti", "Tradicionalno se služi u pita hlebu"],
+    nutrition: { calories: "150 po porciji", protein: "6g", carbs: "20g", fat: "6g" }
+  },
+  "Fish and Chips": {
+    name: "Riba i pomfrit (Engleski)",
+    description: "Klasični engleski jelo - hrskava riba u testu sa pomfritom.",
+    ingredients: [
+      "600g bele ribe filet",
+      "200g brašna",
+      "300ml piva",
+      "1 kg krompira",
+      "Ulje za prženje",
+      "So i biber",
+      "Sirće",
+      "Grašak (puree)"
+    ],
+    instructions: [
+      "Napravi testo od brašna i piva.",
+      "Krompir iseci na štapiće i prži.",
+      "Ribu umoči u testo i prži.",
+      "Prži ribu 5-6 minuta do zlatne.",
+      "Služi sa sirćetom i graškom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "25 minuta",
+    servings: 4,
+    notes: ["Engleski nacionalni jelo", "Pivo čini testo lakše", "Tradicionalno se zamata u novine"],
+    nutrition: { calories: "520 po porciji", protein: "28g", carbs: "45g", fat: "26g" }
+  },
+  "French Onion Soup": {
+    name: "Francuska supa od luka",
+    description: "Bogata francuska supa sa karamelizovanim lukom i gratiniranim sirom.",
+    ingredients: [
+      "6 velikih glavica luka",
+      "4 kašike butera",
+      "1 kašika šećera",
+      "1/2 šolje beloga vina",
+      "1.5l govedinje supe",
+      "Timijan",
+      "Gruyere sir",
+      "Baguette kriške"
+    ],
+    instructions: [
+      "Luk iseci na pršenčiće.",
+      "Karamelize luk 45 minuta sa buterom.",
+      "Dodaj vino i supu.",
+      "Krčkaj 30 minuta.",
+      "Serviraj sa sirom i hlebom, gratiniraj."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "1.5 sata",
+    servings: 4,
+    notes: ["Francuska klasika", "Karamelizovan luk je ključan", "Tradicionalno se gratinira u rerni"],
+    nutrition: { calories: "380 po porciji", protein: "18g", carbs: "35g", fat: "20g" }
+  },
+  "Gazpacho": {
+    name: "Gaspačo (Španski)",
+    description: "Osvežavajuća hladna špansku supa od paradajza.",
+    ingredients: [
+      "1 kg zrelih paradajza",
+      "1 krastavac",
+      "1/2 crvene paprike",
+      "1/4 šolje crvenog luka",
+      "2 čena belog luka",
+      "3 kašike maslinovog ulja",
+      "2 kašike šerijeva",
+      "So i biber"
+    ],
+    instructions: [
+      "Paradajz blanširaj i oljušti.",
+      "Sav povrće seckai.",
+      "Blenduj sve sastojke.",
+      "Prođi kroz sito za glatkoću.",
+      "Ohladi najmanje 2 sata."
+    ],
+    prepTime: "30 minuta + hlađenje",
+    cookTime: "0 minuta",
+    servings: 4,
+    notes: ["Špansku letnja klasika", "Mora biti dobro ohlađeno", "Služi se sa dodacima"],
+    nutrition: { calories: "120 po porciji", protein: "3g", carbs: "15g", fat: "6g" }
+  },
+  "Goulash": {
+    name: "Gulaš (Mađarski)",
+    description: "Tradicionalni mađarski čorba sa govedinom i paprikom.",
+    ingredients: [
+      "800g goveđeg mesa",
+      "3 velika luka",
+      "3 kašike mađarske paprike",
+      "2 paradajza",
+      "2 paprike",
+      "3 krompira",
+      "Kumin",
+      "Lovorov list",
+      "So"
+    ],
+    instructions: [
+      "Meso iseci na kocke i proprži.",
+      "Dodaj luk i papriku začin.",
+      "Polij vodom i krčkaj 1.5 sata.",
+      "Dodaj povrće i krompir.",
+      "Kuva još 30 minuta."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "2 sata",
+    servings: 6,
+    notes: ["Mađarska nacionalna jela", "Paprika je najvažniji začin", "Tradicionalno se kuva u kotlu"],
+    nutrition: { calories: "420 po porciji", protein: "32g", carbs: "25g", fat: "22g" }
+  },
+  "Jambalaya": {
+    name: "Džambalaja (Kreolska)",
+    description: "Začinska kreolska jelo sa pirinčem, mesom i morskim plodovima.",
+    ingredients: [
+      "2 šolje pirinča",
+      "300g kobasica",
+      "300g pilećeg mesa",
+      "200g škampa",
+      "1 luk",
+      "1 paprika",
+      "3 čena belog luka",
+      "Cajun začin",
+      "4 šolje bujona"
+    ],
+    instructions: [
+      "Proprži kobasice i piletinu.",
+      "Dodaj povrće i začine.",
+      "Dodaj pirinač i bujon.",
+      "Krčkaj 20 minuta pokriveno.",
+      "Dodaj škampe u posledjih 5 minuta."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "45 minuta",
+    servings: 6,
+    notes: ["Kreolska kuhinja", "Cajun začini su ključni", "Tradicionalno jedno-sudovo jelo"],
+    nutrition: { calories: "480 po porciji", protein: "28g", carbs: "45g", fat: "20g" }
+  },
+  "Kung Pao Chicken": {
+    name: "Kung Pao piletina (Kineski)",
+    description: "Ljut kineski jelo sa piletinom, kikirikijem i čili papričice.",
+    ingredients: [
+      "500g pilećeg mesa",
+      "1/2 šolje kikirikija",
+      "8-10 čili papričica",
+      "3 čena belog luka",
+      "2 kašike soja sosa",
+      "1 kašika pirinčanog vina",
+      "1 kašička šećera",
+      "Đumbir",
+      "Zeleni luk"
+    ],
+    instructions: [
+      "Piletinu iseci na kockice.",
+      "Mari u soja sosu 15 minuta.",
+      "Prži kikirikija pa čili.",
+      "Dodaj piletinu i povrće.",
+      "Kratko prži 5-6 minuta."
+    ],
+    prepTime: "20 minuta + mariniranje",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: ["Sečuan kuhinja", "Može se prilagoditi ljutina", "Tradicionalno se služi sa pirinčem"],
+    nutrition: { calories: "380 po porciji", protein: "32g", carbs: "12g", fat: "22g" }
+  },
+  "Lobster Thermidor": {
+    name: "Lobster Termidor (Francuski)",
+    description: "Luksuzni francuski jastog sa kremastim sosom i gratiniranim sirom.",
+    ingredients: [
+      "2 velika jastoga",
+      "3 kašike butera",
+      "2 kašike brašna",
+      "200ml krema",
+      "100ml koka",
+      "2 žumanca",
+      "Gruyere sir",
+      "Senf",
+      "Paprika"
+    ],
+    instructions: [
+      "Skuvaj jastoge 8 minuta.",
+      "Izvadi meso iz školjki.",
+      "Napravi bešamel sos sa kremom.",
+      "Pomešaj meso sa sosom.",
+      "Napuni školjke, pospi sirom.",
+      "Gratiniraj u rerni."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "45 minuta",
+    servings: 2,
+    notes: ["Francuski luksuzan jelo", "Jastog mora biti sve svež", "Tradicionalno se flambiruje kjakom"],
+    nutrition: { calories: "520 po porciji", protein: "42g", carbs: "8g", fat: "35g" }
+  },
+  "Moussaka": {
+    name: "Musakka (Grčka)",
+    description: "Slojevi patlidžana, mesa i bešamel sosa - grčka klasika.",
+    ingredients: [
+      "3 patlidžana",
+      "500g mlevene jagnjetine",
+      "2 luka",
+      "400g konzerve paradajza",
+      "500ml mleka",
+      "50g butera",
+      "50g brašna",
+      "2 jaja",
+      "Feta sir",
+      "Origano"
+    ],
+    instructions: [
+      "Patlidžan iseci i pekčaj.",
+      "Proprži luk i meso.",
+      "Dodaj paradajz i začine.",
+      "Napravi bešamel sos.",
+      "Složi u slojeve: patlidžan, meso, sos.",
+      "Peči 45 minuta."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "1 sata",
+    servings: 6,
+    notes: ["Grčka nacionalna jelo", "Patlidžan ne mora se soliti", "Ohladi pre sečenja"],
+    nutrition: { calories: "420 po porciji", protein: "26g", carbs: "22g", fat: "26g" }
+  },
+  "Paella": {
+    name: "Paela (Španska)",
+    description: "Tradicionalnu špansku jelo sa šafranom, pirinčem i morskim plodovima.",
+    ingredients: [
+      "400g bomba pirinča",
+      "200g pilećeg mesa",
+      "200g škampa",
+      "200g dagnji",
+      "1 paprika",
+      "200g zelenog graha",
+      "Šafran",
+      "1L pilećeg bujona",
+      "Maslinovo ulje"
+    ],
+    instructions: [
+      "U paela tiganj prži piletinu.",
+      "Dodaj povrće i pirinač.",
+      "Polij toplim bujonom sa šafranom.",
+      "Krčkaj 10 min, dodaj morske plodove.",
+      "Kuva bez mešanja 15 minuta.",
+      "Ostavi da se odmori 5 minuta."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "35 minuta",
+    servings: 6,
+    notes: ["Valencijska klasika", "Ne sme se mešati tokom kuvanja", "Šafran je obavezan"],
+    nutrition: { calories: "450 po porciji", protein: "28g", carbs: "50g", fat: "15g" }
+  },
+  "Pho": {
+    name: "Fo (Vijetnamska)",
+    description: "Aromična vijetnamska supa sa testeninom i govedinom.",
+    ingredients: [
+      "500g govedjih kostiju",
+      "300g govedine",
+      "200g vijetnamske testenine",
+      "1 luk",
+      "Đumbir",
+      "Zvezda anis",
+      "Cimet",
+      "Klincići",
+      "Zeleni luk",
+      "Cilantro"
+    ],
+    instructions: [
+      "Kuva kosti 3 sata za čorbu.",
+      "Prži luk i začine.",
+      "Dodaj u čorbu, kuva 1 sat.",
+      "Skuvaj testerinu zasebno.",
+      "Složi: testenina, meso, vrele čorbu.",
+      "Dodaj sveži đumbiri i cilantro."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "4 sata",
+    servings: 4,
+    notes: ["Vijetnamski nacionalni jelo", "Čorba mora da bude gusta", "Služi se sa dodacima"],
+    nutrition: { calories: "350 po porciji", protein: "25g", carbs: "40g", fat: "10g" }
+  },
+  "Ratatouille": {
+    name: "Ratatuj (Francuski)",
+    description: "Francuski čorba od mediteranskog povrća.",
+    ingredients: [
+      "2 tikvice",
+      "1 patlidžan",
+      "2 paprike",
+      "4 paradajza",
+      "1 luk",
+      "4 čena belog luka",
+      "Timijan",
+      "Bosiljak",
+      "Maslinovo ulje",
+      "Lovorov list"
+    ],
+    instructions: [
+      "Sva povrće iseci na kocke.",
+      "Proprži luk i beli luk.",
+      "Dodaj patlidžan, pa paprike.",
+      "Dodaj tikvice i paradajz.",
+      "Krčkaj 30 minuta sa začinima.",
+      "Serviraj toplo ili hladno."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "45 minuta",
+    servings: 4,
+    notes: ["Francuska provansu kuhinja", "Može se služiti kao prilog", "Ukusno je i hladno"],
+    nutrition: { calories: "180 po porciji", protein: "5g", carbs: "25g", fat: "8g" }
+  },
+  "Schnitzel": {
+    name: "Šnicel (Austrijski)",
+    description: "Hrskave bečke šnicle od telećeg mesa u prezlama.",
+    ingredients: [
+      "4 tanka odreska telećina",
+      "2 jaja",
+      "200g prezli",
+      "100g brašna",
+      "Ulje za prženje",
+      "Limun",
+      "Peršun",
+      "So i biber"
+    ],
+    instructions: [
+      "Meso istanjiti i začiniti.",
+      "Provući kroz brašno, jaje, prezle.",
+      "Prže u dubokom ulju.",
+      "Prži 2-3 minuta svaku stranu.",
+      "Serviraj sa limunom i peršunom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "10 minuta",
+    servings: 4,
+    notes: ["Austrijska klasika", "Teletina je tradicionalna", "Ulje mora biti vruće"],
+    nutrition: { calories: "520 po porciji", protein: "35g", carbs: "25g", fat: "32g" }
+  },
+  "Tom Yum": {
+    name: "Tom Jum (Tajlandska)",
+    description: "Začinska tajlandska supa sa škampima i limun travom.",
+    ingredients: [
+      "500g škampa",
+      "4 stabla limun trave",
+      "6 kafir lajm listova",
+      "200g pečurki",
+      "3 tajlandske čili",
+      "3 kašike fish sauce",
+      "2 kašike tamarind paste",
+      "Cilantro",
+      "1L vode"
+    ],
+    instructions: [
+      "Vodu dovesti do ključanja.",
+      "Dodati limun travu i lajm listove.",
+      "Dodati pečurke i čili.",
+      "Dodati škampe, kuvati 3 minuta.",
+      "Začiniti fish sauce i tamarind.",
+      "Ukrašaj cilantro."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "20 minuta",
+    servings: 4,
+    notes: ["Tajlandska klasika", "Limun trava je obavezna", "Može biti vrlo ljuto"],
+    nutrition: { calories: "220 po porciji", protein: "28g", carbs: "12g", fat: "6g" }
+  },
+  "Wellington": {
+    name: "Beef Velington (Engleski)",
+    description: "Luksuzna engleski govedina u lisnatom testu sa paštetom.",
+    ingredients: [
+      "1kg govedina filet",
+      "300g paštet od goveđe džiger",
+      "500g lisnatog testa",
+      "300g pečurki",
+      "2 kašike senfa",
+      "Pršut",
+      "1 jaje",
+      "Timijan",
+      "So i biber"
+    ],
+    instructions: [
+      "Govedinu opeci sa svih strana.",
+      "Namaži senf pa ohladi.",
+      "Pečurke sitno saseci i proprži.",
+      "Zamotak: pršut, paštet, meso.",
+      "Zamotat u testo i peći 25 min.",
+      "Ohladi 10 min pre sečenja."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "35 minuta",
+    servings: 6,
+    notes: ["Gordon Ramsay klasika", "Meso mora biti medium-rare", "Testo ne sme biti mokro"],
+    nutrition: { calories: "620 po porciji", protein: "45g", carbs: "28g", fat: "38g" }
+  },
+  "Biryani": {
+    name: "Birijani (Indijski)",
+    description: "Aromični indijski pirinač sa mesom i začinima.",
+    ingredients: [
+      "500g basmati pirinča",
+      "600g jagnjetine ili pilećeg mesa",
+      "2 luka",
+      "1 šolja jogurta",
+      "Šafran",
+      "Garam masala",
+      "Đumbir-beli luk pasta",
+      "Ment listovi",
+      "Ghee"
+    ],
+    instructions: [
+      "Mari meso u jogurtu 2 sata.",
+      "Pirinač kuva do pola gotov.",
+      "Luk proprži do zlatno.",
+      "Složi slojeve: pirinač, meso, luk.",
+      "Kuva na parč 45 minuta.",
+      "Serviraj sa rajtom."
+    ],
+    prepTime: "30 min + 2h mariniranje",
+    cookTime: "1.5 sata",
+    servings: 6,
+    notes: ["Indijska kraljevska jelo", "Šafran je obavezan", "Tradicionalno se kuva na dum"],
+    nutrition: { calories: "520 po porciji", protein: "32g", carbs: "55g", fat: "18g" }
+  },
+  "Bouillabaisse": {
+    name: "Bujabes (Francuski)",
+    description: "Tradicionalna provansalska čorba od ribe sa šafranom.",
+    ingredients: [
+      "1kg mešanih riba",
+      "500g školjki",
+      "2 paradajza",
+      "1 luk",
+      "4 čena belog luka",
+      "Šafran",
+      "Paster anis",
+      "Maslinovo ulje",
+      "Baguette"
+    ],
+    instructions: [
+      "Ribu iseci na komade.",
+      "Proprži luk, dodaj paradajz.",
+      "Dodaj začine i vodu.",
+      "Krčkaj 20 minuta.",
+      "Dodaj ribu po tvrdoći.",
+      "Serviraj sa rouille sosom."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "40 minuta",
+    servings: 6,
+    notes: ["Marselj klasika", "Različite ribe obavezno", "Šafran daje boju"],
+    nutrition: { calories: "380 po porciji", protein: "42g", carbs: "15g", fat: "16g" }
+  },
+  "Tagine": {
+    name: "Tažin (Marokanski)",
+    description: "Sporo kuvano marokansku jelo u glinenom sudu.",
+    ingredients: [
+      "800g jagnjetina",
+      "2 luka",
+      "4 šljive",
+      "1/2 šolje badema",
+      "1 kašička cimet",
+      "1 kašička đumbirila",
+      "Šafran",
+      "Med",
+      "Maslinovo ulje"
+    ],
+    instructions: [
+      "Meso proprži sa lukom.",
+      "Dodaj začine i malo vode.",
+      "Krčkaj pokriveno 1.5 sata.",
+      "Dodaj šljive i bademe.",
+      "Kuva još 30 minuta.",
+      "Zasladi medom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "2 sata",
+    servings: 4,
+    notes: ["Marokanska klasika", "Tradicionalno se kuva u glinenom tažinu", "Slatko-slano jelo"],
+    nutrition: { calories: "520 po porciji", protein: "38g", carbs: "28g", fat: "28g" }
+  },
+  "Cassoulet": {
+    name: "Kasule (Francuski)",
+    description: "Francuski čorba od belih pasuja sa mesom.",
+    ingredients: [
+      "500g belih pasuja",
+      "300g kobasice",
+      "300g pačje konfit",
+      "200g slanine",
+      "2 luka",
+      "4 paradajza",
+      "Timijan",
+      "Lovorov list",
+      "Prezle"
+    ],
+    instructions: [
+      "Pasulj kvas preko noći.",
+      "Kuva pasulj 1 sat.",
+      "Proprži meso i luk.",
+      "Složi u vatrostalni sud.",
+      "Peći 2 sata, dodavaj tečnost.",
+      "Posprši prezlama."
+    ],
+    prepTime: "30 min + kvašenje",
+    cookTime: "3 sata",
+    servings: 8,
+    notes: ["Francuski zimski klasik", "Tradicionalno se peče satima", "Različita mesa po regionima"],
+    nutrition: { calories: "580 po porciji", protein: "35g", carbs: "45g", fat: "28g" }
+  },
+  "Mole": {
+    name: "Mole (Meksikanski)",
+    description: "Kompleksan meksički sos sa čokoladom i čilijem.",
+    ingredients: [
+      "6 vrsta čili paprika",
+      "100g gorke čokolade",
+      "2 paradajza",
+      "1 luk",
+      "Kikiriki",
+      "Susan",
+      "Kanela",
+      "Anis",
+      "Pileće meso"
+    ],
+    instructions: [
+      "Čili prži i kvas u vrućoj vodi.",
+      "Blenda sa orašićim i začinima.",
+      "Proprži pastu u ulju.",
+      "Dodaj čokoladu i tečnost.",
+      "Krčkaj 1 sat.",
+      "Služi sa piletinom."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "1.5 sata",
+    servings: 6,
+    notes: ["Meksická nacionalna sos", "Preko 20 sastojaka tradicionalno", "Čokolada balansira ljutinu"],
+    nutrition: { calories: "420 po porciji", protein: "28g", carbs: "25g", fat: "24g" }
+  },
+  "Cacio e Pepe": {
+    name: "Kačio e pepe (Italijanski)",
+    description: "Jednostavne rimski pasta sa sirom i biberom.",
+    ingredients: [
+      "400g spaghetti",
+      "150g Pecorino Romano sira",
+      "2 kašičke svež crnog biber",
+      "So za vodu",
+      "Pasta voda"
+    ],
+    instructions: [
+      "Skuvaj pastu al dente.",
+      "Rendat sir i pomešaj sa biberom.",
+      "Dodaj pastu vodu da pravit kremu.",
+      "Drenira pastu, ostavi vodu.",
+      "Brzo pomešaj sa sirom.",
+      "Dodaj pasta vodu za kremastost."
+    ],
+    prepTime: "5 minuta",
+    cookTime: "12 minuta",
+    servings: 4,
+    notes: ["Rimski klasik", "Samo 4 sastojka", "Tehnika je ključna"],
+    nutrition: { calories: "480 po porciji", protein: "18g", carbs: "70g", fat: "16g" }
+  },
+  "Adobo": {
+    name: "Adobo (Filipinski)",
+    description: "Nacionalno filipinsko jelo sa mesom u sirćetu i soja sosu.",
+    ingredients: [
+      "1kg pilećeg ili svinjskog mesa",
+      "1/2 šolje sirćeta",
+      "1/4 šolje soja sosa",
+      "1 glavica luka",
+      "6 čenova belog luka",
+      "3 lovorova lista",
+      "1 kašička crnog bibera",
+      "So po ukusu"
+    ],
+    instructions: [
+      "Mari meso u sirćetu 30 minuta.",
+      "Proprži luk i beli luk.",
+      "Dodaj meso i proprži.",
+      "Polij mariniranim sirćetom.",
+      "Dodaj soja sos i začine.",
+      "Krčkaj 30-40 minuta."
+    ],
+    prepTime: "15 min + 30 min mariniranje",
+    cookTime: "45 minuta",
+    servings: 6,
+    notes: ["Filipinski nacionalni jelo", "Sirće konzervira meso", "Može se praviti od različitih mesa"],
+    nutrition: { calories: "380 po porciji", protein: "32g", carbs: "8g", fat: "24g" }
+  },
+  "Shakshuka": {
+    name: "Šakšuka (Bliskoistočna)",
+    description: "Jaja kuvana u začinskom sosu od paradajza.",
+    ingredients: [
+      "6 jaja",
+      "400g konzerve paradajza",
+      "1 crvena paprika",
+      "1 luk",
+      "4 čena belog luka",
+      "1 kašička kumina",
+      "1 kašička paprike",
+      "Feta sir",
+      "Peršun"
+    ],
+    instructions: [
+      "Proprži luk i papriku.",
+      "Dodaj beli luk i začine.",
+      "Polij paradajzom, krčkaj 10 min.",
+      "Napravi udubljenja za jaja.",
+      "Ulupi jaja u udubljenja.",
+      "Kuva 8-10 minuta pokriveno."
+    ],
+    prepTime: "10 minuta",
+    cookTime: "25 minuta",
+    servings: 3,
+    notes: ["Bliskoistočni brunch", "Jaja treba da budu meka", "Služi se direktno iz tiganja"],
+    nutrition: { calories: "280 po porciji", protein: "16g", carbs: "15g", fat: "18g" }
+  },
+  "Bibimbap": {
+    name: "Bibimbap (Korejski)",
+    description: "Korejski pirinač sa povrćem, mesom i jajem.",
+    ingredients: [
+      "2 šolje kuvanog pirinča",
+      "200g govedine",
+      "4 jaja",
+      "Šargarepa",
+      "Spanać",
+      "Bean sprouts",
+      "Gochujang pasta",
+      "Susan ulje",
+      "Soja sos"
+    ],
+    instructions: [
+      "Svako povrće blanširaj zasebno.",
+      "Govedinu mari u soja sosu.",
+      "Proprži meso i povrće.",
+      "Složi preko pirinča u krugu.",
+      "Na vrh stavi prženo jaje.",
+      "Služi sa gochujang pastom."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "20 minuta",
+    servings: 4,
+    notes: ["Korejski comfort food", "Povrće mora biti šareno", "Gochujang daje ljutinu"],
+    nutrition: { calories: "450 po porciji", protein: "22g", carbs: "55g", fat: "16g" }
+  },
+  "Carbonnade": {
+    name: "Karbonada (Belgijska)",
+    description: "Belgijski gulaš od govedine kuvano u pivu.",
+    ingredients: [
+      "1kg govedine",
+      "500ml belgijskog piva",
+      "3 velika luka",
+      "2 kašike brašna",
+      "2 kašike smeđeg šećera",
+      "2 kašike senfa",
+      "Timijan",
+      "Lovorov list"
+    ],
+    instructions: [
+      "Meso iseci i proprži.",
+      "Luk karamelize 20 minuta.",
+      "Dodaj brašno i pivu.",
+      "Vrati meso, dodaj začine.",
+      "Krčkaj pokriveno 2 sata.",
+      "Služi sa pomfritom."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "2.5 sata",
+    servings: 6,
+    notes: ["Belgijska klasika", "Pivo mora biti kvalitetno", "Tradicionalno se služi sa pomfritom"],
+    nutrition: { calories: "420 po porciji", protein: "35g", carbs: "18g", fat: "22g" }
+  },
+  "Rendang": {
+    name: "Rendang (Indonezijski)",
+    description: "Sporo kuvano indonezijsko meso u kokosovom mleku.",
+    ingredients: [
+      "1kg govedine",
+      "400ml kokosovog mleka",
+      "3 kašike rendang paste",
+      "2 stabla limun trave",
+      "4 kafir lajm lista",
+      "3 kašike tamarind paste",
+      "Palm šećer",
+      "So"
+    ],
+    instructions: [
+      "Meso iseci na krupne komade.",
+      "Proprži rendang pastu.",
+      "Dodaj meso i kokosovo mleko.",
+      "Dodaj začine i tamarind.",
+      "Krčkaj 2-3 sata dok se tečnost ne upari.",
+      "Meso mora biti tamno braon."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "3 sata",
+    servings: 6,
+    notes: ["Indonezijska klasika", "Sporo kuvanje je ključno", "Može se čuva danima"],
+    nutrition: { calories: "480 po porciji", protein: "38g", carbs: "12g", fat: "32g" }
+  },
+  "Borscht": {
+    name: "Borš (Istočnoevropski)",
+    description: "Tradicionalna supa od cvekle sa kiselim kubom.",
+    ingredients: [
+      "500g svežeg cvekla",
+      "300g kupusa",
+      "2 šargarepe",
+      "2 krompira",
+      "1 luk",
+      "400g govedine",
+      "2 kašike paradajz paste",
+      "Kiseli krem"
+    ],
+    instructions: [
+      "Govedinu skuvaj za čorbu.",
+      "Cvekla rendat i dodaj u čorbu.",
+      "Proprži luk sa paradajz pastom.",
+      "Dodaj povrće postupno.",
+      "Krčkaj 40 minuta.",
+      "Služi sa kiselim kremom."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "1.5 sata",
+    servings: 6,
+    notes: ["Istočnoevropska klasika", "Cvekla daje boju", "Može biti vegetarijanski"],
+    nutrition: { calories: "280 po porciji", protein: "18g", carbs: "35g", fat: "8g" }
+  },
+  "Saag Paneer": {
+    name: "Sag paner (Indijski)",
+    description: "Kremasti indijski spanać sa svežim sirom.",
+    ingredients: [
+      "500g spanića",
+      "250g paneer sira",
+      "1 luk",
+      "4 čena belog luka",
+      "Đumbir",
+      "2 paradajza",
+      "Garam masala",
+      "Kurkuma",
+      "Krema"
+    ],
+    instructions: [
+      "Spanać blanširaj i blenduj.",
+      "Paneer iseci na kocke.",
+      "Proprži luk, beli luk, đumbir.",
+      "Dodaj paradajz i začine.",
+      "Dodaj spanać puree.",
+      "Dodaj paneer i kremu."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "25 minuta",
+    servings: 4,
+    notes: ["Indijska vegetarijanska klasika", "Paneer ne treba da se prekuva", "Služi se sa naan-om"],
+    nutrition: { calories: "320 po porciji", protein: "18g", carbs: "12g", fat: "24g" }
+  },
+  "Laksa": {
+    name: "Laksa (Malezijski)",
+    description: "Začinska malezijska supa sa testeninom i kokosovim mlekom.",
+    ingredients: [
+      "200g rice noodles",
+      "400ml kokosovog mleka",
+      "3 kašike laksa paste",
+      "200g škampa",
+      "100g tofu",
+      "Bean sprouts",
+      "Tvrdo kuvano jaje",
+      "Cilantro",
+      "Limun"
+    ],
+    instructions: [
+      "Laksa pastu proprži u ulju.",
+      "Dodaj kokosovo mleko i vodu.",
+      "Dodaj škampe i tofu.",
+      "Testeninu skuvaj zasebno.",
+      "Složi u činiju sa dodacima.",
+      "Polij vrućom supom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "25 minuta",
+    servings: 4,
+    notes: ["Malezijska klasika", "Laksa pasta je ključna", "Različite varijante po regionima"],
+    nutrition: { calories: "420 po porciji", protein: "24g", carbs: "38g", fat: "22g" }
+  },
+  "Chimichanga": {
+    name: "Čimičanga (Meksička-Američka)",
+    description: "Prženi meksički burito sa mesom i sirom.",
+    ingredients: [
+      "4 velike tortilje",
+      "300g mlevenog mesa",
+      "200g sira",
+      "1 luk",
+      "Frijole",
+      "Salsa",
+      "Kisela pavlaka",
+      "Kumin",
+      "Ulje za prženje"
+    ],
+    instructions: [
+      "Meso proprži sa lukom i začinima.",
+      "Dodaj frijole i sir.",
+      "Napuni tortilje i zamotat.",
+      "Prži u dubokom ulju 3-4 minuta.",
+      "Služi sa salsom i pavlakom."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "15 minuta",
+    servings: 4,
+    notes: ["Tex-Mex kuhinja", "Mora biti dobro zatvoreno", "Alternativa: peći umesto pržiti"],
+    nutrition: { calories: "580 po komadu", protein: "26g", carbs: "42g", fat: "34g" }
+  },
+  "Dolmades": {
+    name: "Dolmades (Grčke)",
+    description: "Punjen vinov lišće sa pirinčem i mesom.",
+    ingredients: [
+      "30 vinovih listova",
+      "1 šolja pirinča",
+      "300g mlevenog mesa",
+      "1 luk",
+      "Peršun",
+      "Ment",
+      "Limunov sok",
+      "Maslinovo ulje",
+      "So i biber"
+    ],
+    instructions: [
+      "Listove blanšira 2 minuta.",
+      "Meso proprži sa lukom.",
+      "Dodaj pirinač i začine.",
+      "Napuni listove i zamota.",
+      "Ređa u šerpu sa uljem.",
+      "Krčka pokriveno 45 minuta."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "50 minuta",
+    servings: "30 komada",
+    notes: ["Grčka tradicionalna jelo", "Može biti vegetarijanski", "Služi se hladno ili toplo"],
+    nutrition: { calories: "45 po komadu", protein: "2g", carbs: "6g", fat: "2g" }
+  },
+  "Pierogi": {
+    name: "Piroge (Poljske)",
+    description: "Poljski knedle sa različitim punjenjem.",
+    ingredients: [
+      "3 šolje brašna",
+      "1 jaje",
+      "1/2 šolje kisele pavlake",
+      "500g krompira",
+      "200g skute",
+      "1 luk",
+      "Puter",
+      "So i biber"
+    ],
+    instructions: [
+      "Napravi testo od brašna, jajeta i pavlake.",
+      "Krompir skuvaj i propasi sa skutom.",
+      "Razvij testo i iseci krugove.",
+      "Napuni i zalemiji ivice.",
+      "Kuva u slanoj vodi 5 minuta.",
+      "Proprži sa lukom u puteru."
+    ],
+    prepTime: "60 minuta",
+    cookTime: "20 minuta",
+    servings: "24 komada",
+    notes: ["Poljska nacional jelo", "Različita punjena po regionima", "Može se zalije"],
+    nutrition: { calories: "120 po komadu", protein: "4g", carbs: "18g", fat: "4g" }
+  },
+  "Bangers and Mash": {
+    name: "Bangres end meš (Engleski)",
+    description: "Engleske kobasice sa pireom od krompira.",
+    ingredients: [
+      "8 engleskih kobasica",
+      "1kg krompira",
+      "100ml mleka",
+      "50g putera",
+      "2 luka",
+      "2 kašike brašna",
+      "500ml govedinjeg bujona",
+      "So i biber"
+    ],
+    instructions: [
+      "Kobasice prži na srednjoj vatri.",
+      "Krompir skuva i pravi pire.",
+      "Za sos: luk karamelize, dodaj brašno.",
+      "Polij bujonom, krčkaj 10 minuta.",
+      "Serviraj kobasice sa piroom.",
+      "Polij onion gravy-jem."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "30 minuta",
+    servings: 4,
+    notes: ["Engleski pub klasik", "Onion gravy je obavezin", "Comfort food"],
+    nutrition: { calories: "620 po porciji", protein: "22g", carbs: "55g", fat: "35g" }
+  },
+  "Ceviche": {
+    name: "Sevič (Peruanski)",
+    description: "Svež riba \"kuvano\" u limunskom soku.",
+    ingredients: [
+      "500g sveze bele ribe",
+      "1/2 šolje limun soka",
+      "1 crveni luk",
+      "2 chili papričice",
+      "Cilantro",
+      "Kukuruz",
+      "Slatki krompir",
+      "So i biber"
+    ],
+    instructions: [
+      "Ribu iseci na male komade.",
+      "Polij limun sokom, ostavi 15 min.",
+      "Luk iseci tanko.",
+      "Dodaj luk, chili i cilantro.",
+      "Začini solju i biberom.",
+      "Serviraj odmah sa prilozima."
+    ],
+    prepTime: "20 minuta + 15 min \"kuvanje\"",
+    cookTime: "0 minuta",
+    servings: 4,
+    notes: ["Peruanska klasika", "Riba mora biti vrlo sveža", "Kiselina \"kuva\" ribu"],
+    nutrition: { calories: "180 po porciji", protein: "28g", carbs: "12g", fat: "2g" }
+  },
+  "Tabbouleh": {
+    name: "Tabulii (Libanonska)",
+    description: "Osvežavajuća libanonska salata sa bulgur-om.",
+    ingredients: [
+      "1/2 šolje bulgur-a",
+      "3 šolje peršuna",
+      "1/2 šolje mente",
+      "4 paradajza",
+      "2 zelena luka",
+      "1/4 šolje limun soka",
+      "1/4 šolje maslinovog ulja",
+      "So i biber"
+    ],
+    instructions: [
+      "Bulgur potopa u vruću vodu 20 min.",
+      "Peršun i ment sitno iseci.",
+      "Paradajz i luk iseci na kocke.",
+      "Pomešaj sve sastojke.",
+      "Začini limunom i uljem.",
+      "Ostavi 30 min da se ukusi upiju."
+    ],
+    prepTime: "25 minuta + 30 min mariniranje",
+    cookTime: "0 minuta",
+    servings: 6,
+    notes: ["Libanonska klasika", "Peršun je glavna sastojak", "Mora biti vrlo sveži"],
+    nutrition: { calories: "150 per serving", protein: "4g", carbs: "22g", fat: "6g" }
+  },
+  "Arancini": {
+    name: "Arančini (Italijanski)",
+    description: "Pohovan i prženi rizoto kuglice sa sirom.",
+    ingredients: [
+      "2 šolje hladnog rizota",
+      "100g mozzarella sira",
+      "2 jaja",
+      "1 šolja brašna",
+      "2 šolje prezli",
+      "Ulje za prženje",
+      "Marinara sos"
+    ],
+    instructions: [
+      "Od rizota formiraj kuglice.",
+      "U centar stavi kocku sira.",
+      "Prodrzi kroz brašno, jaje, prezle.",
+      "Prži u vrućem ulju 3-4 minuta.",
+      "Serves sa marinara sosom."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "15 minuta",
+    servings: "12 komada",
+    notes: ["Sicilijska clasika", "Odličan za ostatke rizota", "Mora biti vrlo vruće ulje"],
+    nutrition: { calories: "180 po komadu", protein: "8g", carbs: "20g", fat: "8g" }
+  },
+  "Scotch Eggs": {
+    name: "Škotska jaja (Engleski)",
+    description: "Tvrdo kuvana jaja obmotana u mleveno meso i pržena.",
+    ingredients: [
+      "6 tvrdo kuvanih jaja",
+      "400g kobasica bez kore",
+      "2 sirova jaja",
+      "100g brašna",
+      "200g prezli",
+      "Ulje za prženje",
+      "Senf"
+    ],
+    instructions: [
+      "Oljusti kuvana jaja.",
+      "Kobasice otkloni kore i izmesi.",
+      "Obmotaj svako jaje mesom.",
+      "Prodrzi kroz brašno, jaje, prezle.",
+      "Prži u vrućem ulju 5-6 minuta.",
+      "Služi sa senf."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "10 minuta",
+    servings: 6,
+    notes: ["Engleski pub snack", "Meso mora potpuno pokriti jaje", "Odličan za picnic"],
+    nutrition: { calories: "320 po komadu", protein: "18g", carbs: "15g", fat: "22g" }
+  },
+  "Spanakopita": {
+    name: "Spanakopita (Grčka)",
+    description: "Grčka pita sa spanáćem i feta sirom u filo testo.",
+    ingredients: [
+      "500g spanáća",
+      "250g feta sira",
+      "200g skute",
+      "3 jaja",
+      "1 luk",
+      "10 listova filo testa",
+      "Maslinovo ulje",
+      "Dill"
+    ],
+    instructions: [
+      "Spanać blanširaj i iscedi.",
+      "Luk proprži do meko.",
+      "Pomešaj spanać, sireve, jaja.",
+      "Namaži filo listove uljem.",
+      "Složi naizmenično sa punjenjem.",
+      "Peči 40 minuta na 180°C."
+    ],
+    prepTime: "30 minuta",
+    cookTime: "45 minuta",
+    servings: 8,
+    notes: ["Grčka klasika", "Filo testo mora biti pokriveno", "Može se zamrznuti"],
+    nutrition: { calories: "280 po komadu", protein: "14g", carbs: "18g", fat: "18g" }
+  },
+  "Khachapuri": {
+    name: "Hačapuri (Gruzijski)",
+    description: "Gruzijski hleb punjen sirom sa jajem na vrhu.",
+    ingredients: [
+      "500g brašna",
+      "300ml mleka",
+      "1 kašika šećera",
+      "1 kašička kvasca",
+      "400g gruzijskog sira",
+      "2 jaja",
+      "Puter",
+      "So"
+    ],
+    instructions: [
+      "Napravi testo od brašna, mleka, kvasca.",
+      "Ostavi da naraste 1 sat.",
+      "Sir pomešaj sa jajetima.",
+      "Razvij testo u ovalne oblike.",
+      "Napuni sirom i zatvori.",
+      "Peči, na vrh stavi jaje i puter."
+    ],
+    prepTime: "30 min + 1h narastanje",
+    cookTime: "25 minuta",
+    servings: 4,
+    notes: ["Gruzijska nacionalna jelo", "Ajaruli stil sa jajem", "Jede se toplim"],
+    nutrition: { calories: "480 po komadu", protein: "22g", carbs: "45g", fat: "24g" }
+  },
+  "Baklava": {
+    name: "Baklava (Balkan/Bliskoistočna)",
+    description: "Slojevita poslastice od filo testa, oraha i sirupa.",
+    ingredients: [
+      "20 listova filo testa",
+      "300g oraha",
+      "200g putera",
+      "1 šolja šećera",
+      "1 šolja vode",
+      "1/2 šolje meda",
+      "Limunov sok",
+      "Cimet"
+    ],
+    instructions: [
+      "Orahe sitno saseci sa cimetom.",
+      "Namaži listove puterom.",
+      "Složi 10 listova, pospi orasi.",
+      "Pokrij ostalisrn listovima.",
+      "Iseci na rombjeve, peči 30 min.",
+      "Polij vrućim sirupom."
+    ],
+    prepTime: "45 minuta",
+    cookTime: "35 minuta",
+    servings: 16,
+    notes: ["Balkan i bliskoistočna klasika", "Sirup se dodaje na vruć", "Ohladi pre sečenja"],
+    nutrition: { calories: "280 po komadu", protein: "5g", carbs: "32g", fat: "16g" }
+  },
+  "Stroganoff": {
+    name: "Stroganof (Ruski)",
+    description: "Ruski govedina u kremastom sosu sa pečurkama.",
+    ingredients: [
+      "600g govedinje file",
+      "300g pečurki",
+      "1 luk",
+      "200ml kisele pavlake",
+      "2 kašike senfa",
+      "2 kašike brašna",
+      "Bujun",
+      "Peršun"
+    ],
+    instructions: [
+      "Meso iseci na trakice i proprži.",
+      "Luk i pečurke proprži zasebno.",
+      "Napravi sos od brašna i bujiona.",
+      "Dodaj pavlaku i senf.",
+      "Vrati meso i povrće.",
+      "Služi sa testeninom ili pirinčem."
+    ],
+    prepTime: "20 minuta",
+    cookTime: "25 minuta",
+    servings: 4,
+    notes: ["Ruski klasik", "Meso ne sme se prekuva", "Tradicionalno se služi sa testeninom"],
+    nutrition: { calories: "420 po porciji", protein: "32g", carbs: "12g", fat: "28g" }
+  },
+  "Confit de Canard": {
+    name: "Konfi od patke (Francuski)",
+    description: "Tradicionalni francuski način pripreme patke u sopstvenoj masti.",
+    ingredients: [
+      "4 buta patke",
+      "2 kašike morske soli",
+      "Timijan",
+      "Lovorov list",
+      "4 čena belog luka",
+      "500ml patje masti",
+      "Crni biber"
+    ],
+    instructions: [
+      "Patku zasoli i ostavi 24 sata.",
+      "Opere i osusi.",
+      "Stavi u patju mast sa začinima.",
+      "Kuva sporo 2 sata na 75°C.",
+      "Čuva se u masti.",
+      "Pre služenja kri šići kožu."
+    ],
+    prepTime: "20 min + 24h soljenje",
+    cookTime: "2 sata",
+    servings: 4,
+    notes: ["Francuski tradicionalna metoda", "Može se čuvati mesecima", "Sporo kuvanje je ključno"],
+    nutrition: { calories: "580 po butu", protein: "42g", carbs: "0g", fat: "44g" }
+  },
+  "Kaiserschmarrn": {
+    name: "Kajzeršmarn (Austrijski)",
+    description: "Austrijski razderane palačinke sa šljivama i pudingom šećerom.",
+    ingredients: [
+      "6 jaja",
+      "200ml mleka",
+      "150g brašna",
+      "3 kašike šećera",
+      "Puter",
+      "Šljive",
+      "Puding šećer",
+      "Vanila"
+    ],
+    instructions: [
+      "Razdvoji žumanca i belančeta.",
+      "Pomešaj žumanca, mleko, brašno.",
+      "Belančeta umuć sa šećerom.",
+      "Nežno saspoji smeše.",
+      "Peci u tiganju, pravi komade.",
+      "Pospi puding šećerom."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "20 minuta",
+    servings: 4,
+    notes: ["Austrijska kraljevska desert", "Mora biti rastržen", "Služi se odmah"],
+    nutrition: { calories: "380 po porciji", protein: "14g", carbs: "48g", fat: "16g" }
+  },
+  "Hasselback Potatoes": {
+    name: "Haselback krompir (Švedski)",
+    description: "Švedski krompir sečen na tanteke i pečen do hrskav.",
+    ingredients: [
+      "8 velikih krompira",
+      "4 kašike maslinovog ulja",
+      "2 kašike putera",
+      "So i biber",
+      "Rozmerain",
+      "Beli luk",
+      "Parmezan sir"
+    ],
+    instructions: [
+      "Krompir iseci na tanke kešnje (ne do kraja).",
+      "Namaži uljem i začini.",
+      "Peći 30 minuta na 200°C.",
+      "Namaži puterom i začinima.",
+      "Peći još 15 minuta.",
+      "Pospi parmezanom poslednih 5 min."
+    ],
+    prepTime: "15 minuta",
+    cookTime: "45 minuta",
+    servings: 4,
+    notes: ["Švedska klasika", "Sečenje mora biti precizno", "Hrskav spolja, mekan unutra"],
+    nutrition: { calories: "280 po porciji", protein: "6g", carbs: "45g", fat: "10g" }
   }
 };
 
@@ -12071,7 +32204,331 @@ export const getRecipe = (foodName: string): Recipe => {
     "Mandu": "Mandu",
     "Bossam": "Bossam",
     "Jajangmyeon": "Jajangmyeon",
-    "Korean Corn Dogs": "Korean Corn Dogs"
+    "Korean Corn Dogs": "Korean Corn Dogs",
+
+    // Serbian food mappings
+    "Američki Vafli": "American Waffles",
+    "Avokado Tost": "Avocado Toast",
+    "Baklava": "Baklava Traditional",
+    "Belgijski Vafli": "Belgian Waffles",
+    "Buddha Činija": "Buddha Bowl",
+    "Burek": "Burek",
+    "Burger sa Sirom": "Cheeseburger",
+    "Burito": "Burrito",
+    "Cezar Salata": "Caesar Salad",
+    "Chia Puding": "Chia Pudding",
+    "Dimljeni Losos": "Smoked Salmon",
+    "Falafel": "Falafel Traditional",
+    "Gibanica": "Cheese Pie",
+    "Grilovana Piletina": "Grilled Chicken GF",
+    "Grilovana Riba": "Grilled Fish",
+    "Grilovana Tuna": "Grilled Tuna",
+    "Grilovani Losos": "Grilled Salmon GF",
+    "Grčka Salata": "Greek Salad",
+    "Grčki Jogurt": "Greek Yogurt",
+    "Gvakomole": "Guacamole",
+    "Humus": "Hummus Classic",
+    "Kaprese Salata": "Caprese Salad",
+    "Karađorđeva šnicla": "Schnitzel Cordon Bleu",
+    "Kimči": "Kimchi Korean",
+    "Kinoa Burger": "Quinoa Burger",
+    "Kinoa Salata": "Quinoa Salad",
+    "Kinoa Činija": "Quinoa Bowl",
+    "Klasični Burger": "Burger",
+    "Klub Sendvič": "Club Sandwich",
+    "Losos File": "Grilled Salmon GF",
+    "Miso Supa": "Miso Soup",
+    "Musaka": "Moussaka",
+    "Pad Tai": "Pad Thai Authentic",
+    "Palačinke": "Pancakes",
+    "Palačinke sa džemom": "Palačinke sa džemom",
+    "Palačinke sa eurokremom": "Palačinke sa eurokremom",
+    "Palačinke sa medom": "Pancakes with Honey",
+    "Panini": "Panini",
+    "Pasta": "Pasta",
+    "Pasulj": "Bean Stew",
+    "Pečeni Losos": "Grilled Salmon GF",
+    "Pečurka Rizoto": "Mushroom Risotto",
+    "Pileća Salata": "Chicken Salad",
+    "Pileća Supa": "Chicken Soup",
+    "Pileća Tikka": "Chicken Tikka",
+    "Pileća u Butteru": "Butter Chicken",
+    "Pileće batake": "Chicken Thighs",
+    "Pileće krile": "Buffalo Wings",
+    "Pileći Burger": "Chicken Burger",
+    "Pileći file": "Grilled Chicken GF",
+    "Pileći šnicl": "Chicken Schnitzel",
+    "Pirinač Činija": "Rice Bowl",
+    "Pohovano Povrće": "Vegetable Stir Fry GF",
+    "Poke Činija": "Poke Bowl",
+    "Povrće Supa": "Vegetable Soup",
+    "Povrće Vrap": "Veggie Wrap",
+    "Povrće na Tiganju": "Vegetable Stir Fry GF",
+    "Prebranac": "Baked Beans",
+    "Protein Činija": "Protein Bowl",
+    "Ramen": "Ramen Traditional",
+    "Rice Bowl": "Rice Bowl",
+    "Rizoto": "Risotto",
+    "Salata Činija": "Buddha Bowl",
+    "Sarma": "Sarma",
+    "Sladoled": "Ice Cream",
+    "Smuti Činija": "Smoothie Bowl",
+    "Sočivo Supa": "Lentil Soup",
+    "Suši": "Sushi",
+    "Takosi": "Tacos",
+    "Tanduri Piletina": "Tandoori Chicken",
+    "Tempura": "Tempura",
+    "Tiramisu": "Tiramisu",
+    "Tofu na Tiganju": "Tofu Stir Fry",
+    "Tuna Salata": "Tuna Salad",
+    "Veganski Burger": "Vegan Burger",
+    "Vegetarijanski Burger": "Veggie Burger",
+    "Veggie Činija": "Buddha Bowl",
+    "Zeleni Smuti": "Green Smoothie",
+    "Cevapi": "Cevapi",
+    "Cizkejk": "Cheesecake",
+    "Snicla": "Schnitzel Wiener",
+
+    // New Serbian translations from foodData updates
+    "Makaroni sa sirom": "Mac and Cheese",
+    "BBQ rebra": "BBQ Ribs",
+    "Pržena piletina": "Fried Chicken",
+    "Ševap od mesa": "Meatloaf",
+    "Čizburger": "Cheeseburger",
+    "Pita sa jabukama": "Apple Pie",
+    "Školjke čorba": "Clam Chowder",
+    "Kukuruzni hleb": "Cornbread",
+    "Salata od kupusa": "Coleslaw",
+    "Čupana svinjetina": "Pulled Pork",
+    "Keks sa sosom": "Biscuits and Gravy",
+    "Piletina i vafli": "Chicken and Waffles",
+    "Pita od lajma": "Key Lime Pie",
+    "Doručak pica": "Breakfast Pizza",
+    "Pire krompir": "Mashed Potatoes",
+    "Pileći kari": "Chicken Curry",
+    "BBQ piletina": "BBQ Chicken",
+    "Slatko-kisela svinjetina": "Sweet and Sour Pork",
+    "Govedina sa brokolijem": "Beef and Broccoli",
+    "Prženi pirinač": "Fried Rice",
+    "Prolećni rolovi": "Spring Rolls",
+
+    // BREAKFAST category translations
+    "Francuski tost": "French Toast",
+    "Mjusli": "Muesli",
+    "Smuti": "Smoothie",
+    "Begl": "Bagel",
+    "Prženi krompir": "Hash Browns",
+    "Mafini": "Muffins",
+    "Skons": "Scones",
+    "Chia puding": "Chia Pudding",
+    "Protein činija": "Protein Bowl",
+
+    // ASIAN category translations
+    "Pad taj": "Pad Thai",
+    "Dim sam": "Dim Sum",
+    "Tom jam": "Tom Yum",
+    "Fo": "Pho",
+    "Knedle": "Dumplings",
+    "Satej": "Satay",
+    "Jakitori": "Yakitori",
+    "Terijaki": "Teriyaki",
+    "Bao zemičke": "Bao Buns",
+
+    // WINGS category translations
+    "Bafalo krilca": "Buffalo Wings",
+    "BBQ krilca": "BBQ Wings",
+    "Krilca med beli luk": "Honey Garlic Wings",
+    "Terijaki krilca": "Teriyaki Wings",
+    "Kajun krilca": "Cajun Wings",
+    "Koreanska krilca": "Korean Wings",
+    "Džerk krilca": "Jerk Wings",
+    "Parmezan krilca": "Parmesan Wings",
+    "Ranč krilca": "Ranch Wings",
+    "Dimna krilca": "Smoky Wings",
+
+    // STREET-FOOD category translations
+    "Takos": "Tacos",
+    "Hot dogovi": "Hot Dogs",
+    "Điros": "Gyros",
+    "Ban mi": "Banh Mi",
+    "Kukuruzni hotdog": "Corn Dogs",
+    "Empanada": "Empanadas",
+    "Arepa": "Arepas",
+    "Čuros": "Churros",
+    "Perec": "Pretzel",
+    "Takojaki": "Takoyaki",
+    "Elote": "Elote",
+    "Krep": "Crepes",
+
+    // KOREAN category translations
+    "Kimči": "Kimchi",
+    "Koreanski roštilj": "Korean BBQ",
+    "Japče": "Japchae",
+    "Teokboki": "Tteokbokki",
+    "Kimči đige": "Kimchi Jjigae",
+    "Samgjeopsal": "Samgyeopsal",
+    "Banšan": "Banchan",
+    "Koreanska pržena piletina": "Korean Fried Chicken",
+    "Hotek": "Hotteok",
+    "Nengmjeon": "Naengmyeon",
+    "Sunde": "Sundae",
+    "Pađeon": "Pajeon",
+    "Džađangmjeon": "Jajangmyeon",
+    "Koreanski kukuruzni hotdog": "Korean Corn Dogs",
+
+    // THAI category translations
+    "Zeleni kari": "Green Curry",
+    "Crveni kari": "Red Curry",
+    "Masaman kari": "Massaman Curry",
+    "Som tam": "Som Tam",
+    "Pad si ju": "Pad See Ew",
+    "Larb": "Larb",
+    "Tajlandska piletina sa bosiljkom": "Thai Basil Chicken",
+    "Mango lepljivi pirinač": "Mango Sticky Rice",
+    "Tom ka gaj": "Tom Kha Gai",
+    "Pad krajav": "Pad Krapow",
+    "Tajlandski prženi pirinač": "Thai Fried Rice",
+    "Papaja salata": "Papaya Salad",
+    "Kokos supa": "Coconut Soup",
+    "Tajlandski čaj": "Thai Tea",
+    "Pad vun sen": "Pad Woon Sen",
+    "Tajlandska salata od govedine": "Thai Beef Salad",
+
+    // TURKISH category translations
+    "Dener": "Doner",
+    "Tursko uživanje": "Turkish Delight",
+    "Lahmadžun": "Lahmacun",
+    "Turska kafa": "Turkish Coffee",
+    "Berek": "Börek",
+    "Kefte": "Köfte",
+    "Iskender": "Iskender",
+    "Turski doručak": "Turkish Breakfast",
+    "Menemen": "Menemen",
+    "Džadžik": "Cacik",
+    "Patlidžan salata": "Patlican Salata",
+    "Kunefe": "Kunefe",
+
+    // STEAK category translations
+    "Ribaj stejk": "Ribeye Steak",
+    "File minjon": "Filet Mignon",
+    "Njujork strip": "New York Strip",
+    "T-bone stejk": "T-Bone Steak",
+    "Porterhaus": "Porterhouse",
+    "Sirlojn stejk": "Sirloin Steak",
+    "Flank stejk": "Flank Steak",
+    "Skrt stejk": "Skirt Steak",
+    "Henger stejk": "Hanger Steak",
+    "Flat ajron stejk": "Flat Iron Steak",
+    "Prajm rib": "Prime Rib",
+    "Tomahok stejk": "Tomahawk Steak",
+    "Denver stejk": "Denver Steak",
+    "Tri-tip": "Tri-Tip",
+    "Round stejk": "Round Steak",
+    "Čak stejk": "Chuck Steak",
+    "Blejd stejk": "Blade Steak",
+    "Top round": "Top Round",
+    "Bottom round": "Bottom Round",
+    "Aj of round": "Eye of Round",
+
+    // SUSHI category translations
+    "Kalifornijski rol": "California Roll",
+    "Losos rol": "Salmon Roll",
+    "Tuna rol": "Tuna Roll",
+    "Ljuti tuna rol": "Spicy Tuna Roll",
+    "Duga rol": "Dragon Roll",
+    "Zmaj rol": "Dragon Roll",
+    "Filadelfija rol": "Philadelphia Roll",
+    "Jegulja rol": "Eel Roll",
+    "Tempura rol": "Tempura Roll",
+    "Losos sašimi": "Salmon Sashimi",
+    "Tuna sašimi": "Tuna Sashimi",
+    "Čiraši činija": "Chirashi Bowl",
+    "Ručni rolovi": "Hand Rolls",
+    "Naopako rolovi": "Inside Out Rolls",
+    "Suši čamac": "Sushi Boat",
+
+    // WAFFLES category translations
+    "Belgijski Vafli": "Belgian Waffles",
+    "Američki Vafli": "American Waffles",
+    "Piletina i Vafli": "Chicken and Waffles",
+    "Jagoda Vafli": "Strawberry Waffles",
+    "Čokolada Vafli": "Chocolate Waffles",
+    "Borovnica Vafli": "Blueberry Waffles",
+    "Banana Vafli": "Banana Waffles",
+    "Pekan Vafli": "Pecan Waffles",
+    "Cimet Vafli": "Cinnamon Waffles",
+    "Protein Vafli": "Protein Waffles",
+    "Vafli bez Glutena": "Gluten Free Waffles",
+    "Veganski Vafli": "Vegan Waffles",
+    "Sladoled Vafli": "Ice Cream Waffles",
+    "Slani Vafli": "Savory Waffles",
+    "Mini Vafli": "Mini Waffles",
+    "Vafl Sunde": "Waffle Sundae",
+    "Javorov Sirup Vafli": "Maple Syrup Waffles",
+    "Puter Vafli": "Butter Waffles",
+    "Krem Vafli": "Cream Waffles",
+    "Voćni Vafli": "Fruit Waffles",
+    "Vrući lonac": "Hot Pot",
+    "Pirinčane nudle": "Rice Noodles",
+    "Nudle od jaja": "Egg Noodles",
+    "Instant nudle": "Instant Noodles",
+    "Goveđa supa sa nudlama": "Beef Noodle Soup",
+    "Pileća supa sa nudlama": "Chicken Noodle Soup",
+    "Ljute nudle": "Spicy Noodles",
+    "Hladne nudle": "Cold Noodles",
+    "Nudle na tiganju": "Stir Fried Noodles",
+    "Salata sa nudlama": "Noodle Salad",
+    "Nudle sa karijem": "Curry Noodles",
+    "Nudle sa sezamom": "Sesame Noodles",
+    "Povrćna pica": "Veggie Pizza",
+    "Pica za ljubitelje mesa": "Meat Lovers",
+    "BBQ pileća pica": "BBQ Chicken",
+    "Bela pica": "White Pizza",
+    "Buffalo pileća pica": "Buffalo Chicken",
+    "Suverena pica": "Supreme",
+    "Mediteranska pica": "Mediterranean",
+    "Čikago duboka pica": "Chicago Deep Dish",
+    "Napolitanska pica": "Neapolitan",
+    "Goveđi stroganof": "Beef Stroganoff",
+    "Ruska salata": "Russian Salad",
+    "Heljda": "Buckwheat",
+    "Ruski čaj": "Russian Tea",
+    "Grilovani sir sendvič": "Grilled Cheese",
+    "Ćurka sendvič": "Turkey Sandwich",
+    "Šunka i sir sendvič": "Ham and Cheese",
+    "Tuna salata sendvič": "Tuna Salad Sandwich",
+    "Jaja salata sendvič": "Egg Salad Sandwich",
+    "Pileća salata sendvič": "Chicken Salad Sandwich",
+    "Italijanski sendvič": "Italian Sub",
+    "Francuski umak sendvič": "French Dip",
+    "Ljuta krilca": "Hot Wings",
+    "Krilca sa limunom i biberom": "Lemon Pepper Wings",
+    "Blaga krilca": "Mild Wings",
+    "Slatko-kisela krilca": "Sweet and Sour Wings",
+    "Grilovana krilca": "Grilled Wings",
+    "Pečena krilca": "Baked Wings",
+    "Pržena krilca": "Fried Wings",
+    "Krilca bez kostiju": "Boneless Wings",
+    "Kombinacija krilaca": "Wing Combo",
+    "Pileći cezar vrap": "Chicken Caesar Wrap",
+    "Ćurka vrap": "Turkey Wrap",
+    "Povrćni vrap": "Veggie Wrap",
+    "Bafalo pileći vrap": "Buffalo Chicken Wrap",
+    "Klub vrap": "Club Wrap",
+    "Tuna vrap": "Tuna Wrap",
+    "Šunka i sir vrap": "Ham and Cheese Wrap",
+    "Grčki vrap": "Greek Wrap",
+    "Meksički vrap": "Mexican Wrap",
+    "Azijski vrap": "Asian Wrap",
+    "Doručak vrap": "Breakfast Wrap",
+    "Protein vrap": "Protein Wrap",
+    "Losos vrap": "Salmon Wrap",
+    "Stejk vrap": "Steak Wrap",
+    "Humus vrap": "Hummus Wrap",
+    "Avokado vrap": "Avocado Wrap",
+    "Spanać vrap": "Spinach Wrap",
+    "Pileća salata vrap": "Chicken Salad Wrap",
+    "BLT vrap": "BLT Wrap"
   };
 
   const mappedName = recipeMap[foodName] || foodName;

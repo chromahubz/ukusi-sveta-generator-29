@@ -2,7 +2,7 @@ import { Recipe } from './recipes';
 
 export const waffleRecipes: Record<string, Recipe> = {
   "Belgian Waffles": {
-    name: "Belgian Waffles",
+    name: "Belgijski Vafli",
     description: "Hrustljave i vazdušaste belgijske vafle, savršene za doručak ili desert.",
     ingredients: [
       "2 šolje brašna",
@@ -41,7 +41,7 @@ export const waffleRecipes: Record<string, Recipe> = {
   },
 
   "American Waffles": {
-    name: "American Waffles", 
+    name: "Američki Vafli", 
     description: "Klasični američki vafli, savršeni za doručak ili desert. Hrumkavi spolja, mekani iznutra.",
     ingredients: [
       "2 šolje brašna",
@@ -79,7 +79,7 @@ export const waffleRecipes: Record<string, Recipe> = {
   },
 
   "Chicken and Waffles": {
-    name: "Chicken and Waffles",
+    name: "Piletina i Vafli",
     description: "Ovo je klasična kombinacija slatkog i slanog, hrskave piletine i mekanih vafla. Savršeno za brunch ili večeru!",
     ingredients: [
       "Za piletinu:",
@@ -134,7 +134,7 @@ export const waffleRecipes: Record<string, Recipe> = {
   },
 
   "Strawberry Waffles": {
-    name: "Strawberry Waffles",
+    name: "Jagoda Vafli",
     description: "Hrskavi vafli preliveni svežim jagodama i šlagom. Savršen doručak ili desert.",
     ingredients: [
       "2 šolje brašna",
@@ -182,7 +182,7 @@ export const waffleRecipes: Record<string, Recipe> = {
   },
 
   "Chocolate Waffles": {
-    name: "Chocolate Waffles",
+    name: "Čokolada Vafli",
     description: "Ukusne i čokoladne waffles savršene za doručak ili desert.",
     ingredients: [
       "1 1/2 šolje brašna",
@@ -224,7 +224,7 @@ export const waffleRecipes: Record<string, Recipe> = {
   },
 
   "Blueberry Waffles": {
-    name: "Blueberry Waffles",
+    name: "Borovnica Vafli",
     description: "Ukusan i jednostavan recept za vazdušaste vafle sa borovnicama. Savršen doručak ili desert!",
     ingredients: [
       "2 šolje brašna",
@@ -264,7 +264,7 @@ export const waffleRecipes: Record<string, Recipe> = {
   },
 
   "Banana Waffles": {
-    name: "Banana Waffles",
+    name: "Banana Vafli",
     description: "Ukusne i mekane waffles sa aromom banane, idealne za doručak ili desert.",
     ingredients: [
       "1 1/2 šolje brašna",
@@ -305,7 +305,7 @@ export const waffleRecipes: Record<string, Recipe> = {
   },
 
   "Pecan Waffles": {
-    name: "Pecan Waffles",
+    name: "Pekan Vafli",
     description: "Hrskave i ukusne vafle sa pekan orasima, savršene za doručak ili brunch.",
     ingredients: [
       "1 1/2 šolje brašna",
@@ -351,7 +351,7 @@ export const waffleRecipes: Record<string, Recipe> = {
   },
 
   "Cinnamon Waffles": {
-    name: "Cinnamon Waffles",
+    name: "Cimet Vafli",
     description: "Hrskave waffle sa ukusom cimeta, idealne za doručak ili desert.",
     ingredients: [
       "2 šolje brašna",
@@ -388,7 +388,7 @@ export const waffleRecipes: Record<string, Recipe> = {
   },
 
   "Protein Waffles": {
-    name: "Protein Waffles",
+    name: "Protein Vafli",
     description: "Ukusne i hranljive waffle bogate proteinima, savršene za doručak ili užinu.",
     ingredients: [
       "1 šolja ovsenih pahuljica",
@@ -428,7 +428,7 @@ export const waffleRecipes: Record<string, Recipe> = {
   },
 
   "Gluten-Free Waffles": {
-    name: "Gluten-Free Waffles",
+    name: "Vafli bez Glutena",
     description: "Savršene hrskave vafle bez glutena, idealne za doručak ili dezert.",
     ingredients: [
       "1 1/2 šolje gluten-free brašna za sve namene",
@@ -469,7 +469,7 @@ export const waffleRecipes: Record<string, Recipe> = {
   },
 
   "Vegan Waffles": {
-    name: "Vegan Waffles",
+    name: "Veganski Vafli",
     description: "Ukusne i hrskave veganske vafle, savršene za doručak ili desert. Lako se prave i mogu se kombinovati sa različitim dodacima.",
     ingredients: [
       "200g brašna",
@@ -506,7 +506,7 @@ export const waffleRecipes: Record<string, Recipe> = {
   },
 
   "Ice Cream Waffles": {
-    name: "Ice Cream Waffles",
+    name: "Sladoled Vafli",
     description: "Hrskave waffle, tople i savršeno uparene sa hladnim sladoledom. Idealan desert za svaku priliku.",
     ingredients: [
       "1 šolja brašna",
@@ -546,7 +546,7 @@ export const waffleRecipes: Record<string, Recipe> = {
   },
 
   "Savory Waffles": {
-    name: "Savory Waffles",
+    name: "Slani Vafli",
     description: "Hrskave i ukusne slane vafle, savršene za doručak, ručak ili večeru. Odlične su uz prženo jaje, avokado ili omiljeni namaz.",
     ingredients: [
       "1 1/2 šolje brašna",
@@ -587,7 +587,7 @@ export const waffleRecipes: Record<string, Recipe> = {
   },
 
   "Mini Waffles": {
-    name: "Mini Waffles",
+    name: "Mini Vafli",
     description: "Mali, hrskavi waffles, savršeni za doručak, desert ili užinu.",
     ingredients: [
       "1 šolja brašna",
@@ -625,7 +625,7 @@ export const waffleRecipes: Record<string, Recipe> = {
   },
 
   "Waffle Sundae": {
-    name: "Waffle Sundae",
+    name: "Vafl Sunde",
     description: "Ovaj desert je savršena kombinacija toplih vafla i hladnog sladoleda, prelivena ukusnim dodacima. Idealno za deljenje ili za pojedinačno uživanje.",
     ingredients: [
       "2 sveže pečena vafla (ili gotovi vafli)",
@@ -662,7 +662,7 @@ export const waffleRecipes: Record<string, Recipe> = {
   },
 
   "Maple Syrup Waffles": {
-    name: "Maple Syrup Waffles",
+    name: "Javorov Sirup Vafli",
     description: "Hrskavi vafli preliveni slatkim javorovim sirupom, savršeni za doručak ili brunch.",
     ingredients: [
       "1 ¾ šolje (220g) brašna",
@@ -707,7 +707,7 @@ export const waffleRecipes: Record<string, Recipe> = {
   },
 
   "Butter Waffles": {
-    name: "Butter Waffles",
+    name: "Puter Vafli",
     description: "Hrskave i ukusne waffle sa bogatim ukusom putera, idealne za doručak ili desert.",
     ingredients: [
       "2 šolje brašna",
@@ -746,7 +746,7 @@ export const waffleRecipes: Record<string, Recipe> = {
   },
 
   "Cream Waffles": {
-    name: "Cream Waffles",
+    name: "Krem Vafli",
     description: "Brzi i jednostavni vafli, mekši i bogatiji zahvaljujući dodatku kisele pavlake. Savršeni za doručak ili desert.",
     ingredients: [
       "2 šolje brašna",
@@ -785,7 +785,7 @@ export const waffleRecipes: Record<string, Recipe> = {
   },
 
   "Fruit Waffles": {
-    name: "Fruit Waffles",
+    name: "Voćni Vafli",
     description: "Osvežavajuće vafle prelivene svežim voćem. Idealne za doručak ili dezert.",
     ingredients: [
       "1 ½ šolja brašna",

@@ -1,304 +1,67 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { Separator } from "@/components/ui/separator";
-import { Calendar, Clock, User, Heart, Share2 } from "lucide-react";
+import { Calendar, Clock, User, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
+import { blogPosts, getFeaturedPosts } from "@/data/blogPosts";
+import { useState, useMemo } from "react";
 
-const blogPosts = [
-  {
-    id: 1,
-    title: "Top 10 Easy Meals You Can Cook from Random Ingredients",
-    excerpt: "Otkrijte kako možete napraviti ukusna jela od sastojaka koje već imate kod kuće.",
-    author: "Šta da jedem tim",
-    date: "2024-01-15",
-    readTime: "5 min čitanja",
-    category: "Saveti",
-    content: `
-# Top 10 Easy Meals You Can Cook from Random Ingredients
-
-Često se dešava da otvorite frižider i pitate se "šta da jedem" gledajući ono što imate kod kuće. Umesto da trošite vreme i novac na odlazak u prodavnicu, evo 10 jednostavnih jela koje možete napraviti od osnovnih sastojaka:
-
-## 1. Pasta Aglio e Olio
-**Potrebno**: Pasta, beli luk, maslinovo ulje, čili papričice, peršun
-Klasično italijansko jelo koje možete napraviti za 15 minuta. Samo propržite beli luk u maslinovom ulju, dodajte kuvanu pastu i začine.
-
-## 2. Omlet sa povrćem
-**Potrebno**: Jaja, bilo koje povrće, sir (opciono)
-Omlet je savršen za korišćenje ostataka povrća. Možete dodati šargarepu, papriku, spanać ili bilo šta drugo što imate.
-
-## 3. Pirinač sa povrćem
-**Potrebno**: Pirinač, zamrznuto ili sveže povrće, soja sos
-Jednostavan wok stil jelo koje možete personalizovati sa bilo kojim povrćem i začinima.
-
-## 4. Krem supa od povrća
-**Potrebno**: Bilo koje povrće, bujion, pavlaka
-Skuvajte povrće u bujonu, blendajte i dodajte pavlaku za kremastost.
-
-## 5. Quesadilla
-**Potrebno**: Tortilje, sir, bilo koji ostatak mesa ili povrća
-Složite sastojke između tortilji i pržite dok se sir ne otopi.
-
-## 6. Jaja na oko sa krompirićima
-**Potrebno**: Jaja, kuvani krompir, luk
-Klasična kombinacija koja nikad ne izlazi iz mode.
-
-## 7. Pasta sa paradajzom
-**Potrebno**: Pasta, konzervirani paradajz, beli luk, bosiljak
-Osnovni napoletana sos koji možete napraviti za 20 minuta.
-
-## 8. Sandwich sa ostatcima
-**Potrebno**: Hleb, bilo koji ostatak mesa, sir, salata
-Kreativno koristite ono što imate u frižideru.
-
-## 9. Salata sa proteinima
-**Potrebno**: Zelena salata, konzervirane leguminoze ili ostatak mesa
-Zdrava opcija koja se brzo pravi.
-
-## 10. Noodles sa soja sosom
-**Potrebno**: Instant testo, jaje, povrće, soja sos
-Azijski stil jelo koje možete napraviti za 10 minuta.
-
-## Zaključak
-Najvažnije je da budete kreativni i ne bojite se eksperimentisanja. Najbolja jela često nastaju slučajno!
-    `
-  },
-  {
-    id: 2,
-    title: "Why Random Food Generators Are Great for Meal Planning",
-    excerpt: "Saznajte zašto je random generator hrane odličan alat za planiranje obroka i kako može da vam uštedi vreme.",
-    author: "Šta da jedem tim",
-    date: "2024-01-10",
-    readTime: "4 min čitanja",
-    category: "Planiranje",
-    content: `
-# Why Random Food Generators Are Great for Meal Planning
-
-Planiranje obroka može biti naporno, posebno kada svaki dan morate da donosite odluke o tome šta da kuvate. Evo zašto je random generator hrane odličan alat:
-
-## Eliminiše "decision fatigue"
-Svakodnevno donošenje odluka o hrani može biti iscrpljujuće. Random generator vam olakšava proces i uklanja stres od biranja.
-
-## Introdukuje raznolikost
-Često se držimo iste grupe jela. Generator vas tera da probate nova jela i kuhinje koje inače ne biste razmotrili.
-
-## Štedi vreme
-Umesto da provodite 20 minuta listajući recepte online, generator vam da ideju za sekunde.
-
-## Pomaže sa budžetom
-Kada znate unapred šta ćete kuvati, možete efikasnije da kupujete namirnice i smanjite bacanje hrane.
-
-## Motiviše kreativnost
-Nasumičan izbor vas može inspirisati da eksperimentišete sa novim kombinacijama i tehnikama kuvanja.
-
-## Savršen je za grupe
-Kada ne možete da se odlučite sa porodicom ili cimерима, pustite generatoru da odluči umesto vas.
-
-## Kako maksimalno iskoristiti generator:
-1. Koristite ga na početku nedelje za planiranje
-2. Kombajnite sa vašim omiljenim receptima
-3. Prilagodite predloge vašim ograničenjima
-4. Budite otvoreni za nova iskustva
-
-Generator hrane nije samo alat za lenje - to je smart pristup planiranju obroka!
-    `
-  },
-  {
-    id: 3,
-    title: "Healthy Random Recipes When You Don't Know What to Eat",
-    excerpt: "Zdravi recepti koji će vam pomoći kada ne znate šta da jedete, a želite da se hranite zdravo.",
-    author: "Nutritionist Marija",
-    date: "2024-01-08",
-    readTime: "6 min čitanja",
-    category: "Zdravlje",
-    content: `
-# Healthy Random Recipes When You Don't Know What to Eat
-
-Kada pokušavate da se hranite zdravo, često može biti teško da pronađete inspiraciju. Evo zdravih opcija za svaki obrok:
-
-## Doručak opcije:
-
-### Overnight oats sa voćem
-- 1/2 šolje ovsenih pahuljica
-- 1/2 šolje biljnog mleka
-- 1 kašika čia semenki
-- Voće po izboru
-- Med ili agave sirup
-
-### Avokado toast
-- Integralni hleb
-- 1/2 avokada
-- Čeri paradajz
-- Limunov sok
-- So i biber
-
-## Ručak opcije:
-
-### Quinoa bowl
-- Kuvana quinoa
-- Pečeno povrće
-- Humus
-- Zeleno lisnato povrće
-- Tahini dresing
-
-### Zupa od leguminoza
-- Crni pasulj ili sočivo
-- Povrće
-- Vegetarijanski bujion
-- Začini
-
-## Večera opcije:
-
-### Pečena riba sa povrćem
-- Bijeli riba filet
-- Sezonsko povrće
-- Maslinovo ulje
-- Limun i začini
-
-### Vegetarijanski curry
-- Kokosovo mleko
-- Povrće po sezoni
-- Curry pasta
-- Pirinač od karfiola
-
-## Zdravi snack-ovi:
-- Grčki jogurt sa orasima
-- Hummus sa štapićima povrća
-- Smoothie od zelenog povrća
-- Pečeni leblebije
-
-## Saveti za zdravu hranu:
-1. Uvek imajte zdrave opcije pri ruci
-2. Fokusirajte se na celo, neprерađeno povrće
-3. Uključite proteine u svaki obrok
-4. Ne zaboravite na zdrave masti
-5. Pijte dovoljno vode
-
-Zdrava hrana ne mora biti dosadna - eksperimentišite sa začinima i kombinacijama!
-    `
-  },
-  {
-    id: 4,
-    title: "Fun Party Games with a Random Food Generator",
-    excerpt: "Kreativne igre koje možete igrati sa prijateljima koristeći random generator hrane.",
-    author: "Party planer Ana",
-    date: "2024-01-05",
-    readTime: "3 min čitanja",
-    category: "Zabava",
-    content: `
-# Fun Party Games with a Random Food Generator
-
-Random generator hrane može biti odličan alat za zabavu na žurkama! Evo nekoliko kreativnih igara:
-
-## 1. Cooking Challenge
-Svaki igrač generiše nasumično jelo i mora da ga napravi u ograničenom vremenu. Najbolje jelo pobeđuje!
-
-## 2. Guess the Cuisine
-Jedan igrač generiše jelo, a ostali pogađaju iz koje kuhinje dolazi. Prvi koji pogodi dobija poen.
-
-## 3. Recipe Relay
-Tim mora da generiše 5 jela i napravi meni za celu večeru. Ocenjuje se kreativnost i kombinacija.
-
-## 4. Food Pictionary
-Generiši jelo pa ga crtaj - ostali pogađaju šta je to!
-
-## 5. Iron Chef Battle
-Dva tima generišu isti sastojak i prave različita jela od njega.
-
-## 6. Menu Roulette
-Svaki gost generiše jelo koje mora da napravi za ostale goste.
-
-## 7. Speed Dating sa hranom
-Parovi generišu jela i razgovaraju o njima - odličan ледобран!
-
-## 8. Food Trivia
-Generiši jelo pa postavl питања о њему.
-
-## Saveti za uspešnu party:
-- Pripremite osnovne sastojke unapred
-- Imajте nagrade za pobednike
-- Fotografišite kreacije
-- Vodite счет
-- Budite fleksibilni sa pravilima
-
-Generator hrane može transformisati običnu žurku u nezaboravno iskustvo!
-    `
-  }
-];
 
 const Blog = () => {
+  const featuredPosts = getFeaturedPosts();
+  const categories = [...new Set(blogPosts.map(post => post.category))];
+
+  // Pagination state
+  const [currentPage, setCurrentPage] = useState(1);
+  const postsPerPage = 12;
+
+  // Paginated posts
+  const paginatedPosts = useMemo(() => {
+    const startIndex = (currentPage - 1) * postsPerPage;
+    const endIndex = startIndex + postsPerPage;
+    return blogPosts.slice(startIndex, endIndex);
+  }, [currentPage]);
+
+  const totalPages = Math.ceil(blogPosts.length / postsPerPage);
+
   const BlogCard = ({ post }: { post: typeof blogPosts[0] }) => (
-    <Dialog>
-      <DialogTrigger asChild>
-        <Card className="cursor-pointer hover:shadow-lg transition-all duration-300 group h-full">
-          <CardHeader>
-            <div className="flex items-center gap-2 mb-2">
-              <Badge variant="secondary">{post.category}</Badge>
-              <span className="text-sm text-muted-foreground flex items-center gap-1">
-                <Calendar className="w-4 h-4" />
-                {new Date(post.date).toLocaleDateString('sr-RS')}
-              </span>
-            </div>
-            <CardTitle className="group-hover:text-primary transition-colors line-clamp-2">
-              {post.title}
-            </CardTitle>
-            <p className="text-muted-foreground line-clamp-3">
-              {post.excerpt}
-            </p>
-          </CardHeader>
-          <CardContent>
-            <div className="flex items-center justify-between text-sm text-muted-foreground">
-              <div className="flex items-center gap-2">
-                <User className="w-4 h-4" />
-                <span>{post.author}</span>
-              </div>
-              <div className="flex items-center gap-1">
-                <Clock className="w-4 h-4" />
-                <span>{post.readTime}</span>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-      </DialogTrigger>
-      <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
-        <DialogHeader>
+    <Link to={`/blog/${post.slug}`} className="group">
+      <Card className="cursor-pointer hover:shadow-lg transition-all duration-300 group h-full">
+        <CardHeader>
           <div className="flex items-center gap-2 mb-2">
             <Badge variant="secondary">{post.category}</Badge>
             <span className="text-sm text-muted-foreground flex items-center gap-1">
               <Calendar className="w-4 h-4" />
               {new Date(post.date).toLocaleDateString('sr-RS')}
             </span>
+            {post.featured && (
+              <Badge variant="default" className="bg-orange-500">
+                Izdvojeno
+              </Badge>
+            )}
           </div>
-          <DialogTitle className="text-2xl mb-2">{post.title}</DialogTitle>
+          <CardTitle className="group-hover:text-primary transition-colors line-clamp-2">
+            {post.title}
+          </CardTitle>
+          <p className="text-muted-foreground line-clamp-3">
+            {post.excerpt}
+          </p>
+        </CardHeader>
+        <CardContent>
           <div className="flex items-center justify-between text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
               <User className="w-4 h-4" />
               <span>{post.author}</span>
             </div>
-            <div className="flex items-center gap-4">
-              <div className="flex items-center gap-1">
-                <Clock className="w-4 h-4" />
-                <span>{post.readTime}</span>
-              </div>
-              <Button variant="ghost" size="sm">
-                <Heart className="w-4 h-4" />
-              </Button>
-              <Button variant="ghost" size="sm">
-                <Share2 className="w-4 h-4" />
-              </Button>
+            <div className="flex items-center gap-2">
+              <Clock className="w-4 h-4" />
+              <span>{post.readTime}</span>
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </div>
           </div>
-        </DialogHeader>
-        
-        <Separator className="my-4" />
-        
-        <div className="prose prose-sm max-w-none">
-          <div className="whitespace-pre-wrap leading-relaxed">
-            {post.content}
-          </div>
-        </div>
-      </DialogContent>
-    </Dialog>
+        </CardContent>
+      </Card>
+    </Link>
   );
 
   return (
@@ -313,19 +76,107 @@ const Blog = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-          {blogPosts.map((post) => (
+        {/* Featured Posts */}
+        {featuredPosts.length > 0 && (
+          <div className="mb-12">
+            <h2 className="text-2xl font-bold mb-6">Izdvojeni članci</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {featuredPosts.map((post) => (
+                <BlogCard key={post.id} post={post} />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Categories */}
+        <div className="mb-8">
+          <h3 className="text-lg font-semibold mb-4">Kategorije</h3>
+          <div className="flex flex-wrap gap-2">
+            {categories.map((category) => (
+              <Badge key={category} variant="outline" className="cursor-pointer hover:bg-primary hover:text-primary-foreground">
+                {category}
+              </Badge>
+            ))}
+          </div>
+        </div>
+
+        {/* All Posts */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {paginatedPosts.map((post) => (
             <BlogCard key={post.id} post={post} />
           ))}
         </div>
 
+        {/* Pagination */}
+        {totalPages > 1 && (
+          <div className="flex justify-center items-center gap-4 mt-12">
+            <Button
+              variant="outline"
+              onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
+              disabled={currentPage === 1}
+              className="flex items-center gap-2"
+            >
+              <ChevronLeft className="w-4 h-4" />
+              Prethodna
+            </Button>
+
+            <div className="flex items-center gap-2">
+              {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
+                <Button
+                  key={pageNum}
+                  variant={currentPage === pageNum ? "default" : "outline"}
+                  onClick={() => setCurrentPage(pageNum)}
+                  className="w-10 h-10"
+                >
+                  {pageNum}
+                </Button>
+              ))}
+            </div>
+
+            <Button
+              variant="outline"
+              onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
+              disabled={currentPage === totalPages}
+              className="flex items-center gap-2"
+            >
+              Sledeća
+              <ChevronRight className="w-4 h-4" />
+            </Button>
+          </div>
+        )}
+
+        {/* Stats */}
+        <div className="text-center mt-12 p-8 bg-white/50 rounded-lg">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div>
+              <div className="text-2xl font-bold text-primary">{blogPosts.length}</div>
+              <div className="text-sm text-muted-foreground">Članaka</div>
+            </div>
+            <div>
+              <div className="text-2xl font-bold text-primary">{categories.length}</div>
+              <div className="text-sm text-muted-foreground">Kategorija</div>
+            </div>
+            <div>
+              <div className="text-2xl font-bold text-primary">1000+</div>
+              <div className="text-sm text-muted-foreground">Recepata</div>
+            </div>
+            <div>
+              <div className="text-2xl font-bold text-primary">∞</div>
+              <div className="text-sm text-muted-foreground">Inspiracije</div>
+            </div>
+          </div>
+        </div>
+
+        {/* CTA */}
         <div className="text-center mt-12">
           <p className="text-muted-foreground mb-4">
-            Želite da vidite više članaka?
+            Želite da probate naš generator hrane?
           </p>
-          <Button variant="outline" size="lg">
-            Prijavite se za newsletter
-          </Button>
+          <Link to="/">
+            <Button size="lg" className="bg-primary hover:bg-primary/90">
+              Probajte Generator Hrane
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
